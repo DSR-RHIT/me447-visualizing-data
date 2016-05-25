@@ -6,4 +6,6 @@ The course is about creating truthful and compelling data visuals. We study elem
 
 #### getting started
 
-It is helpful if everyone installs the software before the first day of class so we can quickly discover any issues you might be having. Instuctions for installing R and RStudio and setting up your first R Project directory are [here](https://github.com/DSR-RHIT/install-R-and-RStudio).
+It is helpful if everyone installs the software before the first day of class so we can quickly discover any issues you might be having.
+
+Instuctions for installing R and RStudio and setting up your first R Project directory are [here](https://github.com/DSR-RHIT/install-R-and-RStudio).
