@@ -24,6 +24,6 @@ The purpose of the .Renviron file is to establish a library for R packages that 
 
 -   Create a new directory C:/R/library. (That is, in C: create a folder named R. In R create a folder named library.) This is the directory pointed to by the .Renviron file.
 
-### Testing
+### For new RStudio projects
 
--   If you create a new RStudio Project, always paste a copy of the .Renviron file in the project root directory.
+-   Whenever you create a new RStudio Project, paste a copy of the .Renviron file in the project root directory.
