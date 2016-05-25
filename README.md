@@ -2,4 +2,6 @@
 
 Visual rhetoric and R graphics
 
--   [Week 1](week-01)
+### week 1
+
+-   [Week 1 stuff](week-01)
