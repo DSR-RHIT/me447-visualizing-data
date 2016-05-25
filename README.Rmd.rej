@@ -1,0 +1,10 @@
+diff a/README.Rmd b/README.Rmd	(rejected hunks)
+@@ -0,0 +1,8 @@
++---
++output:
++  md_document:
++    variant: markdown_github
++---
++
++# me447-visualizing-data
++Visual rhetoric and R graphics
