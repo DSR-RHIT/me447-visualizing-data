@@ -2,6 +2,7 @@
 output:
   md_document:
     variant: markdown_github
+    pandoc_args: "--no-wrap"
 ---
 
 #### Installing R & RStudio for Windows
