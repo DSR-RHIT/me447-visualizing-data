@@ -12,9 +12,9 @@ The course is about creating truthful and compelling data visuals. We study elem
 
 #### week 1
 
-- [Install R](week-01/install_R.md)  
-- [Install RStudio](week-01/install_RStudio.md)  
-- [Set up an R Project](week-01/setup_R_project.md)  
+- [Install R](week-01/install_R.md) 
+- [Install RStudio](week-01/install_RStudio.md) 
+- [Set up an R Project](week-01/setup_R_project.md) 
 
 
 
