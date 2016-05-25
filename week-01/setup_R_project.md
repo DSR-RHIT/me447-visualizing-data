@@ -58,3 +58,5 @@ The downloaded binary packages are in
 C:/Users/layton/AppData/Local/Temp/Rtmpwr9oHD/downloaded_packages
 >
 ```
+
+I find it convenient to have an RStudio shortcut on my desktop and to delete the shortcuts to R.
