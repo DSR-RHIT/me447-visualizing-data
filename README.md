@@ -4,4 +4,4 @@ Visual rhetoric and R graphics
 
 #### week 1
 
--   [Week 1 stuff](week-01)
+-   [Install software](week-01/install.md)
