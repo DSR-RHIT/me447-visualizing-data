@@ -1,9 +1,0 @@
----
-output:
-  md_document:
-    variant: markdown_github
----
-
-### Week 1
-
-links to stuff
