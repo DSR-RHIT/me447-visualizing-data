@@ -10,4 +10,4 @@ Visual rhetoric and R graphics
 
 #### week 1
 
-- [Install software](week-01/install.md)  
+- [Install R](week-01/install_R.md)  
