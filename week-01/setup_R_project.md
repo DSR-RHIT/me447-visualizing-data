@@ -12,6 +12,8 @@
 
 These steps are Windows-specific (I'm not sure if the problem needs solving in Linux or Mac platforms.)
 
+The purpose of the .Renviron file is to establish a library for R packages that is independent of the R software. Then you can update R to the latest version and not have to reinstall all the packages you use.
+
 -   In RStudio, open a new text file using File menu &gt; New File &gt; Text File.
 
 -   Write the following line in the text file
@@ -21,5 +23,3 @@ These steps are Windows-specific (I'm not sure if the problem needs solving in L
 -   Save the file using the filename .Renviron in your course folder (don’t forget the dot that starts the filename). For example, C:/Users/layton/Documents/courses/me447/.Renviron
 
 -   If you create a new RStudio Project, always paste a copy of the .Renviron file in the project root directory.
-
-The purpose of the .Renviron file is to establish a library for R packages that is independent of the R software. Then you can update R to the latest version and not have to reinstall all the packages you use.
