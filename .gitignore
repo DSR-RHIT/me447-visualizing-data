@@ -1,6 +1,7 @@
 .Renviron
 *.html
 *.Rproj
+render_rmd_files.R
 
 # History files
 .Rhistory
