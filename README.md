@@ -3,7 +3,7 @@ me447 visualizing data
 ======================
 
 -   On this page, course material is organized by week.
--   For reference, you can also search the [course material organized by topic]().
+-   For reference, you can also search the course material organized by topic.
 
 visual rhetoric and R graphics for the R novice
 -----------------------------------------------
@@ -17,6 +17,14 @@ Text: Naomi Robbins (2013) *Creating More Effective Graphs*, Chart House.
 
 week 1
 ------
+
+The course will probably be offered in the Fall of 2017. No updates until then.
+
+about
+-----
+
+[richard layton data display](http://www.graphdoctor.com/)
+[richard layton music](http://www.richardlaytonmusic.com/)
 
 ------------------------------------------------------------------------
 
