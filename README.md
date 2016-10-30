@@ -23,8 +23,8 @@ The course will probably be offered in the Fall of 2017. No updates until then.
 about
 -----
 
-[richard layton data display](http://www.graphdoctor.com/)
-[richard layton music](http://www.richardlaytonmusic.com/)
+-   [richard layton data display](http://www.graphdoctor.com/)
+-   [richard layton music](http://www.richardlaytonmusic.com/)
 
 ------------------------------------------------------------------------
 
