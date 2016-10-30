@@ -6,6 +6,7 @@ student_work
 
 # files
 README.Rmd
+cleanall.R
 
 # ignore holding folders
 holding
