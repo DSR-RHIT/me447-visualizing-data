@@ -1,10 +1,8 @@
 ---
-output:
-  md_document:
-    variant: markdown_github
+output: github_document 
 ---
 
-#### me447 visualizing data
+# me447 visualizing data
 
 Visual rhetoric and R graphics
 
@@ -12,7 +10,7 @@ The course is about creating truthful and compelling data visuals. We study elem
 
 
 
-#### getting started 
+## getting started 
 
 Please [install R and RStudio](https://github.com/DSR-RHIT/install-R-and-RStudio) before the first day of class. 
 

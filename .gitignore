@@ -1,25 +1,52 @@
-.Renviron
-*.html
-*.Rproj
-render_rmd_files.R
+# ignore course management folders
+manage
+practiceR
+print_pages
+student_work
 
-# History files
+# ignore holding folders
+holding
+*/holding
+*/*/holding
+
+# ignore all PPT
+*.pptx
+*/*.pptx
+
+# ignore all PPT
+*.docx
+*/*.docx
+
+# ignore all HTML
+*.html
+*/*.html
+
+# ignore RStudio files
+.Rproj.user/
+*.Rproj
+
+# R and R markdown output
+.Renviron
+# history
 .Rhistory
 .Rapp.history
-
-# Session Data files
+# session data
 .RData
-
-# Example code in package build process
+# example code in package build process
 *-Ex.R
-
-# RStudio files
-.Rproj.user/
-
+# output files from R CMD build
+/*.tar.gz
+# output files from R CMD check
+/*.Rcheck/
 # produced vignettes
 vignettes/*.html
 vignettes/*.pdf
-
 # OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
 .httr-oauth
-.Rproj.user
+# knitr and R markdown default cache directories
+/*_cache/
+/cache/
+# temporary files created by R markdown
+*.utf8.md
+*.knit.md
+
