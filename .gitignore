@@ -4,6 +4,9 @@ practiceR
 print_pages
 student_work
 
+# files
+README.Rmd
+
 # ignore holding folders
 holding
 */holding
