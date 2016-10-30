@@ -20,8 +20,4 @@ week 1
 
 ------------------------------------------------------------------------
 
-Licenses
-
--   `Text:` [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
--   `Code:` [Modified BSD](LICENSE.md)
--   `Data:` [CC0](https://wiki.creativecommons.org/wiki/CC0_use_for_data) unless noted otherwise.
+[Licenses](LICENSE.md)
