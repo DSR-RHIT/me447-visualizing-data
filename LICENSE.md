@@ -27,7 +27,7 @@ Summary: CC0 effectively means relinquishing all copyright and similar rights an
 
 software
 ----------
-Copyright (c) 2016, Richard A. Layton.
+Copyright (c) 2017, Richard A. Layton.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
