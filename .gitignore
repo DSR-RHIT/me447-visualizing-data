@@ -18,9 +18,13 @@ holding
 *.pptx
 */*.pptx
 
-# ignore all PPT
+# ignore all DOCX
 *.docx
 */*.docx
+
+# ignore all XLSX
+*.xlsx
+*/*.xlsx
 
 # ignore all HTML
 *.html
