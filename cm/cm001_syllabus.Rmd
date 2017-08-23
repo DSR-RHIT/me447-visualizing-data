@@ -59,7 +59,7 @@ The major deliverables and their relative weights are:
 
 Weekly assignments include 
 
-- R tutorials (about 20 total). We will have some time in class to get started. Plan to finish all tutorials in a given week before the start of class on the following Monday. 
+- R tutorials (about 20 total). We will have some time in class to get started. Plan to finish current tutorials before the start of class on the following Monday. 
 - Data graphics D1 through D8 plus written critiques. A minimum of 8  displays are expected in your portfolio; more than 8 is acceptable if necessary to meet the portfolio requirements. Each first draft is due at the beginning of class on its due date. Some are submitted to me for review and some are brought to class for round-table discussions. 
 - Readings and written response forms (5 total), completed before class on the discussion date. 
 - Assigned readings from the text (roughly one chapter per week) and other primary sources. These will not necessarily be discussed in class but I expect these readings to inform your work and be appropriately cited in your portfolio.  
@@ -97,7 +97,7 @@ Avoid peer-to-peer plagiarism. Teaching and learning are not the same as showing
 
 Do not compare one another's code line by line, do not share your files, do not copy another's code fragments, and do not represent someone else's work as your own. All are academic misconduct.
 
-``Rose-Hulman expects its students to be responsible adults and to behave at all times with honor and integrity.'' (RHIT Academic Rules and Procedures.)  It is my policy to follow the letter and intent of the Rules and Procedures regarding academic misconduct.    
+``Rose-Hulman expects its students to be responsible adults and to behave at all times with honor and integrity.'' ([RHIT Academic Rules and Procedures](http://www.rose-hulman.edu/campus-life/student-services/registrar/rules-and-procedures/discipline-and-suspension.html).)  It is my policy to follow the letter and intent of the Rules and Procedures regarding academic misconduct.    
 
 
 
