@@ -1,0 +1,33 @@
+% preamble for the 497 handouts
+
+\hypersetup{colorlinks}
+
+\usepackage{booktabs} % for nicely typeset tabular material
+\usepackage{array}
+
+\usepackage{graphicx}
+% set graphics path in main Rnw
+
+
+\usepackage{fancyvrb}
+
+\newcommand{\NL}{\newthought{}}
+
+\usepackage{color}
+\definecolor{keywords}{rgb}{0, 0, 1}			% keywords are blue
+\definecolor{comments}{rgb}{0, 0.5, 0}		% comments are green
+\definecolor{strings}{rgb}{0.5, 0, 0}			% strings are red
+
+\usepackage{listings}
+\lstloadlanguages{R}
+\lstset{language=R, 
+	basicstyle 		= \ttfamily, 			% typewriter font
+	keywordstyle		= \color{keywords},	
+	identifierstyle		=, 					% nothing happens
+	commentstyle		= \color{comments}, 	
+	stringstyle		= \color{strings}, 		
+	showstringspaces	= false 				% no special string spaces
+	}
+	
+\newcommand{\Rcode}{\begin{lstlisting}[aboveskip=1.5\bigskipamount, belowskip=1.5\bigskipamount]}
+
