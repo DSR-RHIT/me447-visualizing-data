@@ -8,6 +8,7 @@ me447 visualizing data
 managing the course
 -------------------
 
--   Text: Naomi Robbins (2013) *Creating More Effective Graphs*, Chart House.
 -   [Calendar](../cm/cm102_calendar.pdf)
 -   [Syllabus](../cm/cm001_syllabus.md)
+-   [Getting help](../cm/cm003_getting-help.md)
+-   Text: Naomi Robbins (2013) *Creating More Effective Graphs*, Chart House
