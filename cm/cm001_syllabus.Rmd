@@ -13,8 +13,7 @@ The course is about creating truthful and compelling data visuals. We study elem
 
 ## prerequisites
 
-447: Junior standing
-
+447: Junior standing<br>
 547: Instructor permission required. Graduate students only with a project underway generating quantitative data.    
 
 
@@ -32,8 +31,6 @@ layton@rose-hulman.edu<br>
 Naomi Robbins, 2013, *Creating More Effective Graphs*, Chart House. Avoid the earlier Wiley editions (except printings 1--4).
 
 ![](../resources/images/CMEGv3.png)    
-
- 
 
 
 ## objectives

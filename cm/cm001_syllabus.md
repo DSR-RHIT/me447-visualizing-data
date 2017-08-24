@@ -12,9 +12,7 @@ The course is about creating truthful and compelling data visuals. We study elem
 prerequisites
 -------------
 
-447: Junior standing
-
-547: Instructor permission required. Graduate students only with a project underway generating quantitative data.
+447: Junior standing<br> 547: Instructor permission required. Graduate students only with a project underway generating quantitative data.
 
 instructor
 ----------
