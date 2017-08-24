@@ -12,7 +12,7 @@ The course is about creating truthful and compelling data visuals. We study elem
 
 -   [Calendar](cm/cm102_calendar.pdf)
 -   [Syllabus](cm/cm001_syllabus.md)
--   Getting help
+-   [Getting help](cm/cm003_getting-help.md)
 -   Text: Naomi Robbins (2013) *Creating More Effective Graphs*, Chart House
 
 week 0
