@@ -19,10 +19,9 @@ prerequisites
 instructor
 ----------
 
-Richard Layton, Ph.D., P.E.
-Professor of Mechanical Engineering
-Moench Hall C-217
-<layton@rose-hulman.edu>
+Richard Layton, Ph.D., P.E.<br> Professor of Mechanical Engineering<br>
+Moench Hall C-217<br>
+<layton@rose-hulman.edu><br>
 812-877-8905
 
 required textbook

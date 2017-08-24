@@ -13,18 +13,19 @@ The course is about creating truthful and compelling data visuals. We study elem
 
 ## prerequisites
 
-447: Junior standing  
+447: Junior standing
+
 547: Instructor permission required. Graduate students only with a project underway generating quantitative data.    
 
 
 
 ## instructor
 
-Richard Layton, Ph.D., P.E.  
-Professor of Mechanical Engineering  
-Moench Hall C-217  
-layton@rose-hulman.edu  
-812-877-8905  
+Richard Layton, Ph.D., P.E.<br>
+Professor of Mechanical Engineering<br>    
+Moench Hall C-217<br>    
+layton@rose-hulman.edu<br>    
+812-877-8905    
 
 ## required textbook
 
