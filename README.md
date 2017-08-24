@@ -16,10 +16,15 @@ Text: Naomi Robbins (2013) *Creating More Effective Graphs*, Chart House.
 -   [Syllabus](cm/cm001_syllabus.md)
 -   Getting help
 
+week 0
+------
+
+-   Posted soon
+
 week 1
 ------
 
-The course will probably be offered in the Fall of 2017. No updates until then.
+-   Posted soon
 
 about
 -----
