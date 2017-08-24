@@ -2,7 +2,7 @@
 me447 visualizing data
 ======================
 
--   Browse this main page for material organized by week
+-   Browse this page for material organized chronologically
 -   [Browse by topic](cm/cm001_org-by-topic.md)
 
 visual rhetoric and R graphics for the R novice
@@ -14,22 +14,19 @@ The course is about creating truthful and compelling data visuals. We study elem
 -   [Syllabus](cm/cm003_syllabus.md)
 -   [Getting help](cm/cm004_getting-help.md)
 -   Text: Naomi Robbins (2013) *Creating More Effective Graphs*, Chart House
+-   [Further reading](http://www.graphdoctor.com/archives/154) on graph design
 
 week 0
 ------
 
--   Posted soon
-
 week 1
 ------
-
--   Posted soon
 
 about
 -----
 
--   [richard layton data display](http://www.graphdoctor.com/)
--   [richard layton music](http://www.richardlaytonmusic.com/)
+-   [my data graphics blog](http://www.graphdoctor.com/)
+-   [my music blog](http://www.richardlaytonmusic.com/)
 
 ------------------------------------------------------------------------
 
