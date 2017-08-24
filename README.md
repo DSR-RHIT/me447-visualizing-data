@@ -2,8 +2,8 @@
 me447 visualizing data
 ======================
 
--   On this page, course material is organized by week.
--   For reference, you can also search the course material organized by topic.
+-   Browse this main page for material organized by week
+-   [Browse by topic](cm/cm000_by_topics.md)
 
 visual rhetoric and R graphics for the R novice
 -----------------------------------------------
