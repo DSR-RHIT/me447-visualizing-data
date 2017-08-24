@@ -13,6 +13,7 @@ prerequisites
 -------------
 
 447: Junior standing
+
 547: Instructor permission required. Graduate students only with a project underway generating quantitative data.
 
 instructor
