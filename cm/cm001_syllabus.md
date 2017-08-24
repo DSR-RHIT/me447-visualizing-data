@@ -17,10 +17,7 @@ prerequisites
 instructor
 ----------
 
-Richard Layton, Ph.D., P.E.<br> Professor of Mechanical Engineering<br>
-Moench Hall C-217<br>
-<layton@rose-hulman.edu><br>
-812-877-8905
+Richard Layton, Ph.D., P.E.<br> Professor of Mechanical Engineering<br> Moench Hall C-217<br> <layton@rose-hulman.edu><br> 812-877-8905
 
 required textbook
 -----------------
@@ -34,10 +31,10 @@ objectives
 
 After successfully completing this course, students should be able to:
 
--   Design effective and truthful data displays.
--   Credibly explain their design rationale.
--   Produce publication-quality visuals.
--   Credibly critique a data display.
+-   Design effective and truthful data displays
+-   Credibly explain their design rationale
+-   Produce publication-quality visuals
+-   Credibly critique a data display
 
 grades
 ------
@@ -52,9 +49,7 @@ The major deliverables and their relative weights are:
 homework
 --------
 
-Success in this course depends on steady and productive weekly progress.
-
-Weekly assignments (see the [Calendar](cm/cm102_calendar.pdf) for details) include
+Success in this course depends on steady and productive weekly progress. Weekly assignments (see the [Calendar](cm/cm102_calendar.pdf) for details) include
 
 -   R tutorials (about 20 total). We will have some time in class to get started. Plan to finish current tutorials before the start of class on the following Monday.
 -   Data graphics D1 through D8 plus written critiques. A minimum of 8 displays are expected in your portfolio; more than 8 is acceptable if necessary to meet the portfolio requirements. Each first draft is due at the beginning of class on its due date. Some are submitted to me for review and some are brought to class for round-table discussions.
