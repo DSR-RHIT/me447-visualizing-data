@@ -181,7 +181,7 @@ To see more graph examples, try any of these:
     example(coplot)
     example(persp)
 
-Next tutorial: [Interacting with R using scripts](cm/cm012_using-scripts.md)
+Next tutorial: [Interacting with R using scripts](cm012_using-scripts.md)
 
 ------------------------------------------------------------------------
 
