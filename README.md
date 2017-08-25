@@ -4,6 +4,7 @@ me447 visualizing data
 
 -   Browse this page for material organized chronologically
 -   [Browse by topic](cm/cm001_org-by-topic.md)
+-   [References](cm/cm009_references.md)
 
 visual rhetoric and R graphics for the R novice
 -----------------------------------------------

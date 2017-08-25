@@ -4,6 +4,7 @@ me447 visualizing data
 
 -   Browse this page for material organized topically
 -   [Browse the main page](../README.md) for material organized chronologically
+-   [References](../cm/cm009_references.md)
 
 course management
 -----------------

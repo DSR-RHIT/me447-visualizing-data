@@ -35,8 +35,6 @@ Different ways of organizing files can be used, of course --- the important thin
 
 Next tutorial: [Interacting with R in the Console](cm011_using-console.md)
 
-[^1]:Christopher Gandrud (2014) *Reproducible Research with R and RStudio*, Chapman & Hall/CRC, pp.18.
-
 ---
 
 [main page](../README.md)<br> 
