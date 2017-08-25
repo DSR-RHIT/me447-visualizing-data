@@ -10,7 +10,7 @@ File $\rightarrow$ Recent projects $\rightarrow$ me447_visualizing-data.Rproj.
 A script is a file of R commands. To start a new R script, use<br>
 File $\rightarrow$ New File $\rightarrow$ R Script.
 
-![](../resources/images/panes-4.png)
+![](../images/panes-4.png)
 
 Save the script in the *learnR* folder using the filename *tut001_first-script.R*<br>
 File $\rightarrow$ Save As... $\rightarrow$ *tut001_first-script.R*

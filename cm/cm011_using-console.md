@@ -4,7 +4,7 @@ interacting with R in the console
 
 Start RStudio. The start up panel is shown below. The Console pane is where we can interact with or query R directly.
 
-![](../resources/images/panes-1.png)
+![](../images/panes-1.png)
 
 Press `Ctrl-L` to clear the console window.
 
@@ -136,11 +136,11 @@ z    <- 0 + 2i
 
 The RStudio Environment pane lists the variables in the workspace and their values.
 
-![](../resources/images/panes-2.png)
+![](../images/panes-2.png)
 
 In the corner of the Environment pane, use the pull-down menu to change ”List” to ”Grid” to list the variable names, values, and types.
 
-![](../resources/images/panes-3.png)
+![](../images/panes-3.png)
 
 To list variables using the console, use `ls()`,
 

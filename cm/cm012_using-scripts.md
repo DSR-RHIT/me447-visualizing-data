@@ -6,7 +6,7 @@ Start by opening your RStudio project:<br> File → Recent projects → me447\_v
 
 A script is a file of R commands. To start a new R script, use<br> File → New File → R Script.
 
-![](../resources/images/panes-4.png)
+![](../images/panes-4.png)
 
 Save the script in the *learnR* folder using the filename *tut001\_first-script.R*<br> File → Save As... → *tut001\_first-script.R*
 

@@ -24,7 +24,7 @@ required textbook
 
 Naomi Robbins, 2013, *Creating More Effective Graphs*, Chart House. Avoid the earlier Wiley editions (except printings 1--4).
 
-![](../resources/images/CMEGv3.png)
+![](../images/CMEGv3.png)
 
 objectives
 ----------

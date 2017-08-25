@@ -10,7 +10,7 @@ In the *data* directory, save the empty file as *test.csv* using CSV (Comma deli
 
 Close the Excel file. In Explorer, find the file. Right-click and select *Open with...*, then *Choose default program ...*. In the dialog box, select *Notepad* or any other text-only package.
 
-![](../resources/images/csv-default.png)
+![](../images/csv-default.png)
 
 From now on, when you open a CSV file, it will default to Notepad, and not alter the data. You can still open the CSV in Excel if you wish with a right-click on the file, open with, and choose Excel.
 
