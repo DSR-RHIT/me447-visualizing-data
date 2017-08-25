@@ -185,6 +185,10 @@ example(dotchart)
 example(coplot)
 example(persp)
 ```
+
+Next tutorial: [Interacting with R using scripts](cm/cm012_using-scripts.md) 
+
+
 ---
 
 [main page](../README.md)<br> 

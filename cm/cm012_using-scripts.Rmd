@@ -10,6 +10,8 @@ File $\rightarrow$ Recent projects $\rightarrow$ me447_visualizing-data.Rproj.
 A script is a file of R commands. To start a new R script, use<br>
 File $\rightarrow$ New File $\rightarrow$ R Script.
 
+Next tutorial: [Use Windows Notepad for CSV files](cm/cm013_notepad-for-csv.md)
+
 ---
 
 [main page](../README.md)<br> 

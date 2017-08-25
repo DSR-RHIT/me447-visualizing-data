@@ -28,6 +28,8 @@ You may add folders to this organization as you become familiar with the softwar
 
 Different ways of organizing files can be used, of course --- the important thing is that you plan the organization from the beginning and then stick to it (for that project). The point of organizing your files now is to "make your workflow more coherent from the beginning and save you a lot of backtracking later on." (Gandrud, 2014)
 
+Next tutorial: [Interacting with R in the Console](cm/cm011_using-console.md)
+
 ------------------------------------------------------------------------
 
 [main page](../README.md)<br> [topics page](cm001_org-by-topic.md)
