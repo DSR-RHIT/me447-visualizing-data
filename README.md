@@ -20,7 +20,7 @@ The course is about creating truthful and compelling data visuals. We study elem
 week 0
 ------
 
-Getting started with R consists of these tutorials:
+Starting with R consists of these tutorials:
 
 -   [Organizing your files](cm/cm010_organize-files.md)
 -   [Interacting with R in the Console](cm/cm011_using-console.md)

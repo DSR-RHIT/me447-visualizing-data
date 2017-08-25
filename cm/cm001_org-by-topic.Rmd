@@ -16,13 +16,21 @@ output: github_document
 - Text: Naomi Robbins (2013) *Creating More Effective Graphs*, Chart House 
 - [Further reading](http://www.graphdoctor.com/archives/154) on graph design 
 
-
-
-## portfolio
-
-
-
 ## tutorials
+
+File management
+
+- [Organizing your files](../cm/cm010_organize-files.md)
+- [Using Windows Notepad for CSV files](../cm/cm013_notepad-for-csv.md)
+
+Interacting with R using RStudio
+
+- [Interacting with R in the Console](../cm/cm011_using-console.md)
+- [Interacting with R using scripts](../cm/cm012_using-scripts.md)
+
+
+
+
 
 
 
