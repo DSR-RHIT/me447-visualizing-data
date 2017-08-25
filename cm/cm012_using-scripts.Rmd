@@ -2,6 +2,10 @@
 output: github_document
 ---
 
+```{r echo = FALSE}
+knitr::opts_chunk$set(fig.keep = "high")
+```
+
 ## we usually interact with R using scripts
 
 Start by opening your RStudio project:<br> 
@@ -77,7 +81,7 @@ y1 <- sin(x1)
 
 Graph it.
 
-```{r}
+```{r cm012_sine-curve}
 # plot y1 as a function of x1
 plot(x1, y1)
 ```

@@ -1,8 +1,6 @@
 # ignore course management folders
 manage
-practiceR
-print_pages
-resources/readings
+resources
 student_work
 visuals
 

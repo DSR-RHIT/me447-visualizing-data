@@ -67,7 +67,7 @@ Graph it.
 plot(x1, y1)
 ```
 
-![](cm012_using-scripts_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-1.png)
+![](cm012_using-scripts_files/figure-markdown_github-ascii_identifiers/cm012_sine-curve-1.png)
 
 Click Source and the graph should appear in the Plots pane.
 

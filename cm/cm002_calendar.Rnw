@@ -1,0 +1,53 @@
+%----------------------------------------
+%
+%  Calendar
+%
+%  R. Layton
+%  2013-12-14
+%  rev. 2017-08-25
+%
+%----------------------------------------PREAMBLE
+\documentclass[oneside]{tufte-handout}
+
+\title{Calendar}
+\author{  }
+\date{  }
+
+%----------------------------------------INITIALIZE
+<<include=FALSE,echo=FALSE>>=
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(include = TRUE, echo = FALSE)
+@
+
+<<include=FALSE>>=
+# knitr options for handouts
+source("common/HandoutSettings.R")
+@
+
+% Input LaTeX packages
+% the .Rnw file location is the working directory for LaTeX commands
+\input{../common/LaTeXPackages}
+
+
+
+%----------------------------------------DESCRIPTION
+\begin{document}
+\begin{fullwidth}
+
+<< include=TRUE, echo=FALSE, message=FALSE, results="asis" >>=
+source("manage/02-gather-calendar.R")
+source("manage/03-make-calendar.R")
+# print LaTeX table
+print(calendar
+      , include.rownames = FALSE
+      , booktabs = TRUE
+      , hline.after = NULL
+      , size = "small"
+      , add.to.row = addtorow
+      )
+@
+\FloatBarrier
+
+\end{fullwidth}
+\end{document}
