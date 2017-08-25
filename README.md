@@ -31,6 +31,53 @@ Starting with R tutorials
 -   [Interacting with R using scripts](cm/cm012_using-scripts.md)
 -   [Use Windows Notepad for CSV files](cm/cm013_notepad-for-csv.md)
 
+Prepare for the discussion of this week's reading
+
+-   [Reading response form](cm/cm014_reading-response-form.pdf): print, answer the prompts, and bring to class on the due date
+
+week 2
+------
+
+week 3
+------
+
+Prepare for the discussion of this week's reading
+
+-   [Reading response form](cm/cm014_reading-response-form.pdf): print, answer the prompts, and bring to class on the due date
+
+week 4
+------
+
+week 5
+------
+
+Prepare for the discussion of this week's reading
+
+-   [Reading response form](cm/cm014_reading-response-form.pdf): print, answer the prompts, and bring to class on the due date
+
+week 6
+------
+
+week 7
+------
+
+week 8
+------
+
+Prepare for the discussion of this week's reading
+
+-   [Reading response form](cm/cm014_reading-response-form.pdf): print, answer the prompts, and bring to class on the due date
+
+week 9
+------
+
+week 10
+-------
+
+Prepare for the discussion of this week's reading
+
+-   [Reading response form](cm/cm014_reading-response-form.pdf): print, answer the prompts, and bring to class on the due date
+
 about
 -----
 

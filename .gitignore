@@ -1,5 +1,6 @@
 # ignore course management folders
 manage
+print_pages
 resources
 student_work
 visuals
