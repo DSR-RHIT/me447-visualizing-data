@@ -94,7 +94,7 @@ or equivalently,
 x = pi/6
 ```
 
-Conventional usage is `<-`. As Robert Kabakoff explains [1],
+Conventional usage is `<-`. As Robert Kabakoff (2011) explains,
 
 > R allows the = sign to be used for object assignments. However, you won't find many programs written that way because it's not standard syntax, there are some situations in which it won’t work, and R programmers will make fun of you.
 
@@ -186,5 +186,3 @@ Next tutorial: [Interacting with R using scripts](cm012_using-scripts.md)
 ------------------------------------------------------------------------
 
 [main page](../README.md)<br> [topics page](cm001_org-by-topic.md)
-
-[1] Robert Kabakoff (2011) *R in Action: Data analysis and graphics with R*, Manning Publications.

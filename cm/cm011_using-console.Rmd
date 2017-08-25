@@ -96,11 +96,9 @@ or equivalently,
 x = pi/6
 ```
 
-Conventional usage is `<-`. As Robert Kabakoff explains [^2], 
+Conventional usage is `<-`. As Robert Kabakoff (2011) explains, 
 
 > R allows the = sign to be used for object assignments. However, you won't find many programs written that way because it's not standard syntax, there are some situations in which it won’t work, and R programmers will make fun of you.
-
-[^2]: Robert Kabakoff (2011) *R in Action: Data analysis and graphics with R*, Manning Publications.
 
 If you use = and it works, I will not make fun of you.
 
@@ -114,14 +112,12 @@ x
 
 or use `print()`
 
-
 ```{r collapse = TRUE}
 # type this in your Console
 print(x)
 ```
 
 The default unit for angular measure is radians.
-
 
 ```{r collapse = TRUE}
 # type this in your Console
