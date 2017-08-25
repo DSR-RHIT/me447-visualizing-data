@@ -19,6 +19,13 @@ The course is about creating truthful and compelling data visuals. We study elem
 week 0
 ------
 
+Getting started with R consists of these tutorials:
+
+-   [Organizing your files](cm/cm010_organize-files.md)
+-   [Interacting with R in the Console](cm/cm011_using-console.md)
+-   [Interacting with R using scripts](cm/cm012_using-scripts.md)
+-   [Use Windows Notepad for CSV files](cm/cm013_notepad-for-csv.md)
+
 week 1
 ------
 

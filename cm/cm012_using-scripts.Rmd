@@ -1,0 +1,16 @@
+---
+output: github_document
+---
+
+## we usually interact with R using scripts
+
+Start by opening your RStudio project:<br> 
+File $\rightarrow$ Recent projects $\rightarrow$ me447_visualizing-data.Rproj.
+
+A script is a file of R commands. To start a new R script, use<br>
+File $\rightarrow$ New File $\rightarrow$ R Script.
+
+---
+
+[main page](../README.md)<br> 
+[topics page](cm001_org-by-topic.md)
