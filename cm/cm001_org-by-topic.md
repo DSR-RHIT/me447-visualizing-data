@@ -10,10 +10,9 @@ course management
 
 -   [Calendar](../cm/cm002_calendar.pdf)
 -   [Syllabus](../cm/cm003_syllabus.md)
--   [Getting help](../cm/cm004_getting-help.md)
--   Text: Naomi Robbins (2013) *Creating More Effective Graphs*, Chart House
+-   [Help](../cm/cm004_getting-help.md) links and references I use regularly
+-   [References](../cm/cm009_references.md) cited in the notes and tutorials
 -   [Further reading](http://www.graphdoctor.com/archives/154) on graph design
--   [References](../cm/cm009_references.md)
 
 tutorials
 ---------

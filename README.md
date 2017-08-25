@@ -4,7 +4,6 @@ me447 visualizing data
 
 -   Browse this page for material organized chronologically
 -   [Browse by topic](cm/cm001_org-by-topic.md)
--   [References](cm/cm009_references.md)
 
 visual rhetoric and R graphics for the R novice
 -----------------------------------------------
@@ -13,14 +12,14 @@ The course is about creating truthful and compelling data visuals. We study elem
 
 -   [Calendar](cm/cm002_calendar.pdf)
 -   [Syllabus](cm/cm003_syllabus.md)
--   [Getting help](cm/cm004_getting-help.md)
--   Text: Naomi Robbins (2013) *Creating More Effective Graphs*, Chart House
+-   [Help](cm/cm004_getting-help.md) links and references I use regularly
+-   [References](cm/cm009_references.md) cited in the notes and tutorials
 -   [Further reading](http://www.graphdoctor.com/archives/154) on graph design
 
 week 0
 ------
 
-Starting with R consists of these tutorials:
+Starting with R tutorials
 
 -   [Organizing your files](cm/cm010_organize-files.md)
 -   [Interacting with R in the Console](cm/cm011_using-console.md)
