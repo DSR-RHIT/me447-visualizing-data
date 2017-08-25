@@ -10,9 +10,14 @@ course management
 
 -   [Calendar](../cm/cm002_calendar.pdf)
 -   [Syllabus](../cm/cm003_syllabus.md)
--   [Help](../cm/cm004_getting-help.md) links and references I use regularly
+-   [Help links](../cm/cm004_getting-help.md) and references I use regularly
 -   [References](../cm/cm009_references.md) cited in the notes and tutorials
--   [Further reading](http://www.graphdoctor.com/archives/154) on graph design
+
+readings
+--------
+
+-   [Written response form](../cm/cm014_reading-response-form.pdf)
+-   [Further reading](http://www.graphdoctor.com/archives/154) on graph design (optional)
 
 tutorials
 ---------

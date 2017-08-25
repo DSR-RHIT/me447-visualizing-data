@@ -12,7 +12,7 @@ The course is about creating truthful and compelling data visuals. We study elem
 
 -   [Calendar](cm/cm002_calendar.pdf)
 -   [Syllabus](cm/cm003_syllabus.md)
--   [Help](cm/cm004_getting-help.md) links and references I use regularly
+-   [Help links](cm/cm004_getting-help.md) and references I use regularly
 -   [References](cm/cm009_references.md) cited in the notes and tutorials
 -   [Further reading](http://www.graphdoctor.com/archives/154) on graph design
 
@@ -31,9 +31,9 @@ Starting with R tutorials
 -   [Interacting with R using scripts](cm/cm012_using-scripts.md)
 -   [Use Windows Notepad for CSV files](cm/cm013_notepad-for-csv.md)
 
-Prepare for the discussion of this week's reading
+Prepare to discuss this week's reading
 
--   [Reading response form](cm/cm014_reading-response-form.pdf): print, answer the prompts, and bring to class on the due date
+-   [Written response form](cm/cm014_reading-response-form.pdf). Print the form, thoughtfully answer the prompts, and bring to class on the due date.
 
 week 2
 ------
@@ -41,9 +41,9 @@ week 2
 week 3
 ------
 
-Prepare for the discussion of this week's reading
+Prepare to discuss this week's reading
 
--   [Reading response form](cm/cm014_reading-response-form.pdf): print, answer the prompts, and bring to class on the due date
+-   [Written response form](cm/cm014_reading-response-form.pdf). Print the form, thoughtfully answer the prompts, and bring to class on the due date.
 
 week 4
 ------
@@ -51,9 +51,9 @@ week 4
 week 5
 ------
 
-Prepare for the discussion of this week's reading
+Prepare to discuss this week's reading
 
--   [Reading response form](cm/cm014_reading-response-form.pdf): print, answer the prompts, and bring to class on the due date
+-   [Written response form](cm/cm014_reading-response-form.pdf). Print the form, thoughtfully answer the prompts, and bring to class on the due date.
 
 week 6
 ------
@@ -64,9 +64,9 @@ week 7
 week 8
 ------
 
-Prepare for the discussion of this week's reading
+Prepare to discuss this week's reading
 
--   [Reading response form](cm/cm014_reading-response-form.pdf): print, answer the prompts, and bring to class on the due date
+-   [Written response form](cm/cm014_reading-response-form.pdf). Print the form, thoughtfully answer the prompts, and bring to class on the due date.
 
 week 9
 ------
@@ -74,9 +74,9 @@ week 9
 week 10
 -------
 
-Prepare for the discussion of this week's reading
+Prepare to discuss this week's reading
 
--   [Reading response form](cm/cm014_reading-response-form.pdf): print, answer the prompts, and bring to class on the due date
+-   [Written response form](cm/cm014_reading-response-form.pdf). Print the form, thoughtfully answer the prompts, and bring to class on the due date.
 
 about
 -----
