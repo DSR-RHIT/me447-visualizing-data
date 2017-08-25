@@ -24,7 +24,7 @@ Accessing R and RStudio
 week 1
 ------
 
-Starting with R tutorials
+Tutorial: Starting with R
 
 -   [Organizing your files](cm/cm010_organize-files.md)
 -   [Interacting with R in the Console](cm/cm011_using-console.md)

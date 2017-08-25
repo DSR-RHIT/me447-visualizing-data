@@ -16,7 +16,7 @@ course management
 readings
 --------
 
--   [Written response form](../cm/cm014_reading-response-form.pdf)
+-   [Written response form](../cm/cm014_reading-response-form.pdf) for readings assigned for discussion
 -   [Further reading](http://www.graphdoctor.com/archives/154) on graph design (optional)
 
 tutorials
