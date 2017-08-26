@@ -19,6 +19,12 @@ readings
 -   [Written response form](../cm/cm014_reading-response-form.pdf) for readings assigned for discussion
 -   [Further reading](http://www.graphdoctor.com/archives/154) on graph design (optional)
 
+portfolio
+---------
+
+-   [Requirements](../cm/cm014_portfolio-requirements.md)
+-   [Checklist](../cm/cm015_portfolio-checklist.pdf)
+
 tutorials
 ---------
 
