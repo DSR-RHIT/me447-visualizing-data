@@ -14,10 +14,18 @@ The course is about creating truthful and compelling data visuals. We study elem
 -   [Syllabus](cm/admin-03_syllabus.md)
 -   [Help links](cm/admin-04_getting-help.md) and references I use regularly
 -   [References](cm/admin-05_references.md) cited in the notes and tutorials
+-   [List of readings](cm/read-02_reading-list.md)
 -   [Further reading](http://www.graphdoctor.com/archives/154) on graph design
 
 week 0
 ------
+
+Reading
+
+-   [Calendar](cm/admin-02_calendar.pdf) for this week's readings
+-   [List of readings](cm/read-02_reading-list.md) for access details
+
+Activity
 
 -   Accessing R and RStudio
 -   [Portfolio requirements](cm/folio-01_portfolio-requirements.md)
@@ -26,6 +34,13 @@ week 0
 week 1
 ------
 
+Reading
+
+-   [Calendar](cm/admin-02_calendar.pdf) for this week's readings
+-   [List of readings](cm/read-02_reading-list.md) for access details
+-   Prepare for the reading discussion. The article will probably require more than one reading. Plan accordingly.
+-   [Written response form](cm/read-01_reading-response-form.pdf). Print the form, thoughtfully answer the prompts, and bring to class on the due date.
+
 Tutorial: Starting with R
 
 -   [Organizing your files](cm/tut-01_organize-files.md)
@@ -33,51 +48,86 @@ Tutorial: Starting with R
 -   [Interacting with R using scripts](cm/tut-03_using-scripts.md)
 -   [Use Windows Notepad for CSV files](cm/tut-04_notepad-for-csv.md)
 
-Prepare to discuss this week's reading
-
--   [Written response form](cm/read-01_reading-response-form.pdf). Print the form, thoughtfully answer the prompts, and bring to class on the due date.
-
 week 2
 ------
+
+Reading
+
+-   [Calendar](cm/admin-02_calendar.pdf) for this week's readings
+-   [List of readings](cm/read-02_reading-list.md) for access details
 
 week 3
 ------
 
-Prepare to discuss this week's reading
+Reading
 
+-   [Calendar](cm/admin-02_calendar.pdf) for this week's readings
+-   [List of readings](cm/read-02_reading-list.md) for access details
+-   Prepare for the reading discussion. The article will probably require more than one reading. Plan accordingly.
 -   [Written response form](cm/read-01_reading-response-form.pdf). Print the form, thoughtfully answer the prompts, and bring to class on the due date.
 
 week 4
 ------
 
+Reading
+
+-   [Calendar](cm/admin-02_calendar.pdf) for this week's readings
+-   [List of readings](cm/read-02_reading-list.md) for access details
+
 week 5
 ------
 
-Prepare to discuss this week's reading
+Reading
 
+-   [Calendar](cm/admin-02_calendar.pdf) for this week's readings
+-   [List of readings](cm/read-02_reading-list.md) for access details
+-   Prepare for the reading discussion. The article will probably require more than one reading. Plan accordingly.
 -   [Written response form](cm/read-01_reading-response-form.pdf). Print the form, thoughtfully answer the prompts, and bring to class on the due date.
 
 week 6
 ------
 
+Reading
+
+-   [Calendar](cm/admin-02_calendar.pdf) for this week's readings
+-   [List of readings](cm/read-02_reading-list.md) for access details
+
 week 7
 ------
+
+Reading
+
+-   [Calendar](cm/admin-02_calendar.pdf) for this week's readings
+-   [List of readings](cm/read-02_reading-list.md) for access details
 
 week 8
 ------
 
-Prepare to discuss this week's reading
+Reading
 
+-   [Calendar](cm/admin-02_calendar.pdf) for this week's readings
+-   [List of readings](cm/read-02_reading-list.md) for access details
+-   Prepare for the reading discussion. The article will probably require more than one reading. Plan accordingly.
 -   [Written response form](cm/read-01_reading-response-form.pdf). Print the form, thoughtfully answer the prompts, and bring to class on the due date.
 
 week 9
 ------
 
+Reading
+
+-   [Calendar](cm/admin-02_calendar.pdf) for this week's readings
+-   [List of readings](cm/read-02_reading-list.md) for access details
+
 week 10
 -------
 
-Prepare to discuss this week's reading
+Reading
 
+Reading
+
+-   [Calendar](cm/admin-02_calendar.pdf) for this week's readings
+-   [List of readings](cm/read-02_reading-list.md) for access details
+-   Prepare for the reading discussion. The article will probably require more than one reading. Plan accordingly.
 -   [Written response form](cm/read-01_reading-response-form.pdf). Print the form, thoughtfully answer the prompts, and bring to class on the due date.
 
 about

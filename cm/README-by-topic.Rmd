@@ -18,6 +18,7 @@ output: github_document
 ## readings
 
 - [Written response form](../cm/read-01_reading-response-form.pdf) for readings assigned for discussion 
+- [List of readings](../cm/read-02_reading-list.md)
 - [Further reading](http://www.graphdoctor.com/archives/154) on graph design (optional)
 
 ## portfolio
