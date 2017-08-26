@@ -21,14 +21,14 @@ All coursework is directed towards completing a portfolio that demonstrates the 
 - Produce publication-quality visuals. 
 - Credibly critique a data display. 
 
-Print the [portfolio checklist](../cm/cm015_portfolio-checklist.pdf) for your own use to check off requirements as you complete them. 
+Print the [portfolio checklist](../cm/cm016_portfolio-checklist.pdf) for your own use to check off requirements as you complete them. 
 
 ## the minimum 8 displays 
 
 D1 through D8 are the minimum set of required displays. Lectures and tutorials are devoted to developing your ability to create each type.  
 
 ```{r echo = FALSE, results = 'hide'}
-df <- read_excel("manage/02-data-portfolio-requirements.xlsx")
+df <- read_excel("manage/04-data-portfolio-requirements.xlsx")
 ```
 
 ```{r echo = FALSE}

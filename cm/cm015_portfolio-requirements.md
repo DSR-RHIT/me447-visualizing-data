@@ -11,7 +11,7 @@ All coursework is directed towards completing a portfolio that demonstrates the 
 -   Produce publication-quality visuals.
 -   Credibly critique a data display.
 
-Print the [portfolio checklist](../cm/cm015_portfolio-checklist.pdf) for your own use to check off requirements as you complete them.
+Print the [portfolio checklist](../cm/cm016_portfolio-checklist.pdf) for your own use to check off requirements as you complete them.
 
 the minimum 8 displays
 ----------------------

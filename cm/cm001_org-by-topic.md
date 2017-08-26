@@ -22,8 +22,8 @@ readings
 portfolio
 ---------
 
--   [Requirements](../cm/cm014_portfolio-requirements.md)
--   [Checklist](../cm/cm015_portfolio-checklist.pdf)
+-   [Requirements](../cm/cm015_portfolio-requirements.md)
+-   [Checklist](../cm/cm016_portfolio-checklist.pdf)
 
 tutorials
 ---------
