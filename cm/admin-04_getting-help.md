@@ -21,6 +21,7 @@ interesting views
 -----------------
 
 -   [10 tips for making your R graphics look their best](http://blog.revolutionanalytics.com/2009/01/10-tips-for-making-your-r-graphics-look-their-best.html) David Smith (2009)
+-   [10 tips for effective storytelling with data](http://www.storytellingwithdata.com/blog/2012/11/celebrating-almost-100-posts-with-10?rq=storytelling) Cole Nussbaumer Knaflic (2012)
 
 reference books
 ---------------
