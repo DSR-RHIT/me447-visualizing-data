@@ -21,7 +21,7 @@ week 0
 
 -   Accessing R and RStudio
 -   [Portfolio requirements](cm/cm014_portfolio-requirements.md)
--   [Portfolio checklist](cm/cm015_portfolio-checklist.pdf). Print the form for your own use to check off requirements as you complete them.
+-   [Portfolio checklist](cm/cm105_portfolio-checklist.pdf). Print the form for your own use to check off requirements as you complete them.
 
 week 1
 ------
