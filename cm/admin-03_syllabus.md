@@ -49,7 +49,7 @@ The major deliverables and their relative weights are:
 homework
 --------
 
-Success in this course depends on steady and productive weekly progress. Weekly assignments (see the [Calendar](cm/admin-02_calendar.pdf) for details) include
+Success in this course depends on steady and productive weekly progress. Weekly assignments (see the [Calendar](admin-02_calendar.pdf) for details) include
 
 -   R tutorials (about 20 total). We will have some time in class to get started. Plan to finish current tutorials before the start of class on the following Monday.
 -   Data graphics D1 through D8 plus written critiques. A minimum of 8 displays are expected in your portfolio; more than 8 is acceptable if necessary to meet the portfolio requirements. Each first draft is due at the beginning of class on its due date. Some are submitted to me for review and some are brought to class for round-table discussions.
