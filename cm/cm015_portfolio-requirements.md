@@ -58,6 +58,7 @@ Four of your displays must use data relevant to problems in your technical area.
 -   Redesigning a poorly designed graph from a journal or conference proceedings in your technical area.
 -   Using data from any research you have been involved with.
 -   Obtaining data from a Rose faculty member who needs help with data graphics.
+-   If you are a member of a team in another class or project you may act as a graph consultant for that team, creating data displays that contribute to the teams' work as well as your portfolio.
 
 redesigns
 ---------
@@ -65,7 +66,7 @@ redesigns
 A minimum of 4 displays must be redesigns of someone else's published display. At least one each of the following is required.
 
 1.  Redesign a multivariate bar chart or pie chart (a good candidate for D.3).
-2.  Redesign an infographic.
+2.  Redesign a marketing infographic ([infographic examples](https://www.customermagnetism.com/infographics/what-is-an-infographic/)).
 3.  Redesign a multivariate line graph (a good candidate for D.4).
 4.  Redesign a graphical lie.
 
