@@ -23,7 +23,7 @@ output: github_document
 ## portfolio
 
 - [Requirements](../cm/cm014_portfolio-requirements.md)
-- [Checklist](../cm/cm105_portfolio-checklist.pdf)
+- [Checklist](../cm/cm015_portfolio-checklist.pdf)
 
 ## tutorials
 
