@@ -34,7 +34,7 @@ File management
 
 Interacting with R using RStudio
 
-- [Interacting with R in the Console](../cm/tut-03_using-console.md)
+- [Interacting with R in the Console](../cm/tut-02_using-console.md)
 - [Interacting with R using scripts](../cm/tut-03_using-scripts.md)
 
 
