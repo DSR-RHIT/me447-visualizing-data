@@ -48,7 +48,7 @@ Reading
 
 Tutorials
 
--   D1 Scatterplots
+-   Scatterplots
 -   Data basics
 -   Document design: Markdown basics
 
@@ -61,7 +61,7 @@ Reading
 
 Tutorials
 
--   D2 Dot plots
+-   Dot plots
 -   Subsetting data
 -   Document design
 
@@ -80,7 +80,7 @@ Reading
 
 Tutorials
 
--   D3 Multiways
+-   Multiways
 -   Reshaping data
 -   Basic file management
 
@@ -97,7 +97,7 @@ Reading
 
 Tutorials
 
--   D4 Tables
+-   Tables
 -   Finding interesting data
 
 Presentations
@@ -115,7 +115,7 @@ Reading
 
 Tutorials
 
--   D5 Box plots
+-   Box plots
 -   Match display to data type
 -   Document design
 
@@ -132,7 +132,7 @@ Reading
 
 Tutorials
 
--   D6 Small multiples
+-   Small multiples
 
 Submissions
 
@@ -147,7 +147,7 @@ Reading
 
 Tutorials
 
--   D7 Beyond basic graphs: Learning new graph types on your own
+-   Beyond basic graphs: Learning new graph types on your own
 -   Color
 
 Presentations
@@ -165,7 +165,7 @@ Reading
 
 Tutorials
 
--   D8 Original displays: Designing your own data graphics
+-   Original displays: Designing your own data graphics
 -   Document design: Front and back matter
 
 Submissions

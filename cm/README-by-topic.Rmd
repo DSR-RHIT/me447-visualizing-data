@@ -34,14 +34,43 @@ output: github_document
 File management
 
 - [Organizing your files](../cm/tut-01_organize-files.md)
-- [Using Windows Notepad for CSV files](../cm/tut-04_notepad-for-csv.md)
+- [Using Windows Notepad for CSV files](../cm/tut-04_notepad-for-csv.md) 
+- Basic file management 
 
 Interacting with R using RStudio
 
 - [Interacting with R in the Console](../cm/tut-02_using-console.md)
 - [Interacting with R using scripts](../cm/tut-03_using-scripts.md)
 
+Display types  
 
+- Scatterplots
+- Dot plots 
+- Multiways 
+- Tables
+- Box plots 
+- Small multiples 
+
+Data
+
+- Data basics 
+- Subsetting data 
+- Reshaping data 
+- Finding interesting data 
+
+Documents 
+
+- Markdown basics 
+- Document design 1
+- Document design 2
+- Front and back matter 
+
+Design and rhetoric 
+
+- Color 
+- Match display to data type 
+- Learning new graph types on your own  
+- Designing your own data graphics
 
 
 
