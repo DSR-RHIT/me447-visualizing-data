@@ -11,7 +11,7 @@ All coursework is directed towards completing a portfolio that demonstrates the 
 -   Produce publication-quality visuals.
 -   Credibly critique a data display.
 
-Print the [portfolio checklist](../cm/cm016_portfolio-checklist.pdf) for your own use to check off requirements as you complete them.
+Print the [portfolio checklist](../cm/folio-02_portfolio-checklist.pdf) for your own use to check off requirements as you complete them.
 
 the minimum 8 displays
 ----------------------
@@ -122,6 +122,8 @@ Avoid the novice practice of sprinkling citations like confetti at New Year's to
 
 We will use the author-date citation style and automate the generation of formatted citations and references using R Markdown. More on that later in the term.
 
+Your portfolio concludes with a single bibliography.
+
 first drafts ≠ final drafts
 ---------------------------
 
@@ -133,4 +135,4 @@ That's all to be expected with our goal of crafting a showcase document.
 
 ------------------------------------------------------------------------
 
-[main page](../README.md)<br> [topics page](cm001_org-by-topic.md)
+[main page](../README.md)<br> [topics page](README-by-topic.md)

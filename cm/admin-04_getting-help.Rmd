@@ -33,4 +33,4 @@ ME447 Visualizing Data
 ---
 
 [main page](../README.md)<br> 
-[topics page](cm001_org-by-topic.md)
+[topics page](README-by-topic.md)

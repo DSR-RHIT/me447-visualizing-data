@@ -67,14 +67,14 @@ Graph it.
 plot(x1, y1)
 ```
 
-![](cm012_using-scripts_files/figure-markdown_github-ascii_identifiers/cm012_sine-curve-1.png)
+![](tut-03_using-scripts_files/figure-markdown_github-ascii_identifiers/cm012_sine-curve-1.png)
 
 Click Source and the graph should appear in the Plots pane.
 
-For more information on any of these functions in R, see the links I've provided on the [Getting help](cm/cm004_getting-help.md) page.
+For more information on any of these functions in R, see the links I've provided on the [Getting help](cm/admin-04_getting-help.md) page.
 
-Next tutorial: [Use Windows Notepad for CSV files](cm013_notepad-for-csv.md)
+Next tutorial: [Use Windows Notepad for CSV files](tut-04_notepad-for-csv.md)
 
 ------------------------------------------------------------------------
 
-[main page](../README.md)<br> [topics page](cm001_org-by-topic.md)
+[main page](../README.md)<br> [topics page](README-by-topic.md)
