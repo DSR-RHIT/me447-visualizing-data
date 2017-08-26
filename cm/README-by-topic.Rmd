@@ -11,15 +11,18 @@ output: github_document
 
 - [Calendar](../cm/admin-02_calendar.pdf) 
 - [Syllabus](../cm/admin-03_syllabus.md)
-- [Help links](../cm/admin-04_getting-help.md) and references I use regularly 
+
+## resources 
+
+- [Help links](../cm/admin-04_getting-help.md) and references I use regularly  
+- [Further reading](http://www.graphdoctor.com/archives/154) on graph design
 - [References](../cm/admin-05_references.md) cited in the notes and tutorials 
 
 
 ## readings
 
+- [Required reading list](../cm/read-02_reading-list.md)
 - [Written response form](../cm/read-01_reading-response-form.pdf) for readings assigned for discussion 
-- [List of readings](../cm/read-02_reading-list.md)
-- [Further reading](http://www.graphdoctor.com/archives/154) on graph design (optional)
 
 ## portfolio
 

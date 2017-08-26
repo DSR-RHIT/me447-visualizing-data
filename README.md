@@ -12,123 +12,191 @@ The course is about creating truthful and compelling data visuals. We study elem
 
 -   [Calendar](cm/admin-02_calendar.pdf)
 -   [Syllabus](cm/admin-03_syllabus.md)
+-   [Required reading list](cm/read-02_reading-list.md)
+-   [Portfolio requirements](cm/folio-01_portfolio-requirements.md)
+-   [Portfolio checklist](cm/folio-02_portfolio-checklist.pdf). Print the form for your own use to check off requirements as you complete them.
+
+Resources
+
 -   [Help links](cm/admin-04_getting-help.md) and references I use regularly
--   [References](cm/admin-05_references.md) cited in the notes and tutorials
--   [List of readings](cm/read-02_reading-list.md)
 -   [Further reading](http://www.graphdoctor.com/archives/154) on graph design
+-   [References](cm/admin-05_references.md) cited in the notes and tutorials
 
 week 0
 ------
 
 Reading
 
--   [Calendar](cm/admin-02_calendar.pdf) for this week's readings
--   [List of readings](cm/read-02_reading-list.md) for access details
+-   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's assigned readings and the [Required reading list](cm/read-02_reading-list.md) for how to access them.
 
-Activity
+Tutorials: Starting with R
 
--   Accessing R and RStudio
--   [Portfolio requirements](cm/folio-01_portfolio-requirements.md)
--   [Portfolio checklist](cm/folio-02_portfolio-checklist.pdf). Print the form for your own use to check off requirements as you complete them.
+-   Accessing R and Rstudio
+-   [Organizing your files](cm/tut-01_organize-files.md)
+-   [Interacting with R in the Console](cm/tut-02_using-console.md)
+-   [Interacting with R using scripts](cm/tut-03_using-scripts.md)
+-   [Use Windows Notepad for CSV files](cm/tut-04_notepad-for-csv.md)
 
 week 1
 ------
 
 Reading
 
--   [Calendar](cm/admin-02_calendar.pdf) for this week's readings
--   [List of readings](cm/read-02_reading-list.md) for access details
+-   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's assigned readings and the [Required reading list](cm/read-02_reading-list.md) for how to access them.
 -   Prepare for the reading discussion. The article will probably require more than one reading. Plan accordingly.
 -   [Written response form](cm/read-01_reading-response-form.pdf). Print the form, thoughtfully answer the prompts, and bring to class on the due date.
 
-Tutorial: Starting with R
+Tutorials
 
--   [Organizing your files](cm/tut-01_organize-files.md)
--   [Interacting with R in the Console](cm/tut-02_using-console.md)
--   [Interacting with R using scripts](cm/tut-03_using-scripts.md)
--   [Use Windows Notepad for CSV files](cm/tut-04_notepad-for-csv.md)
+-   D1 Scatterplots
+-   Data basics
+-   Document design: Markdown basics
 
 week 2
 ------
 
 Reading
 
--   [Calendar](cm/admin-02_calendar.pdf) for this week's readings
--   [List of readings](cm/read-02_reading-list.md) for access details
+-   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's assigned readings and the [Required reading list](cm/read-02_reading-list.md) for how to access them.
+
+Tutorials
+
+-   D2 Dot plots
+-   Subsetting data
+-   Document design
+
+Presentations
+
+-   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's display and critique presentation.
 
 week 3
 ------
 
 Reading
 
--   [Calendar](cm/admin-02_calendar.pdf) for this week's readings
--   [List of readings](cm/read-02_reading-list.md) for access details
+-   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's assigned readings and the [Required reading list](cm/read-02_reading-list.md) for how to access them.
 -   Prepare for the reading discussion. The article will probably require more than one reading. Plan accordingly.
 -   [Written response form](cm/read-01_reading-response-form.pdf). Print the form, thoughtfully answer the prompts, and bring to class on the due date.
+
+Tutorials
+
+-   D3 Multiways
+-   Reshaping data
+-   Basic file management
+
+Submissions
+
+-   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's display and critique submission for my review and comment.
 
 week 4
 ------
 
 Reading
 
--   [Calendar](cm/admin-02_calendar.pdf) for this week's readings
--   [List of readings](cm/read-02_reading-list.md) for access details
+-   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's assigned readings and the [Required reading list](cm/read-02_reading-list.md) for how to access them.
+
+Tutorials
+
+-   D4 Tables
+-   Finding interesting data
+
+Presentations
+
+-   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's display and critique presentation.
 
 week 5
 ------
 
 Reading
 
--   [Calendar](cm/admin-02_calendar.pdf) for this week's readings
--   [List of readings](cm/read-02_reading-list.md) for access details
+-   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's assigned readings and the [Required reading list](cm/read-02_reading-list.md) for how to access them.
 -   Prepare for the reading discussion. The article will probably require more than one reading. Plan accordingly.
 -   [Written response form](cm/read-01_reading-response-form.pdf). Print the form, thoughtfully answer the prompts, and bring to class on the due date.
+
+Tutorials
+
+-   D5 Box plots
+-   Match display to data type
+-   Document design
+
+Submissions
+
+-   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's display and critique submission for my review and comment.
 
 week 6
 ------
 
 Reading
 
--   [Calendar](cm/admin-02_calendar.pdf) for this week's readings
--   [List of readings](cm/read-02_reading-list.md) for access details
+-   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's assigned readings and the [Required reading list](cm/read-02_reading-list.md) for how to access them.
+
+Tutorials
+
+-   D6 Small multiples
+
+Submissions
+
+-   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's display and critique submission for my review and comment.
 
 week 7
 ------
 
 Reading
 
--   [Calendar](cm/admin-02_calendar.pdf) for this week's readings
--   [List of readings](cm/read-02_reading-list.md) for access details
+-   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's assigned readings and the [Required reading list](cm/read-02_reading-list.md) for how to access them.
+
+Tutorials
+
+-   D7 Beyond basic graphs: Learning new graph types on your own
+-   Color
+
+Presentations
+
+-   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's display and critique presentation.
 
 week 8
 ------
 
 Reading
 
--   [Calendar](cm/admin-02_calendar.pdf) for this week's readings
--   [List of readings](cm/read-02_reading-list.md) for access details
+-   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's assigned readings and the [Required reading list](cm/read-02_reading-list.md) for how to access them.
 -   Prepare for the reading discussion. The article will probably require more than one reading. Plan accordingly.
 -   [Written response form](cm/read-01_reading-response-form.pdf). Print the form, thoughtfully answer the prompts, and bring to class on the due date.
+
+Tutorials
+
+-   D8 Original displays: Designing your own data graphics
+-   Document design: Front and back matter
+
+Submissions
+
+-   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's display and critique submission for my review and comment.
 
 week 9
 ------
 
 Reading
 
--   [Calendar](cm/admin-02_calendar.pdf) for this week's readings
--   [List of readings](cm/read-02_reading-list.md) for access details
+-   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's assigned readings and the [Required reading list](cm/read-02_reading-list.md) for how to access them.
+
+Presentations
+
+-   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's display and critique presentation.
 
 week 10
 -------
 
 Reading
 
-Reading
-
--   [Calendar](cm/admin-02_calendar.pdf) for this week's readings
--   [List of readings](cm/read-02_reading-list.md) for access details
+-   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's assigned readings and the [Required reading list](cm/read-02_reading-list.md) for how to access them.
 -   Prepare for the reading discussion. The article will probably require more than one reading. Plan accordingly.
 -   [Written response form](cm/read-01_reading-response-form.pdf). Print the form, thoughtfully answer the prompts, and bring to class on the due date.
+
+Submissions
+
+-   Prepare to submit your completed portfolio, due during finals week.
+-   Please review the [portfolio requirements](cm/folio-01_portfolio-requirements.md) to make sure you haven't overlooked anything.
+-   Please print the [portfolio checklist](cm/folio-02_portfolio-checklist.pdf) for your own use to check that all requirements have been met.
 
 about
 -----
