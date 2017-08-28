@@ -2,12 +2,17 @@
 output: github_document
 ---
 
-## readings for discussion
+## required reading list 
+
 
 To open a link in a new browser tab
 
 - Ctrl-click, or
 - Right-click $\rightarrow$ Open link in new tab
+
+
+### readings for discussion
+
 
 Sam Dragga and Dan Voss (Aug 2001) Cruel pies: The inhumanity of technical illustrations, *Technical Communication*, 48(3), 265–274.
 
@@ -25,8 +30,7 @@ Howard Wainer (2014) [Fifteen displays about one thing](http://libproxy.rose-hul
 
 
 
-
-## readings for enlightenment
+### readings for enlightenment
 
 Charles Kostelnick (Nov 1998) Conflicting standards for designing data displays: Following, flouting, and reconciling them, *Technical Communication* 45(4), 473–482.
 
@@ -41,7 +45,7 @@ Catherine Constable (2017) Color: Essential, useful, or superfluous?, section 1.
 Cole Nussbaumer Knaflic (2012) [So what?](http://www.storytellingwithdata.com/blog/2017/3/22/so-what) from her blog *Storytelling with Data*.  
 
 
-## readings from the text
+### readings from the text
 
 Ch 2: Limitations of some common charts and graphs<br> 
 Ch 4: Some more effective graphs in one or two dimensions<br> 

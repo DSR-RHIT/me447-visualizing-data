@@ -1,11 +1,13 @@
 
-readings for discussion
------------------------
+required reading list
+---------------------
 
 To open a link in a new browser tab
 
 -   Ctrl-click, or
 -   Right-click → Open link in new tab
+
+### readings for discussion
 
 Sam Dragga and Dan Voss (Aug 2001) Cruel pies: The inhumanity of technical illustrations, *Technical Communication*, 48(3), 265–274.
 
@@ -17,8 +19,7 @@ Edward Tufte (1997) The decision to launch the space shuttle *Challenger*, from 
 
 Howard Wainer (2014) [Fifteen displays about one thing](http://libproxy.rose-hulman.edu:2048/login?url=http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=632290), Sections 2.9 and 2.10 from *Medical Illuminations: Using Evidence, Visualization, and Statistical Thinking to Improve Healthcar*e, Oxford, UK: Oxford University Press, 32–49. RHIT password protected access.
 
-readings for enlightenment
---------------------------
+### readings for enlightenment
 
 Charles Kostelnick (Nov 1998) Conflicting standards for designing data displays: Following, flouting, and reconciling them, *Technical Communication* 45(4), 473–482.
 
@@ -32,8 +33,7 @@ Catherine Constable (2017) Color: Essential, useful, or superfluous?, section 1.
 
 Cole Nussbaumer Knaflic (2012) [So what?](http://www.storytellingwithdata.com/blog/2017/3/22/so-what) from her blog *Storytelling with Data*.
 
-readings from the text
-----------------------
+### readings from the text
 
 Ch 2: Limitations of some common charts and graphs<br> Ch 4: Some more effective graphs in one or two dimensions<br> Ch 5: Trellis graphics and other ways to display more than two variables<br> Ch 6: General design principles for creating effective graphs<br> Ch 7: Scales<br> Ch 8: Applying what we've learned: *Before* and *after* example<br> Ch 10: Questions and answers<br>
 
