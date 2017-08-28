@@ -6,7 +6,8 @@ output: github_document
 
 Sam Dragga and Dan Voss (Aug 2001) Cruel pies: The inhumanity of technical illustrations, *Technical Communication*, 48(3), 265–274.
 
-Charles Kostelnick (Dec 2007) [The visual rhetoric of data displays: The conundrum of clarity](http://libproxy.rose-hulman.edu:2048/login?url=http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4381242), *IEEE Transactions on Professional Communication* 50(4), 280–294. RHIT password protected access.
+Charles Kostelnick (Dec 2007) 
+<a href="http://libproxy.rose-hulman.edu:2048/login?url=http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4381242" target="_blank">The visual rhetoric of data displays: The conundrum of clarity</a>, *IEEE Transactions on Professional Communication* 50(4), 280–294. RHIT password protected access.
 
 Ian Spence (2006) William Playfair and the psychology of graphs, *Proceedings of the American Statistical Association, Section on Statistical Graphics*, Alexandria VA: American Statistical Association, 2426–2436.
 
