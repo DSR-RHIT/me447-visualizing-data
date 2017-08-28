@@ -7,11 +7,13 @@ To open a link in a new browser tab
 -   Ctrl-click, or
 -   Right-click → Open link in new tab
 
-### readings from the text
+readings from the text
+----------------------
 
 Ch 2: Limitations of some common charts and graphs<br> Ch 4: Some more effective graphs in one or two dimensions<br> Ch 5: Trellis graphics and other ways to display more than two variables<br> Ch 6: General design principles for creating effective graphs<br> Ch 7: Scales<br> Ch 8: Applying what we've learned: *Before* and *after* example<br> Ch 10: Questions and answers<br>
 
-### readings from the literature
+readings from the literature
+----------------------------
 
 Constable, Catherine (2017) Color: Essential, useful, or superfluous?, section 1.1.6 from [Ch. 1 Graphical Rhetoric](https://igppweb.ucsd.edu/~cathy/Classes/SIO223A/vizlect.notes.pdf), course notes from SIO 223A Geophysical Data Analysis, 14–17.
 

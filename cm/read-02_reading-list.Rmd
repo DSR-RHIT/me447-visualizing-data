@@ -11,7 +11,7 @@ To open a link in a new browser tab
 
 
 
-### readings from the text
+## readings from the text
 
 Ch 2: Limitations of some common charts and graphs<br> 
 Ch 4: Some more effective graphs in one or two dimensions<br> 
@@ -23,7 +23,7 @@ Ch 10: Questions and answers<br>
 
 
 
-### readings from the literature
+## readings from the literature
 
 Constable, Catherine  (2017) Color: Essential, useful, or superfluous?, section 1.1.6 from [Ch. 1 Graphical Rhetoric](https://igppweb.ucsd.edu/~cathy/Classes/SIO223A/vizlect.notes.pdf), course notes from SIO 223A Geophysical Data Analysis, 14–17.
 
