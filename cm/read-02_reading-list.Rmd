@@ -20,7 +20,7 @@ csl: "../manage/csl/journal-of-peace-research.csl"
 | 3 | Thu | @Kostelnick2007 The conundrum of clarity. [Written response form](cm/read-01_reading-response-form.pdf) required for discussion.|
 |  | Fri | @Robbins2013 Ch 5: Trellis graphics and other ways to display more than two variables |
 | 4 | Tue | @Few2012 Differing roles of tables and graphs |
-|   | Fri | @Wainer1997 How to display data badly |
+|   | Fri | @Wainer2000 How to display data badly |
 | 5 | Tue | @Doumont2009  Designing the graph |
 |   | Thu | @Wainer2014 Fifteen displays about one thing. [Written response form](cm/read-01_reading-response-form.pdf) required for discussion. |
 | 6 | Tue | @Robbins2013 Ch 6: General design principles for creating effective graphs   |

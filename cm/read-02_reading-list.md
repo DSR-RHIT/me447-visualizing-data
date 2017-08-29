@@ -63,7 +63,7 @@ required reading
 <tr class="odd">
 <td align="center"></td>
 <td align="center">Fri</td>
-<td align="left"><span class="citation">Wainer (1997)</span> How to display data badly</td>
+<td align="left"><span class="citation">Wainer (2000)</span> How to display data badly</td>
 </tr>
 <tr class="even">
 <td align="center">5</td>
@@ -131,15 +131,15 @@ required reading
 bibliography
 ------------
 
-Constable, Catherine (2017) Color: Essential, useful, or superfluous? In: *Ch 1 Graphical Rhetoric*. SIO 223A Geophysical Data Analysis course notes, 14–17 (<https://igppweb.ucsd.edu/~cathy/Classes/SIO223A/vizlect.notes.pdf>).
+Constable, Catherine (2017) Color: Essential, useful, or superfluous? In: *Ch 1: Graphical Rhetoric*. Course notes for SIO 223A Geophysical Data Analysis, 14–17 (<https://igppweb.ucsd.edu/~cathy/Classes/SIO223A/vizlect.notes.pdf>).
 
-Doumont, Jean-luc (2009) Designing the graph. In: *Trees, Maps, and Theorems: Effective Communication for Rational Minds* 2nd ed. Belgium: Principiae, 133–143.
+Doumont, Jean-luc (2009) Designing the graph. In: *Trees, Maps, and Theorems: Effective Communication for Rational Minds* 2nd ed. Kraainem, Belgium: Principiae, 133–143.
 
 Dragga, Sam & Dan Voss (2001) Cruel pies: The inhumanity of technical illustrations. *Technical Communication* 48(3): 265–274.
 
 Few, Stephen (2012) Differing roles of tables and graphs. In: *Show Me the Numbers: Designing Tables and Graphs to Enlighten* 2nd ed. Burlingame, CA: Analytics Press, 39–51.
 
-Knaflic, Cole Nussbaumer (2012) So what? (<http://www.storytellingwithdata.com/blog/2017/3/22/so-what>).
+Knaflic, Cole Nussbaumer (2012) So what? Storytelling with data (blog) (<http://www.storytellingwithdata.com/blog/2017/3/22/so-what>).
 
 Kostelnick, Charles (1998) Conflicting standards for designing data displays: Following, flouting, and reconciling them. *Technical Communication* 45(4): 473–482.
 
@@ -147,11 +147,11 @@ Kostelnick, Charles (2007) The visual rhetoric of data displays: The conundrum o
 
 Robbins, Naomi (2013) *Creating More Effective Graphs*. Chart House.
 
-Spence, Ian (2006) William Playfair and the psychology of graphs. In: *IEEE Transactions on Professional Communication*. Alexandria, VA: American Statistical Association Section on Statistical Graphics, 2426–2436.
+Spence, Ian (2006) William Playfair and the psychology of graphs. In: *IEEE Transactions on Professional Communication*. Alexandria, VA: American Statistical Association, section on statistical graphics, 2426–2436.
 
 Tufte, Edward (1997) The decision to launch the space shuttle Challenger. In: *Visual and Statistical Thinking: Displays of Evidence for Making Decisions*. Cheshire, CT: Graphics Press, 16–31.
 
-Wainer, Howard (1997) Graphical failures: How to display data badly. In: *Visual Revelations: Graphical Tales of Fate and Deception from Napoleon Bonaparte to Ross Perot*. London: Lawrence Erlbaum Associates, 5–46.
+Wainer, Howard (2000) Graphical failures: How to display data badly. In: *Visual Revelations: Graphical Tales of Fate and Deception from Napoleon Bonaparte to Ross Perot*. Mahwah, NJ: Psychology Press, 11–40.
 
 Wainer, Howard (2014) Fifteen displays about one thing. In: *Medical Illuminations: Using Evidence, Visualization, and Statistical Thinking to Improve Healthcare*. UK: Oxford University Press, 32–49.
 
