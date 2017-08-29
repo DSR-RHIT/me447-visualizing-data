@@ -13,23 +13,23 @@ csl: "../manage/csl/journal-of-peace-research.csl"
 |Week  |Due    |Reading        |
 |:----:|:----:|:----------------------------------------------------- |
 | 1 | Mon | @Robbins2013 Ch 2: Limitations of some common charts and graphs 
-|  | Thu | @Tufte1997 Checkout a hard copy from me. [Written response form](cm/read-01_reading-response-form.pdf) required for discussion.|
+|  | Thu | @Tufte1997 Challenger launch decision. Checkout a hard copy from me. [Written response form](cm/read-01_reading-response-form.pdf) required for discussion.|
 | 2 | Tue | @Robbins2013 Ch 4: Some more effective graphs in one or two dimensions |
-|  | Fri | @Kostelnick1998 |
-| 3 | Thu | @Kostelnick2007 [Written response form](cm/read-01_reading-response-form.pdf) required for discussion.|
+|  | Fri | @Kostelnick1998 Conflicting standards |
+| 3 | Thu | @Kostelnick2007 The conundrum of clarity. [Written response form](cm/read-01_reading-response-form.pdf) required for discussion.|
 |  | Fri | @Robbins2013 Ch 5: Trellis graphics and other ways to display more than two variables |
-| 4 | Tue | @Few2012 |
-|   | Fri | @Wainer1997 |
-| 5 | Tue | @Doumont2009   |
-|   | Thu | @Wainer2014 [Written response form](cm/read-01_reading-response-form.pdf) required for discussion. |
+| 4 | Tue | @Few2012 Differing roles of tables and graphs |
+|   | Fri | @Wainer1997 How to display data badly |
+| 5 | Tue | @Doumont2009  Designing the graph |
+|   | Thu | @Wainer2014 Fifteen displays about one thing. [Written response form](cm/read-01_reading-response-form.pdf) required for discussion. |
 | 6 | Tue | @Robbins2013 Ch 6: General design principles for creating effective graphs   |
-| 7 | Tue | @Constable2017 Online. URL in bibliography below.   |
+| 7 | Tue | @Constable2017 Color. URL in bibliography below.   |
 |   | Fri | @Robbins2013 Ch 7: Scales |
-| 8 | Thu | @DraggaVoss2001  [Written response form](cm/read-01_reading-response-form.pdf) required for discussion. |
+| 8 | Thu | @DraggaVoss2001 Cruel pies.  [Written response form](cm/read-01_reading-response-form.pdf) required for discussion. |
 |   | Fri | @Robbins2013 Ch 8: Applying what we've learned: *Before* and *after* example |
-| 9 | Tue | @Knaflic2012 Online. URL in bibliography below.   |
+| 9 | Tue | @Knaflic2012 So what? URL in bibliography below.   |
 | 10 | Mon | @Robbins2013 Ch 10: Questions and answers  |
-|   | Thu | @Spence2006 [Written response form](cm/read-01_reading-response-form.pdf) required for discussion. |
+|   | Thu | @Spence2006 William Playfair. [Written response form](cm/read-01_reading-response-form.pdf) required for discussion. |
 
 
 
