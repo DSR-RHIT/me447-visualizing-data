@@ -14,7 +14,7 @@ The course is about creating truthful and compelling data visuals. We study elem
 -   [Syllabus](cm/admin-03_syllabus.md)
 -   [Required reading list](cm/read-02_reading-list.md)
 -   [Portfolio requirements](cm/folio-01_portfolio-requirements.md)
--   [Portfolio checklist](cm/folio-02_portfolio-checklist.pdf). Print the form for your own use to check off requirements as you complete them.
+-   Portfolio checklist is included in your course handbook (or you can view it [here](cm/folio-02_portfolio-checklist.pdf)). Use it to check off requirements as you complete them.
 
 Resources
 
@@ -31,7 +31,7 @@ Reading
 
 Tutorials: Starting with R
 
--   Accessing R and Rstudio
+-   Accessing R and RStudio
 -   [Organizing your files](cm/tut-01_organize-files.md)
 -   [Interacting with R in the Console](cm/tut-02_using-console.md)
 -   [Interacting with R using scripts](cm/tut-03_using-scripts.md)
@@ -44,7 +44,7 @@ Reading
 
 -   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's assigned readings and the [Required reading list](cm/read-02_reading-list.md) for how to access them.
 -   Prepare for the reading discussion. The article will probably require more than one reading. Plan accordingly.
--   [Written response form](cm/read-01_reading-response-form.pdf). Print the form, thoughtfully answer the prompts, and bring to class on the due date.
+-   A written response form is included in your course handbook (or you can view it [here](cm/read-01_reading-response-form.pdf)). Use it to thoughtfully answer the prompts and bring to class on the due date.
 
 Tutorials
 
@@ -76,7 +76,7 @@ Reading
 
 -   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's assigned readings and the [Required reading list](cm/read-02_reading-list.md) for how to access them.
 -   Prepare for the reading discussion. The article will probably require more than one reading. Plan accordingly.
--   [Written response form](cm/read-01_reading-response-form.pdf). Print the form, thoughtfully answer the prompts, and bring to class on the due date.
+-   A written response form is included in your course handbook (or you can view it [here](cm/read-01_reading-response-form.pdf)). Use it to thoughtfully answer the prompts and bring to class on the due date.
 
 Tutorials
 
@@ -111,7 +111,7 @@ Reading
 
 -   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's assigned readings and the [Required reading list](cm/read-02_reading-list.md) for how to access them.
 -   Prepare for the reading discussion. The article will probably require more than one reading. Plan accordingly.
--   [Written response form](cm/read-01_reading-response-form.pdf). Print the form, thoughtfully answer the prompts, and bring to class on the due date.
+-   A written response form is included in your course handbook (or you can view it [here](cm/read-01_reading-response-form.pdf)). Use it to thoughtfully answer the prompts and bring to class on the due date.
 
 Tutorials
 
@@ -161,7 +161,7 @@ Reading
 
 -   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's assigned readings and the [Required reading list](cm/read-02_reading-list.md) for how to access them.
 -   Prepare for the reading discussion. The article will probably require more than one reading. Plan accordingly.
--   [Written response form](cm/read-01_reading-response-form.pdf). Print the form, thoughtfully answer the prompts, and bring to class on the due date.
+-   A written response form is included in your course handbook (or you can view it [here](cm/read-01_reading-response-form.pdf)). Use it to thoughtfully answer the prompts and bring to class on the due date.
 
 Tutorials
 
@@ -190,7 +190,7 @@ Reading
 
 -   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's assigned readings and the [Required reading list](cm/read-02_reading-list.md) for how to access them.
 -   Prepare for the reading discussion. The article will probably require more than one reading. Plan accordingly.
--   [Written response form](cm/read-01_reading-response-form.pdf). Print the form, thoughtfully answer the prompts, and bring to class on the due date.
+-   A written response form is included in your course handbook (or you can view it [here](cm/read-01_reading-response-form.pdf)). Use it to thoughtfully answer the prompts and bring to class on the due date.
 
 Submissions
 
