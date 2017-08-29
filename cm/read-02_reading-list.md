@@ -4,7 +4,7 @@ required reading
 
 -   Complete references are in the bibliography below.
 -   Please complete reading assignments before the class period on the day shown.
--   [Written response form](cm/read-01_reading-response-form.pdf) is required for the days noted. Please complete the form before the class period.
+-   [Written response form](../cm/read-01_reading-response-form.pdf) is required for the days noted. Please complete the form before the class period.
 
 <table style="width:96%;">
 <colgroup>
@@ -33,7 +33,7 @@ required reading
 <tr class="odd">
 <td align="center"></td>
 <td align="center">Thu</td>
-<td align="left"><span class="citation">Tufte (1997)</span> Challenger launch decision. Checkout a hard copy from me. <a href="cm/read-01_reading-response-form.pdf">Written response form</a> required for discussion.</td>
+<td align="left"><span class="citation">Tufte (1997)</span> Challenger launch decision. Checkout a hard copy from me. <a href="../cm/read-01_reading-response-form.pdf">Written response form</a> required for discussion.</td>
 </tr>
 <tr class="even">
 <td align="center">2</td>
@@ -48,7 +48,7 @@ required reading
 <tr class="even">
 <td align="center">3</td>
 <td align="center">Thu</td>
-<td align="left"><span class="citation">Kostelnick (2007)</span> The conundrum of clarity. <a href="cm/read-01_reading-response-form.pdf">Written response form</a> required for discussion.</td>
+<td align="left"><span class="citation">Kostelnick (2007)</span> The conundrum of clarity. <a href="../cm/read-01_reading-response-form.pdf">Written response form</a> required for discussion.</td>
 </tr>
 <tr class="odd">
 <td align="center"></td>
@@ -73,7 +73,7 @@ required reading
 <tr class="odd">
 <td align="center"></td>
 <td align="center">Thu</td>
-<td align="left"><span class="citation">Wainer (2014)</span> Fifteen displays about one thing. <a href="cm/read-01_reading-response-form.pdf">Written response form</a> required for discussion.</td>
+<td align="left"><span class="citation">Wainer (2014)</span> Fifteen displays about one thing. <a href="../cm/read-01_reading-response-form.pdf">Written response form</a> required for discussion.</td>
 </tr>
 <tr class="even">
 <td align="center">6</td>
@@ -98,7 +98,7 @@ required reading
 <tr class="even">
 <td align="center">8</td>
 <td align="center">Thu</td>
-<td align="left"><span class="citation">Dragga &amp; Voss (2001)</span> Cruel pies. <a href="cm/read-01_reading-response-form.pdf">Written response form</a> required for discussion.</td>
+<td align="left"><span class="citation">Dragga &amp; Voss (2001)</span> Cruel pies. <a href="../cm/read-01_reading-response-form.pdf">Written response form</a> required for discussion.</td>
 </tr>
 <tr class="odd">
 <td align="center"></td>
@@ -123,7 +123,7 @@ required reading
 <tr class="odd">
 <td align="center"></td>
 <td align="center">Thu</td>
-<td align="left"><span class="citation">Spence (2006)</span> William Playfair. <a href="cm/read-01_reading-response-form.pdf">Written response form</a> required for discussion.</td>
+<td align="left"><span class="citation">Spence (2006)</span> William Playfair. <a href="../cm/read-01_reading-response-form.pdf">Written response form</a> required for discussion.</td>
 </tr>
 </tbody>
 </table>
