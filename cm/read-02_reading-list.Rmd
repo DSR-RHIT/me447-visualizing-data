@@ -6,38 +6,70 @@ csl: "../manage/csl/journal-of-peace-research.csl"
 
 ## required reading list 
 
-Readings from the text
 
-Ch 2: Limitations of some common charts and graphs<br> 
-Ch 4: Some more effective graphs in one or two dimensions<br> 
-Ch 5: Trellis graphics and other ways to display more than two variables<br> 
-Ch 6: General design principles for creating effective graphs<br> 
-Ch 7: Scales<br> 
-Ch 8: Applying what we've learned: *Before* and *after* example<br> 
-Ch 10: Questions and answers<br> 
+| Week  | Reading |
+| ------------- | ------------- |
+| 1  | Ch 2: Limitations of some common charts and graphs |
+|    | @Tufte1997 Checkout a hard copy from me.   |
+| 2  | Ch 4: Some more effective graphs in one or two dimensions |
+|    | @Kostelnick1998 |
 
 
+<!-- Week 1 -->
 
-Readings from the literature (citations)
+<!-- - Ch 2: Limitations of some common charts and graphs  -->
+<!-- - @Tufte1997 Checkout a hard copy from me.  -->
 
-@Constable2017    <br>
-@Doumont2009    <br>
-@DraggaVoss2001    <br>
-@Few2012    <br>
-@Knaflic2012    <br>
-@Kostelnick1998    <br>
-@Kostelnick2007    <br>
-@Spence2006  <br>
-@Tufte1997    <br>
-@Wainer1997    <br>
-@Wainer2014    <br>
+<!-- Week 2 -->
+
+<!-- - Ch 4: Some more effective graphs in one or two dimensions  -->
+<!-- - @Kostelnick1998  -->
+
+Week 3
+
+- Ch 5: Trellis graphics and other ways to display more than two variables
+- @Kostelnick2007 
+
+Week 4
+
+- @Few2012 
+- @Wainer1997 
+
+Week 5
+
+- @Doumont2009 
+- @Wainer2014 
+
+Week 6
+
+- Ch 6: General design principles for creating effective graphs 
+
+Week 7
+
+- Ch 7: Scales 
+- @Constable2017 Online. URL in bibliography below. 
+
+Week 8
+
+- Ch 8: Applying what we've learned: *Before* and *after* example
+- @DraggaVoss2001 
+
+Week 9
+
+- @Knaflic2012 Online. URL in bibliography below. 
+
+Week 10
+
+- Ch 10: Questions and answers
+- @Spence2006 
+
 
 ## bibliography
 
-To open a link in a new browser tab
+<!-- To open a link in a new browser tab -->
 
-- Ctrl-click, or
-- Right-click $\rightarrow$ Open link in new tab
+<!-- - Ctrl-click, or -->
+<!-- - Right-click $\rightarrow$ Open link in new tab -->
  
 <!-- Constable, Catherine  (2017) Color: Essential, useful, or superfluous?, section 1.1.6 from [Ch. 1 Graphical Rhetoric](https://igppweb.ucsd.edu/~cathy/Classes/SIO223A/vizlect.notes.pdf), course notes from SIO 223A Geophysical Data Analysis, 14–17. -->
 

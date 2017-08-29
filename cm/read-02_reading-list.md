@@ -2,22 +2,63 @@
 required reading list
 ---------------------
 
-Readings from the text
+| Week | Reading                                                   |
+|------|-----------------------------------------------------------|
+| 1    | Ch 2: Limitations of some common charts and graphs        |
+|      | Tufte (1997) Checkout a hard copy from me.                |
+| 2    | Ch 4: Some more effective graphs in one or two dimensions |
+|      | Kostelnick (1998)                                         |
 
-Ch 2: Limitations of some common charts and graphs<br> Ch 4: Some more effective graphs in one or two dimensions<br> Ch 5: Trellis graphics and other ways to display more than two variables<br> Ch 6: General design principles for creating effective graphs<br> Ch 7: Scales<br> Ch 8: Applying what we've learned: *Before* and *after* example<br> Ch 10: Questions and answers<br>
+<!-- Week 1 -->
+<!-- - Ch 2: Limitations of some common charts and graphs  -->
+<!-- - @Tufte1997 Checkout a hard copy from me.  -->
+<!-- Week 2 -->
+<!-- - Ch 4: Some more effective graphs in one or two dimensions  -->
+<!-- - @Kostelnick1998  -->
+Week 3
 
-Readings from the literature (citations)
+-   Ch 5: Trellis graphics and other ways to display more than two variables
+-   Kostelnick (2007)
 
-Constable (2017) <br> Doumont (2009) <br> Dragga & Voss (2001) <br> Few (2012) <br> Knaflic (2012) <br> Kostelnick (1998) <br> Kostelnick (2007) <br> Spence (2006) <br> Tufte (1997) <br> Wainer (1997) <br> Wainer (2014) <br>
+Week 4
+
+-   Few (2012)
+-   Wainer (1997)
+
+Week 5
+
+-   Doumont (2009)
+-   Wainer (2014)
+
+Week 6
+
+-   Ch 6: General design principles for creating effective graphs
+
+Week 7
+
+-   Ch 7: Scales
+-   Constable (2017) Online. URL in bibliography below.
+
+Week 8
+
+-   Ch 8: Applying what we've learned: *Before* and *after* example
+-   Dragga & Voss (2001)
+
+Week 9
+
+-   Knaflic (2012) Online. URL in bibliography below.
+
+Week 10
+
+-   Ch 10: Questions and answers
+-   Spence (2006)
 
 bibliography
 ------------
 
-To open a link in a new browser tab
-
--   Ctrl-click, or
--   Right-click → Open link in new tab
-
+<!-- To open a link in a new browser tab -->
+<!-- - Ctrl-click, or -->
+<!-- - Right-click $\rightarrow$ Open link in new tab -->
 <!-- Constable, Catherine  (2017) Color: Essential, useful, or superfluous?, section 1.1.6 from [Ch. 1 Graphical Rhetoric](https://igppweb.ucsd.edu/~cathy/Classes/SIO223A/vizlect.notes.pdf), course notes from SIO 223A Geophysical Data Analysis, 14–17. -->
 <!-- Doumont, Jean-luc  (2009) Designing the graph, from *Trees, maps, and theorems: Effective communication for rational minds*, Belgium: Principiae, 133–143. -->
 <!-- Dragga, Sam and Dan Voss (Aug 2001) Cruel pies: The inhumanity of technical illustrations, *Technical Communication*, 48(3), 265–274. -->
@@ -44,12 +85,12 @@ Knaflic, Cole Nussbaumer (2012) So what? (<http://www.storytellingwithdata.com/b
 
 Kostelnick, Charles (1998) Conflicting standards for designing data displays: Following, flouting, and reconciling them. *Technical Communication* 45(4): 473–482.
 
-Kostelnick, Charles (2007) The visual rhetoric of data displays: The conundrum of clarity. *IEEE Transactions on Professional Communication* 50(2): 280–294 (<http://libproxy.rose-hulman.edu:2048/login?url=http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4381242>).
+Kostelnick, Charles (2007) The visual rhetoric of data displays: The conundrum of clarity. *IEEE Transactions on Professional Communication* 50(2): 280–294.
 
 Spence, Ian (2006) William Playfair and the psychology of graphs. In: *IEEE Transactions on Professional Communication*. Alexandria, VA: American Statistical Association Section on Statistical Graphics, 2426–2436.
 
 Tufte, Edward (1997) The decision to launch the space shuttle Challenger. In: *Visual and Statistical Thinking: Displays of Evidence for Making Decisions*. Cheshire, CT: Graphics Press, 16–31.
 
-Wainer, Howard (1997) Graphical failures: How to display data badly. In: *Visual Revelations: Graphical Tales of Fate and Deception from Napoleon Bonaparte to Ross Perot*. London: Lawrence Erlbaum Associates, 5–46 (<http://libproxy.rose-hulman.edu:2048/login?url=http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=649619>).
+Wainer, Howard (1997) Graphical failures: How to display data badly. In: *Visual Revelations: Graphical Tales of Fate and Deception from Napoleon Bonaparte to Ross Perot*. London: Lawrence Erlbaum Associates, 5–46.
 
-Wainer, Howard (2014) Fifteen displays about one thing. In: *Medical Illuminations: Using Evidence, Visualization, and Statistical Thinking to Improve Healthcare*. UK: Oxford University Press, 32–49 (<http://libproxy.rose-hulman.edu:2048/login?url=http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=632290>).
+Wainer, Howard (2014) Fifteen displays about one thing. In: *Medical Illuminations: Using Evidence, Visualization, and Statistical Thinking to Improve Healthcare*. UK: Oxford University Press, 32–49.
