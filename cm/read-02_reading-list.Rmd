@@ -6,14 +6,7 @@ csl: "../manage/csl/journal-of-peace-research.csl"
 
 ## required reading list 
 
-To open a link in a new browser tab
-
-- Ctrl-click, or
-- Right-click $\rightarrow$ Open link in new tab
-
-
-
-## readings from the text
+Readings from the text
 
 Ch 2: Limitations of some common charts and graphs<br> 
 Ch 4: Some more effective graphs in one or two dimensions<br> 
@@ -25,23 +18,26 @@ Ch 10: Questions and answers<br>
 
 
 
-## readings from the literature
+Readings from the literature (citations)
 
-Citations
+@Constable2017    <br>
+@Doumont2009    <br>
+@DraggaVoss2001    <br>
+@Few2012    <br>
+@Knaflic2012    <br>
+@Kostelnick1998    <br>
+@Kostelnick2007    <br>
+@Spence2006  <br>
+@Tufte1997    <br>
+@Wainer1997    <br>
+@Wainer2014    <br>
 
-@Constable2017    
-@Doumont2009    
-@DraggaVoss2001    
-@Few2012    
-@Knaflic2012    
-@Kostelnick1998    
-@Kostelnick2007    
-@Spence2006  
-@Tufte1997    
-@Wainer1997    
-@Wainer2014    
+## bibliography
 
-Bibliography below
+To open a link in a new browser tab
+
+- Ctrl-click, or
+- Right-click $\rightarrow$ Open link in new tab
  
 <!-- Constable, Catherine  (2017) Color: Essential, useful, or superfluous?, section 1.1.6 from [Ch. 1 Graphical Rhetoric](https://igppweb.ucsd.edu/~cathy/Classes/SIO223A/vizlect.notes.pdf), course notes from SIO 223A Geophysical Data Analysis, 14–17. -->
 
@@ -80,7 +76,7 @@ Bibliography below
 <!-- Wainer, Howard  (2014) [Fifteen displays about one thing](http://libproxy.rose-hulman.edu:2048/login?url=http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=632290), Sections 2.9 and 2.10 from *Medical Illuminations: Using Evidence, Visualization, and Statistical Thinking to Improve Healthcar*e, Oxford, UK: Oxford University Press, 32–49. RHIT password protected access. -->
 
 
----
+
 
 
 
