@@ -21,59 +21,69 @@ required reading
 </thead>
 <tbody>
 <tr class="odd">
+<td align="center"></td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
 <td align="center">1</td>
 <td align="center">Mon</td>
 <td align="left"><span class="citation">Robbins (2013)</span> Ch 2: Limitations of some common charts and graphs</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="center"></td>
 <td align="center">Thu</td>
 <td align="left"><span class="citation">Tufte (1997)</span> Challenger launch decision. Checkout a hard copy from me. <a href="cm/read-01_reading-response-form.pdf">Written response form</a> required for discussion.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="center">2</td>
 <td align="center">Tue</td>
 <td align="left"><span class="citation">Robbins (2013)</span> Ch 4: Some more effective graphs in one or two dimensions</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="center"></td>
 <td align="center">Fri</td>
 <td align="left"><span class="citation">Kostelnick (1998)</span> Conflicting standards</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="center">3</td>
 <td align="center">Thu</td>
 <td align="left"><span class="citation">Kostelnick (2007)</span> The conundrum of clarity. <a href="cm/read-01_reading-response-form.pdf">Written response form</a> required for discussion.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="center"></td>
 <td align="center">Fri</td>
 <td align="left"><span class="citation">Robbins (2013)</span> Ch 5: Trellis graphics and other ways to display more than two variables</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="center">4</td>
 <td align="center">Tue</td>
 <td align="left"><span class="citation">Few (2012)</span> Differing roles of tables and graphs</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="center"></td>
 <td align="center">Fri</td>
 <td align="left"><span class="citation">Wainer (1997)</span> How to display data badly</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="center">5</td>
 <td align="center">Tue</td>
 <td align="left"><span class="citation">Doumont (2009)</span> Designing the graph</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="center"></td>
 <td align="center">Thu</td>
 <td align="left"><span class="citation">Wainer (2014)</span> Fifteen displays about one thing. <a href="cm/read-01_reading-response-form.pdf">Written response form</a> required for discussion.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="center">6</td>
 <td align="center">Tue</td>
 <td align="left"><span class="citation">Robbins (2013)</span> Ch 6: General design principles for creating effective graphs</td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center"></td>
+<td align="left"></td>
 </tr>
 <tr class="even">
 <td align="center">7</td>
@@ -101,11 +111,16 @@ required reading
 <td align="left"><span class="citation">Knaflic (2012)</span> So what? URL in bibliography below.</td>
 </tr>
 <tr class="odd">
+<td align="center"></td>
+<td align="center"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
 <td align="center">10</td>
 <td align="center">Mon</td>
 <td align="left"><span class="citation">Robbins (2013)</span> Ch 10: Questions and answers</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="center"></td>
 <td align="center">Thu</td>
 <td align="left"><span class="citation">Spence (2006)</span> William Playfair. <a href="cm/read-01_reading-response-form.pdf">Written response form</a> required for discussion.</td>
