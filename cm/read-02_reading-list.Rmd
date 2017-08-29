@@ -7,61 +7,18 @@ csl: "../manage/csl/journal-of-peace-research.csl"
 ## required reading list 
 
 
-| Week  | Reading |
-| ------------- | ------------- |
-| 1  | Ch 2: Limitations of some common charts and graphs |
-|    | @Tufte1997 Checkout a hard copy from me.   |
-| 2  | Ch 4: Some more effective graphs in one or two dimensions |
-|    | @Kostelnick1998 |
-
-
-<!-- Week 1 -->
-
-<!-- - Ch 2: Limitations of some common charts and graphs  -->
-<!-- - @Tufte1997 Checkout a hard copy from me.  -->
-
-<!-- Week 2 -->
-
-<!-- - Ch 4: Some more effective graphs in one or two dimensions  -->
-<!-- - @Kostelnick1998  -->
-
-Week 3
-
-- Ch 5: Trellis graphics and other ways to display more than two variables
-- @Kostelnick2007 
-
-Week 4
-
-- @Few2012 
-- @Wainer1997 
-
-Week 5
-
-- @Doumont2009 
-- @Wainer2014 
-
-Week 6
-
-- Ch 6: General design principles for creating effective graphs 
-
-Week 7
-
-- Ch 7: Scales 
-- @Constable2017 Online. URL in bibliography below. 
-
-Week 8
-
-- Ch 8: Applying what we've learned: *Before* and *after* example
-- @DraggaVoss2001 
-
-Week 9
-
-- @Knaflic2012 Online. URL in bibliography below. 
-
-Week 10
-
-- Ch 10: Questions and answers
-- @Spence2006 
+| Week    | Reading        |
+| :----: | :----------------------------------------------------- |
+| 1  | @Robbins2013 Ch 2: Limitations of some common charts and graphs <br> @Tufte1997 Checkout a hard copy from me. |
+| 2  | @Robbins2013 Ch 4: Some more effective graphs in one or two dimensions <br> @Kostelnick1998 |
+| 3  | @Robbins2013 Ch 5: Trellis graphics and other ways to display more than two variables <br> @Kostelnick2007 |
+| 4  | @Few2012 <br> @Wainer1997 |
+| 5  | @Doumont2009 <br> @Wainer2014 |
+| 6  | @Robbins2013 Ch 6: General design principles for creating effective graphs |
+| 7  | @Robbins2013 Ch 7: Scales <br> @Constable2017 Online. URL in bibliography below. |
+| 8  | @Robbins2013 Ch 8: Applying what we've learned: *Before* and *after* example <br> @DraggaVoss2001 |
+| 9  | @Knaflic2012 Online. URL in bibliography below. |
+|10  | @Robbins2013 Ch 10: Questions and answers <br> @Spence2006 |
 
 
 ## bibliography

@@ -2,56 +2,60 @@
 required reading list
 ---------------------
 
-| Week | Reading                                                   |
-|------|-----------------------------------------------------------|
-| 1    | Ch 2: Limitations of some common charts and graphs        |
-|      | Tufte (1997) Checkout a hard copy from me.                |
-| 2    | Ch 4: Some more effective graphs in one or two dimensions |
-|      | Kostelnick (1998)                                         |
-
-<!-- Week 1 -->
-<!-- - Ch 2: Limitations of some common charts and graphs  -->
-<!-- - @Tufte1997 Checkout a hard copy from me.  -->
-<!-- Week 2 -->
-<!-- - Ch 4: Some more effective graphs in one or two dimensions  -->
-<!-- - @Kostelnick1998  -->
-Week 3
-
--   Ch 5: Trellis graphics and other ways to display more than two variables
--   Kostelnick (2007)
-
-Week 4
-
--   Few (2012)
--   Wainer (1997)
-
-Week 5
-
--   Doumont (2009)
--   Wainer (2014)
-
-Week 6
-
--   Ch 6: General design principles for creating effective graphs
-
-Week 7
-
--   Ch 7: Scales
--   Constable (2017) Online. URL in bibliography below.
-
-Week 8
-
--   Ch 8: Applying what we've learned: *Before* and *after* example
--   Dragga & Voss (2001)
-
-Week 9
-
--   Knaflic (2012) Online. URL in bibliography below.
-
-Week 10
-
--   Ch 10: Questions and answers
--   Spence (2006)
+<table style="width:86%;">
+<colgroup>
+<col width="9%" />
+<col width="76%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Week</th>
+<th align="left">Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">1</td>
+<td align="left"><span class="citation">Robbins (2013)</span> Ch 2: Limitations of some common charts and graphs <br> <span class="citation">Tufte (1997)</span> Checkout a hard copy from me.</td>
+</tr>
+<tr class="even">
+<td align="center">2</td>
+<td align="left"><span class="citation">Robbins (2013)</span> Ch 4: Some more effective graphs in one or two dimensions <br> <span class="citation">Kostelnick (1998)</span></td>
+</tr>
+<tr class="odd">
+<td align="center">3</td>
+<td align="left"><span class="citation">Robbins (2013)</span> Ch 5: Trellis graphics and other ways to display more than two variables <br> <span class="citation">Kostelnick (2007)</span></td>
+</tr>
+<tr class="even">
+<td align="center">4</td>
+<td align="left"><span class="citation">Few (2012)</span> <br> <span class="citation">Wainer (1997)</span></td>
+</tr>
+<tr class="odd">
+<td align="center">5</td>
+<td align="left"><span class="citation">Doumont (2009)</span> <br> <span class="citation">Wainer (2014)</span></td>
+</tr>
+<tr class="even">
+<td align="center">6</td>
+<td align="left"><span class="citation">Robbins (2013)</span> Ch 6: General design principles for creating effective graphs</td>
+</tr>
+<tr class="odd">
+<td align="center">7</td>
+<td align="left"><span class="citation">Robbins (2013)</span> Ch 7: Scales <br> <span class="citation">Constable (2017)</span> Online. URL in bibliography below.</td>
+</tr>
+<tr class="even">
+<td align="center">8</td>
+<td align="left"><span class="citation">Robbins (2013)</span> Ch 8: Applying what we've learned: <em>Before</em> and <em>after</em> example <br> <span class="citation">Dragga &amp; Voss (2001)</span></td>
+</tr>
+<tr class="odd">
+<td align="center">9</td>
+<td align="left"><span class="citation">Knaflic (2012)</span> Online. URL in bibliography below.</td>
+</tr>
+<tr class="even">
+<td align="center">10</td>
+<td align="left"><span class="citation">Robbins (2013)</span> Ch 10: Questions and answers <br> <span class="citation">Spence (2006)</span></td>
+</tr>
+</tbody>
+</table>
 
 bibliography
 ------------
@@ -86,6 +90,8 @@ Knaflic, Cole Nussbaumer (2012) So what? (<http://www.storytellingwithdata.com/b
 Kostelnick, Charles (1998) Conflicting standards for designing data displays: Following, flouting, and reconciling them. *Technical Communication* 45(4): 473–482.
 
 Kostelnick, Charles (2007) The visual rhetoric of data displays: The conundrum of clarity. *IEEE Transactions on Professional Communication* 50(2): 280–294.
+
+Robbins, Naomi (2013) *Creating More Effective Graphs*. Chart House.
 
 Spence, Ian (2006) William Playfair and the psychology of graphs. In: *IEEE Transactions on Professional Communication*. Alexandria, VA: American Statistical Association Section on Statistical Graphics, 2426–2436.
 
