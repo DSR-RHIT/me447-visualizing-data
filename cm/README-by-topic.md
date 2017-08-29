@@ -22,13 +22,13 @@ readings
 --------
 
 -   [Required reading list](../cm/read-02_reading-list.md)
--   A written response form is included in your course handbook (or you can view it [here](cm/read-01_reading-response-form.pdf)). Use it to thoughtfully answer the prompts and bring to class on the due date.
+-   A written response form is included in your course handbook (or you can view it [here](../cm/read-01_reading-response-form.pdf)). Use it to thoughtfully answer the prompts and bring to class on the due date.
 
 portfolio
 ---------
 
 -   [Requirements](../cm/folio-01_portfolio-requirements.md)
--   Portfolio checklist is included in your course handbook (or you can view it [here](cm/folio-02_portfolio-checklist.pdf)). Use it to check off requirements as you complete them.
+-   Portfolio checklist is included in your course handbook (or you can view it [here](../cm/folio-02_portfolio-checklist.pdf)). Use it to check off requirements as you complete them.
 
 tutorials
 ---------
