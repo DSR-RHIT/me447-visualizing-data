@@ -1,0 +1,33 @@
+---
+output: github_document
+---
+
+```{r echo=FALSE}
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo = TRUE, messages = FALSE, collapse = TRUE)
+```
+
+## install and load a package
+
+*Packages* are R modules that you can download and install (like apps for R). Watch this [1-minute video](https://www.youtube.com/watch?v=ljdfqMfWn_A) to learn how to install an R package. 
+
+- Next, install the `ggplot2` package (by Hadley Wickham). 
+
+Once a package is installed, you load the package using the `library()` command.
+
+```{r}
+# to access the functionality of the ggplot2 package 
+library(ggplot2)
+```
+
+Again, add this line of code to your script and run the script by pressing the *Source* button. 
+
+
+Previous tutorial: [start a script for a scatterplot](tut-0301_start-scatterplot.md)<br>
+Next tutorial: [create a data frame](tut-0303_create-data-frame) 
+
+---
+
+[main page](../README.md)<br> 
+[topics page](README-by-topic.md)

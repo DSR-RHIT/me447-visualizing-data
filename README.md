@@ -46,11 +46,21 @@ Reading
 -   Prepare for the reading discussion. The article will probably require more than one reading. Plan accordingly.
 -   A written response form is included in your course handbook (or you can view it [here](cm/read-01_reading-response-form.pdf)). Use it to thoughtfully answer the prompts and bring to class on the due date.
 
-Tutorials
+Scatterplot tutorials
 
--   Scatterplots
--   Data basics
--   Document design: Markdown basics
+-   [Start a script](cm/tut-0301_start-scatterplot.md)
+-   [Install and load a package](cm/tut-0302_install-load-package.md)
+-   [Create a data frame](cm/tut-0303_create-data-frame.md)
+-   [Create a scatterplot](cm/tut-0304_create-scatterplot.md)
+-   [Edit the data markers](cm/tut-0305_edit-data-markers.md)
+-   [Edit the axis labels and title](cm/tut-0306_edit-axis-labels-title.md)
+-   [Edit the scales](cm/tut-0307_edit-scales.md)
+-   [Edit the theme](cm/tut-0308_edit-theme.md)
+-   [Scatterplot exercise](cm/tut-0309_scatterplot-exercise.md)
+
+Data basics tutorials
+
+Document design: Markdown basics tutorials
 
 week 2
 ------
