@@ -33,7 +33,7 @@ What the commands mean
 -   `geom_point()` draws points on a scatterplot
 -   `print()` prints the graph onscreen in the RStudio *Plots* pane.
 
-Previous tutorial: [start a script for a scatterplot](tut-0303_create-data-frame.md)<br> Next tutorial: [create a data frame](tut-0305_edit-data-markers.md)
+Previous tutorial: [create a data frame](tut-0303_create-data-frame.md)<br> Next tutorial: [edit data markers](tut-0305_edit-data-markers.md)
 
 ------------------------------------------------------------------------
 

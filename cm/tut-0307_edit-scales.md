@@ -48,7 +48,7 @@ Confirm your answers by typing the following in your Console and reading the res
 
 ------------------------------------------------------------------------
 
-Previous tutorial: [create a data frame](tut-0306_edit-axis-labels-title.md)<br> Next tutorial: [edit theme](tut-0308_edit-theme.md)
+Previous tutorial: [edit axis labels and title](tut-0306_edit-axis-labels-title.md)<br> Next tutorial: [edit theme](tut-0308_edit-theme.md)
 
 ------------------------------------------------------------------------
 

@@ -46,8 +46,8 @@ What the commands mean
 
 
 
-Previous tutorial: [start a script for a scatterplot](tut-0303_create-data-frame.md)<br>
-Next tutorial: [create a data frame](tut-0305_edit-data-markers.md)
+Previous tutorial: [create a data frame](tut-0303_create-data-frame.md)<br>
+Next tutorial: [edit data markers](tut-0305_edit-data-markers.md)
 
 
 ---

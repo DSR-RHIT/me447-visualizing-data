@@ -60,7 +60,7 @@ In practice, I usually just keep adding lines to the original `ggplot()` functio
         
     print(f1)
 
-Previous tutorial: [create a data frame](tut-0305_edit-data-markers.md)<br> Next tutorial : [edit the scales](tut-0307_edit-scales.md)
+Previous tutorial: [edit the data markers](tut-0305_edit-data-markers.md)<br> Next tutorial : [edit the scales](tut-0307_edit-scales.md)
 
 ------------------------------------------------------------------------
 
