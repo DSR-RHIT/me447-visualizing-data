@@ -15,7 +15,7 @@ library(ggplot2)
 
 Again, add this line of code to your script and run the script by pressing the *Source* button.
 
-Previous tutorial: [start a script for a scatterplot](tut-0301_start-scatterplot.md)<br> Next tutorial: [create a data frame](tut-0303_create-data-frame)
+Previous tutorial: [start a script for a scatterplot](tut-0301_start-scatterplot.md)<br> Next tutorial: [create a data frame](tut-0303_create-data-frame.md)
 
 ------------------------------------------------------------------------
 
