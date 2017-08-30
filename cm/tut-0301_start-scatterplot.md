@@ -1,12 +1,15 @@
 
-start a script (scatterplot)
-----------------------------
+starting a practiceR script
+---------------------------
 
 Start every session for our course work by launching your *me447\_visualizing-data.Rproj* file,
 
 *File* → *Open Project* → *me447\_visualizing-data.Rproj*
 
 Using an R Project sets the working directory to your course folder, making relative file paths easy to use.
+
+scatterplot
+-----------
 
 Start a new R script and save it to your *practiceR* directory.
 
