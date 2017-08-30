@@ -36,6 +36,9 @@ File management
 
 R
 
+- If you already use R and RStudio, please update R, RStudio, and packages to the most recent versions. 
+- [Install R and RStudio](https://github.com/DSR-RHIT/install-R-and-RStudio) 
+- [Set up an R Project](https://github.com/DSR-RHIT/install-R-and-RStudio) 
 - [Interacting with R in the Console](../cm/tut-02_using-console.md) 
 - [Interacting with R using scripts](../cm/tut-03_using-scripts.md) 
 - [Starting a practiceR script](../cm/tut-0301_start-scatterplot.md) 

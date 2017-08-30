@@ -25,6 +25,12 @@ Resources
 week 0
 ------
 
+Install the software
+
+-   If you already use R and RStudio, please update R, RStudio, and packages to the most recent versions.
+-   [Install R and RStudio](https://github.com/DSR-RHIT/install-R-and-RStudio)
+-   [Set up an R Project](https://github.com/DSR-RHIT/install-R-and-RStudio)
+
 Reading
 
 -   Check the [Calendar](cm/admin-02_calendar.pdf) for this week's assigned readings and the [Required reading list](cm/read-02_reading-list.md) for how to access them.
