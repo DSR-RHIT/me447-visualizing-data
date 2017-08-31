@@ -44,7 +44,7 @@ Confirm your answers by typing the variable name in the Console and viewing the 
 
 ---
 
-
+Please stop a minute. If you didn't take the quiz, please stop and do so. 
 
 
 

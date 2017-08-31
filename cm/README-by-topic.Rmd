@@ -86,7 +86,10 @@ Design and rhetoric
 
 - [Scatterplot exercise](../cm/tut-0309_scatterplot-exercise.md)
 
+## tutorial outcomes
 
+- [tut01_first-script.R](../practiceR/tut01_first-script.R)
+- [tut02_scatterplot.R](../practiceR/tut02_scatterplot.R)
 
 
 

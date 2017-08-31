@@ -6,13 +6,7 @@ output: github_document
 library(knitr)
 opts_knit$set(root.dir = "../")
 opts_chunk$set(echo = TRUE, messages = FALSE, collapse = TRUE)
-```
 
-## edit the scales
-
-Our scatterplot script to this point consists of
-
-```{r}
 library(ggplot2)
 
 time_sec  <- seq(0, 2*pi, by = pi/50) # sec
@@ -29,6 +23,17 @@ f1 <- ggplot(data = vibr_data, aes(x = time_sec, y = displ_mm)) +
 	xlab("Time (sec)") + 
 	ylab("Position (mm)") +
 	ggtitle("Scatterplot")
+
+```
+
+## edit the scales
+
+At this point in the tutorial, we expect you to have a *ggplot()* graph object called *f1* that looks like this: 
+
+If not, please return to the earlier tutorials. 
+
+```{r echo=FALSE}
+print(f1)
 ```
 
 Suppose we want the graph to have a 2 mm y-scale with tick marks at 1 mm intervals. 

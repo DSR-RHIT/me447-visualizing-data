@@ -14,7 +14,7 @@ scatterplot
 Start a new R script and save it to your *practiceR* directory.
 
 -   *File* → *New File* → *R Script*
--   *File* → *Save As ...* → \*\*tut02\_scatterplot.R\*
+-   *File* → *Save As ...* → *tut02\_scatterplot.R*
 
 My suggested file naming
 
@@ -37,6 +37,8 @@ Clearing variables from your workspace is optional.
 # if you like to start with an empty workspace 
 rm(list = (ls()))
 ```
+
+Whe you see a chunk of code set off like this, I would generally expect you to type it out in your own script.
 
 Style notes:
 

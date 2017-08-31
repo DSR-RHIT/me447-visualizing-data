@@ -28,21 +28,21 @@ options(digits = 3)
 # examine the data frame structure
 head(vibr_data)
 
-# chaining functions together using the plus (+) sign
+# the final graph, all elements chained together
 f1 <- ggplot(data = vibr_data, aes(x = time_sec, y = displ_mm)) +
 	geom_point(shape = 21
-						 , color = "slateblue4"
-						 , fill  = "slateblue1"
-						 , size  = 3
-	) +
+		, color = "slateblue4"
+		, fill  = "slateblue1"
+		, size  = 3
+		) +
 	xlab("Time (sec)") +
 	ylab("Position (mm)") +
 	ggtitle("Scatterplot") +
 	scale_y_continuous(limits = c(-2, 2), breaks = seq(-2, 2, 1)) +
 	theme_light() +
 	theme(plot.title = element_text(size = rel(0.9), face = "plain")
-				, axis.title = element_text(size = rel(0.9), face = "plain")
-				, axis.text = element_text(size = rel(0.9), face = "plain")
+		, axis.title = element_text(size = rel(0.9), face = "plain")
+		, axis.text = element_text(size = rel(0.9), face = "plain")
 	)
 
 print(f1)

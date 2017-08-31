@@ -6,13 +6,7 @@ output: github_document
 library(knitr)
 opts_knit$set(root.dir = "../")
 opts_chunk$set(echo = TRUE, messages = FALSE, collapse = TRUE)
-```
 
-## create a scatterplot 
-
-Our scatterplot script to this point consists of
-
-```{r}
 library(ggplot2)
 
 time_sec  <- seq(0, 2*pi, by = pi/50) # sec
@@ -20,6 +14,10 @@ freq      <- 2                        # r/s
 displ_mm  <- sin(freq * time_sec)     # mm
 vibr_data <- data.frame(time_sec, displ_mm)
 ```
+
+## create a scatterplot 
+
+At this point in the tutorial, we expect you to have a data frame *vibr_data* in your workspace with columns *time_sec* and *displ_mm*. If not, please return to the earlier tutorials. 
 
 The structure of our *ggplot2* scatterplot begins with identifying the data frame, the columns assigned as *x* and *y* variables, and using *points* as data markers.   
 

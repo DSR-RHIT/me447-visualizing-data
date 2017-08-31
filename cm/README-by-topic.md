@@ -88,6 +88,12 @@ exercises
 
 -   [Scatterplot exercise](../cm/tut-0309_scatterplot-exercise.md)
 
+tutorial outcomes
+-----------------
+
+-   [tut01\_first-script.R](../practiceR/tut01_first-script.R)
+-   [tut02\_scatterplot.R](../practiceR/tut02_scatterplot.R)
+
 ------------------------------------------------------------------------
 
 [main page](../README.md)

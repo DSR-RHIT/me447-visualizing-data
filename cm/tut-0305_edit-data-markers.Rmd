@@ -6,13 +6,7 @@ output: github_document
 library(knitr)
 opts_knit$set(root.dir = "../")
 opts_chunk$set(echo = TRUE, messages = FALSE, collapse = TRUE)
-```
 
-## edit the data markers 
-
-Our scatterplot script to this point consists of
-
-```{r}
 library(ggplot2)
 
 time_sec  <- seq(0, 2*pi, by = pi/50) # sec
@@ -24,6 +18,15 @@ f1 <- ggplot(data = vibr_data, aes(x = time_sec, y = displ_mm)) +
 	geom_point()
 ```
 
+## edit the data markers 
+
+At this point in the tutorial, we expect you to have a *ggplot()* graph object called *f1* that looks like this: 
+
+If not, please return to the earlier tutorials. 
+
+```{r echo=FALSE}
+print(f1)
+```
 
 Change the data marker using the `shape` argument, taking values between 1 and 25 for the [R default plotting symbols](http://www.cookbook-r.com/Graphs/Shapes_and_line_types/). Shapes numbered 21-25 have both `color` (outline) and `fill` color attributes. 
 

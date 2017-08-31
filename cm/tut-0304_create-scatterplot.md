@@ -2,16 +2,7 @@
 create a scatterplot
 --------------------
 
-Our scatterplot script to this point consists of
-
-``` r
-library(ggplot2)
-
-time_sec  <- seq(0, 2*pi, by = pi/50) # sec
-freq      <- 2                        # r/s
-displ_mm  <- sin(freq * time_sec)     # mm
-vibr_data <- data.frame(time_sec, displ_mm)
-```
+At this point in the tutorial, we expect you to have a data frame *vibr\_data* in your workspace with columns *time\_sec* and *displ\_mm*. If not, please return to the earlier tutorials.
 
 The structure of our *ggplot2* scatterplot begins with identifying the data frame, the columns assigned as *x* and *y* variables, and using *points* as data markers.
 
@@ -23,7 +14,7 @@ f1 <- ggplot(data = vibr_data, aes(x = time_sec, y = displ_mm)) +
 print(f1)
 ```
 
-![](tut-0304_create-scatterplot_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-3-1.png)
+![](tut-0304_create-scatterplot_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-2-1.png)
 
 What the commands mean
 

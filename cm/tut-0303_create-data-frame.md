@@ -36,6 +36,8 @@ Confirm your answers by typing the variable name in the Console and viewing the 
 
 ------------------------------------------------------------------------
 
+Please stop a minute. If you didn't take the quiz, please stop and do so.
+
 ``` r
 # ggplot2 requires data in data frame form
 vibr_data <- data.frame(time_sec, displ_mm)

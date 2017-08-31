@@ -21,7 +21,7 @@ Using an R Project sets the working directory to your course folder, making rela
 Start a new R script and save it to your *practiceR* directory. 
 
 - *File* $\rightarrow$ *New File* $\rightarrow$ *R Script*
-- *File* $\rightarrow$ *Save As ...* $\rightarrow$ **tut02_scatterplot.R*
+- *File* $\rightarrow$ *Save As ...* $\rightarrow$ *tut02_scatterplot.R*
 
 My suggested file naming 
 
@@ -46,6 +46,8 @@ Clearing variables from your workspace is optional.
 # if you like to start with an empty workspace 
 rm(list = (ls()))
 ```
+
+Whe you see a chunk of code set off like this, I would generally expect you to type it out in your own script. 
 
 Style notes: 
 

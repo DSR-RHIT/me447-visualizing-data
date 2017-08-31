@@ -39,6 +39,7 @@ Now you are ready to start the *Starting with R* tutorials.
 -   [Interacting with R in the Console](cm/tut-02_using-console.md)
 -   [Interacting with R using scripts](cm/tut-03_using-scripts.md)
 -   [Use Windows Notepad for CSV files](cm/tut-04_notepad-for-csv.md)
+-   [Tutorial outcome](practiceR/tut01_first-script.R) To check your work
 
 Reading
 
@@ -63,7 +64,8 @@ Scatterplot tutorials
 -   [Edit the axis labels and title](cm/tut-0306_edit-axis-labels-title.md)
 -   [Edit the scales](cm/tut-0307_edit-scales.md)
 -   [Edit the theme](cm/tut-0308_edit-theme.md)
--   [Scatterplot exercise](cm/tut-0309_scatterplot-exercise.md)
+-   [Tutorial outcome](practiceR/tut02_scatterplot.R) To check your work
+-   [Exercise](cm/tut-0309_scatterplot-exercise.md) To practice what you've learned
 
 Data basics tutorials
 

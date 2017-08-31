@@ -2,19 +2,11 @@
 edit the data markers
 ---------------------
 
-Our scatterplot script to this point consists of
+At this point in the tutorial, we expect you to have a *ggplot()* graph object called *f1* that looks like this:
 
-``` r
-library(ggplot2)
+If not, please return to the earlier tutorials.
 
-time_sec  <- seq(0, 2*pi, by = pi/50) # sec
-freq      <- 2                        # r/s
-displ_mm  <- sin(freq * time_sec)     # mm
-vibr_data <- data.frame(time_sec, displ_mm)
-
-f1 <- ggplot(data = vibr_data, aes(x = time_sec, y = displ_mm)) +
-    geom_point()
-```
+![](tut-0305_edit-data-markers_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-2-1.png)
 
 Change the data marker using the `shape` argument, taking values between 1 and 25 for the [R default plotting symbols](http://www.cookbook-r.com/Graphs/Shapes_and_line_types/). Shapes numbered 21-25 have both `color` (outline) and `fill` color attributes.
 
