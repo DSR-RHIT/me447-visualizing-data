@@ -21,12 +21,12 @@ Using an R Project sets the working directory to your course folder, making rela
 Start a new R script and save it to your *practiceR* directory. 
 
 - *File* $\rightarrow$ *New File* $\rightarrow$ *R Script*
-- *File* $\rightarrow$ *Save As ...* $\rightarrow$ *03_tut_scatterplot.R*
+- *File* $\rightarrow$ *Save As ...* $\rightarrow$ **tut02_scatterplot.R*
 
 My suggested file naming 
 
-- starts with *03* indicating the class day (40 total) we did the work
-- followed by *tut* indicating a tutorial 
+- starts with *tut* indicating a tutorial  
+- follows with with *02* indicating chronological order in which the tuitorials are assigned 
 - concludes with *scatterplot* indicating the topic 
 
 Begin the file with a header, something like this. 
@@ -60,7 +60,22 @@ To run the script after adding a new code chunk,
 - After running a script, the Console pane will show a prompt and a cursor,  `> |` indicating that your script executed with no errors. 
 
 
+## course directory check 
 
+We added new files to your directory
+
+    me447_visualizing-data
+      |- data
+      |- design 
+      |- portfolio 
+      |- practiceR 
+      |		|- tut01_first-script.R
+      |		`- tut02_scatterplot.R
+      |- visuals
+      `- me447_visualizing-data.Rproj
+
+
+--- 
 
 Next tutorial: [install and load a package](tut-0302_install-load-package.md) 
 

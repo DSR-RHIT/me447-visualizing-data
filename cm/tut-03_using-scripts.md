@@ -8,7 +8,15 @@ A script is a file of R commands. To start a new R script, use<br> File → New 
 
 ![](../images/panes-4.png)
 
-Save the script in the *practiceR* folder using the filename *tut001\_first-script.R*<br> File → Save As... → *tut001\_first-script.R*
+Save the script in the *practiceR* folder using the filename *tut01\_first-script.R*<br>
+
+File → Save As... → *tut01\_first-script.R*
+
+My suggested file naming for tutorials
+
+-   starts with *tut* indicating a tutorial
+-   follows with with *01* indicating chronological order in which the tuitorials are assigned
+-   concludes with *first-script* indicating the topic
 
 The open R-script file is shown in the Source pane. This is where we write, edit, and execute R scripts.
 
@@ -72,6 +80,22 @@ plot(x1, y1)
 Click Source and the graph should appear in the Plots pane.
 
 For more information on any of these functions in R, see the links I've provided on the [Getting help](cm/admin-04_getting-help.md) page.
+
+course directory check
+----------------------
+
+We added new files to your directory
+
+    me447_visualizing-data
+      |- data
+      |- design 
+      |- portfolio 
+      |- practiceR 
+      |     `- tut01_first-script.R
+      |- visuals
+      `- me447_visualizing-data.Rproj
+
+------------------------------------------------------------------------
 
 Next tutorial: [Use Windows Notepad for CSV files](tut-04_notepad-for-csv.md)
 

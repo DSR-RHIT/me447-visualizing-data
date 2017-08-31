@@ -14,12 +14,12 @@ scatterplot
 Start a new R script and save it to your *practiceR* directory.
 
 -   *File* → *New File* → *R Script*
--   *File* → *Save As ...* → *03\_tut\_scatterplot.R*
+-   *File* → *Save As ...* → \*\*tut02\_scatterplot.R\*
 
 My suggested file naming
 
--   starts with *03* indicating the class day (40 total) we did the work
--   followed by *tut* indicating a tutorial
+-   starts with *tut* indicating a tutorial
+-   follows with with *02* indicating chronological order in which the tuitorials are assigned
 -   concludes with *scatterplot* indicating the topic
 
 Begin the file with a header, something like this.
@@ -49,6 +49,23 @@ To run the script after adding a new code chunk,
 -   Press the *Source* button (in the upper-right corner of the script pane) to run your script.
 -   I recommend you acquire this habit to help you identify and debug problems as they occur.
 -   After running a script, the Console pane will show a prompt and a cursor, `> |` indicating that your script executed with no errors.
+
+course directory check
+----------------------
+
+We added new files to your directory
+
+    me447_visualizing-data
+      |- data
+      |- design 
+      |- portfolio 
+      |- practiceR 
+      |     |- tut01_first-script.R
+      |     `- tut02_scatterplot.R
+      |- visuals
+      `- me447_visualizing-data.Rproj
+
+------------------------------------------------------------------------
 
 Next tutorial: [install and load a package](tut-0302_install-load-package.md)
 
