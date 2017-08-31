@@ -34,7 +34,7 @@ ggplot(diamonds, aes(x = carat, y = price)) +
 
 
 
-Previous tutorial: [edit theme](tut-0308_edit-theme.md)
+
 
 ---
 

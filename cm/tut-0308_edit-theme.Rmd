@@ -64,7 +64,7 @@ print(f1)
 
 
 
-Previous tutorial: [edit the scales](tut-0307_edit-scales.md)<br>
+
 Next tutorial: [scatterplot exercise](tut-0309_scatterplot-exercise.md) 
 
 ---

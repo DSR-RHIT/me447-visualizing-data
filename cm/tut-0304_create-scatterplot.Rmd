@@ -44,7 +44,7 @@ What the commands mean
 
 
 
-Previous tutorial: [create a data frame](tut-0303_create-data-frame.md)<br>
+
 Next tutorial: [edit data markers](tut-0305_edit-data-markers.md)
 
 

@@ -83,7 +83,6 @@ head(vibr_data)
 
 
 
-Previous tutorial: [install and load a package](tut-0302_install-load-package.md)<br>
 Next tutorial: [create a scatterplot](tut-0304_create-scatterplot.md)
 
 ---

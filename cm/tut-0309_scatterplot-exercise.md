@@ -17,8 +17,6 @@ Use the methods presented in this tutorial to answer these questions.
 
 What visual problem have we not yet addressed?
 
-Previous tutorial: [edit theme](tut-0308_edit-theme.md)
-
 ------------------------------------------------------------------------
 
 [main page](../README.md)<br> [topics page](README-by-topic.md)

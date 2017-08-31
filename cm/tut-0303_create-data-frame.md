@@ -77,7 +77,7 @@ head(vibr_data)
 -   The integers are the row numbers of the data frame
 -   We'll talk about data frames in more detail soon
 
-Previous tutorial: [install and load a package](tut-0302_install-load-package.md)<br> Next tutorial: [create a scatterplot](tut-0304_create-scatterplot.md)
+Next tutorial: [create a scatterplot](tut-0304_create-scatterplot.md)
 
 ------------------------------------------------------------------------
 

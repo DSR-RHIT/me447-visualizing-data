@@ -37,7 +37,7 @@ print(f1)
 
 ![](tut-0308_edit-theme_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-1.png)
 
-Previous tutorial: [edit the scales](tut-0307_edit-scales.md)<br> Next tutorial: [scatterplot exercise](tut-0309_scatterplot-exercise.md)
+Next tutorial: [scatterplot exercise](tut-0309_scatterplot-exercise.md)
 
 ------------------------------------------------------------------------
 

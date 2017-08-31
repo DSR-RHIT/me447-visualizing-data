@@ -42,7 +42,7 @@ print(f1)
 
 We'll treat color in much more detail later, but for now, the document [Colors in R](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf) shows the default R colors by name.
 
-Previous tutorial: [create a scatterplot](tut-0304_create-scatterplot.md)<br> Next tutorial: [edit axis labels and title](tut-0306_edit-axis-labels-title.md)
+Next tutorial: [edit axis labels and title](tut-0306_edit-axis-labels-title.md)
 
 ------------------------------------------------------------------------
 
