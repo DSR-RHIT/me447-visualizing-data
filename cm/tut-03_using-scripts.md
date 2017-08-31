@@ -15,7 +15,7 @@ File → Save As... → *tut01\_first-script.R*
 My suggested file naming for tutorials
 
 -   starts with *tut* indicating a tutorial
--   follows with with *01* indicating chronological order in which the tuitorials are assigned
+-   follows with with *01* indicating chronological order in which the tutorials are assigned
 -   concludes with *first-script* indicating the topic
 
 The open R-script file is shown in the Source pane. This is where we write, edit, and execute R scripts.

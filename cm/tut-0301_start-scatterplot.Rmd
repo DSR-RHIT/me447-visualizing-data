@@ -26,7 +26,7 @@ Start a new R script and save it to your *practiceR* directory.
 My suggested file naming 
 
 - starts with *tut* indicating a tutorial  
-- follows with with *02* indicating chronological order in which the tuitorials are assigned 
+- follows with with *02* indicating chronological order in which the tutorials are assigned 
 - concludes with *scatterplot* indicating the topic 
 
 Begin the file with a header, something like this. 
