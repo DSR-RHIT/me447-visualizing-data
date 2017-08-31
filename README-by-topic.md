@@ -3,7 +3,7 @@ me447 visualizing data by topic
 ===============================
 
 -   Browse this page for material organized topically
--   [Browse the main page](../README.md) for material organized chronologically
+-   [Browse the main page](README.md) for material organized chronologically
 
 resources
 ---------
@@ -96,4 +96,4 @@ tutorial outcomes
 
 ------------------------------------------------------------------------
 
-[main page](../README.md)
+[main page](README.md)

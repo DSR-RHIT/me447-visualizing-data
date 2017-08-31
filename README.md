@@ -3,7 +3,7 @@ me447 visualizing data
 ======================
 
 -   Browse this page for material organized chronologically
--   [Browse by topic](cm/README-by-topic.md)
+-   [Browse by topic](README-by-topic.md)
 
 visual rhetoric and R graphics for the R novice
 -----------------------------------------------
