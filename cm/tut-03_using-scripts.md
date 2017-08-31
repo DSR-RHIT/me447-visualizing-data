@@ -22,7 +22,7 @@ The open R-script file is shown in the Source pane. This is where we write, edit
 
 Start your script with at least a minimal header, such as
 
-    # tut001_first-script
+    # tut01_first-script
     # your name
     # date
 

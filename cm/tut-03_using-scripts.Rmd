@@ -32,7 +32,7 @@ we write, edit, and execute R scripts.
 Start your script with at least a minimal header, such as
 
 ```
-# tut001_first-script
+# tut01_first-script
 # your name
 # date
 ```
