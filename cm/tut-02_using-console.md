@@ -56,7 +56,7 @@ The exponential function is `exp()`.
 ``` r
 # type this in your Console
 exp(2)
-## [1] 7.389056
+## [1] 7.39
 ```
 
 The base *e* logarithm function is `log()`.
@@ -64,7 +64,7 @@ The base *e* logarithm function is `log()`.
 ``` r
 # type this in your Console
 log(10)
-## [1] 2.302585
+## [1] 2.3
 
 log(exp(2))
 ## [1] 2
@@ -96,7 +96,7 @@ x = pi/6
 
 Conventional usage is `<-`. As Robert Kabakoff (2011) explains,
 
-> R allows the = sign to be used for object assignments. However, you won't find many programs written that way because it's not standard syntax, there are some situations in which it won’t work, and R programmers will make fun of you.
+> R allows the = sign to be used for object assignments. However, you won't find many programs written that way because it's not standard syntax, there are some situations in which it wonâ€™t work, and R programmers will make fun of you.
 
 If you use = and it works, I will not make fun of you.
 
@@ -105,7 +105,7 @@ When making assignments, no output appears in the console. To see the value of t
 ``` r
 # type this in your Console
 x
-## [1] 0.5235988
+## [1] 0.524
 ```
 
 or use `print()`
@@ -113,7 +113,7 @@ or use `print()`
 ``` r
 # type this in your Console
 print(x)
-## [1] 0.5235988
+## [1] 0.524
 ```
 
 The default unit for angular measure is radians.
@@ -138,7 +138,7 @@ The RStudio Environment pane lists the variables in the workspace and their valu
 
 ![](../images/panes-2.png)
 
-In the corner of the Environment pane, use the pull-down menu to change ”List” to ”Grid” to list the variable names, values, and types.
+In the corner of the Environment pane, use the pull-down menu to change â€Listâ€ to â€Gridâ€ to list the variable names, values, and types.
 
 ![](../images/panes-3.png)
 

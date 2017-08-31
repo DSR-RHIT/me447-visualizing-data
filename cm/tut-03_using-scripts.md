@@ -8,7 +8,7 @@ A script is a file of R commands. To start a new R script, use<br> File → New 
 
 ![](../images/panes-4.png)
 
-Save the script in the *learnR* folder using the filename *tut001\_first-script.R*<br> File → Save As... → *tut001\_first-script.R*
+Save the script in the *practiceR* folder using the filename *tut001\_first-script.R*<br> File → Save As... → *tut001\_first-script.R*
 
 The open R-script file is shown in the Source pane. This is where we write, edit, and execute R scripts.
 

@@ -48,7 +48,7 @@ Your critique explains your design rationale. Use evidence and cite relevant pri
 
 -   The readings provide credible support to your critique arguments.
 -   You present some of your displays in class to improve the displays and develop ideas for the critiques.
--   Plan to pre-write (elements of your argument), draft (it won’t be pretty but get it down), revise (writing is rewriting), edit (to polish), and check (facts and sources must be correct).
+-   Plan to pre-write (elements of your argument), draft (it wonâ€™t be pretty but get it down), revise (writing is rewriting), edit (to polish), and check (facts and sources must be correct).
 
 technical discipline data
 -------------------------
@@ -96,7 +96,7 @@ A maximum of 4 displays can be reproductions: designs you have copied from someo
 
 *Imitations.* Copy another's R code to display your data. Your data should have the same structure as theirs but dissimilar categories and observations. Adapt their code to your data and revise the reproduction to correct any major deficiencies.
 
-*Clones.* Write original code to copy another’s display. Find a published display you like but for which no code is available. You create original code to exactly recreate the display. Revise the reproduction to correct any major deficiencies.
+*Clones.* Write original code to copy anotherâ€™s display. Find a published display you like but for which no code is available. You create original code to exactly recreate the display. Revise the reproduction to correct any major deficiencies.
 
 In the portfolio, show the original display and your reproduction and critique both.
 

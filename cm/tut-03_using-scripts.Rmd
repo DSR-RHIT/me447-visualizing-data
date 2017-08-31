@@ -16,7 +16,7 @@ File $\rightarrow$ New File $\rightarrow$ R Script.
 
 ![](../images/panes-4.png)
 
-Save the script in the *learnR* folder using the filename *tut001_first-script.R*<br>
+Save the script in the *practiceR* folder using the filename *tut001_first-script.R*<br>
 File $\rightarrow$ Save As... $\rightarrow$ *tut001_first-script.R*
 
 The open R-script file is shown in the Source pane. This is where

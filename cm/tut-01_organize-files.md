@@ -7,20 +7,20 @@ If you were successful in following the project setup instructions, you have a f
     me447_visualizing-data
       `- me447_visualizing-data.Rproj
 
-In your course folder, please create sub-folders (or sub-directories) called *data*, *design*, *learnR*, *portfolio*, and *visuals*. In the tutorials, I use relative file paths that depend on this file organization.
+In your course folder, please create sub-folders (or sub-directories) called *data*, *design*, *portfolio*, *learnR*, and *visuals*. In the tutorials, I use relative file paths that depend on this file organization.
 
 -   *data* is for all data files and the R files to reshape the data, preparing it for graphing.
 -   *design* is for the R files that operate on the prepared data files to produce the data graphic images saved in *visuals.*
 -   *portfolio* is for your portfolio drafts, feedback, and critiques.
--   *learnR* is for files you write or download to learn R. For example, this would be the directory in which you save the R files you write as you work through this ”Getting started” lesson.
+-   *practiceR* is for files you write or download to learn R. For example, this would be the directory in which you save the R files you write as you work through this â€Getting startedâ€ lesson.
 
 The course directory should look like this:
 
     me447_visualizing-data
       |- data
       |- design 
-      |- learnR 
       |- portfolio 
+      |- practiceR 
       |- visuals
       `- me447_visualizing-data.Rproj
 

@@ -9,6 +9,7 @@ visuals
 README.Rmd
 course_notebook*
 cleanall.R
+render_cm.R
 
 # ignore holding folders
 holding
