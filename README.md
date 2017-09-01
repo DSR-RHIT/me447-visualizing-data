@@ -12,11 +12,20 @@ The course is about creating truthful and compelling data visuals. We study elem
 
 -   [Calendar](cm/admin-02_calendar.pdf)
 -   [Syllabus](cm/admin-03_syllabus.md)
--   [Required reading list](cm/read-02_reading-list.md)
--   [Portfolio requirements](cm/folio-01_portfolio-requirements.md)
--   Portfolio checklist is included in your course handbook (or you can view it [here](cm/folio-02_portfolio-checklist.pdf)). Use it to check off requirements as you complete them.
 
-Resources
+readings
+--------
+
+-   [Required reading list](cm/read-02_reading-list.md)
+
+portfolio
+---------
+
+-   [Portfolio requirements](cm/folio-01_portfolio-requirements.md)
+-   [Portfolio checklist](cm/folio-02_portfolio-checklist.pdf) is also included in your course handbook. Use it to check off requirements as you complete them.
+
+resources
+---------
 
 -   [Help links](cm/admin-04_getting-help.md) and references I use regularly
 -   [Further reading](http://www.graphdoctor.com/archives/154) on graph design
