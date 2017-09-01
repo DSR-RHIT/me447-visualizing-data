@@ -25,17 +25,15 @@ Resources
 week 0
 ------
 
-Install the software. If you already use R and RStudio, please update R, RStudio, and packages to the most recent versions.
+Setup
 
--   [Install R and RStudio](https://github.com/DSR-RHIT/install-R-and-RStudio)
-
-Next, set up a directory on your computer for the course and make it an *R Project*.
-
--   [Set up an R Project](https://github.com/DSR-RHIT/install-R-and-RStudio)
-
-Now you are ready to start the *Starting with R* tutorials.
-
+-   [Install R and RStudio](https://github.com/DSR-RHIT/install-R-and-RStudio). If you already use R and RStudio, please update R, RStudio, and packages to the most recent versions.
+-   Create a directory (folder) for our course in your usual fashion. Name it what you like, though in these notes I'll call it the *me447-visualizing-data* directory.
+-   [Set up an R Project](https://github.com/DSR-RHIT/install-R-and-RStudio). Make your course folder into an R Project.
 -   [Organizing your files](cm/tut-01_organize-files.md)
+
+Start with R
+
 -   [Interacting with R in the Console](cm/tut-02_using-console.md)
 -   [Interacting with R using scripts](cm/tut-03_using-scripts.md)
 -   [Use Windows Notepad for CSV files](cm/tut-04_notepad-for-csv.md)

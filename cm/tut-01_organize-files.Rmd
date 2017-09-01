@@ -17,7 +17,7 @@ preparing it for graphing.
 files to produce the data graphic images saved in *visuals.*
 - *portfolio* is for your portfolio drafts, feedback, and critiques.
 - *practiceR* is for files you write or download to learn R. For
-example, this would be the directory in which you save the R files you write as you work through this ”Getting started” lesson. 
+example, this would be the directory in which you save the R files you write as you work through this *Getting started* lesson. 
 
 The course directory should look like this: 
 

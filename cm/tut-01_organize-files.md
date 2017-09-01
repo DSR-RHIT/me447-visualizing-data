@@ -12,7 +12,7 @@ In your course folder, please create sub-folders (or sub-directories) called *da
 -   *data* is for all data files and the R files to reshape the data, preparing it for graphing.
 -   *design* is for the R files that operate on the prepared data files to produce the data graphic images saved in *visuals.*
 -   *portfolio* is for your portfolio drafts, feedback, and critiques.
--   *practiceR* is for files you write or download to learn R. For example, this would be the directory in which you save the R files you write as you work through this â€Getting startedâ€ lesson.
+-   *practiceR* is for files you write or download to learn R. For example, this would be the directory in which you save the R files you write as you work through this *Getting started* lesson.
 
 The course directory should look like this:
 
