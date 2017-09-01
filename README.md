@@ -45,6 +45,7 @@ assignments
 -   [Week 8](cm/week-08_assignments.md)
 -   [Week 9](cm/week-09_assignments.md)
 -   [Week 10](cm/week-10_assignments.md)
+-   Finals week: portfolio is due
 
 about
 -----
