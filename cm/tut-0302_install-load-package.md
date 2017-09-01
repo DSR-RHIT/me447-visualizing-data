@@ -11,6 +11,8 @@ Once a package is installed, you load the package using the `library()` command.
 ``` r
 # to access the functionality of the ggplot2 package 
 library(ggplot2)
+## Use suppressPackageStartupMessages() to eliminate package startup
+## messages.
 ```
 
 Again, add this line of code to your script and run the script by pressing the *Source* button.

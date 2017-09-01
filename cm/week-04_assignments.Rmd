@@ -1,0 +1,32 @@
+---
+output: github_document
+bibliography: "../manage/refs.bib" 
+csl: "../manage/csl/journal-of-peace-research.csl"
+---
+
+## week 4
+
+Reading 
+
+- @Few2012 Differing roles of tables and graphs
+- @Wainer2000 How to display data badly
+
+Tutorials
+
+- Tables
+- Finding interesting data  
+
+
+Presentations
+
+- Check the [Calendar](admin-02_calendar.pdf) for this week's display and critique presentation. 
+
+
+## bibliography 
+
+<div id="refs"></div>
+  
+---
+
+[main page](../README.md)<br>
+[topics page](README-by-topic.md)

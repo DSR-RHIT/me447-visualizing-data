@@ -1,0 +1,37 @@
+---
+output: github_document
+bibliography: "../manage/refs.bib" 
+csl: "../manage/csl/journal-of-peace-research.csl"
+---
+
+## week 0
+
+Setup
+
+- [Install R and RStudio](https://github.com/DSR-RHIT/install-R-and-RStudio). If you already use R and RStudio, please update R, RStudio, and packages to the most recent versions. 
+- Create a directory (folder) for our course in your usual fashion. Name it what you like, though in these notes I'll call it the  *me447-visualizing-data* directory. 
+- [Set up an R Project](https://github.com/DSR-RHIT/install-R-and-RStudio). Make your course folder into an R Project.  
+- [Organizing your files](cm/tut-01_organize-files.md)
+ 
+Start with R  
+
+- [Interacting with R in the Console](cm/tut-02_using-console.md)
+- [Interacting with R using scripts](cm/tut-03_using-scripts.md)
+- [Use Windows Notepad for CSV files](cm/tut-04_notepad-for-csv.md)
+- [Tutorial outcome](practiceR/tut01_first-script.R) To check your work 
+
+Reading
+
+- [Calendar](cm/admin-02_calendar.pdf) 
+- [Syllabus](cm/admin-03_syllabus.md) 
+- [Portfolio](cm/folio-01_portfolio-requirements.md)
+
+
+## bibliography 
+
+<div id="refs"></div>
+  
+---
+
+[main page](../README.md)<br>
+[topics page](README-by-topic.md)

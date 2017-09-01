@@ -1,0 +1,31 @@
+---
+output: github_document
+bibliography: "../manage/refs.bib" 
+csl: "../manage/csl/journal-of-peace-research.csl"
+---
+
+## week 7
+
+Reading 
+
+- @Constable2017 Color. URL in bibliography below. 
+- @Robbins2013 Ch 7: Scales 
+
+Tutorials
+
+- Beyond basic graphs: Learning new graph types on your own 
+- Color 
+
+Presentations
+
+- Check the [Calendar](admin-02_calendar.pdf) for this week's display and critique presentation. 
+
+
+## bibliography 
+
+<div id="refs"></div>
+  
+---
+
+[main page](../README.md)<br>
+[topics page](README-by-topic.md)

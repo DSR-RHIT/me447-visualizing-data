@@ -1,0 +1,33 @@
+---
+output: github_document
+bibliography: "../manage/refs.bib" 
+csl: "../manage/csl/journal-of-peace-research.csl"
+---
+
+
+## week 3
+
+Reading
+
+- @Kostelnick2007 The conundrum of clarity. [Written response](read-01_reading-response-form.pdf) required for discussion.
+- @Robbins2013 Ch 5: Trellis graphics and other ways to display more than two variable
+
+Tutorials
+
+- Multiways
+- Reshaping data  
+- Basic file management  
+
+Submissions
+
+- Check the [Calendar](admin-02_calendar.pdf) for this week's display and critique submission for my review and comment. 
+
+
+## bibliography 
+
+<div id="refs"></div>
+  
+---
+
+[main page](../README.md)<br>
+[topics page](README-by-topic.md)

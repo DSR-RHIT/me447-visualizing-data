@@ -1,0 +1,25 @@
+---
+output: github_document
+bibliography: "../manage/refs.bib" 
+csl: "../manage/csl/journal-of-peace-research.csl"
+---
+
+## week 9
+
+Reading
+
+- @Knaflic2012 So what? URL in bibliography below.
+
+Presentations
+
+- Check the [Calendar](admin-02_calendar.pdf) for this week's display and critique presentation. 
+
+
+## bibliography 
+
+<div id="refs"></div>
+  
+---
+
+[main page](../README.md)<br>
+[topics page](README-by-topic.md)

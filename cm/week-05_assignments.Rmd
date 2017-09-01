@@ -1,0 +1,32 @@
+---
+output: github_document
+bibliography: "../manage/refs.bib" 
+csl: "../manage/csl/journal-of-peace-research.csl"
+---
+
+## week 5
+
+Reading
+
+- @Doumont2009  Designing the graph
+- @Wainer2014 Fifteen displays about one thing. [Written response](read-01_reading-response-form.pdf) required for discussion.
+
+Tutorials
+
+- Box plots
+- Match display to data type
+- Document design
+
+Submissions
+
+- Check the [Calendar](admin-02_calendar.pdf) for this week's display and critique submission for my review and comment.
+
+
+## bibliography 
+
+<div id="refs"></div>
+  
+---
+
+[main page](../README.md)<br>
+[topics page](README-by-topic.md)
