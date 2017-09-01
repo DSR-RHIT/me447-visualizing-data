@@ -31,20 +31,20 @@ resources
 -   [Further reading](http://www.graphdoctor.com/archives/154) on graph design
 -   [References](cm/admin-05_references.md) cited in the notes and tutorials
 
-assignments by week
--------------------
+assignments
+-----------
 
--   [week 0](cm/week-00_assignments.md)
--   [week 1](cm/week-01_assignments.md)
--   [week 2](cm/week-02_assignments.md)
--   [week 3](cm/week-03_assignments.md)
--   [week 4](cm/week-04_assignments.md)
--   [week 5](cm/week-05_assignments.md)
--   [week 6](cm/week-06_assignments.md)
--   [week 7](cm/week-07_assignments.md)
--   [week 8](cm/week-08_assignments.md)
--   [week 9](cm/week-09_assignments.md)
--   [week 10](cm/week-10_assignments.md)
+-   [Week 0](cm/week-00_assignments.md)
+-   [Week 1](cm/week-01_assignments.md)
+-   [Week 2](cm/week-02_assignments.md)
+-   [Week 3](cm/week-03_assignments.md)
+-   [Week 4](cm/week-04_assignments.md)
+-   [Week 5](cm/week-05_assignments.md)
+-   [Week 6](cm/week-06_assignments.md) and Fall break
+-   [Week 7](cm/week-07_assignments.md)
+-   [Week 8](cm/week-08_assignments.md)
+-   [Week 9](cm/week-09_assignments.md)
+-   [Week 10](cm/week-10_assignments.md)
 
 about
 -----
