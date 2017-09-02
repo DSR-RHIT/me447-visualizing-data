@@ -7,6 +7,10 @@ Reading
 -   Robbins (2013) Ch 2: Limitations of some common charts and graphs
 -   Tufte (1997) Challenger launch decision. Checkout a hard copy from me. [Written response](read-01_reading-response-form.pdf) required for discussion.
 
+Lecture slides
+
+-   [Introduction to scatterplots with ggplot2](../slides/Le03-sactterplot-slides.pdf)
+
 Scatterplot tutorials
 
 -   [Start a script](tut-0301_start-scatterplot.md)
