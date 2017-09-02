@@ -2,6 +2,10 @@
 week 0
 ------
 
+Lecture slides
+
+-   [Introduction to the course](../slides/Le01-welcome.pdf)
+
 Setup
 
 -   [Install R and RStudio](https://github.com/DSR-RHIT/install-R-and-RStudio). If you already use R and RStudio, please update R, RStudio, and packages to the most recent versions.
