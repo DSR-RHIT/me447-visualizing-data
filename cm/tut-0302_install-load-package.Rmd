@@ -12,7 +12,7 @@ opts_chunk$set(echo = TRUE, messages = FALSE, collapse = TRUE)
 
 *Packages* are R modules that you can download and install (like apps for R). Watch this [1-minute video](https://www.youtube.com/watch?v=ljdfqMfWn_A) to learn how to install an R package. 
 
-- Next, install the `ggplot2` package (by Hadley Wickham). 
+- Next, install the `tidyverse` package (by Hadley Wickham). This package encompasses an entire suite of useful packages, including `ggplot2`. 
 
 Once a package is installed, you load the package using the `library()` command.
 

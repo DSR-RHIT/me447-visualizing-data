@@ -1,0 +1,337 @@
+---
+title: "**Introduction to scatterplots with ggplot2**"
+author: "Richard Layton"
+date: "2017-09-04"
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo=TRUE, message=FALSE, collapse=FALSE)
+opts_chunk$set(fig.height = 5.5)
+options(width = 52)
+library(tidyverse)
+# set pander table-layout options
+library(pander)
+panderOptions('table.alignment.default', function(df)
+    ifelse(sapply(df, is.numeric), 'right', 'left'))
+panderOptions('table.split.table', Inf)
+panderOptions('big.mark', ",")
+panderOptions('keep.trailing.zeros', TRUE)
+```
+
+## R package vocabulary
+
+```{r echo=FALSE}
+df <- tribble(
+	~Term, ~Definition,
+	"package", "An R 'app', the basic unit of shareable code, a collection of R functions, data, and code",
+	"library", "The directory on your computer where packages are stored, e.g., C:/R/library",
+	"CRAN", "Online home of 11,340 R packages (2017-09-02), the Comprehensive R Archive Network",
+	"install", "Download a package, save it in your library",
+	"update", "Bring the package in your library up to date",
+	"load", "To use a package in an R session, you load the package using the library() command."
+)
+```
+
+```{r echo=FALSE}
+pander(df, split.cells = c(30, 60))
+```
+
+## Managing packages in RStudio
+
+\includegraphics{../images/panes-5-packages.png}
+
+## The graphics package we’ll use most often is ggplot2 
+
+\begin{columns}[T]
+
+\begin{column}[T]{0.40\textwidth}
+
+The Tidyverse: R packages for data science
+
+\includegraphics{../images/tidyverse.png}
+
+\end{column}
+
+\begin{column}[T]{0.60\textwidth}
+
+When you get a chance, install the {\tt tidyverse} package
+
+\vspace{0.5\baselineskip}
+{\tt tidyverse} includes {\tt ggplot2} and many other packages we will find useful 
+
+\vspace{0.5\baselineskip}
+\begin{itemize}
+\item {\tt ggplot2} is the package
+\item {\tt ggplot()} is the function
+\end{itemize}
+
+\end{column}
+
+\end{columns}
+
+## The arguments of `ggplot()`
+
+```{r echo=FALSE}
+df <- tribble(
+	~Arguments, ~Definition,
+	"data", "a data frame",
+	"aesthetic", "visual properties: color, shape, etc.",
+	"geom", "geometric shape: points, lines, rectangles, etc.",
+	"scale", "map data units to computer units",
+	"stat", "summarize or transform data, e.g., a regression",
+	"facet", "create small multiples"
+)
+pander(df, split.cells = c(30, 60))
+```
+
+```{r echo=FALSE}
+rm(df)
+```
+
+## Example
+
+Getting the example started 
+
+- I installed the `VGAMdata` package from CRAN
+
+- Open a new R script
+
+- Load the package into my workspace using `library()`
+
+```{r}
+library(VGAMdata)
+```
+
+- The 2012 summer Olympic data about individual athletes is accessed using the `data()` function
+
+```{r}
+data("oly12")
+```
+
+
+## What objects?
+
+What objects are in my workspace?
+
+```{r}
+ls()
+```
+
+What class of object is it?
+
+```{r}
+class(oly12)
+```
+
+Good. It's a data frame. 
+
+## Examine the data frame
+
+What variables (columns) do I have?
+
+```{r}
+names(oly12)
+```
+
+To see the structure of the data frame in more detail, use 
+
+```{r results='hide'}
+glimpse(oly12)
+```
+
+
+## 
+
+```{r echo=FALSE}
+glimpse(oly12)
+```
+
+
+## Data and aesthetics
+
+```{r}
+ggplot(data = oly12, aes(x = Height, y = Weight))
+```
+
+
+## Add points
+
+```{r}
+ggplot(data = oly12, aes(x = Height, y = Weight)) +
+	geom_point()
+```
+
+## Select 4 columns and filter for complete cases only  
+
+```{r}
+oly12_sub <- oly12 %>%
+	select(Height, Weight, Sex, Sport) %>% 
+	filter(complete.cases(.))
+glimpse(oly12_sub)
+```
+
+## Graph it again (no waning message)
+
+```{r}
+ggplot(data = oly12_sub, aes(x = Height, y = Weight)) +
+	geom_point()
+```
+
+## Jitter the data markers to reduce overprinting
+
+```{r}
+ggplot(data = oly12_sub, aes(x = Height, y = Weight)) +
+	geom_jitter()
+```
+
+## Edit the transparency of the data markers 
+
+```{r}
+ggplot(data = oly12_sub, aes(x = Height, y = Weight)) +
+	geom_jitter(alpha = 0.2)
+```
+
+## Edit the axis labels
+
+```{r}
+ggplot(data = oly12_sub, aes(x = Height, y = Weight)) +
+	geom_jitter(alpha = 0.2) +
+	labs(x = "Height (m)", y = "Weight (kg)")
+```
+
+
+## Bivariate? Trivariate?    
+
+
+- A scatterplot displays two continuous variables
+- How can a scatterplot be tri-variate? 
+
+```{r echo=FALSE}
+glimpse(oly12_sub)
+```
+
+
+## Add a facet by Sex
+
+```{r}
+ggplot(data = oly12_sub, aes(x = Height, y = Weight)) +
+	geom_jitter(alpha = 0.2) +
+	labs(x = "Height (m)", y = "Weight (kg)") +
+	facet_wrap(~Sex)
+```
+
+## Or by Sport, creating a small-multiples graph
+
+```{r eval=FALSE}
+ggplot(data = oly12_sub, aes(x = Height, y = Weight)) +
+	geom_jitter(alpha = 0.2) +
+	labs(x = "Height (m)", y = "Weight (kg)") +
+	facet_wrap(~Sport)
+```
+
+##
+
+```{r echo = FALSE, fig.height = 7}
+ggplot(data = oly12_sub, aes(x = Height, y = Weight)) +
+	geom_jitter(alpha = 0.2) +
+	labs(x = "Height (m)", y = "Weight (kg)") +
+	facet_wrap(~Sport)
+```
+
+
+
+## We can include a fourth variable using a color aesthetic
+
+```{r eval=FALSE}
+ggplot(data = oly12_sub, 
+	  aes(x = Height, y = Weight, col = Sex)) +
+	geom_jitter(alpha = 0.2) +
+	labs(x = "Height (m)", y = "Weight (kg)") +
+	facet_wrap(~Sport)
+```
+
+##
+
+```{r echo = FALSE, fig.height = 7}
+ggplot(data = oly12_sub, 
+		aes(x = Height, y = Weight, col = Sex)) +
+	geom_jitter(alpha = 0.2) +
+	labs(x = "Height (m)", y = "Weight (kg)") +
+	facet_wrap(~Sport)
+```
+
+
+
+## Review
+
+\begin{columns}[T]
+
+\begin{column}[T]{0.33\textwidth}
+
+Packages
+
+\begin{itemize}
+\item tidyverse
+\item VGAMdata
+\end{itemize}
+
+\vspace{0.5\baselineskip}
+Tidyverse functions
+
+\begin{itemize}
+\item ggplot()
+\item glimpse()
+\item select()
+\item filter()
+\end{itemize}
+
+\end{column}
+
+\begin{column}[T]{0.33\textwidth}
+
+R functions
+
+\begin{itemize}
+\item library()
+\item data()
+\item ls()
+\item class()
+\item names()
+\item print()
+\item complete.cases()
+\end{itemize}
+
+\end{column}
+
+\begin{column}[T]{0.33\textwidth}
+
+ggplot arguments
+
+\begin{itemize}
+\item aes()
+\item geom\_point()
+\item geom\_jitter()
+\item labs()
+\item facet\_wrap()
+\end{itemize}
+
+\end{column}
+
+\end{columns}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

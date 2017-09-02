@@ -74,7 +74,8 @@ We added new files to your directory
       |		|- tut01_first-script.R
       |		`- tut02_scatterplot.R
       |- visuals
-      `- me447_visualizing-data.Rproj
+      |- me447_visualizing-data.Rproj
+      `- .Renviron
 
 
 --- 
