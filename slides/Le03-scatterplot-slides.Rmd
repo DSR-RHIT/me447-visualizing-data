@@ -173,7 +173,7 @@ oly12_sub <- oly12 %>%
 glimpse(oly12_sub)
 ```
 
-## Graph it again (no waning message)
+## Graph it again (no warning message)
 
 ```{r}
 ggplot(data = oly12_sub, aes(x = Height, y = Weight)) +
