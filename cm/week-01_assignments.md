@@ -9,7 +9,7 @@ Reading
 
 Lecture slides
 
--   [Introduction to scatterplots with ggplot2](../slides/Le03-sactterplot-slides.pdf)
+-   [Introduction to scatterplots with ggplot2](../slides/Le03-scatterplot-slides.pdf)
 
 Scatterplot tutorials
 
