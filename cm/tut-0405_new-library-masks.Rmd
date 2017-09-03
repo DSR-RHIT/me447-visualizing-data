@@ -63,7 +63,7 @@ search()
 
 
 
-Next tutorial: [add a regression line to a plot](tut-0405_add-regression.md)
+Next tutorial: [add a regression line to a plot](tut-0406_add-regression.md)
 
 ---
 
