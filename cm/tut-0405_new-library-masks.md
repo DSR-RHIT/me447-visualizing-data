@@ -10,6 +10,10 @@ library(VIM)
 ## Loading required package: colorspace
 ## Loading required package: grid
 ## Loading required package: data.table
+## data.table 1.10.4
+##   The fastest way to learn (by data.table authors): https://www.datacamp.com/courses/data-analysis-the-data-table-way
+##   Documentation: ?data.table, example(data.table) and browseVignettes("data.table")
+##   Release notes, videos and slides: http://r-datatable.com
 ## 
 ## Attaching package: 'data.table'
 ## The following objects are masked from 'package:dplyr':
@@ -48,9 +52,10 @@ search()
 ##  [4] "package:colorspace" "package:rmarkdown"  "package:readxl"    
 ##  [7] "package:dplyr"      "package:purrr"      "package:readr"     
 ## [10] "package:tidyr"      "package:tibble"     "package:ggplot2"   
-## [13] "package:tidyverse"  "package:stats"      "package:graphics"  
-## [16] "package:grDevices"  "package:utils"      "package:datasets"  
-## [19] "package:methods"    "Autoloads"          "package:base"
+## [13] "package:tidyverse"  "tools:rstudio"      "package:stats"     
+## [16] "package:graphics"   "package:grDevices"  "package:utils"     
+## [19] "package:datasets"   "package:methods"    "Autoloads"         
+## [22] "package:base"
 ```
 
 Next tutorial: [add a regression line to a plot](tut-0406_add-regression.md)
