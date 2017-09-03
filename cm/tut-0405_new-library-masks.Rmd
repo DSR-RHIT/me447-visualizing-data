@@ -1,0 +1,74 @@
+---
+output: github_document
+bibliography: "../manage/refs.bib" 
+csl: "../manage/csl/journal-of-peace-research.csl"
+---
+
+```{r echo=FALSE}
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo=TRUE, message=FALSE, collapse=TRUE, warning=FALSE)
+```
+
+```{r include=FALSE}
+rm(list = (ls()))
+detachAllPackages <- function() {
+
+  basic.packages <- c("package:stats","package:graphics","package:grDevices","package:utils","package:datasets","package:methods","package:base")
+
+  package.list <- search()[ifelse(unlist(gregexpr("package:",search()))==1,TRUE,FALSE)]
+
+  package.list <- setdiff(package.list,basic.packages)
+
+  if (length(package.list)>0)  for (package in package.list) detach(package, character.only=TRUE)
+
+}
+detachAllPackages()
+library(tidyverse)
+library(readxl)
+library(rmarkdown)
+search()
+```
+
+
+## when a new library masks a function
+
+In the previous tutorial, we loaded the *VIM* package and a message was printed indicating that an object is "masked." The message indicates that the *VIM* package defines functions *between()*, *first()*, and *last()* that are also functions in the *dplyr* package. Because *VIM* was loaded last, its functions "mask" the *dplyr* functions of the same name. 
+
+
+```{r message=TRUE}
+# load the package
+library(VIM)
+```
+
+This issue arises because people are constantly writing new packages and there is inevitably some overlap in naming functions. 
+
+Since I use *dplyr* a lot but *VIM* only ocassionally, I can "unload" *VIM* once I'm done with it using the *unloadNamespace()* function: the opposite of the *library()* function. 
+
+```{r}
+# unload a package
+unloadNamespace("VIM")
+```
+
+Use *search()* to confirm that *VIM* is no longer loaded. 
+
+```{r}
+# list packages currently loaded
+search()
+```
+
+
+
+
+
+
+
+Next tutorial: [add a regression line to a plot](tut-0405_add-regression.md)
+
+---
+
+[main page](../README.md)<br> 
+[topics page](../README-by-topic.md)
+
+
+

@@ -1,0 +1,86 @@
+---
+output: github_document
+bibliography: "../manage/refs.bib" 
+csl: "../manage/csl/journal-of-peace-research.csl"
+---
+
+```{r echo=FALSE}
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo = TRUE, messages = FALSE, collapse = TRUE, warning = FALSE)
+
+rm(list = (ls()))
+suppressMessages(library(tidyverse))
+suppressMessages(library(readxl))
+```
+
+```{r include=FALSE}
+# read data from an excel file
+press_calibr <- read_excel(path = "data/pressure-calibration.xlsx", sheet = "long form")
+
+# examine the data frame
+print(class(press_calibr))
+glimpse(press_calibr)
+
+# when the form is not tidy
+wide_data <- read_excel(path = "data/pressure-calibration.xlsx", sheet = "wide form")
+glimpse(wide_data)
+
+# read it again, skip row 1, names in row 2, data starts in row 3
+wide_data <- read_excel(path = "data/pressure-calibration.xlsx", sheet = "wide form", skip = 1)
+glimpse(wide_data)
+```
+
+## write a CSV file
+
+From the previous tutorial, you will have the data frames *press_calibr* and *wide_data* in your workspace. 
+
+From the *readr* package in the tidyverse, we use *write_csv()*.
+
+```{r}
+# write the data frames to CSV files
+write_csv(press_calibr, "data/press-calibr-long.csv")
+write_csv(wide_data, "data/press-calibr-wide.csv")
+```
+
+## read a csv file 
+
+First, we'll clear the workspace of all variables. 
+
+```{r}
+# clear the workspace
+rm(list = (ls()))
+
+# confirm that all variables are removed
+ls()
+```
+
+See also the Environment tab in the RStudio pane; it should be empty.  
+
+From the *readr* package in the tidyverse, we use *read_csv()* to read the CSV file we just created. 
+
+```{r}
+# read a CSV file
+press_calibr <- read_csv("data/press-calibr-long.csv")
+```
+
+The message printed in the output tells us how  *read_csv* parsed the data, in this case, as integers, characters, and double-precision numbers. 
+
+This data frame is now the only object in our workspace. See also the Environment tab in the RStudio pane.
+
+```{r}
+# check the workspace
+ls()
+```
+
+
+
+Next tutorial: [examine a new data set](tut-0404_examine-new-data.md)
+
+---
+
+[main page](../README.md)<br> 
+[topics page](../README-by-topic.md)
+
+
+

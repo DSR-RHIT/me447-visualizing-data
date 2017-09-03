@@ -1,0 +1,51 @@
+---
+output: github_document
+bibliography: "../manage/refs.bib" 
+csl: "../manage/csl/journal-of-peace-research.csl"
+---
+
+```{r echo=FALSE}
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo=TRUE, message=FALSE, collapse=TRUE, warning=FALSE)
+```
+
+```{r echo=FALSE}
+library(tidyverse)
+```
+
+## data basics exercises
+
+- Install the *fivethirtyeight* package and view its help page.  
+- Load the  *fandango* data set.
+
+1. Movie ratings 
+    - Draw a scatterlot showing the `rottentomatoes` ratings as a function of the `metacritic` ratings. 
+    - Draw a second scatterplot showing the `fandango_ratingvalue` as a function of the `metacritic` data. 
+    - What conclusions do you draw? 
+2. Missing values 
+    - Use VIM to determine if *fandango* has missing values. 
+
+```{r include=FALSE}
+library(fivethirtyeight)
+glimpse(fandango)
+
+library(VIM)
+aggr_plot <- aggr(
+	fandango
+	, numbers  = TRUE
+	, sortVars = TRUE
+	, prop     = FALSE
+	, combined = TRUE
+	, ylab     = "Pattern of missing values"
+)
+unloadNamespace("VIM")
+```
+
+
+---
+
+[main page](../README.md)<br> 
+[topics page](../README-by-topic.md)
+
+
