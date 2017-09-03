@@ -41,4 +41,4 @@ Next tutorial: [scatterplot exercise](tut-0309_scatterplot-exercise.md)
 
 ------------------------------------------------------------------------
 
-[main page](../README.md)<br> [topics page](README-by-topic.md)
+[main page](../README.md)<br> [topics page](../README-by-topic.md)

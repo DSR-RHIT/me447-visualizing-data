@@ -135,4 +135,4 @@ That's all to be expected with our goal of crafting a showcase document.
 
 ------------------------------------------------------------------------
 
-[main page](../README.md)<br> [topics page](README-by-topic.md)
+[main page](../README.md)<br> \[topics page\]../(README-by-topic.md)

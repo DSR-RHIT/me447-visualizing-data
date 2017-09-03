@@ -81,4 +81,4 @@ Next tutorial: [create a scatterplot](tut-0304_create-scatterplot.md)
 
 ------------------------------------------------------------------------
 
-[main page](../README.md)<br> [topics page](README-by-topic.md)
+[main page](../README.md)<br> [topics page](../README-by-topic.md)

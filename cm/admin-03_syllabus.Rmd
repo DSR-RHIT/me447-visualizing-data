@@ -108,7 +108,7 @@ I reserve the right to modify the course content, schedule, policies, etc. outli
 ---
 
 [main page](../README.md)<br> 
-[topics page](README-by-topic.md)
+[topics page](../README-by-topic.md)
 
 
 

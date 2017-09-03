@@ -37,4 +37,4 @@ Next tutorial: [edit theme](tut-0308_edit-theme.md)
 
 ------------------------------------------------------------------------
 
-[main page](../README.md)<br> [topics page](README-by-topic.md)
+[main page](../README.md)<br> [topics page](../README-by-topic.md)

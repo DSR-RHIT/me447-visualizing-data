@@ -74,4 +74,4 @@ Next tutorial: [install and load a package](tut-0302_install-load-package.md)
 
 ------------------------------------------------------------------------
 
-[main page](../README.md)<br> [topics page](README-by-topic.md)
+[main page](../README.md)<br> [topics page](../README-by-topic.md)

@@ -52,4 +52,4 @@ Next tutorial : [edit the scales](tut-0307_edit-scales.md)
 
 ------------------------------------------------------------------------
 
-[main page](../README.md)<br> [topics page](README-by-topic.md)
+[main page](../README.md)<br> \[topics page\]../README-by-topic.md)

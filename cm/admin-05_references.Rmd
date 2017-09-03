@@ -12,4 +12,4 @@ Robert Kabakoff (2011) *R in Action: Data analysis and graphics with R*, Manning
 ---
 
 [main page](../README.md)<br> 
-[topics page](README-by-topic.md)
+[topics page](../README-by-topic.md)

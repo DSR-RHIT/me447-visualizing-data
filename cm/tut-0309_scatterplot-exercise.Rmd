@@ -39,4 +39,4 @@ ggplot(diamonds, aes(x = carat, y = price)) +
 ---
 
 [main page](../README.md)<br> 
-[topics page](README-by-topic.md)
+[topics page](../README-by-topic.md)

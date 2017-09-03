@@ -56,7 +56,7 @@ The exponential function is `exp()`.
 ``` r
 # type this in your Console
 exp(2)
-## [1] 7.389056
+## [1] 7.39
 ```
 
 The base *e* logarithm function is `log()`.
@@ -64,7 +64,7 @@ The base *e* logarithm function is `log()`.
 ``` r
 # type this in your Console
 log(10)
-## [1] 2.302585
+## [1] 2.3
 
 log(exp(2))
 ## [1] 2
@@ -105,7 +105,7 @@ When making assignments, no output appears in the console. To see the value of t
 ``` r
 # type this in your Console
 x
-## [1] 0.5235988
+## [1] 0.524
 ```
 
 or use `print()`
@@ -113,7 +113,7 @@ or use `print()`
 ``` r
 # type this in your Console
 print(x)
-## [1] 0.5235988
+## [1] 0.524
 ```
 
 The default unit for angular measure is radians.
@@ -185,4 +185,4 @@ Next tutorial: [Interacting with R using scripts](tut-03_using-scripts.md)
 
 ------------------------------------------------------------------------
 
-[main page](../README.md)<br> [topics page](README-by-topic.md)
+[main page](../README.md)<br> [topics page](../README-by-topic.md)
