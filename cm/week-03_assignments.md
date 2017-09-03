@@ -26,4 +26,4 @@ Robbins, Naomi (2013) *Creating More Effective Graphs*. Chart House.
 
 ------------------------------------------------------------------------
 
-[main page](../README.md)<br> [topics page](README-by-topic.md)
+[main page](../README.md)<br> \[topics page\]../(README-by-topic.md)

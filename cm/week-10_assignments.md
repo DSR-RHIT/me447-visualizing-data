@@ -21,4 +21,4 @@ Spence, Ian (2006) William Playfair and the psychology of graphs. In: *IEEE Tran
 
 ------------------------------------------------------------------------
 
-[main page](../README.md)<br> [topics page](README-by-topic.md)
+[main page](../README.md)<br> [topics page](../README-by-topic.md)

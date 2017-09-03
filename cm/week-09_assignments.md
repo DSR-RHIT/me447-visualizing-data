@@ -17,4 +17,4 @@ Knaflic, Cole Nussbaumer (2012) So what? Storytelling with data (blog) (<http://
 
 ------------------------------------------------------------------------
 
-[main page](../README.md)<br> [topics page](README-by-topic.md)
+[main page](../README.md)<br> [topics page](../README-by-topic.md)

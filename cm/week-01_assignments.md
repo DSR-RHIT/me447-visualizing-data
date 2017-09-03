@@ -26,6 +26,16 @@ Scatterplot tutorials
 
 Data basics tutorials
 
+-   [Data basics](tut-0401_data-basics.md)
+-   [Examine the sample Excel file](tut-0402_read-excel.md)
+-   [Write and read a CSV file](tut-0403_read-write-csv.md)
+-   [Examining a data set](tut-0404_examine-new-data.md)
+-   [When a new library masks a function](tut-0405_new-library-masks.md)
+-   [Add a regression to a scatterplot](tut-0406_add-regression.md)
+-   [Accessing data in R](tut-0407_access-data-in-R.md)
+-   [Tutorial outcome](../practiceR/tut03_data-basics.R) To check your work
+-   [Data basics exercises](tut-0408_data-basics-exercise.md)
+
 Document design: Markdown basics tutorials
 
 bibliography
@@ -37,4 +47,4 @@ Tufte, Edward (1997) The decision to launch the space shuttle Challenger. In: *V
 
 ------------------------------------------------------------------------
 
-[main page](../README.md)<br> [topics page](README-by-topic.md)
+[main page](../README.md)<br> [topics page](../README-by-topic.md)

@@ -25,4 +25,4 @@ Wainer, Howard (2000) Graphical failures: How to display data badly. In: *Visual
 
 ------------------------------------------------------------------------
 
-[main page](../README.md)<br> [topics page](README-by-topic.md)
+[main page](../README.md)<br> [topics page](../README-by-topic.md)

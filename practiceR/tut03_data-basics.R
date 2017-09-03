@@ -11,45 +11,96 @@ rm(list = (ls()))
 # libraries we use in this tutorial
 library(tidyverse)
 library(readxl)
-library(fivethirtyeight)
+# library(VIM) is also used, but load it later
 
 # read data from an excel file
-press_calibr <- read_excel(path = "data/pressure-calibration.xlsx", sheet = "long form")
+press_calibr <- read_excel(
+	path = "data/pressure-calibration.xlsx"
+	, sheet = "long form"
+	)
 
-# examine the data frame
-print(class(press_calibr))
+# examine the data
+class(press_calibr)
 glimpse(press_calibr)
 
-# write the data frame to a CSV file
-write_csv(press_calibr, "data/pressure-calibration.csv")
+# when the form is not tidy
+wide_data <- read_excel(
+	path = "data/pressure-calibration.xlsx"
+	, sheet = "wide form"
+)
 
-# clear the workspace and read the CSV file
+# examine the result
+glimpse(wide_data)
+
+# read it again, skip row 1
+wide_data <- read_excel(
+	path = "data/pressure-calibration.xlsx"
+	, sheet = "wide form"
+	, skip = 1
+)
+
+# examine the result
+glimpse(wide_data)
+
+# read and write CSV files -------------------------
+
+# write the data frames to CSV files
+write_csv(press_calibr, "data/press-calibr-long.csv")
+write_csv(wide_data, "data/press-calibr-wide.csv")
+
+# clear the workspace
 rm(list = (ls()))
-press_calibr <- read_csv("data/pressure-calibration.csv")
 
+# confirm that all variables are removed
+ls()
 
-# check the workspace
-print(ls())
+# read a CSV file
+press_calibr <- read_csv("data/press-calibr-long.csv")
+wide_data    <- read_csv("data/press-calibr-wide.csv")
 
-# examine the data frame
-print(class(press_calibr))
+# examine the data frame ---------------------------
+class(press_calibr)
 glimpse(press_calibr)
 
-# look at the first 10 rows
-print(head(press_calibr, n = 10L))
+# print a tibble
+press_calibr
 
 # look at the last 10 rows
 print(tail(press_calibr, n = 10L))
 
+# missing values -------------------------
+# a data frame with no missing values
+summary(press_calibr)
+
+# data frame that has missing values
+summary(wide_data)
+
+# a package for summarizing missing values
+library(VIM)
+aggr_plot <- aggr(
+	wide_data
+	, numbers  = TRUE
+	, sortVars = TRUE
+	, prop     = FALSE
+	, combined = TRUE
+	, ylab     = "Pattern of missing values"
+)
+
+# unload a package
+unloadNamespace("VIM")
+
+# list packages currently loaded
+search()
+
+# add a regression line
 # plot the calibration data in a scatterplot
 f1 <- ggplot(data = press_calibr,
-		aes(x = inputPSI, y = readingPSI)) +
+						 aes(x = inputPSI, y = readingPSI)) +
 	geom_point()
 print(f1)
 
 # add a linear regression
-f2 <- f1 +
-	geom_smooth(method = lm)
+f2 <- f1 + geom_smooth(method = lm)
 print(f2)
 
 # omit the confidence interval
@@ -57,70 +108,15 @@ f3 <- f1 +
 	geom_smooth(method = lm, se = FALSE)
 print(f3)
 
-# read wide-form, convert to long form
-# read data from an excel file
-wide_data <- read_excel(path = "data/pressure-calibration.xlsx", sheet = "wide form")
-glimpse(wide_data)
-
-# read it again, skip row 1, names in row 2, data starts in row 3
-wide_data <- read_excel(path = "data/pressure-calibration.xlsx", sheet = "wide form", skip = 1)
-glimpse(wide_data)
-
-# convert wide form to long form
-long_data <- wide_data %>%
-	gather(cycle, readingPSI, cycle1:cycle6)
-
-# check
-glimpse(long_data)
-print(head(long_data, n = 10L))
-print(tail(long_data, n = 15L))
-
-# omit the NA rows (no readings taken)
-long_data <- long_data %>%
-	filter(!is.na(readingPSI))
-
-# check
-glimpse(long_data)
-print(head(long_data, n = 10L))
-print(tail(long_data, n = 15L))
-
-# after converting to long form, save the file for later use
-write_csv(long_data, "data/pressure-calibration-2.csv")
-
-# plot long data we just created
-f4 <- ggplot(data = long_data,
-		aes(x = inputPSI, y = readingPSI)) +
-	geom_point() +
-	geom_smooth(method = lm, se = FALSE)
-print(f4)
-
 # accessing data in R
 data()
 
-# several data sets you will see used in R examples
+# commonly used dataset for R examples
 glimpse(mtcars)
-print(?mtcars)
-
 glimpse(iris)
-print(?iris)
-
 glimpse(Titanic)
-print(?Titanic)
-
 glimpse(starwars)
-print(?starwars)
-
 glimpse(economics)
-print(?economics)
+glimpse(who)
 
-glimpse(population)
-print(?population)
-
-# someone put some data from 538 in a package
-print(?fivethirtyeight)
-
-# check out one 538 data set
-data(fandango)
-glimpse(fandango)
-print(?fandango)
-
+# last line

@@ -26,4 +26,4 @@ Wainer, Howard (2014) Fifteen displays about one thing. In: *Medical Illuminatio
 
 ------------------------------------------------------------------------
 
-[main page](../README.md)<br> [topics page](README-by-topic.md)
+[main page](../README.md)<br> [topics page](../README-by-topic.md)
