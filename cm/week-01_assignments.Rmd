@@ -41,6 +41,9 @@ Data basics tutorials
 - [Tutorial outcome](../practiceR/tut03_data-basics.R) To check your work 
 - [Data basics exercises](tut-0408_data-basics-exercise.md) 
 
+Display due this week
+
+- Nothing due, but you might get started on D1. 
 
 Document design: Markdown basics tutorials
 

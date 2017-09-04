@@ -15,7 +15,8 @@ Tutorials
 
 Presentations
 
--   Check the [Calendar](admin-02_calendar.pdf) for this week's display and critique presentation.
+-   D1 Scatterplot and critique.
+-   See [portfolio requirements](folio-01_portfolio-requirements.md) for details and the [portfolio checklist](folio-02_portfolio-checklist.pdf) to check that all requirements have been met.
 
 bibliography
 ------------
