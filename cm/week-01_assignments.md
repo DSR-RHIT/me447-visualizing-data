@@ -7,12 +7,9 @@ Reading
 -   Robbins (2013) Ch 2: Limitations of some common charts and graphs
 -   Tufte (1997) Challenger launch decision. Checkout a hard copy from me. [Written response](read-01_reading-response-form.pdf) required for discussion.
 
-Lecture slides
+Scatterplots
 
--   [Introduction to scatterplots with ggplot2](../slides/Le03-scatterplot-slides.pdf)
-
-Scatterplot tutorials
-
+-   [Slides: Introduction to scatterplots with ggplot2](../slides/Le03-scatterplot-slides.pdf)
 -   [Start a script](tut-0301_start-scatterplot.md)
 -   [Install and load a package](tut-0302_install-load-package.md)
 -   [Create a data frame](tut-0303_create-data-frame.md)
@@ -24,8 +21,9 @@ Scatterplot tutorials
 -   [Tutorial outcome](../practiceR/tut02_scatterplot.R) To check your work
 -   [Exercise](tut-0309_scatterplot-exercise.md) To practice what you've learned
 
-Data basics tutorials
+Data basics
 
+-   [Slides: Data basic](../slides/Le04-data-basics-slides.pdf)
 -   [Data basics](tut-0401_data-basics.md)
 -   [Examine the sample Excel file](tut-0402_read-excel.md)
 -   [Write and read a CSV file](tut-0403_read-write-csv.md)
