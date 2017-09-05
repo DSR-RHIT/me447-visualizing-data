@@ -44,10 +44,12 @@ R
 - [Starting a practiceR script](cm/tut-0301_start-scatterplot.md) 
 - [Installing and loading a package](cm/tut-0302_install-load-package.md) 
 - [Creating a data frame](cm/tut-0303_create-data-frame.md) 
+- [When a new library masks a function](cm/tut-0405_new-library-masks.md) 
 
 Display types  
 
-- [Creating a scatterplot](cm/tut-0304_create-scatterplot.md)
+- [Scatterplot: slides](slides/Le03-scatterplot-slides.pdf)
+- [Scatterplot: get started](cm/tut-0304_create-scatterplot.md)
 - Dot plots 
 - Multiways 
 - Tables
@@ -60,10 +62,16 @@ Editing elements of *ggplot2* graphs
 - [Editing axis labels and title](cm/tut-0306_edit-axis-labels-title.md)
 - [Editing scales](cm/tut-0307_edit-scales.md)
 - [Editing the theme](cm/tut-0308_edit-theme.md)
+- [Add a regression to a scatterplot](cm/tut-0406_add-regression.md) 
 
 Data
 
-- Data basics 
+- [Data basics: slides](slides/Le04-data-basics-slides.pdf) 
+- [Data basics: get started](cm/tut-0401_data-basics.md) 
+- [Accessing data in R](cm/tut-0407_access-data-in-R.md) 
+- [Examining a data set](cm/tut-0404_examine-new-data.md) 
+- [Examining an Excel file](cm/tut-0402_read-excel.md) 
+- [Write and read a CSV file](cm/tut-0403_read-write-csv.md) 
 - Subsetting data 
 - Reshaping data 
 - Finding interesting data 
@@ -84,13 +92,14 @@ Design and rhetoric
 
 ## exercises
 
-- [Scatterplot exercise](cm/tut-0309_scatterplot-exercise.md)
+- [Scatterplot exercises](cm/tut-0309_scatterplot-exercise.md)
+- [Data basics exercises](cm/tut-0408_data-basics-exercise.md) 
 
 ## tutorial outcomes
 
 - [tut01_first-script.R](practiceR/tut01_first-script.R)
 - [tut02_scatterplot.R](practiceR/tut02_scatterplot.R)
-
+- [tut03_data-basics.R](practiceR/tut03_data-basics.R) To check your work 
 
 
 
