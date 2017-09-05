@@ -9,7 +9,7 @@ Reading
 
 Scatterplots
 
--   [Slides: Introduction to scatterplots with ggplot2](../slides/Le03-scatterplot-slides.pdf)
+-   [Lecture slides](../slides/Le03-scatterplot-slides.pdf)
 -   [Start a script](tut-0301_start-scatterplot.md)
 -   [Install and load a package](tut-0302_install-load-package.md)
 -   [Create a data frame](tut-0303_create-data-frame.md)
@@ -23,7 +23,7 @@ Scatterplots
 
 Data basics
 
--   [Slides: Data basic](../slides/Le04-data-basics-slides.pdf)
+-   [Lecture slides](../slides/Le04-data-basics-slides.pdf)
 -   [Data basics](tut-0401_data-basics.md)
 -   [Examine the sample Excel file](tut-0402_read-excel.md)
 -   [Write and read a CSV file](tut-0403_read-write-csv.md)
@@ -38,7 +38,7 @@ Display due this week
 
 -   Nothing due, but you might get started on D1.
 
-Document design: Markdown basics tutorials
+Document design: Markdown basics
 
 bibliography
 ------------
