@@ -107,4 +107,4 @@ Next tutorial: [read and write CSV files](tut-0403_read-write-csv.md)
 
 ------------------------------------------------------------------------
 
-[main page](../README.md)<br> \[topics page\](../(README-by-topic.md)
+[main page](../README.md)<br> [topics page](../README-by-topic.md)
