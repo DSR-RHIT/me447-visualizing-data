@@ -13,7 +13,6 @@ opts_chunk$set(fig.height = 5.5)
 options(width = 52)
 ```
 
-
 ```{r include=FALSE}
 library(tidyverse)
 library(readxl)
@@ -25,7 +24,7 @@ panderOptions('big.mark', ",")
 panderOptions('keep.trailing.zeros', TRUE)
 ```
 
-## Today's R packages 
+## R packages used in data basics
 
 ```{r echo=FALSE}
 df <- tribble(
@@ -34,7 +33,7 @@ df <- tribble(
 	"ggplot2",   "Graphing data", 
 	"dplyr",     "Data manipulation", 
 	"readr",     "Read rectangular data files (like csv or tsv)", 
-	"tidyr",     "set of functions that help you get to tidy data", 
+	"tidyr",     "Set of functions that help you get to tidy data",     "knitr",     "Dynamic documents", 
 	"readxl",    "Read .xls and .xslx files",
 	"VIM",       "Examine missing values in a data frame"
 )
@@ -44,42 +43,21 @@ df <- tribble(
 pander(df, split.cells = c(30, 60))
 ```
 
-## Learning objectives 
+## At the conclusion of the tutorial, you will be able to 
 
-After working through the data basics tutorial, you should be able to
-
+- Define a "tidy" dataset  
 - Read data from an Excel file 
+- Obtain datasets included with R and R packages 
 - Read and write CSV data files 
-- Obtain and manipulate data sets included with R and R packages 
 
 \begin{center}
-\includegraphics{../images/data-basics-excel-to-csv.png}
+\includegraphics[scale=0.3]{../images/data-basics-excel-to-csv.png}
 \end{center}
 
 
 
 
-
-## The readxl package
-
-\vspace{0.5\baselineskip}
-```{r eval=FALSE}
-library(readxl)
-my_data <- read_excel(
-       path = "data/my_file_name.xlsx"
-    , sheet = "sheet_tab_name"
-    )
-```
-
-- To read .xls or .xlsx files
-- Assumes data is tidy or nearly tidy
-
-\vspace{0.5\baselineskip}
-\begin{center}
-\includegraphics[scale=0.6]{../images/data-basics-excel-long.png}
-\end{center}
-
-## What is tidy data?
+## For data graphics success, data should be tidy
 
 \vspace{0.5\baselineskip}
 \begin{center}
@@ -91,345 +69,253 @@ my_data <- read_excel(
 Source: data-wrangling-cheatsheet,  https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf
 }
 
-## When your data is not tidy
+
+## Tidy data
+
+\vspace{1\baselineskip}
+\begin{center}
+\includegraphics[scale=0.4]{../images/tidy-4a.png}
+\end{center}
+
+\vspace{1\baselineskip}
+{\footnotesize
+Source: Data Science with R by Garrett Grolemund,   http://garrettgman.github.io/tidying/
+}
+
+
+
+## Sadly, untidy data is common
 
 \vspace{0.5\baselineskip}
 \begin{center}
-\includegraphics[scale=0.5]{../images/data-basics-excel-not-tidy.png}
+\includegraphics[scale=0.4]{../images/tidy-5a.png}
+\end{center}
+
+\vspace{1\baselineskip}
+{\footnotesize
+Source: Data Science with R by Garrett Grolemund,   http://garrettgman.github.io/tidying/
+}
+
+## Sadly, untidy data is common
+
+\vspace{0.5\baselineskip}
+\begin{center}
+\includegraphics[scale=0.4]{../images/tidy-7a.png}
+\end{center}
+
+\vspace{-1\baselineskip}
+{\footnotesize
+Source: Data Science with R by Garrett Grolemund,   http://garrettgman.github.io/tidying/
+}
+
+## Some industry spreadsheets are really untidy
+
+\includegraphics[scale=0.5]{../images/data-basics-very-untidy-data.png}
+
+\vspace{-0.5\baselineskip}
+{\footnotesize
+Source: Extract tables from messy spreadsheets with jailbreakr, http://blog.revolutionanalytics.com/2016/08/jailbreakr.html
+}
+
+
+
+## For now, assume your data in Excel are tidy
+
+\includegraphics[scale=0.55]{../images/data-basics-excel-long.png}
+
+\vspace{1\baselineskip}
+
+- *readxl* is the package
+- *read_excel()* is the function
+
+
+## The data frame that results from  *read_excel()*
+
+```{r}
+library(readxl)
+tidy_data <- read_excel(
+       path = "data/DSR-table1.xlsx"
+    , sheet = "DSR-table1"
+    )
+glimpse(tidy_data)
+```
+
+## Or, if we print the data frame as a table
+
+```{r}
+library(knitr)
+kable(tidy_data)
+```
+
+
+## Note the relative path argument in *read_excel()*
+
+\begin{center}
+\includegraphics[scale=0.4]{../images/data-basics-relative-path.png}
 \end{center}
 
 
+## But, when your Excel data are not tidy
 
+\begin{center}
+\includegraphics[scale=0.55]{../images/data-basics-excel-not-tidy.png}
+\end{center}
 
-## When your data is not tidy
+## The *read_excel()* results can be weird
+
 
 ```{r}
-wide_data <- read_excel("data/VADeaths.xlsx")
+untidy_data <- read_excel("data/VADeaths.xlsx")
+glimpse(untidy_data)
 ```
 
-```{r echo=FALSE}
-kable(wide_data)
-```
+- All the data have been coerced into character data
 
+## Or, if we print the result as a table
 
-
-## We can skip lines, but might lose information 
-
-\vspace{0.5\baselineskip}
 ```{r}
-wide_data <- read_excel("data/VADeaths.xlsx", skip = 1)
+kable(untidy_data)
 ```
 
-```{r echo=FALSE}
-kable(wide_data)
+- The first data row is not actually an observation 
+
+
+
+## However,  *read_excel()* can skip lines 
+
+\begin{center}
+\includegraphics[scale=0.55]{../images/data-basics-excel-not-tidy.png}
+\end{center}
+
+```{r }
+untidy_data <- read_excel("data/VADeaths.xlsx"
+	, skip = 1)
 ```
 
-Reading and reshaping data like this is a topic for another day 
+
+## But we might lose information 
+
+```{r}
+kable(untidy_data)
+```
+
+- Try to work with tidy data only for the time being  
+- Later we will work on how to make untidy data tidy
  
+ 
+ 
+ 
+## Read and write CSV files
 
+If you have a data frame *tidy_data* in your workspace
 
+```{r}
+library(readr)
+write_csv(tidy_data, "data/example_tidy_data.csv")
+```
 
+If you have file *example_tidy_data.csv* in your *data* folder 
+```{r}
+new_copy <- read_csv("data/example_tidy_data.csv")
+```
 
 
 
 
+## Examine a data frame
 
+Graphing data and studying the data structure are complementary
 
+- *class()*
+- *glimpse()*
+- *kable()*  
+- *head()*
+- *tail()*
 
+Identifying missing values (details in the tutorial)
 
-<!-- ## Managing packages in RStudio -->
+- *summary()* 
+- *VIM* package *aggr()* function 
 
-<!-- \includegraphics{../images/panes-5-packages.png} -->
 
-<!-- ## The graphics package we’ll use most often is ggplot2  -->
 
-<!-- \begin{columns}[T] -->
 
-<!-- \begin{column}[T]{0.40\textwidth} -->
 
-<!-- The Tidyverse: R packages for data science -->
+##  Accessing data in R
 
-<!-- \includegraphics{../images/tidyverse.png} -->
+```{r eval=FALSE}
+data()
+```
 
-<!-- \end{column} -->
+```
+Data sets in package 'datasets':
 
-<!-- \begin{column}[T]{0.60\textwidth} -->
+AirPassengers  Monthly Airline Passenger Numbers 1949-1960
+BJsales        Sales Data with Leading Indicator
+BOD            Biochemical Oxygen Demand
+CO2            Carbon Dioxide Uptake in Grass Plants
+ChickWeight    Weight vs age of chicks on different diets
+etc. 
+```
 
-<!-- When you get a chance, install the {\tt tidyverse} package -->
+##  Many of these R data sets widely used in R examples 
 
-<!-- \vspace{0.5\baselineskip} -->
-<!-- {\tt tidyverse} includes {\tt ggplot2} and many other packages we will find useful  -->
+Commonly encountered 
 
-<!-- \vspace{0.5\baselineskip} -->
-<!-- \begin{itemize} -->
-<!-- \item {\tt ggplot2} is the package -->
-<!-- \item {\tt ggplot()} is the function -->
-<!-- \end{itemize} -->
+- `mtcars`
+- `iris`
+- `Titanic`
+- `barley` in the *lattice* package
 
-<!-- \end{column} -->
+From the tidyverse
 
-<!-- \end{columns} -->
+- `starwars` in the *dplyr* package
+- `economics` in the *ggplot2* package 
+- `who` in the *tidyr* package 
 
-<!-- ## The arguments of `ggplot()` -->
+And other packages
 
-<!-- ```{r echo=FALSE} -->
-<!-- df <- tribble( -->
-<!-- 	~Arguments, ~Definition, -->
-<!-- 	"data", "a data frame", -->
-<!-- 	"aesthetic", "visual properties: color, shape, etc.", -->
-<!-- 	"geom", "geometric shape: points, lines, rectangles, etc.", -->
-<!-- 	"scale", "map data units to computer units", -->
-<!-- 	"stat", "summarize or transform data, e.g., a regression", -->
-<!-- 	"facet", "create small multiples" -->
-<!-- ) -->
-<!-- pander(df, split.cells = c(30, 60)) -->
-<!-- ``` -->
+- *fivethirtyeight* package 
+- so many more 
 
-<!-- ```{r echo=FALSE} -->
-<!-- rm(df) -->
-<!-- ``` -->
 
-<!-- ## Example -->
+## Review
 
-<!-- Getting the example started  -->
+\begin{columns}[T]
 
-<!-- - I installed the `VGAMdata` package from CRAN -->
+\begin{column}[T]{0.5\textwidth}
 
-<!-- - Open a new R script -->
+package::function()
 
-<!-- - Load the package into my workspace using `library()` -->
+\begin{itemize}
+\item readxl::read\_excel()
+\item readr::write\_csv()
+\item readr::read\_csv()
+\item tibble::glimpse()
+\item knitr::kable()
+\item VIM::aggr()
+\end{itemize}
 
-<!-- ```{r} -->
-<!-- library(VGAMdata) -->
-<!-- ``` -->
+\end{column}
+\begin{column}[T]{0.5\textwidth}
 
-<!-- - The 2012 summer Olympic data about individual athletes is accessed using the `data()` function -->
+base R functions
 
-<!-- ```{r} -->
-<!-- data("oly12") -->
-<!-- ``` -->
-
-
-<!-- ## What objects? -->
-
-<!-- What objects are in my workspace? -->
-
-<!-- ```{r} -->
-<!-- ls() -->
-<!-- ``` -->
-
-<!-- What class of object is it? -->
-
-<!-- ```{r} -->
-<!-- class(oly12) -->
-<!-- ``` -->
-
-<!-- Good. It's a data frame.  -->
-
-<!-- ## Examine the data frame -->
-
-<!-- What variables (columns) do I have? -->
-
-<!-- ```{r} -->
-<!-- names(oly12) -->
-<!-- ``` -->
-
-<!-- To see the structure of the data frame in more detail, use  -->
-
-<!-- ```{r results='hide'} -->
-<!-- glimpse(oly12) -->
-<!-- ``` -->
-
-
-<!-- ##  -->
-
-<!-- ```{r echo=FALSE} -->
-<!-- glimpse(oly12) -->
-<!-- ``` -->
-
-
-<!-- ## Data and aesthetics -->
-
-<!-- ```{r} -->
-<!-- ggplot(data = oly12, aes(x = Height, y = Weight)) -->
-<!-- ``` -->
-
-
-<!-- ## Add points -->
-
-<!-- ```{r} -->
-<!-- ggplot(data = oly12, aes(x = Height, y = Weight)) + -->
-<!-- 	geom_point() -->
-<!-- ``` -->
-
-<!-- ## Select 4 columns and filter for complete cases only   -->
-
-<!-- ```{r} -->
-<!-- oly12_sub <- oly12 %>% -->
-<!-- 	select(Height, Weight, Sex, Sport) %>%  -->
-<!-- 	filter(complete.cases(.)) -->
-<!-- glimpse(oly12_sub) -->
-<!-- ``` -->
-
-<!-- ## Graph it again (no warning message) -->
-
-<!-- ```{r} -->
-<!-- ggplot(data = oly12_sub, aes(x = Height, y = Weight)) + -->
-<!-- 	geom_point() -->
-<!-- ``` -->
-
-<!-- ## Jitter the data markers to reduce overprinting -->
-
-<!-- ```{r} -->
-<!-- ggplot(data = oly12_sub, aes(x = Height, y = Weight)) + -->
-<!-- 	geom_jitter() -->
-<!-- ``` -->
-
-<!-- ## Edit the transparency of the data markers  -->
-
-<!-- ```{r} -->
-<!-- ggplot(data = oly12_sub, aes(x = Height, y = Weight)) + -->
-<!-- 	geom_jitter(alpha = 0.2) -->
-<!-- ``` -->
-
-<!-- ## Edit the axis labels -->
-
-<!-- ```{r} -->
-<!-- ggplot(data = oly12_sub, aes(x = Height, y = Weight)) + -->
-<!-- 	geom_jitter(alpha = 0.2) + -->
-<!-- 	labs(x = "Height (m)", y = "Weight (kg)") -->
-<!-- ``` -->
-
-
-<!-- ## Bivariate? Trivariate?     -->
-
-
-<!-- - A scatterplot displays two continuous variables -->
-<!-- - How can a scatterplot be tri-variate?  -->
-
-<!-- ```{r echo=FALSE} -->
-<!-- glimpse(oly12_sub) -->
-<!-- ``` -->
-
-
-<!-- ## Add a facet by Sex -->
-
-<!-- ```{r} -->
-<!-- ggplot(data = oly12_sub, aes(x = Height, y = Weight)) + -->
-<!-- 	geom_jitter(alpha = 0.2) + -->
-<!-- 	labs(x = "Height (m)", y = "Weight (kg)") + -->
-<!-- 	facet_wrap(~Sex) -->
-<!-- ``` -->
-
-<!-- ## Or by Sport, creating a small-multiples graph -->
-
-<!-- ```{r eval=FALSE} -->
-<!-- ggplot(data = oly12_sub, aes(x = Height, y = Weight)) + -->
-<!-- 	geom_jitter(alpha = 0.2) + -->
-<!-- 	labs(x = "Height (m)", y = "Weight (kg)") + -->
-<!-- 	facet_wrap(~Sport) -->
-<!-- ``` -->
-
-<!-- ## -->
-
-<!-- ```{r echo = FALSE, fig.height = 7} -->
-<!-- ggplot(data = oly12_sub, aes(x = Height, y = Weight)) + -->
-<!-- 	geom_jitter(alpha = 0.2) + -->
-<!-- 	labs(x = "Height (m)", y = "Weight (kg)") + -->
-<!-- 	facet_wrap(~Sport) -->
-<!-- ``` -->
-
-
-
-<!-- ## We can include a fourth variable using a color aesthetic -->
-
-<!-- ```{r eval=FALSE} -->
-<!-- ggplot(data = oly12_sub,  -->
-<!-- 	  aes(x = Height, y = Weight, col = Sex)) + -->
-<!-- 	geom_jitter(alpha = 0.2) + -->
-<!-- 	labs(x = "Height (m)", y = "Weight (kg)") + -->
-<!-- 	facet_wrap(~Sport) -->
-<!-- ``` -->
-
-<!-- ## -->
-
-<!-- ```{r echo = FALSE, fig.height = 7} -->
-<!-- ggplot(data = oly12_sub,  -->
-<!-- 		aes(x = Height, y = Weight, col = Sex)) + -->
-<!-- 	geom_jitter(alpha = 0.2) + -->
-<!-- 	labs(x = "Height (m)", y = "Weight (kg)") + -->
-<!-- 	facet_wrap(~Sport) -->
-<!-- ``` -->
-
-
-
-<!-- ## Review -->
-
-<!-- \begin{columns}[T] -->
-
-<!-- \begin{column}[T]{0.33\textwidth} -->
-
-<!-- Packages -->
-
-<!-- \begin{itemize} -->
-<!-- \item tidyverse -->
-<!-- \item VGAMdata -->
-<!-- \end{itemize} -->
-
-<!-- \vspace{0.5\baselineskip} -->
-<!-- Tidyverse functions -->
-
-<!-- \begin{itemize} -->
-<!-- \item ggplot() -->
-<!-- \item glimpse() -->
-<!-- \item select() -->
-<!-- \item filter() -->
-<!-- \end{itemize} -->
-
-<!-- \end{column} -->
-
-<!-- \begin{column}[T]{0.33\textwidth} -->
-
-<!-- R functions -->
-
-<!-- \begin{itemize} -->
-<!-- \item library() -->
-<!-- \item data() -->
-<!-- \item ls() -->
-<!-- \item class() -->
-<!-- \item names() -->
-<!-- \item print() -->
-<!-- \item complete.cases() -->
-<!-- \end{itemize} -->
-
-<!-- \end{column} -->
-
-<!-- \begin{column}[T]{0.33\textwidth} -->
-
-<!-- ggplot arguments -->
-
-<!-- \begin{itemize} -->
-<!-- \item aes() -->
-<!-- \item geom\_point() -->
-<!-- \item geom\_jitter() -->
-<!-- \item labs() -->
-<!-- \item facet\_wrap() -->
-<!-- \end{itemize} -->
-
-<!-- \end{column} -->
-
-<!-- \end{columns} -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\begin{itemize}
+\item data()
+\item class()
+\item head()
+\item tail()
+\item summary()
+\item unloadNamespace()
+\item search()
+\end{itemize}
+
+\end{column}
+\end{columns}
+
+ggplot2
+
+\begin{itemize}
+\item geom\_smooth(method = lm, se = FALSE)
+\end{itemize}

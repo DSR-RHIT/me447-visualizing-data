@@ -18,6 +18,7 @@ library(readxl)
 
 After working through this tutorial, you should be able to 
 
+- Describe a "tidy" dataset
 - Read data from an Excel file 
 - Read and write CSV data files 
 - Access data sets included with R and R packages 

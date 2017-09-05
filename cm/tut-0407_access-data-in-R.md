@@ -11,17 +11,13 @@ data()
 
 A tab will open in the RStudio pane that looks like this:
 
-    Data sets in package â€˜datasetsâ€™:
+    Data sets in package 'datasets':
 
-    AirPassengers      Monthly Airline Passenger Numbers
-                       1949-1960
+    AirPassengers      Monthly Airline Passenger Numbers 1949-1960
     BJsales            Sales Data with Leading Indicator
-    BJsales.lead (BJsales)
-                       Sales Data with Leading Indicator
     BOD                Biochemical Oxygen Demand
     CO2                Carbon Dioxide Uptake in Grass Plants
-    ChickWeight        Weight versus age of chicks on
-                       different diets
+    ChickWeight        Weight versus age of chicks on different diets
 
 You can scroll down this list looking for interesting data. Some of these datasets are used regularly by R folks to illustrate package functionality.
 
