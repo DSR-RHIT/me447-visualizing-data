@@ -140,7 +140,7 @@ tidy_data <- read_excel(
 glimpse(tidy_data)
 ```
 
-## Or, if we print the data frame as a table
+## Or, if we print the data frame as a table using *knitr::kable()*
 
 ```{r}
 library(knitr)
@@ -149,6 +149,9 @@ kable(tidy_data)
 
 
 ## Note the relative path argument in *read_excel()*
+
+- Paths are relative to the current working directory 
+- In an R-project, the project folder is the working directory
 
 \begin{center}
 \includegraphics[scale=0.4]{../images/data-basics-relative-path.png}
@@ -207,14 +210,15 @@ kable(untidy_data)
  
 ## Read and write CSV files
 
-If you have a data frame *tidy_data* in your workspace
+**Write CSV.** Given a data frame in your workspace
 
 ```{r}
 library(readr)
 write_csv(tidy_data, "data/example_tidy_data.csv")
 ```
 
-If you have file *example_tidy_data.csv* in your *data* folder 
+**Read CSV.** Given a CSV file in your data folder
+
 ```{r}
 new_copy <- read_csv("data/example_tidy_data.csv")
 ```
@@ -222,9 +226,9 @@ new_copy <- read_csv("data/example_tidy_data.csv")
 
 
 
-## Examine a data frame
+## Graphing data and studying the data structure are complementary activities 
 
-Graphing data and studying the data structure are complementary
+Examine data frame characteristics
 
 - *class()*
 - *glimpse()*
