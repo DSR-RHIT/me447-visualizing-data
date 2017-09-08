@@ -56,6 +56,7 @@ prose
 -   Add a couple of paragraphs on any topic at all.
 -   Add markup tags to make a word or phrase *italic*, another **bold.**
 -   Knit HTML to check that everything works as expected.
+-   Spellcheck using the F7 function key when your script pane is active.
 
 code chunk
 ----------
