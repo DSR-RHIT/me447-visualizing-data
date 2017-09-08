@@ -47,3 +47,9 @@ source("practiceR/tut02_scatterplot.R")
 ```
 
 If this were my portfolio, I would set `echo = FALSE` as the default to hide the code being executed. 
+
+## To see my Rmd script
+
+Click the "Raw" button near the top of the page.
+
+
