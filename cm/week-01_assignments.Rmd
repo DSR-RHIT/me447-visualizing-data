@@ -4,6 +4,15 @@ bibliography: "../manage/refs.bib"
 csl: "../manage/csl/journal-of-peace-research.csl"
 ---
 
+
+```{r echo=FALSE}
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE)
+```
+
+
+
 ## week 1
 
 Portfolio progress. By the end of the week you should be able to 
