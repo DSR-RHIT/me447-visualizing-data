@@ -11,8 +11,6 @@ opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE)
 ```
 
 
-
-
 ## create an R markdown file
 
 Launch your RStudio project.

@@ -22,19 +22,19 @@ The `output:` option recognizes three document types:
 
 You can type these directly in the Rmd YAML header or you can use the RStudio `Knit` pull-down menu
 
-<img src="../visuals/knit-to-pdf.PNG" width="250">
+<img src="../visuals/knit-to-pdf.png" width="395" />
 
 `Knit HTML` produces
 
-<img src="../visuals/output-html.png" width="600">
+<img src="../visuals/output-html.png" width="1190" />
 
 `Knit PDF` (only if TeX is installed on your machine) produces
 
-<img src="../visuals/output-pdf.png" width="600">
+<img src="../visuals/output-pdf.png" width="1188" />
 
 `Knit WORD` (only if Word is installed on your machine) produces
 
-<img src="../visuals/output-word.png" width="600">
+<img src="../visuals/output-word.png" width="1191" />
 
 Next tutorial: [basic R markdown markup tags](tut-0603_rmd-basic-tags.md)
 

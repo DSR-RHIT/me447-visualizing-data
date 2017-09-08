@@ -6,25 +6,25 @@ See the [R Markdown cheat sheet](https://www.rstudio.com/wp-content/uploads/2016
 
 #### section headings
 
-<img src="../visuals/markup-output-sections.PNG" width="600">
+<img src="tut-06-images/markup-output-sections.png" width="600">
 
 #### emphasis
 
-<img src="../visuals/markup-output-emphasis.PNG" width="600">
+<img src="tut-06-images/markup-output-emphasis.png" width="600">
 
 #### itemize
 
 Every line ends with two spaces.
 Sub-items begin with 4 spaces.
 
-<img src="../visuals/markup-output-itemize.PNG" width="600">
+<img src="tut-06-images/markup-output-itemize.PNG" width="600">
 
 #### enumerate
 
 Every line ends with two spaces.
 Sub-items begin with 4 spaces.
 
-<img src="../visuals/markup-output-enumerate.PNG" width="600">
+<img src="tut-06-images/markup-output-enumerate.PNG" width="600">
 
 #### links
 

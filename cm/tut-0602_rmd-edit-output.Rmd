@@ -36,19 +36,30 @@ The `output:` option recognizes three document types:
 
 You can type these directly in the Rmd YAML header or you can use the RStudio `Knit` pull-down menu
 
-<img src="../visuals/knit-to-pdf.PNG" width="250">
+
+```{r echo=FALSE}
+knitr::include_graphics("../visuals/knit-to-pdf.png")
+```
 
 `Knit HTML` produces 
 
-<img src="../visuals/output-html.png" width="600">
+```{r echo=FALSE}
+knitr::include_graphics("../visuals/output-html.png")
+```
 
 `Knit PDF`  (only if TeX is installed on your machine) produces
 
-<img src="../visuals/output-pdf.png" width="600">
+```{r echo=FALSE}
+knitr::include_graphics("../visuals/output-pdf.png")
+```
 
 `Knit WORD`  (only if Word is installed on your machine) produces
 
-<img src="../visuals/output-word.png" width="600">
+```{r echo=FALSE}
+knitr::include_graphics("../visuals/output-word.png")
+```
+
+
 
 
 
