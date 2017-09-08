@@ -1,5 +1,5 @@
 ---
-title: "First report"
+title: "Portfolio trial"
 author: "Richard Layton"
 date: '`r format(Sys.time(), "%Y-%m-%d")`'
 output: word_document
@@ -9,8 +9,8 @@ output: word_document
 ```{r setup, include=FALSE}
 # set the working directory for knitr one level up
 library(knitr) 
-opts_knit$set(root.dir="../")
-knitr::opts_chunk$set(echo=TRUE)
+opts_knit$set(root.dir = "../")
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # D1 scatterplot 
@@ -19,7 +19,7 @@ This is a first attempt at writing in an .Rmd file, combining prose and executab
 
 The file *D1_temp.R* has been written and saved to the *design directory. 
 
-```{r}
+```{r echo=FALSE}
 source("design/D1_temp.R")
 ```
 

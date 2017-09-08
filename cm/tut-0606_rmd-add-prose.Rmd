@@ -23,6 +23,8 @@ For  drafting stages I prefer HTML output. Later we will cover how to manage Wor
 
 
 
+Next tutorial: [Rmd exercise](tut-0607_rmd-exercise.md)
+
 ---
 
 [main page](../README.md)<br> 
