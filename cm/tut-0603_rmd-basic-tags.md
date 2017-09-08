@@ -17,14 +17,14 @@ See the [R Markdown cheat sheet](https://www.rstudio.com/wp-content/uploads/2016
 Every line ends with two spaces.
 Sub-items begin with 4 spaces.
 
-<img src="tut-06-images/markup-output-itemize.PNG" width="600">
+<img src="tut-06-images/markup-output-itemize.png" width="600">
 
 #### enumerate
 
 Every line ends with two spaces.
 Sub-items begin with 4 spaces.
 
-<img src="tut-06-images/markup-output-enumerate.PNG" width="600">
+<img src="tut-06-images/markup-output-enumerate.png" width="600">
 
 #### links
 
