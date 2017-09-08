@@ -2,14 +2,32 @@
 week 1
 ------
 
+Portfolio progress. By the end of the week you should be able to
+
+-   Find interesting data: tidy data only for now
+-   If you download data, save it in the *data* directory
+-   Write the .R script to create the D1 scatterplot
+-   Save the .R script in your *design* directory
+-   Start a new .Rmd file, call it *your-last-name\_portfolio\_v01.Rmd*
+-   Save it in your *portfolio* directory
+-   Use *source()* to run the R script that creates the graph
+-   Write your prose critique
+-   Knit the Rmd script
+-   Due at the first presentation
+
 Reading
 
 -   Robbins (2013) Ch 2: Limitations of some common charts and graphs
 -   Tufte (1997) Challenger launch decision. Checkout a hard copy from me. [Written response](read-01_reading-response-form.pdf) required for discussion.
 
-Scatterplots
+Lecture slides
 
--   [Lecture slides](../slides/Le03-scatterplot-slides.pdf)
+-   [Scatterplot slides](../slides/Le03-scatterplot-slides.pdf)
+-   [Data basics slides](../slides/Le04-data-basics-slides.pdf)
+-   [R markdown basics slides](../slides/Le06-markdown-basics-slides.pdf)
+
+Scatterplot tutorials and exercises
+
 -   [Start a script](tut-0301_start-scatterplot.md)
 -   [Install and load a package](tut-0302_install-load-package.md)
 -   [Create a data frame](tut-0303_create-data-frame.md)
@@ -18,12 +36,11 @@ Scatterplots
 -   [Edit the axis labels and title](tut-0306_edit-axis-labels-title.md)
 -   [Edit the scales](tut-0307_edit-scales.md)
 -   [Edit the theme](tut-0308_edit-theme.md)
--   [Tutorial outcome](../practiceR/tut02_scatterplot.R) To check your work
--   [Exercise](tut-0309_scatterplot-exercise.md) To practice what you've learned
+-   Compare your work to my version of the [tutorial script](../practiceR/tut02_scatterplot.R)
+-   Practice what you have learned by working these [exercises](tut-0309_scatterplot-exercise.md)
 
-Data basics
+Data basics tutorials and exercises
 
--   [Lecture slides](../slides/Le04-data-basics-slides.pdf)
 -   [Data basics](tut-0401_data-basics.md)
 -   [Examine the sample Excel file](tut-0402_read-excel.md)
 -   [Write and read a CSV file](tut-0403_read-write-csv.md)
@@ -31,34 +48,18 @@ Data basics
 -   [When a new library masks a function](tut-0405_new-library-masks.md)
 -   [Add a regression to a scatterplot](tut-0406_add-regression.md)
 -   [Accessing data in R](tut-0407_access-data-in-R.md)
--   [Tutorial outcome](../practiceR/tut03_data-basics.R) To check your work
--   [Data basics exercises](tut-0408_data-basics-exercise.md)
+-   Compare your work to my version of the [tutorial script](../practiceR/tut03_data-basics.R)
+-   Practice what you have learned by working these [exercises](tut-0408_data-basics-exercise.md)
 
-Display due this week
-
--   Nothing due, but you might get started on D1.
-
-Document design
+Document design tutorials and exercises
 
 -   [Create an R markdown script](tut-0601_rmd-start-markdown.md)
 -   [Edit the Rmd output format](tut-0602_rmd-edit-output.md)
 -   [Basic Rmd markup tags](tut-0603_rmd-basic-tags.md)
 -   [Elements of an Rmd report](tut-0604_rmd-elements.md)
 -   [Run an R script from an Rmd script](tut-0605_rmd-run-r.md)
--   [R markdown exercise](tut-0607_rmd-exercise.md)
-
-Portfolio progress
-
--   Find interesting data: tidy data only for now
--   If you download data, save it in the *data* directory
--   Write the .R script to create the scatterplot
--   Save the .R script in your *design* directory
--   Start a new .Rmd file, call it *your\_last\_name\_portfolio*
--   Save it in your *portfolio* directory
--   Use *source()* to execute the graph file
--   Write your prose critique
--   Knit it.
--   Due at the first presentation
+-   Compare your work to my version of the [first report](../practiceR/tut04_first-report.Rmd) or [second report](../practiceR/tut04_secondreport.Rmd)
+-   Practice what you have learned by working these [exercises](tut-0607_rmd-exercise.md)
 
 bibliography
 ------------
