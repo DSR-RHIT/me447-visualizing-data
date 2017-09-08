@@ -15,8 +15,8 @@ opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE)
 
 1. In your *design* directory, create a file called *D1_temp.R*.  
 2. In this file, write two lines of code  
-    `data(pressure)`  
-    `plot(pressure)`  
+        `data(pressure)`  
+        `plot(pressure)`  
 3. Run the file to make sure it produces a graph.  
 4. In your *portfolio* directory, create an .Rmd script called *portfolio_exercise.Rmd*    
 5. In this file, 
