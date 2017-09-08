@@ -1,0 +1,58 @@
+---
+output: github_document
+bibliography: "../manage/refs.bib" 
+csl: "../manage/csl/journal-of-peace-research.csl"
+---
+
+```{r echo=FALSE}
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE)
+```
+
+
+
+
+## create an R markdown file
+
+Launch your RStudio project.
+
+From RStudio, create a new R Markdown file:
+
+- *File > New File > R Markdown...*
+
+In the dialog box: 
+
+- Use the default HTML settings for now. 
+
+An untitled R Markdown file is created with some default text and R code. Save the file: 
+
+- *File > Save As...* 
+- Save it to your *practiceR* directory
+- With the file name *tut04_first-report.Rmd*
+
+To "render" the document, use the *Knit* pulldown menu:
+
+- *Knit > Knit to HTML*
+
+```{r echo=FALSE}
+knitr::include_graphics("../images/start-rmd-knit-icon.png")
+```
+
+The report appears in your RStudio viewer. 
+
+```{r echo=FALSE}
+knitr::include_graphics("../images/start-rmd-default-report.png")
+```
+
+The HTML output is convenient when you are drafting a report. We'll switch to Word output later. 
+
+
+Next tutorial: [edit the R markdown output format](tut-0602_rmd-edit-output.md)
+
+---
+
+[main page](../README.md)<br> 
+[topics page](../README-by-topic.md)
+
+

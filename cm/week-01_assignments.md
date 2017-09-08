@@ -38,7 +38,14 @@ Display due this week
 
 -   Nothing due, but you might get started on D1.
 
-Document design: Markdown basics
+Document design
+
+-   [create an Rmd script](tut-0601_rmd-start-markdown.md)
+-   [edit the Rmd output format](tut-0602_rmd-edit-output.md)
+-   [basic Rmd markup tags](tut-0603_rmd-basic-tags.md)
+-   [start your portfolio](tut-0604_rmd-start-portfolio.md)
+-   [run an R script from an Rmd script](tut-0605_rmd-run-r.md)
+-   [adding prose to your portfolio](tut-0606_rmd-add-prose.md)
 
 bibliography
 ------------

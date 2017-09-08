@@ -1,0 +1,196 @@
+---
+title: "**R Markdown basics**"
+author: "Richard Layton"
+date: "2017-09-05"
+urlcolor: blue
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo = TRUE, message = FALSE, collapse = FALSE)
+opts_chunk$set(fig.height = 5.5)
+options(width = 52)
+```
+
+```{r include=FALSE}
+library(tibble)
+library(readr)
+library(readxl)
+library(pander)
+panderOptions('table.alignment.default', function(df)
+    ifelse(sapply(df, is.numeric), 'right', 'left'))
+panderOptions('table.split.table', Inf)
+panderOptions('big.mark', ",")
+panderOptions('keep.trailing.zeros', TRUE)
+```
+
+## With R Markdown, prose and code are in the same script 
+
+Your portfolio is an R Markdown (.Rmd) script  that includes
+
+- the prose of your critiques
+- the executable R code that creates your data graphics
+- auto-generated tables, citations, and bibliographies 
+
+Quick introduction 
+
+- [\textcolor{magenta}{1-minute video}](http://rmarkdown.rstudio.com/lesson-1.html) 
+
+
+
+##
+\begin{columns}[T]
+\begin{column}[T]{0.5\textwidth}
+\textcolor{blue}{\Large Sample script}
+
+\bigskip
+{\em File > New File > R Markdown...}
+\end{column}
+\begin{column}[T]{0.5\textwidth}
+\includegraphics[scale=0.42]{../images/start-markdown-default-00.png}
+\end{column}
+\end{columns}
+
+
+
+##
+\begin{columns}[T]
+\begin{column}[T]{0.5\textwidth}
+\textcolor{blue}{\Large Sample output document}
+
+\bigskip
+The {\em knitr} package "knits" your prose and code results together.  
+
+\bigskip
+Shown is the HTML output.
+
+\end{column}
+\begin{column}[T]{0.5\textwidth}
+\includegraphics[scale=0.36]{../images/start-markdown-output-06-html.png}
+\end{column}
+\end{columns}
+
+
+
+
+## The script starts with a YAML header
+\includegraphics[scale=0.7]{../images/start-markdown-default-01a.png}
+
+
+
+
+## 
+\includegraphics[scale=0.65]{../images/start-markdown-output-01.png}
+
+
+
+
+
+## Code chunks open and close with 3 backticks
+\includegraphics[scale=0.7]{../images/start-markdown-default-02a.png}
+
+
+
+
+## The code chunk header is `{r}`
+\includegraphics[scale=0.7]{../images/start-markdown-default-02b.png}
+
+\bigskip
+Header labels and arguments are optional.
+
+
+
+
+## Knitting options can be specified  
+\includegraphics[scale=0.7]{../images/start-markdown-default-02c.png}
+
+\bigskip
+The list of [\textcolor{magenta}{knitr options}](https://yihui.name/knitr/options/) is extensive. 
+
+
+
+
+## Use markup tags to format text 
+\includegraphics[scale=0.65]{../images/start-markdown-default-03a.png}
+
+\bigskip
+See the [\textcolor{magenta}{R Markdown cheat sheet}](https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf) for more detail.  
+
+
+
+
+
+## 
+\includegraphics[scale=0.65]{../images/start-markdown-output-03.png}
+
+
+
+
+
+## Incorporating R code and output in a document
+\includegraphics[scale=0.7]{../images/start-markdown-default-04a.png}
+
+\bigskip
+The output document will show  
+
+- The code echo 
+- The `summary(cars)` output table
+
+
+##  
+\includegraphics[scale=0.65]{../images/start-markdown-output-04.png}
+
+
+
+## Incorporating code output without listing the code
+\includegraphics[scale=0.65]{../images/start-markdown-default-05a.png}
+
+\bigskip
+The output document will show  
+
+- No code echo 
+- The `plot(pressure)` output graph
+
+
+
+
+##
+\begin{columns}[T]
+\begin{column}[T]{0.17\textwidth}
+
+\end{column}
+\begin{column}[T]{0.83\textwidth}
+\includegraphics[scale=0.58]{../images/start-markdown-output-05.png}
+\end{column}
+\end{columns}
+
+
+##
+\begin{columns}[T]
+\begin{column}[T]{0.45\textwidth}
+\textcolor{blue}{\Large Change output type}
+
+\bigskip
+\includegraphics[scale=0.48]{../images/start-markdown-default-06.png}
+\end{column}
+\begin{column}[T]{0.55\textwidth}
+\includegraphics[scale=0.4]{../images/start-markdown-output-06.png}
+\end{column}
+\end{columns}
+
+
+
+## What the software is doing
+
+\includegraphics[scale=0.7]{../visuals/rmd-to-html-process-4.png}
+
+
+
+
+##
+
+The resulting output file is placed in the same directory as your Rmd file.
+
+
