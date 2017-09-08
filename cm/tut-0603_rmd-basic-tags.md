@@ -45,7 +45,7 @@ Images on the web
 
 <pre class="markdown"><code>![alt text](http://example.com/logo.png)
 </code></pre>
-Next tutorial: [start your portfolio](tut-0604_rmd-start-portfolio.md)
+Next tutorial: [elements of an Rmd report](tut-0604_rmd-elements.md)
 
 ------------------------------------------------------------------------
 

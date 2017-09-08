@@ -1,6 +1,6 @@
 
-create an R markdown file
--------------------------
+create an R markdown script
+---------------------------
 
 Launch your RStudio project.
 

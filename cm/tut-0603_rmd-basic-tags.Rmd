@@ -71,7 +71,7 @@ Images on the web
 
 
 
-Next tutorial: [start your portfolio](tut-0604_rmd-start-portfolio.md)
+Next tutorial: [elements of an Rmd report](tut-0604_rmd-elements.md)
 
 ---
 

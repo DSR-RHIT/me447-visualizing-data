@@ -16,29 +16,26 @@ opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE)
 
 ## run an R script from the Rmd script
 
-In your portfolio .Rmd script, add a heading, for example, 
+Quite often, we will have an R script that does some data carpentry or creates a graph and we want the .Rmd script to execute that code, produce the graph, and embed the figure in the report (or portfolio). 
 
-<pre class="markdown"><code># D1 Scatterplot</code></pre>
+I'll assume that from an earlier tutorial you have a script *tut02_scatterplot.R* saved in your *practiceR* directory 
 
-Knit HTML to check that everything works as expected.   
+- Open the current tutorial script called *practiceR/tut-04_second-report.Rmd*.  
+- Add a code chunk.  
+- In the code chunk, add the *source()* function. The argument is the path to the file you want to run. 
 
-Add an R code chunk. Use the *source()* function to execute an R file that creates a graph. Here, the relative path shown assumes the .R script is saved in the *design* directory. 
+        source("practiceR/tut02_scatterplot.R")  
 
-<pre class="r"><code>```{r D1, echo=FALSE}
-source("design/name-of-file.R")
-<code>```</code>
-</code></pre>
+- add the echo argument to the code chunk header to turn on or off printing the code to your output document.  
+- Knit HTML to check that everything works as expected. 
 
-- `echo=FALSE` because the reader of your portfolio is generally not interested in the code 
-- the *design* folder is where you should save all the R scripts that create the graphs in your portfolio. We'll discuss file management soon. 
-- Knit HTML (or Word) to check that everything works as expected. 
-
-For  drafting stages I prefer HTML output. Later we will cover how to manage Word Styles to customize the design of Word output documents.  
+```{r echo=FALSE}
+source("practiceR/tut02_scatterplot.R")
+```
 
 
 
-
-Next tutorial: [adding prose to your portfolio](tut-0606_rmd-add-prose.md)
+Next tutorial: [Rmd exercise](tut-0607_rmd-exercise.md)
 
 ---
 

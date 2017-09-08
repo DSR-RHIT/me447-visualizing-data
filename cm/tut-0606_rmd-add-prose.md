@@ -10,6 +10,8 @@ Most of your prose will be in plain text in the .Rmd script.
 
 For drafting stages I prefer HTML output. Later we will cover how to manage Word Styles to customize the design of Word output documents.
 
+Next tutorial: [Rmd exercise](tut-0607_rmd-exercise.md)
+
 ------------------------------------------------------------------------
 
 [main page](../README.md)<br> [topics page](../README-by-topic.md)

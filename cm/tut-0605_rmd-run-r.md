@@ -2,24 +2,28 @@
 run an R script from the Rmd script
 -----------------------------------
 
-In your portfolio .Rmd script, add a heading, for example,
+Quite often, we will have an R script that does some data carpentry or creates a graph and we want the .Rmd script to execute that code, produce the graph, and embed the figure in the report (or portfolio).
 
-<pre class="markdown"><code># D1 Scatterplot</code></pre>
-Knit HTML to check that everything works as expected.
+I'll assume that from an earlier tutorial you have a script *tut02\_scatterplot.R* saved in your *practiceR* directory
 
-Add an R code chunk. Use the *source()* function to execute an R file that creates a graph. Here, the relative path shown assumes the .R script is saved in the *design* directory.
+-   Open the current tutorial script called *practiceR/tut-04\_second-report.Rmd*.
+-   Add a code chunk.
+-   In the code chunk, add the *source()* function. The argument is the path to the file you want to run.
 
-<pre class="r"><code>```{r D1, echo=FALSE}
-source("design/name-of-file.R")
-<code>```</code>
-</code></pre>
--   `echo=FALSE` because the reader of your portfolio is generally not interested in the code
--   the *design* folder is where you should save all the R scripts that create the graphs in your portfolio. We'll discuss file management soon.
--   Knit HTML (or Word) to check that everything works as expected.
+        source("practiceR/tut02_scatterplot.R")  
 
-For drafting stages I prefer HTML output. Later we will cover how to manage Word Styles to customize the design of Word output documents.
+-   add the echo argument to the code chunk header to turn on or off printing the code to your output document.
+-   Knit HTML to check that everything works as expected.
 
-Next tutorial: [adding prose to your portfolio](tut-0606_rmd-add-prose.md)
+<!-- -->
+
+    ## 'data.frame':    101 obs. of  2 variables:
+    ##  $ time_sec: num  0 0.0628 0.1257 0.1885 0.2513 ...
+    ##  $ displ_mm: num  0 0.125 0.249 0.368 0.482 ...
+
+![](tut-0605_rmd-run-r_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-2-1.png)
+
+Next tutorial: [Rmd exercise](tut-0607_rmd-exercise.md)
 
 ------------------------------------------------------------------------
 
