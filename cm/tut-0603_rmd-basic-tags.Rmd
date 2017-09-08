@@ -8,7 +8,6 @@ csl: "../manage/csl/journal-of-peace-research.csl"
 library(knitr)
 opts_knit$set(root.dir = "../")
 opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE, cache.path = "tut-06-images")
-
 ```
 
 

@@ -7,7 +7,7 @@ csl: "../manage/csl/journal-of-peace-research.csl"
 ```{r echo=FALSE}
 library(knitr)
 opts_knit$set(root.dir = "../")
-opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE)
+opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE, cache.path = "tut-06-images")
 ```
 
 
@@ -36,28 +36,19 @@ The `output:` option recognizes three document types:
 
 You can type these directly in the Rmd YAML header or you can use the RStudio `Knit` pull-down menu
 
-
-```{r echo=FALSE}
-knitr::include_graphics("../visuals/knit-to-pdf.png")
-```
+<img src="tut-06-images/knit-to-pdf.png" width="250">
 
 `Knit HTML` produces 
 
-```{r echo=FALSE}
-knitr::include_graphics("../visuals/output-html.png")
-```
+<img src="tut-06-images/output-html.png" width="600">
 
 `Knit PDF`  (only if TeX is installed on your machine) produces
 
-```{r echo=FALSE}
-knitr::include_graphics("../visuals/output-pdf.png")
-```
+<img src="tut-06-images/output-pdf.png" width="600">
 
 `Knit WORD`  (only if Word is installed on your machine) produces
 
-```{r echo=FALSE}
-knitr::include_graphics("../visuals/output-word.png")
-```
+<img src="tut-06-images/output-word.png" width="600">
 
 
 
