@@ -62,7 +62,7 @@ Document design tutorials and exercises
 - [Basic Rmd markup tags](tut-0603_rmd-basic-tags.md)  
 - [Elements of an Rmd report](tut-0604_rmd-elements.md)  
 - [Run an R script from an Rmd script](tut-0605_rmd-run-r.md)  
-- Compare your work to my version of the [first report](../practiceR/tut04_first-report.Rmd) or [second report](../practiceR/tut04_secondreport.Rmd)
+- Compare your work to my version of the [first report](../practiceR/tut04_first-report.Rmd) or [second report](../practiceR/tut04_second-report.Rmd)
 - Practice what you have learned by working these [exercises](tut-0607_rmd-exercise.md)  
 
 
