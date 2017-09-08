@@ -52,6 +52,7 @@ Document design
 - [start your portfolio](tut-0604_rmd-start-portfolio.md)
 - [run an R script from an Rmd script](tut-0605_rmd-run-r.md) 
 - [adding prose to your portfolio](tut-0606_rmd-add-prose.md) 
+- [R markdown exercise](tut-0607_rmd-exercise.md) 
 
 ## bibliography 
 
