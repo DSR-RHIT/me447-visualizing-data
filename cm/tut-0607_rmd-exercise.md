@@ -4,8 +4,12 @@ R markdown exercise
 
 1.  In your *design* directory, create a file called *D1\_temp.R*.
 2.  In this file, write two lines of code
-    `data(pressure)`
-    `plot(pressure)`
+
+    ``` r
+        data(pressure)  
+        plot(pressure)  
+    ```
+
 3.  Run the file to make sure it produces a graph.
 4.  In your *portfolio* directory, create an .Rmd script called *portfolio\_exercise.Rmd*
 5.  In this file,
