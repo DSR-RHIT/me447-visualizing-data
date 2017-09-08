@@ -189,8 +189,10 @@ The output document will show
 
 
 
-##
+## File organization
 
-The resulting output file is placed in the same directory as your Rmd file.
+- The resulting output file is placed in the same directory as your Rmd file.  
+- We will organize our files using the directories we've set up: *data*, *design*, *portfolio*, etc. 
+- More about that in a future session. 
 
 

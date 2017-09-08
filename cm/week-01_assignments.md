@@ -47,6 +47,19 @@ Document design
 -   [Run an R script from an Rmd script](tut-0605_rmd-run-r.md)
 -   [R markdown exercise](tut-0607_rmd-exercise.md)
 
+Portfolio progress
+
+-   Find interesting data: tidy data only for now
+-   If you download data, save it in the *data* directory
+-   Write the .R script to create the scatterplot
+-   Save the .R script in your *design* directory
+-   Start a new .Rmd file, call it *your\_last\_name\_portfolio*
+-   Save it in your *portfolio* directory
+-   Use *source()* to execute the graph file
+-   Write your prose critique
+-   Knit it.
+-   Due at the first presentation
+
 bibliography
 ------------
 
