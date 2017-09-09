@@ -37,7 +37,6 @@ File management
 
 R
 
--   If you already use R and RStudio, please update R, RStudio, and packages to the most recent versions.
 -   [Install R and RStudio](https://github.com/DSR-RHIT/install-R-and-RStudio)
 -   [Set up an R Project](https://github.com/DSR-RHIT/install-R-and-RStudio)
 -   [Interacting with R in the Console](cm/tut-02_using-console.md)
@@ -51,19 +50,31 @@ Display types
 
 -   [Scatterplot: slides](slides/Le03-scatterplot-slides.pdf)
 -   [Scatterplot: get started](cm/tut-0304_create-scatterplot.md)
--   Dot plots
+-   [Dot plot: get started](cm/tut-0702_create-dot-plot.md)
+-   [Dot plot: reorder the rows](cm/tut-0703_reorder-rows.md)
 -   Multiways
 -   Tables
 -   Box plots
 -   Small multiples
 
-Editing elements of *ggplot2* graphs
+Editing *ggplot2* graph elements
 
 -   [Editing data markers](cm/tut-0305_edit-data-markers.md)
+-   [Manually change color of data marker](cm/tut-0706_manual-color.md)
 -   [Editing axis labels and title](cm/tut-0306_edit-axis-labels-title.md)
 -   [Editing scales](cm/tut-0307_edit-scales.md)
 -   [Editing the theme](cm/tut-0308_edit-theme.md)
 -   [Add a regression to a scatterplot](cm/tut-0406_add-regression.md)
+-   [Condition with text](cm/tut-0704_condition-by-text.md)
+-   [Condition with color](cm/tut-0705_condition-by-color.md)
+
+Editing *ggplot2* facets
+
+-   [Condition with facets](cm/tut-0707_condition-facets.md)
+-   [Change the order of the facets](cm/tut-0708_order-facets.md)
+-   [Set the facet y-scales free](cm/tut-0709_free-scales.md)
+-   [Rotate text in the facet strip](cm/tut-0710_rotate-strip-text.md)
+-   [Change spacing between facets](cm/tut-0711_change-panel-spacing.md)
 
 Data
 
@@ -73,13 +84,19 @@ Data
 -   [Examining a data set](cm/tut-0404_examine-new-data.md)
 -   [Examining an Excel file](cm/tut-0402_read-excel.md)
 -   [Write and read a CSV file](cm/tut-0403_read-write-csv.md)
+-   [Capture data stored in row names](cm/tut-0701_capture-row-name-data.md)
 -   Subsetting data
 -   Reshaping data
 -   Finding interesting data
 
 Documents
 
--   Markdown basics
+-   [R markdown basics: slides](slides/Le06-markdown-basics-slides.pdf)
+-   [Create an R markdown script](cm/tut-0601_rmd-start-markdown.md)
+-   [Edit the Rmd output format](cm/tut-0602_rmd-edit-output.md)
+-   [Basic Rmd markup tags](cm/tut-0603_rmd-basic-tags.md)
+-   [Elements of an Rmd report](cm/tut-0604_rmd-elements.md)
+-   [Run an R script from an Rmd script](cm/tut-0605_rmd-run-r.md)
 -   Document design 1
 -   Document design 2
 -   Front and back matter
@@ -91,18 +108,21 @@ Design and rhetoric
 -   Learning new graph types on your own
 -   Designing your own data graphics
 
+tutorial scripts
+----------------
+
+-   [tut01\_first-script.R](practiceR/tut01_first-script.R)
+-   [tut02\_scatterplot.R](practiceR/tut02_scatterplot.R)
+-   [tut03\_data-basics.R](practiceR/tut03_data-basics.R)
+-   [tut04\_first-report.Rmd](practiceR/tut04_first-report.Rmd)
+-   [tut04\_second-report.Rmd](practiceR/tut04_second-report.Rmd)
+
 exercises
 ---------
 
 -   [Scatterplot exercises](cm/tut-0309_scatterplot-exercise.md)
 -   [Data basics exercises](cm/tut-0408_data-basics-exercise.md)
-
-tutorial outcomes
------------------
-
--   [tut01\_first-script.R](practiceR/tut01_first-script.R)
--   [tut02\_scatterplot.R](practiceR/tut02_scatterplot.R)
--   [tut03\_data-basics.R](practiceR/tut03_data-basics.R) To check your work
+-   [R markdown basics exercises](cm/tut-0607_rmd-exercise.md)
 
 ------------------------------------------------------------------------
 
