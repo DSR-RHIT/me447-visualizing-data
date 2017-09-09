@@ -1,0 +1,88 @@
+---
+output: github_document
+bibliography: "../manage/refs.bib" 
+csl: "../manage/csl/journal-of-peace-research.csl"
+---
+
+```{r echo=FALSE}
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE, cache.path = "tut-07-images")
+```
+
+
+
+```{r include=FALSE}
+library(dplyr)
+library(tibble)
+library(ggplot2)
+
+# dataset in R, 1973–74 models, Motor Trend
+data(mtcars)
+
+# when row names contain data (not tidy)
+library(dplyr)
+my_mtcars <- mtcars %>%
+	mutate(make_model = row.names(mtcars))
+library(tibble)
+
+# OK, but treated as continuous var, actually discrete
+my_mtcars <- my_mtcars %>%
+	mutate(Cylinders = factor(cyl))
+
+# instead of colors, could use panels
+f8 <- ggplot(data = my_mtcars, aes(x = mpg, y = reorder(make_model, mpg))) +
+	geom_point(size = 3) +
+	facet_grid(~ Cylinders)
+```
+
+
+
+
+
+
+## set the y scales free 
+
+An argument added to *facet_grid()*. 
+
+Because each car has only one mpg, when we used *facet_grid()*, we end up with empty rows in each panel.
+
+To eliminate the unused rows, first we change panel orientation to vertical. 
+
+```{r}
+# orient vertically
+f10 <- f8 +
+	facet_grid(Cylinders ~.)
+print(f10)
+```
+
+Next use `scales = "free_y"` to eliminate all rows with no *mpg* data. 
+
+```{r}
+# free the scales to remove lines with no data
+f11 <- f8 +
+	facet_grid(Cylinders ~., scales = "free_y")
+print(f11)
+```
+
+
+To allow the panel heights to vary such that the row spacing is consistent, add `space = "free_y"` to *facet_grid()*. 
+
+```{r}
+# make the spacing free too
+f12 <- f8 +
+	facet_grid(Cylinders ~., scales = "free_y", space = "free_y")
+print(f12)
+```
+
+
+Next tutorial: [rotate text in the panel strip](tut-0710_rotate-strip-text.md)<br>
+Tutorial list: [week 2](week-02_assignments.md)  
+
+---
+ 
+[main page](../README.md)<br>
+[topics page](../README-by-topic.md) 
+
+
+

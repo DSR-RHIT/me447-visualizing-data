@@ -1,0 +1,66 @@
+---
+output: github_document
+bibliography: "../manage/refs.bib" 
+csl: "../manage/csl/journal-of-peace-research.csl"
+---
+
+```{r echo=FALSE}
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE, cache.path = "tut-07-images")
+```
+
+
+```{r include=FALSE}
+library(dplyr)
+library(tibble)
+library(ggplot2)
+
+# dataset in R, 1973–74 models, Motor Trend
+data(mtcars)
+
+# when row names contain data (not tidy)
+library(dplyr)
+my_mtcars <- mtcars %>%
+	mutate(make_model = row.names(mtcars))
+library(tibble)
+
+# OK, but treated as continuous var, actually discrete
+my_mtcars <- my_mtcars %>%
+	mutate(Cylinders = factor(cyl))
+
+# again with factor
+f6 <- ggplot(my_mtcars, aes(x = mpg
+	, y = reorder(make_model, mpg)
+	, col = Cylinders)
+) +
+	geom_point(size = 3)
+```
+
+
+
+
+## manually change dot plot colors
+
+Add *scale_colour_manual()* to assign colors to *Cylinders*, a factor. 
+
+```{r}
+# change default colors
+f7 <- f6 +
+	scale_colour_manual(
+		values = c("aquamarine4", "darkgoldenrod1", "firebrick")
+		)
+print(f7)
+```
+
+Next tutorial: [condition a dot plot with facets](tut-0707_condition-facets.md)<br>
+Tutorial list: [week 2](week-02_assignments.md)  
+
+---
+ 
+[main page](../README.md)<br>
+[topics page](../README-by-topic.md) 
+
+
+
+

@@ -1,0 +1,56 @@
+---
+output: github_document
+bibliography: "../manage/refs.bib" 
+csl: "../manage/csl/journal-of-peace-research.csl"
+---
+
+```{r echo=FALSE}
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE, cache.path = "tut-07-images")
+```
+
+
+
+## capture data stored in row names
+
+We'll start with some (nearly) tidy data. 
+
+```{r}
+# dataset in R, 1973–74 models, Motor Trend
+data(mtcars)
+head(mtcars)
+```
+
+This data set has information stored in the row names of the data frame. So, not quite tidy. 
+
+The *dplyr* package (for data manipulation) gives us the "pipe" operator `%>%`  and  *mutate()* that creates a new variable (column) in the data frame. 
+
+```{r}
+# copy the row names to a new variable "make_model" 
+library(dplyr)
+my_mtcars <- mtcars %>%
+	mutate(make_model = row.names(mtcars))
+```
+
+Examine the result. You can see that a new variable *make_model* has been added to the data frame. 
+
+```{r}
+class(my_mtcars)
+
+glimpse(my_mtcars)
+```
+
+Next tutorial: [create a dot plot](tut-0702_create-dot-plot.md)<br>
+Tutorial list: [week 2](week-02_assignments.md)  
+
+---
+ 
+[main page](../README.md)<br>
+[topics page](../README-by-topic.md)  
+
+
+
+
+
+

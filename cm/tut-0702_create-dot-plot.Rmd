@@ -1,0 +1,56 @@
+---
+output: github_document
+bibliography: "../manage/refs.bib" 
+csl: "../manage/csl/journal-of-peace-research.csl"
+---
+
+```{r echo=FALSE}
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE, cache.path = "tut-07-images")
+```
+
+
+```{r include=FALSE}
+library(dplyr)
+library(tibble)
+library(ggplot2)
+
+# dataset in R, 1973–74 models, Motor Trend
+data(mtcars)
+
+# when row names contain data (not tidy)
+my_mtcars <- mtcars %>%
+	mutate(make_model = row.names(mtcars))
+```
+
+
+## create a dot plot 
+
+The dot plot can be used to replace any data graphic typically drawn as a pie chart or a bar chart. The data structure is typically 
+
+- a continuous quantitative variable (such as mpg) associated with 
+- a categorical variable with a number of levels (such as the car make and model) 
+ 
+ The data frame *my_mtcars* was created in the previous tutorial. 
+ 
+ Here we graph the car make and model as a function of mileage in mpg. 
+ 
+```{r}
+# make basic dot plot
+library(ggplot2)
+f1 <- ggplot(data = my_mtcars, aes(x = mpg, y = make_model)) +
+	geom_point()
+print(f1)
+```
+
+Next tutorial: [reorder the rows of a dot plot](tut-0703_reorder-rows.md)<br>
+Tutorial list: [week 2](week-02_assignments.md)  
+
+---
+ 
+[main page](../README.md)<br>
+[topics page](../README-by-topic.md)  
+
+
+

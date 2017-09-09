@@ -1,0 +1,73 @@
+---
+output: github_document
+bibliography: "../manage/refs.bib" 
+csl: "../manage/csl/journal-of-peace-research.csl"
+---
+
+```{r echo=FALSE}
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE, cache.path = "tut-07-images")
+```
+
+
+```{r include=FALSE}
+library(dplyr)
+library(tibble)
+library(ggplot2)
+
+# dataset in R, 1973–74 models, Motor Trend
+data(mtcars)
+
+# when row names contain data (not tidy)
+my_mtcars <- mtcars %>%
+	mutate(make_model = row.names(mtcars))
+
+# OK, but treated as continuous var, actually discrete
+my_mtcars <- my_mtcars %>%
+	mutate(Cylinders = factor(cyl))
+
+# instead of colors, could use panels
+f8 <- ggplot(data = my_mtcars, aes(x = mpg, y = reorder(make_model, mpg))) +
+	geom_point(size = 3) +
+	facet_grid(~ Cylinders)
+
+# make the spacing free too
+f12 <- f8 +
+	facet_grid(Cylinders ~., scales = "free_y", space = "free_y")
+```
+
+
+
+
+
+## rotate text in the panel strip
+
+A `strip.text.y` argument added to the current theme. 
+
+```{r}
+# labels and theme
+f13 <- f12 +
+	labs(x = "Gas mileage (mpg)", y = "Make and model of car") +
+	theme_light()
+print(f13)
+
+# edit the strip text
+f14 <- f13 +
+	theme(strip.text.y = element_text(angle = 0, size = 14))
+print(f14)
+```
+
+Next tutorial: [change spacing between panels](tut-0711_change-panel-spacing.md)<br>
+Tutorial list: [week 2](week-02_assignments.md)  
+
+---
+ 
+[main page](../README.md)<br>
+[topics page](../README-by-topic.md) 
+
+
+
+
+
+

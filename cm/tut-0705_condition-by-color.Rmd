@@ -1,0 +1,80 @@
+---
+output: github_document
+bibliography: "../manage/refs.bib" 
+csl: "../manage/csl/journal-of-peace-research.csl"
+---
+
+```{r echo=FALSE}
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE, cache.path = "tut-07-images")
+```
+
+
+```{r include=FALSE}
+library(dplyr)
+library(tibble)
+library(ggplot2)
+
+# dataset in R, 1973–74 models, Motor Trend
+data(mtcars)
+
+# when row names contain data (not tidy)
+library(dplyr)
+my_mtcars <- mtcars %>%
+	mutate(make_model = row.names(mtcars))
+```
+
+
+
+
+
+
+## condition a dot plot with color
+
+We use *geom_point* and `col = cyl` in the aesthetics.
+
+```{r}
+# could use dot color
+f5 <- ggplot(data = my_mtcars
+	, aes(x = mpg, y = reorder(make_model, mpg), col = cyl)
+  ) +
+	geom_point(size = 3)
+print(f5)
+```
+
+The legend indicates color-coding used for a continuous variable, but the number of cylinders is actually a discrete value with only 3 levels: 4, 6, and 8.
+
+We use *factor()* to change cylinders from a double-precision variable to a factor and *mutate()*  to create the new variable in the data frame. 
+
+```{r}
+# new variable so color can be assigned discrete
+my_mtcars <- my_mtcars %>%
+	mutate(Cylinders = factor(cyl))
+```
+
+We change the color aesthetic to use the new variable, `col = Cylinders`. 
+
+```{r}
+# again with factor
+f6 <- ggplot(data = my_mtcars
+	, aes(x = mpg, y = reorder(make_model, mpg), col = Cylinders)
+	) +
+	geom_point(size = 3)
+print(f6)
+```
+
+
+Next tutorial: [manually change dot plot colors](tut-0706_manual-color.md)<br>
+Tutorial list: [week 2](week-02_assignments.md)  
+
+---
+ 
+[main page](../README.md)<br>
+[topics page](../README-by-topic.md) 
+
+
+
+
+
+
