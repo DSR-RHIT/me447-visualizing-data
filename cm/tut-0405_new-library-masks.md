@@ -45,13 +45,13 @@ Use *search()* to confirm that *VIM* is no longer loaded.
 # list packages currently loaded
 search()
 ##  [1] ".GlobalEnv"         "package:VIM"        "package:data.table"
-##  [4] "package:grid"       "package:colorspace" "package:knitr"     
-##  [7] "package:rmarkdown"  "package:readxl"     "package:dplyr"     
-## [10] "package:purrr"      "package:readr"      "package:tidyr"     
-## [13] "package:tibble"     "package:ggplot2"    "package:tidyverse" 
-## [16] "package:stats"      "package:graphics"   "package:grDevices" 
-## [19] "package:utils"      "package:datasets"   "package:methods"   
-## [22] "Autoloads"          "package:base"
+##  [4] "package:grid"       "package:colorspace" "package:rmarkdown" 
+##  [7] "package:readxl"     "package:dplyr"      "package:purrr"     
+## [10] "package:readr"      "package:tidyr"      "package:tibble"    
+## [13] "package:ggplot2"    "package:tidyverse"  "package:stats"     
+## [16] "package:graphics"   "package:grDevices"  "package:utils"     
+## [19] "package:datasets"   "package:methods"    "Autoloads"         
+## [22] "package:base"
 ```
 
 Next tutorial: [add a regression line to a plot](tut-0406_add-regression.md)

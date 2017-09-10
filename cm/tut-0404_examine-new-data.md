@@ -139,7 +139,7 @@ aggr_plot <- aggr(
     )
 ```
 
-![](tut-04-images/unnamed-chunk-11-1.png)
+![](tut-04-images/04-unnamed-chunk-11-1.png)
 
     ## 
     ##  Variables sorted by number of missings: 
