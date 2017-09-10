@@ -21,7 +21,7 @@ I'll assume that from an earlier tutorial you have a script *tut02\_scatterplot.
     ##  $ time_sec: num  0 0.0628 0.1257 0.1885 0.2513 ...
     ##  $ displ_mm: num  0 0.125 0.249 0.368 0.482 ...
 
-![](tut-06-images/unnamed-chunk-2-1.png)
+![](tut-06-images/05-unnamed-chunk-2-1.png)
 
 Next tutorial: [Rmd exercise](tut-0607_rmd-exercise.md)
 
