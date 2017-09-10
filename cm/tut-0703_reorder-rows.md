@@ -11,7 +11,7 @@ f2 <- ggplot(data = my_mtcars, aes(x = mpg, y = reorder(make_model, mpg))) +
 print(f2)
 ```
 
-![](tut-07-images/unnamed-chunk-3-1.png)
+![](tut-07-images/03-unnamed-chunk-3-1.png)
 
 Let's re-size the dots too.
 
@@ -22,7 +22,7 @@ f3 <- ggplot(data = my_mtcars, aes(x = mpg, y = reorder(make_model, mpg))) +
 print(f3)
 ```
 
-![](tut-07-images/unnamed-chunk-4-1.png)
+![](tut-07-images/03-unnamed-chunk-4-1.png)
 
 That's pretty much it for a single-panel, basic dot plot. Next we investigate different ways to use conditioning variables.
 

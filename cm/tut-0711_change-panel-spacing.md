@@ -11,7 +11,7 @@ f15 <- f14 +
 print(f15)
 ```
 
-![](tut-07-images/unnamed-chunk-3-1.png)
+![](tut-07-images/11-unnamed-chunk-3-1.png)
 
 Next tutorial: [dot plot exercises](tut-0712_dotplot-exercises.md)<br> Tutorial list: [week 2](week-02_assignments.md)
 

@@ -12,7 +12,7 @@ f8 <- ggplot(data = my_mtcars, aes(x = mpg, y = reorder(make_model, mpg))) +
 print(f8)
 ```
 
-![](tut-07-images/unnamed-chunk-3-1.png)
+![](tut-07-images/07-unnamed-chunk-3-1.png)
 
 Next tutorial: [change the order of the facets](tut-0708_order-facets.md)<br> Tutorial list: [week 2](week-02_assignments.md)
 

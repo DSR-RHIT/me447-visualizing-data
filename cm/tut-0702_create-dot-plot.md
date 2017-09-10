@@ -19,7 +19,7 @@ f1 <- ggplot(data = my_mtcars, aes(x = mpg, y = make_model)) +
 print(f1)
 ```
 
-![](tut-07-images/unnamed-chunk-3-1.png)
+![](tut-07-images/02-unnamed-chunk-3-1.png)
 
 Next tutorial: [reorder the rows of a dot plot](tut-0703_reorder-rows.md)<br> Tutorial list: [week 2](week-02_assignments.md)
 

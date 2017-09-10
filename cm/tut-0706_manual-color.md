@@ -13,7 +13,7 @@ f7 <- f6 +
 print(f7)
 ```
 
-![](tut-07-images/unnamed-chunk-3-1.png)
+![](tut-07-images/06-unnamed-chunk-3-1.png)
 
 Next tutorial: [condition a dot plot with facets](tut-0707_condition-facets.md)<br> Tutorial list: [week 2](week-02_assignments.md)
 

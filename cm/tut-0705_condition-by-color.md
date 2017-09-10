@@ -13,7 +13,7 @@ f5 <- ggplot(data = my_mtcars
 print(f5)
 ```
 
-![](tut-07-images/unnamed-chunk-3-1.png)
+![](tut-07-images/05-unnamed-chunk-3-1.png)
 
 The legend indicates color-coding used for a continuous variable, but the number of cylinders is actually a discrete value with only 3 levels: 4, 6, and 8.
 
@@ -36,7 +36,7 @@ f6 <- ggplot(data = my_mtcars
 print(f6)
 ```
 
-![](tut-07-images/unnamed-chunk-5-1.png)
+![](tut-07-images/05-unnamed-chunk-5-1.png)
 
 Next tutorial: [manually change dot plot colors](tut-0706_manual-color.md)<br> Tutorial list: [week 2](week-02_assignments.md)
 

@@ -7,7 +7,7 @@ csl: "../manage/csl/journal-of-peace-research.csl"
 ```{r echo=FALSE}
 library(knitr)
 opts_knit$set(root.dir = "../")
-opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE, cache = TRUE, cache.path = "tut-07-cache/", fig.path = "tut-07-images/")
+opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE, cache = TRUE, cache.path = "tut-07-cache/03-", fig.path = "tut-07-images/03-")
 ```
 
 

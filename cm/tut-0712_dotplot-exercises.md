@@ -18,7 +18,7 @@ We're going to use the well-known *barley* dataset which is in the *lattice* pac
 
 My solution is shown below.
 
-![](tut-07-images/barley-1.png)
+![](tut-07-images/12-barley-1.png)
 
 Tutorial list: [week 2](week-02_assignments.md)
 
