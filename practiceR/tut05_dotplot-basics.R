@@ -1,16 +1,22 @@
-###
-### tutorial: mtcars
-###
+#  ------------------------------------------
+#  dot plot basics
+#
+#  Richard Layton
+#  2017-09-10
+#  ------------------------------------------
 
 # dataset in R, 1973–74 models, Motor Trend
 data(mtcars)
 head(mtcars)
 
-# when row names contain data (not tidy)
+# copy the row names to a new variable "make_model"
 library(dplyr)
 my_mtcars <- mtcars %>%
 	mutate(make_model = row.names(mtcars))
-library(tibble)
+
+# examine the data
+class(my_mtcars)
+
 glimpse(my_mtcars)
 
 # make basic dot plot
@@ -31,30 +37,33 @@ print(f3)
 
 # different ways of including 3rd variable: cylinders
 
+# recall that cyl is in the data frame
+glimpse(my_mtcars)
+
 # could use the number of cylinders as the data marker
 f4 <- ggplot(my_mtcars, aes(x = mpg
-												 , y = reorder(make_model, mpg)
-												 , label = cyl)
+	, y = reorder(make_model, mpg)
+	, label = cyl)
 ) +
 	geom_text()
 print(f4)
 
 # could use dot color
 f5 <- ggplot(my_mtcars, aes(x = mpg
-												 , y = reorder(make_model, mpg)
-												 , col = cyl)
+	, y = reorder(make_model, mpg)
+	, col = cyl)
 ) +
 	geom_point(size = 3)
 print(f5)
 
-# OK, but treated as continuous var, actually discrete
+# new variable so color can be assigned discrete
 my_mtcars <- my_mtcars %>%
 	mutate(Cylinders = factor(cyl))
 
 # again with factor
 f6 <- ggplot(my_mtcars, aes(x = mpg
-												 , y = reorder(make_model, mpg)
-												 , col = Cylinders)
+	, y = reorder(make_model, mpg)
+	, col = Cylinders)
 ) +
 	geom_point(size = 3)
 print(f6)
@@ -104,3 +113,8 @@ print(f13)
 f14 <- f13 +
 	theme(strip.text.y = element_text(angle = 0, size = 14))
 print(f14)
+
+# changing panel spacing
+f15 <- f14 +
+	theme(panel.spacing = unit(0.3, "mm"))
+print(f15)

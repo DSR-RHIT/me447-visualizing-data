@@ -11,6 +11,24 @@ opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE, c
 ```
 
 
+## preparation 
+
+Launch your RStudio project for the course, *me447-visualizing-data.Rproj*.  
+
+Script
+
+- Open a new R file  *tut05_dotplot-basics.R*
+- Save it to your *practiceR* folder 
+
+Start with a header
+
+    #  ------------------------------------------
+    #  dot plot basics
+    #
+    #  your name
+    #  date
+    #  ------------------------------------------
+
 
 ## capture data stored in row names
 
@@ -37,7 +55,9 @@ Examine the result. You can see that a new variable *make_model* has been added 
 
 ```{r}
 class(my_mtcars)
+```
 
+```{r}
 glimpse(my_mtcars)
 ```
 

@@ -14,11 +14,11 @@ Presentations
 Reading
 
 -   Robbins (2013) Ch 4: Some more effective graphs in one or two dimensions
--   Kostelnick (1998) Conflicting standards
+-   Kostelnick (1998) Conflicting standards (on Moodle)
 
 Lecture slides
 
--   
+-   [Dotplot slides](../slides/Le07-dot-plot-slides.pdf)
 
 Dot plot tutorials and exercises
 
@@ -33,6 +33,8 @@ Dot plot tutorials and exercises
 -   [Set the y scales free](tut-0709_free-scales.md)
 -   [Rotate text in the panel strip](tut-0710_rotate-strip-text.md)
 -   [Change spacing between panels](tut-0711_change-panel-spacing.md)
+-   Compare your work to my version of the [tutorial script](../practiceR/tut05_dotplot-basics.R)
+-   Practice what you have learned by working these [exercises](tut-0712_dotplot-exercises.md)
 
 Data tutorials and exercises
 

@@ -1,4 +1,23 @@
 
+preparation
+-----------
+
+Launch your RStudio project for the course, *me447-visualizing-data.Rproj*.
+
+Script
+
+-   Open a new R file *tut05\_dotplot-basics.R*
+-   Save it to your *practiceR* folder
+
+Start with a header
+
+    #  ------------------------------------------
+    #  dot plot basics
+    #
+    #  your name
+    #  date
+    #  ------------------------------------------
+
 capture data stored in row names
 --------------------------------
 
@@ -33,7 +52,9 @@ Examine the result. You can see that a new variable *make\_model* has been added
 ``` r
 class(my_mtcars)
 ## [1] "data.frame"
+```
 
+``` r
 glimpse(my_mtcars)
 ## Observations: 32
 ## Variables: 12
