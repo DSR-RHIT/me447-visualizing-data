@@ -6,7 +6,7 @@ At this point in the tutorial, we expect you to have a *ggplot()* graph object c
 
 If not, please return to the earlier tutorials.
 
-![](tut-03-images/unnamed-chunk-3-1.png)
+![](tut-03-images/07-unnamed-chunk-3-1.png)
 
 Suppose we want the graph to have a 2 mm y-scale with tick marks at 1 mm intervals.
 
@@ -17,7 +17,7 @@ f1 <- f1 +
 print(f1)
 ```
 
-![](tut-03-images/unnamed-chunk-4-1.png)
+![](tut-03-images/07-unnamed-chunk-4-1.png)
 
 ------------------------------------------------------------------------
 

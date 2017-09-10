@@ -14,7 +14,7 @@ f1 <- ggplot(data = vibr_data, aes(x = time_sec, y = displ_mm)) +
 print(f1)
 ```
 
-![](tut-03-images/unnamed-chunk-3-1.png)
+![](tut-03-images/04-unnamed-chunk-3-1.png)
 
 What the commands mean
 
