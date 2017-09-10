@@ -10,10 +10,6 @@ library(VIM)
 ## Loading required package: colorspace
 ## Loading required package: grid
 ## Loading required package: data.table
-## data.table 1.10.4
-##   The fastest way to learn (by data.table authors): https://www.datacamp.com/courses/data-analysis-the-data-table-way
-##   Documentation: ?data.table, example(data.table) and browseVignettes("data.table")
-##   Release notes, videos and slides: http://r-datatable.com
 ## 
 ## Attaching package: 'data.table'
 ## The following objects are masked from 'package:dplyr':
@@ -48,14 +44,14 @@ Use *search()* to confirm that *VIM* is no longer loaded.
 ``` r
 # list packages currently loaded
 search()
-##  [1] ".GlobalEnv"         "package:data.table" "package:grid"      
-##  [4] "package:colorspace" "package:rmarkdown"  "package:readxl"    
-##  [7] "package:dplyr"      "package:purrr"      "package:readr"     
-## [10] "package:tidyr"      "package:tibble"     "package:ggplot2"   
-## [13] "package:tidyverse"  "tools:rstudio"      "package:stats"     
-## [16] "package:graphics"   "package:grDevices"  "package:utils"     
-## [19] "package:datasets"   "package:methods"    "Autoloads"         
-## [22] "package:base"
+##  [1] ".GlobalEnv"         "package:VIM"        "package:data.table"
+##  [4] "package:grid"       "package:colorspace" "package:knitr"     
+##  [7] "package:rmarkdown"  "package:readxl"     "package:dplyr"     
+## [10] "package:purrr"      "package:readr"      "package:tidyr"     
+## [13] "package:tibble"     "package:ggplot2"    "package:tidyverse" 
+## [16] "package:stats"      "package:graphics"   "package:grDevices" 
+## [19] "package:utils"      "package:datasets"   "package:methods"   
+## [22] "Autoloads"          "package:base"
 ```
 
 Next tutorial: [add a regression line to a plot](tut-0406_add-regression.md)

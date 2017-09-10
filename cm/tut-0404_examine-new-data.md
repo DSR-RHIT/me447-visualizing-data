@@ -42,16 +42,16 @@ press_calibr
 ## # A tibble: 81 x 5
 ##    observN cycleN direction inputPSI readingPSI
 ##      <int>  <int>     <chr>    <int>      <dbl>
-##  1       1      1        up       15       15.8
-##  2       2      1        up       18       19.0
-##  3       3      1        up       21       23.5
-##  4       4      1        up       24       27.5
-##  5       5      1        up       27       32.5
-##  6       6      1        dn       24       29.8
-##  7       7      1        dn       21       25.2
-##  8       8      1        dn       18       21.5
-##  9       9      1        dn       15       18.0
-## 10      10      1        dn       12       13.2
+##  1       1      1        up       15      15.75
+##  2       2      1        up       18      19.00
+##  3       3      1        up       21      23.50
+##  4       4      1        up       24      27.50
+##  5       5      1        up       27      32.50
+##  6       6      1        dn       24      29.75
+##  7       7      1        dn       21      25.25
+##  8       8      1        dn       18      21.50
+##  9       9      1        dn       15      18.00
+## 10      10      1        dn       12      13.25
 ## # ... with 71 more rows
 ```
 
@@ -85,20 +85,20 @@ The simplest check is *summary()*, then look for any variables with NAs. In this
 ``` r
 # a data frame with no missing values 
 summary(press_calibr)
-##     observN       cycleN      direction            inputPSI 
-##  Min.   : 1   Min.   :1.00   Length:81          Min.   : 3  
-##  1st Qu.:21   1st Qu.:2.00   Class :character   1st Qu.: 9  
-##  Median :41   Median :3.00   Mode  :character   Median :15  
-##  Mean   :41   Mean   :3.22                      Mean   :15  
-##  3rd Qu.:61   3rd Qu.:4.00                      3rd Qu.:21  
-##  Max.   :81   Max.   :6.00                      Max.   :27  
-##    readingPSI  
-##  Min.   : 2.8  
-##  1st Qu.: 9.5  
-##  Median :15.8  
-##  Mean   :16.8  
-##  3rd Qu.:23.8  
-##  Max.   :33.0
+##     observN       cycleN       direction            inputPSI 
+##  Min.   : 1   Min.   :1.000   Length:81          Min.   : 3  
+##  1st Qu.:21   1st Qu.:2.000   Class :character   1st Qu.: 9  
+##  Median :41   Median :3.000   Mode  :character   Median :15  
+##  Mean   :41   Mean   :3.222                      Mean   :15  
+##  3rd Qu.:61   3rd Qu.:4.000                      3rd Qu.:21  
+##  Max.   :81   Max.   :6.000                      Max.   :27  
+##    readingPSI   
+##  Min.   : 2.75  
+##  1st Qu.: 9.50  
+##  Median :15.75  
+##  Mean   :16.82  
+##  3rd Qu.:23.75  
+##  Max.   :33.00
 ```
 
 Look at the summary of *wide\_data*. The variables *cycle 1* and *cycle 6* have missing values (NA's).
@@ -106,22 +106,22 @@ Look at the summary of *wide\_data*. The variables *cycle 1* and *cycle 6* have 
 ``` r
 # data frame that has missing values
 summary(wide_data)
-##     inputPSI   direction             cycle1         cycle2    
-##  Min.   : 3   Length:16          Min.   : 3.0   Min.   : 3.8  
-##  1st Qu.: 9   Class :character   1st Qu.:13.2   1st Qu.: 9.4  
-##  Median :15   Mode  :character   Median :19.0   Median :16.1  
-##  Mean   :15                      Mean   :18.8   Mean   :16.8  
-##  3rd Qu.:21                      3rd Qu.:25.2   3rd Qu.:23.8  
-##  Max.   :27                      Max.   :32.5   Max.   :32.0  
-##                                  NA's   :3                    
-##      cycle3         cycle4         cycle5         cycle6     
-##  Min.   : 3.8   Min.   : 3.8   Min.   : 2.8   Min.   : 4.25  
-##  1st Qu.: 9.6   1st Qu.: 9.2   1st Qu.: 9.0   1st Qu.: 6.69  
-##  Median :16.4   Median :16.4   Median :16.6   Median : 9.38  
-##  Mean   :17.0   Mean   :16.8   Mean   :16.8   Mean   : 9.56  
-##  3rd Qu.:23.8   3rd Qu.:24.1   3rd Qu.:24.2   3rd Qu.:12.25  
-##  Max.   :33.0   Max.   :32.8   Max.   :32.2   Max.   :15.25  
-##                                               NA's   :12
+##     inputPSI   direction             cycle1          cycle2      
+##  Min.   : 3   Length:16          Min.   : 3.00   Min.   : 3.750  
+##  1st Qu.: 9   Class :character   1st Qu.:13.25   1st Qu.: 9.438  
+##  Median :15   Mode  :character   Median :19.00   Median :16.125  
+##  Mean   :15                      Mean   :18.85   Mean   :16.812  
+##  3rd Qu.:21                      3rd Qu.:25.25   3rd Qu.:23.750  
+##  Max.   :27                      Max.   :32.50   Max.   :32.000  
+##                                  NA's   :3                       
+##      cycle3           cycle4           cycle5          cycle6      
+##  Min.   : 3.750   Min.   : 3.750   Min.   : 2.75   Min.   : 4.250  
+##  1st Qu.: 9.562   1st Qu.: 9.188   1st Qu.: 9.00   1st Qu.: 6.688  
+##  Median :16.375   Median :16.375   Median :16.62   Median : 9.375  
+##  Mean   :17.000   Mean   :16.844   Mean   :16.78   Mean   : 9.562  
+##  3rd Qu.:23.750   3rd Qu.:24.125   3rd Qu.:24.19   3rd Qu.:12.250  
+##  Max.   :33.000   Max.   :32.750   Max.   :32.25   Max.   :15.250  
+##                                                    NA's   :12
 ```
 
 The *VIM* package has a function *aggr()* (aggregate missing values) that calculates the number of missing values and plots the results. These results show that 12 rows are missing entries in *cycle 6* only, 3 rows are missing data in *cycle 1* only, and 1 row has no missing values.
@@ -139,7 +139,7 @@ aggr_plot <- aggr(
     )
 ```
 
-![](tut-0404_examine-new-data_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-10-1.png)
+![](tut-04-images/unnamed-chunk-11-1.png)
 
     ## 
     ##  Variables sorted by number of missings: 

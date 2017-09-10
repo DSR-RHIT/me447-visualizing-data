@@ -12,7 +12,7 @@ f13 <- f12 +
 print(f13)
 ```
 
-![](tut-0710_rotate-strip-text_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-3-1.png)
+![](tut-07-images/unnamed-chunk-3-1.png)
 
 ``` r
 
@@ -22,7 +22,7 @@ f14 <- f13 +
 print(f14)
 ```
 
-![](tut-0710_rotate-strip-text_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-3-2.png)
+![](tut-07-images/unnamed-chunk-3-2.png)
 
 Next tutorial: [change spacing between panels](tut-0711_change-panel-spacing.md)<br> Tutorial list: [week 2](week-02_assignments.md)
 

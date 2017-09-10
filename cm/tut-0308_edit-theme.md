@@ -6,7 +6,7 @@ At this point in the tutorial, we expect you to have a *ggplot()* graph object c
 
 If not, please return to the earlier tutorials.
 
-![](tut-0308_edit-theme_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-2-1.png)
+![](tut-03-images/unnamed-chunk-3-1.png)
 
 The gray background is a *ggplot2* default setting. We can use ggplot2 *themes* to change the background (and every other default setting as well).
 
@@ -19,7 +19,7 @@ f1 <- f1 +
 print(f1)
 ```
 
-![](tut-0308_edit-theme_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-3-1.png)
+![](tut-03-images/unnamed-chunk-4-1.png)
 
 Examples of all the default themes are illustrated at Wickham's [ggplot2 website](http://ggplot2.tidyverse.org/reference/ggtheme.html).
 
@@ -35,7 +35,7 @@ f1 <- f1 +
 print(f1)
 ```
 
-![](tut-0308_edit-theme_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-1.png)
+![](tut-03-images/unnamed-chunk-5-1.png)
 
 Next tutorial: [scatterplot exercise](tut-0309_scatterplot-exercise.md)
 

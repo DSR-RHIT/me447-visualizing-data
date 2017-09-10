@@ -15,7 +15,7 @@ f10 <- f8 +
 print(f10)
 ```
 
-![](tut-0709_free-scales_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-3-1.png)
+![](tut-07-images/unnamed-chunk-3-1.png)
 
 Next use `scales = "free_y"` to eliminate all rows with no *mpg* data.
 
@@ -26,7 +26,7 @@ f11 <- f8 +
 print(f11)
 ```
 
-![](tut-0709_free-scales_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-1.png)
+![](tut-07-images/unnamed-chunk-4-1.png)
 
 To allow the panel heights to vary such that the row spacing is consistent, add `space = "free_y"` to *facet\_grid()*.
 
@@ -37,7 +37,7 @@ f12 <- f8 +
 print(f12)
 ```
 
-![](tut-0709_free-scales_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-5-1.png)
+![](tut-07-images/unnamed-chunk-5-1.png)
 
 Next tutorial: [rotate text in the panel strip](tut-0710_rotate-strip-text.md)<br> Tutorial list: [week 2](week-02_assignments.md)
 

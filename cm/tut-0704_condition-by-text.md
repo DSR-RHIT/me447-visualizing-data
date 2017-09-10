@@ -36,7 +36,7 @@ f4 <- ggplot(data = my_mtcars
 print(f4)
 ```
 
-![](tut-0704_condition-by-text_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-1.png)
+![](tut-07-images/unnamed-chunk-4-1.png)
 
 Next tutorial: [condition a dot plot with color](tut-0705_condition-by-color.md)<br> Tutorial list: [week 2](week-02_assignments.md)
 

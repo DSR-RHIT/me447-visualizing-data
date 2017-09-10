@@ -19,7 +19,7 @@ f1 <- ggplot(data = press_calibr,
 print(f1)
 ```
 
-![](tut-0406_add-regression_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-1.png)
+![](tut-04-images/unnamed-chunk-4-1.png)
 
 WE add a regression line (least-squares) by adding the *geom\_smooth(method = lm)* function.
 
@@ -29,7 +29,7 @@ f2 <- f1 + geom_smooth(method = lm)
 print(f2)
 ```
 
-![](tut-0406_add-regression_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-5-1.png)
+![](tut-04-images/unnamed-chunk-5-1.png)
 
 The gray band is the confidence interval. We can moit it using the *se = FALSE* argument.
 
@@ -40,7 +40,7 @@ f3 <- f1 +
 print(f3)
 ```
 
-![](tut-0406_add-regression_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-6-1.png)
+![](tut-04-images/unnamed-chunk-6-1.png)
 
 Next tutorial: [accessing data in R](tut-0407_access-data-in-R.md)
 

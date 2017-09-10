@@ -11,7 +11,7 @@ f9 <- f8 +
 print(f9)
 ```
 
-![](tut-0708_order-facets_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-3-1.png)
+![](tut-07-images/unnamed-chunk-3-1.png)
 
 Next tutorial: [set the y scales free](tut-0709_free-scales.md)<br> Tutorial list: [week 2](week-02_assignments.md)
 

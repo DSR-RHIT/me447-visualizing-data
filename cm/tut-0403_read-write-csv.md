@@ -33,14 +33,6 @@ From the *readr* package in the tidyverse, we use *read\_csv()* to read the CSV 
 ``` r
 # read a CSV file
 press_calibr <- read_csv("data/press-calibr-long.csv")
-## Parsed with column specification:
-## cols(
-##   observN = col_integer(),
-##   cycleN = col_integer(),
-##   direction = col_character(),
-##   inputPSI = col_integer(),
-##   readingPSI = col_double()
-## )
 ```
 
 The message printed in the output tells us how *read\_csv* parsed the data, in this case, as integers, characters, and double-precision numbers.

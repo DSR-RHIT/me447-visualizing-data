@@ -11,9 +11,9 @@ f15 <- f14 +
 print(f15)
 ```
 
-![](tut-0711_change-panel-spacing_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-3-1.png)
+![](tut-07-images/unnamed-chunk-3-1.png)
 
-Tutorial list: [week 2](week-02_assignments.md)
+Next tutorial: [dot plot exercises](tut-0712_dotplot-exercises.md)<br> Tutorial list: [week 2](week-02_assignments.md)
 
 ------------------------------------------------------------------------
 

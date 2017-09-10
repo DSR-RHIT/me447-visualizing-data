@@ -1,0 +1,75 @@
+---
+output: github_document
+bibliography: "../manage/refs.bib" 
+csl: "../manage/csl/journal-of-peace-research.csl"
+---
+
+```{r echo=FALSE}
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE, cache = TRUE, cache.path = "tut-07-cache/", fig.path = "tut-07-images/")
+```
+
+
+```{r include = FALSE}
+###
+### exercise: barley
+###
+
+library(lattice)
+data(barley, package = "lattice")
+
+library(dplyr)
+glimpse(barley)
+
+library(ggplot2)
+f1 <- ggplot(data = barley, aes(x = yield
+	, y = reorder(variety, yield)
+	, col = year)
+	) +
+	geom_point() +
+	facet_wrap(~ reorder(site, -yield), ncol = 1) +
+	theme_light() +
+	theme(panel.spacing = unit(0, "mm")) +
+	labs(x = "Barley yield (bushels/acre)"
+	, y = "Variety"
+	, title = "Barley yields for 10 varieties by geographic site"
+	) +
+	scale_colour_manual(values = c("darkgoldenrod3", "aquamarine4"))
+```
+
+## dot plot exercises
+
+We're going to use the well-known *barley* dataset which is in the *lattice* package. 
+
+- Install and load the *lattice* package. 
+- Bring the data into your workspace using `data(barley, package = "lattice")`. 
+
+
+1. How many observations in the data? How many variables? What type of variables are they? 
+4. Plot a dot plot with variety as a function of yield. 
+5. Condition the data by site. 
+6. Orient the facets into a single column. 
+5. Reorder the rows. 
+6. Reorder the facets. 
+7. Change the color of the dots. 
+9. Edit the appearance to make the graph presentable. 
+
+
+My solution is shown below. 
+
+```{r barley, echo=FALSE, fig.height = 10}
+print(f1)
+```
+
+
+
+
+Tutorial list: [week 2](week-02_assignments.md)  
+
+---
+ 
+[main page](../README.md)<br>
+[topics page](../README-by-topic.md) 
+
+

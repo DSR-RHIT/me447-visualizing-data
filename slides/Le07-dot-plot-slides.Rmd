@@ -1,0 +1,460 @@
+---
+title: "**Dot plot basics**"
+author: "Richard Layton"
+date: "2017-09-11"
+urlcolor: blue
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE)
+opts_chunk$set(fig.height = 5.5)
+options(width = 52)
+```
+
+```{r include=FALSE}
+library(tibble)
+library(readr)
+library(readxl)
+library(pander)
+panderOptions('table.alignment.default', function(df)
+    ifelse(sapply(df, is.numeric), 'right', 'left'))
+panderOptions('table.split.table', Inf)
+panderOptions('big.mark', ",")
+panderOptions('keep.trailing.zeros', TRUE)
+```
+
+
+## Dot plots can be multivariate  
+
+
+Dot plots begin with bivariate data. In this way they replace nearly every pie chart and bar chart, ever. 
+
+- x-axis: quantitative
+- y-axis: categorical 
+
+Using *conditioning* we can display additional variables. In today's examples, we have 
+
+- no conditioning 
+- one additional categorical variable 
+- two additional categorical variables
+
+
+##
+
+\Huge Example 1  
+
+\bigskip
+
+\large 1970's population of US states by region 
+
+\large Dot plot with one conditioning variable 
+
+## Base R includes data(state)
+
+```{r}
+library(ggplot2)
+library(tibble)
+data(state)
+```
+
+```{r}
+glimpse(state.name)
+```
+
+```{r}
+glimpse(state.region)
+```
+
+```{r}
+glimpse(state.x77)
+```
+
+
+## Create data frame for example
+
+```{r}
+name       <- state.name
+region     <- state.region
+population <- state.x77[ , "Population"]
+state_df   <- data_frame(name, population, region)
+```
+
+```{r}
+glimpse(state_df)
+```
+
+
+## Similar to a scatterplot but with y = categorical variable
+
+```{r}
+ggplot(data = state_df, aes(
+	x = population, 
+	y = name
+	)) + geom_point()
+```
+
+
+## Change row-order in *aes()* via *reorder()* 
+
+```{r}
+ggplot(data = state_df, aes(
+	x = population, 
+	y = reorder(name, population)
+	)) + geom_point()
+```
+
+
+## Edit dot size with *geom_point()* 
+
+```{r}
+ggplot(data = state_df, aes(
+	x = population, 
+	y = reorder(name, population)
+	)) + geom_point(size = 3)
+```
+
+
+## Change population units to millions inside *aes()*
+
+```{r echo=1}
+f3 <- ggplot(data = state_df, aes(
+	x = population * 1000 / 1e6, 
+	y = reorder(name, population)
+	)) + geom_point(size = 3)
+print(f3)
+```
+
+
+## That's the basic dot plot 
+
+- We can still edit axis labels and the theme
+- Dot plots are effective substitutes for most pies and bars 
+
+
+## Conditioning by a categorical variable *region*  
+
+```{r echo=1}
+f4 <- f3 + facet_grid(~ region)
+print(f4)
+```
+
+
+## Facets in a column by swapping the position of `~`
+
+```{r echo=1}
+f5 <- f3 + facet_grid(region ~.)
+print(f5)
+```
+
+
+## Delete unused rows with `scales = "free_y"`
+
+```{r echo=1}
+f6 <- f3 + facet_grid(
+	region ~. , 
+	scales = "free_y")
+print(f6)
+```
+
+
+## Make row intervals equal with `space = "free_y"`
+
+```{r echo=1}
+f7 <- f3 + facet_grid(
+	region ~. , 
+	scales = "free_y", space = "free_y")
+print(f7)
+```
+
+
+## Reorder facets by sum of population in a facet
+
+```{r echo=1}
+f8 <- f3 + facet_grid(
+	reorder(region, -population, sum) ~. , 
+	scales = "free_y", space = "free_y")
+print(f8)
+```
+
+
+## Edit labels and theme 
+
+```{r echo=1}
+f9 <- f8 + theme_light()  +
+	labs(x = "Population in 1975 (millions)", y = "")
+print(f9)
+```
+
+
+## Rotate the facet strip labels 
+
+```{r echo=1}
+f10 <- f9 + theme(
+	strip.text.y = element_text(angle = 0, size = 14))
+print(f10)
+```
+
+
+## Reduce spacing between facets concludes the example
+
+```{r echo=1}
+f11 <- f10 + theme(panel.spacing = unit(0.3, "mm"))
+print(f11)
+```
+
+##
+
+\Huge Example 2 
+
+\bigskip
+
+\large 1940's death rates in Virginia  
+
+\large Dot plot with two conditioning variables
+
+
+## We manually tidied this data previously 
+
+```{r}
+library(readxl)
+rates <- read_excel(
+	path = "data/VADeaths.xlsx", sheet = "tidy"
+	)
+```
+
+```{r}
+tibble::glimpse(rates)
+```
+
+
+## Examine the data in a simple table  
+
+```{r}
+knitr::kable(rates)
+```
+
+
+## The basic dot plot has 4 dots per row 
+
+```{r echo=1}
+f1 <- ggplot(data = rates, 
+	aes(x = death_rate, y = age_group)) +
+	geom_point(size = 3)
+print(f1)
+```
+
+
+## Condition by both categories 
+
+```{r echo=1}
+f2 <- f1 + facet_grid(location ~ sex)
+print(f2)
+```
+
+
+## Reorder the panels by the mean rate by location 
+
+```{r echo=1}
+f3 <- f1 + facet_grid(reorder(location, -death_rate, mean) 
+	~ sex)
+print(f3)
+```
+
+## Reorder the panels by the mean rate by sex
+
+```{r echo=1}
+f5 <- f1 + facet_grid(reorder(location, -death_rate, mean) 
+	~ reorder(sex, -death_rate, mean))
+print(f5)
+```
+
+
+## Add color to *aes()* to distinguish urban and rural  
+
+```{r echo=1}
+f6 <- ggplot(data = rates, 
+	aes(x = death_rate, y = age_group, col = location)) +
+	geom_point(size = 3) +
+	facet_grid(reorder(location, -death_rate, mean) 
+		~ reorder(sex, -death_rate, mean ))
+print(f6)
+```
+
+
+## Removing the location condition yields two dots per row 
+
+```{r echo=1}
+f7 <- ggplot(data = rates, 
+	aes(x = death_rate, y = age_group, col = location)) +
+	geom_point(size = 3) +
+	facet_grid(.~ reorder(sex, -death_rate, mean))
+print(f7)
+```
+
+
+## Swap orientation in *facet_grid()*
+
+```{r echo=1}
+f8 <- ggplot(data = rates, 
+	aes(x = death_rate, y = age_group, col = location)) +
+	geom_point(size = 3) +
+	facet_grid(reorder(sex, -death_rate, mean) ~.)
+print(f8)
+```
+
+
+## Edit the two colors (See [Colors in R](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf))
+
+```{r echo=1}
+f9 <- f8 + scale_colour_manual(
+	values = c("aquamarine4", "darkgoldenrod3"))
+print(f9)
+```
+
+
+## Add *group* in *aes()* and we can add a *geom_line()*
+
+
+```{r}
+f10 <- ggplot(data = rates, 
+	aes(x = death_rate, y = age_group, col = location, 
+		group = location)
+	  ) +
+	geom_line() + geom_point(size = 3) +
+	facet_grid(reorder(sex, -death_rate) ~.) +
+	scale_colour_manual(
+		values = c("aquamarine4", "darkgoldenrod3")
+		)
+```
+
+##
+
+```{r echo=FALSE}
+print(f10)
+```
+
+
+## Change *facet_grid()* to *facet_wrap()* 
+
+Moves the facet labels to the top of the panel
+
+```{r}
+f11 <- ggplot(data = rates, 
+	aes(x = death_rate, y = age_group, col = location, 
+		group = location)) +
+	geom_line() + geom_point(size = 3) +
+	facet_wrap(~ sex, ncol = 1) +
+	scale_colour_manual(
+		values = c("aquamarine4", "darkgoldenrod3")
+		)
+```
+
+##
+
+```{r echo=FALSE}
+print(f11)
+```
+
+
+
+## And urbal/rural labels to the lines 
+
+```{r echo=1}
+f12 <- f11 + geom_text(aes(label = location))
+print(f12)
+```
+
+
+## Create a new data frame for line labels
+
+- The new data frame is a subset of the original 
+- Keeping only those rows for which the age group is "65-69"
+
+```{r}
+library(dplyr)
+line_labels <- rates %>%
+	filter(age_group == "65-69")
+```
+
+
+```{r}
+glimpse(line_labels)
+```
+
+
+## Use *geom_text()* and the new data frame for line labels 
+
+```{r echo=1}
+f13 <- f11 + geom_text(data = line_labels, 
+	aes(label = location), col = "black")
+print(f13)
+```
+
+```{r}
+
+```
+
+
+## Justify the text labels 
+
+```{r}
+f14 <- f11 + geom_text(data = line_labels, 
+	aes(label = location)
+	, col = "black" 
+  , hjust = c(1.4, -0.4, 1.4, -0.4) 
+  , vjust = 0.4 
+  )
+```
+
+
+##
+
+```{r echo=FALSE}
+print(f14)
+```
+
+
+
+## Add labels, edit theme, omit legend
+
+```{r}
+f15 <- f14 +
+	labs(x = "Death rates per 1000 in Virginia in 1940", 
+		y = "Age group") +
+	theme_light() +
+	theme(legend.position = "none")
+```
+
+
+##
+
+```{r echo=FALSE}
+print(f15)
+```
+
+
+## Edit text in facet strip 
+
+```{r echo=1}
+f16 <- f15 + theme(strip.text.x = element_text(size = 16))
+print(f16)
+```
+
+
+## Change the aspect ratio 
+
+```{r echo=1}
+f17 <- f16 + coord_fixed(ratio = 10)
+print(f17)
+```
+
+
+
+
+
+
+
+

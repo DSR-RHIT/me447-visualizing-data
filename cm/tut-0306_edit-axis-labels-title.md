@@ -6,7 +6,7 @@ At this point in the tutorial, we expect you to have a *ggplot()* graph object c
 
 If not, please return to the earlier tutorials.
 
-![](tut-0306_edit-axis-labels-title_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-2-1.png)
+![](tut-03-images/unnamed-chunk-3-1.png)
 
 Label the axes, replacing the default axis labels.
 
@@ -18,7 +18,7 @@ f1 <- f1 +
 print(f1)
 ```
 
-![](tut-0306_edit-axis-labels-title_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-3-1.png)
+![](tut-03-images/unnamed-chunk-4-1.png)
 
 Add a main title.
 
@@ -29,7 +29,7 @@ f1 <- f1 +
 print(f1)
 ```
 
-![](tut-0306_edit-axis-labels-title_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-1.png)
+![](tut-03-images/unnamed-chunk-5-1.png)
 
 I'm showing you one or two lines of code at a time so you can add the lines, run the script, and see the results one chunk at a time.
 

@@ -7,7 +7,7 @@ csl: "../manage/csl/journal-of-peace-research.csl"
 ```{r echo=FALSE}
 library(knitr)
 opts_knit$set(root.dir = "../")
-opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE, cache.path = "tut-07-images")
+opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE, cache = TRUE, cache.path = "tut-07-cache/", fig.path = "tut-07-images/")
 ```
 
 
@@ -63,6 +63,7 @@ print(f15)
 ```
 
 
+Next tutorial: [dot plot exercises](tut-0712_dotplot-exercises.md)<br>
 Tutorial list: [week 2](week-02_assignments.md)  
 
 ---

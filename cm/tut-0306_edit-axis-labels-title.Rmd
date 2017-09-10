@@ -1,12 +1,17 @@
 ---
 output: github_document
+bibliography: "../manage/refs.bib" 
+csl: "../manage/csl/journal-of-peace-research.csl"
 ---
 
 ```{r echo=FALSE}
 library(knitr)
 opts_knit$set(root.dir = "../")
-opts_chunk$set(echo = TRUE, messages = FALSE, collapse = TRUE)
+opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE, cache = TRUE, cache.path = "tut-03-cache/", fig.path = "tut-03-images/")
+```
 
+
+```{r echo=FALSE}
 library(ggplot2)
 
 time_sec  <- seq(0, 2*pi, by = pi/50) # sec
