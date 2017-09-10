@@ -49,7 +49,7 @@ ggplot(my_mtcars, aes(x = mpg, y = reorder(make_model, mpg))) +
 	facet_grid(Cylinders ~., scales = "free_y", space = "free_y") +
 	labs(x = "Gas mileage (mpg)", y = "Make and model of car") +
 	theme_light() +
-  theme(strip.text.y = element_text(angle = 0, size = 14),
+	theme(strip.text.y = element_text(angle = 0, size = 14),
   			panel.spacing = unit(0.3, "mm")
   			)
 
