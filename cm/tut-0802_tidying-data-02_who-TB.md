@@ -267,6 +267,11 @@ select(tb_data, year) %>% unique() %>% t() %>% cat()
 ## 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015
 ```
 
+the data encoding
+-----------------
+
+A data dictionary on the [WHO tuberculosis website](http://www.who.int/tb/country/data/download/en/) describes the meaning of the variable names and how they encode additional data.
+
 We're interested in columns like `new_sp_f014` in which
 
 -   `new` indicates a new case of TB; the other possible level is `old`.
@@ -354,6 +359,47 @@ glimpse(tb_data_wide)
 
 This trims the data frame down to size. Now we have 7674 observations of 61 variables.
 
+some diagnostics
+----------------
+
+After working my way through this data set further down, I discovered that the integer number of cases had become a character variable.
+
+It turns out that two of the columns in the original data file that should have contained only the integers (the number of TB cases) were coded as characters.
+
+In the current data frame only the first column `country` should be a character variable. To find the location of any others, I ran the following check.
+
+``` r
+cols2check   <- sapply(tb_data_wide, class)
+cols2check   <- cols2check[cols2check == "character"]
+cols2check   <- cols2check[names(cols2check) != "country"]
+suspect_cols <- names(cols2check)
+
+# these are my suspect columns
+suspect_cols
+## [1] "new_sn_sexunk014" "newrel_sexunk014"
+```
+
+Let's check the set of data entries in these two columns.
+
+``` r
+# what are the data entered in these columns? 
+unique(tb_data_wide$new_sn_sexunk014)
+##  [1] NA      "55"    "73"    "480"   "356"   "3280"  "3080"  "67"   
+##  [9] "152"   "491"   "6025"  "0"     "42"    "36673" "34467" "328"  
+## [17] "287"   "65"    "44"    "2180"  "2506"  "3950"  "1700"  "3020" 
+## [25] "943"   "234"   "192"   "127"   "262"   "2086"  "933"   "1238"
+unique(tb_data_wide$newrel_sexunk014)
+## [1] NA      "0"     "596"   "64726" "6325"  "6959"  "641"   "515"
+```
+
+OK. Except for the NA, these are all integers incorrectly encoded as character strings. To fix it, use *mutate()* and *as.numeric()*.
+
+``` r
+tb_data_wide <- tb_data_wide %>% 
+    mutate(newrel_sexunk014 = as.numeric(newrel_sexunk014)) %>% 
+    mutate(new_sn_sexunk014 = as.numeric(new_sn_sexunk014))
+```
+
 gather()
 --------
 
@@ -367,9 +413,7 @@ The first data tidying task is to move the coded column names into their own col
 -   *cols to gather* is the set of columns being gathered. Other columns remain as variables, repeated in the new data frame as often as needed.
 
 ``` r
-tb_data_wide <- tb_data_wide %>% 
-    mutate(newrel_sexunk014 = as.numeric(newrel_sexunk014)) %>% 
-    mutate(new_sn_sexunk014 = as.numeric(new_sn_sexunk014))
+
 
 who <- tb_data_wide %>%
     gather("code", "N", new_sp_m014:newrel_sexunk014, na.rm = TRUE)
@@ -498,7 +542,7 @@ ggplot(who1, aes(x = year, y = N/1e+6, col = sex, group = sex)) +
     theme_light()
 ```
 
-![](tut-08-images/02-unnamed-chunk-14-1.png)
+![](tut-08-images/02-unnamed-chunk-17-1.png)
 
 a subset
 
@@ -515,4 +559,4 @@ ggplot(who2, aes(x = year, y = N/1e+6, col = sex, group = sex)) +
     theme_light()
 ```
 
-![](tut-08-images/02-unnamed-chunk-15-1.png)
+![](tut-08-images/02-unnamed-chunk-18-1.png)

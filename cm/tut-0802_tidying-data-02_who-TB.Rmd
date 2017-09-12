@@ -78,12 +78,22 @@ select(tb_data, year) %>% unique() %>% t() %>% cat()
 ```
 
 
+
+
+
+## the data encoding
+
+A data dictionary on the [WHO tuberculosis website](http://www.who.int/tb/country/data/download/en/) describes the meaning of the variable names and how they encode additional data. 
+
 We're interested in columns like `new_sp_f014` in which
 
 - `new` indicates a new case of TB; the other possible level is `old`.  
 - `sp` stands for a smear positive case type. The other possible levels are `rel` relapse; `ep`  extrapulmonary TB; `sn` smear negative (pulmonary TB that could not be diagnosed by a pulmonary smear). 
 - `f` is female; the other possible levels are `m` male and `sexunk` sex unknown  
 - `014` is the age group, from 0 to 14; other possible levels are `1524` 15-24 years old; `2534` 25-34 years old;; `3544` 35-44 years old;  `4554` 45-54 years old; `5564` 55-64 years old; and `65` 65 years old or older.
+
+
+
 
 
 ## select() 
@@ -105,6 +115,48 @@ This trims the data frame down to size. Now we have `r dim(tb_data_wide)[1]` obs
 
 
 
+## some diagnostics
+
+After working my way through this data set further down, I discovered that the integer number of cases had become a character variable. 
+
+It turns out that two of the columns in the original data file that should have contained only the integers (the number of TB cases) were coded as characters. 
+
+In the current data frame only the first column `country` should be a character variable. To find the location of any others, I ran the following check. 
+
+```{r}
+cols2check   <- sapply(tb_data_wide, class)
+cols2check   <- cols2check[cols2check == "character"]
+cols2check   <- cols2check[names(cols2check) != "country"]
+suspect_cols <- names(cols2check)
+
+# these are my suspect columns
+suspect_cols
+```
+
+Let's check the set of data entries in these two columns.  
+
+```{r}
+# what are the data entered in these columns? 
+unique(tb_data_wide$new_sn_sexunk014)
+unique(tb_data_wide$newrel_sexunk014)
+```
+
+OK. Except for the NA, these are all integers incorrectly encoded as character strings. To fix it, use *mutate()* and *as.numeric()*. 
+
+```{r}
+tb_data_wide <- tb_data_wide %>% 
+	mutate(newrel_sexunk014 = as.numeric(newrel_sexunk014)) %>% 
+	mutate(new_sn_sexunk014 = as.numeric(new_sn_sexunk014))
+```
+
+
+
+
+
+
+
+
+
 
 ## gather() 
 
@@ -118,9 +170,7 @@ The first data tidying task is to move the coded column names into their own col
 - *cols to gather* is the set of columns being gathered. Other columns remain as variables, repeated in the new data frame as often as needed.  
 
 ```{r}
-tb_data_wide <- tb_data_wide %>% 
-	mutate(newrel_sexunk014 = as.numeric(newrel_sexunk014)) %>% 
-	mutate(new_sn_sexunk014 = as.numeric(new_sn_sexunk014))
+
 
 who <- tb_data_wide %>%
 	gather("code", "N", new_sp_m014:newrel_sexunk014, na.rm = TRUE)
