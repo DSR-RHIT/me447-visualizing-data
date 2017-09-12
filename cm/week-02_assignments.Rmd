@@ -25,7 +25,8 @@ Reading
 Lecture slides 
 
 - [Dotplot slides](../slides/Le07-dot-plot-slides.pdf) 
-  
+- [gather() illustration](../slides/Le08-illustrating-gather.pdf) 
+
 
 Dot plot tutorials and exercises 
 
