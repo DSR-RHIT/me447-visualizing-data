@@ -251,4 +251,6 @@ kable(VA_long2)
 | Male   | Urban    | 65-69      |         54.6|
 | Male   | Urban    | 70-74      |         71.1|
 
-On to the next data tidying tutorial using the World Health Organization (WHO) 2016 tuberculosis data set.
+On to the next data tidying tutorial
+
+-[Tidying data case study: World Health Organization tuberculosis data](tut-0802_tidying-data-02_who-TB.md)
