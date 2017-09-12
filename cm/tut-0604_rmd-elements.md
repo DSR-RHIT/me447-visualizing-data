@@ -16,8 +16,8 @@ auto-date
 
 If you want the document date to auto-update, edit the YAML header date field to read:
 
-<pre class="r"><code>date: "<code>`</code>r format(Sys.time(), "%Y-%m-%d")<code>`</code>"</code></pre>
-The single backticks delimit executable in-line R code.
+<pre class="r"><code>date: '<code>`</code>r format(Sys.time(), "%Y-%m-%d")<code>`</code>'</code></pre>
+Those are single quotes enclosing single backticks. The single backticks delimit executable in-line R code.
 
 -   Knit HTML to check that everything works as expected.
 
