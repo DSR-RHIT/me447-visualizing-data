@@ -94,8 +94,8 @@ Data
 -   [Examining an Excel file](cm/tut-0402_read-excel.md)
 -   [Write and read a CSV file](cm/tut-0403_read-write-csv.md)
 -   [Capture data stored in row names](cm/tut-0701_capture-row-name-data.md)
--   [Tidying data introduction: Virginia Deaths data](cm/tut-0801_tidying-data-01_VADeaths.md)
--   [Tidying data case study: World Health Organization tuberculosis data](cm/tut-0802_tidying-data-02_who-TB.md)
+-   [Tidying the Virginia Deaths data](cm/tut-0801_tidying-data-01_VADeaths.md)
+-   [Tidying the WHO tuberculosis data](cm/tut-0802_tidying-data-02_who-TB.md)
 -   Subsetting data
 -   Reshaping data
 -   Finding interesting data
@@ -123,13 +123,15 @@ Design and rhetoric
 tutorial scripts
 ----------------
 
-To see an Rmd scripts, click the Raw button. .
+To see an Rmd scripts, click the Raw button.
 
 -   [tut01\_first-script.R](practiceR/tut01_first-script.R)
 -   [tut02\_scatterplot.R](practiceR/tut02_scatterplot.R)
 -   [tut03\_data-basics.R](practiceR/tut03_data-basics.R)
 -   [tut04\_first-report.Rmd](practiceR/tut04_first-report.Rmd)
 -   [tut04\_second-report.Rmd](practiceR/tut04_second-report.Rmd)
+-   [tut05\_dotplot-basics.R](practiceR/tut05_dotplot-basics.R)
+-   [tut06\_draft-word-styles.Rmd](practiceR/tut06_draft-word-styles.Rmd)
 
 exercises
 ---------

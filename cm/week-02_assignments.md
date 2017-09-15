@@ -22,8 +22,8 @@ Reading
 
 Lecture slides
 
--   [Dotplot slides](../slides/Le07-dot-plot-slides.pdf)
--   [gather() illustration](../slides/Le08-illustrating-gather.pdf)
+-   [Dotplots](../slides/Le07-dot-plot-slides.pdf)
+-   [gather()](../slides/Le08-illustrating-gather.pdf)
 
 Dot plot tutorials and exercises
 
@@ -45,11 +45,13 @@ Data tutorials and exercises
 
 -   [Tidying the Virginia Deaths data](tut-0801_tidying-data-01_VADeaths.md)
 -   [Tidying the WHO tuberculosis data](tut-0802_tidying-data-02_who-TB.md)
+-   Compare your work to my version of the [tutorial script](../practiceR/tut05_dotplot-basics.R)
 
 Document design tutorials and exercises
 
 -   [Citations and references basics](tut-1001_citations-references.md)
 -   [Word styles basics](tut-1002_word-styles.md)
+-   Compare your work to my version of the [tutorial script](../practiceR/tut06_draft-word-styles.Rmd)
 
 bibliography
 ------------
