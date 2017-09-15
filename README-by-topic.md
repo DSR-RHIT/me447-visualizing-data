@@ -85,6 +85,8 @@ Data
 -   [Examining an Excel file](cm/tut-0402_read-excel.md)
 -   [Write and read a CSV file](cm/tut-0403_read-write-csv.md)
 -   [Capture data stored in row names](cm/tut-0701_capture-row-name-data.md)
+-   [Tidying data introduction: Virginia Deaths data](cm/tut-0801_tidying-data-01_VADeaths.md)
+-   [Tidying data case study: World Health Organization tuberculosis data](cm/tut-0802_tidying-data-02_who-TB.md)
 -   Subsetting data
 -   Reshaping data
 -   Finding interesting data
@@ -97,7 +99,8 @@ Documents
 -   [Basic Rmd markup tags](cm/tut-0603_rmd-basic-tags.md)
 -   [Elements of an Rmd report](cm/tut-0604_rmd-elements.md)
 -   [Run an R script from an Rmd script](cm/tut-0605_rmd-run-r.md)
--   Document design 1
+-   [Citations and references basics](cm/tut-1001_citations-references.md)
+-   [Word styles basics](cm/tut-1002_word-styles.md)
 -   Document design 2
 -   Front and back matter
 
@@ -110,6 +113,8 @@ Design and rhetoric
 
 tutorial scripts
 ----------------
+
+To see an Rmd scripts, click the Raw button. .
 
 -   [tut01\_first-script.R](practiceR/tut01_first-script.R)
 -   [tut02\_scatterplot.R](practiceR/tut02_scatterplot.R)
