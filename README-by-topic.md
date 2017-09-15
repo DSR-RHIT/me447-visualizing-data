@@ -123,7 +123,7 @@ Design and rhetoric
 tutorial scripts
 ----------------
 
-To see an Rmd scripts, click the Raw button.
+To see an Rmd script, click the Raw button.
 
 -   [tut01\_first-script.R](practiceR/tut01_first-script.R)
 -   [tut02\_scatterplot.R](practiceR/tut02_scatterplot.R)

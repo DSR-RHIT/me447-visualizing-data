@@ -53,8 +53,7 @@ Dot plot tutorials and exercises
 Data tutorials and exercises 
 
 - [Tidying the Virginia Deaths data](tut-0801_tidying-data-01_VADeaths.md)
-- [Tidying the WHO tuberculosis data](tut-0802_tidying-data-02_who-TB.md)
-- Compare your work to my version of the [tutorial script](../practiceR/tut05_dotplot-basics.R) 
+- [Tidying the WHO tuberculosis data](tut-0802_tidying-data-02_who-TB.md) 
 
 
 
