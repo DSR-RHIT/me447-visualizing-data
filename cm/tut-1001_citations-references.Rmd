@@ -174,7 +174,10 @@ Knit your document and both the citation formatting and the references formattin
 - Knit your document; check that the references style has indeed been updated. 
 
 
-For your final portfolio, I don't require any specific citation/reference style; only that you select one and use it correctly throughout your document. 
+For your final portfolio, I prefer an author-date style for ease of reading. Select any author-date CSL file you like. 
+
+
+
 
 
 
