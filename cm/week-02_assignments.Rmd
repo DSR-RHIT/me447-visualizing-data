@@ -28,8 +28,8 @@ Reading
 
 Lecture slides 
 
-- [Dotplot slides](../slides/Le07-dot-plot-slides.pdf) 
-- [gather() illustration](../slides/Le08-illustrating-gather.pdf) 
+- [Dotplots](../slides/Le07-dot-plot-slides.pdf) 
+- [gather()](../slides/Le08-illustrating-gather.pdf) 
 
 
 Dot plot tutorials and exercises 
@@ -50,8 +50,8 @@ Dot plot tutorials and exercises
 
 Data tutorials and exercises 
 
-- [Tidying data introduction: Virginia Deaths data](tut-0801_tidying-data-01_VADeaths.md)
-- [Tidying data case study: World Health Organization tuberculosis data](tut-0802_tidying-data-02_who-TB.md)
+- [Tidying the Virginia Deaths data](tut-0801_tidying-data-01_VADeaths.md)
+- [Tidying the WHO tuberculosis data](tut-0802_tidying-data-02_who-TB.md)
 
 Document design tutorials and exercises 
 

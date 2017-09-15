@@ -43,8 +43,8 @@ Dot plot tutorials and exercises
 
 Data tutorials and exercises
 
--   [Tidying data introduction: Virginia Deaths data](tut-0801_tidying-data-01_VADeaths.md)
--   [Tidying data case study: World Health Organization tuberculosis data](tut-0802_tidying-data-02_who-TB.md)
+-   [Tidying the Virginia Deaths data](tut-0801_tidying-data-01_VADeaths.md)
+-   [Tidying the WHO tuberculosis data](tut-0802_tidying-data-02_who-TB.md)
 
 Document design tutorials and exercises
 

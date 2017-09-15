@@ -26,6 +26,15 @@ output: github_document
 - [Requirements](cm/folio-01_portfolio-requirements.md)
 - Portfolio checklist is included in your course handbook (or you can view it [here](cm/folio-02_portfolio-checklist.pdf)). Use it to check off requirements as you complete them.
 
+## lecture slides 
+
+- [Scatterplots](slides/Le03-scatterplot-slides.pdf)  
+- [Dotplots](slides/Le07-dot-plot-slides.pdf)  
+- [Data basics](slides/Le04-data-basics-slides.pdf)  
+- [gather()](slides/Le08-illustrating-gather.pdf)  
+- [R markdown basics](slides/Le06-markdown-basics-slides.pdf)  
+
+
 ## tutorials
 
 File management
