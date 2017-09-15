@@ -6,9 +6,9 @@ Portfolio progress. By the end of the week you should be able to
 
 -   Find interesting data: tidy data only for now
 -   If you download data, save it in the *data* directory
--   Write the .R script to create the D1 scatterplot
--   Save the .R script in your *design* directory
--   Start a new .Rmd file, call it *your-last-name\_portfolio\_v01.Rmd*
+-   Write the R script to create the D1 scatterplot
+-   Save the R script in your *design* directory
+-   Start a new Rmd file, call it *your-last-name\_portfolio\_v01.Rmd*
 -   Save it in your *portfolio* directory
 -   Use *source()* to run the R script that creates the graph
 -   Write your prose critique

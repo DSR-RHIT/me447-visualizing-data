@@ -4,7 +4,11 @@ week 2
 
 Portfolio progress. By the end of the week you should be able to
 
--   
+-   Use gather() and separate() for data tidying
+-   Write the R script to create the D2 dot plot
+-   Consider revisions to D1 based on the roundtable discussions
+-   Add citations and references to the work in progress
+-   Use Word Styles to begin formatting your portfolio
 
 Presentations
 
@@ -44,7 +48,8 @@ Data tutorials and exercises
 
 Document design tutorials and exercises
 
--   
+-   [Citations and references basics](tut-1001_citations-references.md)
+-   [Word styles basics](tut-1002_word-styles.md)
 
 bibliography
 ------------

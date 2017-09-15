@@ -1,8 +1,10 @@
 ---
-title: "Second report"
-author: "Richard Layton"
+title: 'Second report'
+author: 'Richard Layton'
 date: '`r format(Sys.time(), "%Y-%m-%d")`'
-output: html_document
+output:
+  word_document:
+    reference_docx: 'word-styles-reference-01.docx'
 ---
 
 ```{r setup, include=FALSE}
