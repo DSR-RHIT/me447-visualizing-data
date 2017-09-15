@@ -130,7 +130,6 @@ To see an Rmd script, click the Raw button.
 - [tut04_first-report.Rmd](practiceR/tut04_first-report.Rmd)  
 - [tut04_second-report.Rmd](practiceR/tut04_second-report.Rmd)  
 - [tut05_dotplot-basics.R](practiceR/tut05_dotplot-basics.R)  
-- [tut06_draft-word-styles.Rmd](practiceR/tut06_draft-word-styles.Rmd)  
 
 
 ## exercises

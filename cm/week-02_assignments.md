@@ -50,7 +50,6 @@ Document design tutorials and exercises
 
 -   [Citations and references basics](tut-1001_citations-references.md)
 -   [Word styles basics](tut-1002_word-styles.md)
--   Compare your work to my version of the [tutorial script](../practiceR/tut06_draft-word-styles.Rmd)
 
 bibliography
 ------------
