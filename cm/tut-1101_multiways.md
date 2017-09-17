@@ -5,8 +5,8 @@ multiway graphs
 -   [tidying multiway data](#tidying-multiway-data)
 -   [graphing multiway data](#graphing-multiway-data)
 -   [applying a log scale](#applying-a-log-scale)
+-   [using %+% to replace a current data frame](#using-to-replace-a-current-data-frame)
 -   [recoding character data](#recoding-character-data)
--   [replace the current data frame](#replace-the-current-data-frame)
 -   [graphing the dual multiway](#graphing-the-dual-multiway)
 -   [saving a graph to file](#saving-a-graph-to-file)
 -   [importing an image file](#importing-an-image-file)
@@ -202,29 +202,42 @@ print(f1)
 
 ![](tut-11-images/01-1111-1.png)
 
-Your console may show a warning message about a transformation error, meaning that one of the N values was zero (log(0) is undefined).
+Your console may show a warning message about a transformation error. There must be observations for which *N* = 0. The warning was issued because I tried to graph log(0) which is undefined.
 
 We can filter the data to keep only those rows with *N* &gt; 0.
 
 ``` r
-df1 <- df1 %>% 
+df2 <- df1 %>% 
     filter(N > 0)
+
+# how many observations did we lose?
+glimpse(df2)
+## Observations: 79
+## Variables: 3
+## $ DestMajor <chr> "AH", "Bus", "CS", "Engr", "otherNonSTM", "otherSTM"...
+## $ demogr    <chr> "AsianFem", "AsianFem", "AsianFem", "AsianFem", "Asi...
+## $ N         <int> 25, 52, 19, 699, 10, 56, 31, 162, 38, 166, 110, 2716...
 ```
 
-Now reorder panels and rows.
+using %+% to replace a current data frame
+-----------------------------------------
+
+We want to use the data frame `df2` that has been filtered to remove entries with *N* = 0.
+
+We replace a data frame in a ggplot graph we've already defined using the `%+%` operator---similar to using `+` to add a new layer. I replace the *aes()* and *facet\_wrap()* using `+` as usual.
 
 ``` r
-f2 <- ggplot(df1, aes(x = N, y = reorder(DestMajor, N, median))) +
-    geom_point(size = 2.5) + 
-    facet_wrap(~ reorder(demogr, -N, median), ncol = 3) + 
-    scale_x_log10()
+f2 <- f1 %+% 
+    df2 + 
+    aes(x = N, y = reorder(DestMajor, N, median)) +
+    facet_wrap(~ reorder(demogr, -N, median), ncol = 3)         
 
 print(f2)
 ```
 
 ![](tut-11-images/01-1113-1.png)
 
-Labels and theme
+Labels and theme.
 
 ``` r
 f2 <- f2 + 
@@ -249,7 +262,7 @@ We'll use
 
 ``` r
 # recode the categorical data for readability
-df2 <- df1 %>% 
+df3 <- df2 %>% 
     mutate(demogr = str_replace_all(demogr, 
         c("Hisp" = "Hispanic", "NatAm" = "Native American"))) %>% 
     mutate(demogr = str_replace_all(demogr, 
@@ -261,16 +274,11 @@ df2 <- df1 %>%
             "otherSTM" = "Other STM")))
 ```
 
-replace the current data frame
-------------------------------
-
-I love the `%+%` operator!
-
-It recreates a graph you already made but substitutes a new data frame that overrides the original data frame.
+Use the recoded variables.
 
 ``` r
 # override the data frame to use the readable strings 
-f3 <- f2 %+% df2
+f3 <- f2 %+% df3
 
 print(f3)
 ```
@@ -282,12 +290,12 @@ graphing the dual multiway
 
 In the current view, it is easier to compare the data values in a panel, for example, how the numbers for White Males are distributed by major.
 
-If we want to assess how the different ethnicity/sex groups are distributed across a major, we have to switch the roles of rows and panels. To do that, we swap the *y* variable with the *facet\_wrap* variable, creating the *dual* of the original graph.
+If we want to assess how the different ethnicity/sex groups are distributed across a major, we have to switch the roles of rows and panels. To do that, we swap the *y* variable with the *facet\_wrap* variable, creating the *dual* of the original graph. When plotting multiway data, I recommend you always plot both versions. One may tell a more compelling story than the other.
 
 ``` r
-# override the aes() and facet_wrap() to swap rows and panels
-f4 <- f3 %+% 
-    aes(x = N, y = reorder(demogr, N, median)) %+% 
+# replace the aes() and facet_wrap() to swap rows and panels
+f4 <- f3 + 
+    aes(x = N, y = reorder(demogr, N, median)) + 
     facet_wrap(~ reorder(DestMajor, -N, median), ncol = 3)
 
 print(f4)
@@ -295,12 +303,10 @@ print(f4)
 
 ![](tut-11-images/01-1117-1.png)
 
-When plotting multiway data, I recommend you always plot both versions. One may tell a more compelling story than the other.
-
 saving a graph to file
 ----------------------
 
-We use the *png()* function to write a graph to file for later import into the Rmd document.
+We use the *png()* function to write a graph to file for later import into the Rmd document. We specify the path and filename (to your *visuals* directory), the size of the image, and the resolution (dpi).
 
 ``` r
 # start the image PNG device
@@ -311,13 +317,11 @@ png(filename = 'visuals/tut11_multiway.png'
     , res = 300
     )
 
-# print the figure to PNG
-print(f4)
+    # print the figure to PNG
+    print(f4)
 
 # close the device: necessary
 dev.off() 
-## png 
-##   2
 ```
 
 Later, when you have imported the image to your Rmd output, if the dimensions need tweaking, change the `width` and `height` arguments of the *png()* function above.
@@ -325,14 +329,11 @@ Later, when you have imported the image to your Rmd output, if the dimensions ne
 importing an image file
 -----------------------
 
-To practice importing an image from the *visuals* directory to an Rmd file, open *tut04\_second-report.Rmd* from your *praticeR* directory.
+To practice importing an image from the *visuals* directory to an Rmd file, open *tut04\_second-report.Rmd* from your *practiceR* directory.
 
-At the end of the file, add a new header
+At the end of the file, add a new header and the markup for importing an image,
 
     # Practice importing an image 
-
-Then add the markup to import an image
-
     ![](../visuals/tut11_multiway.png)
 
 Knit the Rmd file.
