@@ -16,20 +16,29 @@ Portfolio progress. By the end of the week you should be able to
 - Use Word Styles to begin formatting your portfolio  
 
 
-Presentations
+Due this week 
 
-- D1 Scatterplot and critique. 
-- See [portfolio requirements](folio-01_portfolio-requirements.md) for details and the [portfolio checklist](folio-02_portfolio-checklist.pdf) to check that all requirements have been met. 
+- Present your D1 Scatterplot and critique. See [portfolio requirements](folio-01_portfolio-requirements.md) and [portfolio checklist](folio-02_portfolio-checklist.pdf). 
+
+
+
 
 Reading
 
 - @Robbins2013 Ch 4: Some more effective graphs in one or two dimensions
 - @Kostelnick1998 Conflicting standards (on Moodle)
 
+
+
+
+
 Lecture slides 
 
 - [Dotplots](../slides/Le07-dot-plot-slides.pdf) 
 - [gather()](../slides/Le08-illustrating-gather.pdf) 
+
+
+
 
 
 Dot plot tutorials and exercises 

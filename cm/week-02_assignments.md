@@ -10,10 +10,9 @@ Portfolio progress. By the end of the week you should be able to
 -   Add citations and references to the work in progress
 -   Use Word Styles to begin formatting your portfolio
 
-Presentations
+Due this week
 
--   D1 Scatterplot and critique.
--   See [portfolio requirements](folio-01_portfolio-requirements.md) for details and the [portfolio checklist](folio-02_portfolio-checklist.pdf) to check that all requirements have been met.
+-   Present your D1 Scatterplot and critique. See [portfolio requirements](folio-01_portfolio-requirements.md) and [portfolio checklist](folio-02_portfolio-checklist.pdf).
 
 Reading
 

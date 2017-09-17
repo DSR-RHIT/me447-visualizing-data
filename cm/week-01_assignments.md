@@ -15,10 +15,14 @@ Portfolio progress. By the end of the week you should be able to
 -   Knit the Rmd script
 -   Due at the first presentation
 
+Due this week
+
+-   [Written response](read-01_reading-response-form.pdf) for roundtable discussion of Tufte (1997).
+
 Reading
 
 -   Robbins (2013) Ch 2: Limitations of some common charts and graphs
--   Tufte (1997) Challenger launch decision. Checkout a hard copy from me. [Written response](read-01_reading-response-form.pdf) required for discussion.
+-   Tufte (1997) Challenger launch decision. Checkout a hard copy from me.
 
 Lecture slides
 

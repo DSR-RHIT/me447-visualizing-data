@@ -4,17 +4,12 @@ week 6
 
 Portfolio progress. By the end of the week you should be able to
 
--   something
--   something else
+-   Revise earlier graphs and critiques based on the roundtable discussions
+-   Revise the citations used based on the assigned readings
 
-Roundtables
+Due this week
 
--   None this week.
-
-Submissions
-
--   D5 Box plot and critique. For my review and comment.
--   See [portfolio requirements](folio-01_portfolio-requirements.md) for details and the [portfolio checklist](folio-02_portfolio-checklist.pdf) to check that all requirements have been met.
+-   D5 Box plot and critique.. Submitted electronically. See [portfolio requirements](folio-01_portfolio-requirements.md) and [portfolio checklist](folio-02_portfolio-checklist.pdf).
 
 Reading
 

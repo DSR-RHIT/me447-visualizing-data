@@ -10,17 +10,14 @@ csl: "../manage/csl/journal-of-peace-research.csl"
 
 Portfolio progress. By the end of the week you should be
 
-- Preparing to submit your completed portfolio, due during finals week. 
-- Reviewing the [portfolio requirements](folio-01_portfolio-requirements.md) and the [portfolio checklist](folio-02_portfolio-checklist.pdf) to check that all requirements have been met. 
+- Preparing to submit your completed portfolio, due during finals week.  
+- Reviewing the [portfolio requirements](folio-01_portfolio-requirements.md) and the [portfolio checklist](folio-02_portfolio-checklist.pdf) to check that all requirements have been met.  
+- Making final revisions to graphs, critiques, citations and references. 
 
 
+Due this week
 
-
-Roundtables
-
-- @Spence2006 William Playfair. [Written response](read-01_reading-response-form.pdf) required for discussion.
-
-
+- [Written response](read-01_reading-response-form.pdf) for roundtable discussion of @Spence2006. 
 
 
 
@@ -30,8 +27,9 @@ Roundtables
 
 
 
-Reading 
+Reading
 
+- @Spence2006 William Playfair. 
 - @Robbins2013 Ch 10: Questions and answers
 
 

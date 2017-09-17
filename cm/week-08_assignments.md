@@ -4,20 +4,17 @@ week 8
 
 Portfolio progress. By the end of the week you should be able to
 
--   something
--   something else
+-   Revise earlier graphs and critiques based on the roundtable discussions
+-   Revise the citations used based on the assigned readings
 
-Roundtables
+Due this week
 
--   Dragga & Voss (2001) Cruel pies. [Written response](read-01_reading-response-form.pdf) required for discussion.
+-   [Written response](read-01_reading-response-form.pdf) for roundtable discussion of Dragga & Voss (2001).
+-   D7 Original or learn on your own graph and critique. Submitted electronically. See [portfolio requirements](folio-01_portfolio-requirements.md) and [portfolio checklist](folio-02_portfolio-checklist.pdf).
 
-Submissions
+Reading
 
--   D7 Original or learn on your own graph and critique.
--   See [portfolio requirements](folio-01_portfolio-requirements.md) for details and the [portfolio checklist](folio-02_portfolio-checklist.pdf) to check that all requirements have been met.
-
-Additional reading
-
+-   Dragga & Voss (2001) Cruel pies
 -   Robbins (2013) Ch 8: Applying what we've learned: *Before* and *after* examples
 
 Lecture slides

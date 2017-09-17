@@ -6,13 +6,15 @@ Portfolio progress. By the end of the week you should be
 
 -   Preparing to submit your completed portfolio, due during finals week.
 -   Reviewing the [portfolio requirements](folio-01_portfolio-requirements.md) and the [portfolio checklist](folio-02_portfolio-checklist.pdf) to check that all requirements have been met.
+-   Making final revisions to graphs, critiques, citations and references.
 
-Roundtables
+Due this week
 
--   Spence (2006) William Playfair. [Written response](read-01_reading-response-form.pdf) required for discussion.
+-   [Written response](read-01_reading-response-form.pdf) for roundtable discussion of Spence (2006).
 
 Reading
 
+-   Spence (2006) William Playfair.
 -   Robbins (2013) Ch 10: Questions and answers
 
 Lecture slides
