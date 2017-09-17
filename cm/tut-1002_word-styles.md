@@ -1,6 +1,15 @@
+word styles basics
+================
 
-Word styles basics
-------------------
+-   [creating the styles reference docx](#creating-the-styles-reference-docx)
+-   [editing the Word styles you find](#editing-the-word-styles-you-find)
+-   [using the Word styles reference file](#using-the-word-styles-reference-file)
+-   [updating the reference file incrementally](#updating-the-reference-file-incrementally)
+-   [caution using styles](#caution-using-styles)
+-   [formatting your portfolio](#formatting-your-portfolio)
+
+creating the styles reference docx
+----------------------------------
 
 First create an Rmd file with a Word output.
 
@@ -17,8 +26,8 @@ Save this file
 
 This Word document is the first draft of your styles reference docx file. Its *text content* is irrelevant---its *Style settings* are what you will be using.
 
-edit the Word styles you find
------------------------------
+editing the Word styles you find
+--------------------------------
 
 Continue to work with the *word-styles-reference-01.docx* file.
 
@@ -47,7 +56,7 @@ With the title reformatted and still selected, click the Title style drop-down m
 
 ![](tut-10-images/edit-title-format-02.png)
 
-using the word styles reference file
+using the Word styles reference file
 ------------------------------------
 
 -   Save *word-styles-reference-01.docx*
@@ -70,7 +79,7 @@ You should see that the format of the title has changed.
 
 ![](tut-10-images/styles-result-01.png)
 
-incremental updates to the reference file
+updating the reference file incrementally
 -----------------------------------------
 
 With your Word output file *tut04\_second-report.Rmd* open
@@ -93,8 +102,7 @@ A Word file should appear that includes your left-align changes
 
 ![](tut-10-images/styles-result-02.png)
 
-exercise
---------
+### exercise
 
 Continue editing the open Word document from ""Second report."
 
@@ -122,8 +130,8 @@ Use only those styles that exist in the output docx file created by knitr.
 -   Do not change a style name.
 -   Do not add your own new style.
 
-portfolio formatting
---------------------
+formatting your portfolio
+-------------------------
 
 -   Knit your portfolio Rmd file with Word output
 -   Save the Word file produced as *portfolio-styles-reference-01.docx* in your *portfolio* directory

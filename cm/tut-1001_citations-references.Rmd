@@ -1,5 +1,9 @@
 ---
-output: github_document
+title: citations and references basics
+output: 
+  github_document:
+    toc: TRUE
+    toc_depth: 2
 bibliography: "../manage/refs.bib" 
 csl: "../manage/csl/journal-of-peace-research.csl"
 ---
@@ -10,22 +14,9 @@ opts_knit$set(root.dir = "../")
 opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE, cache = TRUE, cache.path = "tut-10-cache/01-", fig.path = "tut-10-images/01-")
 ```
 
+## creating the bib file 
 
-
-
-## citations and references basics
-
-We'll use the bib format (from BiBTeX) for bibliographies (other formats are available). The  basic steps are: 
-
-- create the bib file  
-- add a bibliography to the YAML header  
-- add citations to your prose   
-- add a references heading 
-
-
-
-
-## create the bib file 
+We'll use the bib format (from BiBTeX) for bibliographies (other formats are available).
 
 The bib file contains the complete list of references used in your portfolio. It can contain more refences than needed; only those references actually cited will appear. 
 
@@ -73,7 +64,7 @@ Words in your bibliography are sometimes not capitalized the way you expect. If 
 
 
 
-## add a bibliography to the YAML header
+## adding a bibliography to the YAML header
 
 Add the bibliography argument to the YAML header.  
 
@@ -95,7 +86,7 @@ bibliography: "portfolio.bib"
   
 
 
-## add citations to your prose
+## adding citations to your prose
 
 In the Rmd file, add the citation at the appropriate place in your prose, for example,
 
@@ -113,7 +104,7 @@ The citation syntax has the form `[@label]`, where the `@label` is the unique la
 
 
 
-## add a references heading
+## adding a references heading
 
 At the end of the Rmd script, add a references section heading.
 
@@ -139,7 +130,7 @@ From your critique of D1 in your portfolio,
 
 
 
-## formatting the references and citations
+## formatting the citations and references 
 
 You don't have to do this step right away, but you might want to later in the term.
 

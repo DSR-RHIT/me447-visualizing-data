@@ -1,16 +1,16 @@
-
 citations and references basics
--------------------------------
+================
 
-We'll use the bib format (from BiBTeX) for bibliographies (other formats are available). The basic steps are:
+-   [creating the bib file](#creating-the-bib-file)
+-   [adding a bibliography to the YAML header](#adding-a-bibliography-to-the-yaml-header)
+-   [adding citations to your prose](#adding-citations-to-your-prose)
+-   [adding a references heading](#adding-a-references-heading)
+-   [formatting the citations and references](#formatting-the-citations-and-references)
 
--   create the bib file
--   add a bibliography to the YAML header
--   add citations to your prose
--   add a references heading
+creating the bib file
+---------------------
 
-create the bib file
--------------------
+We'll use the bib format (from BiBTeX) for bibliographies (other formats are available).
 
 The bib file contains the complete list of references used in your portfolio. It can contain more refences than needed; only those references actually cited will appear.
 
@@ -47,8 +47,8 @@ Words in your bibliography are sometimes not capitalized the way you expect. If 
 -   Find the entry style for a book and copy it into your bib file
 -   Edit the entry to include all the information for our course text book by Naomi Robbins.
 
-add a bibliography to the YAML header
--------------------------------------
+adding a bibliography to the YAML header
+----------------------------------------
 
 Add the bibliography argument to the YAML header.
 
@@ -65,8 +65,8 @@ bibliography: "portfolio.bib"
 
 -   Add the bibliography argument to the YAML header of your portfolio.
 
-add citations to your prose
----------------------------
+adding citations to your prose
+------------------------------
 
 In the Rmd file, add the citation at the appropriate place in your prose, for example,
 
@@ -78,8 +78,8 @@ The citation syntax has the form `[@label]`, where the `@label` is the unique la
 
 -   Add a citation for the Robbins text somewhere in one of your critiques.
 
-add a references heading
-------------------------
+adding a references heading
+---------------------------
 
 At the end of the Rmd script, add a references section heading.
 
@@ -95,7 +95,7 @@ From your critique of D1 in your portfolio,
 -   add the `[@namedate]` citation markup in your critique
 -   knit the document to check that it all works
 
-formatting the references and citations
+formatting the citations and references
 ---------------------------------------
 
 You don't have to do this step right away, but you might want to later in the term.

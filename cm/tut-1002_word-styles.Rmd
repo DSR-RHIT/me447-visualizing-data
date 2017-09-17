@@ -1,5 +1,9 @@
 ---
-output: github_document
+title: word styles basics
+output: 
+  github_document:
+    toc: TRUE
+    toc_depth: 2
 bibliography: "../manage/refs.bib" 
 csl: "../manage/csl/journal-of-peace-research.csl"
 ---
@@ -13,7 +17,7 @@ opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE, c
 
 
 
-## Word styles basics 
+## creating the styles reference docx 
 
 
 First create an Rmd file with a Word output.  
@@ -37,7 +41,7 @@ This Word document is the first draft of your styles reference docx file. Its *t
 
 
 
-## edit the Word styles you find
+## editing the Word styles you find
 
 Continue to work with the *word-styles-reference-01.docx* file. 
 
@@ -77,7 +81,7 @@ With the title reformatted and still selected, click the Title style drop-down m
 
 
 
-## using the word styles reference file 
+## using the Word styles reference file 
 
 - Save *word-styles-reference-01.docx*  
 - Close it  
@@ -104,7 +108,7 @@ You should see that the format of the title has changed.
 ![](tut-10-images/styles-result-01.png) 
 
 
-## incremental updates to the reference file 
+## updating the reference file incrementally 
 
 With your Word output file *tut04_second-report.Rmd* open  
 
@@ -127,7 +131,7 @@ A Word file should appear that includes your left-align changes
 ![](tut-10-images/styles-result-02.png) 
 
 
-## exercise
+### exercise
 
 Continue editing the open Word document from ""Second report."
 
@@ -156,7 +160,7 @@ Use only those styles that exist in the output docx file created by knitr.
 - Do not add your own new style. 
 
 
-## portfolio formatting
+## formatting your portfolio
 
 - Knit your portfolio Rmd file with Word output  
 - Save the Word file produced as *portfolio-styles-reference-01.docx* in your *portfolio* directory  
