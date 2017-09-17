@@ -9,6 +9,7 @@ transforming data
 -   [add new variables with mutate()](#add-new-variables-with-mutate)
 -   [group\_by() and summarize()](#group_by-and-summarize)
 -   [useful summarizing functions](#useful-summarizing-functions)
+-   [exercise](#exercise)
 -   [bibliography](#bibliography)
 
 introduction
@@ -438,8 +439,38 @@ Along with `count = n()` and `mean(x)`,
 
 For more detail, see [Grouped summaries with summarize()](http://r4ds.had.co.nz/transform.html#grouped-summaries-with-summarise).
 
+exercise
+--------
+
+Preparation
+
+-   From the course website, download the *lotr-words-spoken.xlsx* spreadsheet.
+-   Create a R script *tut12\_transform-data.R* in your *practiceR* folder.
+
+In your script,
+
+-   read the Excel spreadsheet
+-   tidy the LOTR data (Bryan, 2017)
+-   group by race and sex
+-   determine the total words spoken by group
+
+My answer:
+
+    ## # A tibble: 6 x 3
+    ## # Groups:   race [3]
+    ##     race    sex words_spoken
+    ##    <chr>  <chr>        <dbl>
+    ## 1 hobbit   male         8780
+    ## 2    man   male         8043
+    ## 3    elf   male         1994
+    ## 4    elf female         1743
+    ## 5    man female          669
+    ## 6 hobbit female           16
+
 bibliography
 ------------
+
+Bryan, Jenny (2017) LOTR repository (<https://github.com/jennybc/lotr/blob/master/lotr_wordsSpoken.tsv>).
 
 Grolemund, Garrett & Hadley Wickham (2017) R for Data Science. O’Reilly (<http://r4ds.had.co.nz/>).
 

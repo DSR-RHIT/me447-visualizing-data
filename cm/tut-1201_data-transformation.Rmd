@@ -268,6 +268,29 @@ Along with `count = n()` and `mean(x)`,
 
 For more detail, see [Grouped summaries with  summarize()](http://r4ds.had.co.nz/transform.html#grouped-summaries-with-summarise).
 
+## exercise
+
+Preparation 
+
+- From the course website, download the *lotr-words-spoken.xlsx* spreadsheet.
+- Create a R script *tut12_transform-data.R* in your *practiceR* folder. 
+
+
+In your script, 
+
+- read the Excel spreadsheet 
+- tidy the LOTR data [@Bryan2017]
+- group by race and sex 
+- determine the total words spoken by group 
+
+My answer:
+
+```{r echo = FALSE}
+source("practiceR/tut12_transforming-data.R")
+```
+
+
+
 
 ## bibliography 
 
