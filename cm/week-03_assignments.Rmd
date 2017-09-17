@@ -36,7 +36,7 @@ Lecture slides
 Tutorials
 
 - [Multiway data and graphs](tut-1101_multiways.md) 
-- Reshaping data  
+- [Transforming data](tut-1201_data-transformation.md) 
 - Basic file management  
 
 
