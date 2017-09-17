@@ -2,20 +2,27 @@
 week 4
 ------
 
+Portfolio progress. By the end of the week you should be able to
+
+-   something
+-   something else
+
+Roundtables
+
+-   Present your D4 Multiway graph and critique.
+-   See [portfolio requirements](folio-01_portfolio-requirements.md) for details and the [portfolio checklist](folio-02_portfolio-checklist.pdf) to check that all requirements have been met.
+
 Reading
 
 -   Few (2012) Differing roles of tables and graphs
 -   Wainer (2000) How to display data badly
 
+Lecture slides
+
 Tutorials
 
 -   Tables
 -   Finding interesting data
-
-Presentations
-
--   D4 Multiway graph and critique.
--   See [portfolio requirements](folio-01_portfolio-requirements.md) for details and the [portfolio checklist](folio-02_portfolio-checklist.pdf) to check that all requirements have been met.
 
 bibliography
 ------------

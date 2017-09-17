@@ -338,7 +338,7 @@ At the end of the file, add a new header and the markup for importing an image,
 
 Knit the Rmd file.
 
-As an alternative, add a code chunk and use the *knitr* function *includegraphics()*.
+As an alternative, you can add a code chunk and use the *knitr* function *includegraphics()*.
 
 <pre class="markdown"><code>```{r}
 knitr::include_graphics('../visuals/tut11_multiway.png')

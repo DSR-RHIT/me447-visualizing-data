@@ -6,14 +6,41 @@ csl: "../manage/csl/journal-of-peace-research.csl"
 
 ## week 9
 
-Reading
+Portfolio progress. By the end of the week you should be able to
 
-- @Knaflic2012 So what? URL in bibliography below.
+- something  
+- something else 
 
-Presentations
+
+
+Roundtables
 
 - D8 Original or learn on your own graph and critique. 
 - See [portfolio requirements](folio-01_portfolio-requirements.md) for details  and the [portfolio checklist](folio-02_portfolio-checklist.pdf) to check that all requirements have been met. 
+
+
+
+Reading 
+
+- @Knaflic2012 So what? URL in bibliography below.
+
+
+
+
+Lecture slides
+
+- something  
+- something else 
+
+
+
+
+
+
+
+
+
+
 
 
 ## bibliography 

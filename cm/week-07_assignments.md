@@ -2,20 +2,30 @@
 week 7
 ------
 
+Portfolio progress. By the end of the week you should be able to
+
+-   something
+-   something else
+
+Roundtables
+
+-   D6 Small multiples and critique.
+-   See [portfolio requirements](folio-01_portfolio-requirements.md) for details and the [portfolio checklist](folio-02_portfolio-checklist.pdf) to check that all requirements have been met.
+
 Reading
 
 -   Constable (2017) Color. URL in bibliography below.
 -   Robbins (2013) Ch 7: Scales
 
+Lecture slides
+
+-   something
+-   something else
+
 Tutorials
 
 -   Beyond basic graphs: Learning new graph types on your own
 -   Color
-
-Presentations
-
--   D6 Small multiples and critique.
--   See [portfolio requirements](folio-01_portfolio-requirements.md) for details and the [portfolio checklist](folio-02_portfolio-checklist.pdf) to check that all requirements have been met.
 
 bibliography
 ------------
