@@ -22,6 +22,8 @@ library(tidyverse)
 
 
 
+
+
 ## introduction
 
 The examples in this tutorial are borrowed from Chapter 5 of  [R for Data Science](http://r4ds.had.co.nz/) [@Grolemund2017]. I've trimmed their work to focus on a smaller set of skills, but you are welcome to to go to their website and work through the problems in more detail.  
