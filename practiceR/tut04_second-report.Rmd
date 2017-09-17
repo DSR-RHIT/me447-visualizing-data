@@ -55,3 +55,9 @@ If this were my portfolio, I would set `echo = FALSE` as the default to hide the
 Click the "Raw" button near the top of the page.
 
 
+
+## Practice importing an image 
+
+![](../visuals/tut11_multiway.png)
+
+
