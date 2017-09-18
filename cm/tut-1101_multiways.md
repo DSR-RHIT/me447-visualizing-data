@@ -131,6 +131,98 @@ glimpse(df2)
 ## $ N         <int> 25, 52, 19, 699, 10, 56, 31, 162, 38, 166, 110, 2716...
 ```
 
+Let's look at it in table form.
+
+``` r
+df2 <- df2 %>% 
+    select(demogr, DestMajor, N) %>% 
+    arrange(demogr, desc(N))
+kable(df2)
+```
+
+| demogr   | DestMajor   |      N|
+|:---------|:------------|------:|
+| AsianFem | Engr        |    699|
+| AsianFem | TOLEDO      |    162|
+| AsianFem | otherSTM    |     56|
+| AsianFem | Bus         |     52|
+| AsianFem | SocSci      |     31|
+| AsianFem | AH          |     25|
+| AsianFem | CS          |     19|
+| AsianFem | otherNonSTM |     10|
+| AsianMle | Engr        |   2716|
+| AsianMle | TOLEDO      |    803|
+| AsianMle | Bus         |    166|
+| AsianMle | otherSTM    |    124|
+| AsianMle | CS          |    110|
+| AsianMle | SocSci      |     53|
+| AsianMle | AH          |     38|
+| AsianMle | otherNonSTM |     15|
+| BlackFem | Engr        |   2363|
+| BlackFem | TOLEDO      |   1113|
+| BlackFem | otherSTM    |    143|
+| BlackFem | Bus         |    137|
+| BlackFem | SocSci      |    134|
+| BlackFem | AH          |     66|
+| BlackFem | otherNonSTM |     52|
+| BlackFem | CS          |     39|
+| BlackMle | Engr        |   3788|
+| BlackMle | TOLEDO      |   2112|
+| BlackMle | Bus         |    208|
+| BlackMle | SocSci      |    192|
+| BlackMle | otherSTM    |    125|
+| BlackMle | otherNonSTM |    109|
+| BlackMle | AH          |     85|
+| BlackMle | CS          |     82|
+| HispFem  | Engr        |    250|
+| HispFem  | TOLEDO      |     88|
+| HispFem  | otherSTM    |     22|
+| HispFem  | Bus         |     21|
+| HispFem  | AH          |     15|
+| HispFem  | SocSci      |     13|
+| HispFem  | otherNonSTM |     10|
+| HispFem  | CS          |      2|
+| HispMle  | Engr        |   1011|
+| HispMle  | TOLEDO      |    406|
+| HispMle  | Bus         |     71|
+| HispMle  | SocSci      |     53|
+| HispMle  | otherSTM    |     39|
+| HispMle  | CS          |     29|
+| HispMle  | AH          |     26|
+| HispMle  | otherNonSTM |     18|
+| NatAmFem | Engr        |     37|
+| NatAmFem | TOLEDO      |     23|
+| NatAmFem | otherSTM    |      8|
+| NatAmFem | SocSci      |      3|
+| NatAmFem | AH          |      1|
+| NatAmFem | Bus         |      1|
+| NatAmFem | CS          |      1|
+| NatAmFem | otherNonSTM |      1|
+| NatAmMle | Engr        |    148|
+| NatAmMle | TOLEDO      |     85|
+| NatAmMle | Bus         |     18|
+| NatAmMle | otherSTM    |     10|
+| NatAmMle | SocSci      |      6|
+| NatAmMle | AH          |      3|
+| NatAmMle | CS          |      2|
+| NatAmMle | otherNonSTM |      0|
+| WhiteFem | Engr        |   6182|
+| WhiteFem | TOLEDO      |   2213|
+| WhiteFem | otherSTM    |    774|
+| WhiteFem | Bus         |    689|
+| WhiteFem | SocSci      |    413|
+| WhiteFem | AH          |    329|
+| WhiteFem | otherNonSTM |    195|
+| WhiteFem | CS          |     87|
+| WhiteMle | Engr        |  27722|
+| WhiteMle | TOLEDO      |  10995|
+| WhiteMle | Bus         |   2688|
+| WhiteMle | otherSTM    |   1774|
+| WhiteMle | SocSci      |   1227|
+| WhiteMle | CS          |    836|
+| WhiteMle | AH          |    791|
+| WhiteMle | otherNonSTM |    523|
+
 Save the tidy data as a new CSV file in your *data* directory called *tut11\_student-data-tidy.csv*
 
 ``` r

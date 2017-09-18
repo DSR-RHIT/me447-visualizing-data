@@ -122,6 +122,18 @@ df2 <- df1 %>%
 glimpse(df2)
 ```
 
+Let's look at it in table form.
+
+```{r}
+df2 <- df2 %>% 
+	select(demogr, DestMajor, N) %>% 
+	arrange(demogr, desc(N))
+kable(df2)
+```
+
+
+
+
 Save the tidy data as a new CSV file in your *data* directory called *tut11_student-data-tidy.csv* 
 
 ```{r 1107}
