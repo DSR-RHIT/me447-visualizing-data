@@ -4,14 +4,18 @@ author: 'Richard Layton'
 date: '`r format(Sys.time(), "%Y-%m-%d")`'
 output:
   word_document:
-    reference_docx: 'word-styles-reference-01.docx'
+    reference_docx: '../resources/word-styles-reference-01.docx'
 ---
 
 ```{r setup, include=FALSE}
 # set the knitr working directory  
 library(knitr)  
 opts_knit$set(root.dir = "../") 
+```
 
+
+
+```{r include=FALSE}
 # the output document prints the code  
 opts_chunk$set(echo = TRUE)
 ```
