@@ -1,6 +1,7 @@
 finding interesting data
 ================
 
+-   [assignment](#assignment)
 -   [articles about finding interesting data](#articles-about-finding-interesting-data)
 -   [others' tutorials](#others-tutorials)
 -   [data sites](#data-sites)
@@ -8,6 +9,14 @@ finding interesting data
 I spent some time browsing my usual suspects list of R sites and found the following links that show some promise for finding interesting data for your work.
 
 If you find other sites you find useful or entertaining, please let me know and I'll add them to the lists.
+
+assignment
+----------
+
+Regularly browse these links (or find your own) to
+
+-   find interesting data for the graphs in your portfolio
+-   find interesting visualizations to use as a basis for D7 and D8
 
 articles about finding interesting data
 ---------------------------------------

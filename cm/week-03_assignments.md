@@ -20,14 +20,13 @@ Reading
 
 Lecture slides
 
--   something
--   somthing else
+-   [Managing files](../slides/Le12-file-management-basics.pdf)
 
 Tutorials
 
 -   [Multiway data and graphs](tut-1101_multiways.md)
+-   [Finding interesting data](tut-1202_data-links.md)
 -   [Transforming data](tut-1201_data-transformation.md)
--   Basic file management
 
 bibliography
 ------------

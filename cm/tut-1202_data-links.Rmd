@@ -19,6 +19,16 @@ I spent some time browsing my usual suspects list of R sites and found the follo
 
 If you find other sites you find useful or entertaining, please let me know and I'll add them to the lists. 
 
+## assignment 
+
+Regularly browse these links (or find your own) to 
+
+- find interesting data for the graphs in your portfolio 
+- find interesting visualizations to use as a basis for D7 and D8 
+
+
+
+
 ## articles about finding interesting data 
 
 - [Fun data for teaching R](https://bartomeuslab.com/2016/01/21/fun-data-for-teaching-r/) blog  
