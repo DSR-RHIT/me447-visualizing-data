@@ -37,6 +37,7 @@ others' tutorials
 data sites
 ----------
 
+-   [National snow and ice data center](https://nsidc.org/)
 -   [Visualizing obesity across United States by using data from Wikipedia](https://datascienceplus.com/visualizing-obesity-across-united-states-by-using-data-from-wikipedia/)
 -   [Extracting tables from PDFs in R using the tabulizer package](https://datascienceplus.com/extracting-tables-from-pdfs-in-r-using-the-tabulizer-package/)
 -   [Pulling data out of census spreadsheets using R](https://datascienceplus.com/pulling-data-out-of-census-spreadsheets-using-r/)
