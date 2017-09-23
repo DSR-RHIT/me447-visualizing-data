@@ -1,6 +1,5 @@
-
 data basics
------------
+================
 
 After working through this tutorial, you should be able to
 
@@ -12,7 +11,15 @@ After working through this tutorial, you should be able to
 preparation
 -----------
 
-Launch your RStudio project for the course, *me447-visualizing-data.Rproj*.
+Start by opening your RStudio project:
+File → Recent projects → me447\_visualizing-data.Rproj.
+
+> ALWAYS start your work session by launching the .Rproj file you created for this course
+
+Using an R Project sets the working directory to your course folder, making relative file paths easy to use.
+
+getting started
+---------------
 
 Packages
 

@@ -1,11 +1,22 @@
 citations and references basics
 ================
 
+-   [preparation](#preparation)
 -   [creating the bib file](#creating-the-bib-file)
 -   [adding a bibliography to the YAML header](#adding-a-bibliography-to-the-yaml-header)
 -   [adding citations to your prose](#adding-citations-to-your-prose)
 -   [adding a references heading](#adding-a-references-heading)
 -   [formatting the citations and references](#formatting-the-citations-and-references)
+
+preparation
+-----------
+
+Start by opening your RStudio project:
+File → Recent projects → me447\_visualizing-data.Rproj.
+
+> ALWAYS start your work session by launching the .Rproj file you created for this course
+
+Using an R Project sets the working directory to your course folder, making relative file paths easy to use.
 
 creating the bib file
 ---------------------

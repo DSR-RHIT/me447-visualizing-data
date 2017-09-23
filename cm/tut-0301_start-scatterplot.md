@@ -2,9 +2,10 @@
 starting a practiceR script
 ---------------------------
 
-Start every session for our course work by launching your *me447\_visualizing-data.Rproj* file,
+Start by opening your RStudio project:
+File → Recent projects → me447\_visualizing-data.Rproj.
 
-*File* → *Open Project* → *me447\_visualizing-data.Rproj*
+> ALWAYS start your work session by launching the .Rproj file you created for this course
 
 Using an R Project sets the working directory to your course folder, making relative file paths easy to use.
 

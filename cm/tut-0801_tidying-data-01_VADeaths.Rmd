@@ -1,5 +1,9 @@
 ---
-output: github_document
+title: tidying data
+output: 
+  github_document:
+    toc: TRUE
+    toc_depth: 2
 bibliography: "../manage/refs.bib" 
 csl: "../manage/csl/journal-of-peace-research.csl"
 ---
@@ -11,7 +15,14 @@ opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE, c
 ```
 
 
-## tidying data
+## preparation
+
+Start by opening your RStudio project:    
+File $\rightarrow$ Recent projects $\rightarrow$ me447_visualizing-data.Rproj.
+
+> ALWAYS start your work session by launching the .Rproj file you created for this course 
+
+Using an R Project sets the working directory to your course folder, making relative file paths easy to use.
 
 Preparation 
 
@@ -124,7 +135,7 @@ kable(VA_long1)
 glimpse(VA_long1)
 ```
 
-## separate the location.sex variable  
+## separate()  
 
 Two variables are recorded in the same column: location and sex. 
 

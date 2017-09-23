@@ -1,8 +1,18 @@
+create an R markdown script
+================
+
+preparation
+-----------
+
+Launch your RStudio project.Start by opening your RStudio project:
+File → Recent projects → me447\_visualizing-data.Rproj.
+
+> ALWAYS start your work session by launching the .Rproj file you created for this course
+
+Using an R Project sets the working directory to your course folder, making relative file paths easy to use.
 
 create an R markdown script
 ---------------------------
-
-Launch your RStudio project.
 
 From RStudio, create a new R Markdown file:
 

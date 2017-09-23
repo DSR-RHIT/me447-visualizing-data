@@ -1,6 +1,7 @@
 multiway graphs
 ================
 
+-   [preparation](#preparation)
 -   [defining multiway data](#defining-multiway-data)
 -   [tidying multiway data](#tidying-multiway-data)
 -   [graphing multiway data](#graphing-multiway-data)
@@ -11,6 +12,16 @@ multiway graphs
 -   [saving a graph to file](#saving-a-graph-to-file)
 -   [importing an image file](#importing-an-image-file)
 -   [bibliography](#bibliography)
+
+preparation
+-----------
+
+Start by opening your RStudio project:
+File → Recent projects → me447\_visualizing-data.Rproj.
+
+> ALWAYS start your work session by launching the .Rproj file you created for this course
+
+Using an R Project sets the working directory to your course folder, making relative file paths easy to use.
 
 defining multiway data
 ----------------------

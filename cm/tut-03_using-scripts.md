@@ -4,6 +4,8 @@ we usually interact with R using scripts
 
 Start by opening your RStudio project:<br> File → Recent projects → me447\_visualizing-data.Rproj.
 
+> ALWAYS start your work session by launching the .Rproj file you created for this course
+
 A script is a file of R commands. To start a new R script, use<br> File → New File → R Script.
 
 ![](../images/panes-4.png)

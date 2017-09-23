@@ -5,6 +5,7 @@ week 3
 Portfolio progress. By the end of the week you should be able to
 
 -   Create the D3 multiway plot and draft its critique
+-   Transform data using select(), filter, group\_by(), and summarize()
 -   Revise earlier graphs and critiques based on the roundtable discussions
 -   Revise the citations used based on the assigned readings
 

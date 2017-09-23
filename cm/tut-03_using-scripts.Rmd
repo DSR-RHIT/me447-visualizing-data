@@ -11,6 +11,8 @@ knitr::opts_chunk$set(fig.keep = "high")
 Start by opening your RStudio project:<br> 
 File $\rightarrow$ Recent projects $\rightarrow$ me447_visualizing-data.Rproj.
 
+> ALWAYS start your work session by launching the .Rproj file you created for this course 
+
 A script is a file of R commands. To start a new R script, use<br>
 File $\rightarrow$ New File $\rightarrow$ R Script.
 

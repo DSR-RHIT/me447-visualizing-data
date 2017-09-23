@@ -1,5 +1,9 @@
 ---
-output: github_document
+title: data basics
+output: 
+  github_document:
+    toc: FALSE
+    toc_depth: 2
 bibliography: "../manage/refs.bib" 
 csl: "../manage/csl/journal-of-peace-research.csl"
 ---
@@ -17,7 +21,7 @@ suppressPackageStartupMessages(library(tidyverse))
 library(readxl)
 ```
 
-## data basics
+
 
 After working through this tutorial, you should be able to 
 
@@ -29,7 +33,15 @@ After working through this tutorial, you should be able to
 
 ## preparation 
 
-Launch your RStudio project for the course, *me447-visualizing-data.Rproj*.  
+Start by opening your RStudio project:    
+File $\rightarrow$ Recent projects $\rightarrow$ me447_visualizing-data.Rproj.
+
+> ALWAYS start your work session by launching the .Rproj file you created for this course 
+
+Using an R Project sets the working directory to your course folder, making relative file paths easy to use.
+
+
+## getting started 
 
 Packages
 

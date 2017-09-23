@@ -1,6 +1,7 @@
 transforming data
 ================
 
+-   [preparation](#preparation)
 -   [introduction](#introduction)
 -   [filter rows with filter()](#filter-rows-with-filter)
 -   [comparison operators](#comparison-operators)
@@ -11,6 +12,16 @@ transforming data
 -   [useful summarizing functions](#useful-summarizing-functions)
 -   [exercise](#exercise)
 -   [bibliography](#bibliography)
+
+preparation
+-----------
+
+Start by opening your RStudio project:
+File → Recent projects → me447\_visualizing-data.Rproj.
+
+> ALWAYS start your work session by launching the .Rproj file you created for this course
+
+Using an R Project sets the working directory to your course folder, making relative file paths easy to use.
 
 introduction
 ------------

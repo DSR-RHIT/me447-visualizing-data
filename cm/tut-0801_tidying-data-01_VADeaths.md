@@ -1,6 +1,21 @@
-
 tidying data
-------------
+================
+
+-   [preparation](#preparation)
+-   [first look](#first-look)
+-   [matrix to data frame](#matrix-to-data-frame)
+-   [gather()](#gather)
+-   [separate()](#separate)
+
+preparation
+-----------
+
+Start by opening your RStudio project:
+File → Recent projects → me447\_visualizing-data.Rproj.
+
+> ALWAYS start your work session by launching the .Rproj file you created for this course
+
+Using an R Project sets the working directory to your course folder, making relative file paths easy to use.
 
 Preparation
 
@@ -193,8 +208,8 @@ glimpse(VA_long1)
 ## $ death_rate   <dbl> 11.7, 18.1, 26.9, 41.0, 66.0, 8.7, 11.7, 20.3, 30...
 ```
 
-separate the location.sex variable
-----------------------------------
+separate()
+----------
 
 Two variables are recorded in the same column: location and sex.
 
