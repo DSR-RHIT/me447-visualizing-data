@@ -9,7 +9,7 @@ Portfolio progress. By the end of the week you should be able to
 
 Due this week
 
--   Present your D4 Multiway graph and critique. See [portfolio requirements](folio-01_portfolio-requirements.md) and [portfolio checklist](folio-02_portfolio-checklist.pdf).
+-   Present your D3 Multiway graph and critique. See [portfolio requirements](folio-01_portfolio-requirements.md) and [portfolio checklist](folio-02_portfolio-checklist.pdf).
 
 Reading
 
