@@ -2,7 +2,7 @@ finding interesting data
 ================
 
 -   [assignment](#assignment)
--   [articles about finding interesting data](#articles-about-finding-interesting-data)
+-   [articles about interesting data](#articles-about-interesting-data)
 -   [others' tutorials](#others-tutorials)
 -   [data sites](#data-sites)
 
@@ -18,9 +18,11 @@ Regularly browse these links (or find your own) to
 -   find interesting data for the graphs in your portfolio
 -   find interesting visualizations to use as a basis for D7 and D8
 
-articles about finding interesting data
----------------------------------------
+articles about interesting data
+-------------------------------
 
+-   [Pirating pirate data for pirate day](http://blog.revolutionanalytics.com/2017/09/pirating-pirate-data-for-pirate-day.html) Yes, it really is about 21st century pirates
+-   [Exploratory data analysis of tropical storms in R](https://www.stoltzmaniac.com/exploratory-data-analysis-of-tropical-storms-in-r/)
 -   [Fun data for teaching R](https://bartomeuslab.com/2016/01/21/fun-data-for-teaching-r/) blog
 -   [Discovering good data packages](https://ropenscilabs.github.io/data-packages/) repo
 -   [R packages for data access](http://blog.revolutionanalytics.com/2016/08/r-packages-data-access.html) blog
