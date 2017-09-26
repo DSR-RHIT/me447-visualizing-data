@@ -13,8 +13,6 @@ library(knitr)
 opts_knit$set(root.dir = "../") 
 ```
 
-
-
 ```{r include=FALSE}
 # the output document prints the code  
 opts_chunk$set(echo = TRUE)
