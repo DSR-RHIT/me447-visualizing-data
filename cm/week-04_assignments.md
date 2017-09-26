@@ -23,8 +23,7 @@ Lecture slides
 
 Tutorials
 
--   Tables
--   Finding interesting data
+-   [Tables](tut-1301_tables.md)
 
 bibliography
 ------------
