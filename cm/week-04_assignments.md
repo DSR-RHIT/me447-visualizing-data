@@ -4,6 +4,8 @@ week 4
 
 Portfolio progress. By the end of the week you should be able to
 
+-   Begin looking for graphical lies to redesign
+-   Developing your data and table for D4 Tables
 -   Revise earlier graphs and critiques based on the roundtable discussions
 -   Revise the citations used based on the assigned readings
 
