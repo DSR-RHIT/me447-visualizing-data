@@ -2,10 +2,13 @@
 week 4
 ------
 
-Portfolio progress. By the end of the week you should be able to
+New portfolio work. By the end of the week you should be able to
 
 -   Begin looking for graphical lies to redesign
 -   Developing your data and table for D4 Tables
+
+Continuing portfolio progress
+
 -   Revise earlier graphs and critiques based on the roundtable discussions
 -   Revise the citations used based on the assigned readings
 
@@ -20,7 +23,7 @@ Reading
 
 Lecture slides
 
--   something
+-   [Principles and practices of table design](../slides/Le16-tables.pdf)
 -   something else
 
 Tutorials
