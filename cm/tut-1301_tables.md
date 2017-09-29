@@ -58,17 +58,17 @@ print(df)
 The output:
 
     ##        make_model  mpg   wt
-    ## 1      Datsun 710 22.8 2320
-    ## 2        Fiat 128 32.4 2200
-    ## 3       Fiat X1-9 27.3 1935
-    ## 4     Honda Civic 30.4 1615
-    ## 5    Lotus Europa 30.4 1513
-    ## 6        Merc 230 22.8 3150
-    ## 7       Merc 240D 24.4 3190
-    ## 8   Porsche 914-2 26.0 2140
+    ## 1       Merc 240D 24.4 3190
+    ## 2        Merc 230 22.8 3150
+    ## 3      Volvo 142E 21.4 2780
+    ## 4   Toyota Corona 21.5 2465
+    ## 5      Datsun 710 22.8 2320
+    ## 6        Fiat 128 32.4 2200
+    ## 7   Porsche 914-2 26.0 2140
+    ## 8       Fiat X1-9 27.3 1935
     ## 9  Toyota Corolla 33.9 1835
-    ## 10  Toyota Corona 21.5 2465
-    ## 11     Volvo 142E 21.4 2780
+    ## 10    Honda Civic 30.4 1615
+    ## 11   Lotus Europa 30.4 1513
 
 Knit to Word.
 
@@ -90,17 +90,17 @@ The output:
 
 | make\_model    |   mpg|    wt|
 |:---------------|-----:|-----:|
+| Merc 240D      |  24.4|  3190|
+| Merc 230       |  22.8|  3150|
+| Volvo 142E     |  21.4|  2780|
+| Toyota Corona  |  21.5|  2465|
 | Datsun 710     |  22.8|  2320|
 | Fiat 128       |  32.4|  2200|
+| Porsche 914-2  |  26.0|  2140|
 | Fiat X1-9      |  27.3|  1935|
+| Toyota Corolla |  33.9|  1835|
 | Honda Civic    |  30.4|  1615|
 | Lotus Europa   |  30.4|  1513|
-| Merc 230       |  22.8|  3150|
-| Merc 240D      |  24.4|  3190|
-| Porsche 914-2  |  26.0|  2140|
-| Toyota Corolla |  33.9|  1835|
-| Toyota Corona  |  21.5|  2465|
-| Volvo 142E     |  21.4|  2780|
 
 Knit to Word.
 
@@ -308,7 +308,7 @@ auto_tab_ID("another_table", "A boring table.")
 
 Having created another caption, I can make an inline reference to the next table.
 
-> More amazing results are shown in Table 1.
+> More amazing results are shown in Table 2.
 
 Created using this Rmd script:
 

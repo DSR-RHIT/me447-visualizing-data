@@ -1,0 +1,301 @@
+# adapted from R for Data Science, Chapter 15
+
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE, cache = TRUE, cache.path = "tut-14-cache/01-", fig.path = "tut-14-images/01-")
+
+# preparation
+
+# Open a new Rmd script called *tut14_factors.Rmd*
+# Save it to your *practiceR* folder
+# Edit YAML header
+# Delete the remaining default contents
+# Add the usual knitr code chunk
+
+# *forcats* is a package with functions for managing factor variables.
+#
+# - Install the *forcats* package.
+# - Load the libraries.
+
+library(tidyverse)
+library(forcats)
+
+
+
+
+
+
+
+
+# # characteristics of a factor variable
+#
+# As explained by Wickham and Grolemund  [-@Wickham2017],
+#
+# > In R, factors are used to work with categorical variables, variables that have a fixed and known set of possible values. They are also useful when you want to display character vectors in a non-alphabetical order.
+#
+#
+# The *forcats* package includes a sample from the *General Social Survey*, a long-running US survey.
+
+
+# the gss_cat tibble
+glimpse(gss_cat)
+
+
+# Note the number of variables that are factors.
+#
+#
+# Factors have a fixed and known set of possible values. To illustrate, let's  extract the *marital* column from the *gss_cat* tibble
+
+
+# subset one column of the data frame
+marital_col <- gss_cat$marital
+
+
+# The syntax `data_frame$column_name` extracts the column from the data frame as a stand-alone object.
+#
+# Confirm that the column is a factor with *class()*
+
+
+# examine its structure
+class(marital_col)
+
+
+# Show the set of fixed and known possible values of the factor
+
+
+# its levels
+levels(marital_col)
+
+
+# R internally codes factors as integers (that's how factors can be ordered or re-ordered)
+
+
+# it is in fact an integer type
+typeof(marital_col)
+
+
+# To see the first few integers, let's look at the first few data values in *marital* and then *unclass()* them to reveal the hidden integers
+
+
+# first 15 entries
+marital_col[1:15]
+
+# are coded in R as integers
+unclass(marital_col[1:15])
+
+
+# Thus with a factor variable, the data entries you *see* are the character-string levels of the factor. The integer assigned to each level is hidden. To reorder the levels of the factor we have to reassign (reorder) the hidden integers.
+
+
+
+
+## reorder factor levels by *count()*
+
+# We can use *count()* to create a summary of the original data frame that counts the number of observations for each level in a factor.
+
+
+# use count() to sum the frequency of each level of a factor
+gss_cat %>%
+count(marital)
+
+
+# The same data can be quickly assessed in a bar chart
+
+
+# bar charts are useful for a quick graph of counts
+ggplot(data = gss_cat) +
+geom_bar(aes(marital))
+
+
+# Reorder factors levels by frequency, we use *fct_infreq()* inside *mutate()*
+
+
+# order a factor by frequency of observations
+gss_cat <- gss_cat %>%
+mutate(marital = marital %>% fct_infreq())
+
+# bar chart with the factor now ordered
+ggplot(data = gss_cat) +
+geom_bar(aes(marital))
+
+
+# To reverse the order, use *fct_rev()*
+
+
+# reverse the order of factors
+gss_cat <- gss_cat %>%
+mutate(marital = marital %>% fct_infreq() %>% fct_rev())
+
+# bar chart
+ggplot(data = gss_cat) +
+geom_bar(aes(marital))
+
+
+
+
+
+
+
+
+## reorder factor levels with *fct_reorder()*
+
+# Let's explore the average number of hours spent watching TV per day across religions:
+
+
+# group by the religion factor and summarize
+this_group    <- group_by(gss_cat, relig)
+relig_summary <- summarize(
+	this_group,
+	age     = mean(age, na.rm = TRUE),
+	tvhours = mean(tvhours, na.rm = TRUE),
+	n       = n()
+)
+
+# see the result
+relig_summary
+
+
+# Graph the result with the factor as the row variable.
+
+
+# the levels of the factor are the row labels
+ggplot(data = relig_summary) +
+	geom_point(aes(x = tvhours, y = relig))
+
+
+# Edit the data frame using *fct_reorder()* to reorder the factors based on the number of hours of TV watched.
+
+
+# reorder the levels of the factor by number of TV hours
+relig_summary <- relig_summary %>%
+	mutate(relig = fct_reorder(relig, tvhours))
+
+
+# The factor was reordered in the data frame, so we do not have to use a *reorder()* in the graph aesthetics.
+
+
+# graph with reordered factor
+ggplot(data = relig_summary) +
+	geom_point(aes(x = tvhours, y = relig))
+
+
+
+
+
+
+
+## recoding factor levels with *fct_recode()*
+
+# Let's summarise the data by political party identification.
+
+
+# count the frequency of party ID in the dataset
+df1 <- gss_cat %>%
+count(partyid)
+
+df1
+
+
+# *fct_recode()* allows you to recode, or change, the value of each level of a factor---especially useful for preparing a graph for publication.
+
+
+df2 <- gss_cat %>%
+mutate(partyid = fct_recode(partyid,
+"Republican, strong"    = "Strong republican",
+"Republican, weak"      = "Not str republican",
+"Independent, near rep" = "Ind,near rep",
+"Independent, near dem" = "Ind,near dem",
+"Democrat, weak"        = "Not str democrat",
+"Democrat, strong"      = "Strong democrat"
+)) %>%
+count(partyid)
+
+df2
+
+
+# To combine groups, you can assign multiple old levels to the same new level:
+
+
+party_summary <- gss_cat %>%
+mutate(partyid = fct_recode(partyid,
+"Republican, strong"    = "Strong republican",
+"Republican, weak"      = "Not str republican",
+"Independent"           = "Ind,near rep",
+"Independent"           = "Ind,near dem",
+"Democrat, weak"        = "Not str democrat",
+"Democrat, strong"      = "Strong democrat",
+"Other"                 = "No answer",
+"Other"                 = "Don't know",
+"Other"                 = "Other party"
+)) %>% count(partyid)
+
+party_summary
+
+
+
+# reorder the row labels by the count n
+party_summary <- party_summary %>%
+mutate(partyid = fct_reorder(partyid, n))
+
+ggplot(data = party_summary) +
+geom_point(aes(x = n, y = partyid))
+
+
+
+
+
+
+## creating a factor variable with *factor()*
+
+# If your variable is a character but you wish to use the factor functions described here, you can mutate a character variable into a factor variable.
+#
+# For example, suppose your data has a variable with a few months in it,
+
+
+# create a data frame with a caharacter variable
+df <- data_frame(
+month = c("Dec", "Apr", "Jan", "Mar"),
+sales = c(40, 30, 10, 20)
+)
+
+glimpse(df)
+
+
+# If we graph this data (no factors) so we'll get alphabetical ordering
+
+
+# the months are in alphabetical order
+ggplot(data = df) +
+geom_point(aes(x = month, y = sales))
+
+
+# Recall that a factor variable has a *fixed* and *known* set of possible values. For example, the number of months and their names are fixed and known,
+
+
+# create a the known and fixed set of levels for the new factor variable
+month_levels <- c(
+"Jan", "Feb", "Mar", "Apr", "May", "Jun",
+"Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+)
+
+
+# Creating the levels in this order establishes the integer order of the levels.
+
+
+# create the factor variable using mutate() and factor()
+df <- df %>%
+mutate(month_fct = factor(month, levels = month_levels))
+df
+
+
+# The same graph as before, but with a factor set of months instead of the original character set of months.
+
+
+ggplot(data = df) +
+geom_point(aes(x = month_fct, y = sales))
+
+
+# So now the order of the months is correct (not alphabetical).
+#
+# However, months along an x-axis suggest a time series, and we should never use a time series where the tick marks are not equal increments. So I would not use this graph without including all the months along the x-axis.
+

@@ -29,6 +29,8 @@ Lecture slides
 Tutorials
 
 -   [Tables](tut-1301_tables.md)
+-   [Factors](tut-1401_factors.md)
+-   Compare your work to my version of the [factors tutorial script](../practiceR/tut14_factors.R)
 
 bibliography
 ------------
