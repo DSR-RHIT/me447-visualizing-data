@@ -25,8 +25,8 @@ holding
 */*.docx
 
 # ignore all XLSX
-#*.xlsx
-#*/*.xlsx
+*.xlsx
+*/*.xlsx
 
 # ignore all HTML
 *.html
