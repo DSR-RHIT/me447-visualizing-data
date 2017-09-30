@@ -2,10 +2,17 @@
 week 5
 ------
 
-Portfolio progress. By the end of the week you should be able to
+New portfolio work. By the end of the week you should be able to
+
+-   Developing your data and graph for D5 Box and whisker plot
+-   something else
+-   something else
+
+Continuing portfolio progress
 
 -   Revise earlier graphs and critiques based on the roundtable discussions
 -   Revise the citations used based on the assigned readings
+-   Review the portfolio checklist to be sure you keep up with all the requirements
 
 Due this week
 
@@ -24,9 +31,7 @@ Lecture slides
 
 Tutorials
 
--   Box plots
--   Match display to data type
--   Document design
+-   [Graphs of univariate data](tut-1501_univariate-graphs.md)
 
 bibliography
 ------------

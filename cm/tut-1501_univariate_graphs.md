@@ -400,9 +400,9 @@ data(SpeedSki)
 
 The *SpeedSki* data contains the speeds of competitors in the 2011 World Speed Skiing Championships by event and sex. The speed data are univariate: the single measured quantity is speed.
 
-1.  Display a histogram of speeds conditioned by sex.
-2.  Draw the same data as a boxplot. What tentative conclusions do you draw?
-3.  Repeat the histogram, but add facets conditioned by sex and event.
+1.  Display a histogram of speeds conditioned by sex. What story do you think you see?
+2.  Draw the same data as a boxplot. What story do you see?
+3.  Repeat the histogram, but add facets conditioned by sex and event. What story do you think see?
 4.  Draw the same data as a box plot. What conclusions do you make now?
 
 [Click here](tut-15-images/tut15_boxplot.png) to see my solution to question 4.
