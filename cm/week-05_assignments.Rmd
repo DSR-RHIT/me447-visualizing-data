@@ -47,7 +47,7 @@ Lecture slides
 
 Tutorials
  
-- [Graphs of univariate data](tut-1501_univariate-graphs.md) 
+- [Graphs of univariate data](tut-1501_univariate_graphs.md) 
 
 
 
