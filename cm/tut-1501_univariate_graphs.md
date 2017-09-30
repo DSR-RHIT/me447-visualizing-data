@@ -236,8 +236,8 @@ The default box plot orientation in *ggplot2* is vertical. To swap the axes, we 
 
 ``` r
 f3 <- f2 + 
-    coord_flip() +
-    labs(x = "", y = "Distribution of measurement")
+    coord_flip()
+
 f3
 ```
 
@@ -246,9 +246,11 @@ f3
 When comparing distributions, reorder use the median value.
 
 ``` r
-f4 <- f3 + 
-    aes(x = reorder(case_number, measurement, median), y = measurement) +
-    labs(x = "", y = "Distribution of measurement")
+f4 <- ggplot(data = df1,aes(x = reorder(case_number, measurement, median), y = measurement)) +
+    geom_boxplot() +
+    labs(x = "", y = "Distribution of measurement") +
+    coord_flip()
+
 f4
 ```
 
@@ -258,8 +260,8 @@ You can also add the data markers on top of the boxplot to show all the data and
 
 ``` r
 f5 <- f4 + 
-    geom_jitter(width = 0.02) +
-    labs(x = "", y = "Distribution of measurement")
+    geom_jitter(width = 0.02)
+
 f5
 ```
 
@@ -268,26 +270,7 @@ f5
 be skeptical of 2-value summaries
 ---------------------------------
 
-Let's create a commonly encountered "2-value summary" of distributed univariate data: means and standard deviations.
-
-``` r
-this_group <- group_by(df1, case_number)
-df2 <- summarize(
-    this_group, 
-    mean = mean(measurement), 
-    sd = sd(measurement)
-)
-
-
-kable(df2)
-```
-
-| case\_number |      mean|        sd|
-|:-------------|---------:|---------:|
-| Case 1       |  11.65000|  4.166046|
-| Case 2       |  11.65588|  4.191840|
-| Case 3       |  11.65596|  4.185627|
-| Case 4       |  11.64416|  4.177022|
+This example is adapted from (Doumont, 2009).
 
 Let's recall the original distribution
 
@@ -300,9 +283,20 @@ f6 <- ggplot(data = df1, aes(x = measurement, y = case_number)) +
 f6
 ```
 
-![](tut-15-images/01-unnamed-chunk-18-1.png)
+![](tut-15-images/01-unnamed-chunk-17-1.png)
 
-Let's fade out the data and overlay the means ± 1 standard deviation
+Let's create a commonly encountered "2-value summary" of distributed univariate data: means and standard deviations.
+
+``` r
+this_group <- group_by(df1, case_number)
+df2 <- summarize(
+    this_group, 
+    mean = mean(measurement), 
+    sd = sd(measurement)
+)
+```
+
+Let's fade out the data and overlay the means ± 1 standard deviation. Notice in this code how we can use *ggplot()* with no arguments, then use a different data frame and aesthetic in each *geom.*
 
 ``` r
 ggplot() + 
@@ -334,7 +328,18 @@ ggplot() +
 
 ![](tut-15-images/01-unnamed-chunk-20-1.png)
 
-You would never know that the 4 cases had quite different distributions.
+You would never know that the 4 cases had quite different distributions. If we print the table of means and standard deviations, you can see that our source carefully constructed these data so they would have different distributions but identical 2-value summaries.
+
+``` r
+kable(df2, digits = 1)
+```
+
+| case\_number |  mean|   sd|
+|:-------------|-----:|----:|
+| Case 1       |  11.6|  4.2|
+| Case 2       |  11.7|  4.2|
+| Case 3       |  11.7|  4.2|
+| Case 4       |  11.6|  4.2|
 
 Conclusion: Be skeptical if someone draws conclusions from means and standard deviations only.
 
@@ -350,7 +355,7 @@ ggplot(data = df1, aes(measurement)) +
     facet_grid(~case_number)
 ```
 
-![](tut-15-images/01-unnamed-chunk-21-1.png)
+![](tut-15-images/01-unnamed-chunk-22-1.png)
 
 Or you can use a frequency polygon, sort of a connect-the-dots histogram. Again, bin width can be adjusted.
 
@@ -361,7 +366,7 @@ ggplot(data = df1, aes(measurement)) +
     facet_grid(~case_number)
 ```
 
-![](tut-15-images/01-unnamed-chunk-22-1.png)
+![](tut-15-images/01-unnamed-chunk-23-1.png)
 
 Or you might try the kernel density estimate, a smoothed version of the histogram. You can tweak the contours by changing the *adjust* argument.
 
@@ -371,7 +376,7 @@ ggplot(data = df1, aes(measurement)) +
     facet_grid(~case_number)
 ```
 
-![](tut-15-images/01-unnamed-chunk-23-1.png)
+![](tut-15-images/01-unnamed-chunk-24-1.png)
 
 You could try overlaying the cases in one panel
 
@@ -380,7 +385,7 @@ ggplot(data = df1, aes(measurement, fill = case_number)) +
     geom_density(adjust = 1, alpha = 0.5)
 ```
 
-![](tut-15-images/01-unnamed-chunk-24-1.png)
+![](tut-15-images/01-unnamed-chunk-25-1.png)
 
 With too many cases overlapping, visual comparisons become more difficult.
 
@@ -409,6 +414,8 @@ The *SpeedSki* data contains the speeds of competitors in the 2011 World Speed S
 
 bibliography
 ------------
+
+Doumont, Jean-luc (2009) *Trees, Maps, and Theorems: Effective Communication for Rational Minds*. 2nd ed. Kraainem, Belgium: Principiae.
 
 Unwin, Antony (2015) *Graphical Data Analysis with R*. CRC Press, Taylor & Francis.
 

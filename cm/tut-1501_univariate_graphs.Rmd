@@ -14,6 +14,10 @@ opts_knit$set(root.dir = "../")
 opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE, cache = TRUE, cache.path = "tut-15-cache/01-", fig.path = "tut-15-images/01-")
 ```
 
+
+
+
+
 ## data preparation
 
 Always start your work session by launching the .Rproj file you created for this course. Using an R Project automatically sets the working directory to your course folder, making relative file paths easy to use.
@@ -127,6 +131,10 @@ Write the tidy data to file.
 write_csv(df3, 'data/univariate_doumont_cases.csv')
 ```
 
+
+
+
+
 ## design preparation
 
 For your project of course, "gather-data" scripts would be in your *data* directory and "graph design" scripts would be in your *design* directory. But we'll save all tutorial scripts in the *practiceR* directory. 
@@ -171,6 +179,9 @@ df1 <- read_csv('data/univariate_doumont_cases.csv')
 ```
 
 
+
+
+
 ## show all the data 
 
 Make a dotplot of the cases. Each row will have as many dots as there are measurements by case number.
@@ -206,17 +217,19 @@ The default box plot orientation in *ggplot2* is vertical. To swap the axes, we 
 
 ```{r}
 f3 <- f2 + 
-	coord_flip() +
-	labs(x = "", y = "Distribution of measurement")
+	coord_flip()
+
 f3
 ```
 
 When comparing distributions, reorder use the median value. 
 
 ```{r}
-f4 <- f3 + 
-	aes(x = reorder(case_number, measurement, median), y = measurement) +
-	labs(x = "", y = "Distribution of measurement")
+f4 <- ggplot(data = df1,aes(x = reorder(case_number, measurement, median), y = measurement)) +
+	geom_boxplot() +
+	labs(x = "", y = "Distribution of measurement") +
+	coord_flip()
+
 f4
 ```
 
@@ -224,8 +237,8 @@ You can also add the data markers on top of the boxplot to show all the data and
 
 ```{r}
 f5 <- f4 + 
-	geom_jitter(width = 0.02) +
-	labs(x = "", y = "Distribution of measurement")
+	geom_jitter(width = 0.02)
+
 f5
 ```
 
@@ -235,19 +248,8 @@ f5
 
 ## be skeptical of 2-value summaries
 
-Let's create a commonly encountered "2-value summary" of distributed univariate data: means and standard deviations.
+This example is adapted from [@Doumont2009book].
 
-```{r}
-this_group <- group_by(df1, case_number)
-df2 <- summarize(
-	this_group, 
-	mean = mean(measurement), 
-	sd = sd(measurement)
-)
-
-
-kable(df2)
-```
 
 Let's recall the original distribution
 
@@ -260,8 +262,18 @@ f6 <- ggplot(data = df1, aes(x = measurement, y = case_number)) +
 f6
 ```
 
+Let's create a commonly encountered "2-value summary" of distributed univariate data: means and standard deviations.
 
-Let's fade out the data and overlay the means $\pm$ 1 standard deviation
+```{r}
+this_group <- group_by(df1, case_number)
+df2 <- summarize(
+	this_group, 
+	mean = mean(measurement), 
+	sd = sd(measurement)
+)
+```
+
+Let's fade out the data and overlay the means $\pm$ 1 standard deviation. Notice in this code how we can use *ggplot()* with no arguments, then use a different data frame and aesthetic in each *geom.* 
  
 ```{r}
 ggplot() + 
@@ -291,7 +303,12 @@ ggplot() +
 ```
 
 
-You would never know that the 4 cases had quite different distributions. 
+You would never know that the 4 cases had quite different distributions. If we print the table of means and standard deviations, you can see that our source carefully constructed these data so they would have different distributions but identical 2-value summaries. 
+
+```{r}
+kable(df2, digits = 1)
+```
+
 
 Conclusion: Be skeptical if someone draws conclusions from means and standard deviations only. 
 
