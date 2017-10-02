@@ -34,6 +34,8 @@ lecture slides
 -   [Data basics](slides/Le04-data-basics-slides.pdf)
 -   [gather()](slides/Le08-illustrating-gather.pdf)
 -   [R markdown basics](slides/Le06-markdown-basics-slides.pdf)
+-   [File management basics](slides/Le12-file-management-basics.pdf)
+-   [Tables](slides/Le16-tables.pdf)
 
 tutorials
 ---------
@@ -61,9 +63,9 @@ Display types
 -   [Scatterplot: get started](cm/tut-0304_create-scatterplot.md)
 -   [Dot plot: get started](cm/tut-0702_create-dot-plot.md)
 -   [Dot plot: reorder the rows](cm/tut-0703_reorder-rows.md)
--   Multiways
--   Tables
--   Box plots
+-   [Mulitways](cm/tut-1101_multiways.md)
+-   [Tables](cm/tut-1301_tables.md)
+-   [Box plots and univariate graphs](cm/tut-1501_univariate_graphs.md)
 -   Small multiples
 
 Editing *ggplot2* graph elements
@@ -96,9 +98,9 @@ Data
 -   [Capture data stored in row names](cm/tut-0701_capture-row-name-data.md)
 -   [Tidying the Virginia Deaths data](cm/tut-0801_tidying-data-01_VADeaths.md)
 -   [Tidying the WHO tuberculosis data](cm/tut-0802_tidying-data-02_who-TB.md)
--   Subsetting data
--   Reshaping data
--   Finding interesting data
+-   [Transforming data](cm/tut-1201_data-transformation.md)
+-   [Finding interesting data](cm/tut-12021_data-links.md)
+-   [Factors](cm/tut-1401_factors.md)
 
 Documents
 
