@@ -31,6 +31,7 @@ Regularly browse these links (or find your own) to
 
 ## articles about interesting data 
 
+- [Assault deaths to 2015](https://kieranhealy.org/blog/archives/2017/10/02/assault-deaths-to-2015/) 
 - [Pirating pirate data for pirate day](http://blog.revolutionanalytics.com/2017/09/pirating-pirate-data-for-pirate-day.html) Yes, it really is about 21st century pirates
 - [Exploratory data analysis of tropical storms in R](https://www.stoltzmaniac.com/exploratory-data-analysis-of-tropical-storms-in-r/) 
 - [Fun data for teaching R](https://bartomeuslab.com/2016/01/21/fun-data-for-teaching-r/) blog  

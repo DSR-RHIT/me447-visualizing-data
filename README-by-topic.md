@@ -99,7 +99,7 @@ Data
 -   [Tidying the Virginia Deaths data](cm/tut-0801_tidying-data-01_VADeaths.md)
 -   [Tidying the WHO tuberculosis data](cm/tut-0802_tidying-data-02_who-TB.md)
 -   [Transforming data](cm/tut-1201_data-transformation.md)
--   [Finding interesting data](cm/tut-12021_data-links.md)
+-   [Finding interesting data](cm/tut-1202_data-links.md)
 -   [Factors](cm/tut-1401_factors.md)
 
 Documents
