@@ -1,0 +1,318 @@
+---
+title: data transformation, part 2
+output: 
+  github_document:
+    toc: TRUE
+    toc_depth: 2
+bibliography: "../manage/refs.bib" 
+csl: "../manage/csl/journal-of-peace-research.csl"
+---
+
+```{r 2201, echo=FALSE}
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo = TRUE, message = FALSE, collapse = TRUE, warning = FALSE, cache = TRUE, cache.path = "tut-22-cache/01-", fig.path = "tut-22-images/01-")
+```
+
+
+
+
+
+## preparation
+
+Always start your work session by launching the .Rproj file you created for this course. Using an R Project automatically sets the working directory to your course folder, making relative file paths easy to use.
+
+- File $\rightarrow$ Recent projects $\rightarrow$ me447_visualizing-data.Rproj  
+- Download *DSR-tables.xlsx* from the website *data* directory 
+- Save it to your *data* directory 
+- Open a new R script called *tut22_data-transformation.R*  
+- Save it to your *practiceR* folder  
+
+In the R script, type your usual header 
+
+    #  ------------------------------------------
+    #  data transformation, part 2
+    #
+    #  name
+    #  date
+    #  ------------------------------------------
+
+and add the usual knitr code chunk 
+
+```
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo = TRUE, messages = FALSE)
+```
+
+
+## spread() 
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(forcats)
+```
+
+
+We've seen gather() before as a method of converting a wide data structure to a tidy data structure. 
+
+*spread()* is the opposite of *gather()* You use it when an observation is scattered across multiple rows. 
+
+Read the worksheet named *table2* from the *DST-tables.xlsx* 
+
+```{r}
+table2 <- read_excel('data/DSR-tables.xlsx', sheet = 'table2')
+
+kable(table2)
+```
+
+Here the data are not tidy. For example, the 1999 Afghanistan data is written in two rows, not one. The "type" and "count" variables need to be transformed into two columns called "cases" and "population". 
+
+We do that with *spread()*
+
+```{r}
+table2a <- spread(data = table2, key = type, value = N)
+
+kable(table2a)
+```
+
+The entries in the column identified as the "key" become the new columns (variable names). The entries in the "value" are the data entered in the new columns under the new column names. 
+
+
+*spread()* is also useful in taking a tidy data frame and making it wide for a print document. For example, in an earlier tutorial, we created a tidy dataset called *tut11_student-data-tidy.csv*. Let;'s read it and use spread to make it a wide table.
+
+```{r}
+df3 <- read_csv('data/tut11_student-data-tidy.csv')
+
+glimpse(df3)
+```
+
+Let's try spreading the demographics as column names
+
+```{r}
+df4 <- df3 %>% 
+	spread(key = demogr, value = N)
+
+kable(df4)
+```
+
+Or, we could spread the destination majors instead
+
+```{r}
+df5 <- df3 %>% 
+	spread(key = DestMajor, value = N)
+
+kable(df5)
+```
+
+Before printing either table to a document, I would back up and recode the demographics and destination majors to make them more readable.  
+
+
+## unite() and separate() 
+
+Read the worksheet named *table3* from the *DST-tables.xlsx* 
+
+```{r}
+df6 <- read_excel('data/DSR-tables.xlsx', sheet = 'table3')
+
+kable(df6)
+glimpse(df6)
+```
+
+Here the number of cases and the population has been stored as a character string with the two numbers separated by a slash. We use *separate()* to create two columns from one column.
+
+```{r}
+df7 <- df6 %>% 
+	separate(rate, into = c("cases", "population")) 
+
+glimpse(df7)
+```
+
+Note that the new columns are strings but we would prefer numeric values. *separate()* has a *convert* argument that will handle it for you. 
+
+```{r}
+df8 <- df6 %>% 
+	separate(rate, into = c("cases", "population"), convert = TRUE) 
+
+glimpse(df8)
+```
+
+
+
+
+## joins
+
+You often have a working data frame to which you would like to add new columns of data from another table.  
+
+*joining* is the process of combining tables of data. The tables will share at least one variable, called the *keys*. 
+
+The most common join is the *left_join()* in which all observations in the working data frame are conserved. 
+
+For example, using our student demographic data frame, suppose we would like to know by race/sex/ethnicity what fraction of a given group are graduating in the various majors. 
+
+First we need to group and summarize to get the total of each group. 
+
+```{r}
+# we have this data in df3
+glimpse(df3)
+
+# create a new summary data frame
+this_group <- group_by(df3, demogr)
+df3_race_sex_summary <- summarize(
+	this_group, 
+	total_by_demogr = sum(N)
+	)
+
+
+df3_race_sex_summary
+```
+
+The new summary data frame and the original working data frame have in common the *demogr* variable. This is the "key" by which we can *left_join()* the summary to the original. 
+
+```{r}
+df3 <- left_join(df3, df3_race_sex_summary)
+
+head(df3, n = 20L)
+```
+
+See that the total number of Asian Female students from the summary has been joined to *every* row of the original data frame in which the *key* was *AsianFem*. Likewise for every other race/ethnicity/sex grouping. 
+
+Now we can use *mutate()* to add a new column that tells us what percent of all graduating Asian Females graduated in each discipline. 
+
+```{r}
+df3 <- df3 %>% 
+	mutate(pct_of_demogr = round(N / total_by_demogr * 100, 1))
+
+head(df3, n = 20L)
+```
+
+This results tells us, for example, that `r df3$pct_of_demogr[df3$demogr == "AsianMle" & df3$DestMajor == "Engr"]`% of all Asian males in this database  graduate in engineering. 
+
+To learn more about joins, see [Chapter 13 Relational Data](http://r4ds.had.co.nz/relational-data.html#join-problems) in  [@Wickham2017]. 
+
+
+
+
+
+## rbind() 
+
+Sometimes you want to join two tables that have identical column names. The base-R function *rbind()* ("row bind") is useful here. 
+
+For example, let's use the data frame of word spoken in the Lord of the Rings
+
+```{r}
+df4 <- read_excel('data/lotr-words-spoken.xlsx')
+
+df4
+```
+
+Let's make up a new data frame with the same column names, one row for each film, with totally invented data for words spoken by orcs. We use *tribble()* to create a data frame row by row. 
+
+```{r}
+df5 <- tribble(
+	~film, ~race, ~female, ~male, 
+	'Fellowship of the Ring', 'orc', 0,  3, 
+	'Return of the King',     'orc', 0, 20,
+	'The Two Towers',         'orc', 0, 30
+)
+```
+
+Use *rbind()* to add these rows to the rows of the earlier data frame.
+
+```{r}
+df6 <- rbind(df4, df5) %>% 
+	arrange(film, race)
+
+kable(df6)
+```
+
+
+Oops. Arranging by film puts them in alphabetical order but not chronological order. We can fix that by making the film into a factor. 
+
+```{r}
+# create a the known and fixed set of levels for the new factor variable 
+film_levels <- c(
+  "Fellowship of the Ring", 
+  "The Two Towers",
+  "Return of the King"
+)
+
+
+# create the factor variable using mutate() and factor() 
+df6 <- df6 %>% 
+  mutate(film = factor(film, levels = film_levels)) %>% 
+	arrange(film, race)
+
+kable(df6)
+```
+
+
+
+
+
+
+## cut()
+
+
+*cut()* is a base-R function that creates divides your data into bins. 
+
+```{r}
+# load the states data set
+data(state)
+df7 <- data.frame(state.x77)
+
+# state names are in the row names
+df7 <- mutate(df7, State = row.names(df7))
+
+glimpse(df7)
+```
+
+Use *cut* to create a new factor variable with the levels "Lowest 25%", "Lower middle", "Upper middle", "Top 25%"
+
+```{r}
+df8 <- df7 %>% 
+	mutate(Income_bins = cut(Income 
+  , include.lowest = TRUE
+  , breaks = quantile(Income)
+  , labels = c("Lowest 25%", "Lower middle", "Upper middle", "Top 25%")
+  )
+  %>%  fct_rev())
+
+glimpse(df8)
+```
+
+
+```{r}
+df8 <- df8 %>% 
+	mutate(Literacy = 100 - Illiteracy)
+```
+
+
+
+These bins are often a good way to create a factors that are used for faceting. 
+
+```{r}
+ggplot(data = df8, aes(x = Literacy, y = Life.Exp)) +
+	geom_point() +
+	facet_wrap(~ Income_bins, ncol = 1)
+```
+
+
+
+
+
+
+## exercises
+
+1. Adding to *df3*, can you add a new summary column and percentage column to answer the question: "Of all the students graduating in a given destination major, what percent are in each race/ethnicity/sex group?"  
+
+
+## bibliography 
+
+<div id="refs"></div>
+  
+---
+
+[main page](../README.md)<br>
+[topics page](../README-by-topic.md)
