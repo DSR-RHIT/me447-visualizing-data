@@ -48,7 +48,7 @@ Lecture slides
 Tutorials
  
 - [Graphs of univariate data](tut-1501_univariate_graphs.md) 
-
+- [Data transformatrion 2](tut-2201_data-transform-2.md)  
 
 
 ## bibliography 
