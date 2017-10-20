@@ -4,9 +4,10 @@ week 5
 
 New portfolio work. By the end of the week you should be able to
 
--   Developing your data and graph for D5 Box and whisker plot
--   something else
--   something else
+-   Developing your data and graph for D5 Box and whisker plot (or alternative graph of univariate data)
+-   Using spread(), separate(), left\_join(), rbind(), and cut() for data transformation
+-   Explain how to choose a graph type to suit the structure of a dataset
+-   Apply the implications of the "15 displays about one thing" reading to the critiques in your portfolio
 
 Continuing portfolio progress
 

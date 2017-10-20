@@ -18,13 +18,7 @@ Reading
 
 Lecture slides
 
--   something
--   something else
-
-Tutorials
-
--   Beyond basic graphs: Learning new graph types on your own
--   Color
+-   [Color](../slides/Le28-color.pdf)
 
 bibliography
 ------------

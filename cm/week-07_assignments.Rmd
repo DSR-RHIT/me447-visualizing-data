@@ -31,16 +31,11 @@ Reading
 
 Lecture slides
 
-- something  
-- something else 
+- [Color](../slides/Le28-color.pdf) 
 
 
 
 
-Tutorials
-
-- Beyond basic graphs: Learning new graph types on your own 
-- Color 
 
 
 
