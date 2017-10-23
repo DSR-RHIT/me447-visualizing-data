@@ -24,7 +24,7 @@ Lecture slides
 
 Tutorials
 
--   Original displays: Designing your own data graphics
+-   [Graphical improvisation](tut-29_improvise.md)
 -   Document design: Front and back matter
 
 bibliography
