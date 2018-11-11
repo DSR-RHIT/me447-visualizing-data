@@ -9,7 +9,7 @@ effective and truthful data displays, credibly explain their design
 rationale, produce publication-quality visuals, and credibly critique a
 data display.
 
-<img src="../visuals/hans.png" width="50%" />
+<img src="../images/hans.png" width="50%" />
 
 Image from a TED talk by [Hans
 Rosling](https://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen#t-270297)
@@ -42,7 +42,7 @@ Planned Parenthood, saying “In pink, that’s the reduction in the breast
 exams, and the red is the increase in the abortions. That’s what’s going
 on in your organization.”
 
-<img src="../visuals/lying-graphic-1.png" width="50%" />
+<img src="../images/lying-graphic-1.png" width="50%" />
 
 This graph is *deliberately deceptive* (a charge Chaffetz denied).
 Cancer screenings and prevention services are plotted in millions,
@@ -56,7 +56,7 @@ has indeed dropped off (due to changing medical standards about who
 should be screened and how often) while abortion services have remained
 fairly constant.
 
-<img src="../visuals/lying-graphic-2.png" width="50%" />
+<img src="../images/lying-graphic-2.png" width="50%" />
 
 Showing all services provided by Planned Parenthood also puts the
 original *data in context*. For example, abortion services consistently
