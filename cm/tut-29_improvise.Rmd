@@ -27,6 +27,7 @@ Always start your work session by launching the .Rproj file you created for this
 - File $\rightarrow$ Recent projects $\rightarrow$ me447_visualizing-data.Rproj
 - Open a new R script called *tut29_improvise.R*  
 - Save it to your *practiceR* folder  
+- Download the xlsx file for this tutorial and save it to your data directory. 
 
 In the R script, type your usual header 
 
