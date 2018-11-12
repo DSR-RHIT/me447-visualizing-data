@@ -10,7 +10,7 @@ Rose-Hulman Institute of Technology.
   - [Syllabus](cm/admin-03_syllabus.md)
   - \[Index\]
   - [Help
-links](cm/cm0004_getting-help.md)  
+links](cm/admin-04_getting-help.md)  
   - [License](LICENSE.md)
 
 <!-- - Browse this page for material organized chronologically    -->
