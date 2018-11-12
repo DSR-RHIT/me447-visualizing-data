@@ -8,10 +8,67 @@ Rose-Hulman Institute of Technology.
 
   - [About the course](cm/cm0001_about-the-course.md)  
   - [Syllabus](cm/admin-03_syllabus.md)
-  - \[Index\]
+  - [Index](#index)
   - [Help
 links](cm/admin-04_getting-help.md)  
   - [License](LICENSE.md)
+
+## calendar
+
+| w  | d   | agenda                          | tutorial | read before class                                            | due                      |
+| :- | :-- | :------------------------------ | :------- | :----------------------------------------------------------- | :----------------------- |
+| 1  | M   | Course goals & outcomes         |          |                                                              | Checkout Doumont reprint |
+|    | T   | Introduction to visual rhetoric |          | Syllabus, calendar, website                                  |                          |
+|    | R   | Data structures, graph types    |          | Doumont ([2009](#ref-Doumont2009)) reprint                   | Reading response         |
+|    | F   | First steps & lab               |          | Portfolio                                                    | Checkout Tufte reprint   |
+| 2  | M   | Data basics                     |          |                                                              |                          |
+|    | T   | Discuss today’s reading         |          | Tufte ([1997](#ref-Tufte1997)) reprint                       | Reading response         |
+|    | R   | Markdown basics                 |          |                                                              |                          |
+|    | F   | Obtaining data & lab            |          | Browse sample portfolio entries                              |                          |
+| 3  | M   | Data carpentry                  |          |                                                              |                          |
+|    | T   | Tufte on design                 |          | Robbins ([2013](#ref-Robbins2013Ch6)) ![](images/moodle.png) | Reading response         |
+|    | R   | D1 Distributions                |          |                                                              |                          |
+|    | F   | Data tables & lab               |          | Browse Few ([2012](#ref-Few2012)) on Moodle                  |                          |
+| 4  | M   | Factors                         |          |                                                              |                          |
+|    | T   | Discovering stories in data     |          | Knaflic ([2012](#ref-Knaflic2012)) online                    | Reading response         |
+|    | R   | D2 Multiways                    |          |                                                              |                          |
+|    | F   | Roundtable D1 & lab             |          |                                                              | D1                       |
+| 5  | M   | Data carpentry                  |          |                                                              |                          |
+|    | T   | Discuss today’s reading         |          | Wainer ([2014](#ref-Wainer2014)) on Moodle                   | Reading response         |
+|    | R   | D3 Scatterplots                 |          |                                                              |                          |
+|    | F   | Roundtable D2 & lab             |          |                                                              | D2                       |
+| 6  | M   | Data carpentry                  |          |                                                              |                          |
+|    | T   | Visual lies                     |          | Wainer ([2000](#ref-Wainer2000)) on Moodle                   | Reading response         |
+|    | R   | D4 Redesign graphical lies      |          |                                                              |                          |
+|    | F   | Roundtable D3 & lab             |          |                                                              | D3                       |
+| 7  | M   | References and citations        |          |                                                              |                          |
+|    | T   | Discuss today’s reading         |          | Kostelnick ([2007](#ref-Kostelnick2007)) on Moodle           | Reading response         |
+|    | R   | D5 Quantitative multivariates   |          |                                                              |                          |
+|    | F   | Roundtable D4 & lab             |          |                                                              | D4                       |
+| 8  | M   | Revising portfolio entries      |          |                                                              |                          |
+|    | T   | Discuss today’s reading         |          | Dragga & Voss ([2001](#ref-DraggaVoss2001)) Moodle           | Reading response         |
+|    | R   | D6 Humanize the message         |          |                                                              |                          |
+|    | F   | Roundtable D5 & lab             |          |                                                              | D5                       |
+| 9  | M   | TBD                             |          |                                                              |                          |
+|    | T   | Color                           |          | Constable ([2017](#ref-Constable2017)) online, p.14–17       | Reading response         |
+|    | R   | D7 Beyond basic graphs          |          |                                                              |                          |
+|    | F   | Roundtable D6 & lab             |          |                                                              | D6                       |
+| 10 | M   | Evals & work on portfolio       |          |                                                              |                          |
+|    | T   | Discuss today’s reading         |          | Spence ([2006](#ref-Spence2006)) on Moodle                   | Reading response         |
+|    | R   | TBD                             |          |                                                              |                          |
+|    | F   | Roundtable D7 & lab             |          |                                                              | D7                       |
+| 11 | TBD |                                 |          |                                                              | Portfolio                |
+
+# index
+
+## course things
+
+  - [About the course](cm/cm0001_about-the-course.md)
+  - [Syllabus](cm/admin-03_syllabus.md)  
+  - [Help
+links](cm/admin-04_getting-help.md)
+
+# references
 
 <!-- - Browse this page for material organized chronologically    -->
 
@@ -76,3 +133,94 @@ links](cm/admin-04_getting-help.md)
 <!-- ---  -->
 
 <!-- [Licenses](LICENSE.md)     -->
+
+<div id="refs" class="references">
+
+<div id="ref-Constable2017">
+
+Constable, Catherine (2017) Color: Essential, useful, or superfluous?
+In: *Ch 1: Graphical Rhetoric*. Course notes for SIO 223A Geophysical
+Data Analysis, 14–17
+(<https://igppweb.ucsd.edu/~cathy/Classes/SIO223A/vizlect.notes.pdf>).
+
+</div>
+
+<div id="ref-Doumont2009">
+
+Doumont, Jean-luc (2009) Designing the graph. In: *Trees, Maps, and
+Theorems: Effective Communication for Rational Minds* 2nd ed. Kraainem,
+Belgium: Principiae, 133–143.
+
+</div>
+
+<div id="ref-DraggaVoss2001">
+
+Dragga, Sam & Dan Voss (2001) Cruel pies: The inhumanity of technical
+illustrations. *Technical Communication* 48(3): 265–274.
+
+</div>
+
+<div id="ref-Few2012">
+
+Few, Stephen (2012) Differing roles of tables and graphs. In: *Show Me
+the Numbers: Designing Tables and Graphs to Enlighten* 2nd ed.
+Burlingame, CA: Analytics Press, 39–51.
+
+</div>
+
+<div id="ref-Knaflic2012">
+
+Knaflic, Cole Nussbaumer (2012) So what? Storytelling with data (blog)
+(<http://www.storytellingwithdata.com/blog/2017/3/22/so-what>).
+
+</div>
+
+<div id="ref-Kostelnick2007">
+
+Kostelnick, Charles (2007) The visual rhetoric of data displays: The
+conundrum of clarity. *IEEE Transactions on Professional Communication*
+50(2): 280–294.
+
+</div>
+
+<div id="ref-Robbins2013Ch6">
+
+Robbins, Naomi (2013) General principles for creating effective graphs.
+In: *Creating More Effective Graphs*. Chart House, 154–225.
+
+</div>
+
+<div id="ref-Spence2006">
+
+Spence, Ian (2006) William Playfair and the psychology of graphs. In:
+*IEEE Transactions on Professional Communication*. Alexandria, VA:
+American Statistical Association, section on statistical graphics,
+2426–2436.
+
+</div>
+
+<div id="ref-Tufte1997">
+
+Tufte, Edward (1997) The decision to launch the space shuttle
+Challenger. In: *Visual and Statistical Thinking: Displays of Evidence
+for Making Decisions*. Cheshire, CT: Graphics Press, 16–31.
+
+</div>
+
+<div id="ref-Wainer2000">
+
+Wainer, Howard (2000) Graphical failures: How to display data badly. In:
+*Visual Revelations: Graphical Tales of Fate and Deception from Napoleon
+Bonaparte to Ross Perot*. Mahwah, NJ: Psychology Press, 11–40.
+
+</div>
+
+<div id="ref-Wainer2014">
+
+Wainer, Howard (2014) Fifteen displays about one thing. In: *Medical
+Illuminations: Using Evidence, Visualization, and Statistical Thinking
+to Improve Healthcare*. UK: Oxford University Press, 32–49.
+
+</div>
+
+</div>

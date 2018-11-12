@@ -27,14 +27,14 @@ Visualizing Data
 
 
 
-## interesting views 
+## tips and tricks  
 
 - [10 tips for making your R graphics look their best](http://blog.revolutionanalytics.com/2009/01/10-tips-for-making-your-r-graphics-look-their-best.html) David Smith (2009) 
 - [10 tips for effective storytelling with data](http://www.storytellingwithdata.com/blog/2012/11/celebrating-almost-100-posts-with-10?rq=storytelling) Cole Nussbaumer Knaflic (2012) 
 
 
 
-## reference books 
+## books I recommend  
 
 - [*R in Action, 2/e*](https://www.manning.com/books/r-in-action-second-edition) by Robert Kabacoff, 2015, Manning Publications. If you want to buy just one good reference for R, this is the one I recommend. It covers R basics including statistical analysis and graphics. 
 - [*R Graphics, 2/e*](https://www.crcpress.com/R-Graphics-Second-Edition/Murrell/p/book/9781439831762) by Paul Murrell, 2011, CRC Press. This is the book for learning about the four major R graphics systems (`base, grid, lattice, ggplot2`).  The author's [book website](https://www.stat.auckland.ac.nz/~paul/RG2e/) has the code for every figure in the book. 

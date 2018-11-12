@@ -39,7 +39,7 @@ Planned Parenthood, stating, “In pink, that’s the reduction in the
 breast exams, and the red is the increase in the abortions. That’s
 what’s going on in your organization.”
 
-<img src="../images/lying-graphic-1.png" width="50%" /> <br>Source:
+<img src="../images/lying-graphic-1.png" width="40%" /> <br>Source:
 Americans United for Life  \[1\]
 
 This graph is deliberately deceptive (a charge Chaffetz
@@ -55,7 +55,7 @@ screening has indeed dropped off (due to changing medical standards for
 cancer screening as well as the passage of the ACA in 2010) while
 abortion services have remained fairly constant.
 
-<img src="../images/lying-graphic-2.png" width="50%" />
+<img src="../images/lying-graphic-2.png" width="40%" />
 
 Showing all services provided by Planned Parenthood puts the original
 data *in context*. Abortion-related services consistently represent

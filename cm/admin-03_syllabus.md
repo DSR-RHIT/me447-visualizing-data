@@ -3,7 +3,7 @@
 
 ## description
 
-ME447/ME547 Visualizing Data (4R-0L-4C).
+ME 447 / ME 547 Visualizing Data (4R–0L–4C).
 
 The course is about creating truthful and compelling data visuals. We
 study elements of statistical analysis, programming in R, human
@@ -25,9 +25,8 @@ Hall C-217<br> <layton@rose-hulman.edu><br> 812-877-8905
 
 ## required textbook
 
-Garrett Grolemund and Hadley Wickham (2017) *R for Data Science*,
-O’Reilly Media. [free e-copy online](http://r4ds.had.co.nz/). This
-book is particularly useful for the R novice.
+Hadley Wickham and Garrett Grolemund (2017) *R for Data Science*,
+O’Reilly Media. [free e-copy online](http://r4ds.had.co.nz/).
 
 <img src="../images/r-4-data-science-cover.png" width="25%" />
 
@@ -49,7 +48,7 @@ competence*, and a “C” indicates that *minimum standards have been met*.
 
 The major deliverables and their relative weights are:
 
-  - (25%) Weekly submissions and class participation
+  - (25%) Weekly submissions and active participation in discussions  
   - (75%) You final portfolio of data graphics and written critiques
 
 ## homework
@@ -126,9 +125,8 @@ Do not compare one another’s code line by line, do not share your files,
 do not copy another’s code fragments, and do not represent someone
 else’s work as your own. All are academic misconduct.
 
-\`\`Rose-Hulman expects its students to be responsible adults and to
-behave at all times with honor and integrity.’’ ([RHIT Academic Rules
-and
+“Rose-Hulman expects its students to be responsible adults and to behave
+at all times with honor and integrity.” ([RHIT Academic Rules and
 Procedures](http://www.rose-hulman.edu/campus-life/student-services/registrar/rules-and-procedures/discipline-and-suspension.html).)
 It is my policy to follow the letter and intent of the Rules and
 Procedures regarding academic misconduct.
