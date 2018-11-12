@@ -2,6 +2,14 @@
 output: github_document
 ---
 
+
+```{r include = FALSE}
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo = FALSE, out.width = "50%")
+```
+
+
 # syllabus
 
 ## description  
@@ -20,7 +28,7 @@ The course is about creating truthful and compelling data visuals. We study elem
 
 ## instructor
 
-Richard Layton, Ph.D., P.E.<br>
+Richard Layton, Ph.D.<br>
 Professor of Mechanical Engineering<br>
 Moench Hall C-217<br>
 layton@rose-hulman.edu<br>
@@ -28,9 +36,12 @@ layton@rose-hulman.edu<br>
 
 ## required textbook
 
-Naomi Robbins, 2013, *Creating More Effective Graphs*, Chart House. Avoid the earlier Wiley editions (except printings 1--4).
+Garrett Grolemund and Hadley Wickham (2017) *R for Data Science*,  O'Reilly Media. [free e-copy online](http://r4ds.had.co.nz/). This book is particularly useful for the R novice. 
 
-![](../images/CMEGv3.png)    
+```{r out.width = "25%"}
+include_graphics("../images/r-4-data-science-cover.png")
+```
+
 
 
 ## objectives
@@ -104,16 +115,6 @@ Do not compare one another's code line by line, do not share your files, do not 
 ## caveat
 
 I reserve the right to modify the course content, schedule, policies, etc. outlined in this syllabus. I will do my best to give you adequate notice of revisions.  
-
----
-
-[main page](../README.md)<br> 
-[topics page](../README-by-topic.md)
-
-
-
-
-
 
 
 
