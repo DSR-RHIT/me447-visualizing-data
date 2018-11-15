@@ -15,49 +15,49 @@ links](cm/admin-04_getting-help.md)
 
 ## calendar
 
-| w  | d   | agenda                          | tutorial | read before class                                                   | due                       |
-| :- | :-- | :------------------------------ | :------- | :------------------------------------------------------------------ | :------------------------ |
-| 1  | M   | Course goals & outcomes         |          |                                                                     | Checkout Doumont reprint  |
-|    | T   | Introduction to visual rhetoric |          | Syllabus, calendar, website                                         |                           |
-|    | R   | Data structures, graph types    |          | ![](images/document.jpg) Doumont ([2009](#ref-Doumont2009)) reprint | Reading response          |
-|    | F   | First steps & lab               |          | Portfolio                                                           | Checkout Tufte reprint    |
-| 2  | M   | Data basics                     |          |                                                                     |                           |
-|    | T   | Discuss today’s reading         |          | ![](images/document.jpg) Tufte ([1997](#ref-Tufte1997)) reprint     | Reading response          |
-|    | R   | Markdown basics                 |          |                                                                     |                           |
-|    | F   | Obtaining data & lab            |          | Sample portfolio entries                                            | Browse                    |
-| 3  | M   | Data carpentry                  |          |                                                                     |                           |
-|    | T   | Tufte on design                 |          | ![](images/moodle.png) Robbins ([2013](#ref-Robbins2013Ch6))        | Reading response          |
-|    | R   | D1 Distributions                |          |                                                                     |                           |
-|    | F   | Data tables & lab               |          | ![](images/moodle.png) Few ([2012](#ref-Few2012)) browse            |                           |
-| 4  | M   | Factors                         |          |                                                                     |                           |
-|    | T   | Discovering stories in data     |          | ![](images/link.png) Knaflic ([2012](#ref-Knaflic2012))             | Reading response          |
-|    | R   | D2 Multiways                    |          |                                                                     |                           |
-|    | F   | Roundtable D1 & lab             |          |                                                                     | D1 Distributions          |
-| 5  | M   | Data carpentry                  |          |                                                                     |                           |
-|    | T   | Discuss today’s reading         |          | ![](images/moodle.png) Wainer ([2014](#ref-Wainer2014))             | Reading response          |
-|    | R   | D3 Scatterplots                 |          |                                                                     |                           |
-|    | F   | Roundtable D2 & lab             |          |                                                                     | D2 Multiways              |
-| 6  | M   | Data carpentry                  |          |                                                                     |                           |
-|    | T   | Visual lies                     |          | ![](images/moodle.png) Wainer ([2000](#ref-Wainer2000))             | Reading response          |
-|    | R   | D4 Redesign graphical lies      |          |                                                                     |                           |
-|    | F   | Roundtable D3 & lab             |          |                                                                     | D3 Scatterplots           |
-| 7  | M   | References and citations        |          |                                                                     |                           |
-|    | T   | Discuss today’s reading         |          | ![](images/moodle.png) Kostelnick ([2007](#ref-Kostelnick2007))     | Reading response          |
-|    | R   | D5 Co-plot or pairs             |          |                                                                     |                           |
-|    | F   | Roundtable D4 & lab             |          |                                                                     | D4 Redesign graphical lie |
-| 8  | M   | Revising portfolio entries      |          |                                                                     |                           |
-|    | T   | Discuss today’s reading         |          | ![](images/moodle.png) Dragga & Voss ([2001](#ref-DraggaVoss2001))  | Reading response          |
-|    | R   | D6 Humanize the message         |          |                                                                     |                           |
-|    | F   | Roundtable D5 & lab             |          |                                                                     | D5 Co-plot or pairs       |
-| 9  | M   | TBD                             |          |                                                                     |                           |
-|    | T   | Color                           |          | ![](images/link.png) Constable ([2017](#ref-Constable2017)) p.14–17 | Reading response          |
-|    | R   | D7 Beyond basic graphs          |          |                                                                     |                           |
-|    | F   | Roundtable D6 & lab             |          |                                                                     | D6 Humanize the message   |
-| 10 | M   | Evals & work on portfolio       |          |                                                                     |                           |
-|    | T   | Discuss today’s reading         |          | ![](images/moodle.png) Spence ([2006](#ref-Spence2006))             | Reading response          |
-|    | R   | TBD                             |          |                                                                     |                           |
-|    | F   | Roundtable D7 & lab             |          |                                                                     | D7 Beyond basic graphs    |
-| 11 | TBD |                                 |          |                                                                     | Portfolio                 |
+| w  | d | agenda                                                                                    | activities                                                          | milestones       | due                                                                                    |
+| :- | :- | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------ | :--------------- | :------------------------------------------------------------------------------------- |
+| 1  | M | Course goals and outcomes                                                                 | Sign-out two reprints                                               |                  |                                                                                        |
+|    | T | Introduction to visual rhetoric                                                           | [Software installation]()                                           |                  |                                                                                        |
+|    | R | Data structure and graph design                                                           | ![](images/document.jpg) Doumont ([2009](#ref-Doumont2009)) reprint |                  |                                                                                        |
+|    | F | Software lab                                                                              | [Lab 1]()                                                           | Complete the lab |                                                                                        |
+| 2  | M | Graph basics                                                                              | [Practice]()                                                        |                  |                                                                                        |
+|    | T | Small group discussion                                                                    | ![](images/document.jpg) Tufte ([1997](#ref-Tufte1997)) reprint     |                  | Reading response                                                                       |
+|    | R | Data basics                                                                               | [Practice]()                                                        |                  |                                                                                        |
+|    | F | Data lab                                                                                  | [Lab 2]()                                                           | Complete the lab |                                                                                        |
+| 3  | M | Data carpentry                                                                            |                                                                     |                  |                                                                                        |
+|    | T | Tufte on design                                                                           |                                                                     |                  | Reading response<br>![](images/moodle.png) Robbins ([2013](#ref-Robbins2013Ch6))       |
+|    | R | D1 Distributions                                                                          |                                                                     |                  |                                                                                        |
+|    | F | Lab 3: Portfolio data tables                                                              | ![](images/moodle.png) Few ([2012](#ref-Few2012))                   |                  |                                                                                        |
+| 4  | M | Factors                                                                                   |                                                                     |                  |                                                                                        |
+|    | T | Discovering stories in data                                                               |                                                                     |                  | Reading response<br>![](images/link.png) Knaflic ([2017](#ref-Knaflic2017))            |
+|    | R | D2 Multiways                                                                              |                                                                     |                  |                                                                                        |
+|    | F | Roundtable presentations<br>Tutorial progress<br>Portfolio progress                       |                                                                     |                  | D1 Distributions                                                                       |
+| 5  | M | Data carpentry                                                                            |                                                                     |                  |                                                                                        |
+|    | T | Discuss today’s reading                                                                   |                                                                     |                  | Reading response<br>![](images/moodle.png) Wainer ([2014](#ref-Wainer2014))            |
+|    | R | D3 Scatterplots                                                                           |                                                                     |                  |                                                                                        |
+|    | F | Roundtable presentations<br>Tutorial progress<br>Portfolio progress                       |                                                                     |                  | D2 Multiways                                                                           |
+| 6  | M | Data carpentry                                                                            |                                                                     |                  |                                                                                        |
+|    | T | Visual lies                                                                               |                                                                     |                  | Reading response<br>![](images/moodle.png) Wainer ([2000](#ref-Wainer2000))            |
+|    | R | Critique and redesign case study<br>D4 Redesign a graphical lie                           |                                                                     |                  |                                                                                        |
+|    | F | Roundtable presentations<br>Tutorial progress<br>Portfolio progress                       |                                                                     |                  | D3 Scatterplots                                                                        |
+| 7  | M | References and citations                                                                  |                                                                     |                  |                                                                                        |
+|    | T | Discuss reading<br>D5 Humanize the message                                                |                                                                     |                  | Reading response<br>![](images/moodle.png) Dragga & Voss ([2001](#ref-DraggaVoss2001)) |
+|    | R | Revising portfolio entries                                                                |                                                                     |                  |                                                                                        |
+|    | F | Roundtable presentations<br>Tutorial progress<br>Portfolio progress                       |                                                                     |                  | D4 Redesign graphical lie                                                              |
+| 8  | M | D6 Co-plot or pairs                                                                       |                                                                     |                  |                                                                                        |
+|    | T | Discuss today’s reading                                                                   |                                                                     |                  | Reading response<br>![](images/moodle.png) Kostelnick ([2007](#ref-Kostelnick2007))    |
+|    | R | Color                                                                                     |                                                                     |                  |                                                                                        |
+|    | F | Roundtable presentations<br>Tutorial progress<br>Portfolio progress                       |                                                                     |                  | D5 Humanize the message                                                                |
+| 9  | M | D7 Beyond basic graphs                                                                    |                                                                     |                  |                                                                                        |
+|    | T | Discuss today’s reading                                                                   |                                                                     |                  | Reading response                                                                       |
+|    | R | Work in class                                                                             |                                                                     |                  |                                                                                        |
+|    | F | Roundtable presentations<br>Tutorial progress<br>Portfolio progress                       |                                                                     |                  | D6 Co-plot or pairs                                                                    |
+| 10 | M | Work in class                                                                             |                                                                     |                  |                                                                                        |
+|    | T | Discuss today’s reading                                                                   |                                                                     |                  | Reading response<br>![](images/moodle.png) Spence ([2006](#ref-Spence2006))            |
+|    | R | Work in class                                                                             |                                                                     |                  |                                                                                        |
+|    | F | Course evaluations<br>Roundtable presentations<br>Tutorial progress<br>Portfolio progress |                                                                     |                  | D7 Beyond basic graphs                                                                 |
+| 11 | M | Submit portfolio                                                                          |                                                                     |                  | Portfolio                                                                              |
 
 # index
 
@@ -136,19 +136,10 @@ links](cm/admin-04_getting-help.md)
 
 <div id="refs" class="references">
 
-<div id="ref-Constable2017">
-
-Constable, Catherine (2017) Color: Essential, useful, or superfluous?
-In: *Ch 1: Graphical Rhetoric*. Course notes for SIO 223A Geophysical
-Data Analysis, 14–17
-(<https://igppweb.ucsd.edu/~cathy/Classes/SIO223A/vizlect.notes.pdf>).
-
-</div>
-
 <div id="ref-Doumont2009">
 
-Doumont, Jean-luc (2009) Designing the graph. In: *Trees, Maps, and
-Theorems: Effective Communication for Rational Minds* 2nd ed. Kraainem,
+Doumont, Jean-luc (2009) Designing the graph. In: *Trees, maps, and
+theorems: Effective communication for rational minds* 2nd ed. Kraainem,
 Belgium: Principiae, 133–143.
 
 </div>
@@ -162,16 +153,17 @@ illustrations. *Technical Communication* 48(3): 265–274.
 
 <div id="ref-Few2012">
 
-Few, Stephen (2012) Differing roles of tables and graphs. In: *Show Me
-the Numbers: Designing Tables and Graphs to Enlighten* 2nd ed.
+Few, Stephen (2012) Differing roles of tables and graphs. In: *Show me
+the numbers: Designing tables and graphs to enlighten* 2nd ed.
 Burlingame, CA: Analytics Press, 39–51.
 
 </div>
 
-<div id="ref-Knaflic2012">
+<div id="ref-Knaflic2017">
 
-Knaflic, Cole Nussbaumer (2012) So what? Storytelling with data (blog)
-(<http://www.storytellingwithdata.com/blog/2017/3/22/so-what>).
+Knaflic, Cole Nussbaumer (2017) Where’s Larry? Bringing data to life
+through story. YouTube
+(<https://www.youtube.com/watch?v=TWASJxLVdY0&feature=youtu.be>).
 
 </div>
 
@@ -186,7 +178,7 @@ conundrum of clarity. *IEEE Transactions on Professional Communication*
 <div id="ref-Robbins2013Ch6">
 
 Robbins, Naomi (2013) General principles for creating effective graphs.
-In: *Creating More Effective Graphs*. Chart House, 154–225.
+In: *Creating more effective graphs*. Chart House, 154–225.
 
 </div>
 
@@ -202,24 +194,24 @@ American Statistical Association, section on statistical graphics,
 <div id="ref-Tufte1997">
 
 Tufte, Edward (1997) The decision to launch the space shuttle
-Challenger. In: *Visual and Statistical Thinking: Displays of Evidence
-for Making Decisions*. Cheshire, CT: Graphics Press, 16–31.
+Challenger. In: *Visual and statistical thinking: Displays of evidence
+for making decisions*. Cheshire, CT: Graphics Press, 16–31.
 
 </div>
 
 <div id="ref-Wainer2000">
 
 Wainer, Howard (2000) Graphical failures: How to display data badly. In:
-*Visual Revelations: Graphical Tales of Fate and Deception from Napoleon
-Bonaparte to Ross Perot*. Mahwah, NJ: Psychology Press, 11–40.
+*Visual revelations: Graphical tales of fate and deception from Napoleon
+Bonaparte To Ross Perot*. Mahwah, NJ: Psychology Press, 11–40.
 
 </div>
 
 <div id="ref-Wainer2014">
 
 Wainer, Howard (2014) Fifteen displays about one thing. In: *Medical
-Illuminations: Using Evidence, Visualization, and Statistical Thinking
-to Improve Healthcare*. UK: Oxford University Press, 32–49.
+illuminations: Using evidence, visualization, and statistical thinking
+to improve healthcare*. UK: Oxford University Press, 32–49.
 
 </div>
 

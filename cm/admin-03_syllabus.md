@@ -48,38 +48,35 @@ competence*, and a “C” indicates that *minimum standards have been met*.
 
 The major deliverables and their relative weights are:
 
-  - (25%) Weekly submissions and active participation in discussions  
+  - (25%) Roundtable presentations and reading discussions  
   - (75%) You final portfolio of data graphics and written critiques
 
 ## homework
 
 Success in this course depends on steady and productive weekly progress.
-Weekly assignments (see the [Calendar](admin-02_calendar.pdf) for
-details) include
+Weekly assignments (see the [Calendar](../README.md) for details)
+include
 
   - R tutorials (about 20 total). We will have some time in class to get
     started. Plan to finish current tutorials before the start of class
     on the following Monday.
-  - Data graphics D1 through D8 plus written critiques. A minimum of 8
-    displays are expected in your portfolio; more than 8 is acceptable
+  - Data graphics D1 through D7 plus written critiques. A minimum of 7
+    displays are expected in your portfolio; more than 7 is acceptable
     if necessary to meet the portfolio requirements. Each first draft is
-    due at the beginning of class on its due date. Some are submitted to
-    me for review and some are brought to class for round-table
-    discussions.
-  - Primary readings and written response forms (5 total), completed
-    before class on the discussion date.
-  - Assigned readings from the text (7 chapters total) and other primary
-    sources (6 total). Unlike the written-response-readings, we will
-    discuss these readings only as time permits. However, I expect your
-    portfolio to reflect these readings in your data graphics, written
-    critiques, and citations.
+    due at the beginning of class on its due date.
+  - Primary readings and written response forms, completed before class
+    on the discussion date.
+  - Readings from other sources. Unlike the written-response-readings,
+    we will discuss these readings only as time permits. However, I
+    expect your portfolio to reflect these readings in your data
+    graphics, tables, critiques, and citations.
 
 ## attendance
 
 Attendance is required for periods in which we have in-class discussions
-and presentations (9 total, typically on Thursday). The penalty for
-missing more than two of these periods without a valid excuse is a
-one-letter-grade course grade reduction.
+and presentations. The penalty for missing more than two of these
+periods without a valid excuse is a one-letter-grade course grade
+reduction.
 
 ## valid excuses
 
@@ -89,18 +86,6 @@ every attempt to avoid missing major deadlines and activities and 2) you
 have provided me written notice (email is fine) at least one week in
 advance of the event. Illness and exceptional circumstances are valid
 excuses if you notify me within one week of the illness or circumstance.
-
-## academic accommodations
-
-I understand that “invisible” disabilities (learning and attention
-deficit disorders, chronic fatigue syndrome, clinical depression, etc.)
-can significantly affect a student’s academic performance. I strongly
-encourage students to document special academic needs with staff at the
-Office of Student Affairs, and then to contact me as soon as possible so
-that we can work together to provide recommended academic accommodations
-while protecting your privacy. It is the student’s responsibility to
-request any approved, documented academic accommodations at least *one
-week* in advance of the event.
 
 ## academic integrity
 
@@ -130,6 +115,18 @@ at all times with honor and integrity.” ([RHIT Academic Rules and
 Procedures](http://www.rose-hulman.edu/campus-life/student-services/registrar/rules-and-procedures/discipline-and-suspension.html).)
 It is my policy to follow the letter and intent of the Rules and
 Procedures regarding academic misconduct.
+
+## academic accommodations
+
+I understand that “invisible” disabilities (learning and attention
+deficit disorders, chronic fatigue syndrome, clinical depression, etc.)
+can significantly affect a student’s academic performance. I strongly
+encourage students to document special academic needs with staff at the
+Office of Student Affairs, and then to contact me as soon as possible so
+that we can work together to provide recommended academic accommodations
+while protecting your privacy. It is the student’s responsibility to
+request any approved, documented academic accommodations at least *one
+week* in advance of the event.
 
 ## caveat
 
