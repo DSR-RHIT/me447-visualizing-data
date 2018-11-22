@@ -11,30 +11,26 @@ link.
 
 | display                                             | type                  | quantitative  | categorical                            |
 | :-------------------------------------------------- | :-------------------- | :------------ | :------------------------------------- |
-| [D1 Distributions](cm210_d1-distributions.md)       | box plot              | one           | one, min. 3 levels                     |
+| [D1 distributions](cm210_d1-distributions.md)       | box plot              | one           | one, min. 3 levels                     |
 |                                                     | histogram             | one           | one, min. 3 levels                     |
 |                                                     | density plot          | one           | one, min. 3 levels                     |
-| [D2 Multiway](cm220_d2-multiway.md)                 | multiway              | one           | two, min. 3 levels each                |
-| [D3 Correlations](cm230_d3-correlations.md)         | scatterplot           | two           | one, min. 3 levels                     |
-| [D4 Injuries or fatalities](cm240_d4-cruel-pies.md) | dot plot              | one           | optional                               |
+| [D2 multiway](cm220_d2-multiway.md)                 | multiway              | one           | two, min. 3 levels each                |
+| [D3 correlations](cm230_d3-correlations.md)         | scatterplot           | two           | one, min. 3 levels                     |
+| [D4 injuries or fatalities](cm240_d4-cruel-pies.md) | dot plot              | one           | optional                               |
 |                                                     | line graph            | two           | optional                               |
-| [D5 Fix a lie](cm241_d5-fix-lies.md)                | dot plot              | one           | optional                               |
+| [D5 fix a lie](cm241_d5-fix-lies.md)                | dot plot              | one           | optional                               |
 |                                                     | line graph            | two           | optional                               |
 |                                                     | scatterplot           | two           | optional                               |
-| [D6 Hypervariate](cm260_d6-hypervariate.md)         | conditioning plot     | three or four |                                        |
+| [D6 hypervariate](cm260_d6-hypervariate.md)         | conditioning plot     | three or four |                                        |
 |                                                     | scatterplot matrix    | four or more  |                                        |
 |                                                     | parallel coordinate   | four or more  | optional                               |
-| [D7 Counts and maps](cm270_d7-counts-maps.md)       | q-q                   | one           | two distributions                      |
+| [D7 learn on your own](cm270_d7-counts-maps.md)     | q-q                   | one           | two distributions                      |
 |                                                     | cycle plot            | one           | two in time series, e.g., month & year |
 |                                                     | Sankey diagram        | one           | N nodes dividing the flow              |
 |                                                     | mosaic                | one           | three or more, min. 2 levels each      |
 |                                                     | diverging stacked bar | one           | survey questions, min. 5               |
 |                                                     | quantitative map      | one           |                                        |
 |                                                     | qualitative map       |               | one, N levels                          |
-
-<!-- ## distributions {#distributions} -->
-
-<!-- [portfolio data] -->
 
 ## notes
 
@@ -50,17 +46,3 @@ link.
     marked “optional” indicates that the graph may or may not have a
     categorical variable whose levels are used as a conditioning
     variable.
-
-4.  *D4 Injuries or fatalities displayed ethically*. The data must
-    convey information about human injury or fatality (similar to the
-    data in *Cruel Pies*). Consult with me on your data selection—the
-    graph type depends on the data. The two graph types shown are the
-    most commonly encountered.
-
-5.  *D5 Fix a lie*. Consult with me on your data selection—the graph
-    type depends on the data. The two graph types shown are the most
-    commonly encountered.
-
-6.  *D7* is a graph type you learn on your own. The two general
-    categories are *Counts* or the frequency with which something occurs
-    and *Spatial data* that are displayed on maps.
