@@ -73,12 +73,13 @@ There are no exams. The major deliverables and their relative weights are:
  
 ## homework 
 
-Success in this course depends on steady and productive weekly progress. Weekly assignments (see the [calendar](../README.md#calendar) for details) include 
+Success in this course depends on steady and productive weekly progress. Weekly assignments include 
 
-- Practice R problems to learn the skills needed to create the portfolio. To make satisfactory progress, weekly practice should be complete by the following Monday.  
+- Obtaining data with structures appropriate to the assigned display types. Data should be obtained no later than the dates listed in the calendar.  
+- Weekly practice R problems to learn the skills needed to create the portfolio, completed by the following Monday.  
 - Weekly readings, completed before class on the assigned day. 
-- Written reading responses (generally, one every two weeks) completed before class on the day of discussion. 
-- Presentations of displays D1 through D7 plus written critiques. After the first graph is due, one new graph  per week is expected.  
+- Written reading responses (typically one every two weeks) completed before class on the day of discussion. 
+- Presentations of displays D1 through D7 plus written critiques.  
 
 
 ## labs 

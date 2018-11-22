@@ -76,13 +76,15 @@ Calendar links organized by topic
 
 ## data
 
+  - [Portfolio data](cm/cm301_portfolio_data-types.md)
+
 ## graphs
 
 ## software
 
 ## portfolio
 
-  - [portfolio data](cm/cm301_portfolio_data-types.md)
+  - [Portfolio data](cm/cm301_portfolio_data-types.md)
 
 ## readings
 
