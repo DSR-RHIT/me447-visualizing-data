@@ -78,6 +78,8 @@ Calendar links organized by topic
 
 ## portfolio
 
+  - [portfolio data](cm/cm301_portfolio_data-types.md)
+
 ## visual rhetoric
 
 ## data
