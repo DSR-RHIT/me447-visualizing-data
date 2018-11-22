@@ -1,7 +1,11 @@
 ---
 output: github_document
+bibliography: "../resources/bib/refs.bib" 
+csl: "../resources/styles/journal-of-peace-research.csl"
+link-citations: yes
 ---
 
+# syllabus
 
 ```{r include = FALSE}
 library(knitr)
@@ -10,11 +14,10 @@ opts_chunk$set(echo = FALSE, out.width = "50%")
 ```
 
 
-# syllabus
 
 ## description  
 
-ME 447 / ME 547 Visualizing Data (4R--0L--4C). 
+ME 447 / ME 547 Visualizing Data (3R--3L--4C). 
 
 The course is about creating truthful and compelling data visuals. We study elements of statistical analysis, programming in R, human perception, graphic design, and visual rhetoric and ethics. After successfully completing this course, students should be able to design effective and truthful data displays, credibly explain their design rationale, produce publication‐quality visuals, and credibly critique a data display. Prior experience with R is not required.
 
@@ -40,7 +43,7 @@ Hadley Wickham and Garrett Grolemund (2017) *R for Data Science*,  O'Reilly Medi
 
 
 ```{r out.width = "25%"}
-include_graphics("../images/r-4-data-science-cover.png")
+include_graphics("../resources/images/r-4-data-science-cover.png")
 ```
 
 
@@ -62,24 +65,24 @@ After successfully completing this course, students should be able to:
 
 Grades are earned based on the [Institute standards](http://www.rose-hulman.edu/campus-life/student-services/registrar/rules-and-procedures/grades.html), for example, an "A" is an *honor grade*, a "B" is awarded for *thorough competence*, and a "C" indicates that *minimum standards have been met*.
 
-The major deliverables and their relative weights are:
+There are no exams. The major deliverables and their relative weights are:
 
-- (25%) Roundtable presentations and reading discussions   
-- (75%) You final portfolio of data graphics and written critiques  
+- (25%) Presentations and participation in small-group discussions    
+- (75%) Portfolio   
 
  
 ## homework 
 
-Success in this course depends on steady and productive weekly progress. Weekly assignments (see the [Calendar](../README.md) for details) include 
+Success in this course depends on steady and productive weekly progress. Weekly assignments (see the [calendar](../README.md) for details) include 
 
-- R tutorials (about 20 total). We will have some time in class to get started. Plan to finish current tutorials before the start of class on the following Monday. 
-- Data graphics D1 through D7 plus written critiques. A minimum of 7 displays are expected in your portfolio; more than 7 is acceptable if necessary to meet the portfolio requirements. Each first draft is due at the beginning of class on its due date. 
-- Primary readings and written response forms, completed before class on the discussion date. 
-- Readings from other sources. Unlike the written-response-readings, we will discuss these readings only as time permits. However, I expect your portfolio to reflect these readings in your data graphics, tables, critiques, and citations.    
+- Practice R problems to learn the skills needed to create the portfolio. To make satisfactory progress, weekly practice should be complete by the following Monday.  
+- Weekly readings, completed before class on the assigned day. 
+- Written reading responses completed before class on the day of discussion. 
+- Presentations of displays D1 through D7 plus written critiques. 
 
 ## attendance
 
-Attendance is required for periods in which we have in-class discussions and presentations. The penalty for missing more than two of these periods without a valid excuse is a one-letter-grade course grade reduction.
+Attendance is required for periods in which we have discussions of readings and presentations. The penalty for missing more than two of these periods without a valid excuse is a one-letter-grade course grade reduction.
 
 
 ## valid excuses
