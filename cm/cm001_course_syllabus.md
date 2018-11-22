@@ -62,9 +62,23 @@ include
     portfolio. To make satisfactory progress, weekly practice should be
     complete by the following Monday.  
   - Weekly readings, completed before class on the assigned day.
-  - Written reading responses completed before class on the day of
-    discussion.
+  - Written reading responses (generally, one every two weeks) completed
+    before class on the day of discussion.
   - Presentations of displays D1 through D7 plus written critiques.
+    After the first graph is due, one new graph per week is expected.
+
+## labs
+
+Lab periods are used for working with software and for presentating and
+discussing portfolio work in progress.
+
+  - In the first few labs, we set up the basic software environment:
+    installing software, managing files, obtaining data, and starting
+    the portfolio.
+  - In later labs, every student gives a weekly presentation of that
+    week’s new display with small-group discussion and feedback. When
+    presentations are complete, the remainder of the lab period is used
+    to work on the practice problems and the portfolio.
 
 ## attendance
 
