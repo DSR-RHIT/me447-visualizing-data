@@ -27,7 +27,7 @@ permission
 | 2  | M | Graph basics with ggplot2 \[notes\]<br>[Practice]()                                                                                              |                         |                  |
 |    | T | ![](resources/images/document.jpg) Tufte ([1997](#ref-Tufte1997)) Decision to launch Challenger                                                  |                         | Reading response |
 |    | R | Data basics \[notes\]<br>[Practice]()                                                                                                            |                         |                  |
-|    | F | [Data lab]()<br>Return reprints                                                                                                                  | Start obtaining data    |                  |
+|    | F | [Data lab](cm/cm100_data_data-lab.md)<br>Return reprints                                                                                         | Start obtaining data    |                  |
 | 3  | M | Markdown basics \[notes\]<br>[Practice]()                                                                                                        | Recent practices done   |                  |
 |    | T | ![](resources/images/moodle.png) Robbins ([2013](#ref-Robbins2013Ch6)) General design principles                                                 |                         |                  |
 |    | R | Display D1 Distributions \[notes\]<br>[Practice]()                                                                                               | [D1 data]() acquired    |                  |
