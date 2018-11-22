@@ -1,5 +1,5 @@
 
-## D1 Distributions
+## display D1 distributions
 
 Univariate data are measurements of a single quantitative variable. The
 data can be separated into groups by a categorical variable, creating
