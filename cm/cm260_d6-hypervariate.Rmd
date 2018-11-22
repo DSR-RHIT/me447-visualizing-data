@@ -1,0 +1,23 @@
+---
+output: github_document
+bibliography: "../resources/bib/refs.bib" 
+csl: "../resources/styles/journal-of-peace-research.csl"
+link-citations: yes
+---
+
+```{r echo=FALSE}
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo = FALSE, message = FALSE, collapse = TRUE, warning = FALSE)
+```
+
+## D6 hypervariate data displays
+
+
+
+## data 
+
+
+
+
+
