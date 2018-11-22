@@ -6,10 +6,10 @@ Rose-Hulman Institute of Technology.
 
 <img src="resources/images/cover-art.png" width="60%" />
 
-  - [About the course](cm/cm0001_about-the-course.md)  
-  - [Syllabus](cm/admin-03_syllabus.md)
+  - [About the course](cm/cm000_course_about.md)
+  - [Syllabus](cm/cm001_course_syllabus.md)
   - [Index](#index)
-  - [Help links](cm/admin-04_getting-help.md)  
+  - Help links[](cm/admin-04_getting-help.md)  
   - [License](LICENSE.md)
 
 ## calendar
@@ -50,7 +50,7 @@ permission
 |    | F | Presentations, practice, & portfolio<br>Roundtable e-notes[]()                                                                                   |                         | D4 Graph & prose |
 | 8  | M | Display D6 Hypervariate data \[notes\]<br>Practice[]()                                                                                           | Recent practices done   |                  |
 |    | T | ![](resources/images/moodle.png) Kostelnick ([2007](#ref-Kostelnick2007)) Conundrum of clarity                                                   |                         | Reading response |
-|    | R | Color \[[notes]()\]<br>Practice[]()                                                                                                              | D6 data[]() acquired    |                  |
+|    | R | Color \[notes\]<br>Practice[]()                                                                                                                  | D6 data[]() acquired    |                  |
 |    | F | Presentations, practice, & portfolio<br>Roundtable e-notes[]()                                                                                   |                         | D5 Graph & prose |
 | 9  | M | Display D7 Counts and maps \[notes\]                                                                                                             | Recent practices done   |                  |
 |    | T | Revising portfolio entries \[notes\]<br>Reading[]()                                                                                              |                         |                  |
@@ -68,10 +68,10 @@ Calendar links organized by topic
 
 ## course
 
-  - [About the course](cm/cm0001_about-the-course.md)
-  - [Syllabus](cm/admin-03_syllabus.md)  
+  - [About the course](cm/cm000_course_about.md)
+  - [Syllabus](cm/cm001_course_syllabus.md)  
   - [Calendar](#calendar)
-  - [Help links](cm/admin-04_getting-help.md)
+  - Help links[](cm/admin-04_getting-help.md)
   - [License](LICENSE.md)
 
 ## software
