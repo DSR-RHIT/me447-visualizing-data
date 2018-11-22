@@ -11,7 +11,7 @@ opts_knit$set(root.dir = "../")
 opts_chunk$set(echo = FALSE, message = FALSE, collapse = TRUE, warning = FALSE)
 ```
 
-## display D1 distributions 
+## D1 distributions 
 
 Univariate data are measurements of a single quantitative variable. The data can be separated into groups by a categorical variable, creating one distribution for each level of the category for comparison. 
 

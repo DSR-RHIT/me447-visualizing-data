@@ -1,5 +1,5 @@
 
-## display D2 multiway
+## D2 multiway
 
 The distinguishing characteristic of multiway data is that there is a
 quantitative value associated with *every combination* of levels of the
