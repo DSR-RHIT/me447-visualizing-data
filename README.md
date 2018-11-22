@@ -76,7 +76,7 @@ Calendar links organized by topic
 
 ## data
 
-  - [Portfolio data](cm/cm301_portfolio_data-types.md)
+  - [Portfolio data summary](cm/cm301_portfolio_data-types.md)
 
 ## graphs
 
