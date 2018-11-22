@@ -10,7 +10,7 @@ link-citations: yes
 ```{r include = FALSE}
 library(knitr)
 opts_knit$set(root.dir = "../")
-opts_chunk$set(echo = FALSE, out.width = "40%")
+opts_chunk$set(echo = FALSE, out.width = "50%")
 ```
 
 
@@ -19,7 +19,7 @@ opts_chunk$set(echo = FALSE, out.width = "40%")
 
 The course is about creating truthful and compelling data visuals. After successfully completing this course, students should be able to design effective and truthful data displays, credibly explain their design rationale, produce publication-quality visuals, and credibly critique a data display.
 
-```{r out.width = "50%"}
+```{r out.width = "60%"}
 include_graphics("../resources/images/hans.png")
 ```
 <small><br>Image from a TED talk by [Hans Rosling](https://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen#t-270297).</small>
@@ -46,15 +46,13 @@ This is a course for anyone interested in presenting data in compelling and trut
 
 To illustrate what I mean by "creating truthful and compelling data visuals," I'll briefly describe the redesign of a lying data display.  If you would like to read about in more detail, see my [blog post](http://www.graphdoctor.com/archives/1248).
 
-During  Congressional hearing in August 2015, Representative Jason Chaffetz used the following graph as part of his effort to defund Planned Parenthood, stating, "In pink, that's the reduction in the breast exams, and the red is the increase in the abortions. That’s what's going on in your organization."    
+During  Congressional hearing in August 2015, Representative Jason Chaffetz used the following graph&nbsp;[^1] as part of his effort to defund Planned Parenthood, stating, "In pink, that's the reduction in the breast exams, and the red is the increase in the abortions. That’s what's going on in your organization."    
 
 ```{r}
 include_graphics("../resources/images/lying-graphic-1.png")
 ```
-<br>Source: Americans United for Life &nbsp;[^1]
 
 [^1]:This graph was crafted by Americans United for Life (AUL), an organization dedicated to [restricting women’s reproductive rights](https://www.theatlantic.com/politics/archive/2015/07/what-pro-life-activists-really-want/398297/) in the US and abroad. AUL has deleted the original webpage, we can still [view it](https://web.archive.org/web/20151005054733/http://www.aul.org/new-leviathan/) using the wayback machine.
-
 
 This graph is deliberately deceptive (a charge Chaffetz [denied](https://talkingpointsmemo.com/livewire/jason-chaffetz-planned-parenthood-cnn)). Cancer screenings and prevention services are plotted in millions, abortions are plotted in hundreds of thousands, and no scales are shown. The use of *deceptive visual rhetoric* forces a viewer to see a relationship that isn’t there. 
 
