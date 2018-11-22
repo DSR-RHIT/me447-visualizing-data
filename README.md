@@ -84,7 +84,14 @@ Calendar links organized by topic
 
 ## portfolio
 
-  - [Portfolio data](cm/cm301_portfolio_data-types.md)
+  - [Portfolio data summary](cm/cm301_portfolio_data-types.md)
+  - [D1 distributions](cm/cm210_d1-distributions.md)
+  - [D2 multiway](cm/cm220_d2-multiway.md)
+  - [D3 correlations](cm/cm230_d3-correlations.md)
+  - [D4 injuries or fatalities](cm/cm240_d4-cruel-pies.md)
+  - [D5 fix a lie](cm/cm241_d5-fix-lies.md)
+  - [D6 hypervariate](cm/cm260_d6-hypervariate.md)
+  - [D7 learn on your own](cm/cm270_d7-counts-maps.md)
 
 ## readings
 
