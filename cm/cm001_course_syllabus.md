@@ -55,8 +55,8 @@ are:
 ## homework
 
 Success in this course depends on steady and productive weekly progress.
-Weekly assignments (see the [calendar](../README.md) for details)
-include
+Weekly assignments (see the [calendar](../README.md#calendar) for
+details) include
 
   - Practice R problems to learn the skills needed to create the
     portfolio. To make satisfactory progress, weekly practice should be
