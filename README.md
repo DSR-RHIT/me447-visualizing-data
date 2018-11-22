@@ -30,7 +30,7 @@ permission
 |    | F | [Data lab](cm/cm100_data_data-lab.md)<br>Return reprints                                                                                         | Start obtaining data    |                  |
 | 3  | M | Markdown basics \[notes\]<br>Practice[]()                                                                                                        | Recent practices done   |                  |
 |    | T | ![](resources/images/moodle.png) Robbins ([2013](#ref-Robbins2013Ch6)) General design principles                                                 |                         |                  |
-|    | R | Display D1 Distributions \[notes\]<br>Practice[]()                                                                                               | [D1 data]() acquired    |                  |
+|    | R | Display D1 Distributions \[notes\]<br>Practice[]()                                                                                               | D1 data[]() acquired    |                  |
 |    | F | Portfolio lab[]()                                                                                                                                | Portfolio started       |                  |
 | 4  | M | Data carpentry \[notes\]<br>Practice[]()                                                                                                         | Recent practices done   |                  |
 |    | T | ![](resources/images/moodle.png) Wainer ([2014](#ref-Wainer2014)) 15 displays about one thing                                                    |                         | Reading response |
@@ -38,7 +38,7 @@ permission
 |    | F | Presentations, practice, & portfolio<br>Roundtable e-notes[]()                                                                                   |                         | D1 Graph & prose |
 | 5  | M | Data carpentry \[notes\]<br>Practice[]()                                                                                                         | Recent practices done   |                  |
 |    | T | Discovering stories in the data<br>Reference links[]()                                                                                           |                         |                  |
-|    | R | Display D3 Correlations \[notes\]<br>Practice[]()                                                                                                | [D3 data]() acquired    |                  |
+|    | R | Display D3 Correlations \[notes\]<br>Practice[]()                                                                                                | D3 data[]() acquired    |                  |
 |    | F | Presentations, practice, & portfolio<br>Roundtable e-notes[]()                                                                                   |                         | D2 Graph & prose |
 | 6  | M | Data carpentry \[notes\]<br>Practice[]()                                                                                                         | Recent practices done   |                  |
 |    | T | Display D4 Injuries or fatalities displayed ethically<br>![](resources/images/moodle.png) Dragga & Voss ([2001](#ref-DraggaVoss2001)) Cruel pies |                         | Reading response |
