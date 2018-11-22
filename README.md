@@ -74,24 +74,19 @@ Calendar links organized by topic
   - Help links[](cm/admin-04_getting-help.md)
   - [License](LICENSE.md)
 
+## data
+
+## graphs
+
 ## software
 
 ## portfolio
 
   - [portfolio data](cm/cm301_portfolio_data-types.md)
 
-## visual rhetoric
-
-## data
-
-## graphs
-
 ## readings
 
-Rose-Hulman students have access to the readings on our course Moodle
-page.
-
-<div id="refs" class="references">
+<div id="refs">
 
 <div id="ref-Doumont2009">
 
@@ -157,3 +152,5 @@ to improve healthcare*. UK: Oxford University Press, 32–49.
 </div>
 
 </div>
+
+## visual rhetoric
