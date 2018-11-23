@@ -6,3 +6,9 @@ are *Counts* or the frequency with which something occurs and *Spatial
 data* that are displayed on maps.
 
 ## data
+
+-----
+
+[Portfolio data summary](cm301_portfolio_data-types.md)  
+[Calendar](../README.md#calendar)  
+[Index](../README.md#index)

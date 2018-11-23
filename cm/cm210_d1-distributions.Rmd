@@ -37,4 +37,7 @@ These data must also include at least one categorical variable to sort the data 
 
 
 
-
+---    
+[Portfolio data summary](cm301_portfolio_data-types.md)    
+[Calendar](../README.md#calendar)    
+[Index](../README.md#index) 

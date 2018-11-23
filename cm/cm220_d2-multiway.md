@@ -9,3 +9,9 @@ Draft both multiway duals and select the one that best conveys the
 stories in the data.
 
 ## data
+
+-----
+
+[Portfolio data summary](cm301_portfolio_data-types.md)  
+[Calendar](../README.md#calendar)  
+[Index](../README.md#index)

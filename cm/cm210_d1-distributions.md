@@ -25,3 +25,9 @@ the data into at least three groups for comparison.
     minimum of three comparisons.  
   - If two categories are used, they must have at least two levels each
     for a minmum of four comparisons.
+
+-----
+
+[Portfolio data summary](cm301_portfolio_data-types.md)  
+[Calendar](../README.md#calendar)  
+[Index](../README.md#index)
