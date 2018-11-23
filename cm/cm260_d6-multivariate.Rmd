@@ -37,8 +37,15 @@ Requirements
 - time-series data are excluded 
 - no categorical variables 
 
-Use a conditioning plot (coplot) for three or four variables. For four or more variables, use a scatterplot matrix or a parallel coordinate plot. 
+Use a conditioning plot (coplot) for three or four variables. 
+
+For four or more variables, use a scatterplot matrix or a parallel coordinate plot. 
 
 
 
 
+
+---
+- [Portfolio data summary](cm301_portfolio_data-types.md)  
+- [Calendar](../README.md#Calendar)
+- [Index](../README.md#Index)
