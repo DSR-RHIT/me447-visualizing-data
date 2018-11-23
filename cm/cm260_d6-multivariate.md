@@ -4,11 +4,6 @@
 We use the term *multivariate* for data comprising 3 or more
 quantitative variables per observation.
 
-Multivariate data, unlike univariate and bivariate data, are difficult
-to visualize in two-dimensional media. In the special case of
-three-dimensional (trivariate) data, we can sometimes use perspective to
-visualize relationships, though not always effectively.
-
 We use three graph designs for exploring multivariate data.
 
   - conditioning plot
