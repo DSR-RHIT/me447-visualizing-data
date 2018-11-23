@@ -11,12 +11,12 @@ link-footnotes: yes
 ```{r include = FALSE}
 library(knitr)
 opts_knit$set(root.dir = "../")
-opts_chunk$set(echo = FALSE, out.width = "60%")
+opts_chunk$set(echo = FALSE, out.width = "50%")
 ```
 
 The course is about creating truthful and compelling data visuals. Students from all disciplinary backgrounds are welcome. 
 
-```{r}
+```{r out.width = "60%"}
 include_graphics("../resources/images/hans.png")
 ```
 <small><br>Image from a TED talk by [Hans Rosling](https://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen#t-270297).</small>
@@ -53,7 +53,7 @@ See my [blog post](http://www.graphdoctor.com/archives/1248) for an in-depth dis
 include_graphics("../resources/images/lying-graphic-2.png")
 ```
 
-Showing all services provided by Planned Parenthood puts the original data in context. Abortion-related services consistently represent about 3% of all   Planned Parenthood services.  The visual argument of the original graph---that Planned Parenthood is predominantly a “life-destructive” organization---is contradicted by the very data they used.
+Showing all services provided by Planned Parenthood puts the original data in context. Abortion-related services consistently represent about 3% of all   Planned Parenthood services.  The visual argument of the original graph---that Planned Parenthood is predominantly a "life-destructive" organization---is contradicted by the very data they used.
 
 In addition, a different story about a different public health problem emerges: STI-STD tests and treatments have been steadily and dramatically increasing, probably correlated to the opioid crisis coupled with a 40% reduction in state and local STD budgets since 2003&nbsp;[^sti-std].  
 

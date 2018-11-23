@@ -24,10 +24,10 @@ visuals,” I briefly outline below my redesign of a graphical lie.
 During Congressional hearing in August 2015, Representative Jason
 Chaffetz used the following graph as part of his effort to defund
 Planned Parenthood, stating, “In pink, that’s the reduction in the
-breast exams, and the red is the increase in the abortions. Thatâ€™s
+breast exams, and the red is the increase in the abortions. That’s
 what’s going on in your organization.”
 
-<img src="../resources/images/lying-graphic-1.png" width="60%" />
+<img src="../resources/images/lying-graphic-1.png" width="50%" />
 
 This graph \[1\] is deliberately deceptive—a charge Chaffetz
 [denied](https://talkingpointsmemo.com/livewire/jason-chaffetz-planned-parenthood-cnn).
@@ -42,14 +42,14 @@ Cancer screening has indeed dropped off (due to changing medical
 standards for cancer screening as well as the passage of the ACA in
 2010) while abortion services have remained fairly constant.
 
-<img src="../resources/images/lying-graphic-2.png" width="60%" />
+<img src="../resources/images/lying-graphic-2.png" width="50%" />
 
 Showing all services provided by Planned Parenthood puts the original
 data in context. Abortion-related services consistently represent about
 3% of all Planned Parenthood services. The visual argument of the
 original graph—that Planned Parenthood is predominantly a
-â€œlife-destructiveâ€ organization—is contradicted by the very data
-they used.
+“life-destructive” organization—is contradicted by the very data they
+used.
 
 In addition, a different story about a different public health problem
 emerges: STI-STD tests and treatments have been steadily and
@@ -60,7 +60,7 @@ coupled with a 40% reduction in state and local STD budgets since
 **Notes**
 
 1.  This graph was crafted by Americans United for Life (AUL), an
-    organization dedicated to [restricting womenâ€™s reproductive
+    organization dedicated to [restricting women’s reproductive
     rights](https://www.theatlantic.com/politics/archive/2015/07/what-pro-life-activists-really-want/398297/)
     in the US and abroad. AUL has deleted the original webpage, we can
     still [view
