@@ -16,10 +16,13 @@ design that best conveys the stories in your data.
 
 ## data
 
-Data for these graphs are univariate with at least 200 values total.
+Requirements
 
-These data must also include at least one categorical variable to sort
-the data into at least three groups for comparison.
+  - minimum 200 observations of one quantitative variable  
+  - one or two categorical variables  
+  - time-series data are excluded
+
+Categorical variables
 
   - If one category is used, it must have at least three levels for a
     minimum of three comparisons.  

@@ -28,16 +28,20 @@ Include only one of these graph types in your portfolio. Select the design that 
 
 ## data 
 
-Data for these graphs are univariate with at least 200 values total. 
+Requirements
 
-These data must also include at least one categorical variable to sort the data into at least three groups for comparison. 
+- minimum 200 observations of one quantitative variable  
+- one or two categorical variables  
+- time-series data are excluded  
+
+Categorical variables 
 
 - If one category is used, it must have at least three levels for a minimum of three comparisons.  
 - If two categories are used, they must have at least two levels each for a minmum of four comparisons. 
 
 
 
----    
+---  
 [Portfolio data summary](cm301_portfolio_data-types.md)    
 [Calendar](../README.md#calendar)    
 [Index](../README.md#index) 
