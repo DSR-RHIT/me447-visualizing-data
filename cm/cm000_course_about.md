@@ -36,7 +36,7 @@ post](http://www.graphdoctor.com/archives/1248).
 During Congressional hearing in August 2015, Representative Jason
 Chaffetz used the following graph \[1\] as part of his effort to defund
 Planned Parenthood, stating, “In pink, that’s the reduction in the
-breast exams, and the red is the increase in the abortions. That’s
+breast exams, and the red is the increase in the abortions. Thatâ€™s
 what’s going on in your organization.”
 
 <img src="../resources/images/lying-graphic-1.png" width="50%" />
@@ -46,7 +46,7 @@ This graph is deliberately deceptive (a charge Chaffetz
 Cancer screenings and prevention services are plotted in millions,
 abortions are plotted in hundreds of thousands, and no scales are shown.
 The use of *deceptive visual rhetoric* forces a viewer to see a
-relationship that isn’t there.
+relationship that isnâ€™t there.
 
 A different story emerges in my redesign of this graphic in which all
 services are shown to the same scale and on a per capita basis. Cancer
@@ -60,8 +60,8 @@ Showing all services provided by Planned Parenthood puts the original
 data *in context*. Abortion-related services consistently represent
 about 3% of all Planned Parenthood services. The *visual argument* of
 the original graph—that Planned Parenthood is predominantly a
-“life-destructive” organization—is contradicted by the very data they
-used.
+â€œlife-destructiveâ€ organization—is contradicted by the very data
+they used.
 
 In addition, a different story about a different public health problem
 emerges: STI-STD tests and treatments have been steadily and
@@ -71,7 +71,7 @@ with a 40% reduction in state and local STD budgets since 2003. \[2\]
 ## notes
 
 1.  This graph was crafted by Americans United for Life (AUL), an
-    organization dedicated to [restricting women’s reproductive
+    organization dedicated to [restricting womenâ€™s reproductive
     rights](https://www.theatlantic.com/politics/archive/2015/07/what-pro-life-activists-really-want/398297/)
     in the US and abroad. AUL has deleted the original webpage, we can
     still [view

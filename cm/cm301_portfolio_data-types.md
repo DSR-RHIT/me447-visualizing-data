@@ -36,7 +36,7 @@ link.
 |                                                     | scatterplot           | two           | optional                               |
 | [D6 multivariate](cm260_d6-multivariate.md)         | conditioning plot     | three or four |                                        |
 |                                                     | scatterplot matrix    | four or more  |                                        |
-|                                                     | parallel coordinate   | four or more  | optional                               |
+|                                                     | parallel coordinate   | four or more  |                                        |
 | [D7 learn on your own](cm270_d7-counts-maps.md)     | q-q                   | one           | two distributions                      |
 |                                                     | cycle plot            | one           | two in time series, e.g., month & year |
 |                                                     | Sankey diagram        | one           | N nodes dividing the flow              |
