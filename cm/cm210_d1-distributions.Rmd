@@ -32,12 +32,19 @@ Requirements
 
 - Minimum 200 observations of one quantitative variable  
 - One or two categorical variables  
-- No time-series data    
+- No time-series 
 
 Categorical variables 
 
 - If one category is used, it must have at least three levels for a minimum of three comparisons.  
 - If two categories are used, they must have at least two levels each for a minmum of four comparisons. 
+
+
+
+
+
+
+
 
 
 

@@ -20,7 +20,7 @@ Requirements
 
   - Minimum 200 observations of one quantitative variable  
   - One or two categorical variables  
-  - No time-series data
+  - No time-series
 
 Categorical variables
 
