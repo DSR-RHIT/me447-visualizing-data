@@ -6,20 +6,18 @@ from the list and include it in the portfolio.
 
 Counts
 
-  - quantile-quantile (q-q) plot
-  - cycle plot (month plot)
-  - Sankey diagram
-  - mosaic
-  - diverging stacked bar
+  - [q-q plot](#q-q-plot)  
+  - [cycle plot](#cycle-plot)  
+  - [Sankey diagram](#sankey-diagram)  
+  - [mosaic](#mosaic)  
+  - [diverging stacked bar](#diverging-stacked-bar)
 
 Spatial data
 
-  - quantitative map
-  - qualitative map
+  - [quantitative map](#quantitative-map)  
+  - [qualitative map](#qualitative-map)
 
-## data
-
-### q-q plot
+## q-q plot
 
 The quantile-quantile (q-q) plot is a graphical technique for
 determining if two groups of data come from populations with a common
@@ -34,17 +32,17 @@ distribution. Data requirements:
 For additional technical details, see (Quantile-quantile plot,
 [2018](#ref-nist-q-q)).
 
-### cycle plot
+## cycle plot
 
 For additional technical details, see
 
-### Sankey diagram
+## Sankey diagram
 
 For additional technical details, see
 
-### mosaic
+## mosaic
 
-### diverging stacked bar
+## diverging stacked bar
 
 Diverging stacked bar charts are the primary graphical display technique
 for reporting survey data. Respondents are typically asked to choose one
@@ -54,11 +52,11 @@ Disagree, No Opinion, Agree, Strongly Agree.
 For additional technical details, see Heiberger & Robbins
 ([2014](#ref-HeibergerRobbins2014)).
 
-### quantitative map
+## quantitative map
 
 For additional technical details, see
 
-### qualitative map
+## qualitative map
 
 For additional technical details, see
 

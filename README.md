@@ -52,7 +52,7 @@ permission
 |    | T | ![](resources/images/moodle.png) Kostelnick ([2007](#ref-Kostelnick2007)) Conundrum of clarity                                                    |                                                      | Reading response |
 |    | R | Color \[notes\]<br>Practice[]()                                                                                                                   | [D6 data](cm/cm301_portfolio_data-types.md) acquired |                  |
 |    | F | Presentations, practice, & portfolio<br>Roundtable e-notes[]()                                                                                    |                                                      | D5 graph & prose |
-| 9  | M | [D7 learn on your own](cm/cm270_d7-counts-maps.md) \[notes\]                                                                                      | Recent practices done                                |                  |
+| 9  | M | [D7 self-taught](cm/cm270_d7-counts-maps.md) \[notes\]                                                                                            | Recent practices done                                |                  |
 |    | T | Revising portfolio entries \[notes\]<br>Reading[]()                                                                                               |                                                      |                  |
 |    | R | Rendering multiple files \[notes\]<br>Practice[]()                                                                                                | [D7 data](cm/cm301_portfolio_data-types.md) acquired |                  |
 |    | F | Presentations, practice, & portfolio<br>Roundtable e-notes[]()                                                                                    |                                                      | D6 graph & prose |
@@ -92,7 +92,7 @@ Calendar links organized by topic
     ethically](cm/cm240_d4-cruel-pies.md)
   - [D5 redesign a graphical lie](cm/cm241_d5-fix-lies.md)
   - [D6 multivariate](cm/cm260_d6-multivariate.md)
-  - [D7 learn on your own](cm/cm270_d7-counts-maps.md)
+  - [D7 self-taught](cm/cm270_d7-counts-maps.md)
 
 ## readings
 
