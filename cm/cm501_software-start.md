@@ -1,5 +1,5 @@
 
-# installing software
+# start installing software
 
 We begin by installing R and RStudio on your local machine.
 

@@ -10,7 +10,7 @@ library(knitr)
 opts_knit$set(root.dir = "../")
 ```
 
-# installing software
+# start installing software
 
 We begin by installing R and RStudio  on your local machine. 
 
@@ -30,4 +30,4 @@ Please complete these tasks before our first lab period.
 
 ---    
 [Calendar](../README.md#calendar)    
-[Index](../README.md#index) 
+[Index](../README.md#index)    
