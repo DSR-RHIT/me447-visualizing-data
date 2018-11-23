@@ -34,6 +34,6 @@ coordinate plot.
 
 -----
 
-  - [Portfolio data summary](cm301_portfolio_data-types.md)  
-  - [Calendar](../README.md#Calendar)
-  - [Index](../README.md#Index)
+[Portfolio data summary](cm301_portfolio_data-types.md)  
+[Calendar](../README.md#Calendar)  
+[Index](../README.md#Index)

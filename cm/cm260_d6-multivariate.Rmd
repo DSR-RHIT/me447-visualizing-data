@@ -46,6 +46,6 @@ For four or more variables, use a scatterplot matrix or a parallel coordinate pl
 
 
 ---
-- [Portfolio data summary](cm301_portfolio_data-types.md)  
-- [Calendar](../README.md#Calendar)
-- [Index](../README.md#Index)
+[Portfolio data summary](cm301_portfolio_data-types.md)    
+[Calendar](../README.md#Calendar)    
+[Index](../README.md#Index)    
