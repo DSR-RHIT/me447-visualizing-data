@@ -63,8 +63,11 @@ rarely run R directly. For this reason, I suggest
   - Put a shortcut to RStudio on the desktop  
   - Delete the shortcuts to R (if any) on your desktop
 
+## next
+
+Continue [Installing software](cm501_software-start.md)
+
 -----
 
-[Installing software](cm501_software-start.md)  
 [Calendar](../README.md#calendar)  
 [Index](../README.md#index)

@@ -23,10 +23,13 @@ Jenny Bryan provided these instructions for a workshop I attended. I suggest you
 - [Mac OS](http://happygitwithr.com/install-git.html#mac-os) install 
 - [Linux](http://happygitwithr.com/install-git.html#linux) install 
 
-That's all for now. We'll do more with git when we work with GitHub.
 
 
----    
-[Installing software](cm501_software-start.md)    
+
+## next
+
+Continue [Installing software](cm501_software-start.md)  
+
+---  
 [Calendar](../README.md#calendar)    
 [Index](../README.md#index)    

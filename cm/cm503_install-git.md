@@ -18,10 +18,11 @@ suggest you read all the instructions before starting.
   - [Mac OS](http://happygitwithr.com/install-git.html#mac-os) install
   - [Linux](http://happygitwithr.com/install-git.html#linux) install
 
-That’s all for now. We’ll do more with git when we work with GitHub.
+## next
+
+Continue [Installing software](cm501_software-start.md)
 
 -----
 
-[Installing software](cm501_software-start.md)  
 [Calendar](../README.md#calendar)  
 [Index](../README.md#index)

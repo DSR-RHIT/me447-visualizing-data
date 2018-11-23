@@ -23,8 +23,11 @@ At the top level of your drive, create a new directory (folder) named "R". In th
 -   Windows: `C:/R/library`
 -   Linux: `~/R/library`
 
----    
-[Installing software](cm501_software-start.md)    
+## next
+
+Continue [Installing software](cm501_software-start.md)  
+
+---  
 [Calendar](../README.md#calendar)    
 [Index](../README.md#index)  
 
