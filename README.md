@@ -8,7 +8,6 @@ Rose-Hulman Institute of Technology.
 
   - [About the course](cm/cm000_course_about.md)
   - [Syllabus](cm/cm001_course_syllabus.md)
-  - [Portfolio data summary](cm/cm301_portfolio_data-types.md)  
   - [Index](#index)
   - Help links[](cm/admin-04_getting-help.md)  
   - [License](LICENSE.md)
