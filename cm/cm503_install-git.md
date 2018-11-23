@@ -22,6 +22,6 @@ That’s all for now. We’ll do more with git when we work with GitHub.
 
 -----
 
-[Installing software](cm501_software-start.md)
+[Installing software](cm501_software-start.md)  
 [Calendar](../README.md#calendar)  
 [Index](../README.md#index)

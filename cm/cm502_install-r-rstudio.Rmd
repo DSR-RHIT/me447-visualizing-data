@@ -57,6 +57,6 @@ RStudio is an integrated development environment (IDE) for R, so I rarely run R 
 -   Delete the shortcuts to R (if any) on your desktop  
 
 ---    
-[Installing software](cm501_software-start.md)
+[Installing software](cm501_software-start.md)    
 [Calendar](../README.md#calendar)    
-[Index](../README.md#index) 
+[Index](../README.md#index)  

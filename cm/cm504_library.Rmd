@@ -24,7 +24,7 @@ At the top level of your drive, create a new directory (folder) named "R". In th
 -   Linux: `~/R/library`
 
 ---    
-[Installing software](cm501_software-start.md)
+[Installing software](cm501_software-start.md)    
 [Calendar](../README.md#calendar)    
-[Index](../README.md#index) 
+[Index](../README.md#index)  
 

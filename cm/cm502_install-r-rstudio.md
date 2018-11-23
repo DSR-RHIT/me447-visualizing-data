@@ -65,6 +65,6 @@ rarely run R directly. For this reason, I suggest
 
 -----
 
-[Installing software](cm501_software-start.md)
+[Installing software](cm501_software-start.md)  
 [Calendar](../README.md#calendar)  
 [Index](../README.md#index)
