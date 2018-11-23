@@ -22,10 +22,10 @@ design that best conveys the stories in your data.
 
 Requirements
 
-  - minimum 20 observations
-  - three or more quantitative variables  
-  - time-series data are excluded
-  - no categorical variables
+  - Minimum 20 observations  
+  - Three or more quantitative variables  
+  - No time-series data  
+  - No categorical variables
 
 Use a conditioning plot (coplot) for three or four variables.
 

@@ -6,21 +6,10 @@ with different numbers of quantitative and categorical variables. The
 basic data structure for all graphs in the portfolio are summarized in
 the table.
 
-1.  Quantitative variables are typically continuous. If you encounter a
-    quantitative variable (other than time) that is discrete rather than
-    continuous, please consult with me on its suitability.
-
-2.  Is a categorical variable ordered? The order in which the levels of
-    a category are presented depends on whether or not the category is
-    ordered or not.
-
-3.  Some categorical variables are potentially optional. A category
-    marked “optional” indicates that the graph may or may not have a
-    categorical variable whose levels are used as a conditioning
-    variable.
-
-4.  For additional detail, click on the D1–D7 display
-link.
+Quantitative variables are typically continuous. If you encounter a
+quantitative variable (other than time) that is discrete rather than
+continuous, please consult with me on its suitability for your
+graph.
 
 | display                                             | type                  | quantitative  | categorical                            |
 | :-------------------------------------------------- | :-------------------- | :------------ | :------------------------------------- |
@@ -44,3 +33,8 @@ link.
 |                                                     | diverging stacked bar | one           | survey questions, min. 5               |
 |                                                     | quantitative map      | one           |                                        |
 |                                                     | qualitative map       |               | one, N levels                          |
+
+-----
+
+[Calendar](../README.md#calendar)  
+[Index](../README.md#index)

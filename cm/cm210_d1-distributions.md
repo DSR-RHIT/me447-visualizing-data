@@ -18,9 +18,9 @@ design that best conveys the stories in your data.
 
 Requirements
 
-  - minimum 200 observations of one quantitative variable  
-  - one or two categorical variables  
-  - time-series data are excluded
+  - Minimum 200 observations of one quantitative variable  
+  - One or two categorical variables  
+  - No time-series data
 
 Categorical variables
 
