@@ -34,7 +34,7 @@ link.
 | [D5 fix a lie](cm241_d5-fix-lies.md)                | dot plot              | one           | optional                               |
 |                                                     | line graph            | two           | optional                               |
 |                                                     | scatterplot           | two           | optional                               |
-| [D6 hypervariate](cm260_d6-hypervariate.md)         | conditioning plot     | three or four |                                        |
+| [D6 multivariate](cm260_d6-multivariate.md)         | conditioning plot     | three or four |                                        |
 |                                                     | scatterplot matrix    | four or more  |                                        |
 |                                                     | parallel coordinate   | four or more  | optional                               |
 | [D7 learn on your own](cm270_d7-counts-maps.md)     | q-q                   | one           | two distributions                      |
