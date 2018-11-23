@@ -48,7 +48,7 @@ df <- tribble(
 	"",   "line graph",  "two", "optional", 
 	"",   "scatterplot", "two", "optional", 
 	
-	"[D6 hypervariate](cm260_d6-hypervariate.md)", 
+	"[D6 multivariate](cm260_d6-multivariate.md)", 
 	    "conditioning plot",   "three or four", "", 
 	"", "scatterplot matrix",  "four or more", "", 
 	"", "parallel coordinate", "four or more", "optional", 

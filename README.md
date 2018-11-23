@@ -48,7 +48,7 @@ permission
 |    | T | [D5 redesign a graphical lie](cm/cm241_d5-fix-lies.md) \[notes\]<br>Case study<br>Practice[]()                                                    |                                                      |                  |
 |    | R | Scales \[[notes]()\]<br>Practice[]()                                                                                                              | [D5 data](cm/cm301_portfolio_data-types.md) acquired |                  |
 |    | F | Presentations, practice, & portfolio<br>Roundtable e-notes[]()                                                                                    |                                                      | D4 Graph & prose |
-| 8  | M | [D6 hypervariate](cm/cm260_d6-hypervariate.md) \[notes\]<br>Practice[]()                                                                          | Recent practices done                                |                  |
+| 8  | M | [D6 multivariate](cm/cm260_d6-multivariate.md) \[notes\]<br>Practice[]()                                                                          | Recent practices done                                |                  |
 |    | T | ![](resources/images/moodle.png) Kostelnick ([2007](#ref-Kostelnick2007)) Conundrum of clarity                                                    |                                                      | Reading response |
 |    | R | Color \[notes\]<br>Practice[]()                                                                                                                   | [D6 data](cm/cm301_portfolio_data-types.md) acquired |                  |
 |    | F | Presentations, practice, & portfolio<br>Roundtable e-notes[]()                                                                                    |                                                      | D5 Graph & prose |
@@ -88,9 +88,10 @@ Calendar links organized by topic
   - [D1 distributions](cm/cm210_d1-distributions.md)
   - [D2 multiway](cm/cm220_d2-multiway.md)
   - [D3 correlations](cm/cm230_d3-correlations.md)
-  - [D4 injuries or fatalities](cm/cm240_d4-cruel-pies.md)
-  - [D5 fix a lie](cm/cm241_d5-fix-lies.md)
-  - [D6 hypervariate](cm/cm260_d6-hypervariate.md)
+  - [D4 injuries or fatalities displayed
+    ethically](cm/cm240_d4-cruel-pies.md)
+  - [D5 redesign a graphical lie](cm/cm241_d5-fix-lies.md)
+  - [D6 multivariate](cm/cm260_d6-multivariate.md)
   - [D7 learn on your own](cm/cm270_d7-counts-maps.md)
 
 ## readings
