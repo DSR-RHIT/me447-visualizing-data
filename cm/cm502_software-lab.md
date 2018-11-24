@@ -1,6 +1,4 @@
 
-<a name="top"></a>
-
 # software lab
 
   - [prerequisites](#prerequisites)
@@ -25,9 +23,9 @@ You should already have done the following
 ## setup GitHub
 
 GitHub is a hosting service that provides an online home for your
-Git-based projects—critically important for sharing with collaborators.
-Once you have a GitHub account, you will update your repositories using
-the RStudio interface.
+Git-based projectsâ€”critically important for sharing with
+collaborators. Once you have a GitHub account, you will update your
+repositories using the RStudio interface.
 
   - [Join GitHub
     Education](http://happygitwithr.com/github-acct.html#free-private-repos)
@@ -62,8 +60,6 @@ you made.
   - Navigate to the repo on GitHub and go to *Settings \> Danger Zone \>
     Delete this repository*
 
-<a href="#top">Top of page</a>
-
 ## create a repo
 
 Create a repo on GitHub called `portfolio-last-first`, replacing `last`
@@ -77,15 +73,13 @@ name (given name or forename)
     need a license)
   - *Create repository*
 
-<a href="#top">Top of page</a>
-
 ## create an Rproject
 
 Instructions adapted from (Bryan, [2018](#ref-Bryan2018))
 
   - Navigate to your portfolio repo on GitHub  
-  - Copy the HTTPS clone URL to your clipboard via the green “Clone or
-    Download” button. The URL will look something like this:
+  - Copy the HTTPS clone URL to your clipboard via the green â€œClone or
+    Downloadâ€ button. The URL will look something like this:
     `https://github.com/jennybc/myrepo.git`
 
 In RStudio,
@@ -126,8 +120,6 @@ setup a repo for an existing RStudio Project.
     first](http://happygitwithr.com/existing-github-first.html)
   - [Existing project, GitHub
     last](http://happygitwithr.com/existing-github-last.html)
-
-<a href="#top">Top of page</a>
 
 ## create the Renviron
 
@@ -190,8 +182,6 @@ Remember, every time you create a new project (with or without version
 control), paste a copy of the `.Renviron` file at the top level of the
 project directory
 
-<a href="#top">Top of page</a>
-
 ## setup directories
 
 All we are going to do is create a set of empty sub-directories
@@ -218,8 +208,6 @@ additional files such as `.gitignore` or `README.md`)
         |-- resources/
         |-- .Renviron
         `-- portfolio-last-first.Rproj
-
-<a href="#top">Top of page</a>
 
 ## edit gitignore
 
@@ -261,7 +249,7 @@ Once the file exists,
 
 Because your collaborators can render your Rmd files themselves, we can
 excuse rendered documents, e.g., HTML files or docx files, from version
-control. Add these lines of code to the `.gitignore` file. Save.
+control. Add these lines of code to the `.gitignore` file.
 
     # Possible rendered files in the main directory
     *.html
@@ -270,6 +258,8 @@ control. Add these lines of code to the `.gitignore` file. Save.
     # Possible rendered files in the sub-directories
     */*.html
     */*.docx
+
+  - Save and close the gitignore file
 
 Anytime you create a folder or a file you want git to ignore, just add
 its path to the `.gitignore` file
@@ -293,8 +283,6 @@ additional files or folders, you should have at least the following:
         |-- .Renviron
         `-- portfolio-last-first.Rproj
 
-<a href="#top">Top of page</a>
-
 ## invite collaborator
 
 We get two primary benefits from using version control
@@ -311,8 +299,6 @@ GitHub and
 4.  *Add Collaborator*
 
 <img src="../resources/images/github-collaborate-2.png" width="100%" />
-
-<a href="#top">Top of page</a>
 
 ## commits
 
@@ -338,8 +324,6 @@ If there are files shown in the Git pane,
 
 Navigate to your online repo and you should find that it includes all
 your changes.
-
-<a href="#top">Top of page</a>
 
 ## edit README
 
@@ -397,12 +381,7 @@ Your project directory should look something like this,
         |-- README.Rmd
         `-- portfolio-last-first.Rproj
 
-Start writing the prose to describe the project. The README should
-include
-
-  - project context and summary
-  - what the project looks like in action
-  - how the reader might use the project
+Start writing the prose to describe the project.
 
 When you end your R session, make sure to
 
@@ -413,8 +392,6 @@ When you end your R session, make sure to
 
 For more information on writing a good README file, see
 <https://github.com/noffle/art-of-readme>
-
-<a href="#top">Top of page</a>
 
 ## references
 
