@@ -96,13 +96,16 @@ Calendar links organized by topic
     requirements](cm/cm301_portfolio_display-reqts.md)
   - [D1
     distributions](cm/cm301_portfolio_display-reqts.md#D1-distributions)
-  - [D2 multiway](cm/cm220_d2-multiway.md)
-  - [D3 correlations](cm/cm230_d3-correlations.md)
-  - [D4 injuries or fatalities displayed
-    ethically](cm/cm240_d4-cruel-pies.md)
-  - [D5 redesign a graphical lie](cm/cm241_d5-fix-lies.md)
-  - [D6 multivariate](cm/cm260_d6-multivariate.md)
-  - [D7 self-taught](cm/cm270_d7-counts-maps.md)
+  - [D2 multiway](cm/cm301_portfolio_display-reqts.md#D2-multiway)
+  - [D3
+    correlations](cm/cm301_portfolio_display-reqts.md#D3-correlations)
+  - [D4 injuries or
+    fatalities](cm/cm301_portfolio_display-reqts.md#D4-injuries-or-fatalities)
+  - [D5 redesign a graphical
+    lie](cm/cm301_portfolio_display-reqts.md#D5-redesign-a-graphical-lie)
+  - [D6
+    multivariate](cm/cm301_portfolio_display-reqts.md#D6-multivariate)
+  - [D7 self-taught](cm/cm301_portfolio_display-reqts.md#D7-self-taught)
 
 ## readings
 
