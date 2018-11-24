@@ -35,7 +35,7 @@ If you need additional assistance for Mac OS or Linux, these links might be usef
 
 
 
-## install git {#install-git}
+## install git
 
 Git is version control software you install on your machine. Once installed, we access its functionality via the RStudio interface. Jenny Bryan provided these installation instructions for a workshop I attended. I suggest you read all the instructions before starting. 
 
@@ -51,7 +51,7 @@ Optional reading: If you are interested in why version control is important, rea
 
 
 
-## library {#library}
+## create a library for packages 
 
 Packages are like "apps" for R. As Hadley Wickham [-@Wickham2014AdvR] states, "Packages are the fundamental units of reproducible R code. They include reusable functions, the documentation that describes how to use them, and sample data."  
 
@@ -65,7 +65,7 @@ At the top level of your drive, create a new directory (folder) named "R". In th
 
 
 
-## test {#test}
+## test the installation
 
 Here we perform some simple checks to determine if the initial software installation is successful. If the test is unsuccessful, don't panic---we'll have some time in lab to make things work. 
 

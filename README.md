@@ -86,8 +86,9 @@ Calendar links organized by topic
     RStudio](cm/cm501_install-software.md#install-R-and-RStudio)
   - [Install git](cm/cm501_install-software.md#install-git)
   - [Create a library for
-    packages](cm/cm501_install-software.md#library)
-  - [Test the initial installation](cm/cm501_install-software.md#test)
+    packages](cm/cm501_install-software.md#create-a-library-for-packages)
+  - [Test the initial
+    installation](cm/cm501_install-software.md#test-the-installation)
 
 ## portfolio
 
