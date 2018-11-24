@@ -65,7 +65,7 @@ At the top level of your drive, create a new directory (folder) named "R". In th
 
 
 
-## test the initial installation {#test}
+## test {#test}
 
 Here we perform some simple checks to determine if the initial software installation is successful. If the test is unsuccessful, don't panic---we'll have some time in lab to make things work. 
 

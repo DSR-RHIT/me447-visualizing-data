@@ -62,7 +62,7 @@ example,
   - Windows: `C:/R/library`  
   - Linux: `~/R/library`
 
-## test the initial installation
+## test
 
 Here we perform some simple checks to determine if the initial software
 installation is successful. If the test is unsuccessful, don’t
