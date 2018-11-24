@@ -76,7 +76,16 @@ Calendar links organized by topic
 
 ## data
 
-  - [Data lab](cm/cm100_data-lab.md)
+  - [Know your desired data
+    structure](cm/cm100_data-lab.md#know-your-desired-data-structure)
+  - [Practice data sets in
+    R](cm/cm100_data-lab.md#practice-data-sets-in-R)
+  - [Begin acquiring data](cm/cm100_data-lab.md#begin-acquiring-data)
+  - [Classify your data](cm/cm100_data-lab.md#classify-your-data)
+
+## file management
+
+  - [File management](cm/cm100_data-lab.md#file-management)
 
 ## graphs
 
