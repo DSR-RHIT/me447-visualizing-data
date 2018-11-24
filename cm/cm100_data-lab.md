@@ -187,4 +187,6 @@ summarize its features, for example,
   - name, number, and discrete levels of categorical variables
   - other features relevant to the particular display type
 
-State specifically how each data requirements has been met.
+State specifically how each data requirements has been met. This summary
+will be part of the prose description that accompanies each graph in the
+portfolio.
