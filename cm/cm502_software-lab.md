@@ -25,9 +25,9 @@ You should already have done the following
 ## setup GitHub
 
 GitHub is a hosting service that provides an online home for your
-Git-based projectsâ€”critically important for sharing with
-collaborators. Once you have a GitHub account, you will update your
-repositories using the RStudio interface.
+Git-based projects—critically important for sharing with collaborators.
+Once you have a GitHub account, you will update your repositories using
+the RStudio interface.
 
   - [Join GitHub
     Education](http://happygitwithr.com/github-acct.html#free-private-repos)
@@ -84,8 +84,8 @@ name (given name or forename)
 Instructions adapted from (Bryan, [2018](#ref-Bryan2018))
 
   - Navigate to your portfolio repo on GitHub  
-  - Copy the HTTPS clone URL to your clipboard via the green â€œClone or
-    Downloadâ€ button. The URL will look something like this:
+  - Copy the HTTPS clone URL to your clipboard via the green “Clone or
+    Download” button. The URL will look something like this:
     `https://github.com/jennybc/myrepo.git`
 
 In RStudio,
@@ -169,13 +169,13 @@ If the *Install to Library* is correct,
 If all goes well, you’ll see something like this in the R Console
 
     ## > install.packages("tidyverse")
-    ## Installing package into â€˜C:/R/libraryâ€™
-    ## (as â€˜libâ€™ is unspecified)
+    ## Installing package into 'C:/R/library' 
+    ## (as 'lib' is unspecified)
     ## trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.5/tidyverse_1.2.1.zip'
     ## Content type 'application/zip' length 92547 bytes (90 KB)
     ## downloaded 90 KB
     ## 
-    ## package â€˜tidyverseâ€™ successfully unpacked and MD5 sums checked
+    ## package 'tidyverse' successfully unpacked and MD5 sums checked
 
 Let’s check your project directory. While you may have additional files
 or folders (for example, when you initialized your repo you may have

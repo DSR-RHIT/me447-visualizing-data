@@ -161,13 +161,13 @@ If the *Install to Library* is correct,
 If all goes well, you'll see something like this in the R Console 
 
     ## > install.packages("tidyverse")
-    ## Installing package into ‘C:/R/library’
-    ## (as ‘lib’ is unspecified)
+    ## Installing package into 'C:/R/library' 
+    ## (as 'lib' is unspecified)
     ## trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.5/tidyverse_1.2.1.zip'
     ## Content type 'application/zip' length 92547 bytes (90 KB)
     ## downloaded 90 KB
     ## 
-    ## package ‘tidyverse’ successfully unpacked and MD5 sums checked
+    ## package 'tidyverse' successfully unpacked and MD5 sums checked
 
 
 Let's check your project directory. While you may have additional files or folders (for example, when you initialized your repo you may have created `.gitignore` or `README.md`), you should have at least the following folders and files,  
