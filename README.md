@@ -21,7 +21,7 @@ permission
 | w  | d | agenda & assignments                                                                                                                                                                  | milestones                                                                             | due              |
 | :- | :- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------- | :--------------- |
 | 1  | M | Course goals and outcomes<br>Sign-out two reprints[]()                                                                                                                                |                                                                                        |                  |
-|    | T | Introduction to visual rhetoric<br>[Install software](cm/cm501_install-software.md)                                                                                                   |                                                                                        |                  |
+|    | T | Introduction to visual rhetoric<br>[Install software](cm/cm501_install-software.md#install-software)                                                                                  |                                                                                        |                  |
 |    | R | Relating data structure to graph design<br>![](resources/images/document.jpg) Doumont ([2009](#ref-Doumont2009)) Designing the graph                                                  |                                                                                        |                  |
 |    | F | Software lab[]()                                                                                                                                                                      | Software setup complete                                                                |                  |
 | 2  | M | Graph basics with ggplot2<br>Practice[]()                                                                                                                                             |                                                                                        |                  |
@@ -75,8 +75,6 @@ Calendar links organized by topic
   - [License](LICENSE.md)
 
 ## data
-
-  - [Portfolio data summary](cm/cm301_portfolio_data-types.md)
 
 ## graphs
 
