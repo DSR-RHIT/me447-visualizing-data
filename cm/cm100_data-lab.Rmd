@@ -13,12 +13,139 @@ opts_knit$set(root.dir = "../")
 opts_chunk$set(echo = FALSE, message = FALSE, collapse = TRUE, warning = FALSE)
 ```
 
+```{r}
+library(tidyverse)
+```
+
+
+## file management 
+
+lecture / slides on file management 
 
 
 
-## obtain data for your portfolio 
 
-- [portfolio data](cm301_portfolio_data-types.md)
+## practice data sets in R 
+
+We use the practice data sets available in R to practice getting the data into the right form for the graph and for practice creating the various graph types. Thus you can work ahead on learning to create the various graph types before obtaining the final data sets used in the portfolio.   
+
+```{r}
+data()
+```
+
+To see the data sets included in your R workspace, use the *data()* function. A tab will open in the RStudio pane that looks like this: 
+
+```
+Data sets in package 'datasets':
+
+AirPassengers      Monthly Airline Passenger Numbers 1949-1960
+BJsales            Sales Data with Leading Indicator
+BOD                Biochemical Oxygen Demand
+CO2                Carbon Dioxide Uptake in Grass Plants
+ChickWeight        Weight versus age of chicks on different diets
+...etc
+```
+
+You can scroll down this list looking for interesting data.  Some of these datasets are used regularly by R folks to illustrate package functionality. 
+
+- Motor Trend car data. Type `?mtcars` in the Console to read more about it. 
+
+```{r}
+glimpse(mtcars)
+```
+
+- Three species of iris (the flower). Type `?iris` in the Console to read more about it. 
+
+```{r}
+glimpse(iris)
+```
+
+- Survival of passengers on the Titanic. Type `?Titanic` in the Console to read more about it. 
+
+```{r}
+glimpse(Titanic)
+```
+
+- Star Wars characters, from the *dplyr* package. Type `?starwars` in the Console to read more about it. 
+
+```{r}
+glimpse(starwars)
+```
+
+- US economic time series, from the *ggplot2* package. Type `?economics` in the Console to read more about it. 
+
+```{r}
+glimpse(economics)
+```
+
+- World Health Organization tuberculosis data, from the *tidyr* package. Type `?who` in the Console to read more about it. 
+
+```{r}
+glimpse(who)
+```
+
+
+
+
+
+
+
+
+
+## sources of data 
+
+If you find other sites you find useful or entertaining, please let me know and I'll add them to the lists. 
+
+Data sites
+
+- [National snow and ice data center](https://nsidc.org/) 
+- [Visualizing obesity across United States by using data from Wikipedia](https://datascienceplus.com/visualizing-obesity-across-united-states-by-using-data-from-wikipedia/) 
+- [Extracting tables from PDFs in R using the tabulizer package](https://datascienceplus.com/extracting-tables-from-pdfs-in-r-using-the-tabulizer-package/) 
+- [Pulling data out of census spreadsheets using R](https://datascienceplus.com/pulling-data-out-of-census-spreadsheets-using-r/) 
+- [Gapminder: Time series data about the world](http://www.gapminder.org/data/)
+- [rOpenSci packages](https://ropensci.org/packages/#data_access)
+- [Using data.gov APIs in R](http://data.library.virginia.edu/using-data-gov-apis-in-r/) 
+- [Datasets for data mining and data science](http://www.kdnuggets.com/datasets/index.html)
+- [US Census](https://www.census.gov/data.html) 
+ 
+ 
+ 
+
+Articles about interesting data 
+
+- [Assault deaths to 2015](https://kieranhealy.org/blog/archives/2017/10/02/assault-deaths-to-2015/) 
+- [Pirating pirate data for pirate day](http://blog.revolutionanalytics.com/2017/09/pirating-pirate-data-for-pirate-day.html) Yes, it really is about 21st century pirates
+- [Exploratory data analysis of tropical storms in R](https://www.stoltzmaniac.com/exploratory-data-analysis-of-tropical-storms-in-r/) 
+- [Fun data for teaching R](https://bartomeuslab.com/2016/01/21/fun-data-for-teaching-r/) blog  
+- [Discovering good data packages](https://ropenscilabs.github.io/data-packages/) repo  
+- [R packages for data access](http://blog.revolutionanalytics.com/2016/08/r-packages-data-access.html) blog  
+- [19 free public data sets for your first data science project](https://www.springboard.com/blog/free-public-data-sets-data-science-project/)  
+
+Data tutorials from other authors
+
+- [Getting data from the web part 1](https://github.com/STAT545-UBC/STAT545-UBC.github.io/blob/master/webdata02_activity.md) tutorial from Stat 545 by Jenny Bryan  
+- [Getting data from the web part 2](https://github.com/STAT545-UBC/STAT545-UBC.github.io/blob/master/webdata03_activity.md) tutorial from Stat 545 by Jenny Bryan  
+- [This R data import tutorial is everything you need, part 1](https://www.datacamp.com/community/tutorials/r-data-import-tutorial/#gs.DdZtwPI) from Data Camp  
+- [Importing data into R, part 2](https://www.datacamp.com/community/tutorials/importing-data-r-part-two#gs.uCsWBZE) from Data Camp  
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+## assess the data structure 
+
+## begin acquiring data
+
+
+
 
 
 
