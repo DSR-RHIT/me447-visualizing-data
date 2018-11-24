@@ -1,5 +1,17 @@
 
+<a name="top"></a>
+
 # software lab
+
+  - [setup GitHub](#setup-github)
+  - [create a repo](#create-a-repo)
+  - [create an Rproject](#create-an-rproject)
+  - [create the Renviron](#create-the-renviron)
+  - [setup directories](#setup-directories)
+  - [edit gitignore](#edit-gitignore)
+  - [invite collaborator](#invite-collaborator)
+  - [commits](#commits)
+  - [edit README](#edit-readme)
 
 ## setup GitHub
 
@@ -13,13 +25,13 @@ talk about version
 control?](https://dx.doi.org/10.7287%2Fpeerj.preprints.3159v2) for a
 good introduction to GitHub repositories.
 
-#### obtain an account
+### obtain an account
 
   - [Join GitHub
     Education](http://happygitwithr.com/github-acct.html#free-private-repos)
     Follow the links to join GitHub Education â€” itâ€™s free.
 
-#### setup
+### setup
 
 Jenny Bryan provided the instructions below for a workshop I attended. I
 suggest you read the full instructions for one of the steps before doing
@@ -40,7 +52,7 @@ the shell, open RStudio and use the pulldown menu *Tools \> Shell*.
     Git](http://happygitwithr.com/rstudio-git-github.html#rstudio-git-github)
     and, therefore, can talk to GitHub
 
-#### clean up
+### clean up
 
 Once everything is working OK, you may delete any temporary test repos
 you made.
@@ -48,6 +60,8 @@ you made.
   - Delete the local test project directories
   - Navigate to the repo on GitHub and go to *Settings \> Danger Zone \>
     Delete this repository*
+
+<a href="#top">Top of page</a>
 
 ## create a repo
 
