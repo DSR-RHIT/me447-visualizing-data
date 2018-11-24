@@ -39,10 +39,10 @@ attended. I suggest you read all the instructions before starting.
   - [Mac OS](http://happygitwithr.com/install-git.html#mac-os) install
   - [Linux](http://happygitwithr.com/install-git.html#linux) install
 
-Optional reading: If you are interested in why version control is
-important, read sections 1 and 2 of the following article by Jenny
-Bryan, [Excuse me, do you have a moment to talk about version
-control?](https://dx.doi.org/10.7287%2Fpeerj.preprints.3159v2)
+Optional reading: Read sections 1 and 2 of [Excuse me, do you have a
+moment to talk about version
+control?](https://dx.doi.org/10.7287%2Fpeerj.preprints.3159v2) for a
+good introduction to version control.
 
 ## create a library for packages
 
