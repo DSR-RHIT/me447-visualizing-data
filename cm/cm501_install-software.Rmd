@@ -51,7 +51,7 @@ Optional reading: If you are interested in why version control is important, rea
 
 
 
-## create a library for packages {#create-library}
+## create a library for packages {#library}
 
 Packages are like "apps" for R. As Hadley Wickham [-@Wickham2014AdvR] states, "Packages are the fundamental units of reproducible R code. They include reusable functions, the documentation that describes how to use them, and sample data."  
 
@@ -65,7 +65,7 @@ At the top level of your drive, create a new directory (folder) named "R". In th
 
 
 
-## test the initial installation {#test-install}
+## test the initial installation {#test}
 
 Here we perform some simple checks to determine if the initial software installation is successful. If the test is unsuccessful, don't panic---we'll have some time in lab to make things work. 
 
