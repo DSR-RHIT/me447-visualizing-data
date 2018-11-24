@@ -82,7 +82,7 @@ Calendar links organized by topic
 
 ## software
 
-  - [Install R and RStudio](cm/cm501_install-software.md#install-R)
+  - [Install R and RStudio](cm/cm501_install-software.md#install-r)
   - [Install git](cm/cm501_install-software.md#install-git)
   - [Create a library for
     packages](cm/cm501_install-software.md#library)

@@ -44,7 +44,7 @@ important, read sections 1 and 2 of the following article by Jenny
 Bryan, [Excuse me, do you have a moment to talk about version
 control?](https://dx.doi.org/10.7287%2Fpeerj.preprints.3159v2)
 
-## create a library for packages
+## library
 
 Packages are like “apps” for R. As Hadley Wickham
 ([2014](#ref-Wickham2014AdvR)) states, “Packages are the fundamental

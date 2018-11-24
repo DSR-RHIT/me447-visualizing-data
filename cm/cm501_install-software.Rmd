@@ -18,7 +18,7 @@ Please complete these tasks before our first lab period.
 
 
 
-## install R and RStudio {#install-R}
+## install R and RStudio {#install-r}
 
 Windows users may have to login as an Administrator (localmgr) before installing the software. 
 
@@ -51,7 +51,7 @@ Optional reading: If you are interested in why version control is important, rea
 
 
 
-## create a library for packages {#library}
+## library {#library}
 
 Packages are like "apps" for R. As Hadley Wickham [-@Wickham2014AdvR] states, "Packages are the fundamental units of reproducible R code. They include reusable functions, the documentation that describes how to use them, and sample data."  
 
