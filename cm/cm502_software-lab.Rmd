@@ -1,0 +1,70 @@
+---
+output: github_document
+bibliography: "../resources/bib/refs.bib" 
+csl: "../resources/styles/journal-of-peace-research.csl"
+link-citations: yes
+---
+
+```{r include = FALSE}
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo = FALSE, out.width = "70%", comment = NULL)
+```
+
+# software lab
+
+ 
+
+## setup GitHub
+
+
+
+## create a repo
+
+
+
+## create an Rproject
+
+
+
+## create the .Renviron
+
+
+
+## setup directories
+
+
+
+## edit gitignore
+
+
+
+## invite collaborator
+
+
+
+## commits
+
+
+
+## edit README
+
+
+
+
+
+
+
+
+
+
+## references
+
+<div id="refs"></div>
+
+
+
+
+---    
+[Calendar](../README.md#calendar)    
+[Index](../README.md#index)    

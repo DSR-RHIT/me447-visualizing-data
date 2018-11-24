@@ -87,6 +87,15 @@ Calendar links organized by topic
     packages](cm/cm501_install-software.md#create-a-library-for-packages)
   - [Test the initial
     installation](cm/cm501_install-software.md#test-the-installation)
+  - [Setup GitHub](cm/cm502_software-lab.md#setup-GitHub)
+  - [Create a repo](cm/cm502_software-lab.md#create-a-repo)
+  - [Create an Rproject](cm/cm502_software-lab.md#create-an-Rproject)
+  - [Create the Renviron](cm/cm502_software-lab.md#create-the-Renviron)
+  - [Setup directories](cm/cm502_software-lab.md#setup-directories)
+  - [Edit gitignore](cm/cm502_software-lab.md#edit-gitignore)
+  - [Invite collaborator](cm/cm502_software-lab.md#invite-collaborator)
+  - [Commits](cm/cm502_software-lab.md#commits)
+  - [Edit README](cm/cm502_software-lab.md#edit-README)
 
 ## portfolio
 
