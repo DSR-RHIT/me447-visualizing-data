@@ -7,6 +7,13 @@ link-citations: yes
 
 # data lab
 
+- [File management] 
+- [Know your desired data structure] 
+- [Practice data sets in R ] 
+- [Begin acquiring data] 
+- [Classify your data] 
+
+
 ```{r echo=FALSE}
 library(knitr)
 opts_knit$set(root.dir = "../")
@@ -21,6 +28,24 @@ library(tidyverse)
 ## file management 
 
 lecture / slides on file management 
+
+
+
+
+
+
+## know your desired data structure 
+
+Every graph in your portfolio has a specific data structure, summarized in the [portfolio data summary](cm301_portfolio_display-reqts.md#portfolio-display-requirements). As you look for data---both for practice and for the final display---know the data structure you are looking for.   
+
+The elements of a prospective data set you should identfy include 
+
+- the number of observations 
+- the number of quantitative variables 
+- the number of categorical variables and the number of levels of each 
+
+
+
 
 
 
@@ -48,51 +73,41 @@ ChickWeight        Weight versus age of chicks on different diets
 
 You can scroll down this list looking for interesting data.  Some of these datasets are used regularly by R folks to illustrate package functionality. 
 
-- Motor Trend car data. Type `?mtcars` in the Console to read more about it. 
+Motor Trend car data. Type `?mtcars` in the Console to read more about it. 
 
 ```{r}
 glimpse(mtcars)
 ```
 
-- Three species of iris (the flower). Type `?iris` in the Console to read more about it. 
+Three species of iris (the flower). Type `?iris` in the Console to read more about it. 
 
 ```{r}
 glimpse(iris)
 ```
 
-- Survival of passengers on the Titanic. Type `?Titanic` in the Console to read more about it. 
+Survival of passengers on the Titanic. Type `?Titanic` in the Console to read more about it. 
 
 ```{r}
 glimpse(Titanic)
 ```
 
-- Star Wars characters, from the *dplyr* package. Type `?starwars` in the Console to read more about it. 
+Star Wars characters, from the *dplyr* package. Type `?starwars` in the Console to read more about it. 
 
 ```{r}
 glimpse(starwars)
 ```
 
-- US economic time series, from the *ggplot2* package. Type `?economics` in the Console to read more about it. 
+US economic time series, from the *ggplot2* package. Type `?economics` in the Console to read more about it. 
 
 ```{r}
 glimpse(economics)
 ```
 
-- World Health Organization tuberculosis data, from the *tidyr* package. Type `?who` in the Console to read more about it. 
-
-```{r}
-glimpse(who)
-```
 
 
 
 
-
-
-
-
-
-## sources of data 
+## begin acquiring data
 
 If you find other sites you find useful or entertaining, please let me know and I'll add them to the lists. 
 
@@ -133,16 +148,27 @@ Data tutorials from other authors
 
 
 
+## classify your data 
+
+When you think you have a data set suitable for a particular graph type, summarize its features, for example, 
+
+- the number of observations 
+- name, number, and range of quantitative variables   
+- name, number, and discrete levels of categorical variables 
+- other features relevant to the particular display type 
+
+
+State specifically how each data requirements has been met. 
+
 
 
 
  
  
- 
 
-## assess the data structure 
 
-## begin acquiring data
+
+
 
 
 
