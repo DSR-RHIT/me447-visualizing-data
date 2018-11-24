@@ -23,9 +23,9 @@ You should already have done the following
 ## setup GitHub
 
 GitHub is a hosting service that provides an online home for your
-Git-based projectsâ€”critically important for sharing with
-collaborators. Once you have a GitHub account, you will update your
-repositories using the RStudio interface.
+Git-based projects—critically important for sharing with collaborators.
+Once you have a GitHub account, you will update your repositories using
+the RStudio interface.
 
   - [Join GitHub
     Education](http://happygitwithr.com/github-acct.html#free-private-repos)
@@ -78,8 +78,8 @@ name (given name or forename)
 Instructions adapted from (Bryan, [2018](#ref-Bryan2018))
 
   - Navigate to your portfolio repo on GitHub  
-  - Copy the HTTPS clone URL to your clipboard via the green â€œClone or
-    Downloadâ€ button. The URL will look something like this:
+  - Copy the HTTPS clone URL to your clipboard via the green “Clone or
+    Download” button. The URL will look something like this:
     `https://github.com/jennybc/myrepo.git`
 
 In RStudio,
@@ -199,13 +199,14 @@ When done, the directory tree should look like this (you might have
 additional files such as `.gitignore` or `README.md`)
 
     portfolio-last-first/
-        |-- carpentry/
         |-- data/
         |-- data-raw/
-        |-- design/
         |-- displays/
+        |-- graph/
+        |-- practice/
         |-- reports/
         |-- resources/
+        |-- tidy/
         |-- .Renviron
         `-- portfolio-last-first.Rproj
 
@@ -277,6 +278,7 @@ additional files or folders, you should have at least the following:
         |-- data-raw/
         |-- design/
         |-- displays/
+        |-- practice/
         |-- reports/
         |-- resources/
         |-- .gitignore
@@ -348,17 +350,19 @@ Add the YAML header for a GitHub document and your name, as follows. You
 can edit the title and date to suit yourself.
 
     ---
-    title: "Data Visualization Portfolio"
-    author: "your name"
-    date: 2018-11-24
     output: github_document
     ---
 
-We’ll format section headings using a level-2 heading, for example,
+Create a level-1 heading for the repo title and add your name and date.
+By using the inline R code `Sys.Date()`, the date is automatically set
+to the current date.
 
-    ## Introduction 
-    
-    Some prose 
+``` 
+# Portfolio of data displays  
+
+Your Name  
+`r Sys.Date()`  
+```
 
 Add some prose that introduces your portfolio.
 
@@ -373,6 +377,7 @@ Your project directory should look something like this,
         |-- data-raw/
         |-- design/
         |-- displays/
+        |-- practice/
         |-- reports/
         |-- resources/
         |-- .gitignore

@@ -194,13 +194,14 @@ Next, use one of these two approaches
 Using either approach, create new folders for `data`, `manage`, etc. When done, the directory tree should look like this (you might have additional files such as `.gitignore` or `README.md`)
 
     portfolio-last-first/
-        |-- carpentry/
         |-- data/
         |-- data-raw/
-        |-- design/
         |-- displays/
+        |-- graph/
+        |-- practice/
         |-- reports/
         |-- resources/
+        |-- tidy/
         |-- .Renviron
         `-- portfolio-last-first.Rproj
 
@@ -271,6 +272,7 @@ Lastly, let's check your project directory. While you may have additional files 
         |-- data-raw/
         |-- design/
         |-- displays/
+        |-- practice/
         |-- reports/
         |-- resources/
         |-- .gitignore
@@ -352,19 +354,16 @@ Add the YAML header for a GitHub document and your name, as follows. You can edi
 
 ```
 ---
-title: "Data Visualization Portfolio"
-author: "your name"
-date: 2018-11-24
 output: github_document
 ---
 ```
 
+Create a level-1 heading for the repo title and add your name and date. By using the inline R code `Sys.Date()`, the date is automatically set to the current date. 
 
-We'll format section headings using a level-2 heading, for example, 
+    # Portfolio of data displays  
 
-    ## Introduction 
-    
-    Some prose 
+    Your Name  
+    `r "\u0060r Sys.Date()\u0060"`  
 
 Add some prose that introduces your portfolio. 
 
@@ -378,6 +377,7 @@ Your project directory should look something like this,
         |-- data-raw/
         |-- design/
         |-- displays/
+        |-- practice/
         |-- reports/
         |-- resources/
         |-- .gitignore
