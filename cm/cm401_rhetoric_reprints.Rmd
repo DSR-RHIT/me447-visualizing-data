@@ -1,0 +1,24 @@
+---
+output: github_document
+bibliography: "../resources/bib/refs.bib" 
+csl: "../resources/styles/journal-of-peace-research.csl"
+link-citations: yes
+---
+
+```{r include = FALSE}
+library(knitr)
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo = FALSE, out.width = "70%", comment = NULL)
+```
+
+# signout reprints
+
+Two of our readings are printed pages. The Tufte booklets are my personal copies. The Doumont reprints are reprinted with permission of the puiblisher for our course this term only. 
+
+Duing class, please sign for one copy of each and return them per the calendar. 
+
+
+---  
+[Calendar](../README.md#calendar)    
+[Index](../README.md#index)  
+
