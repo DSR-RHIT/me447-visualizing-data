@@ -30,7 +30,7 @@ permission
 |    | F | [Data lab](cm/cm100_data_data-lab.md)<br>Return reprints                                                                                          | Start acquiring data                                 |                  |
 | 3  | M | Markdown basics \[notes\]<br>Practice[]()                                                                                                         | Recent practices done                                |                  |
 |    | T | ![](resources/images/moodle.png) Robbins ([2013](#ref-Robbins2013Ch6)) General design principles                                                  |                                                      |                  |
-|    | R | [D1 distributions](cm/cm210_d1-distributions.md) \[notes\]<br>Practice[]()                                                                        | [D1 data](cm/cm301_portfolio_data-types.md) acquired |                  |
+|    | R | [D1 distributions](cm/cm301_portfolio_display-reqts.md#D1-distributions) \[notes\]<br>Practice[]()                                                | [D1 data](cm/cm301_portfolio_data-types.md) acquired |                  |
 |    | F | Portfolio lab[]()                                                                                                                                 | Portfolio started                                    |                  |
 | 4  | M | Data carpentry \[notes\]<br>Practice[]()                                                                                                          | Recent practices done                                |                  |
 |    | T | ![](resources/images/moodle.png) Wainer ([2014](#ref-Wainer2014)) 15 displays about one thing                                                     |                                                      | Reading response |
@@ -92,7 +92,8 @@ Calendar links organized by topic
 
 ## portfolio
 
-  - [Portfolio data summary](cm/cm301_portfolio_display-reqts.md)
+  - [Portfolio display
+    requirements](cm/cm301_portfolio_display-reqts.md)
   - [D1
     distributions](cm/cm301_portfolio_display-reqts.md#D1-distributions)
   - [D2 multiway](cm/cm220_d2-multiway.md)
