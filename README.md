@@ -92,8 +92,9 @@ Calendar links organized by topic
 
 ## portfolio
 
-  - [Portfolio data summary](cm/cm301_portfolio_data-types.md)
-  - [D1 distributions](cm/cm210_d1-distributions.md)
+  - [Portfolio data summary](cm/cm301_portfolio_display-reqts.md)
+  - [D1
+    distributions](cm/cm301_portfolio_display-reqts.md#D1-distributions)
   - [D2 multiway](cm/cm220_d2-multiway.md)
   - [D3 correlations](cm/cm230_d3-correlations.md)
   - [D4 injuries or fatalities displayed
