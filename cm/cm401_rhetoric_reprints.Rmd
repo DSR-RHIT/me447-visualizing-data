@@ -13,10 +13,19 @@ opts_chunk$set(echo = FALSE, out.width = "70%", comment = NULL)
 
 # signout reprints
 
-Two of our readings are printed pages. The Tufte booklets are my personal copies. The Doumont reprints are reprinted with permission of the puiblisher for our course this term only. 
+Two of our readings are printed pages. 
+ 
+- The Doumont [-@Doumont2009] reprints are printed with permission of the publisher for our course this term only. 
+- The Tufte [-@Tufte1997] pamphlets are my personal copies.
 
-Duing class, please sign for one copy of each and return them per the calendar. 
+During class, please sign for one copy of each.  
 
+Please return them per the calendar. 
+
+
+## readings
+
+<div id="refs"></div>
 
 ---  
 [Calendar](../README.md#calendar)    
