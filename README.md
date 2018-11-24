@@ -93,7 +93,7 @@ Calendar links organized by topic
 ## portfolio
 
   - [Portfolio display
-    requirements](cm/cm301_portfolio_display-reqts.md)
+    requirements](cm/cm301_portfolio_display-reqts.md#portfolio-display-requirements)
   - [D1
     distributions](cm/cm301_portfolio_display-reqts.md#D1-distributions)
   - [D2 multiway](cm/cm301_portfolio_display-reqts.md#D2-multiway)
