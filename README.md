@@ -27,7 +27,7 @@ permission
 | 2  | M | Graph basics with ggplot2<br>Practice[]()                                                                                                                                             |                                                                                        |                  |
 |    | T | ![](resources/images/document.jpg) Tufte ([1997](#ref-Tufte1997)) Decision to launch Challenger                                                                                       |                                                                                        | Reading response |
 |    | R | Data basics<br>Practice[]()                                                                                                                                                           |                                                                                        |                  |
-|    | F | [Data lab](cm/cm100_data_data-lab.md)<br>Return reprints                                                                                                                              | Start acquiring data                                                                   |                  |
+|    | F | [Data lab](cm/cm100_data-lab.md)<br>Return reprints                                                                                                                                   | Start acquiring data                                                                   |                  |
 | 3  | M | Markdown basics<br>Practice[]()                                                                                                                                                       | Recent practices done                                                                  |                  |
 |    | T | ![](resources/images/moodle.png) Robbins ([2013](#ref-Robbins2013Ch6)) General design principles                                                                                      |                                                                                        |                  |
 |    | R | [D1 distributions](cm/cm301_portfolio_display-reqts.md#D1-distributions)<br>Practice[]()                                                                                              | [D1 data](cm/cm301_portfolio_display-reqts.md#portfolio-display-requirements) acquired |                  |
@@ -75,6 +75,8 @@ Calendar links organized by topic
   - [License](LICENSE.md)
 
 ## data
+
+  - [Data lab](cm/cm100_data-lab.md)
 
 ## graphs
 
