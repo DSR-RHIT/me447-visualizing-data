@@ -24,7 +24,7 @@ Optional reading: If you are interested in why version control is important, rea
 
 ## next
 
-Continue [Installing software](cm501_software-start.md)  
+Continue [Installing software](cm501_software-start.md)     
 
 ---  
 [Calendar](../README.md#calendar)    

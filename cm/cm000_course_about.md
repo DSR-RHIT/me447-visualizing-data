@@ -18,6 +18,32 @@ critique a data display. We study elements of
   - human perception
   - graphic design
 
+## why R?
+
+R is an open source language and environment for statistical computing
+and graphics (R Core Team, [2018](#ref-rcoreteam2018)), ranked by IEEE
+in 2018 as the 7th most popular programming language (Python, C++, and
+Java are the top three) (Cass, [2018](#ref-Cass2018)). If you are new to
+R, some of its best features, paraphrasing Wickham
+([2014](#ref-Wickham2014AdvR)), are:
+
+  - R is free, open source, and available on every major platform,
+    making it easy for others to replicate your work.
+  - More than 13,000 open-source R packages are available (November
+    2018). Many are cutting-edge tools.
+  - R packages provide deep-seated support for data analysis, e.g.,
+    missing values, data frames, and subsetting.
+  - R packages provide powerful tools for communicating results via
+    html, pdf, docx, or interactive websites.
+  - It is easy to get help from experts in the R community.
+
+RStudio, an integrated development environment (IDE) for R, includes a
+console, editor, and tools for plotting, history, debugging, and
+workspace management as well as access to GitHub for collaboration and
+version control (RStudio Team, [2016](#ref-RStudio2016)).
+
+## an introduction to visual rhetoric
+
 To illustrate what I mean by “creating truthful and compelling data
 visuals,” I briefly outline below my redesign of a graphical lie.
 
@@ -57,7 +83,41 @@ dramatically increasing, probably correlated to the opioid crisis
 coupled with a 40% reduction in state and local STD budgets since
 2003 \[3\].
 
-**Notes**
+## references
+
+<div id="refs">
+
+<div id="ref-Cass2018">
+
+Cass, Stephen (2018) The 2018 top programming languages. *IEEE Spectrum*
+(<https://spectrum.ieee.org/at-work/innovation/the-2018-top-programming-languages>).
+
+</div>
+
+<div id="ref-rcoreteam2018">
+
+R Core Team (2018) *R: A language and environment for statistical
+computing*. Vienna, Austria: R Foundation for Statistical Computing
+(<https://www.R-project.org/>).
+
+</div>
+
+<div id="ref-RStudio2016">
+
+RStudio Team (2016) *RStudio: Integrated Development Environment for R*.
+Boston, MA: RStudio, Inc. (<http://www.rstudio.com/>).
+
+</div>
+
+<div id="ref-Wickham2014AdvR">
+
+Wickham, Hadley (2014) *Advanced R*. Taylor & Francis.
+
+</div>
+
+</div>
+
+## notes
 
 1.  This graph was crafted by Americans United for Life (AUL), an
     organization dedicated to [restricting womenâ€™s reproductive

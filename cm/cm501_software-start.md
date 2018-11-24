@@ -1,6 +1,8 @@
 
 # start installing software
 
+Please complete these tasks before our first lab period.
+
 We begin by installing R and RStudio on your local machine.
 
   - [Install R & RStudio](cm502_install-r-rstudio.md)
@@ -13,7 +15,9 @@ And finally we create a local library for R packages.
 
   - [Create library](cm504_library.md)
 
-Please complete these tasks before our first lab period.
+Finally, we test to see if the basic installation is successful.
+
+  - [Test the initial installation](cm505_test-initial-install.md)
 
 -----
 
