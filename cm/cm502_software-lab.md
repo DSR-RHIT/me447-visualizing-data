@@ -237,18 +237,6 @@ few lines of your file should look something like this,
     # Session Data files
     .RData
     
-    # Example code in package build process
-    *-Ex.R
-    
-    # Output files from R CMD build
-    /*.tar.gz
-    
-    # Output files from R CMD check
-    /*.Rcheck/
-    
-    # RStudio files
-    .Rproj.user/
-    
     ... (etc) 
 
 If your project directory does not contain `.gitignore` file, you
