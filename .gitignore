@@ -10,6 +10,7 @@ student_work
 # files
 README.Rmd
 cm/*.Rmd
+reports/*.md
 
 # ignore holding folders
 holding
