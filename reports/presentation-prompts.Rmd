@@ -2,7 +2,7 @@
 output: github_document
 ---
 
-# Roundtable prompts
+# presentation prompts
 
 Complete the prompts before the start of class on the day of the presentation. 
 

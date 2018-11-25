@@ -1,12 +1,20 @@
 
-# data lab
+# software lab
 
-  - [File management](#file-management)
-  - [Know your desired data
-    structure](#know-your-desired-data-structure)
-  - [Practice data sets in R](#practice-data-sets-in-r)
-  - [Begin acquiring data](#begin-acquiring-data)
-  - [Classify your data](#classify-your-data)
+<img src="../resources/images/peapicker.png" width="70%" />
+
+<small> *Migrant Pea Picker’s Makeshift Home, Nipomo, California* is
+licensed under
+[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/legalcode)
+</small>
+
+## contents
+
+[File management](#file-management)  
+[Know your desired data structure](#know-your-desired-data-structure)  
+[Practice data sets in R](#practice-data-sets-in-r)  
+[Begin acquiring data](#begin-acquiring-data)  
+[Classify your data](#classify-your-data)
 
 ## file management
 

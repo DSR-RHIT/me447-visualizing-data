@@ -1,7 +1,14 @@
 
 # software lab
 
-Contents
+<img src="../resources/images/sf.png" width="70%" />
+
+<small> *San Francisco, from California and Powell Street* by Carleton
+E. Watkins (American, 1829â€“1916) is licensed under
+[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/legalcode)
+</small>
+
+## contents
 
 [prerequisites](#prerequisites)  
 [setup GitHub](#setup-github)  
