@@ -7,7 +7,9 @@ output: github_document
 
 ## week 2
 
-Tufte, Edward (1997) The decision to launch the space shuttle Challenger. In: *Visual and statistical thinking: Displays of evidence for making decisions.* Cheshire, CT: Graphics Press, 16--31.
+Tufte, Edward (1997) The decision to launch the space shuttle Challenger. 
+In: *Visual and statistical thinking: Displays of evidence for making
+decisions.* Cheshire, CT: Graphics Press, 16--31.
 
 
 **Prompt:** Identify one or two of the author's theses. Briefly restate these

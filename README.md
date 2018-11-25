@@ -112,6 +112,8 @@ Calendar links organized by topic
 
   - [Portfolio display
     requirements](cm/cm301_portfolio_display-reqts.md#portfolio-display-requirements)
+  - [Setup reading
+    responses](cm/cm502_software-lab.md#setup-reading-response)
   - [D1
     distributions](cm/cm301_portfolio_display-reqts.md#D1-distributions)
   - [D2 multiway](cm/cm301_portfolio_display-reqts.md#D2-multiway)
@@ -124,8 +126,6 @@ Calendar links organized by topic
   - [D6
     multivariate](cm/cm301_portfolio_display-reqts.md#D6-multivariate)
   - [D7 self-taught](cm/cm301_portfolio_display-reqts.md#D7-self-taught)
-  - [Setup reading
-    response](cm/cm502_software-lab.md#setup-reading-response)
 
 ## visual rhetoric
 
