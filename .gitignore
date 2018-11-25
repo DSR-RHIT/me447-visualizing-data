@@ -1,4 +1,5 @@
 # ignore course management folders
+data-raw
 manage
 practice
 print_pages
