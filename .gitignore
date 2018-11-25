@@ -9,9 +9,7 @@ student_work
 
 # files
 README.Rmd
-course_notebook*
-cleanall.R
-render_cm.R
+cm/*.Rmd
 
 # ignore holding folders
 holding
