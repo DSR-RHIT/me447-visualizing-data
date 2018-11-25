@@ -1,17 +1,27 @@
 
 # software lab
 
-  - [prerequisites](#prerequisites)
-  - [setup GitHub](#setup-github)
-  - [create a repo](#create-a-repo)
-  - [create an Rproject](#create-an-rproject)
-  - [create the Renviron](#create-the-renviron)
-  - [setup directories](#setup-directories)
-  - [edit gitignore](#edit-gitignore)
-  - [invite collaborator](#invite-collaborator)
-  - [setup README](#setup-readme)
-  - [setup reading response](#setup-reading-response)
-  - [commits](#commits)
+<!-- - [prerequisites]  -->
+
+<!-- - [setup GitHub]  -->
+
+<!-- - [create a repo]  -->
+
+<!-- - [create an Rproject]  -->
+
+<!-- - [create the Renviron]  -->
+
+<!-- - [setup directories]  -->
+
+<!-- - [edit gitignore]  -->
+
+<!-- - [invite collaborator]  -->
+
+<!-- - [setup README]  -->
+
+<!-- - [setup reading response]  -->
+
+<!-- - [commits]  -->
 
 ## prerequisites
 
@@ -37,8 +47,8 @@ talk about version
 control?](https://dx.doi.org/10.7287%2Fpeerj.preprints.3159v2) for a
 good introduction to GitHub repositories.
 
-Setup GitHub following these instructions. I suggest you read the full
-instructions for one of the steps before doing that step.
+I suggest you read the full instructions for a step before doing that
+step.
 
   - Some instructions ask you to type commands in the “shell”. To access
     the shell, open RStudio and use the pulldown menu *Tools \> Shell*.
@@ -54,12 +64,12 @@ instructions for one of the steps before doing that step.
     Git](http://happygitwithr.com/rstudio-git-github.html#rstudio-git-github)
     and, therefore, can talk to GitHub
 
-Once everything is working OK, you may delete any temporary test repos
-you made.
+Cleanup
 
-  - Delete the local test project directories
-  - Navigate to the repo on GitHub and go to *Settings \> Danger Zone \>
-    Delete this repository*
+  - Close the Shell window
+  - Delete the test project on your machine
+  - Delete the test repo on GitHub, *Settings \> Danger Zone \> Delete
+    this repository*
 
 ## create a repo
 
@@ -73,6 +83,23 @@ name (given name or forename)
   - A license is optional (private repos for classwork don’t generally
     need a license)
   - *Create repository*
+
+## invite collaborator
+
+We get two primary benefits from using version control
+
+  - I can easily review and comment on your work  
+  - You can easily revert to an earlier version of the project
+
+To invite me to be a collaborator, navigate to your portfolio repo on
+GitHub and
+
+1.  Select the *Settings* tab
+2.  Select the *Collaborators* menu
+3.  In the *Search by user name* box, type my GitHub name, “graphdr”
+4.  *Add Collaborator*
+
+<img src="../resources/images/github-collaborate-2.png" width="100%" />
 
 ## create an Rproject
 
@@ -90,16 +117,15 @@ In RStudio,
   - Select a location on your computer to save the project  
   - Click *Create Project* to create a new directory
 
-The new project directory will be all of these things:
-
-  - a directory or “folder” on your computer
-  - a local Git repository linked to a remote GitHub repository
-  - an RStudio Project
+The new project directory will be all of these things: a directory or
+“folder” on your computer; a local Git repository linked to a remote
+GitHub repository;  
+an RStudio Project.
 
 Check yourself
 
   - Close RStudio
-  - Restart RStudio
+  - Launch the portfolio R project `portfolio-last-first.Rproj`
   - You should see a `Git` tab in a pane ribbon as well as in the
     RStudio top ribbon
 
@@ -138,10 +164,9 @@ the stand-alone package library you created earlier.
   - Windows: `R_LIBS_USER="C:/R/library"`
   - Linux: `R_LIBS_USER="~/R/library"`
 
-Save and close the file.
-
 Now let’s see if the library path you made works.
 
+  - Save and close the `.Renviron` file.
   - Close RStudio
   - Re-open the R project for your portfolio  
   - Find the RStudio pane with *Packages* in its ribbon. Select
@@ -201,7 +226,8 @@ Next, use one of these two approaches
 
 Using either approach, create new folders for `carpentry`, `data-raw`,
 etc. When done, the directory tree should look like this (you might have
-additional files such as `.gitignore` or `README.md`)
+additional files such as `.gitignore` or `README.md`). We’ll discuss how
+to use this directory structure in an upcoming lesson.
 
     portfolio-last-first/
         |-- carpentry/
@@ -285,23 +311,6 @@ If you select the `Git` tab in the RStudio pane, all files you
 identified in `.gitignore` should disappear from the list of unstaged
 files.
 
-## invite collaborator
-
-We get two primary benefits from using version control
-
-  - I can easily review and comment on your work  
-  - You can easily revert to an earlier version of the project
-
-To invite me to be a collaborator, navigate to your portfolio repo on
-GitHub and
-
-1.  Select the *Settings* tab
-2.  Select the *Collaborators* menu
-3.  In the *Search by user name* box, type my GitHub name, “graphdr”
-4.  *Add Collaborator*
-
-<img src="../resources/images/github-collaborate-2.png" width="100%" />
-
 ## setup README
 
 The README file that resides at the top level of your project directory
@@ -321,8 +330,7 @@ file.
   - *Save As* to the top level of your project with the filename
     `README.Rmd`
 
-Add the YAML header for a GitHub document and your name, as follows. You
-can edit the title and date to suit yourself.
+Add the YAML header for a GitHub document.
 
     ---
     output: github_document
@@ -343,10 +351,10 @@ Add some prose that introduces your portfolio.
 
     ## Introduction
     
-    A portfolio documents your professional growth and competence by
-    providing tangible evidence of your knowledge and skills in data
-    visualization and visual rhetoric. The introduction is the reader's
-    first glimpse of your work; give them a reason to keep reading.
+    A portfolio documents your professional growth and competence by providing 
+    tangible evidence of your knowledge and skills in data visualization and 
+    visual rhetoric. The introduction is the reader's first glimpse of your 
+    work; give them a reason to keep reading.
 
 In the RStudio menu ribbon, click the *Knit* button. You can also use
 the keyboard shortcut Ctrl + Shift + K.
@@ -373,7 +381,7 @@ For more information on writing a good README file, see
 
 ## setup reading response
 
-The reading response report is the first R markdown document to set up.
+The reading response report is the first R markdown report to set up.
 
   - In RStudio *File \> New File \> R Markdown… \> OK*
   - *Save As* the Untitled file to your `reports` folder with the name

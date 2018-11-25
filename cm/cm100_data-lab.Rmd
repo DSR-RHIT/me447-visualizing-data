@@ -54,7 +54,7 @@ The elements of a prospective data set you should identfy include
 
 We use the practice data sets available in R to practice getting the data into the right form for the graph and for practice creating the various graph types. Thus you can work ahead on learning to create the various graph types before obtaining the final data sets used in the portfolio.   
 
-```{r}
+```{r eval = FALSE}
 data()
 ```
 
