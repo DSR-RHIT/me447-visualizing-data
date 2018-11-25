@@ -31,6 +31,9 @@ basic layout of the portfolio website we are about to start building.
 
 ## organize the README file
 
+All work is performed within RStudio with your `portfolio.Rproj` file
+open.
+
 The README file is the main page of the website. README introduces the
 reader to your portfolio and provides navigation links to your
 individual display reports. The introduction and display reports are the
@@ -45,10 +48,16 @@ to write the reports and that I use to assess your progress.
 
 ## importing images
 
+All work is performed within RStudio with your `portfolio.Rproj` file
+open.
+
 > Instructions on saving any image to the resources folder. Then as an
 > example, import to the README page as a placeholder.
 
 ## start a report
+
+All work is performed within RStudio with your `portfolio.Rproj` file
+open.
 
 One Rmd report is written per display. Each report describes the data,
 the graph design, and elements of visual rhetoric relevant to the story.
@@ -58,16 +67,25 @@ the graph design, and elements of visual rhetoric relevant to the story.
 
 ## data tables
 
+All work is performed within RStudio with your `portfolio.Rproj` file
+open.
+
 > In the sample report, show how to create a sample data table.
 > Typically wide. Brief introduction to principles from Stephen few on
 > table layout—adapted to the GitHub environment.
 
 ## citations and references
 
+All work is performed within RStudio with your `portfolio.Rproj` file
+open.
+
 > Set up a .bib file with a sample reference and citation style. In the
 > draft report, show how to add a citation.
 
 ## presentation prompts
+
+All work is performed within RStudio with your `portfolio.Rproj` file
+open.
 
 Complete the prompts before the start of class on the day of the
 presentation.
@@ -78,6 +96,9 @@ presentation.
 > Instructions on using the template file
 
 ## reading prompts
+
+All work is performed within RStudio with your `portfolio.Rproj` file
+open.
 
 Complete the prompts before the start of class on the day of the reading
 discussion.

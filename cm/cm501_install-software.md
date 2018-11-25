@@ -1,7 +1,17 @@
 
 # install software
 
-Please complete these tasks before our first lab period.
+<img src="../resources/images/codefabric.png" width="70%" />
+
+*Computer Code Fabric* by Colleen Greene is licensed under [CC
+BY-NC-SA 2.0](https://creativecommons.org/licenses/by-nc-sa/2.0/).
+
+## contents
+
+[install R and RStudio](#install-r-and-rstudio)  
+[install git](#install-git)  
+[create a library for packages](#create-a-library-for-packages)  
+[test the installation](#test-the-installation)
 
 ## install R and RStudio
 
@@ -72,7 +82,7 @@ panic—we’ll have some time in lab to make things work.
 
 A window should open that looks something like this.
 
-<img src="../resources/images/open-rstudio.png" width="70%" />
+![](../resources/images/open-rstudio.png)<!-- -->
 
 You can type R code in the Console pane, and press Enter to run it. For
 example,
@@ -82,7 +92,7 @@ example,
 
 <!-- end list -->
 
-    [1] 9
+    ## [1] 9
 
 We can draw a simple graph that should appear in the Plots pane.
 
@@ -96,7 +106,7 @@ y <- sin(t)
 plot(t, y)
 ```
 
-<img src="cm501_install-software_files/figure-gfm/unnamed-chunk-4-1.png" width="50%" />
+<img src="cm501_install-software_files/figure-gfm/unnamed-chunk-5-1.png" width="50%" />
 
 Lastly, let’s check if RStudio can see git locally. In RStudio,
 
