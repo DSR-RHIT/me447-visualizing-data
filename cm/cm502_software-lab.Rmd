@@ -1,8 +1,9 @@
 ---
+title: software lab
 output:
-  github_document:
+  md_document:
+    variant: markdown_github
     toc: true
-    toc_depth: 2
 bibliography: "../resources/bib/refs.bib" 
 csl: "../resources/styles/journal-of-peace-research.csl"
 link-citations: yes
@@ -10,25 +11,10 @@ link-citations: yes
 
 ```{r include = FALSE}
 library(knitr)
+library(rmarkdown)
 opts_knit$set(root.dir = "../")
 opts_chunk$set(echo = FALSE, out.width = "70%", comment = NULL)
 ```
-
-
-# software lab 
-
-<!-- - [prerequisites]  -->
-<!-- - [setup GitHub]  -->
-<!-- - [create a repo]  -->
-<!-- - [create an Rproject]  -->
-<!-- - [create the Renviron]  -->
-<!-- - [setup directories]  -->
-<!-- - [edit gitignore]  -->
-<!-- - [invite collaborator]  -->
-<!-- - [setup README]  -->
-<!-- - [setup reading response]  -->
-<!-- - [commits]  -->
-
 
 ## prerequisites
 
