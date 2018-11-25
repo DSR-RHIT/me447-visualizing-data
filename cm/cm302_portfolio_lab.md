@@ -1,8 +1,13 @@
 
 # portfolio lab
 
-  - [media](#media)
-  - [readme](#readme)
+  - [Media](#media)
+  - [README](#readme)
+  - [Reports](#reports)
+  - [Data tables](#data-tables)
+  - [Importing images](#importing-images)
+  - [Citations and references](#citations-and-references)
+  - [Discussion notes](#discussion-notes)
 
 ## media
 
@@ -16,16 +21,40 @@ basic layout of the portfolio website we are about to start building.
 
 ## readme
 
-The README file introduces the reader to your portfolio and provides
-links to individual reports and other material.
+The README file is the main page of the website. README introduces the
+reader to your portfolio and provides navigation links to
+
+  - Displays and critiques  
+  - Your reading responses and roundtable e-notes
+
+Editing the README file.
+
+## reports
+
+One Rmd report is written per display. Each report describes the data,
+the graph design, and elements of visual rhetoric relevant to the story.
+
+Creating the first report shell.
+
+## data tables
+
+Few ([2012](#ref-Few2012))
+
+## importing images
+
+## citations and references
+
+## discussion notes
+
+Visual design and rhetorical decisions are expected to be supported by
+evidence from our readings and roundtable discussions. These notes are
+your record of key points of evidence to be used in your reports.
+
+Creating the reading response shell.
+
+Creating the roundtable e-notes shell.
 
 <!-- portfolio checklist (revise)  -->
-
-<!-- reading responses (revise)  -->
-
-<!-- data tables @Few2012 -->
-
-<!-- references  -->
 
 <!-- describe, discuss, and critique  -->
 
@@ -33,11 +62,17 @@ links to individual reports and other material.
 
 <!-- commit-pull-push  -->
 
-<!-- import an image file -->
-
 ## references
 
 <div id="refs">
+
+<div id="ref-Few2012">
+
+Few, Stephen (2012) Differing roles of tables and graphs. In: *Show me
+the numbers: Designing tables and graphs to enlighten* 2nd ed.
+Burlingame, CA: Analytics Press, 39–51.
+
+</div>
 
 </div>
 

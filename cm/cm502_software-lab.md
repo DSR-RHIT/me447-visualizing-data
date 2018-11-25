@@ -194,19 +194,19 @@ Next, use one of these two approaches
   - In your OS, use your usual method for creating folders manually
   - In RStudio, find *Files* in the pane ribbon and select *New Folder*
 
-Using either approach, create new folders for `data`, `manage`, etc.
-When done, the directory tree should look like this (you might have
+Using either approach, create new folders for `carpentry`, `data-raw`,
+etc. When done, the directory tree should look like this (you might have
 additional files such as `.gitignore` or `README.md`)
 
     portfolio-last-first/
-        |-- data/
+        |-- carpentry/
         |-- data-raw/
-        |-- displays/
-        |-- graph/
+        |-- data/
+        |-- design/
+        |-- figures/
         |-- practice/
         |-- reports/
         |-- resources/
-        |-- tidy/
         |-- .Renviron
         `-- portfolio-last-first.Rproj
 
@@ -268,22 +268,6 @@ its path to the `.gitignore` file
 If you select the `Git` tab in the RStudio pane, all files you
 identified in `.gitignore` should disappear from the list of unstaged
 files.
-
-Lastly, let’s check your project directory. While you may have
-additional files or folders, you should have at least the following:
-
-    portfolio-last-first/
-        |-- carpentry/
-        |-- data/
-        |-- data-raw/
-        |-- design/
-        |-- displays/
-        |-- practice/
-        |-- reports/
-        |-- resources/
-        |-- .gitignore
-        |-- .Renviron
-        `-- portfolio-last-first.Rproj
 
 ## invite collaborator
 
@@ -366,6 +350,13 @@ Your Name
 
 Add some prose that introduces your portfolio.
 
+    ## Introduction
+    
+    A portfolio documents your professional growth and competence by
+    providing tangible evidence of your knowledge and skills in data
+    visualization and visual rhetoric. The introduction is the reader's
+    first glimpse of your work; give them a reason to keep reading.
+
 In the RStudio menu ribbon, click the *Knit* button. You can also use
 the keyboard shortcut Ctrl + Shift + K.
 
@@ -373,15 +364,15 @@ Your project directory should look something like this,
 
     portfolio-last-first/
         |-- carpentry/
-        |-- data/
         |-- data-raw/
+        |-- data/
         |-- design/
-        |-- displays/
+        |-- figures/
         |-- practice/
         |-- reports/
         |-- resources/
-        |-- .gitignore
         |-- .Renviron
+        |-- .gitignore
         |-- README.md
         |-- README.Rmd
         `-- portfolio-last-first.Rproj
