@@ -1,17 +1,9 @@
 ---
 output: github_document
-bibliography: "../resources/bib/refs.bib" 
-csl: "../resources/styles/journal-of-peace-research.csl"
-link-citations: yes
 ---
 
-```{r include = FALSE}
-library(knitr)
-opts_knit$set(root.dir = "../")
-opts_chunk$set(echo = FALSE, out.width = "70%", comment = NULL)
-```
+# Roundtable e-notes
 
-## Roundtable e-notes
 
 
 
