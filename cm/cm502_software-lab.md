@@ -9,8 +9,9 @@
   - [setup directories](#setup-directories)
   - [edit gitignore](#edit-gitignore)
   - [invite collaborator](#invite-collaborator)
-  - [commits](#commits)
   - [edit README](#edit-readme)
+  - [setup reading response](#setup-reading-response)
+  - [commits](#commits)
 
 ## prerequisites
 
@@ -23,9 +24,9 @@ You should already have done the following
 ## setup GitHub
 
 GitHub is a hosting service that provides an online home for your
-Git-based projects—critically important for sharing with collaborators.
-Once you have a GitHub account, you will update your repositories using
-the RStudio interface.
+Git-based projectsâ€”critically important for sharing with
+collaborators. Once you have a GitHub account, you will update your
+repositories using the RStudio interface.
 
   - [Join GitHub
     Education](http://happygitwithr.com/github-acct.html#free-private-repos)
@@ -78,8 +79,8 @@ name (given name or forename)
 Instructions adapted from (Bryan, [2018](#ref-Bryan2018))
 
   - Navigate to your portfolio repo on GitHub  
-  - Copy the HTTPS clone URL to your clipboard via the green “Clone or
-    Download” button. The URL will look something like this:
+  - Copy the HTTPS clone URL to your clipboard via the green â€œClone or
+    Downloadâ€ button. The URL will look something like this:
     `https://github.com/jennybc/myrepo.git`
 
 In RStudio,
@@ -137,8 +138,12 @@ the stand-alone package library you created earlier.
   - Windows: `R_LIBS_USER="C:/R/library"`
   - Linux: `R_LIBS_USER="~/R/library"`
 
+Save and close the file.
+
 Now let’s see if the library path you made works.
 
+  - Close RStudio
+  - Re-open the R project for your portfolio  
   - Find the RStudio pane with *Packages* in its ribbon. Select
     *Packages \> Install*
   - In the dialog box that appears, the *Install to Library* strip
@@ -187,12 +192,12 @@ project directory
 All we are going to do is create a set of empty sub-directories
 (folders).
 
-  - Open the R project for your portfolio
+  - Re-open (if you closed it) the R project for your portfolio
 
 Next, use one of these two approaches
 
   - In your OS, use your usual method for creating folders manually
-  - In RStudio, find *Files* in the pane ribbon and select *New Folder*
+  - Or in RStudio, *Files \> New Folder*
 
 Using either approach, create new folders for `carpentry`, `data-raw`,
 etc. When done, the directory tree should look like this (you might have
@@ -243,27 +248,38 @@ Once the file exists,
 
 <!-- end list -->
 
+    # R files not version controlled
     .Rhistory
     .Rapp.history
     .RData
     .Rproj.user/
 
-Because your collaborators can render your Rmd files themselves, we can
-excuse rendered documents, e.g., HTML files or docx files, from version
-control. Add these lines of code to the `.gitignore` file.
+We can also generally omit rendered documents, e.g., HTML files or docx
+files, from version control. Add these lines of code to the `.gitignore`
+file.
 
-    # Possible rendered files in the main directory
+    # top directory files not version controlled
     *.html
     *.docx
     
-    # Possible rendered files in the sub-directories
+    # sub-directory files not version controlled
     */*.html
     */*.docx
+
+Optional: Raw data does not generally have to be version controlled. If
+the files are large, some analysts list the raw data directory in
+gitignore.
+
+    # raw data files not version controlled 
+    data-raw
 
   - Save and close the gitignore file
 
 Anytime you create a folder or a file you want git to ignore, just add
 its path to the `.gitignore` file
+
+  - Check yourself: the `.gitignore` file should be in the top-level
+    project directory.
 
 If you select the `Git` tab in the RStudio pane, all files you
 identified in `.gitignore` should disappear from the list of unstaged
@@ -285,31 +301,6 @@ GitHub and
 4.  *Add Collaborator*
 
 <img src="../resources/images/github-collaborate-2.png" width="100%" />
-
-## commits
-
-Open your portfolio project
-
-  - Select the *Git* tab
-
-If there are files shown in the Git pane,
-
-  - Click your cursor in the *git* pane
-  - Select all the files using the keyboard shortcut *Ctrl A* (*Command
-    A* in the Mac OS)
-  - Stage all files by clicking in one of the *Staged* boxes
-  - Select *Commit*
-  - In the text box, write a short but descriptive message that
-    summarizes the nature of the commit
-  - *Commit*
-  - *Pull* and you will see the message *Current branch master is up to
-    date*  
-  - *Close*
-  - *Push*
-  - *Close*
-
-Navigate to your online repo and you should find that it includes all
-your changes.
 
 ## edit README
 
@@ -377,17 +368,84 @@ Your project directory should look something like this,
         |-- README.Rmd
         `-- portfolio-last-first.Rproj
 
-Start writing the prose to describe the project.
-
-When you end your R session, make sure to
-
-  - Stage
-  - Commit
-  - Pull
-  - Push
-
 For more information on writing a good README file, see
 <https://github.com/noffle/art-of-readme>
+
+## setup reading response
+
+The reading response report is the first R markdown document to set up.
+
+  - In RStudio *File \> New File \> R Markdown… \> OK*
+  - *Save As* the Untitled file to your `reports` folder with the name
+    `reading-responses.Rmd`
+  - Delete all the default content
+  - Add a YAML header at the top of the file
+
+<!-- end list -->
+
+    ---
+    output: github_document
+    ---
+
+Next, we’ll add a heading for the page and a heading for the week 2
+reading response. You can copy the following lines and paste them into
+your Rmd file.
+
+    ## Reading responses 
+    
+    ## week 2
+    
+    Tufte, Edward (1997) The decision to launch the space shuttle Challenger.
+    In: *Visual and statistical thinking: Displays of evidence for making
+    decisions.* Cheshire, CT: Graphics Press, 16--31.
+
+Next we add some prompts and space for your
+    responses.
+
+    **Prompt:** Identify one or two of the author's theses. Briefly restate these ideas in your own words.
+    
+    **Response:** 
+    
+    **Prompt:** Describe the evidence the author presents to support those ideas.
+    
+    **Response:**  
+    
+    **Prompt:** Explain how the authorâ€™s argument might be used to support a decision you would make in 
+    designing a display. 
+    
+    **Response:** 
+
+  - Save the file
+  - Knit the file to see the rendered output document
+  - When you read the article, return to this file and write your
+    responses.
+
+## commits
+
+The process of *Commit \> Pull \> Push* is how you upload your latest
+version of your project to the GitHub repo.
+
+  - Re-open (if you closed it) the R project for your portfolio  
+  - Select the *Git* tab
+
+If there are files shown in the Git pane,
+
+  - Click your cursor in the *git* pane
+  - Select all the files using the keyboard shortcut *Ctrl A* (*Command
+    A* in the Mac OS)
+  - Stage all files by clicking in one of the *Staged* boxes
+  - Select *Commit*
+  - In the text box, write a short but descriptive message that
+    summarizes the nature of the commit
+  - *Commit*
+  - *Pull* and you will see the message *Current branch master is up to
+    date*  
+  - *Close*
+  - *Push*
+  - *Close*
+
+Navigate to your online repo and you should find that it includes all
+your changes.
 
 ## references
 

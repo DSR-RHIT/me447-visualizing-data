@@ -105,8 +105,8 @@ Calendar links organized by topic
   - [Setup directories](cm/cm502_software-lab.md#setup-directories)
   - [Edit gitignore](cm/cm502_software-lab.md#edit-gitignore)
   - [Invite collaborator](cm/cm502_software-lab.md#invite-collaborator)
-  - [Commits](cm/cm502_software-lab.md#commits)
   - [Edit README](cm/cm502_software-lab.md#edit-README)
+  - [Commits](cm/cm502_software-lab.md#commits)
 
 ## portfolio
 
@@ -124,6 +124,10 @@ Calendar links organized by topic
   - [D6
     multivariate](cm/cm301_portfolio_display-reqts.md#D6-multivariate)
   - [D7 self-taught](cm/cm301_portfolio_display-reqts.md#D7-self-taught)
+  - [Setup reading
+    response](cm/cm502_software-lab.md#setup-reading-response)
+
+## visual rhetoric
 
 ## readings
 
@@ -193,8 +197,6 @@ to improve healthcare*. UK: Oxford University Press, 32–49.
 </div>
 
 </div>
-
-## visual rhetoric
 
 -----
 
