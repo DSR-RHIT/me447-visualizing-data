@@ -10,11 +10,11 @@ licensed under
 
 ## contents
 
-[File management](#file-management)  
-[Know your desired data structure](#know-your-desired-data-structure)  
-[Practice data sets in R](#practice-data-sets-in-r)  
-[Begin acquiring data](#begin-acquiring-data)  
-[Classify your data](#classify-your-data)
+[file management](#file-management)  
+[know your desired data structure](#know-your-desired-data-structure)  
+[practice data sets in R](#practice-data-sets-in-r)  
+[begin acquiring data](#begin-acquiring-data)  
+[classify your data](#classify-your-data)
 
 ## file management
 
