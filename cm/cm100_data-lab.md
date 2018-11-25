@@ -1,5 +1,5 @@
 
-# software lab
+# data lab
 
 <img src="../resources/images/peapicker.png" width="70%" />
 
