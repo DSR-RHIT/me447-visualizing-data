@@ -1,15 +1,6 @@
 ---
 output: github_document
-bibliography: "../resources/references.bib" 
-csl: "../resources/journal-of-peace-research.csl"
-link-citations: yes
 ---
-
-```{r include = FALSE}
-library(knitr)
-opts_knit$set(root.dir = "../")
-opts_chunk$set(echo = FALSE, out.width = "70%", comment = NULL)
-```
 
 ## D5 Title
 
