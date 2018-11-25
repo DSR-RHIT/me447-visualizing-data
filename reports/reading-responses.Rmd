@@ -25,7 +25,8 @@ ideas in your own words.
 **Response:**  
 
 
-**Prompt:** Explain how the author’s argument might be used to support a decision you would make in designing a display. 
+**Prompt:** Explain how the author’s argument might be used to support a
+decision you would make in designing a display. 
 
 
 **Response:** 
@@ -34,7 +35,9 @@ ideas in your own words.
 
 ## week 4
 
-Wainer, Howard (2014) Fifteen displays about one thing. In: *Medical illuminations: Using evidence, visualization, and statistical thinking to improve healthcare.* UK: Oxford University Press, 32--49.
+Wainer, Howard (2014) Fifteen displays about one thing. In: *Medical
+illuminations: Using evidence, visualization, and statistical thinking to
+improve healthcare.* UK: Oxford University Press, 32--49.
 
 **Prompt:** 
 
@@ -59,7 +62,8 @@ Wainer, Howard (2014) Fifteen displays about one thing. In: *Medical illuminatio
 
 ## week 6
 
-Dragga, Sam & Dan Voss (2001) Cruel pies: The inhumanity of technical illustrations. *Technical Communication* 48(3): 265--274.
+Dragga, Sam & Dan Voss (2001) Cruel pies: The inhumanity of technical
+illustrations. *Technical Communication* 48(3): 265--274.
 
 **Prompt:** 
 
@@ -83,7 +87,8 @@ Dragga, Sam & Dan Voss (2001) Cruel pies: The inhumanity of technical illustrati
 
 ## week 8
 
-Kostelnick, Charles (2007) The visual rhetoric of data displays: The conundrum of clarity. *IEEE Transactions on Professional Communication* 50(2): 280--294.
+Kostelnick, Charles (2007) The visual rhetoric of data displays: The conundrum
+of clarity. *IEEE Transactions on Professional Communication* 50(2): 280--294.
 
 **Prompt:** 
 
@@ -108,7 +113,9 @@ Kostelnick, Charles (2007) The visual rhetoric of data displays: The conundrum o
 
 ## week 10
 
-Spence, Ian (2006) William Playfair and the psychology of graphs. In: *IEEE Transactions on Professional Communication.* Alexandria, VA: American Statistical Association, section on statistical graphics, 2426--2436.
+Spence, Ian (2006) William Playfair and the psychology of graphs. In: *IEEE
+Transactions on Professional Communication.* Alexandria, VA: American
+Statistical Association, section on statistical graphics, 2426--2436.
 
 **Prompt:** 
 
