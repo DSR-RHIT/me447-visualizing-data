@@ -105,7 +105,7 @@ Calendar links organized by topic
   - [Setup directories](cm/cm502_software-lab.md#setup-directories)
   - [Edit gitignore](cm/cm502_software-lab.md#edit-gitignore)
   - [Invite collaborator](cm/cm502_software-lab.md#invite-collaborator)
-  - [Edit README](cm/cm502_software-lab.md#edit-README)
+  - [Setup README](cm/cm502_software-lab.md#setup-README)
   - [Commits](cm/cm502_software-lab.md#commits)
 
 ## portfolio

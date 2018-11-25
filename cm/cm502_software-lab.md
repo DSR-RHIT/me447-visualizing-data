@@ -9,7 +9,7 @@
   - [setup directories](#setup-directories)
   - [edit gitignore](#edit-gitignore)
   - [invite collaborator](#invite-collaborator)
-  - [edit README](#edit-readme)
+  - [setup README](#setup-readme)
   - [setup reading response](#setup-reading-response)
   - [commits](#commits)
 
@@ -302,7 +302,7 @@ GitHub and
 
 <img src="../resources/images/github-collaborate-2.png" width="100%" />
 
-## edit README
+## setup README
 
 The README file that resides at the top level of your project directory
 is the landing page of your repo. This is the first glimpse a reader has
