@@ -4,7 +4,7 @@
 447 / 547 Visualizing Data. An introductory course by Richard Layton at
 Rose-Hulman Institute of Technology.
 
-<img src="resources/images/header-readme.png" width="60%" />
+<img src="resources/images/header-readme.png" width="50%" />
 
   - [About the course](cm/cm000_course_about.md)
   - [Syllabus](cm/cm001_course_syllabus.md)
