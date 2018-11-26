@@ -160,8 +160,8 @@ distribution. Data requirements:
     only)
   - The sample sizes of the two groups do not need to be equal
 
-For additional technical details, see
-(<span class="citeproc-not-found" data-reference-id="nist-q-q">**???**</span>).
+For additional technical details, see (Quantile-quantile plot,
+[2018](#ref-NIST-q-q)).
 
 ## cycle plot
 
@@ -203,6 +203,14 @@ Heiberger, Richard M. & Naomi B. Robbins (2014) Design of diverging
 stacked bar charts for Likert scales and other applications. *Journal of
 Statistical Software* 57(5)
 (<https://www.jstatsoft.org/article/view/v057i05/v57i05.pdf>).
+
+</div>
+
+<div id="ref-NIST-q-q">
+
+Quantile-quantile plot (2018). In: *NIST/SEMATECH e-Handbook of
+Statistical Methods*
+(<https://www.itl.nist.gov/div898/handbook/eda/section3/eda33o.htm>).
 
 </div>
 
