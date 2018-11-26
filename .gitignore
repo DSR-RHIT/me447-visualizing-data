@@ -20,6 +20,7 @@ holding
 # ignore all PPT
 *.pptx
 */*.pptx
+*/*/*.pptx
 
 # ignore all DOCX
 *.docx
