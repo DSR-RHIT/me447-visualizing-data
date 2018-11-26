@@ -19,9 +19,9 @@ Please return them per the calendar.
 
 <div id="ref-Doumont2009">
 
-Doumont, Jean-luc (2009) Designing the graph. In: *Trees, maps, and
-theorems: Effective communication for rational minds* 2nd ed. Kraainem,
-Belgium: Principiae, 133–143.
+Doumont, Jean-luc (2009) *Trees, maps, and theorems: Effective
+communication for rational minds*. 2nd ed. Kraainem, Belgium:
+Principiae.
 
 </div>
 

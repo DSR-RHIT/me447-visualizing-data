@@ -22,7 +22,7 @@ permission
 | :- | :- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------- | :--------------- |
 | 1  | M | Course goals and outcomes<br>[Sign-out two reprints](cm/cm401_rhetoric_reprints.md#signout-reprints)                                                                                  |                                                                                        |                  |
 |    | T | Introduction to visual rhetoric<br>[Install software](cm/cm501_install-software.md#install-software)                                                                                  |                                                                                        |                  |
-|    | R | Relating data structure to graph design<br>![](resources/images/document.jpg) Doumont ([2009](#ref-Doumont2009)) Designing the graph                                                  |                                                                                        |                  |
+|    | R | Relating data structure to graph design<br>![](resources/images/document.jpg) Doumont ([2009](#ref-Doumont2009in)) Designing the graph                                                |                                                                                        |                  |
 |    | F | [Software lab](cm/cm502_software-lab.md#software-lab)                                                                                                                                 | Software setup complete                                                                |                  |
 | 2  | M | Graph basics with ggplot2<br>Practice[]()                                                                                                                                             |                                                                                        |                  |
 |    | T | ![](resources/images/document.jpg) Tufte ([1997](#ref-Tufte1997)) Decision to launch Challenger                                                                                       |                                                                                        | Reading response |
@@ -59,7 +59,7 @@ permission
 | 10 | M | Graph design improvisation                                                                                                                                                            | Recent practices done                                                                  |                  |
 |    | T | ![](resources/images/moodle.png) Spence ([2006](#ref-Spence2006)) Playfair & psychology of graphs                                                                                     |                                                                                        | Reading response |
 |    | R | Work in class<br>Course evaluations                                                                                                                                                   |                                                                                        |                  |
-|    | F | Presentations, practice, & portfolio<br>Roundtable e-notes[]()                                                                                                                        |                                                                                        | D7 graph & prose |
+|    | F | Presentations, practice, & portfolio<br>[Presentation prompts](reports/presentation-prompts.Rmd)                                                                                      |                                                                                        | D7 graph & prose |
 | 11 | M | Submit portfolio                                                                                                                                                                      |                                                                                        | Portfolio        |
 
 # index
@@ -133,7 +133,7 @@ Calendar links organized by topic
 
 <div id="refs">
 
-<div id="ref-Doumont2009">
+<div id="ref-Doumont2009in">
 
 Doumont, Jean-luc (2009) Designing the graph. In: *Trees, maps, and
 theorems: Effective communication for rational minds* 2nd ed. Kraainem,

@@ -58,8 +58,8 @@ good introduction to version control.
 ## create a library for packages
 
 Packages are like “apps” for R. As Hadley Wickham
-([2014](#ref-Wickham2014AdvR)) states, “Packages are the fundamental
-units of reproducible R code. They include reusable functions, the
+([2014](#ref-Wickham2014)) states, “Packages are the fundamental units
+of reproducible R code. They include reusable functions, the
 documentation that describes how to use them, and sample data.”
 
 If we store packages in a library separate from the base R installation,
@@ -129,7 +129,7 @@ If not, no worries. We’ll take care of it in lab.
 
 <div id="refs">
 
-<div id="ref-Wickham2014AdvR">
+<div id="ref-Wickham2014">
 
 Wickham, Hadley (2014) *Advanced R*. Taylor & Francis.
 

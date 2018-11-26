@@ -21,11 +21,11 @@ critique a data display. We study elements of
 ## why R?
 
 R is an open source language and environment for statistical computing
-and graphics (R Core Team, [2018](#ref-rcoreteam2018)), ranked by IEEE
+and graphics (R Core Team, [2018](#ref-RCoreTeam2018)), ranked by IEEE
 in 2018 as the 7th most popular programming language (Python, C++, and
 Java are the top three) (Cass, [2018](#ref-Cass2018)). If you are new to
 R, some of its best features, paraphrasing Wickham
-([2014](#ref-Wickham2014AdvR)), are:
+([2014](#ref-Wickham2014)), are:
 
   - R is free, open source, and available on every major platform,
     making it easy for others to replicate your work.
@@ -50,7 +50,7 @@ visuals,” I briefly outline below my redesign of a graphical lie.
 During Congressional hearing in August 2015, Representative Jason
 Chaffetz used the following graph as part of his effort to defund
 Planned Parenthood, stating, “In pink, that’s the reduction in the
-breast exams, and the red is the increase in the abortions. Thatâ€™s
+breast exams, and the red is the increase in the abortions. That’s
 what’s going on in your organization.”
 
 <img src="../resources/images/lying-graphic-1.png" width="50%" />
@@ -94,7 +94,7 @@ Cass, Stephen (2018) The 2018 top programming languages. *IEEE Spectrum*
 
 </div>
 
-<div id="ref-rcoreteam2018">
+<div id="ref-RCoreTeam2018">
 
 R Core Team (2018) *R: A language and environment for statistical
 computing*. Vienna, Austria: R Foundation for Statistical Computing
@@ -109,7 +109,7 @@ Boston, MA: RStudio, Inc. (<http://www.rstudio.com/>).
 
 </div>
 
-<div id="ref-Wickham2014AdvR">
+<div id="ref-Wickham2014">
 
 Wickham, Hadley (2014) *Advanced R*. Taylor & Francis.
 
@@ -120,7 +120,7 @@ Wickham, Hadley (2014) *Advanced R*. Taylor & Francis.
 ## notes
 
 1.  This graph was crafted by Americans United for Life (AUL), an
-    organization dedicated to [restricting womenâ€™s reproductive
+    organization dedicated to [restricting women’s reproductive
     rights](https://www.theatlantic.com/politics/archive/2015/07/what-pro-life-activists-really-want/398297/)
     in the US and abroad. AUL has deleted the original webpage, we can
     still [view
