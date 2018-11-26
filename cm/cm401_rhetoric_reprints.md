@@ -1,6 +1,8 @@
 
 # signout reprints
 
+<img src="../resources/images/header-reprints.png" width="70%" />
+
 Two of our readings are printed pages.
 
   - The Doumont ([2009](#ref-Doumont2009)) reprints are printed with

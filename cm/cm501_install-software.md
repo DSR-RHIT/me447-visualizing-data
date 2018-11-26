@@ -1,10 +1,11 @@
 
 # install software
 
-<img src="../resources/images/codefabric.png" width="70%" />
+<img src="../resources/images/header-install-software.png" width="70%" />
 
-*Computer Code Fabric* by Colleen Greene is licensed under [CC
-BY-NC-SA 2.0](https://creativecommons.org/licenses/by-nc-sa/2.0/).
+<small> *Computer Code Fabric* by Colleen Greene is licensed under [CC
+BY-NC-SA 2.0](https://creativecommons.org/licenses/by-nc-sa/2.0/)
+</small>
 
 ## contents
 

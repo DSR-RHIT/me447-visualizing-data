@@ -1,11 +1,11 @@
 
 # portfolio lab
 
-<img src="../resources/images/troy-from-mount-ida.png" width="70%" />
+<img src="../resources/images/header-portfolio-lab.png" width="70%" />
 
 <small> *Troy from Mount Ida* (No. 11 of The Hudson River Portfolio) is
 licensed under
-[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/legalcode)
+[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/legalcode/)
 </small>
 
 ## contents

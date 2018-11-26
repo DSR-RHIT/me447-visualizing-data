@@ -1,7 +1,7 @@
 
 # data lab
 
-<img src="../resources/images/peapicker2.png" width="70%" />
+<img src="../resources/images/header-data-lab.png" width="70%" />
 
 <small> *Migrant Pea Picker’s Makeshift Home, Nipomo, California* is
 licensed under

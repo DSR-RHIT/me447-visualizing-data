@@ -1,7 +1,29 @@
 
 # syllabus
 
-## description
+<img src="../resources/images/header-syllabus.png" width="70%" />
+
+<small> *Syllabusing* by Raul P (cropped) is licensed under [CC
+BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)  
+</small>
+
+## contents
+
+[course description](#course-description)  
+[prerequisites](#prerequisites)  
+[instructor](#instructor)  
+[required textbook](#required-textbook)  
+[objectives](#objectives)  
+[grades](#grades)  
+[homework](#homework)  
+[labs](#labs)  
+[attendance](#attendance)  
+[valid excuses](#valid-excuses)  
+[academic integrity](#academic-integrity)  
+[academic accommodations](#academic-accommodations)  
+[caveat](#caveat)
+
+## course description
 
 ME 447 / ME 547 Visualizing Data (3R–3L–4C).
 
@@ -25,8 +47,10 @@ Hall C-217<br> <layton@rose-hulman.edu><br> 812-877-8905
 
 ## required textbook
 
+A [web-version](http://r4ds.had.co.nz/) of the book is available at no
+cost.  
 Hadley Wickham and Garrett Grolemund (2017) *R for Data Science*,
-O’Reilly Media. [free e-copy online](http://r4ds.had.co.nz/).
+O’Reilly Media.
 
 <img src="../resources/images/r-4-data-science-cover.png" width="25%" />
 
@@ -49,8 +73,11 @@ competence*, and a “C” indicates that *minimum standards have been met*.
 There are no exams. The major deliverables and their relative weights
 are:
 
-  - (25%) Presentations and participation in small-group discussions  
-  - (75%) Portfolio
+  - (70%) Portfolio
+  - (15%) Timely written responses to the reading prompts and the
+    presentation prompts
+  - (15%) Presenting your work and participating in small-group
+    discussions
 
 ## homework
 

@@ -1,6 +1,12 @@
 
 # portfolio display requirements
 
+<img src="../resources/images/header-display-requirements.png" width="70%" />
+
+<small> *dennisyang.com DOM graph* by Dennis Yang is licensed under [CC
+BY 2.0](https://creativecommons.org/licenses/by/2.0/)  
+</small>
+
 The table summarizes the basic data structure for all portfolio
 graphs.  
 Specific data requirements are provided
