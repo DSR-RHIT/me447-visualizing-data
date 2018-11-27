@@ -112,19 +112,19 @@ Create your bib file
   year      = {2017},
 }</code></pre>
 
-`@book{}` and its enclosing braces denotes the type of reference, e.g.,
-a book, an article, a chapter in a book, etc. BiBTeX has numerous
-predefined entry types; see [entry
-types](https://nwalsh.com/tex/texhelp/bibtx-7.html) by Norm Walsh and
-[verbosus](https://verbosus.com/bibtex-style-examples.html) for the most
-commonly encountered entry types and their arguments.
+What the fields mean:
 
-`WickhamGrolemund2017` is the unique label I assigned to this reference.
-I usually use an `AuthorYYYY` style. You can use any style label as long
-as each reference label is unique.
+  - `@book{}` and its enclosing braces denotes the type of reference,
+    e.g., a book, an article, a chapter in a book, etc.
+  - `WickhamGrolemund2017` is the unique label I assigned to this
+    reference. I usually use an `AuthorYYYY` style. You can use any
+    style label as long as each reference label is unique.
+  - The double braces, for example `title = {{R for Data Science}}` and
+    `publisher = {{O'Reilly}}` are used to preserve specific
+    capitalization.
 
-The double braces, for example `title = {{R for Data Science}}` and
-`publisher = {{O'Reilly}}` are used to preserve specific capitalization.
+See the [course BiBTeX page](cm303_portfolio_bibtex.md) for more details
+on the types of entries and their required and optional fields.
 
 ## YAML bibliography argument
 

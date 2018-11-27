@@ -114,6 +114,7 @@ Calendar links organized by topic
     requirements](cm/cm301_portfolio_display-reqts.md#portfolio-display-requirements)
   - [Setup reading
     responses](cm/cm502_software-lab.md#setup-reading-response)
+  - [BiBTeX](cm/cm303_portfolio_bibtex.md)  
   - [D1
     distributions](cm/cm301_portfolio_display-reqts.md#D1-distributions)
   - [D2 multiway](cm/cm301_portfolio_display-reqts.md#D2-multiway)
