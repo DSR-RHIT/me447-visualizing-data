@@ -1,4 +1,6 @@
 
+<a name="top"></a>
+
 # install software
 
 <img src="../resources/images/header-install-software.png" width="70%" />
@@ -58,7 +60,7 @@ good introduction to version control.
 ## create a library for packages
 
 Packages are like “apps” for R. As Hadley Wickham
-([2014](#ref-Wickham2014)) states, “Packages are the fundamental units
+([2014](#ref-Wickham:2014)) states, “Packages are the fundamental units
 of reproducible R code. They include reusable functions, the
 documentation that describes how to use them, and sample data.”
 
@@ -129,9 +131,10 @@ If not, no worries. We’ll take care of it in lab.
 
 <div id="refs">
 
-<div id="ref-Wickham2014">
+<div id="ref-Wickham:2014">
 
-Wickham, Hadley (2014) *Advanced R*. Taylor & Francis.
+Wickham H (2014) *Advanced R.* CRC Press, Taylor & Francis Group, Boca
+Raton, FL <http://adv-r.had.co.nz/>
 
 </div>
 
@@ -139,5 +142,6 @@ Wickham, Hadley (2014) *Advanced R*. Taylor & Francis.
 
 -----
 
+<a href="#top">Top of page</a>  
 [Calendar](../README.md#calendar)  
 [Index](../README.md#index)

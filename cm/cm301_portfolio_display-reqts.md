@@ -1,4 +1,6 @@
 
+<a name="top"></a>
+
 # portfolio display requirements
 
 <img src="../resources/images/header-display-requirements.png" width="70%" />
@@ -60,7 +62,7 @@ Categorical variables
   - If two categories are used, they must have at least two levels each
     for a minmum of four comparisons.
 
-[Portfolio display requirements](#portfolio-display-requirements)
+<a href="#top">Top of page</a>
 
 ## D2 multiway
 
@@ -80,11 +82,11 @@ Data requirements
       - 4 levels in category 1 and at least 6 levels in category 2  
       - 5 levels in category 1 and at least 5 levels in category 2
 
-[Portfolio display requirements](#portfolio-display-requirements)
+<a href="#top">Top of page</a>
 
 ## D3 correlations
 
-[Portfolio display requirements](#portfolio-display-requirements)
+<a href="#top">Top of page</a>
 
 ## D4 injuries or fatalities
 
@@ -93,14 +95,14 @@ to the data in *Cruel Pies*). Consult with me on your data selection—the
 graph type depends on the data. The two graph types shown are the most
 commonly encountered.
 
-[Portfolio display requirements](#portfolio-display-requirements)
+<a href="#top">Top of page</a>
 
 ## D5 redesign a graphical lie
 
 Consult with me on your data selection—the graph type depends on the
 data. The two graph types shown are the most commonly encountered.
 
-[Portfolio display requirements](#portfolio-display-requirements)
+<a href="#top">Top of page</a>
 
 ## D6 multivariate
 
@@ -128,7 +130,7 @@ Use a conditioning plot (coplot) for three or four variables.
 For four or more variables, use a scatterplot matrix or a parallel
 coordinate plot.
 
-[Portfolio display requirements](#portfolio-display-requirements)
+<a href="#top">Top of page</a>
 
 ## D7 self-taught
 
@@ -160,8 +162,8 @@ distribution. Data requirements:
     only)
   - The sample sizes of the two groups do not need to be equal
 
-For additional technical details, see (Quantile-quantile plot,
-[2018](#ref-NIST-q-q)).
+For additional technical details, see Filliben and Heckert
+([2018](#ref-Filliben+Heckert:2018)).
 
 ## cycle plot
 
@@ -180,8 +182,8 @@ for reporting survey data. Respondents are typically asked to choose one
 response from a discrete number of options such as Strongly Disagree,
 Disagree, No Opinion, Agree, Strongly Agree.
 
-For additional technical details, see Heiberger & Robbins
-([2014](#ref-HeibergerRobbins2014)).
+For additional technical details, see Heiberger and Robbins
+([2014](#ref-Heiberger+Robbins:2014)).
 
 ## quantitative map
 
@@ -191,26 +193,26 @@ For additional technical details, see
 
 For additional technical details, see
 
-[Portfolio display requirements](#portfolio-display-requirements)
+<a href="#top">Top of page</a>
 
 ## references
 
 <div id="refs">
 
-<div id="ref-HeibergerRobbins2014">
+<div id="ref-Filliben+Heckert:2018">
 
-Heiberger, Richard M. & Naomi B. Robbins (2014) Design of diverging
-stacked bar charts for Likert scales and other applications. *Journal of
-Statistical Software* 57(5)
-(<https://www.jstatsoft.org/article/view/v057i05/v57i05.pdf>).
+Filliben JJ and Heckert A (2018) Quantile-quantile plot. *e-Handbook of
+Statistical Methods*. NIST/SEMATECH
+<https://www.itl.nist.gov/div898/handbook/eda/section3/eda33o.htm>
 
 </div>
 
-<div id="ref-NIST-q-q">
+<div id="ref-Heiberger+Robbins:2014">
 
-Quantile-quantile plot (2018). In: *NIST/SEMATECH e-Handbook of
-Statistical Methods*
-(<https://www.itl.nist.gov/div898/handbook/eda/section3/eda33o.htm>).
+Heiberger RM and Robbins NB (2014) Design of diverging stacked bar
+charts for Likert scales and other applications. *Journal of Statistical
+Software* **57**(5)
+<https://www.jstatsoft.org/article/view/v057i05/v57i05.pdf>
 
 </div>
 
@@ -218,5 +220,6 @@ Statistical Methods*
 
 -----
 
+<a href="#top">Top of page</a>  
 [Calendar](../README.md#calendar)  
 [Index](../README.md#index)

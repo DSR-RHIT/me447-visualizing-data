@@ -1,4 +1,6 @@
 
+<a name="top"></a>
+
 # software lab
 
 <img src="../resources/images/header-software-lab.png" width="70%" />
@@ -103,7 +105,7 @@ GitHub and
 
 ## create an Rproject
 
-Instructions adapted from (Bryan, [2018](#ref-Bryan2018))
+Instructions adapted from (Bryan, [2018](#ref-Bryan:2018))
 
   - Navigate to your portfolio repo on GitHub  
   - Copy the HTTPS clone URL to your clipboard via the green â€œClone or
@@ -459,10 +461,10 @@ your changes.
 
 <div id="refs">
 
-<div id="ref-Bryan2018">
+<div id="ref-Bryan:2018">
 
-Bryan, Jenny (2018) Happy Git and GitHub for the useR
-(<http://happygitwithr.com/>).
+Bryan J (2018) Happy Git and GitHub for the useR.
+<http://happygitwithr.com/>
 
 </div>
 
@@ -470,5 +472,6 @@ Bryan, Jenny (2018) Happy Git and GitHub for the useR
 
 -----
 
+<a href="#top">Top of page</a>  
 [Calendar](../README.md#calendar)  
 [Index](../README.md#index)

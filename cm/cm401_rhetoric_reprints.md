@@ -1,35 +1,39 @@
 
+<a name="top"></a>
+
 # signout reprints
 
 <img src="../resources/images/header-reprints.png" width="70%" />
 
 Two of our readings are printed pages.
 
-  - The Doumont ([2009](#ref-Doumont2009)) reprints are printed with
-    permission of the publisher for our course this term only.
-  - The Tufte ([1997](#ref-Tufte1997)) pamphlets are my personal copies.
+  - The Doumont ([2009](#ref-Doumont:2009:Ch.4)) reprints are printed
+    with permission of the publisher for our course this term only.
+  - The Tufte ([1997](#ref-Tufte:1997)) pamphlets are my personal
+    copies.
 
 During class, please sign for one copy of each.
 
 Please return them per the calendar.
 
-## readings
+## references
 
 <div id="refs">
 
-<div id="ref-Doumont2009">
+<div id="ref-Doumont:2009:Ch.4">
 
-Doumont, Jean-luc (2009) *Trees, maps, and theorems: Effective
-communication for rational minds*. 2nd ed. Kraainem, Belgium:
-Principiae.
+Doumont J-L (2009) Designing the graph. *Trees, maps, and theorems:
+Effective communication for rational minds*. Principiae, Kraainem,
+Belgium, 133–143 <http://www.treesmapsandtheorems.com/>
 
 </div>
 
-<div id="ref-Tufte1997">
+<div id="ref-Tufte:1997">
 
-Tufte, Edward (1997) The decision to launch the space shuttle
-Challenger. In: *Visual and statistical thinking: Displays of evidence
-for making decisions*. Cheshire, CT: Graphics Press, 16–31.
+Tufte E (1997) The decision to launch the space shuttle Challenger.
+*Visual and statistical thinking: Displays of evidence for making
+decisions*. Graphics Press, Cheshire, CT, 16–31
+<https://www.edwardtufte.com/tufte/books_textb>
 
 </div>
 
@@ -37,5 +41,6 @@ for making decisions*. Cheshire, CT: Graphics Press, 16–31.
 
 -----
 
+<a href="#top">Top of page</a>  
 [Calendar](../README.md#calendar)  
 [Index](../README.md#index)

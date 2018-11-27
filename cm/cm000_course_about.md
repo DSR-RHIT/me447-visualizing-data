@@ -21,11 +21,11 @@ critique a data display. We study elements of
 ## why R?
 
 R is an open source language and environment for statistical computing
-and graphics (R Core Team, [2018](#ref-RCoreTeam2018)), ranked by IEEE
-in 2018 as the 7th most popular programming language (Python, C++, and
-Java are the top three) (Cass, [2018](#ref-Cass2018)). If you are new to
-R, some of its best features, paraphrasing Wickham
-([2014](#ref-Wickham2014)), are:
+and graphics (R Core Team, [2018](#ref-R:2018)), ranked by IEEE in 2018
+as the 7th most popular programming language (Python, C++, and Java are
+the top three) (Cass, [2018](#ref-Cass:2018)). If you are new to R, some
+of its best features, paraphrasing Wickham ([2014](#ref-Wickham:2014)),
+are:
 
   - R is free, open source, and available on every major platform,
     making it easy for others to replicate your work.
@@ -40,7 +40,7 @@ R, some of its best features, paraphrasing Wickham
 RStudio, an integrated development environment (IDE) for R, includes a
 console, editor, and tools for plotting, history, debugging, and
 workspace management as well as access to GitHub for collaboration and
-version control (RStudio Team, [2016](#ref-RStudio2016)).
+version control (RStudio Team, [2016](#ref-RStudio:2016)).
 
 ## an introduction to visual rhetoric
 
@@ -87,31 +87,32 @@ coupled with a 40% reduction in state and local STD budgets since
 
 <div id="refs">
 
-<div id="ref-Cass2018">
+<div id="ref-Cass:2018">
 
-Cass, Stephen (2018) The 2018 top programming languages. *IEEE Spectrum*
-(<https://spectrum.ieee.org/at-work/innovation/the-2018-top-programming-languages>).
-
-</div>
-
-<div id="ref-RCoreTeam2018">
-
-R Core Team (2018) *R: A language and environment for statistical
-computing*. Vienna, Austria: R Foundation for Statistical Computing
-(<https://www.R-project.org/>).
+Cass S (2018) The 2018 top programming languages. *IEEE Spectrum*
+<https://spectrum.ieee.org/at-work/innovation/the-2018-top-programming-languages>
 
 </div>
 
-<div id="ref-RStudio2016">
+<div id="ref-R:2018">
 
-RStudio Team (2016) *RStudio: Integrated Development Environment for R*.
-Boston, MA: RStudio, Inc. (<http://www.rstudio.com/>).
+R Core Team (2018) *R: A Language and Environment for Statistical
+Computing.* R Foundation for Statistical Computing, Vienna, Austria
+<https://www.R-project.org>
 
 </div>
 
-<div id="ref-Wickham2014">
+<div id="ref-RStudio:2016">
 
-Wickham, Hadley (2014) *Advanced R*. Taylor & Francis.
+RStudio Team (2016) *RStudio: Integrated Development Environment for R.*
+RStudio, Inc., Boston, MA <http://www.rstudio.com/>
+
+</div>
+
+<div id="ref-Wickham:2014">
+
+Wickham H (2014) *Advanced R.* CRC Press, Taylor & Francis Group, Boca
+Raton, FL <http://adv-r.had.co.nz/>
 
 </div>
 

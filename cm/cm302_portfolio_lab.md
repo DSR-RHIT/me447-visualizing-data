@@ -1,7 +1,5 @@
 
-<!-- csl: "../resources/styles/journal-of-peace-research.csl" -->
-
-<!-- link-citations: yes -->
+<a name="top"></a>
 
 # portfolio lab
 
@@ -95,36 +93,38 @@ All work is performed within RStudio with your `portfolio.Rproj` file
 open.
 
 The `.bib` file contains the complete list of references used in your
-portfolio. It can contain more refences than needed; only those
+portfolio. It can contain more references than needed; only those
 references actually cited will appear.
 
 Create your bib file
 
   - RStudio *File \> New File \> Text File*
   - *Save As* `references.bib` in the `resources` directory
-  - In `references.bib`, type your references in BiBTeX format, for
-    example:
+  - In `references.bib`, type this entry as your first reference:
 
-<pre class="r"><code>@book{WickhamGrolemund2017,
+<pre class="r"><code>@book{Wickham+Grolemund:2017,
   author    = {Hadley Wickham and Garrett Grolemund},
-  title     = {{R for Data Science}},
-  publisher = {{O'Reilly}},
   year      = {2017},
+  title     = {{R for Data Science}},
+  edition   = {},
+  publisher = {{O'Reilly Media, Inc.}},
+  address   = {Sebastopol, CA},
+  url       = {https://r4ds.had.co.nz/},
 }</code></pre>
 
 What the fields mean:
 
   - `@book{}` and its enclosing braces denotes the type of reference,
     e.g., a book, an article, a chapter in a book, etc.
-  - `WickhamGrolemund2017` is the unique label I assigned to this
-    reference. I usually use an `AuthorYYYY` style. You can use any
-    style label as long as each reference label is unique.
-  - The double braces, for example `title = {{R for Data Science}}` and
-    `publisher = {{O'Reilly}}` are used to preserve specific
-    capitalization.
+  - `Wickham+Grolemund:2017` is the unique label I assigned to this
+    reference. I use the label `Author:YYYY` for one author,
+    `Author+Author:YYYY` for two authoirs, etc. You can use any style
+    label as long as each reference label is unique.
+  - The double braces, for example `title = {{R for Data Science}}` are
+    used to preserve capitalization.
 
-See the [course BiBTeX page](cm303_portfolio_bibtex.md) for more details
-on the types of entries and their required and optional fields.
+See our [BiBTeX page](cm303_portfolio_bibtex.md) for more details on the
+types of entries and their required and optional fields.
 
 ## YAML bibliography argument
 
@@ -136,9 +136,9 @@ output: github_document
 bibliography: "../resources/references.bib"
 ---</code></pre>
 
-If the report Rmd script is in the reports directory, the relative path
-goes up one level `../`, then down to the `resources/` folder and there
-we find the `references.bib` file.
+Because the report Rmd script is in the reports directory, the relative
+path goes up one level `../`, then down to the `resources/` folder and
+there we find the `references.bib` file.
 
 ## add a citation
 
@@ -148,16 +148,17 @@ you assigned in the `.bib` file.
   - In your report, add a sentence with a citation such
 as:
 
-<pre class="r"><code>Visualisation is a great place to start with R programming, because the payoff is 
+<pre class="r"><code>Visualization is a great place to start with R programming, because the payoff is 
 so clear: you get to make elegant and informative plots that help you understand 
-data [@WickhamGrolemund2017]. 
+data [@Wickham+Grolemund:2017]. 
 </code></pre>
 
   - Knit the document. You should see output like this:
 
-> Visualisation is a great place to start with R programming, because
+> Visualization is a great place to start with R programming, because
 > the payoff is so clear: you get to make elegant and informative plots
-> that help you understand data (Wickham and Grolemund 2017).
+> that help you understand data (Wickham and Grolemund,
+> [2017](#ref-Wickham+Grolemund:2017)).
 
 The software has found the reference in your `.bib` file and formatted
 the citation using its default author-date format.
@@ -182,35 +183,33 @@ you want the references to appear followed by the HTML`<div>` markup,
 
 ## format the citations and references
 
-<!-- You don't have to do this step right away, but you might want to later in the term. -->
+Every organization or publisher requires that citations and references
+be formatted in a specific way, for example, IEEE requires a numbered
+citation and numbered references while an APA style uses an author-date
+citation and an alphabetically-ordered bibliography.
 
-<!-- Quite often a publisher or organization requires that citations and references be formatted in a specific way, for example, IEEE requires a numbered citation and numbered references while an APA style uses an author-date citation and an alphabetically-ordered bibliography.  -->
+In R Markdown, we can use a CSL file to override the default Rmd
+citation/reference style. In your own work, you may select a CSL file
+that suits you; in our class I require the CSL file used by the Journal
+of Glaciology—not because I’m a glaciologist but because I like the
+format.
 
-<!-- We use a CSL file to override the default Rmd citation/reference style.   -->
+  - Navigate to the [Zotero Style
+    Repository](https://www.zotero.org/styles)  
+  - In the Search box, type *Glaciology*  
+  - Click on the link to download the `journal-of-glaciology.csl` file
+    to your local machine  
+  - Manually move the CSL file to your `portfolio/resources` directory  
+  - Specify the CSL file in the YAML header
 
-<!-- - Find a format you like at the [Zotero Style Repository](https://www.zotero.org/styles) or at the official   [CSL Repository](https://github.com/citation-style-language/styles) that suits your needs, for example `chicago-author-date.csl` or `ieee.csl`  -->
+<pre class="r"><code>---
+output: github_document
+bibliography: "../resources/references.bib"
+csl: "../resources/journal-of-glaciology.csl"
+---</code></pre>
 
-<!-- - Download the CSL file and save it to the same directory as the portfolio   -->
-
-<!-- - Edit the YAML header to designate the CSL style file you wish to use.   -->
-
-<!-- <pre class="r"><code>--- -->
-
-<!-- title: "Portfolio" -->
-
-<!-- author: "name" -->
-
-<!-- date: "date" -->
-
-<!-- output: word_document -->
-
-<!-- bibliography: "portfolio.bib" -->
-
-<!-- csl: "chicago-author-date.csl" -->
-
-<!-- ---</code></pre> -->
-
-<!-- Knit your document and both the citation formatting and the references formatting will change throughout the document.  -->
+Knit your document and both the citation formatting and the references
+formatting will change throughout the document.
 
 ## presentation prompts
 
@@ -246,22 +245,21 @@ evidence from our readings.
 
 <!-- commit-pull-push  -->
 
-<!-- ## references -->
+## references
 
-<!-- <div id="refs"></div> -->
+<div id="refs">
+
+<div id="ref-Wickham+Grolemund:2017">
+
+Wickham H and Grolemund G (2017) *R for Data Science.* O’Reilly Media,
+Inc., Sebastopol, CA <https://r4ds.had.co.nz/>
+
+</div>
+
+</div>
 
 -----
 
+<a href="#top">Top of page</a>  
 [Calendar](../README.md#calendar)  
 [Index](../README.md#index)
-
-<div id="refs" class="references">
-
-<div id="ref-WickhamGrolemund2017">
-
-Wickham, Hadley, and Garrett Grolemund. 2017. *R for Data Science*.
-O’Reilly.
-
-</div>
-
-</div>
