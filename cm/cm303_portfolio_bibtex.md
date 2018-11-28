@@ -9,6 +9,8 @@
 [Wikimedia](https://commons.wikimedia.org/w/index.php?curid=1299548)
 </small>
 
+## contents
+
 [summary](#summary)  
 [notes on usage](#notes-on-usage)  
 [articles](#articles)  
@@ -23,8 +25,8 @@
 
 There are many standard BiBTeX entry types, but the ones listed here
 will probably meet most of your needs. These listings have been tested
-in R Markdown to `github_document` output, both with and without a
-custom CSL file.
+in our Rmd to github document environment with both default formatting
+and a specified CSL file.
 
     @article{Last+Last:YYYY,
       author  = {First Last and First Last},
