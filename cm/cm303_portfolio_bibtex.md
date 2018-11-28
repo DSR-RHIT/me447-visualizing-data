@@ -116,7 +116,7 @@ Cite an article in a journal or magazine.
 
 <!-- end list -->
 
-    @article{Dragga+Voss+2001,
+    @article{Dragga+Voss:2001,
       author  = {Sam Dragga and Dan Voss},
       year    = {2001},
       title   = {{Cruel pies: The inhumanity of technical illustrations}},
