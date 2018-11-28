@@ -20,6 +20,8 @@ critique a data display. We study elements of
 
 ## why R?
 
+<img src="../resources/R_logo.png" width="15%" />
+
 R is an open source language and environment for statistical computing
 and graphics (R Core Team, [2018](#ref-R:2018)), ranked by IEEE in 2018
 as the 7th most popular programming language (Python, C++, and Java are
@@ -29,8 +31,8 @@ are:
 
   - R is free, open source, and available on every major platform,
     making it easy for others to replicate your work.
-  - More than 13,000 open-source R packages are available (November
-    2018). Many are cutting-edge tools.
+  - The variety of R packages—13432 R packages as of 2018-11-28—many of
+    them cutting edge tools.
   - R packages provide deep-seated support for data analysis, e.g.,
     missing values, data frames, and subsetting.
   - R packages provide powerful tools for communicating results via
