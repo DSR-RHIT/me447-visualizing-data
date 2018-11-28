@@ -52,7 +52,7 @@ visuals,” I briefly outline below my redesign of a graphical lie.
 During Congressional hearing in August 2015, Representative Jason
 Chaffetz used the following graph as part of his effort to defund
 Planned Parenthood, stating, “In pink, that’s the reduction in the
-breast exams, and the red is the increase in the abortions. Thatâ€™s
+breast exams, and the red is the increase in the abortions. That’s
 what’s going on in your organization.”
 
 <img src="../resources/lying-graphic-1.png" width="50%" />
@@ -123,7 +123,7 @@ Raton, FL <http://adv-r.had.co.nz/>
 ## notes
 
 1.  This graph was crafted by Americans United for Life (AUL), an
-    organization dedicated to [restricting womenâ€™s reproductive
+    organization dedicated to [restricting women’s reproductive
     rights](https://www.theatlantic.com/politics/archive/2015/07/what-pro-life-activists-really-want/398297/)
     in the US and abroad. AUL has deleted the original webpage, we can
     still [view
