@@ -3,7 +3,7 @@
 
 # install software
 
-<img src="../resources/images/header-install-software.png" width="70%" />
+<img src="../resources/header-install-software.png" width="70%" />
 
 <small> *Computer Code Fabric* by Colleen Greene is licensed under [CC
 BY-NC-SA 2.0](https://creativecommons.org/licenses/by-nc-sa/2.0/)
@@ -85,7 +85,7 @@ panic—we’ll have some time in lab to make things work.
 
 A window should open that looks something like this.
 
-![](../resources/images/open-rstudio.png)<!-- -->
+![](../resources/open-rstudio.png)<!-- -->
 
 You can type R code in the Console pane, and press Enter to run it. For
 example,

@@ -3,7 +3,7 @@
 
 # portfolio display requirements
 
-<img src="../resources/images/header-display-requirements.png" width="70%" />
+<img src="../resources/header-display-requirements.png" width="70%" />
 
 <small> *dennisyang.com DOM graph* by Dennis Yang is licensed under [CC
 BY 2.0](https://creativecommons.org/licenses/by/2.0/)  
@@ -18,7 +18,7 @@ below.
 
 | display                                                     | type                                      | quantitative  | categorical   |
 | :---------------------------------------------------------- | :---------------------------------------- | :------------ | :------------ |
-| [D1 distributions](#d1-distributions)                       | box plot, histogram, or density plot      | one           | one           |
+| [D1 distributions](#d1-distributions)                       | strip plot or box plot                    | one           | one           |
 | [D2 multiway](#d2-multiway)                                 | multiway                                  | one           | two           |
 | [D3 correlations](#d3-correlations)                         | scatterplot                               | two           | one           |
 | [D4 injuries or fatalities](#d4-injuries-or-fatalities)     | dot plot                                  | one           | optional      |
@@ -27,13 +27,11 @@ below.
 |                                                             | line graph or scatterplot                 | two           | optional      |
 | [D6 multivariate](#d6-multivariate)                         | conditioning plot                         | three or four |               |
 |                                                             | scatterplot matrix or parallel coordinate | four or more  |               |
-| [D7 self-taught](#d7-self-taught)                           | q-q                                       | one           | one           |
-|                                                             | cycle plot                                | one           | two           |
-|                                                             | Sankey diagram                            | one           | two or more   |
-|                                                             | mosaic                                    | one           | three or more |
+| [D7 self-taught](#d7-self-taught)                           | cycle plot                                | one           | two           |
+|                                                             | mosaic plot                               | one           | three or more |
+|                                                             | financial (OHLC) plot                     | four          | one           |
+|                                                             | linked micomaps                           | one           |               |
 |                                                             | diverging stacked bar                     | one           | one           |
-|                                                             | quantitative map                          | one           |               |
-|                                                             | qualitative map                           |               | one           |
 
 ## D1 distributions
 
@@ -41,19 +39,18 @@ Univariate data are measurements of a single quantitative variable. The
 data can be separated into groups by a categorical variable, creating
 one distribution for each level of the category for comparison.
 
-We will use three prospective graph designs for comparing distributions.
+We will use two prospective graph designs for comparing distributions.
 Include only one of these graph types in your portfolio. Select the
 design that best conveys the stories in your data.
 
-  - histograms
-  - density plots
-  - box plots
+  - strip plot
+  - box plot
 
 Data requirements
 
   - Minimum 200 observations of one quantitative variable  
   - One or two categorical variables  
-  - No time-series
+  - Time is excluded as a variable
 
 Categorical variables
 
@@ -122,7 +119,7 @@ Data requirements
 
   - Minimum 20 observations  
   - Three or more quantitative variables  
-  - No time-series data  
+  - Time is excluded as a variable  
   - No categorical variables
 
 Use a conditioning plot (coplot) for three or four variables.
@@ -137,41 +134,51 @@ coordinate plot.
 This is a graph type you learn to construct on your own. Select one only
 from the list and include it in the portfolio.
 
-Counts
+  - [cycle plot](#cycle-plot)
+  - [financial plot](#financial-plot)
+  - \[mosaic plot\]  
+  - \[linked micromaps\]  
+  - [diverging stacked
+bar](#diverging-stacked-bar)
 
-  - [q-q plot](#q-q-plot)  
-  - [cycle plot](#cycle-plot)  
-  - [Sankey diagram](#sankey-diagram)  
-  - [mosaic](#mosaic)  
-  - [diverging stacked bar](#diverging-stacked-bar)
+<!-- ## q-q plot -->
 
-Spatial data
+<!-- The quantile-quantile (q-q) plot is a graphical technique for determining if two groups of data come from populations with a common distribution. Data requirements:  -->
 
-  - [quantitative map](#quantitative-map)  
-  - [qualitative map](#qualitative-map)
+<!-- - Two samples of one quantitative variable, min. 200 observations total.  -->
 
-## q-q plot
+<!-- - One categorical variable that defines the two groups (two levels only)  -->
 
-The quantile-quantile (q-q) plot is a graphical technique for
-determining if two groups of data come from populations with a common
-distribution. Data requirements:
+<!-- - The sample sizes of the two groups do not need to be equal  -->
 
-  - Two samples of one quantitative variable, min. 200 observations
-    total.
-  - One categorical variable that defines the two groups (two levels
-    only)
-  - The sample sizes of the two groups do not need to be equal
-
-For additional technical details, see Filliben and Heckert
-([2018](#ref-Filliben+Heckert:2018)).
+<!-- For additional technical details, see @Filliben+Heckert:2018.  -->
 
 ## cycle plot
 
 For additional technical details, see
 
-## Sankey diagram
+<!-- ## Sankey diagram   -->
 
-For additional technical details, see
+<!-- For additional technical details, see  -->
+
+  - [cycle plot](#cycle-plot)
+  - [financial plot](#financial-plot)
+  - \[mosaic plot\]  
+  - \[linked micromaps\]  
+  - [diverging stacked bar](#diverging-stacked-bar)
+
+## financial plot
+
+A financial plot, or OHLC (open-high-low-close) plot, represents a time
+series of market behavior.
+
+The categorical variable is the date. Each day is one observation.
+
+The quantitative variables are the opening value, high value, low value,
+and closing value of a financial metric, e.g., the Dow Jones industrial
+average.
+
+Data requirements
 
 ## mosaic
 
@@ -198,14 +205,6 @@ For additional technical details, see
 ## references
 
 <div id="refs">
-
-<div id="ref-Filliben+Heckert:2018">
-
-Filliben JJ and Heckert A (2018) Quantile-quantile plot. *e-Handbook of
-Statistical Methods*. NIST/SEMATECH
-<https://www.itl.nist.gov/div898/handbook/eda/section3/eda33o.htm>
-
-</div>
 
 <div id="ref-Heiberger+Robbins:2014">
 

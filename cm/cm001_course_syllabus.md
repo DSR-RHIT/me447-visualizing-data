@@ -1,7 +1,7 @@
 
 # syllabus
 
-<img src="../resources/images/header-syllabus.png" width="70%" />
+<img src="../resources/header-syllabus.png" width="70%" />
 
 <small> *Syllabusing* by Raul P (cropped) is licensed under [CC
 BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)  
@@ -52,7 +52,7 @@ cost.
 Hadley Wickham and Garrett Grolemund (2017) *R for Data Science*,
 O’Reilly Media.
 
-<img src="../resources/images/r-4-data-science-cover.png" width="25%" />
+<img src="../resources/r-4-data-science-cover.png" width="25%" />
 
 ## objectives
 

@@ -3,7 +3,7 @@
 
 # software lab
 
-<img src="../resources/images/header-software-lab.png" width="70%" />
+<img src="../resources/header-software-lab.png" width="70%" />
 
 <small> *San Francisco, from California and Powell Street* by Carleton
 E. Watkins (American, 1829–1916) is licensed under
@@ -101,7 +101,7 @@ GitHub and
 3.  In the *Search by user name* box, type my GitHub name, “graphdr”
 4.  *Add Collaborator*
 
-<img src="../resources/images/github-collaborate-2.png" width="100%" />
+<img src="../resources/github-collaborate-2.png" width="100%" />
 
 ## create an Rproject
 

@@ -3,7 +3,7 @@
 
 # signout reprints
 
-<img src="../resources/images/header-reprints.png" width="70%" />
+<img src="../resources/header-reprints.png" width="70%" />
 
 Two of our readings are printed pages.
 
