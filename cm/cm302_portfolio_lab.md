@@ -59,6 +59,38 @@ to write the reports and that I use to assess your progress.
 > link to the first report. Some suggestions for editing the
 > Introduction.
 
+Instructions for the portfolio README file
+
+  - Your portfolio cover art is your audience’s first interaction with
+    your data display work. Use your best work here to attract the
+    reader’s attention, pique their curiosity, and invite them to read
+    further.
+
+  - A portfolio documents your professional growth and competence by
+    providing tangible evidence of your knowledge and skills in data
+    visualization and visual rhetoric. The introduction is the reader’s
+    first glimpse of your work; give them a reason to keep reading.
+
+  - The words on the README should be yours. Add your own text where
+    appropriate to present your portfolio. You may edit the section
+    headings.
+
+  - Even if your repo is private, treat the portfolio as if you intended
+    to make it available to a prospective employer.
+
+  - Each link in the displays section takes the reader to a stand-alone
+    report about a specific display, its data, critique, and references.
+
+  - In the displays section, give each report a descriptive title and
+    indicate the type of graph used, e.g., dot plot, scatterplot,
+    parallel coordinate plot, etc. While the course is in session,
+    please leave the tags D1, D2, etc., for my convenience. When the
+    course concludes, of course, you may edit these labels as you wish.
+
+  - The discussion notes are from weekly small-group discussions in
+    class that include the student’s own ideas and peer feedback. The
+    purpose of the notes is to inform the critiques.
+
 ## importing images
 
 All work is performed within RStudio with your `portfolio.Rproj` file
