@@ -79,15 +79,15 @@ Calendar links organized by topic
 Data lab
 
   - [Know your desired data
-    structure](cm/cm101_data-lab.md#know-your-desired-data-structure)
+    structure](cm/cm601_data-lab.md#know-your-desired-data-structure)
   - [Practice data sets in
-    R](cm/cm101_data-lab.md#practice-data-sets-in-R)
-  - [Begin acquiring data](cm/cm101_data-lab.md#begin-acquiring-data)
-  - [Classify your data](cm/cm101_data-lab.md#classify-your-data)
+    R](cm/cm601_data-lab.md#practice-data-sets-in-R)
+  - [Begin acquiring data](cm/cm601_data-lab.md#begin-acquiring-data)
+  - [Classify your data](cm/cm601_data-lab.md#classify-your-data)
 
 ## file management
 
-  - [File management](cm/cm101_data-lab.md#file-management)
+  - [File management](cm/cm601_data-lab.md#file-management)
 
 ## graphs
 
