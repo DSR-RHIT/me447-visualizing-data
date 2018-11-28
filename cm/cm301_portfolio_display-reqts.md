@@ -16,22 +16,22 @@ below.
 
 <!-- Quantitative variables are typically continuous. If you encounter a quantitative variable (other than time) that is discrete rather than continuous, please consult with me on its suitability for your graph.   -->
 
-| display                                                     | type                                      | quantitative  | categorical   |
-| :---------------------------------------------------------- | :---------------------------------------- | :------------ | :------------ |
-| [D1 distributions](#d1-distributions)                       | strip plot or box plot                    | one           | one           |
-| [D2 multiway](#d2-multiway)                                 | multiway                                  | one           | two           |
-| [D3 correlations](#d3-correlations)                         | scatterplot                               | two           | one           |
-| [D4 injuries or fatalities](#d4-injuries-or-fatalities)     | dot plot                                  | one           | optional      |
-|                                                             | line graph or scatterplot                 | two           | optional      |
-| [D5 redesign a graphical lie](#d5-redesign-a-graphical-lie) | dot plot                                  | one           | optional      |
-|                                                             | line graph or scatterplot                 | two           | optional      |
-| [D6 multivariate](#d6-multivariate)                         | conditioning plot                         | three or four |               |
-|                                                             | scatterplot matrix or parallel coordinate | four or more  |               |
-| [D7 self-taught](#d7-self-taught)                           | cycle plot                                | one           | two           |
-|                                                             | mosaic plot                               | one           | three or more |
-|                                                             | financial (OHLC) plot                     | four          | one           |
-|                                                             | linked micomaps                           | one           |               |
-|                                                             | diverging stacked bar                     | one           | one           |
+| display                                                     | type                                            | quantitative  | categorical   |
+| :---------------------------------------------------------- | :---------------------------------------------- | :------------ | :------------ |
+| [D1 distributions](#d1-distributions)                       | strip plot or box plot                          | one           | one           |
+| [D2 multiway](#d2-multiway)                                 | multiway                                        | one           | two           |
+| [D3 correlations](#d3-correlations)                         | scatterplot                                     | two           | one           |
+| [D4 injuries or fatalities](#d4-injuries-or-fatalities)     | dot plot                                        | one           | optional      |
+|                                                             | line graph or scatterplot                       | two           | optional      |
+| [D5 redesign a graphical lie](#d5-redesign-a-graphical-lie) | dot plot                                        | one           | optional      |
+|                                                             | line graph or scatterplot                       | two           | optional      |
+| [D6 multivariate](#d6-multivariate)                         | conditioning plot                               | three or four |               |
+|                                                             | scatterplot matrix or parallel coordinate       | four or more  |               |
+| [D7 self-taught](#d7-self-taught)                           | [cycle plot](#cycle-plot)                       | one           | two           |
+|                                                             | [mosaic plot](#mosaic-plot)                     | one           | three or more |
+|                                                             | [financial (OHLC) plot](#financial-ohlc-plot)   | four          | one           |
+|                                                             | [linked micromaps](#linked-micromaps)           | one           |               |
+|                                                             | [diverging stacked bar](#diverging-stacked-bar) | one           | one           |
 
 ## D1 distributions
 
@@ -135,9 +135,9 @@ This is a graph type you learn to construct on your own. Select one only
 from the list and include it in the portfolio.
 
   - [cycle plot](#cycle-plot)
-  - [financial plot](#financial-plot)
-  - \[mosaic plot\]  
-  - \[linked micromaps\]  
+  - [financial (OHLC) plot](#financial-ohlc-plot)
+  - [mosaic plot](#mosaic-plot)  
+  - [linked micromaps](#linked-micromaps)  
   - [diverging stacked
 bar](#diverging-stacked-bar)
 
@@ -161,13 +161,7 @@ For additional technical details, see
 
 <!-- For additional technical details, see  -->
 
-  - [cycle plot](#cycle-plot)
-  - [financial plot](#financial-plot)
-  - \[mosaic plot\]  
-  - \[linked micromaps\]  
-  - [diverging stacked bar](#diverging-stacked-bar)
-
-## financial plot
+## financial (OHLC) plot
 
 A financial plot, or OHLC (open-high-low-close) plot, represents a time
 series of market behavior.
@@ -180,7 +174,7 @@ average.
 
 Data requirements
 
-## mosaic
+## mosaic plot
 
 ## diverging stacked bar
 
@@ -192,13 +186,9 @@ Disagree, No Opinion, Agree, Strongly Agree.
 For additional technical details, see Heiberger and Robbins
 ([2014](#ref-Heiberger+Robbins:2014)).
 
-## quantitative map
+## linked micromaps
 
-For additional technical details, see
-
-## qualitative map
-
-For additional technical details, see
+Data requirements
 
 <a href="#top">Top of page</a>
 

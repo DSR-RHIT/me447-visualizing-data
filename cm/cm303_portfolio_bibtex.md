@@ -106,7 +106,8 @@ and a specified CSL file.
   - Use `@manual` for software references
   - All entry types shown here accept a `url` field but not a `urldate`
     field, thus there is no obvious approach to including a retrieved by
-    date for online resources.
+    date for online resources.  
+  - A tilde is a non-breaking space, e.g., `{R~package version~0.2.0}`
 
 ## articles
 
@@ -229,7 +230,7 @@ Cite R packages
       year         = {2018},
       title        = {{docxtools: Tools for R Markdown to Docx Documents}},
       organization = {},
-      address      = {R package version 0.2.0},
+      address      = {R~package version~0.2.0},
       url          = {https://graphdr.github.io/docxtools/},
     }
 
@@ -284,8 +285,8 @@ Burlingame, CA, 39–51
 
 <div id="ref-docxtools:2018">
 
-Layton R (2018) *docxtools: Tools for R Markdown to Docx Documents.* R
-package version 0.2.0 <https://graphdr.github.io/docxtools/>
+Layton R (2018) *docxtools: Tools for R Markdown to Docx Documents.*
+R package version 0.2.0 <https://graphdr.github.io/docxtools/>
 
 </div>
 
