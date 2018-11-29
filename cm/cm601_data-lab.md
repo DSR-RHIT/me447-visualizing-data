@@ -20,7 +20,9 @@ licensed under
 
 ## file management
 
-lecture / slides on file management
+[Basic elements of file
+management](https://speakerdeck.com/graphdr/rstudio-project-basic-elements-of-file-management)
+on SpeakerDeck
 
 ## know your desired data structure
 

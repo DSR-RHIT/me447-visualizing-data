@@ -87,7 +87,9 @@ Data lab
 
 ## file management
 
-  - [File management](cm/cm601_data-lab.md#file-management)
+  - [Basic elements of file
+    management](https://speakerdeck.com/graphdr/rstudio-project-basic-elements-of-file-management)
+    (slides on SpeakerDeck)
 
 ## graphs
 
