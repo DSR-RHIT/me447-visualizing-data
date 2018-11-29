@@ -14,7 +14,7 @@ Rose-Hulman Institute of Technology.
 
 ## calendar
 
-![](resources/icon-document.jpg) paper reprint, with permission  
+![](resources/icon-document.png) paper reprint, with permission  
 ![](resources/icon-moodle.png) e-copy on Moodle, with
 permission
 
@@ -22,10 +22,10 @@ permission
 | :- | :- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------- | :--------------------------------------------- |
 | 1  | M | Course goals and outcomes<br>[Sign-out two reprints](cm/cm401_rhetoric_reprints.md#signout-reprints)                                                                                    |                                                                                        |                                                |
 |    | T | Introduction to visual rhetoric<br>[Install software](cm/cm501_install-software.md#install-software)                                                                                    |                                                                                        |                                                |
-|    | R | Relating data structure to graph design<br>![](resources/icon-document.jpg) Doumont ([2009](#ref-Doumont:2009:Ch.4)) Designing the graph                                                |                                                                                        |                                                |
+|    | R | Relating data structure to graph design<br>![](resources/icon-document.png) Doumont ([2009](#ref-Doumont:2009:Ch.4)) Designing the graph                                                |                                                                                        |                                                |
 |    | F | [Software lab](cm/cm502_software-lab.md#software-lab)                                                                                                                                   | Software setup complete                                                                |                                                |
 | 2  | M | Graph basics with ggplot2<br>Practice[]()                                                                                                                                               |                                                                                        |                                                |
-|    | T | ![](resources/icon-document.jpg) Tufte ([1997](#ref-Tufte:1997)) Decision to launch Challenger                                                                                          |                                                                                        | [Reading prompts](reports/reading-prompts.Rmd) |
+|    | T | ![](resources/icon-document.png) Tufte ([1997](#ref-Tufte:1997)) Decision to launch Challenger                                                                                          |                                                                                        | [Reading prompts](reports/reading-prompts.Rmd) |
 |    | R | Data basics<br>Practice[]()                                                                                                                                                             |                                                                                        |                                                |
 |    | F | [Data lab](cm/cm601_data-lab.md)<br>Return reprints                                                                                                                                     | Start acquiring data                                                                   |                                                |
 | 3  | M | Markdown basics<br>Practice[]()                                                                                                                                                         | Recent practices done                                                                  |                                                |
