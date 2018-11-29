@@ -1,0 +1,39 @@
+---
+title:     "Visual rhetoric and R graphics for the R novice"
+subtitle:  "Visualizing Data"
+author:    "Richard Layton"
+date:      "Spring 2019"
+institute: "Rose-Hulman Institute of Technology"
+output:     binb::metropolis
+fontsize:   12pt
+bibliography: "../resources/references.bib"
+biblio-style: abbrvnat
+nocite: | 
+  @Tufte83, @Wainer1997, @robbins2013, @kostelnickhassett2003, @wickhamgrolemund2016, @kabacoff2015
+---
+
+```{r,setup, include=FALSE}
+library(knitr)
+opts_chunk$set(cache=TRUE, echo=FALSE, warning=FALSE, message=FALSE)
+library(tidyverse)
+library(forcats)
+library(midfieldr)
+library(bibtex)
+```
+
+## wi-fi
+
+Marriott_CONFERENCE
+
+IEEE2018
+
+
+
+
+
+
+## References
+\scriptsize
+
+
+

@@ -1,0 +1,790 @@
+---
+title:     "Basic elements of file management"
+subtitle:  "ME447/547 Visualizing Data"
+author:    "Richard Layton"
+date:      "Spring 2019"
+institute: "Rose-Hulman Institute of Technology"
+output:     binb::metropolis
+fontsize:   12pt
+bibliography: "../resources/references.bib"
+csl: "../resources/journal-of-glaciology.csl"
+link-citations: yes
+nocite: | 
+  @Bryan:2018:version-control, @Wilson+Bryan+Others:2017
+---
+
+```{r, setup, include=FALSE}
+library("knitr")
+opts_knit$set(root.dir = "../")
+opts_chunk$set(echo = FALSE, message = FALSE, collapse = TRUE, warning = FALSE)
+```
+
+## Effective file management requires two actions
+
+```{r eval=FALSE, echo=FALSE}
+# snip this code chunk to create cm034-02.png
+# Tools > Global Options > Appearance > 200% before snipping
+
+  source("carpentry/filename.R")
+
+  read_csv("data/filename.csv")
+
+  source("design/filename.R")
+  
+  include_graphics("figures/filename.png")
+
+```
+
+\smallskip
+
+\begin{columns}[onlytextwidth]
+\begin{column}{0.35\textwidth}\raggedleft
+Plan the structure at the beginning
+\end{column}
+
+\begin{column}{0.6\textwidth}
+\includegraphics[height=45mm]{../resources/cm034-01.png}\\
+\vspace{0.5\baselineskip}
+\end{column}        
+\end{columns}
+
+\smallskip
+  
+\begin{columns}[onlytextwidth]
+\begin{column}{0.35\textwidth}\raggedleft
+Explicitly link files 
+\end{column}
+
+\begin{column}{0.6\textwidth}
+\includegraphics[height=17mm]{../resources/cm034-02.png}
+\end{column}        
+\end{columns}
+
+  
+  
+
+ 
+  
+  
+  
+  
+  
+  
+  
+## You recently created the mandatory project-directory structure 
+
+\bigskip\bigskip
+
+  \begin{columns}[onlytextwidth]
+  \begin{column}{0.05\textwidth}\raggedleft
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-document.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-RStudio.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-RStudio.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-Rproj.png}\\  
+  \end{column}
+  \begin{column}{1mm}\end{column}
+  \begin{column}{0.2\textwidth}
+carpentry\\
+data\\  
+data-raw\\
+design\\
+figures\\
+manage\\
+practice\\
+reports\\
+resources\\
+.gitignore\\
+.Renviron\\
+README.Rmd\\
+portfolio.Rproj\\
+  \end{column} 
+  \begin{column}{4mm}\end{column}
+  \begin{column}{0.75\textwidth}
+\textcolor{white}{$\triangleleft$}\\
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\  
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\  
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\   
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\     
+  \end{column}
+  \end{columns}
+  
+  
+  
+  
+  
+## Open \alert{portfolio.Rproj} to start every work session  
+
+\bigskip\bigskip
+
+  \begin{columns}[onlytextwidth]
+  \begin{column}{0.05\textwidth}\raggedleft
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-document.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-RStudio.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-RStudio.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-Rproj.png}\\  
+  \end{column}
+  \begin{column}{1mm}\end{column}
+  \begin{column}{0.2\textwidth}
+carpentry\\
+data\\  
+data-raw\\
+design\\
+figures\\
+manage\\
+practice\\
+reports\\
+resources\\
+.gitignore\\
+.Renviron\\
+README.Rmd\\
+portfolio.Rproj\\
+  \end{column} 
+  \begin{column}{4mm}\end{column}
+  \begin{column}{0.75\textwidth}
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\  
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\  
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\   
+\textcolor{white}{$\triangleleft$}\\  
+\textcolor{white}{$\triangleleft$}\\   
+\textcolor{white}{$\triangleleft$}\\   
+\alert{$\triangleleft$} Sets the project directory as the working directory\\  
+  \end{column}
+  \end{columns}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+## \alert{README} introduces your portfolio to the reader 
+
+\bigskip\bigskip
+
+  \begin{columns}[onlytextwidth]
+  \begin{column}{0.05\textwidth}\raggedleft
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-document.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-RStudio.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-RStudio.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-Rproj.png}\\  
+  \end{column}
+  \begin{column}{1mm}\end{column}
+  \begin{column}{0.2\textwidth}
+carpentry\\
+data\\  
+data-raw\\
+design\\
+figures\\
+manage\\
+practice\\
+reports\\
+resources\\
+.gitignore\\
+.Renviron\\
+README.Rmd\\
+portfolio.Rproj\\
+  \end{column} 
+  \begin{column}{4mm}\end{column}
+  \begin{column}{0.75\textwidth}
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\  
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\  
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\   
+\textcolor{white}{$\triangleleft$}\\  
+\textcolor{white}{$\triangleleft$}\\   
+\alert{$\triangleleft$} Creates the main page of your portfolio website\\ 
+\textcolor{white}{$\triangleleft$}\\       
+  \end{column}
+  \end{columns}
+
+
+
+
+## Other top-level files perform administrative duties
+
+\bigskip\bigskip
+
+  \begin{columns}[onlytextwidth]
+  \begin{column}{0.05\textwidth}\raggedleft
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-document.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-RStudio.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-RStudio.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-Rproj.png}\\  
+  \end{column}
+  \begin{column}{1mm}\end{column}
+  \begin{column}{0.2\textwidth}
+carpentry\\
+data\\  
+data-raw\\
+design\\
+figures\\
+manage\\
+practice\\
+reports\\
+resources\\
+.gitignore\\
+.Renviron\\
+README.Rmd\\
+portfolio.Rproj\\
+  \end{column} 
+  \begin{column}{4mm}\end{column}
+  \begin{column}{0.75\textwidth}
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\  
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\  
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\   
+\alert{$\triangleleft$} Directs Git to ignore specific files\\
+\alert{$\triangleleft$} Stores packages in a library separate from base R\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\   
+  \end{column}
+  \end{columns}
+  
+  
+  
+  
+  
+  
+  
+## \alert{Raw data} are never edited manually
+
+\bigskip\bigskip
+
+  \begin{columns}[onlytextwidth]
+  \begin{column}{0.05\textwidth}\raggedleft
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-document.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-RStudio.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-RStudio.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-Rproj.png}\\  
+  \end{column}
+  \begin{column}{1mm}\end{column}
+  \begin{column}{0.2\textwidth}
+carpentry\\
+data\\  
+data-raw\\
+design\\
+figures\\
+manage\\
+practice\\
+reports\\
+resources\\
+.gitignore\\
+.Renviron\\
+README.Rmd\\
+portfolio.Rproj\\
+  \end{column} 
+  \begin{column}{4mm}\end{column}
+  \begin{column}{0.75\textwidth}
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\  
+\alert{$\triangleleft$} Data in its original form\\
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\   
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\     
+  \end{column}
+  \end{columns}  
+  
+  
+  
+  
+  
+  
+  
+## \alert{Data carpentry} converts raw data to tidy data
+
+\bigskip\bigskip
+
+  \begin{columns}[onlytextwidth]
+  \begin{column}{0.05\textwidth}\raggedleft
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-document.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-RStudio.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-RStudio.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-Rproj.png}\\  
+  \end{column}
+  \begin{column}{1mm}\end{column}
+  \begin{column}{0.2\textwidth}
+carpentry\\
+data\\  
+data-raw\\
+design\\
+figures\\
+manage\\
+practice\\
+reports\\
+resources\\
+.gitignore\\
+.Renviron\\
+README.Rmd\\
+portfolio.Rproj\\
+  \end{column} 
+  \begin{column}{4mm}\end{column}
+  \begin{column}{0.75\textwidth}
+\alert{$\triangleleft$} R scripts that create and save tidy data\\
+\alert{$\triangleleft$} Tidy data saved here, read by design scripts\\ 
+\textcolor{white}{$\triangleleft$}\\
+\textcolor{white}{$\triangleleft$}\\  
+\textcolor{white}{$\triangleleft$}\\
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\   
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\     
+  \end{column}
+  \end{columns}  
+  
+  
+  
+  
+## \alert{Graph design} converts to tidy data to graphs 
+
+\bigskip\bigskip
+
+  \begin{columns}[onlytextwidth]
+  \begin{column}{0.05\textwidth}\raggedleft
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-document.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-RStudio.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-RStudio.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-Rproj.png}\\  
+  \end{column}
+  \begin{column}{1mm}\end{column}
+  \begin{column}{0.2\textwidth}
+carpentry\\
+data\\  
+data-raw\\
+design\\
+figures\\
+manage\\
+practice\\
+reports\\
+resources\\
+.gitignore\\
+.Renviron\\
+README.Rmd\\
+portfolio.Rproj\\
+  \end{column} 
+  \begin{column}{4mm}\end{column}
+  \begin{column}{0.75\textwidth}
+\textcolor{white}{$\triangleleft$}\\
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\
+\alert{$\triangleleft$} R scripts that create and save graphs\\   
+\alert{$\triangleleft$} Graphs saved here, imported by report scripts\\
+\textcolor{white}{$\triangleleft$}\\
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\   
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\     
+  \end{column}
+  \end{columns}  
+  
+  
+  
+  
+  
+## \alert{Reports} commingle data, scripts, graphs, prose, and references 
+
+\bigskip\bigskip
+
+  \begin{columns}[onlytextwidth]
+  \begin{column}{0.05\textwidth}\raggedleft
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-document.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-RStudio.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-RStudio.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-Rproj.png}\\  
+  \end{column}
+  \begin{column}{1mm}\end{column}
+  \begin{column}{0.2\textwidth}
+carpentry\\
+data\\  
+data-raw\\
+design\\
+figures\\
+manage\\
+practice\\
+reports\\
+resources\\
+.gitignore\\
+.Renviron\\
+README.Rmd\\
+portfolio.Rproj\\
+  \end{column} 
+  \begin{column}{4mm}\end{column}
+  \begin{column}{0.75\textwidth}
+\textcolor{white}{$\triangleleft$}\\
+\textcolor{white}{$\triangleleft$}\\
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\
+\textcolor{white}{$\triangleleft$}\\ 
+\alert{$\triangleleft$} One Rmd report per graph\\ 
+\textcolor{white}{$\triangleleft$}\\   
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\alert{$\triangleleft$} Provides links to individual reports\\ 
+\textcolor{white}{$\triangleleft$}\\     
+  \end{column}
+  \end{columns}  
+  
+  
+  
+  
+  
+  
+##  \alert{Resource} files support the portfolio appearance and format
+
+\bigskip\bigskip
+
+  \begin{columns}[onlytextwidth]
+  \begin{column}{0.05\textwidth}\raggedleft
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-document.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-RStudio.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-RStudio.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-Rproj.png}\\  
+  \end{column}
+  \begin{column}{1mm}\end{column}
+  \begin{column}{0.2\textwidth}
+carpentry\\
+data\\  
+data-raw\\
+design\\
+figures\\
+manage\\
+practice\\
+reports\\
+resources\\
+.gitignore\\
+.Renviron\\
+README.Rmd\\
+portfolio.Rproj\\
+  \end{column} 
+  \begin{column}{4mm}\end{column}
+  \begin{column}{0.75\textwidth}
+\textcolor{white}{$\triangleleft$}\\
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\alert{$\triangleleft$} Reports explicitly call on resource files\\ 
+\alert{$\triangleleft$} Image downloads and bibliography files\\  
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\     
+  \end{column}
+  \end{columns} 
+  
+  
+  
+  
+  
+  
+  
+  
+## Reduce clutter by excusing some resources from version control 
+
+\bigskip\bigskip
+
+  \begin{columns}[onlytextwidth]
+  \begin{column}{0.05\textwidth}\raggedleft
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-document.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-RStudio.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-RStudio.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-Rproj.png}\\  
+  \end{column}
+  \begin{column}{1mm}\end{column}
+  \begin{column}{0.2\textwidth}
+carpentry\\
+data\\  
+data-raw\\
+design\\
+figures\\
+manage\\
+practice\\
+reports\\
+resources\\
+.gitignore\\
+.Renviron\\
+README.Rmd\\
+portfolio.Rproj\\
+  \end{column} 
+  \begin{column}{4mm}\end{column}
+  \begin{column}{0.75\textwidth}
+\textcolor{white}{$\triangleleft$}\\
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\
+\alert{$\triangleleft$} Correspondence and project management\\  
+\alert{$\triangleleft$} Scripts for practicing and learning R\\  
+\textcolor{white}{$\triangleleft$}\\  
+\textcolor{white}{$\triangleleft$}\\   
+\alert{$\triangleleft$} Directs Git to ignore specific files\\
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\ 
+\textcolor{white}{$\triangleleft$}\\     
+  \end{column}
+  \end{columns} 
+  
+  
+  
+  
+  
+  
+  
+## Planning at the start of a project saves time later
+
+\bigskip\bigskip
+
+  \begin{columns}[onlytextwidth]
+  \begin{column}{0.05\textwidth}\raggedleft
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-document.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-RStudio.png}\\ 
+\includegraphics[height=0.6\baselineskip]{../resources/icon-RStudio.png}\\  
+\includegraphics[height=0.6\baselineskip]{../resources/icon-Rproj.png}\\  
+  \end{column}
+  \begin{column}{1mm}\end{column}
+  \begin{column}{0.2\textwidth}
+carpentry\\
+data\\  
+data-raw\\
+design\\
+figures\\
+manage\\
+practice\\
+reports\\
+resources\\
+.gitignore\\
+.Renviron\\
+README.Rmd\\
+portfolio.Rproj\\
+  \end{column} 
+  \begin{column}{4mm}\end{column}
+  \begin{column}{0.75\textwidth}
+\alert{$\triangleleft$} R scripts that create and save tidy data\\
+\alert{$\triangleleft$} Tidy data saved here, read by design scripts\\ 
+\alert{$\triangleleft$} Data in its original form\\
+\alert{$\triangleleft$} R scripts that create and save graphs\\   
+\alert{$\triangleleft$} Graphs saved here, imported by report scripts\\
+\alert{$\triangleleft$} Correspondence and project management\\  
+\alert{$\triangleleft$} Scripts for practicing and learning R\\  
+\alert{$\triangleleft$} Reports explicitly call on resource files\\ 
+\alert{$\triangleleft$} Image downloads and bibliography files\\  
+\alert{$\triangleleft$} Directs Git to ignore specific files\\
+\alert{$\triangleleft$} Stores packages in a library separate from base R\\ 
+\alert{$\triangleleft$} Creates the main page of your portfolio website\\ 
+\alert{$\triangleleft$} Sets the project directory as the working directory\\     
+  \end{column}
+  \end{columns}   
+  
+  
+  
+# Files are explicitly linked  
+
+
+
+## Workflow and explicit links using relative file paths 
+
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png} carpentry directory
+
+        tidy-data-01.R
+
+reads file from raw-data directory
+
+```{r echo=TRUE, eval=FALSE}
+    read_csv("data-raw/first-data-set-raw.csv")
+```
+
+produces tidy data and saves to data directory 
+
+```{r echo=TRUE, eval=FALSE}
+    write_csv("data/first-data-set-tidy.csv")
+```
+
+
+
+
+## Workflow and explicit links using relative file paths 
+
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png} reports directory
+
+        d1-report.Rmd
+
+includes code chunks that run the R script to produce the tidy data 
+
+```{r echo=TRUE, eval=FALSE}
+    source("carpentry/tidy-data-01.R")
+```
+
+execute the R script to create the graph 
+
+```{r echo=TRUE, eval=FALSE}
+    source("design/d1-graph.R")
+```
+
+and imports the graph 
+
+```{r echo=TRUE, eval=FALSE}
+    include_graphics("figures/d1-graph.png")
+```
+
+
+
+
+
+## Workflow and explicit links using relative file paths 
+
+\includegraphics[height=0.6\baselineskip]{../resources/icon-folder.png} reports directory
+
+        d1-report.Rmd
+
+also contains all the prose explaining the data, results, graphs, discussion, and references
+
+
+
+
+
+
+
+## References 
+\scriptsize

@@ -1,0 +1,937 @@
+---
+title:     "Making MIDFIELD More Accessible"
+subtitle:  "A workshop for R beginners"
+author:    "Richard Layton, Matthew Ohland, Russell Long, Marisa Orr"
+date:      "2018--10--03"
+institute: "FIE Conference, San Jose, CA"
+output:     binb::metropolis
+fontsize:   12pt
+bibliography: "../references.bib"
+biblio-style: abbrvnat
+nocite: | 
+  @Tufte83, @Wainer1997, @robbins2013, @kostelnickhassett2003, @wickhamgrolemund2016, @kabacoff2015
+---
+
+```{r,setup, include=FALSE}
+library(knitr)
+opts_chunk$set(cache=TRUE, echo=FALSE, warning=FALSE, message=FALSE)
+library(tidyverse)
+library(forcats)
+library(bibtex)
+```
+
+## wi-fi
+
+Marriott_CONFERENCE
+
+IEEE2018
+
+
+## R-Bar volunteers can help with software issues
+
+```{r}
+df <- tribble(
+  ~Min, ~Topic,
+  10, "Introductions",
+  20, "Elements of effective graphs",
+  30, "Getting started with R (tutorial)",
+  20, "Accessing the MIDFIELD data",
+  20, "--- break ---",
+  40, "Using midfieldr (tutorial)",
+  10, "Extending your repertoire",
+  10, "Next steps",
+  20, "Conversations"
+  )
+kable(df)
+```
+
+
+
+# `r df$Topic[2]`
+
+
+## In your handout, list the slices A thru E from largest to smallest
+
+
+\begin{columns}[onlytextwidth]
+
+  \column{0.6\textwidth}
+
+  \bigskip
+
+  \includegraphics[width=1\linewidth]{visuals/slides-pie-1.pdf}
+
+  \column{0.4\textwidth}
+
+\begin{itemize}\Large
+  \item<2->  \alert {\bf B} (largest)
+  \item<3->  \alert {\bf D}
+  \item<3->  \alert {\bf A}
+  \item<3->  \alert {\bf C}
+  \item<3->  \alert {\bf E} (smallest)
+\end{itemize}
+
+\end{columns}
+
+\vspace{2\baselineskip}
+\scriptsize Adapted from [@robbins2013] Ch. 2
+
+
+
+## The same data arranged along a common axis
+
+Comparing values along a common axis is a high-accuracy visual task.
+
+```{r}
+df2 <- tribble(
+  ~N, ~pie,
+  23, "B",
+  21, "D",
+  20, "A",
+  19, "C",
+  17, "E"
+  ) %>%
+  mutate(pie = fct_reorder(pie, N))
+
+ggplot(df2, aes(x = N, y = pie)) +
+  geom_point(size = 7, color = rcb("dark_BG"), fill = rcb("dark_BG")) +
+  labs(x = "", y = "") +
+  scale_x_continuous(breaks = c(17, 18, 19, 20, 21, 22, 23)) +
+  theme_bw() +
+  theme(panel.grid.minor = element_blank()
+        , text = element_text(size = 30)
+        , rect = element_rect(fill = "transparent")
+        )
+```
+
+
+
+## Slices are what percentage of the whole?
+
+\bigskip
+
+\includegraphics[width=1\linewidth]{visuals/slides-3d-pie-1.pdf}
+
+  \begin{tabular}{@{} lr @{}}
+    Fill in the blanks         & A. \Large\rule{0.5in}{0.5pt}\\
+    The total should be 100\%  & B. \Large\rule{0.5in}{0.5pt}\\
+                               & C. \Large\rule{0.5in}{0.5pt}\\
+                               & D. \Large\rule{0.5in}{0.5pt}\\
+  \end{tabular}
+
+
+
+
+## 3D-effects distort our judgment
+
+\bigskip
+
+\includegraphics[width=1\linewidth]{visuals/slides-3d-pie-1.pdf}
+
+  \begin{tabular}{@{} lr @{}}
+    Fill in the blanks         & A. \quad \alert {\bf\Large 20\%}\\
+    The total should be 100\%  & B. \quad \alert {\bf\Large 20\%}\\
+                               & C. \quad \alert {\bf\Large 20\%}\\
+                               & D. \quad \alert {\bf\Large 40\%}\\
+  \end{tabular}
+
+
+
+## Again, the same data arranged along a common axis
+
+A high-accuracy visual task.
+
+```{r}
+df2 <- tribble(
+  ~N, ~pie,
+  20, "A",
+  20, "B",
+  20, "C",
+  40, "D"
+  ) %>%
+  mutate(pie = fct_reorder(pie, N))
+
+ggplot(df2, aes(x = N, y = pie)) +
+  geom_point(size = 7, color = rcb("dark_BG"), fill = rcb("dark_BG")) +
+  labs(x = "", y = "") +
+  scale_x_continuous(limits = c(18, 42)) +
+  theme_bw() +
+  theme(panel.grid.minor = element_blank()
+        , text = element_text(size = 30)
+        , rect = element_rect(fill = "transparent")
+        )
+```
+
+
+## Write down the heights of the bars
+
+\bigskip
+
+\begin{columns}[onlytextwidth]
+
+  \column{0.65\textwidth}
+
+  \bigskip
+
+  \includegraphics[width=1\linewidth]{visuals/slides-3d-bar-1.pdf}
+
+
+  \column{0.05\textwidth}
+
+  \column{0.3\textwidth}
+  This is a visual inspection only.
+
+  \bigskip
+
+  \begin{tabular}{@{} l @{}}
+  Fill in the blanks\\
+  A. \Large\rule{0.5in}{0.5pt}\\
+  B. \Large\rule{0.5in}{0.5pt}\\
+  C. \Large\rule{0.5in}{0.5pt}\\
+  D. \Large\rule{0.5in}{0.5pt}\\
+  \end{tabular}
+
+\end{columns}
+
+\vspace{0\baselineskip}
+\scriptsize Adapted from [@robbins2013] p. 22
+
+
+##  Again, 3D-effects distort our judgment
+
+\bigskip
+
+\begin{columns}[onlytextwidth]
+
+  \column{0.65\textwidth}
+
+  \bigskip
+
+  \includegraphics[width=1\linewidth]{visuals/slides-3d-bar-1.pdf}
+
+
+  \column{0.05\textwidth}
+
+  \column{0.3\textwidth}
+  This is a visual inspection only.
+
+  \bigskip
+
+  \begin{tabular}{@{} l @{}}
+  Fill in the blanks\\
+  A. \quad \alert {\bf\Large 2}\\
+  B. \quad \alert {\bf\Large 4}\\
+  C. \quad \alert {\bf\Large 6}\\
+  D. \quad \alert {\bf\Large 8}\\
+  \end{tabular}
+
+\end{columns}
+
+
+
+
+
+
+## Again, the same data arranged along a common axis
+
+A high-accuracy visual task.
+
+```{r}
+df2 <- tribble(
+  ~N, ~pie,
+  2, "A",
+  4, "B",
+  6, "C",
+  8, "D"
+  ) %>%
+  mutate(pie = fct_reorder(pie, N))
+
+ggplot(df2, aes(x = N, y = pie)) +
+  geom_point(size = 7, color = rcb("dark_BG"), fill = rcb("dark_BG")) +
+  labs(x = "", y = "") +
+  # scale_x_continuous(limits = c(1, 9)) +
+  theme_bw() +
+  theme(panel.grid.minor = element_blank()
+        , text = element_text(size = 30)
+        , rect = element_rect(fill = "transparent")
+        )
+```
+
+
+## You can use bars, but must include zero
+
+```{r}
+bar1 <- ggplot(df2, aes(x = pie, y = N)) +
+  geom_col(color = rcb("mid_BG"), fill = rcb("mid_BG"), width = 0.4) +
+  labs(x = "", y = "") +
+  coord_flip() +
+  # scale_x_continuous(limits = c(1, 9)) +
+  theme_bw() +
+  theme(panel.grid.minor = element_blank()
+        , text = element_text(size = 30)
+        , rect = element_rect(fill = "transparent")
+        )
+bar1
+```
+
+
+##  If you mark the endpoints, you can omit the bar
+
+```{r}
+bar2 <- bar1 +
+  geom_col(color = rcb("light_BG"), fill = rcb("pale_BG"), width = 0.4) +
+  geom_point(size = 7, color = rcb("dark_BG"), fill = rcb("dark_BG")) +
+  theme_bw() +
+  theme(panel.grid.minor = element_blank()
+        , text = element_text(size = 30)
+        , rect = element_rect(fill = "transparent")
+        )
+
+bar2
+```
+
+
+
+
+
+
+##  Producing a "dot plot" with rows ordered per the data
+
+```{r}
+ggplot(df2, aes(x = N, y = pie)) +
+  geom_point(size = 7, color = rcb("dark_BG"), fill = rcb("dark_BG")) +
+  labs(x = "", y = "") +
+  scale_x_continuous(breaks = c(0, 2, 4, 6, 8), limits = c(0, 8)) +
+  theme_bw() +
+  theme(panel.grid.minor = element_blank()
+        , text = element_text(size = 30)
+        , rect = element_rect(fill = "transparent")
+        )
+```
+
+
+
+
+
+
+
+
+## Try estimating areas of three states
+
+\bigskip
+
+Visual estimation of area is a low-accuracy task.
+
+\bigskip
+
+\begin{columns}[onlytextwidth]
+
+  \column{0.45\textwidth}
+
+  \bigskip
+
+  \includegraphics[width=1\linewidth]{visuals/slides-states-1.pdf}
+
+
+  \column{0.05\textwidth}
+
+  \column{0.55\textwidth}
+South Carolina (SC) $\approx$ 83,000 sq km.
+
+  \bigskip
+
+  \begin{tabular}{@{} l r l @{}}
+  FL & \Large\rule{0.5in}{0.5pt} & \normalsize x 1000 sq. km\\
+  GA & \Large\rule{0.5in}{0.5pt} &\normalsize x 1000 sq. km\\
+  AL & \Large\rule{0.5in}{0.5pt} &\normalsize x 1000 sq. km\\
+  SC & 83 &\normalsize x 1000 sq. km\\
+  \end{tabular}
+
+\end{columns}
+
+
+
+\vspace{0\baselineskip}
+\scriptsize Adapted from [@ihaka2007]
+
+
+
+
+## Again, the same data arranged along a common axis
+
+
+```{r}
+df3 <- tribble(
+  ~area, ~state,
+  82933, "SC",
+  170312, "FL",
+  153910, "GA",
+  135767, "AL"
+  ) %>%
+  mutate(state = fct_reorder(state, area))
+
+fig3 <- ggplot(df3, aes(x = area/1000, y = state)) +
+  geom_point(size = 7, color = rcb("dark_BG"), fill = rcb("dark_BG")) +
+  labs(x = "", y = "") +
+  scale_x_continuous(limits = c(80, 180), breaks = c(80, 100, 120, 140, 160, 180)) +
+  theme_bw() +
+  theme(text = element_text(size = 30)
+        , rect = element_rect(fill = "transparent")
+        )
+
+ggsave(filename = "slides-my-states.png",
+    path   = "visuals",
+    width  = 10,
+    height = 10/3,
+    units  = "in", # "in", "cm", or "mm"
+    dpi    = 600)
+```
+
+
+\bigskip
+
+\includegraphics[width=1\linewidth]{visuals/slides-my-states.png}
+
+\begin{center}
+  \begin{tabular}{@{} l r l @{}}
+  FL & \Large\rule{0.5in}{0.5pt} & \normalsize x 1000 sq. km\\
+  GA & \Large\rule{0.5in}{0.5pt} & \normalsize x 1000 sq. km\\
+  AL & \Large\rule{0.5in}{0.5pt} & \normalsize x 1000 sq. km\\
+  SC & 83 & \normalsize x 1000 sq. km\\
+  \end{tabular}
+\end{center}
+
+
+
+
+
+
+
+
+
+## Your estimates have probably improved
+
+\bigskip
+
+\includegraphics[width=1\linewidth]{visuals/slides-my-states.png}
+
+\begin{center}
+  \begin{tabular}{@{} l r @{}}
+  FL & \alert {\bf\Large 170} \normalsize x 1000 sq. km\\
+  GA & \alert {\bf\Large 154} \normalsize x 1000 sq. km\\
+  AL & \alert {\bf\Large 136} \normalsize x 1000 sq. km\\
+  SC & \alert {\bf\Large 83} \normalsize x 1000 sq. km\\
+  \end{tabular}
+\end{center}
+
+
+
+
+
+
+
+## When color represents area, what story emerges?
+
+Color used deceptively\, 2012 election by county: \bf\color{blue} Obama, \bf \color{red} Romney
+
+\includegraphics[width=0.95\linewidth]{visuals/slides-voting-area.pdf}
+
+\color{gray}\scriptsize\url{http://www-personal.umich.edu/~mejn/election/2012/}
+
+
+
+
+
+
+
+## When color represents voters?
+
+Color used judiciously, each dot 100 votes for: \bf\color{blue} Obama, \bf \color{red} Romney
+
+\includegraphics[width=0.95\linewidth]{visuals/slides-voting-numbers.pdf}
+\color{gray}\scriptsize\url{http://coach.weinstein.to/lets-get-specific/election-results/
+}
+
+
+
+
+
+## The  experts tell us
+
+\begin{columns}
+\column{0.4\linewidth}
+\includegraphics[width=1\linewidth]{visuals/dumount.jpg}
+
+\column{0.6\linewidth}
+Optimal design primarily depends on
+
+\begin{itemize}
+\item The message to be conveyed
+\item The variables to be shown
+\end{itemize}
+
+\end{columns}
+
+
+[@doumont2009book]
+
+
+\tiny  Image from http://www.principiae.be/pdfs/Principiae-2014.pdf
+
+
+
+
+## The  experts tell us
+
+\begin{columns}
+\column{0.4\linewidth}
+\includegraphics[width=1\linewidth]{visuals/tufte.jpg}
+
+\column{0.6\linewidth}
+
+
+The task of the designer is to give visual access to the subtle and the difficult --- that is, reveal the complex.
+
+
+
+
+\end{columns}
+
+\footnotesize
+[@Tufte1983]
+
+\tiny  Image from https://en.wikipedia.org/wiki/Edward_Tufte
+
+
+
+## The  experts tell us
+
+\begin{columns}
+\column{0.4\linewidth}
+\includegraphics[width=1\linewidth]{visuals/evergreen.jpg}
+
+\column{0.6\linewidth}
+What’s your point?
+
+$\qquad$
+
+Seriously, that's the most important question.
+
+
+\end{columns}
+
+\footnotesize
+[@evergreen2017]
+
+\tiny  Image from https://tei.cgu.edu/people/stephanie-evergreen-phd/
+
+
+## R is designed with statistical analysis and data graphics in mind
+
+
+Well-designed data graphics are accessible, even to the beginner
+
+- makes graphical exploration of data accessible to all
+- work in progress is easily disseminated via GitHub
+
+And because R is open-source
+
+- new packages appear regularly---one might solve *your* problem
+- anyone can help us find errors and add features to our packages
+
+
+
+# `r df$Topic[3]`
+
+## This self-paced tutorial introduces basic R
+
+- Don't worry about the pace of your  work.
+- Everyone works and learns new material at a different pace.
+- Please ask questions of your neighbors as well as the facilitators
+- If you finish early, ask if anyone near you needs assistance
+- Save your work regularly
+
+\includegraphics[width=0.3\linewidth]{visuals/midfield-grad-logo.png}
+
+
+##  https://midfieldr.github.io/workshops
+
+\includegraphics[width=1\linewidth]{visuals/tutorial-screen-2.png}
+
+Create an R project, start an R script, add code, rinse, repeat.
+
+
+<!-- ## Basic concepts -->
+
+<!-- - R, RStudio, scripts, packages -->
+<!-- - functions, arguments, values -->
+<!-- - data frame -->
+<!-- - data transformation select(). filter(), mutate(), group_summarize() -->
+<!-- - data joining left_join(), bind_rows()  -->
+<!-- - operators (pipe, assign) -->
+<!-- - concatentate, paste(), c(),  -->
+<!-- - graphs with ggplot()  -->
+
+
+<!-- ## Getting started with R -->
+
+<!-- - Launch RStudio -->
+<!-- - Open an R project (could be a github preset)  -->
+<!-- - Launch the R Project  -->
+<!-- - Open a script and save  -->
+<!-- - Load a package  -->
+<!-- - Data and a graph (from R for Data SCience)  -->
+
+
+<!-- Go to the website -->
+
+
+
+
+
+
+# `r df$Topic[4]`
+
+## In education, cross-sectional designs are typical
+
+\includegraphics[width=1\linewidth, trim=55mm 75mm 45mm 70mm, clip=true]{visuals/cross-section-research.pdf}
+
+## Longitudinal studies offer some advantages
+
+\includegraphics[width=1\linewidth, trim=55mm 75mm 45mm 70mm, clip=true]{visuals/longitudinal-research.pdf}
+
+## MIDFIELD is a database for longitudinal studies
+
+\includegraphics[width=1\maxwidth, trim=0mm 5mm 0mm 0mm, clip=true]{visuals/midfieldfinal.pdf}
+
+\begin{itemize}
+  \item 1.6 M undergraduate students at 21 US institutions
+  \item whole-population data from registrars
+  \item 1987--present
+\end{itemize}
+
+## MIDFIELD data are curated in four categories
+
+\vspace*{-1.2\baselineskip}
+
+\includegraphics[width=1\maxwidth, trim=0mm 30mm 0mm 30mm, clip=true]{visuals/make-figures-11.pdf}
+
+
+## R package midfielddata provides a stratified sample
+
+\vspace*{-1.2\baselineskip}
+
+\includegraphics[width=1\maxwidth, trim=0mm 30mm 5mm 30mm, clip=true]{visuals/make-figures-11b.pdf}
+
+
+## Each observation is a unique student
+
+\vspace*{0.5\baselineskip}
+
+\includegraphics[width=1\maxwidth, trim=0mm 30mm 5mm 30mm, clip=true]{visuals/make-figures-12.pdf}
+
+\footnotesize
+\begin{tabular}{@{} l @{}}
+\texttt{\textbf{midfieldstudents}}\\
+98,000 observations\\
+19 Mb of memory\\
+\end{tabular}
+
+
+## Each observation is one term for one student
+
+\vspace*{0.5\baselineskip}
+
+\includegraphics[width=1\maxwidth, trim=0mm 30mm 5mm 30mm, clip=true]{visuals/make-figures-13.pdf}
+
+\footnotesize
+\begin{tabular}{@{} l l @{}}
+$\qquad\qquad\qquad\qquad$ & \texttt{\textbf{midfieldterms}}\\
+ &   729,000 observations\\
+ &   82 Mb of memory\\
+\end{tabular}
+
+## Each observation is one course for one student
+
+\vspace*{0.5\baselineskip}
+
+\includegraphics[width=1\maxwidth, trim=0mm 30mm 5mm 30mm, clip=true]{visuals/make-figures-14.pdf}
+
+\footnotesize
+\begin{tabular}{@{} l l l @{}}
+$\qquad\qquad\qquad\qquad$ && \texttt{\textbf{midfieldcourses}}\\
+ &$\qquad\qquad\qquad\qquad$&   3.5 M observations\\
+ &&   348 Mb of memory\\
+\end{tabular}
+
+
+## Each observation is a unique student
+
+\vspace*{0.5\baselineskip}
+
+\includegraphics[width=1\maxwidth, trim=0mm 30mm 5mm 30mm, clip=true]{visuals/make-figures-15.pdf}
+
+\footnotesize
+\begin{tabular}{@{} l l l r @{}}
+$\qquad\qquad\qquad\qquad$ &&& \texttt{\textbf{midfielddegrees}}\\
+ &$\qquad\qquad\qquad\qquad$&&   98,000 M observations\\
+ &&$\qquad\qquad\qquad$&    10 Mb of memory\\
+\end{tabular}
+
+## midfielddata provides the data
+
+\includegraphics[width=1\maxwidth, trim=45mm 50mm 45mm 50mm, clip=true]{visuals/make-figures-02c-2.pdf}
+
+## midfieldr provides the tools
+
+\includegraphics[width=1\maxwidth, trim=45mm 50mm 45mm 50mm, clip=true]{visuals/make-figures-02b-2.pdf}
+
+## Preparing for the workshop, you installed both packages
+
+\footnotesize
+<https://midfieldr.github.io/midfieldr>
+
+\includegraphics[width=0.8\maxwidth, trim=0mm 20mm 0mm 0mm, clip=true]{visuals/midfieldr.png}
+
+\includegraphics[width=0.8\maxwidth, trim=0mm 0mm 0mm 0mm, clip=true]{visuals/midfielddata.png}
+
+
+## midfieldr provides functions for working with midfieldddata
+
+Some of those functions you will use today are:
+
+```{r}
+df_func <- tribble(
+  ~Function, ~Provides,
+  "cip_filter()", "Identify programs by CIP code",
+  "cip_label()", "Label your programs",
+  "ever_filter()", "Find all students ever enrolled in your programs",
+  "grad_filter()", "Find all graduates of your programs",
+  "race_sex_join()", "Join student race/ethnicity and sex to the data",
+  "multiway_order()", "Order the rows and panels of multiway data"
+  )
+kable(df_func)
+```
+
+\begin{itemize}
+\item<2-> \Large\alert{\bf We'll work with midfieldr after the break.}
+\end{itemize}
+
+
+
+<!-- # `r df$Topic[5]`  -->
+
+<!-- break -->
+
+
+
+
+
+
+
+# `r df$Topic[6]`
+
+## This self-paced tutorial illustrates midfieldr functions
+
+- Don't worry about the pace of your  work.
+- Everyone works and learns new material at a different pace.
+- Please ask questions of your neighbors as well as the facilitators
+- If you finish early, ask if anyone near you needs assistance
+- Save your work regularly
+
+
+\includegraphics[width=0.3\linewidth]{visuals/midfield-grad-logo.png}
+
+
+##  https://midfieldr.github.io/midfieldr
+
+
+\includegraphics[width=1\linewidth]{visuals/tutorial-screen-4.png}
+
+
+Start a new R script, add a line of code, run it
+Examine the result, repeat
+
+
+
+
+
+
+
+
+# `r df$Topic[7]`: Metrics & graphics
+
+## Graduation rates of starters
+
+\includegraphics[height=3.2in]{visuals/figure04.pdf}
+
+## Stickiness in major and in any other major
+
+\includegraphics[height=3.2in]{visuals/figure08-v2.pdf}
+
+## Starting and destination majors of all women ever in EE
+
+Sankey diagram
+
+\includegraphics[height=3.2in]{visuals/figure05.pdf}
+
+## Migration yield
+
+\includegraphics[height=3.2in]{visuals/figure10-v2.pdf}
+
+## Comparing graduation rates of starters and migrators
+
+\includegraphics[height=3.2in]{visuals/figure11-v2.pdf}
+
+
+
+
+
+
+
+
+
+
+
+# `r df$Topic[8]`
+
+
+## Next steps in learning to use midfieldr
+
+Several more vignettes (tutorials) on the midfieldr website
+
+\includegraphics[height=3.2in]{visuals/midfieldr-screen.pdf}
+
+
+
+
+
+
+
+## Next steps if you want more than a MIDFIELD sample
+
+
+\begin{columns}
+
+\column{0.75\linewidth}
+\includegraphics[width=1\linewidth, trim=0mm 5mm 0mm 0mm, clip=true]{visuals/midfieldfinal.pdf}
+
+\vspace{1\baselineskip}
+
+\includegraphics[width=1\linewidth, trim=0mm 0mm 0mm 0mm, clip=true]{visuals/make-figures-11-cropped.pdf}
+
+\vspace{1\baselineskip}
+
+Talk to a member of the MIDFIELD team.
+
+Names and emails on the website.
+
+
+
+\end{columns}
+
+
+
+
+## Talk to a member of the MIDFIELD team
+
+\includegraphics[height=3.2in, trim=0mm 0mm 0mm 0mm, clip=true]{visuals/about-midfield.png}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Next steps in learning R
+
+\begin{tabular}{@{} p{1in} p{1in} p{3in}  @{}}
+
+\includegraphics[height=1.2in, trim=0mm 0mm 0mm 0mm, clip=true]{visuals/r4datasci.png}
+
+\footnotesize Hadley Wickham
+
+\footnotesize Garrett Grolemund
+
+&
+\includegraphics[height=1.2in, trim=0mm 0mm 0mm 0mm, clip=true]{visuals/kabacoff2_cover.png}
+
+\footnotesize Robert Kabacoff
+
+&
+\includegraphics[height=1.2in, trim=0mm 0mm 30mm 0mm, clip=true]{visuals/stackexchange.pdf}
+
+\footnotesize StackExchange.com
+
+\footnotesize Or just google it
+
+\footnotesize Your problem may already be solved \\
+\end{tabular}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Next steps in learning about graph design
+
+\begin{tabular}{@{} p{1in} p{1in} p{1in} p{1in} @{}}
+
+\includegraphics[height=1.2in, trim=0mm 0mm 0mm 0mm, clip=true]{visuals/vdqi.jpg}
+
+\footnotesize Edward Tufte
+
+&
+\includegraphics[height=1.2in, trim=0mm 0mm 0mm 0mm, clip=true]{visuals/wainer-trout.jpg}
+
+\footnotesize Howard Wainer
+
+&
+\includegraphics[height=1.2in, trim=1mm 1mm 1mm 1mm, clip=true]{visuals/robbins.jpg}
+
+\footnotesize Naomi Robbins
+
+&
+\includegraphics[height=1.2in, trim=0mm 0mm 0mm 0mm, clip=true]{visuals/kostelnick.jpg}
+
+\footnotesize Charles Kostelnick
+
+\footnotesize Michael Hassett\\
+\end{tabular}
+
+
+
+## Conversations
+
+An unstructured time to relax, talk, question, and share.
+
+
+
+
+
+
+## References
+\scriptsize
+
+
+
