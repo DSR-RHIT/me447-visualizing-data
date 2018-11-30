@@ -20,9 +20,11 @@ licensed under
 
 ## file management
 
-[Basic elements of file
-management](https://speakerdeck.com/graphdr/rstudio-project-basic-elements-of-file-management)
-on SpeakerDeck
+[Basic elements of file management](../slides/s034_file-management.pdf)
+(slides)
+
+Summary of the planned file structure  
+<img src="../resources/cm502-02.png" width="60%" />
 
 ## know your desired data structure
 

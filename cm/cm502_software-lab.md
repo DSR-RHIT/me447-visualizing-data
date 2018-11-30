@@ -226,22 +226,14 @@ Next, use one of these two approaches
   - In your OS, use your usual method for creating folders manually
   - Or in RStudio, *Files \> New Folder*
 
-Using either approach, create new folders for `carpentry`, `data-raw`,
-etc. When done, the directory tree should look like this (you might have
-additional files such as `.gitignore` or `README.md`). We’ll discuss how
-to use this directory structure in an upcoming lesson.
+Using either approach, create new folders for `carpentry`, `data`,
+`data-raw`, etc. When done, the directory tree should look like this
+(you might have additional files such as `.gitignore` or `README.md`).
+We’ll discuss how to use this directory structure in an upcoming lesson
+on the [basic elements of file
+management](https://speakerdeck.com/graphdr/rstudio-project-basic-elements-of-file-management).
 
-    portfolio-last-first/
-        |-- carpentry/
-        |-- data-raw/
-        |-- data/
-        |-- design/
-        |-- figures/
-        |-- practice/
-        |-- reports/
-        |-- resources/
-        |-- .Renviron
-        `-- portfolio-last-first.Rproj
+<img src="../resources/cm034-01.png" width="10%" />
 
 ## edit gitignore
 
@@ -272,27 +264,30 @@ can create the file as follows,
 Once the file exists,
 
   - Open the `.gitignore` file
+
   - Add these lines
-
-<!-- end list -->
-
-    # R files not version controlled
-    .Rhistory
-    .Rapp.history
-    .RData
+    
+    \# R files not version controlled .Rhistory .Rapp.history .RData
     .Rproj.user/
 
-We can also generally omit rendered documents, e.g., HTML files or docx
-files, from version control. Add these lines of code to the `.gitignore`
-file.
+# project files not version controlled
+
+manage practice
+
+We can also generally omit HTML files (we are using github-specific .md
+files for the web pages) and binary files like Office .docx, .pptx, and
+.xlsx.
+
+Add these lines of code to the `.gitignore` file.
 
     # top directory files not version controlled
     *.html
-    *.docx
     
     # sub-directory files not version controlled
     */*.html
     */*.docx
+    */*.pptx
+    */*.xlsx
 
 Optional: Raw data does not generally have to be version controlled. If
 the files are large, some analysts list the raw data directory in
@@ -363,20 +358,7 @@ the keyboard shortcut Ctrl + Shift + K.
 
 Your project directory should look something like this,
 
-    portfolio-last-first/
-        |-- carpentry/
-        |-- data-raw/
-        |-- data/
-        |-- design/
-        |-- figures/
-        |-- practice/
-        |-- reports/
-        |-- resources/
-        |-- .Renviron
-        |-- .gitignore
-        |-- README.md
-        |-- README.Rmd
-        `-- portfolio-last-first.Rproj
+<img src="../resources/cm502-01.png" width="15%" />
 
 For more information on writing a good README file, see
 <https://github.com/noffle/art-of-readme>
