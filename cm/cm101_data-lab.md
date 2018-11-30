@@ -23,7 +23,8 @@ licensed under
 [Basic elements of file management](../slides/s034_file-management.pdf)
 (slides)
 
-Summary of the planned file structure  
+File structure summary
+
 <img src="../resources/cm502-02.png" width="60%" />
 
 ## know your desired data structure

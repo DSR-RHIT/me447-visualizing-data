@@ -233,7 +233,15 @@ We’ll discuss how to use this directory structure in an upcoming lesson
 on the [basic elements of file
 management](https://speakerdeck.com/graphdr/rstudio-project-basic-elements-of-file-management).
 
-<img src="../resources/cm034-01.png" width="10%" />
+<img src="../resources/icon-folder.png" width="2%" /> carpentry  
+<img src="../resources/icon-folder.png" width="2%" /> data  
+<img src="../resources/icon-folder.png" width="2%" /> data-raw  
+<img src="../resources/icon-folder.png" width="2%" /> design  
+<img src="../resources/icon-folder.png" width="2%" /> figures  
+<img src="../resources/icon-folder.png" width="2%" /> manage  
+<img src="../resources/icon-folder.png" width="2%" /> practice  
+<img src="../resources/icon-folder.png" width="2%" /> reports  
+<img src="../resources/icon-folder.png" width="2%" /> resources
 
 ## edit gitignore
 
@@ -333,18 +341,30 @@ Add the YAML header for a GitHub document.
     output: github_document
     ---
 
-Create a level-1 heading for the repo title and add your name and date.
-By using the inline R code `Sys.Date()`, the date is automatically set
-to the current date.
+After the header, add a title for the webpage (in R Markdown, a single
+hashtag indicates a level-1 header)
+
+    # Portfolio of data displays 
+
+Next add your name and date. We set up an inline code chunk that allows
+the R function `Sys.Date()` to be evaluated when we knit the document.
+Inline R code chunks are denoted by enclosing the code with `` `r ` ``.
+Whenever the file is knitted, the date will be set to the current date.
 
 ``` 
-# Portfolio of data displays  
-
 Your Name  
 `r Sys.Date()`  
 ```
 
-Add some prose that introduces your portfolio.
+If you wish to use a non-default data format, for example, to list just
+the month and year, use the `format()` function. For additional date
+formatting tips, see
+[Quick-R](https://www.statmethods.net/input/dates.html).
+
+    `r format(Sys.Date(), '%B %Y')` 
+
+Add some prose that introduces your portfolio. For more information on
+writing a good README file, see Whitmore ([2018](#ref-Whitmore:2018)).
 
     ## Introduction
     
@@ -354,14 +374,18 @@ Add some prose that introduces your portfolio.
     work; give them a reason to keep reading.
 
 In the RStudio menu ribbon, click the *Knit* button. You can also use
-the keyboard shortcut Ctrl + Shift + K.
+the keyboard shortcut Ctrl + Shift + K. Knitting README.Rmd to
+`github_document` output produces the README.md file used by GitHub to
+produce the portfolio main webpage.
 
-Your project directory should look something like this,
-
-<img src="../resources/cm502-01.png" width="15%" />
-
-For more information on writing a good README file, see
-<https://github.com/noffle/art-of-readme>
+Your project directory, in addition to the folders shown earlier, should
+now contain the following files:  
+<img src="../resources/icon-document-40px.png" width="2%" />
+.gitignore  
+<img src="../resources/icon-RStudio.png" width="2%" /> .Renviron  
+<img src="../resources/icon-RStudio.png" width="2%" /> README.Rmd  
+<img src="../resources/icon-RStudio.png" width="2%" /> README.md  
+<img src="../resources/icon-Rproj.png" width="2%" /> portfolio.Rproj
 
 ## setup reading response
 
@@ -447,6 +471,13 @@ your changes.
 
 Bryan J (2018) Happy Git and GitHub for the useR.
 <http://happygitwithr.com/>
+
+</div>
+
+<div id="ref-Whitmore:2018">
+
+Whitmore S (2018) Art of README.
+<https://github.com/noffle/art-of-readme>
 
 </div>
 
