@@ -20,7 +20,7 @@ licensed under
 
 ## file management
 
-[Basic elements of file management](../slides/s034_file-management.pdf)
+[Basic elements of file management](../slides/sd034_file-management.pdf)
 (slides)
 
 File structure summary
