@@ -89,7 +89,7 @@ Data lab
 
   - [File management](cm/cm101_data-lab.md#file-management) (data lab)  
   - [Basic elements of file
-    management](../slides/sd034_file-management.pdf) (slides)
+    management](slides/sd034_file-management.pdf) (slides)
 
 ## graphs
 
