@@ -87,7 +87,7 @@ Data lab
 
 ## file management
 
-  - [File management](cm/cm101_data-lab.md#file-management)  
+  - [The portfolio directory](cm/cm101_data-lab.md#file-management)  
   - [Basic elements of file
     management](slides/sd034_file-management.pdf) (slides)
 
