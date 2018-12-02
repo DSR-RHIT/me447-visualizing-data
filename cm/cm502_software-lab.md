@@ -240,7 +240,13 @@ on the basic elements of file management.
 <img src="../resources/icon-folder.png" width="2%" /> manage  
 <img src="../resources/icon-folder.png" width="2%" /> practice  
 <img src="../resources/icon-folder.png" width="2%" /> reports  
-<img src="../resources/icon-folder.png" width="2%" /> resources
+<img src="../resources/icon-folder.png" width="2%" /> resources  
+<img src="../resources/icon-document-40px.png" width="2%" />
+.gitignore  
+<img src="../resources/icon-RStudio.png" width="2%" /> .Renviron  
+<img src="../resources/icon-RStudio.png" width="2%" /> README.Rmd  
+<img src="../resources/icon-RStudio.png" width="2%" /> README.md  
+<img src="../resources/icon-Rproj.png" width="2%" /> portfolio.Rproj
 
 ## edit gitignore
 
