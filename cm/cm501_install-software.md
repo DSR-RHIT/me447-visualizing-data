@@ -109,7 +109,7 @@ y <- sin(t)
 plot(t, y)
 ```
 
-<img src="cm501_install-software_files/figure-gfm/unnamed-chunk-5-1.png" width="50%" />
+<img src="../resources/cm501-sine-1.png" width="50%" />
 
 Lastly, let’s check if RStudio can see git locally. In RStudio,
 
