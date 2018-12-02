@@ -31,7 +31,7 @@ are:
 
   - R is free, open source, and available on every major platform,
     making it easy for others to replicate your work.
-  - The variety of R packages—13449 R packages as of 2018-12-01—many of
+  - The variety of R packages—13449 R packages as of 2018-12-02—many of
     them cutting edge tools.
   - R packages provide deep-seated support for data analysis, e.g.,
     missing values, data frames, and subsetting.

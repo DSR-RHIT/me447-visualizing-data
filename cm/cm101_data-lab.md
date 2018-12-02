@@ -25,7 +25,20 @@ licensed under
 
 File structure summary
 
-<img src="../resources/cm502-02.png" width="60%" />
+<img src="../resources/icon-folder.png" width="2%" /> carpentry  
+<img src="../resources/icon-folder.png" width="2%" /> data  
+<img src="../resources/icon-folder.png" width="2%" /> data-raw  
+<img src="../resources/icon-folder.png" width="2%" /> design  
+<img src="../resources/icon-folder.png" width="2%" /> figures  
+<img src="../resources/icon-folder.png" width="2%" /> manage  
+<img src="../resources/icon-folder.png" width="2%" /> practice  
+<img src="../resources/icon-folder.png" width="2%" /> reports  
+<img src="../resources/icon-folder.png" width="2%" /> resources  
+<img src="../resources/icon-document-40px.png" width="2%" />
+.gitignore  
+<img src="../resources/icon-RStudio.png" width="2%" /> .Renviron  
+<img src="../resources/icon-RStudio.png" width="2%" /> README.Rmd  
+<img src="../resources/icon-Rproj.png" width="2%" /> portfolio.Rproj
 
 ## know your desired data structure
 
