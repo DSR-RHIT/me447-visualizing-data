@@ -230,8 +230,7 @@ Using either approach, create new folders for `carpentry`, `data`,
 `data-raw`, etc. When done, the directory tree should look like this
 (you might have additional files such as `.gitignore` or `README.md`).
 We’ll discuss how to use this directory structure in an upcoming lesson
-on the [basic elements of file
-management](https://speakerdeck.com/graphdr/rstudio-project-basic-elements-of-file-management).
+on the basic elements of file management.
 
 <img src="../resources/icon-folder.png" width="2%" /> carpentry  
 <img src="../resources/icon-folder.png" width="2%" /> data  
