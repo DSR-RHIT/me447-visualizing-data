@@ -108,8 +108,8 @@ GitHub and
 Instructions adapted from (Bryan, [2018](#ref-Bryan:2018))
 
   - Navigate to your portfolio repo on GitHub  
-  - Copy the HTTPS clone URL to your clipboard via the green “Clone or
-    Download” button. The URL will look something like this:
+  - Copy the HTTPS clone URL to your clipboard via the green â€œClone or
+    Downloadâ€ button. The URL will look something like this:
     `https://github.com/jennybc/myrepo.git`
 
 In RStudio,
@@ -221,16 +221,9 @@ All we are going to do is create a set of empty sub-directories
 
   - Re-open (if you closed it) the R project for your portfolio
 
-Next, use one of these two approaches
-
-  - In your OS, use your usual method for creating folders manually
-  - Or in RStudio, *Files \> New Folder*
-
-Using either approach, create new folders for `carpentry`, `data`,
-`data-raw`, etc. When done, the directory tree should look like this
-(you might have additional files such as `.gitignore` or `README.md`).
-We’ll discuss how to use this directory structure in an upcoming lesson
-on the basic elements of file management.
+Next, create new folders for `carpentry`, `data`, `data-raw`, etc. so
+that your top level project directory has the sub-directories (folders)
+shown below.
 
 <img src="../resources/icon-folder.png" width="2%" /> carpentry  
 <img src="../resources/icon-folder.png" width="2%" /> data  
@@ -240,13 +233,7 @@ on the basic elements of file management.
 <img src="../resources/icon-folder.png" width="2%" /> manage  
 <img src="../resources/icon-folder.png" width="2%" /> practice  
 <img src="../resources/icon-folder.png" width="2%" /> reports  
-<img src="../resources/icon-folder.png" width="2%" /> resources  
-<img src="../resources/icon-document-40px.png" width="2%" />
-.gitignore  
-<img src="../resources/icon-RStudio.png" width="2%" /> .Renviron  
-<img src="../resources/icon-RStudio.png" width="2%" /> README.Rmd  
-<img src="../resources/icon-RStudio.png" width="2%" /> README.md  
-<img src="../resources/icon-Rproj.png" width="2%" /> portfolio.Rproj
+<img src="../resources/icon-folder.png" width="2%" /> resources
 
 ## edit gitignore
 
@@ -431,7 +418,7 @@ Next we add some prompts and space for your
     
     **Response:**  
     
-    **Prompt:** Explain how the author’s argument might be used to support a decision you would make in 
+    **Prompt:** Explain how the authorâ€™s argument might be used to support a decision you would make in 
     designing a display. 
     
     **Response:** 
