@@ -10,7 +10,6 @@ README.Rmd
 cm/*.Rmd
 reports/*.md
 slides/*.Rmd
-cm/*_files$
 
 # ignore holding folders
 holding
