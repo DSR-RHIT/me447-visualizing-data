@@ -36,9 +36,9 @@ You should already have done the following
 ## setup GitHub
 
 GitHub is a hosting service that provides an online home for your
-Git-based projectsâ€”critically important for sharing with
-collaborators. Once you have a GitHub account, you will update your
-repositories using the RStudio interface.
+Git-based projects—critically important for sharing with collaborators.
+Once you have a GitHub account, you will update your repositories using
+the RStudio interface.
 
   - [Join GitHub
     Education](http://happygitwithr.com/github-acct.html#free-private-repos)
@@ -108,8 +108,8 @@ GitHub and
 Instructions adapted from (Bryan, [2018](#ref-Bryan:2018))
 
   - Navigate to your portfolio repo on GitHub  
-  - Copy the HTTPS clone URL to your clipboard via the green â€œClone or
-    Downloadâ€ button. The URL will look something like this:
+  - Copy the HTTPS clone URL to your clipboard via the green “Clone or
+    Download” button. The URL will look something like this:
     `https://github.com/jennybc/myrepo.git`
 
 In RStudio,
@@ -431,7 +431,7 @@ Next we add some prompts and space for your
     
     **Response:**  
     
-    **Prompt:** Explain how the authorâ€™s argument might be used to support a decision you would make in 
+    **Prompt:** Explain how the author’s argument might be used to support a decision you would make in 
     designing a display. 
     
     **Response:** 
