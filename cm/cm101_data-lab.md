@@ -20,7 +20,11 @@ licensed under
 
 ## file management
 
-The portfolio directory
+Before working with data, we should decide where files will go and what
+to name them. Thus we start with the [basic elements of file
+management](../slides/sd034_file-management.pdf) (slides). To summarize:
+
+**Plan your directory structure**
 
 <img src="../resources/icon-folder.png" width="2%" /> carpentry  
 <img src="../resources/icon-folder.png" width="2%" /> data  
@@ -33,13 +37,34 @@ The portfolio directory
 <img src="../resources/icon-folder.png" width="2%" /> resources  
 <img src="../resources/icon-document-40px.png" width="2%" />
 .gitignore  
-<img src="../resources/icon-RStudio.png" width="2%" /> .Renviron  
-<img src="../resources/icon-RStudio.png" width="2%" /> README.Rmd  
-<img src="../resources/icon-RStudio.png" width="2%" /> README.md  
+<img src="../resources/icon-document-40px.png" width="2%" /> .Renviron  
+<img src="../resources/icon-Rmd.png" width="2%" /> README.Rmd  
+<img src="../resources/icon-md.png" width="2%" /> README.md  
 <img src="../resources/icon-Rproj.png" width="2%" /> portfolio.Rproj
 
-See the [Basic elements of file
-management](../slides/sd034_file-management.pdf) for more detail.
+**Adopt a scheme to consistently name your files**. For example,
+
+    carpentry/ d7_extract-and-tidy.R
+    data/      d7_survey-data.csv
+    data-raw/  d7_survey-data-raw.csv
+    design/    d7_div-stack-bar.R
+    figures/   d7_div-stack-bar.png
+    reports/   d7_report.Rmd
+
+**Explicitly link files using relative file paths**. For example, report
+script `reports/d7_report.Rmd` contains the text of the report
+interleaved with code chunks that run every R script,
+
+    source("carpentry/d7_extract-and-tidy.R")
+    source("design/d7_div-stack-bar.R")
+
+import data to print a data table,
+
+    read_csv("data/d7_survey-data.csv")
+
+and import figures.
+
+    include_graphics("figures/d7_div-stack-bar.png")
 
 ## know your desired data structure
 
