@@ -27,7 +27,7 @@ permission
 | 2  | M | Graph basics with ggplot2<br>Practice[]()                                                                                                                                               |                                                                                        |                                                |
 |    | T | ![](resources/icon-document.png) Tufte ([1997](#ref-Tufte:1997)) Decision to launch Challenger                                                                                          |                                                                                        | [Reading prompts](reports/reading-prompts.Rmd) |
 |    | R | Data basics<br>Practice[]()                                                                                                                                                             |                                                                                        |                                                |
-|    | F | [Data lab](cm/cm101_data-lab.md) with file management<br>Return reprints                                                                                                                | Start acquiring data                                                                   |                                                |
+|    | F | [Data lab](cm/cm101_data-lab.md) with [file management](cm/cm101_data-lab.md#file-management)<br>Return reprints                                                                        | Start acquiring data                                                                   |                                                |
 | 3  | M | Markdown basics<br>Practice[]()                                                                                                                                                         | Recent practices done                                                                  |                                                |
 |    | T | ![](resources/icon-moodle.png) Robbins ([2013](#ref-Robbins:2013:Ch.6)) General design principles                                                                                       |                                                                                        |                                                |
 |    | R | [D1 distributions](cm/cm301_portfolio_display-reqts.md#D1-distributions)<br>Practice[]()                                                                                                | [D1 data](cm/cm301_portfolio_display-reqts.md#portfolio-display-requirements) acquired |                                                |
@@ -87,7 +87,7 @@ Data lab
 
 ## file management
 
-  - [The portfolio directory](cm/cm101_data-lab.md#file-management)  
+  - [Summary](cm/cm101_data-lab.md#file-management)  
   - [Basic elements of file
     management](slides/sd034_file-management.pdf) (slides)
 
