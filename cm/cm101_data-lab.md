@@ -21,8 +21,10 @@ licensed under
 ## file management
 
 Before working with data, we should decide where files will go and what
-to name them. Thus we start with the [basic elements of file
-management](../slides/sd034_file-management.pdf) (slides). To summarize:
+to name them.
+
+[Basic elements of file management](../slides/sd034_file-management.pdf)
+(slides) summarized as follows.
 
 **Plan your directory structure**
 
@@ -74,7 +76,7 @@ summary](cm301_portfolio_display-reqts.md#portfolio-display-requirements).
 As you look for data—both for practice and for the final display—know
 the data structure you are looking for.
 
-The elements of a prospective data set you should identfy include
+The elements of a prospective data set you should identify include
 
   - the number of observations
   - the number of quantitative variables
