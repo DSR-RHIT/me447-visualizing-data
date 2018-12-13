@@ -10,6 +10,13 @@ README.Rmd
 cm/*.Rmd
 reports/*.md
 slides/*.Rmd
+slides/*.png
+slides/*.jpg
+slides/*.aux
+slides/*.nav
+slides/*.out
+slides/*.toc
+slides/*.snm
 
 # ignore holding folders
 holding
