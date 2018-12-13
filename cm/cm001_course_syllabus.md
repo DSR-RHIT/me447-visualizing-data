@@ -1,7 +1,7 @@
 
 # syllabus
 
-<img src="../resources/header-syllabus.png" width="70%" style="display: block; margin: auto;" />
+<img src="../resources/header-syllabus.png" width="70%" />
 
 <small> *Syllabusing* by Raul P (cropped) is licensed under [CC
 BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)  
@@ -50,10 +50,9 @@ Hall C-217<br> <layton@rose-hulman.edu><br> 812-877-8905
 A [web-version](http://r4ds.had.co.nz/) of the book is available at no
 cost.  
 Hadley Wickham and Garrett Grolemund (2017) *R for Data Science*,
-O’Reilly
-Media.
+O’Reilly Media.
 
-<img src="../resources/r-4-data-science-cover.png" width="25%" style="display: block; margin: auto;" />
+<img src="../resources/r-4-data-science-cover.png" width="25%" />
 
 ## objectives
 

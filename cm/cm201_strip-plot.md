@@ -11,6 +11,7 @@
 [data](#data)  
 [exploration](#exploration)  
 [publication](#publication)  
+[exercise](#exercise)  
 [references](#references)
 
 ## overview
@@ -329,6 +330,10 @@ portfolio.
 <img src="../figures/d1-02-stripchart-speed-ski.png" width="100%" style="display: block; margin: auto;" />
 
 <a href="#top">Top of page</a>
+
+## exercise
+
+Use some data and create a graph
 
 ## references
 

@@ -3,7 +3,7 @@
 
 # portfolio display requirements
 
-<img src="../resources/header-display-requirements.png" width="70%" style="display: block; margin: auto;" />
+<img src="../resources/header-display-requirements.png" width="70%" />
 
 <small> *dennisyang.com DOM graph* by Dennis Yang is licensed under [CC
 BY 2.0](https://creativecommons.org/licenses/by/2.0/)  
