@@ -51,17 +51,17 @@ library("tidyverse")
 library("graphclassmate")
 
 speed_ski
-#> # A tibble: 91 x 4
-#>   event     sex   speed allevents 
-#>   <fct>     <chr> <dbl> <chr>     
-#> 1 Speed One Male   212. All events
-#> 2 Speed One Male   210. All events
-#> 3 Speed One Male   210. All events
-#> 4 Speed One Male   210. All events
-#> 5 Speed One Male   209. All events
-#> 6 Speed One Male   208. All events
-#> 7 Speed One Male   208. All events
-#> 8 Speed One Male   208. All events
+#> # A tibble: 91 x 3
+#>   event     sex   speed
+#>   <chr>     <chr> <dbl>
+#> 1 Speed One Male   212.
+#> 2 Speed One Male   210.
+#> 3 Speed One Male   210.
+#> 4 Speed One Male   210.
+#> 5 Speed One Male   209.
+#> 6 Speed One Male   208.
+#> 7 Speed One Male   208.
+#> 8 Speed One Male   208.
 #> # ... with 83 more rows
 ```
 
@@ -79,8 +79,7 @@ column.
 
 ``` r
 unique(speed_ski$event)
-#> [1] Speed One             Speed Downhill        Speed Downhill Junior
-#> Levels: Speed Downhill Junior Speed Downhill Speed One
+#> [1] "Speed One"             "Speed Downhill"        "Speed Downhill Junior"
 unique(speed_ski$sex)
 #> [1] "Male"   "Female"
 ```
@@ -239,8 +238,8 @@ speed_ski_table %>%
 | Speed Downhill        |     NA |   29 |
 | Speed One             |      7 |   39 |
 
-I suggest `theme_graphclass()` supplied by the graphclassmate package as
-a good starting point.
+For formatting the graph, we start with `theme_graphclass()` as a good
+starting point.
 
 ``` r
 ggplot(speed_ski, aes(x = speed, y = event, color = sex)) +
@@ -311,7 +310,7 @@ ggplot(speed_ski, aes(x = speed, y = event, color = sex, fill = sex)) +
 <img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-21-1.png" width="70%" style="display: block; margin: auto;" />
 
 Using `ggsave()` to control the figure dimensions, we can control the
-aspect ratio and the
+aspect ratio and dpi,
 
 ``` r
 ggsave(filename = "d1-01-stripchart-speed-ski.png",
@@ -324,8 +323,8 @@ ggsave(filename = "d1-01-stripchart-speed-ski.png",
 )
 ```
 
-producing the final
-image,
+producing a final image suitable for a
+portfolio.
 
 <img src="../figures/d1-02-stripchart-speed-ski.png" width="100%" style="display: block; margin: auto;" />
 

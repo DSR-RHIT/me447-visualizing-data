@@ -93,7 +93,7 @@ Data lab
 
 ## graphs
 
-  - [Strip plot](cm/cm_201-strip-plot.md)
+  - [Strip plot](cm/cm201_strip-plot.md)
 
 ## software
 
