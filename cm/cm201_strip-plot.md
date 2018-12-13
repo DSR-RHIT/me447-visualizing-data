@@ -51,17 +51,17 @@ library("tidyverse")
 library("graphclassmate")
 
 speed_ski
-#> # A tibble: 91 x 3
-#>   event     sex   speed
-#>   <chr>     <chr> <dbl>
-#> 1 Speed One Male   212.
-#> 2 Speed One Male   210.
-#> 3 Speed One Male   210.
-#> 4 Speed One Male   210.
-#> 5 Speed One Male   209.
-#> 6 Speed One Male   208.
-#> 7 Speed One Male   208.
-#> 8 Speed One Male   208.
+#> # A tibble: 91 x 4
+#>   event     sex   speed allevents 
+#>   <fct>     <chr> <dbl> <chr>     
+#> 1 Speed One Male   212. All events
+#> 2 Speed One Male   210. All events
+#> 3 Speed One Male   210. All events
+#> 4 Speed One Male   210. All events
+#> 5 Speed One Male   209. All events
+#> 6 Speed One Male   208. All events
+#> 7 Speed One Male   208. All events
+#> 8 Speed One Male   208. All events
 #> # ... with 83 more rows
 ```
 
@@ -79,7 +79,8 @@ column.
 
 ``` r
 unique(speed_ski$event)
-#> [1] "Speed One"             "Speed Downhill"        "Speed Downhill Junior"
+#> [1] Speed One             Speed Downhill        Speed Downhill Junior
+#> Levels: Speed Downhill Junior Speed Downhill Speed One
 unique(speed_ski$sex)
 #> [1] "Male"   "Female"
 ```
