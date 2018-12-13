@@ -17,10 +17,21 @@ ggplot(data = speed_ski, aes(x = speed, y = event, color = sex, fill = sex)) +
 	geom_text(aes(x = 200, y = 2.7, label = "women"), color = rcb("mid_BG")) +
 	geom_text(aes(x = 210, y = 2.7, label = "men"), color = rcb("mid_Br"))
 
+# this first one is sized for slides
 ggsave(filename = "d1-01-stripchart-speed-ski.png",
-			 path     = "slides",
+			 path     = "figures",
 			 device   = "png",
 			 width    = 5,
+			 height   = 2.5,
+			 units    = "in",
+			 dpi      = 600
+)
+
+# this one is sized for the cm webpage
+ggsave(filename = "d1-02-stripchart-speed-ski.png",
+			 path     = "figures",
+			 device   = "png",
+			 width    = 8,
 			 height   = 2.5,
 			 units    = "in",
 			 dpi      = 600
