@@ -350,6 +350,8 @@ ggsave(filename = "d1-01-stripchart-speed-ski.png",
 producing a final image suitable for a
 portfolio.
 
+<a name="completed-strip-chart"></a>
+
 <img src="../figures/d1-02-stripchart-speed-ski.png" width="100%" style="display: block; margin: auto;" />
 
 <a href="#top">Top of page</a>

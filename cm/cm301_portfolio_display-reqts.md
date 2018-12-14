@@ -61,6 +61,8 @@ Categorical variables
 
 <a href="#top">Data requirements summary</a>
 
+[Strip plot example](cm201_strip-plot.md#completed-strip-chart)
+
 ## D2 multiway
 
 The distinguishing characteristic of multiway data is that there is a
