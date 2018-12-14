@@ -13,7 +13,7 @@
 [ordering](#ordering)  
 [data table](#data-table)  
 [publication](#publication)  
-[exercise](#exercise)  
+[exercises](#exercises)  
 [references](#references)
 
 ## overview
@@ -354,7 +354,7 @@ portfolio.
 
 <a href="#top">Top of page</a>
 
-## exercise
+## exercises
 
 1.  Museum exhibits
 
