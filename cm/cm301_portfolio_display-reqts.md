@@ -43,7 +43,7 @@ We will use two prospective graph designs for comparing distributions.
 Include only one of these graph types in your portfolio. Select the
 design that best conveys the stories in your data.
 
-  - strip plot
+  - [strip plot](cm201_strip-plot.md)  
   - box plot
 
 Data requirements
