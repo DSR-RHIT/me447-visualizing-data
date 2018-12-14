@@ -18,7 +18,7 @@ below.
 
 | display                                                     | type                                            | quantitative  | categorical   |
 | :---------------------------------------------------------- | :---------------------------------------------- | :------------ | :------------ |
-| [D1 distributions](#d1-distributions)                       | strip plot or box plot                          | one           | one           |
+| [D1 distributions](#d1-distributions)                       | [strip plot](cm201_strip-plot.md) or box plot   | one           | one           |
 | [D2 multiway](#d2-multiway)                                 | multiway                                        | one           | two           |
 | [D3 correlations](#d3-correlations)                         | scatterplot                                     | two           | one           |
 | [D4 injuries or fatalities](#d4-injuries-or-fatalities)     | dot plot                                        | one           | optional      |
