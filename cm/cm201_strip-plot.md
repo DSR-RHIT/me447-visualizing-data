@@ -62,7 +62,7 @@ library("graphclassmate")
 speed_ski
 #> # A tibble: 91 x 3
 #>   event     sex   speed
-#>   <chr>     <chr> <dbl>
+#>   <fct>     <chr> <dbl>
 #> 1 Speed One Male   212.
 #> 2 Speed One Male   210.
 #> 3 Speed One Male   210.
@@ -88,7 +88,8 @@ column.
 
 ``` r
 unique(speed_ski$event)
-#> [1] "Speed One"             "Speed Downhill"        "Speed Downhill Junior"
+#> [1] Speed One             Speed Downhill        Speed Downhill Junior
+#> Levels: Speed Downhill Junior Speed Downhill Speed One
 unique(speed_ski$sex)
 #> [1] "Male"   "Female"
 ```

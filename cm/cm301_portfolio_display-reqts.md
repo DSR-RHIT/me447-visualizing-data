@@ -80,11 +80,13 @@ Data requirements
       - 4 levels in category 1 and at least 6 levels in category 2  
       - 5 levels in category 1 and at least 5 levels in category 2
 
-<a href="#top">Data requirements summary</a>
+Multiway example  
+<a href="#top">Top of page</a>
 
 ## D3 correlations
 
-<a href="#top">Data requirements summary</a>
+Scatterplot example  
+<a href="#top">Top of page</a>
 
 ## D4 injuries or fatalities
 
@@ -93,14 +95,18 @@ to the data in *Cruel Pies*). Consult with me on your data selection—the
 graph type depends on the data. The two graph types shown are the most
 commonly encountered.
 
-<a href="#top">Data requirements summary</a>
+Dot plot example  
+Line graph example  
+<a href="#top">Top of page</a>
 
 ## D5 redesign a graphical lie
 
 Consult with me on your data selection—the graph type depends on the
 data. The two graph types shown are the most commonly encountered.
 
-<a href="#top">Data requirements summary</a>
+Time series example  
+Constant dollars example  
+<a href="#top">Top of page</a>
 
 ## D6 multivariate
 
@@ -128,7 +134,10 @@ Use a conditioning plot (coplot) for three or four variables.
 For four or more variables, use a scatterplot matrix or a parallel
 coordinate plot.
 
-<a href="#top">Data requirements summary</a>
+Conditioning plot example  
+Scatterplot matrix example  
+Parallel coordinate example  
+<a href="#top">Top of page</a>
 
 ## D7 self-taught
 
