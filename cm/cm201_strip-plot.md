@@ -334,7 +334,7 @@ ggplot(speed_ski, aes(x = speed, y = event, color = sex, fill = sex)) +
 <img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-21-1.png" width="70%" style="display: block; margin: auto;" />
 
 Using `ggsave()` to control the figure dimensions, we can control the
-aspect ratio and dpi,
+aspect ratio and dpi to produce the final version.
 
 ``` r
 ggsave(filename = "d1-01-stripchart-speed-ski.png",
@@ -347,10 +347,8 @@ ggsave(filename = "d1-01-stripchart-speed-ski.png",
 )
 ```
 
-producing a final image suitable for a
-portfolio.
-
-<a name="completed-strip-chart"></a>
+<a name="completed-strip-chart"></a> *Publication-ready strip
+plot*
 
 <img src="../figures/d1-02-stripchart-speed-ski.png" width="100%" style="display: block; margin: auto;" />
 
