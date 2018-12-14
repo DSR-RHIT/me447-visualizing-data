@@ -159,26 +159,26 @@ Resources
 
 Portfolio studio
 
-  - [media](cm/cm302_portfolio_lab.md#media)  
-  - [preparation](cm/cm302_portfolio_lab.md#preparation)  
-  - [organize the README
+  - [Media](cm/cm302_portfolio_lab.md#media)  
+  - [Preparation](cm/cm302_portfolio_lab.md#preparation)  
+  - [Organize the README
     file](cm/cm302_portfolio_lab.md#organize-the-README-file)  
-  - [importing images](cm/cm302_portfolio_lab.md#importing-images)  
-  - [start a report](cm/cm302_portfolio_lab.md#media)  
-  - [data tables](cm/cm302_portfolio_lab.md#start-a-report)  
-  - [create the bib
+  - [Importing images](cm/cm302_portfolio_lab.md#importing-images)  
+  - [Start a report](cm/cm302_portfolio_lab.md#media)  
+  - [Data tables](cm/cm302_portfolio_lab.md#start-a-report)  
+  - [Create the bib
     file](cm/cm302_portfolio_lab.md#create-the-bib-file)  
   - [BiBTeX entry types](cm/cm303_portfolio_bibtex.md)  
   - [YAML bibliography
     argument](cm/cm302_portfolio_lab.md#YAML-bibliography-argument)  
-  - [add a citation](cm/cm302_portfolio_lab.md#add-a-citation)  
-  - [add a references
+  - [Add a citation](cm/cm302_portfolio_lab.md#add-a-citation)  
+  - [Add a references
     heading](cm/cm302_portfolio_lab.md#add-a-references-heading)  
-  - [format the citations and
+  - [Format the citations and
     references](cm/cm302_portfolio_lab.md#format-the-citations-and-references)  
-  - [presentation
+  - [Presentation
     prompts](cm/cm302_portfolio_lab.md#presentation-prompts)  
-  - [reading prompts](cm/cm302_portfolio_lab.md#reading-prompts)
+  - [Reading prompts](cm/cm302_portfolio_lab.md#reading-prompts)
 
 ## visual rhetoric
 
