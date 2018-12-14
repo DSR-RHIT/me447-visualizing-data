@@ -90,6 +90,14 @@ Data tables
   - [Two-way counts](cm/cm201_strip-plot.md#data-table) (strip plot
     data)
 
+Data carpentry tutorials
+
+  - link
+
+Data carpentry exercises
+
+  - link
+
 ## file management
 
   - [Summary](cm/cm101_data-lab.md#file-management)  
@@ -112,7 +120,7 @@ Graph tutorials
   - Scatterplot matrix  
   - Parallel coordinate
 
-Exercises
+Graph exercises
 
   - [Strip plot exercises](cm/cm201_strip-plot.md#exercises)
   - Box plot exercises  
