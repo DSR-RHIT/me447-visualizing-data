@@ -23,15 +23,15 @@ permission
 | 1  | M | Course goals and outcomes<br>[Sign-out two reprints](cm/cm401_rhetoric_reprints.md#signout-reprints)                                                                                           |                                                                                                     |                                                |
 |    | T | Introduction to visual rhetoric<br>[Install software](cm/cm501_install-software.md#install-software)                                                                                           |                                                                                                     |                                                |
 |    | R | Relating data structure to graph design<br>![](resources/icon-document.png) Doumont ([2009](#ref-Doumont:2009:Ch.4)) Designing the graph                                                       |                                                                                                     |                                                |
-|    | F | [Software lab](cm/cm502_software-lab.md#software-lab)                                                                                                                                          | Software setup complete                                                                             |                                                |
+|    | F | [Software studio](cm/cm502_software-lab.md#software-lab)                                                                                                                                       | Software setup complete                                                                             |                                                |
 | 2  | M | Graph basics with ggplot2 \[tutorial\] \[practice\]                                                                                                                                            | wk1 lab complete                                                                                    |                                                |
 |    | T | ![](resources/icon-document.png) Tufte ([1997](#ref-Tufte:1997)) Decision to launch Challenger                                                                                                 |                                                                                                     | [Reading prompts](reports/reading-prompts.Rmd) |
 |    | R | Data basics \[tutorial\] \[practice\]                                                                                                                                                          |                                                                                                     |                                                |
-|    | F | [Data lab](cm/cm101_data-lab.md) with [file management](cm/cm101_data-lab.md#file-management)<br>Return reprints                                                                               | Start acquiring data<br>for [D1, D2, etc.](cm/cm301_portfolio_display-reqts.md)                     |                                                |
+|    | F | [Data studio](cm/cm101_data-lab.md) with [file management](cm/cm101_data-lab.md#file-management)<br>Return reprints                                                                            | Start acquiring data<br>for [D1, D2, etc.](cm/cm301_portfolio_display-reqts.md)                     |                                                |
 | 3  | M | Markdown basics \[tutorial\] \[practice\]                                                                                                                                                      | wk2 lab, tutorials, & exercises                                                                     |                                                |
 |    | T | ![](resources/icon-moodle.png) Robbins ([2013](#ref-Robbins:2013:Ch.6)) General design principles                                                                                              |                                                                                                     |                                                |
 |    | R | **D1** Strip plot \[[tutorial](cm/cm201_strip-plot.md)\] \[[practice](cm/cm201_strip-plot.md#exercises)\]<br>**D1** Box plot \[tutorial\] \[practice\]                                         | [D1 requirements](cm/cm301_portfolio_display-reqts.md#D1-distributions)<br>D1 data acquired         |                                                |
-|    | F | [Portfolio lab](cm/cm302_portfolio_lab.md)                                                                                                                                                     | Portfolio started                                                                                   |                                                |
+|    | F | [Portfolio studio](cm/cm302_portfolio_lab.md)                                                                                                                                                  | Portfolio started                                                                                   |                                                |
 | 4  | M | Data carpentry \[tutorial\] \[practice\]                                                                                                                                                       | wk3 lab, tutorials, & exercises                                                                     |                                                |
 |    | T | ![](resources/icon-moodle.png) Wainer ([2014](#ref-Wainer:2014:Sec.2.9)) 15 displays about one thing                                                                                           |                                                                                                     | [Reading prompts](reports/reading-prompts.Rmd) |
 |    | R | **D2** Multiway \[tutorial\] \[practice\]                                                                                                                                                      | [D2 requirements](cm/cm301_portfolio_display-reqts.md#D2-multiway)<br>D2 data acquired              |                                                |
@@ -76,7 +76,7 @@ Calendar links organized by topic
 
 ## data
 
-Data lab
+Data studio
 
   - [Know your desired data
     structure](cm/cm101_data-lab.md#know-your-desired-data-structure)
@@ -118,7 +118,7 @@ Getting started
   - [Test the initial
     installation](cm/cm501_install-software.md#test-the-installation)
 
-Software lab
+Software studio
 
   - [Setup GitHub](cm/cm502_software-lab.md#setup-GitHub)
   - [Create a repo](cm/cm502_software-lab.md#create-a-repo)
@@ -157,7 +157,7 @@ Resources
     responses](cm/cm502_software-lab.md#setup-reading-response)
   - [BiBTeX entry types](cm/cm303_portfolio_bibtex.md)
 
-Portfolio lab
+Portfolio studio
 
   - [media](cm/cm302_portfolio_lab.md#media)  
   - [preparation](cm/cm302_portfolio_lab.md#preparation)  
