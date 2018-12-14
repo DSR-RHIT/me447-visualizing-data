@@ -85,6 +85,10 @@ Data lab
   - [Begin acquiring data](cm/cm101_data-lab.md#begin-acquiring-data)
   - [Classify your data](cm/cm101_data-lab.md#classify-your-data)
 
+## data tables
+
+  - [Strip plot data table](cm/cm201_strip-plot.md#data-table)
+
 ## file management
 
   - [Summary](cm/cm101_data-lab.md#file-management)  
