@@ -100,11 +100,31 @@ Data tables
 
 Graph tutorials
 
-  - [Strip plot](cm/cm201_strip-plot.md)
+  - [Strip plot](cm/cm201_strip-plot.md)  
+  - Box plot  
+  - Multiway  
+  - Scatterplot  
+  - Dot plot  
+  - Line graph  
+  - Time series  
+  - Constant dollars  
+  - Co-plot  
+  - Scatterplot matrix  
+  - Parallel coordinate
 
 Exercises
 
   - [Strip plot exercises](cm/cm201_strip-plot.md#exercises)
+  - Box plot exercises  
+  - Multiway exercises  
+  - Scatterplot exercises  
+  - Dot plot exercises  
+  - Line graph exercises  
+  - Time series exercises  
+  - Constant dollars exercises  
+  - Co-plot exercises  
+  - Scatterplot matrix exercises  
+  - Parallel coordinate exercises
 
 ## software
 
