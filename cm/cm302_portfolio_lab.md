@@ -1,7 +1,7 @@
 
 <a name="top"></a>
 
-# portfolio lab
+# portfolio studio
 
 <img src="../resources/header-portfolio-lab.png" width="70%" />
 

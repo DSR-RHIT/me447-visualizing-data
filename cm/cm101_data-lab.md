@@ -1,7 +1,7 @@
 
 <a name="top"></a>
 
-# data lab
+# data studio
 
 <img src="../resources/header-data-lab.png" width="70%" />
 

@@ -1,7 +1,7 @@
 
 <a name="top"></a>
 
-# software lab
+# software studio
 
 <img src="../resources/header-software-lab.png" width="70%" />
 
