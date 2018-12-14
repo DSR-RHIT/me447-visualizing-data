@@ -60,17 +60,17 @@ library("tidyverse")
 library("graphclassmate")
 
 speed_ski
-#> # A tibble: 91 x 4
-#>   event     sex   speed allevents 
-#>   <fct>     <chr> <dbl> <chr>     
-#> 1 Speed One Male   212. All events
-#> 2 Speed One Male   210. All events
-#> 3 Speed One Male   210. All events
-#> 4 Speed One Male   210. All events
-#> 5 Speed One Male   209. All events
-#> 6 Speed One Male   208. All events
-#> 7 Speed One Male   208. All events
-#> 8 Speed One Male   208. All events
+#> # A tibble: 91 x 3
+#>   event     sex   speed
+#>   <chr>     <chr> <dbl>
+#> 1 Speed One Male   212.
+#> 2 Speed One Male   210.
+#> 3 Speed One Male   210.
+#> 4 Speed One Male   210.
+#> 5 Speed One Male   209.
+#> 6 Speed One Male   208.
+#> 7 Speed One Male   208.
+#> 8 Speed One Male   208.
 #> # ... with 83 more rows
 ```
 
@@ -88,8 +88,7 @@ column.
 
 ``` r
 unique(speed_ski$event)
-#> [1] Speed One             Speed Downhill        Speed Downhill Junior
-#> Levels: Speed Downhill Junior Speed Downhill Speed One
+#> [1] "Speed One"             "Speed Downhill"        "Speed Downhill Junior"
 unique(speed_ski$sex)
 #> [1] "Male"   "Female"
 ```
@@ -357,10 +356,14 @@ portfolio.
 
 ## exercise
 
+1.  Museum exhibits
+
+<!-- end list -->
+
   - Examine the `museum_exhibits` data in graphclassmate.
   - Create a strip plot that compares distributions.
-  - Order the rows by the median duration of visit.
-  - Format using `theme_graphclass()`
+  - Order the rows by the median duration of visit. mat using
+    `theme_graphclass()`
   - Edit axis labels
   - Optional: Add other formatting that improves the presentation.  
   - Create a data table of the count of visitors at each exhibit (a
@@ -392,3 +395,5 @@ NJ
 <a href="#top">Top of page</a>  
 [Calendar](../README.md#calendar)  
 [Index](../README.md#index)
+
+  - For
