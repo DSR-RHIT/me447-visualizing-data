@@ -59,8 +59,8 @@ Categorical variables
   - If two categories are used, they must have at least two levels each
     for a minmum of four comparisons.
 
-<a href="#top">Data requirements summary</a>  
-[Strip plot example](cm201_strip-plot.md#completed-strip-chart)
+[Strip plot example](cm201_strip-plot.md#completed-strip-chart)  
+<a href="#top">Top of page</a>
 
 ## D2 multiway
 
