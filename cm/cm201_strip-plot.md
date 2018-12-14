@@ -10,6 +10,8 @@
 [overview](#overview)  
 [data](#data)  
 [exploration](#exploration)  
+[ordering](#ordering)  
+[data table](#data-table)  
 [publication](#publication)  
 [exercise](#exercise)  
 [references](#references)
@@ -21,12 +23,18 @@ Distributions](cm301_portfolio_display-reqts.md#d1-distributions).
 
 A *strip plot*, also called a strip chart, a univariate scatterplot, or
 a jitter plot, is designed for displaying the distribution of a single
-quantitative variable. Data can be grouped by one or more categorical
-variables.
+quantitative variable.
+
+Data can be grouped by one or more categorical variables and are often
+jittered to avoid overprinting. However, as Naomi Robbons
+([2013](#ref-Robbins:2013), 85) explains, “Even with jittering, the
+plots will become indecipherable for a large number of observations with
+a small range of values. In such a case, box-and-whisker plots are
+better for comparing distributions.”
 
 Strip plot characteristics:
 
-  - displays distributions
+  - displays distributions of a single quantitative variable
   - shows all the data values, not a summary  
   - shows range, outliers, and clusters
   - often jittered to avoid overprinting
@@ -52,17 +60,17 @@ library("tidyverse")
 library("graphclassmate")
 
 speed_ski
-#> # A tibble: 91 x 3
-#>   event     sex   speed
-#>   <chr>     <chr> <dbl>
-#> 1 Speed One Male   212.
-#> 2 Speed One Male   210.
-#> 3 Speed One Male   210.
-#> 4 Speed One Male   210.
-#> 5 Speed One Male   209.
-#> 6 Speed One Male   208.
-#> 7 Speed One Male   208.
-#> 8 Speed One Male   208.
+#> # A tibble: 91 x 4
+#>   event     sex   speed allevents 
+#>   <fct>     <chr> <dbl> <chr>     
+#> 1 Speed One Male   212. All events
+#> 2 Speed One Male   210. All events
+#> 3 Speed One Male   210. All events
+#> 4 Speed One Male   210. All events
+#> 5 Speed One Male   209. All events
+#> 6 Speed One Male   208. All events
+#> 7 Speed One Male   208. All events
+#> 8 Speed One Male   208. All events
 #> # ... with 83 more rows
 ```
 
@@ -80,7 +88,8 @@ column.
 
 ``` r
 unique(speed_ski$event)
-#> [1] "Speed One"             "Speed Downhill"        "Speed Downhill Junior"
+#> [1] Speed One             Speed Downhill        Speed Downhill Junior
+#> Levels: Speed Downhill Junior Speed Downhill Speed One
 unique(speed_ski$sex)
 #> [1] "Male"   "Female"
 ```
@@ -108,9 +117,9 @@ ggplot(speed_ski, aes(x = speed, y = allevents)) +
 
 <img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-6-1.png" width="70%" style="display: block; margin: auto;" />
 
-We can reduce the amount of overprinting to better see the data by
-switching changing to `geom_jitter()`. We can also omit the redundant
-y-axis label and add units of speed to the x-axis label.
+We can reduce the amount of overprinting to better see the data by using
+`geom_jitter()`. We can also omit the redundant y-axis label and add
+units of speed to the x-axis label.
 
 ``` r
 ggplot(speed_ski, aes(x = speed, y = allevents)) +
@@ -163,12 +172,20 @@ ggplot(speed_ski, aes(x = speed, y = event, color = sex)) +
 
 <img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-11-1.png" width="70%" style="display: block; margin: auto;" />
 
-This last one seems to tell an interesting story. The rows are by
-default ordered alphabetically from bottom to top. Nominal categorical
-data should generally be ordered by he data values, in this case the
-median speed of each row.
+This one tells an interesting story. Speed One is the fastest event and
+the women competing in Speed One have little variance in speed and are
+faster than most (but not all) of the men competing in this event.
+Additionally, we see that no women compete in Downhill, and there is
+little variation among the Juniors.
 
-One approach to achieving this is to reorder the
+I think I’ll use this design going forward.
+
+## ordering
+
+The event rows are ordered alphabetically from bottom to top by default.
+Nominal categorical data should generally be ordered by the data values,
+in this case the median speed of each row. One approach to achieving
+this is to reorder the
 y-variable
 
 ``` r
@@ -180,7 +197,7 @@ ggplot(speed_ski, aes(x = speed, y = reorder(event, speed), color = sex)) +
 <img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-12-1.png" width="70%" style="display: block; margin: auto;" />
 
 Alternatively, we can convert the event variable from type “character”
-to type “factor” order its levels by speed.
+to type “factor” and order its levels by speed.
 
 ``` r
 speed_ski <- speed_ski %>% 
@@ -188,7 +205,7 @@ speed_ski <- speed_ski %>%
     mutate(event = fct_reorder(event, speed))
 ```
 
-Having opdered the levels of the factor, we no longer need to reorder
+Having ordered the levels of the factor, we no longer need to reorder
 the y-variable in the `aes()` argument.
 
 ``` r
@@ -201,11 +218,12 @@ ggplot(speed_ski, aes(x = speed, y = event, color = sex)) +
 
 <a href="#top">Top of page</a>
 
-## publication
+## data table
 
-We start with a data table. For this particular data set, a two-way
-table is appropriate for displaying the data. First we count the numbers
-of competitors by event and sex,
+Univariate data with two categories is easily summarized in a two-way
+table.
+
+First we count the numbers of competitors by event and sex,
 
 ``` r
 speed_ski_table <- speed_ski %>% 
@@ -221,15 +239,15 @@ speed_ski_table <- speed_ski %>%
 #> 5 Speed One             Male      39
 ```
 
-Then use `spread()` to make put the table into a form that the reader
-will find easy to read—which also highlights that there are no women in
-one of the events. The table also lists for us the levels of the two
-categories.
+Then use `spread()` to make put the table into the form of a two-way
+table. The row names are the levels of one category, the column names
+are the levels of the second category, the table entries are the count
+or frequency of people in each cell.
 
 ``` r
 speed_ski_table %>% 
   spread(sex, n) %>% 
-    rename(Event = event) %>% 
+  rename(Event = event) %>% 
   kable()
 ```
 
@@ -239,8 +257,12 @@ speed_ski_table %>%
 | Speed Downhill        |     NA |   29 |
 | Speed One             |      7 |   39 |
 
-For formatting the graph, we start with `theme_graphclass()` as a good
-starting point.
+<a href="#top">Top of page</a>
+
+## publication
+
+For formatting the graph, the `theme_graphclass()` is a good starting
+point.
 
 ``` r
 ggplot(speed_ski, aes(x = speed, y = event, color = sex)) +
@@ -251,7 +273,9 @@ ggplot(speed_ski, aes(x = speed, y = event, color = sex)) +
 
 <img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-17-1.png" width="70%" style="display: block; margin: auto;" />
 
-To manually control the data marker color, we use `scale_color_manual()`
+To manually control the data marker color, we use
+`scale_color_manual()`. We are also using the `rcb()` function to
+consistently assign named colors from the RColorBrewer package.
 
 ``` r
 ggplot(speed_ski, aes(x = speed, y = event, color = sex)) +
@@ -279,7 +303,7 @@ ggplot(speed_ski, aes(x = speed, y = event, color = sex, fill = sex)) +
 <img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-19-1.png" width="70%" style="display: block; margin: auto;" />
 
 We can edit the data markers further by adding a `size` argument and
-make the data marker more transparent using an `alpha` argument.
+make the data marker partially transparent using an `alpha` argument.
 
 ``` r
 ggplot(speed_ski, aes(x = speed, y = event, color = sex, fill = sex)) +
@@ -292,8 +316,8 @@ ggplot(speed_ski, aes(x = speed, y = event, color = sex, fill = sex)) +
 
 <img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-20-1.png" width="70%" style="display: block; margin: auto;" />
 
-We can label the data directly using `geom_text()`, manualling selecting
-te coordinates of the text and matching the text color by sex. Then the
+We can label the data directly using `geom_text()`, manually selecting
+the coordinates of the text and matching the text color by sex. Then the
 legend can be omitted using the `legend.position` argument.
 
 ``` r
@@ -333,7 +357,14 @@ portfolio.
 
 ## exercise
 
-Use some data and create a graph
+  - Examine the `museum_exhibits` data in graphclassmate.
+  - Create a strip plot that compares distributions.
+  - Order the rows by the median duration of visit.
+  - Format using `theme_graphclass()`
+  - Edit axis labels
+  - Optional: Add other formatting that improves the presentation.  
+  - Create a data table of the count of visitors at each exhibit (a
+    one-way table)
 
 ## references
 
@@ -344,6 +375,13 @@ Use some data and create a graph
 Antony Unwin (2015) *GDAdata: Datasets for the book Graphical Data
 Analysis with R.* R package version 0.93
 <https://CRAN.R-project.org/package=GDAdata>
+
+</div>
+
+<div id="ref-Robbins:2013">
+
+Robbins N (2013) *Creating More Effective Graphs.* Chart House, Wayne,
+NJ
 
 </div>
 

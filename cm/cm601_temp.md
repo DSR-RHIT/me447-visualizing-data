@@ -10,51 +10,74 @@ beginning](#plan-the-structure-at-the-beginning)
 
 ## plan the structure at the beginning
 
-You recently created the mandatory project-directory structure
+You recently created the mandatory project-directory
+structure
 
-<img src="../resources/icon-folder.png" width="2%" /> carpentry  
-<img src="../resources/icon-folder.png" width="2%" /> data  
-<img src="../resources/icon-folder.png" width="2%" /> data-raw  
-<img src="../resources/icon-folder.png" width="2%" /> design  
-<img src="../resources/icon-folder.png" width="2%" /> figures  
-<img src="../resources/icon-folder.png" width="2%" /> manage  
-<img src="../resources/icon-folder.png" width="2%" /> practice  
-<img src="../resources/icon-folder.png" width="2%" /> reports  
-<img src="../resources/icon-folder.png" width="2%" /> resources  
-<img src="../resources/icon-document-40px.png" width="2%" />
+<img src="../resources/icon-folder.png" width="2%" style="display: block; margin: auto;" />
+carpentry  
+<img src="../resources/icon-folder.png" width="2%" style="display: block; margin: auto;" />
+data  
+<img src="../resources/icon-folder.png" width="2%" style="display: block; margin: auto;" />
+data-raw  
+<img src="../resources/icon-folder.png" width="2%" style="display: block; margin: auto;" />
+design  
+<img src="../resources/icon-folder.png" width="2%" style="display: block; margin: auto;" />
+figures  
+<img src="../resources/icon-folder.png" width="2%" style="display: block; margin: auto;" />
+manage  
+<img src="../resources/icon-folder.png" width="2%" style="display: block; margin: auto;" />
+practice  
+<img src="../resources/icon-folder.png" width="2%" style="display: block; margin: auto;" />
+reports  
+<img src="../resources/icon-folder.png" width="2%" style="display: block; margin: auto;" />
+resources  
+<img src="../resources/icon-document-40px.png" width="2%" style="display: block; margin: auto;" />
 .gitignore  
-<img src="../resources/icon-RStudio.png" width="2%" /> .Renviron  
-<img src="../resources/icon-RStudio.png" width="2%" /> README.Rmd  
-<img src="../resources/icon-Rproj.png" width="2%" /> portfolio.Rproj
+<img src="../resources/icon-RStudio.png" width="2%" style="display: block; margin: auto;" />
+.Renviron  
+<img src="../resources/icon-RStudio.png" width="2%" style="display: block; margin: auto;" />
+README.Rmd  
+<img src="../resources/icon-Rproj.png" width="2%" style="display: block; margin: auto;" />
+portfolio.Rproj
 
 ## each element has its own role
 
-<img src="../resources/icon-RStudio.png" width="2%" /> README.Rmd
+<img src="../resources/icon-RStudio.png" width="2%" style="display: block; margin: auto;" />
+README.Rmd
 
   - creates the main page of your portfolio website  
-  - introduces your portfolio to the reader
+  - introduces your portfolio to the
+reader
 
-<img src="../resources/icon-document-40px.png" width="2%" /> .gitignore
+<img src="../resources/icon-document-40px.png" width="2%" style="display: block; margin: auto;" />
+.gitignore
 
-  - directs Git to ignore specific files
+  - directs Git to ignore specific
+files
 
-<img src="../resources/icon-RStudio.png" width="2%" /> .Renviron
+<img src="../resources/icon-RStudio.png" width="2%" style="display: block; margin: auto;" />
+.Renviron
 
-  - stores packages in a library separate from base R
+  - stores packages in a library separate from base
+R
 
-<img src="../resources/icon-folder.png" width="2%" /> data-raw
+<img src="../resources/icon-folder.png" width="2%" style="display: block; margin: auto;" />
+data-raw
 
   - data in its original form  
-  - raw data are never edited manually
+  - raw data are never edited
+manually
 
-<img src="../resources/icon-folder.png" width="2%" /> carpentry: R
-scripts that
+<img src="../resources/icon-folder.png" width="2%" style="display: block; margin: auto;" />
+carpentry: R scripts that
 
   - read files from raw data  
   - tidy and transform the data
-  - write tidy data files to data directory
+  - write tidy data files to data
+directory
 
-<img src="../resources/icon-folder.png" width="2%" /> data
+<img src="../resources/icon-folder.png" width="2%" style="display: block; margin: auto;" />
+data
 
   - tidy data saved here, read by design scripts
 

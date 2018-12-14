@@ -95,6 +95,10 @@ Data lab
 
   - [Strip plot](cm/cm201_strip-plot.md)
 
+## graph exercises
+
+  - [Strip plot exercise](cm/cm201_strip-plot.md#exercise)
+
 ## software
 
 Getting started
@@ -201,7 +205,7 @@ of clarity. *IEEE Transactions on Professional Communication* **50**(2),
 <div id="ref-Robbins:2013:Ch.6">
 
 Robbins N (2013) General principles for creating effective graphs.
-*Creating more effective graphs*. Chart House, Wayne, NJ, 154–225
+*Creating More Effective Graphs*. Chart House, Wayne, NJ, 154–225
 <http://www.nbr-graphs.com/resources/recommended-books/>
 
 </div>

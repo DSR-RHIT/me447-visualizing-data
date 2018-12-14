@@ -3,7 +3,7 @@
 
 # install software
 
-<img src="../resources/header-install-software.png" width="70%" />
+<img src="../resources/header-install-software.png" width="70%" style="display: block; margin: auto;" />
 
 <small> *Computer Code Fabric* by Colleen Greene is licensed under [CC
 BY-NC-SA 2.0](https://creativecommons.org/licenses/by-nc-sa/2.0/)
@@ -83,9 +83,10 @@ panic—we’ll have some time in lab to make things work.
 
   - Launch RStudio
 
-A window should open that looks something like this.
+A window should open that looks something like
+this.
 
-![](../resources/open-rstudio.png)<!-- -->
+<img src="../resources/open-rstudio.png" width="70%" style="display: block; margin: auto;" />
 
 You can type R code in the Console pane, and press Enter to run it. For
 example,
@@ -95,7 +96,7 @@ example,
 
 <!-- end list -->
 
-    ## [1] 9
+    #> [1] 9
 
 We can draw a simple graph that should appear in the Plots pane.
 
@@ -109,7 +110,7 @@ y <- sin(t)
 plot(t, y)
 ```
 
-<img src="../resources/cm501-sine-1.png" width="50%" />
+<img src="../resources/cm501-sine-1.png" width="50%" style="display: block; margin: auto;" />
 
 Lastly, let’s check if RStudio can see git locally. In RStudio,
 

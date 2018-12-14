@@ -3,7 +3,7 @@
 
 # software lab
 
-<img src="../resources/header-software-lab.png" width="70%" />
+<img src="../resources/header-software-lab.png" width="70%" style="display: block; margin: auto;" />
 
 <small> *San Francisco, from California and Powell Street* by Carleton
 E. Watkins (American, 1829–1916) is licensed under
@@ -99,9 +99,10 @@ GitHub and
 1.  Select the *Settings* tab
 2.  Select the *Collaborators* menu
 3.  In the *Search by user name* box, type my GitHub name, “graphdr”
-4.  *Add Collaborator*
+4.  *Add
+Collaborator*
 
-<img src="../resources/github-collaborate-2.png" width="100%" />
+<img src="../resources/github-collaborate-2.png" width="100%" style="display: block; margin: auto;" />
 
 ## create an Rproject
 
@@ -223,17 +224,27 @@ All we are going to do is create a set of empty sub-directories
 
 Next, create new folders for `carpentry`, `data`, `data-raw`, etc. so
 that your top level project directory has the sub-directories (folders)
-shown below.
+shown
+below.
 
-<img src="../resources/icon-folder.png" width="2%" /> carpentry  
-<img src="../resources/icon-folder.png" width="2%" /> data  
-<img src="../resources/icon-folder.png" width="2%" /> data-raw  
-<img src="../resources/icon-folder.png" width="2%" /> design  
-<img src="../resources/icon-folder.png" width="2%" /> figures  
-<img src="../resources/icon-folder.png" width="2%" /> manage  
-<img src="../resources/icon-folder.png" width="2%" /> practice  
-<img src="../resources/icon-folder.png" width="2%" /> reports  
-<img src="../resources/icon-folder.png" width="2%" /> resources
+<img src="../resources/icon-folder.png" width="2%" style="display: block; margin: auto;" />
+carpentry  
+<img src="../resources/icon-folder.png" width="2%" style="display: block; margin: auto;" />
+data  
+<img src="../resources/icon-folder.png" width="2%" style="display: block; margin: auto;" />
+data-raw  
+<img src="../resources/icon-folder.png" width="2%" style="display: block; margin: auto;" />
+design  
+<img src="../resources/icon-folder.png" width="2%" style="display: block; margin: auto;" />
+figures  
+<img src="../resources/icon-folder.png" width="2%" style="display: block; margin: auto;" />
+manage  
+<img src="../resources/icon-folder.png" width="2%" style="display: block; margin: auto;" />
+practice  
+<img src="../resources/icon-folder.png" width="2%" style="display: block; margin: auto;" />
+reports  
+<img src="../resources/icon-folder.png" width="2%" style="display: block; margin: auto;" />
+resources
 
 ## edit gitignore
 
@@ -371,13 +382,18 @@ the keyboard shortcut Ctrl + Shift + K. Knitting README.Rmd to
 produce the portfolio main webpage.
 
 Your project directory, in addition to the folders shown earlier, should
-now contain the following files:  
-<img src="../resources/icon-document-40px.png" width="2%" />
+now contain the following
+files:  
+<img src="../resources/icon-document-40px.png" width="2%" style="display: block; margin: auto;" />
 .gitignore  
-<img src="../resources/icon-RStudio.png" width="2%" /> .Renviron  
-<img src="../resources/icon-RStudio.png" width="2%" /> README.Rmd  
-<img src="../resources/icon-RStudio.png" width="2%" /> README.md  
-<img src="../resources/icon-Rproj.png" width="2%" /> portfolio.Rproj
+<img src="../resources/icon-RStudio.png" width="2%" style="display: block; margin: auto;" />
+.Renviron  
+<img src="../resources/icon-RStudio.png" width="2%" style="display: block; margin: auto;" />
+README.Rmd  
+<img src="../resources/icon-RStudio.png" width="2%" style="display: block; margin: auto;" />
+README.md  
+<img src="../resources/icon-Rproj.png" width="2%" style="display: block; margin: auto;" />
+portfolio.Rproj
 
 ## setup reading response
 
