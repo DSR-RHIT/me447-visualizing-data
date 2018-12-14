@@ -1,7 +1,6 @@
 
-<a name="top"></a>
-
-# strip plot
+<a name="top"></a> \# strip
+plot
 
 <img src="figures/cm201_header.png" width="100%" style="display: block; margin: auto;" />
 
