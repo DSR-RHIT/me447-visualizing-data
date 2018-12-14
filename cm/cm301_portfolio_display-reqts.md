@@ -11,7 +11,7 @@ BY 2.0](https://creativecommons.org/licenses/by/2.0/)
 
 The table summarizes the basic data structure for all portfolio
 graphs.  
-Specific data requirements are provided
+More detailed requirements are provided
 below.
 
 <!-- Quantitative variables are typically continuous. If you encounter a quantitative variable (other than time) that is discrete rather than continuous, please consult with me on its suitability for your graph.   -->
@@ -59,7 +59,7 @@ Categorical variables
   - If two categories are used, they must have at least two levels each
     for a minmum of four comparisons.
 
-<a href="#top">Top of page</a>
+<a href="#top">Data requirements summary</a>
 
 ## D2 multiway
 
@@ -79,11 +79,11 @@ Data requirements
       - 4 levels in category 1 and at least 6 levels in category 2  
       - 5 levels in category 1 and at least 5 levels in category 2
 
-<a href="#top">Top of page</a>
+<a href="#top">Data requirements summary</a>
 
 ## D3 correlations
 
-<a href="#top">Top of page</a>
+<a href="#top">Data requirements summary</a>
 
 ## D4 injuries or fatalities
 
@@ -92,14 +92,14 @@ to the data in *Cruel Pies*). Consult with me on your data selection—the
 graph type depends on the data. The two graph types shown are the most
 commonly encountered.
 
-<a href="#top">Top of page</a>
+<a href="#top">Data requirements summary</a>
 
 ## D5 redesign a graphical lie
 
 Consult with me on your data selection—the graph type depends on the
 data. The two graph types shown are the most commonly encountered.
 
-<a href="#top">Top of page</a>
+<a href="#top">Data requirements summary</a>
 
 ## D6 multivariate
 
@@ -127,7 +127,7 @@ Use a conditioning plot (coplot) for three or four variables.
 For four or more variables, use a scatterplot matrix or a parallel
 coordinate plot.
 
-<a href="#top">Top of page</a>
+<a href="#top">Data requirements summary</a>
 
 ## D7 self-taught
 
@@ -157,6 +157,8 @@ bar](#diverging-stacked-bar)
 
 For additional technical details, see
 
+<a href="#top">Data requirements summary</a>
+
 <!-- ## Sankey diagram   -->
 
 <!-- For additional technical details, see  -->
@@ -174,7 +176,11 @@ average.
 
 Data requirements
 
+<a href="#top">Data requirements summary</a>
+
 ## mosaic plot
+
+<a href="#top">Data requirements summary</a>
 
 ## diverging stacked bar
 
@@ -186,11 +192,13 @@ Disagree, No Opinion, Agree, Strongly Agree.
 For additional technical details, see Heiberger and Robbins
 ([2014](#ref-Heiberger+Robbins:2014)).
 
+<a href="#top">Data requirements summary</a>
+
 ## linked micromaps
 
 Data requirements
 
-<a href="#top">Top of page</a>
+<a href="#top">Data requirements summary</a>
 
 ## references
 
