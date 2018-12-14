@@ -30,7 +30,7 @@ permission
 |    | F | [Data lab](cm/cm101_data-lab.md) with [file management](cm/cm101_data-lab.md#file-management)<br>Return reprints                                                                        | Start acquiring data                                                                   |                                                |
 | 3  | M | Markdown basics<br>Practice[]()                                                                                                                                                         | Recent practices done                                                                  |                                                |
 |    | T | ![](resources/icon-moodle.png) Robbins ([2013](#ref-Robbins:2013:Ch.6)) General design principles                                                                                       |                                                                                        |                                                |
-|    | R | [D1 distributions](cm/cm301_portfolio_display-reqts.md#D1-distributions)<br>Practice: [strip plot](cm/cm201_strip-plot.md)                                                              | [D1 data](cm/cm301_portfolio_display-reqts.md#portfolio-display-requirements) acquired |                                                |
+|    | R | [D1 distributions](cm/cm301_portfolio_display-reqts.md#D1-distributions)<br>Strip plot \[[practice](cm/cm201_strip-plot.md)\] \[[exercise](cm/cm201_strip-plot.md#exercise)\]           | [D1 data](cm/cm301_portfolio_display-reqts.md#portfolio-display-requirements) acquired |                                                |
 |    | F | [Portfolio lab](cm/cm302_portfolio_lab.md)                                                                                                                                              | Portfolio started                                                                      |                                                |
 | 4  | M | Data carpentry<br>Practice[]()                                                                                                                                                          | Recent practices done                                                                  |                                                |
 |    | T | ![](resources/icon-moodle.png) Wainer ([2014](#ref-Wainer:2014:Sec.2.9)) 15 displays about one thing                                                                                    |                                                                                        | [Reading prompts](reports/reading-prompts.Rmd) |
@@ -85,9 +85,10 @@ Data lab
   - [Begin acquiring data](cm/cm101_data-lab.md#begin-acquiring-data)
   - [Classify your data](cm/cm101_data-lab.md#classify-your-data)
 
-## data tables
+Data tables
 
-  - [Strip plot data table](cm/cm201_strip-plot.md#data-table)
+  - [Two-way counts](cm/cm201_strip-plot.md#data-table) (strip plot
+    data)
 
 ## file management
 
@@ -97,9 +98,11 @@ Data lab
 
 ## graphs
 
+Graph tutorials
+
   - [Strip plot](cm/cm201_strip-plot.md)
 
-## graph exercises
+Exercises
 
   - [Strip plot exercise](cm/cm201_strip-plot.md#exercise)
 
