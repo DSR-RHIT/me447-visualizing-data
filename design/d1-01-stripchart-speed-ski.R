@@ -1,10 +1,8 @@
 library("tidyverse")
 library("graphclassmate")
+set.seed(20181216)
 
-set.seed(20181211)
-
-speed_ski <- speed_ski %>%
-	mutate(event = fct_reorder(event, speed))
+speed_ski <- read_csv("data/d1_tutorial_stripplot-speedski.csv")
 
 ggplot(data = speed_ski, aes(x = speed, y = event, color = sex, fill = sex)) +
 	geom_jitter(shape = 21, width = 0, height = 0.15, alpha = 0.7, size = 2) +
