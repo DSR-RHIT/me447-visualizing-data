@@ -87,8 +87,7 @@ Data studio
 
 Data tables
 
-  - [Two-way counts](cm/cm201_strip-plot.md#data-table) (strip plot
-    data)
+  - link
 
 Data carpentry tutorials
 

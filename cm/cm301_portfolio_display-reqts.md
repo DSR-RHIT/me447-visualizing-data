@@ -16,22 +16,22 @@ below.
 
 <!-- Quantitative variables are typically continuous. If you encounter a quantitative variable (other than time) that is discrete rather than continuous, please consult with me on its suitability for your graph.   -->
 
-| display                                                     | type                                            | quantitative  | categorical   |
-| :---------------------------------------------------------- | :---------------------------------------------- | :------------ | :------------ |
-| [D1 distributions](#d1-distributions)                       | [strip plot](cm201_strip-plot.md) or box plot   | one           | one           |
-| [D2 multiway](#d2-multiway)                                 | multiway                                        | one           | two           |
-| [D3 correlations](#d3-correlations)                         | scatterplot                                     | two           | one           |
-| [D4 injuries or fatalities](#d4-injuries-or-fatalities)     | dot plot                                        | one           | optional      |
-|                                                             | line graph or scatterplot                       | two           | optional      |
-| [D5 redesign a graphical lie](#d5-redesign-a-graphical-lie) | dot plot                                        | one           | optional      |
-|                                                             | line graph or scatterplot                       | two           | optional      |
-| [D6 multivariate](#d6-multivariate)                         | conditioning plot                               | three or four |               |
-|                                                             | scatterplot matrix or parallel coordinate       | four or more  |               |
-| [D7 self-taught](#d7-self-taught)                           | [cycle plot](#cycle-plot)                       | one           | two           |
-|                                                             | [mosaic plot](#mosaic-plot)                     | one           | three or more |
-|                                                             | [financial (OHLC) plot](#financial-ohlc-plot)   | four          | one           |
-|                                                             | [linked micromaps](#linked-micromaps)           | one           |               |
-|                                                             | [diverging stacked bar](#diverging-stacked-bar) | one           | one           |
+| display                                                     | type                                                                      | quantitative  | categorical   |
+| :---------------------------------------------------------- | :------------------------------------------------------------------------ | :------------ | :------------ |
+| [D1 distributions](#d1-distributions)                       | [strip plot](cm201_strip-plot.md#top) or [box plot](cm202_boxplot.md#top) | one           | one or two    |
+| [D2 multiway](#d2-multiway)                                 | multiway                                                                  | one           | two           |
+| [D3 correlations](#d3-correlations)                         | scatterplot                                                               | two           | one           |
+| [D4 injuries or fatalities](#d4-injuries-or-fatalities)     | dot plot                                                                  | one           | optional      |
+|                                                             | line graph or scatterplot                                                 | two           | optional      |
+| [D5 redesign a graphical lie](#d5-redesign-a-graphical-lie) | dot plot                                                                  | one           | optional      |
+|                                                             | line graph or scatterplot                                                 | two           | optional      |
+| [D6 multivariate](#d6-multivariate)                         | conditioning plot                                                         | three or four |               |
+|                                                             | scatterplot matrix or parallel coordinate                                 | four or more  |               |
+| [D7 self-taught](#d7-self-taught)                           | [cycle plot](#cycle-plot)                                                 | one           | two           |
+|                                                             | [mosaic plot](#mosaic-plot)                                               | one           | three or more |
+|                                                             | [financial (OHLC) plot](#financial-ohlc-plot)                             | four          | one           |
+|                                                             | [linked micromaps](#linked-micromaps)                                     | one           |               |
+|                                                             | [diverging stacked bar](#diverging-stacked-bar)                           | one           | one           |
 
 ## D1 distributions
 
@@ -43,8 +43,8 @@ We will use two prospective graph designs for comparing distributions.
 Include only one of these graph types in your portfolio. Select the
 design that best conveys the stories in your data.
 
-  - [strip plot](cm201_strip-plot.md#top)  
-  - box plot
+  - [strip plot](cm201_strip-plot.mdtop)  
+  - [box plot](cm202_boxplott.md#top)
 
 Data requirements
 
