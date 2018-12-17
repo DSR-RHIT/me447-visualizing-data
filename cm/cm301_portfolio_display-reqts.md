@@ -44,7 +44,7 @@ Include only one of these graph types in your portfolio. Select the
 design that best conveys the stories in your data.
 
   - [strip plot](cm201_strip-plot.mdtop)  
-  - [box plot](cm202_boxplott.md#top)
+  - [box plot](cm202_boxplot.md#top)
 
 Data requirements
 
