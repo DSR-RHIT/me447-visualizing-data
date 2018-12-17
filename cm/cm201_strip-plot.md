@@ -46,6 +46,9 @@ comparing distributions.”
 
 ## prerequisites
 
+The tutorial assumes you have set up the course [directory
+structure](cm101_data-lab.md#file-management).
+
 The packages used in this tutorial can be installed with the following
 commands.
 
@@ -222,10 +225,12 @@ starting point for the final design.
 
 Data gathering and tidying is usually performed in a separate R script
 in the `carpentry/` directory. For the tutorial, however, we can simply
-continue with the `practice/d1_tutorial_stripplot-speedski.R` file.
+continue the same `practice/` R script we started above.
+
+A data carpentry file typically begins by reading the source data file.
+In this case, the data are loaded with the GDAdata package.
 
 ``` r
-library("tidyverse")
 library("GDAdata")
 ```
 
@@ -256,8 +261,7 @@ speed_ski <- speed_ski %>%
 #> $ speed <dbl> 211.67, 209.70, 209.69, 209.67, 209.19, 208.33, 208.03, ...
 ```
 
-At the end of a data carpentry file, the tidy data frame is routinely
-saved.
+A data carpentry file typically concludes by saving the data frame.
 
 ``` r
 write_csv(speed_ski, "data/d1_tutorial_stripplot-speedski.csv")
@@ -268,18 +272,8 @@ write_csv(speed_ski, "data/d1_tutorial_stripplot-speedski.csv")
 ## design
 
 Graph design is usually performed in a separate R script in the
-`design/` directory. Thus, in the code chunks below I will load packages
-and reset the random seed. (These steps are unnecessary when we working
-in a single file like we are for the tutorial.)
-
-``` r
-library("tidyverse")
-library("graphclassmate")
-set.seed(20181216)
-```
-
-For the tutorial, continue with the
-`practice/d1_tutorial_stripplot-speedski.R` file.
+`design/` directory. For the tutorial, however, we can simply continue
+the same `practice/` R script we started above.
 
 A design file typically starts by reading the tidy data file.
 
@@ -312,7 +306,7 @@ ggplot(speed_ski, aes(x = speed, y = event, color = sex)) +
     geom_jitter(width = 0, height = 0.1)
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-21-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-20-1.png" width="70%" style="display: block; margin: auto;" />
 
 For formatting the graph, the `theme_graphclass()` is a good starting
 point.
@@ -323,7 +317,7 @@ ggplot(speed_ski, aes(x = speed, y = event, color = sex)) +
     theme_graphclass()
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-22-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-21-1.png" width="70%" style="display: block; margin: auto;" />
 
 To manually control the data marker color, we use
 `ggplot2::scale_color_manual()`. We are also using the
@@ -337,7 +331,7 @@ ggplot(speed_ski, aes(x = speed, y = event, color = sex)) +
     scale_color_manual(values = c(rcb("dark_BG"), rcb("dark_Br")))
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-23-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-22-1.png" width="70%" style="display: block; margin: auto;" />
 
 We can assign a separate fill color to a data marker by using `shape
 = 21`, adding `fill = sex` to the `aes()` function, then using
@@ -351,7 +345,7 @@ ggplot(speed_ski, aes(x = speed, y = event, color = sex, fill = sex)) +
     scale_fill_manual(values = c(rcb("mid_BG"), rcb("mid_Br")))
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-24-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-23-1.png" width="70%" style="display: block; margin: auto;" />
 
 We can edit the data markers further by adding a `size` and `alpha`
 argument to `geom_jitter()`.
@@ -364,7 +358,7 @@ ggplot(speed_ski, aes(x = speed, y = event, color = sex, fill = sex)) +
     scale_fill_manual(values = c(rcb("mid_BG"), rcb("mid_Br")))
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-25-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-24-1.png" width="70%" style="display: block; margin: auto;" />
 
 We can label the data directly using `geom_text()`, manually selecting
 the coordinates of the text and matching the text color by sex. Then the
@@ -383,10 +377,11 @@ ggplot(speed_ski, aes(x = speed, y = event, color = sex, fill = sex)) +
     labs(x = "Speed (km/hr)", y = "") 
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-26-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-25-1.png" width="70%" style="display: block; margin: auto;" />
 
-Using `ggsave()` to control the figure dimensions, we can control the
-aspect ratio and dpi to produce the final version.
+A design file typically concludes by saving the graph to the `figures/`
+directory. Using `ggsave()` to control the figure dimensions, we can
+control the aspect ratio and dpi to produce the final version.
 
 ``` r
 ggsave(filename = "d1-01-stripchart-speed-ski.png",
