@@ -395,8 +395,7 @@ ggsave(filename = "d1-01-stripchart-speed-ski.png",
        width    = 8,
        height   = 2.5,
        units    = "in",
-       dpi      = 600
-       )
+       dpi      = 600)
 ```
 
 <a name="completed-strip-chart"></a> *Publication-ready strip
