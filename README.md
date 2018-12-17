@@ -109,7 +109,7 @@ Data carpentry exercises
 Graph tutorials
 
   - [Strip plot](cm/cm201_strip-plot.md#strip-plot)  
-  - Box plot  
+  - [Box plot](cm/cm202_boxplot.md#box-plot)  
   - Multiway  
   - Scatterplot  
   - Dot plot  
@@ -123,7 +123,7 @@ Graph tutorials
 Graph exercises
 
   - [Strip plot exercises](cm/cm201_strip-plot.md#exercises)
-  - Box plot exercises  
+  - [Box plot exercises](cm/cm202_boxplot.md#exercises)  
   - Multiway exercises  
   - Scatterplot exercises  
   - Dot plot exercises  
