@@ -17,41 +17,46 @@
 
 ## introduction
 
-Like [strip plots](cm201_strip-plot.md#strip-plot), a box plot (or
-box-and-whisker plot) is designed for displaying the distribution of a
-single quantitative variable. Box plots are superior to strip plots for
-large numbers of observations with a small range of values (Robbins,
-[2013](#ref-Robbins:2013), 85).
+A *box-and-whisker plot* (or box plot), like [strip
+plots](cm201_strip-plot.md#strip-plot), is designed for displaying the
+distribution of a single quantitative variable. Box plots are superior
+to strip plots for large numbers of observations with a small range of
+values (Robbins, [2013](#ref-Robbins:2013), 85).
 
-The box plot displays a 5-point statistical summary of a quantitative
-variable. The figure below, adapted from Zhao and Bryan
-([2016](#ref-Zhao+Bryan:2016)), illustrates how the sumnmary is
-represented graphically.
+Data characteristics in tidy form
 
-  - The box shows the inter-quartile range (IQR), the distance between
-    the lower quartile (25th percentile) and upper quartile (75th
-    percentile).  
-  - The median (50th percentile) is the straight line inside the box.  
-  - The upper whisker extends to the largest value no greater than 1.5
-    IQR from the upper quartile.  
-  - The lower whisker extends to the smallest value no less than 1.5 IQR
-    from the lower quartile.  
-  - Data beyond the whiskers are “outlying” points and are plotted
-    individually.
+  - One quantitative variable in one column, values are numerical,
+    continuous or discrete  
+  - One categorical variable (if any) per column, values are the
+    category levels, nominal or ordinal
 
-Alternative versions of the box plot extend the whiskers to the min/max
-values or to the 10th and 90th
-percentiles.
-
-<img src="../figures/cm202_define-boxplot.png" width="40%" style="display: block; margin: auto;" />
-
-Boxplot characteristics:
+Graph characteristics
 
   - displays distributions of a single quantitative variable  
   - shows a 5-point statistical summary  
   - shows range, outliers, and data symmetry or skew about the median  
   - data can be grouped by one or more categorical variables
-  - a horizontal layout can make it easier to read category labels
+  - a horizontal layout can make it easier to read category
+labels
+
+<img src="../figures/cm202_define-boxplot.png" width="40%" style="display: block; margin: auto;" />
+
+Reading a boxplot. Figure adapted from (Zhao and Bryan,
+[2016](#ref-Zhao+Bryan:2016)).
+
+  - The box shows the inter-quartile range (IQR), the distance between
+    the lower quartile (25th percentile) and upper quartile (75th
+    percentile)  
+  - The median (50th percentile) is the straight line inside the box  
+  - The upper whisker extends to the largest value no greater than 1.5
+    IQR from the upper quartile  
+  - The lower whisker extends to the smallest value no less than 1.5 IQR
+    from the lower quartile  
+  - Data beyond the whiskers are “outlying” points and are plotted
+    individually
+
+Alternative versions of the box plot extend the whiskers to the min/max
+values or to the 10th and 90th percentiles.
 
 ## prerequisites
 
@@ -125,7 +130,7 @@ the same `practice/` R script we started above.
 A design file typically starts by reading the tidy data file.
 
 ``` r
-speed_ski <- read_csv("data/d1_tutorial_boxplot-diamonds.csv") %>% 
+diamonds <- read_csv("data/d1_tutorial_boxplot-diamonds.csv") %>% 
     glimpse()
 ```
 
