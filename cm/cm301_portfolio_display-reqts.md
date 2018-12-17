@@ -3,7 +3,7 @@
 
 # portfolio display requirements
 
-<img src="../resources/header-display-requirements.png" width="70%" style="display: block; margin: auto;" />
+<img src="../resources/header-display-requirements.png" width="70%" />
 
 <small> *dennisyang.com DOM graph* by Dennis Yang is licensed under [CC
 BY 2.0](https://creativecommons.org/licenses/by/2.0/)  
@@ -59,7 +59,10 @@ Categorical variables
   - If two categories are used, they must have at least two levels each
     for a minmum of four comparisons.
 
-[Strip plot example](cm201_strip-plot.md#completed-strip-chart)  
+Examples
+
+  - [Speed skiing strip plot](cm201_strip-plot.md#completed-strip-chart)
+
 <a href="#top">Top of page</a>
 
 ## D2 multiway
