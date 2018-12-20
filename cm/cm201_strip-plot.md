@@ -46,23 +46,18 @@ comparing distributions.”
 
 ## prerequisites
 
-The tutorial assumes you have set up the course [directory
-structure](cm101_data-lab.md#file-management).
+  - The tutorial assumes you have set up the course [directory
+    structure](cm101_data-lab.md#file-management).  
+  - The packages used in this tutorial can be installed with the
+    following commands.
 
-The packages used in this tutorial can be installed with the following
-commands.
+<!-- end list -->
 
 ``` r
 # install packages only once
 install.packages("tidyverse")
 install.packages("GDAdata")
 devtools::install_github("graphdr/graphclassmate")
-```
-
-Create new R scripts in the directories indicated.
-
-``` 
-practice/d1_tutorial_stripplot-speedski.R  
 ```
 
 <a href="#top">Top of page</a>
@@ -73,7 +68,7 @@ An initial exploration involves both the data and some exploratory
 graphs. Such files are typically not part of the workflow for
 publication, so we save such R scripts in the `practice/` directory.
 
-  - Open `practice/d1_tutorial_stripplot-speedski.R`  
+  - Create the R file `practice/d1_tutorial_stripplot-speedski.R`  
   - One code chunk at a time, copy or type a code chunk into the R
     script  
   - After adding new lines of code, save, run, and examine the result
