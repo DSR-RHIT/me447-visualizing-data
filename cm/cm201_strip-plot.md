@@ -12,6 +12,7 @@
 [explore](#explore)  
 [carpentry](#carpentry)  
 [design](#design)  
+[report](#report)  
 [exercises](#exercises)  
 [references](#references)
 
@@ -46,17 +47,39 @@ comparing distributions.”
 
 ## prerequisites
 
-  - [directory structure](cm101_data-lab.md#file-management) has been
-    set up  
-  - tidyverse package installed  
-  - GDAdata package installed  
-  - graphclassmate package installed
+**Packages**
+
+  - tidyverse  
+  - GDAdata  
+  - graphclassmate
+
+**File management**
+
+We assume you followed the course guidelines for creating your
+[directory structure](cm101_data-lab.md#file-management). For the
+tutorial, write all the R code in the file
+
+    practice/  d1_stripplot_speedski_tutorial.R
+
+which saves results using the file names,
+
+    data/      d1_stripplot_speedski_data.rds
+    figures/   d1_stripplot_speedski_figure.png 
+
+If this work had been part of the portfolio, our file list might include
+
+``` 
+carpentry/ d1_stripplot_speedski_carpentry.R
+data/      d1_stripplot_speedski_data.rds
+design/    d1_stripplot_speedski_design.R
+figures/   d1_stripplot_speedski_figure.png  
+```
 
 <a href="#top">Top of page</a>
 
 ## explore
 
-Create the R file `practice/d1_tutorial_stripplot_speedski.R`
+Create the R file `practice/d1_stripplot_speedski_tutorial.R`
 
 ``` r
 library("tidyverse")
@@ -236,12 +259,15 @@ For data carpentry, I assign a new name, leaving the original data frame
 unaltered.
 
 ``` r
+# leave the original data frame unaltered
 speed_ski <- SpeedSki
 ```
 
 Select speed, event, and sex. Convert to a tibble.
 
 ``` r
+# select only the variables I need
+# use tibble for consistency through entire project
 speed_ski <- speed_ski %>% 
     select(Event, Sex, Speed) %>% 
     as_tibble()
@@ -250,6 +276,7 @@ speed_ski <- speed_ski %>%
 This data set is already tidy, but I prefer lower case variable names,
 
 ``` r
+# prefer lowercase variable names
 speed_ski <- speed_ski %>%
     rename(event = Event, sex = Sex, speed = Speed) %>% 
     glimpse()
@@ -265,6 +292,7 @@ median speeds, so I convert event to a factor and order its levels by
 speed.
 
 ``` r
+# factors for ordering data 
 speed_ski <- speed_ski %>% 
     mutate(event = as_factor(event)) %>% 
     mutate(event = fct_reorder(event, speed))
@@ -273,7 +301,8 @@ speed_ski <- speed_ski %>%
 A data carpentry file typically concludes by saving the data frame.
 
 ``` r
-saveRDS(speed_ski, "data/d1_tutorial_stripplot-speedski.rds")
+# RDS format preserves factors
+saveRDS(speed_ski, "data/d1_stripplot_speedski_data.rds")
 ```
 
 <a href="#top">Top of page</a>
@@ -287,7 +316,7 @@ the same `practice/` R script we started above.
 A design file typically starts by reading the tidy data file.
 
 ``` r
-speed_ski <- readRDS("data/d1_tutorial_stripplot-speedski.rds") %>% 
+speed_ski <- readRDS("data/d1_stripplot_speedski_data.rds") %>% 
     glimpse()
 #> Observations: 91
 #> Variables: 3
@@ -384,7 +413,7 @@ directory. Using `ggsave()` to control the figure dimensions, we can
 control the aspect ratio and dpi to produce the final version.
 
 ``` r
-ggsave(filename = "d1-01-stripchart-speed-ski.png",
+ggsave(filename = "d1_stripplot_speedski_figure.png",
        path     = "figures",
        device   = "png",
        width    = 8,
@@ -393,10 +422,27 @@ ggsave(filename = "d1-01-stripchart-speed-ski.png",
        dpi      = 600)
 ```
 
-<a name="completed-strip-chart"></a> *Publication-ready strip
-plot*
+## report
 
-<img src="../figures/d1-02-stripchart-speed-ski.png" width="100%" style="display: block; margin: auto;" />
+In an Rmd report document, we include a code chunk to run the carpentry
+file and the design file using `source()`. (These commands are shown to
+illustrate the process only—we did not create these files for the
+tutorial.)
+
+``` r
+# do not run this code chunk
+source("carpentry/d1_stripplot_speedski_carpentry.R")
+source("design/d1_stripplot_speedski_design.R")
+```
+
+We import the final figure into the report using
+`knitr::include_graphics()`.
+
+``` r
+include_graphics("../figures/d1_stripplot_speedski_figure.png")
+```
+
+<img src="../figures/d1_stripplot_speedski_figure.png" width="100%" style="display: block; margin: auto;" />
 
 <a href="#top">Top of page</a>
 
@@ -404,27 +450,29 @@ plot*
 
 **1. Museum exhibits**
 
-Create `practice/d1_exercise_stripplot-museum.R`
+Create `practice/d1_exercise_stripplot_museum.R`
 
   - Examine the `museum_exhibits` data from the graphclassmate package  
   - Explore the data, identify the number, type, and levels of
     variables, create exploratory graphs to compare distributions  
-  - Save a tidy data frame to `data/d1_exercise_stripplot-museum.csv`  
+  - Save a tidy data frame to `data/d1_exercise_stripplot_museum.rds`  
   - Read the tidy data, make the appropriate categorical variable a
     factor, and order its levels  
   - Create the final graph with ordered rows, use `theme_graphclass()`,
     edit axis labels, and add additional formatting you think suitable
-    for publication.
+    for publication.  
+  - When the graph is complete, save it to
+    `figures/d1_exercise_stripplot_museum.png`
 
 **2. Ozone readings**
 
-Create `practice/d1_exercise_stripplot-ozone.R`
+Create `practice/d1_exercise_stripplot_ozone.R`
 
   - Examine the `airquality` data in base R  
   - Explore the ozone readings using month as the categorical variable,
     identify the number, type, and levels of variables, create
     exploratory graphs to compare distributions  
-  - Save a tidy data frame to `data/d1_exercise_stripplot-ozone.csv`  
+  - Save a tidy data frame to `data/d1_exercise_stripplot_ozone.csv`  
   - Read the tidy data, make the appropriate categorical variable a
     factor, and order its levels
 
@@ -432,7 +480,9 @@ As a time series, we would conventionally assign months to the x-scale
 and ozone measurements to the y-scale.
 
   - Create the final graph, use `theme_graphclass()`, edit axis labels,
-    and add additional formatting you think suitable for publication.
+    and add additional formatting you think suitable for publication.  
+  - When the graph is complete, save it to
+    `figures/d1_exercise_stripplot_ozone.png`
 
 <a href="#top">Top of page</a>
 
