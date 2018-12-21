@@ -82,8 +82,8 @@ library("tidyverse")
 library("graphclassmate")
 ```
 
-We will use the `nontraditional` data set from graphclassmate. To learn
-more about the data, run `?nontraditional` to open its help page.
+We will use the `nontraditional` data set from graphclassmate. Run `?
+nontraditional` to open the help page for the data set.
 
 For exploring the data, I assign it a new name, leaving the original
 data frame unaltered.
@@ -112,7 +112,7 @@ summary(explore$enrolled)
 #>   0.700   3.700   4.000   4.072   4.700   5.700
 ```
 
-Sex and path are two categories we might like to examine. Both a
+Sex and path are two categories we might like to examine. Both are
 character variables (`<chr>`) with two levels each.
 
 ``` r
@@ -149,10 +149,9 @@ ggplot(explore, aes(x = enrolled, y = path))+
 
 <img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-10-1.png" width="70%" style="display: block; margin: auto;" />
 
-The boxplot geom default is for the distributed variable along the
-y-scale and the category on the x-scale. Our first observation is that
-the median years enrolled is less for nontraditional students than for
-traditional studts.
+We don’t have a boxplot because in ggplot2, the boxplot geom expects the
+quantitative variable to be assigned to the y-scale. Making that change
+we obtain,
 
 ``` r
 ggplot(explore, aes(y = enrolled, x = path))+
@@ -160,6 +159,9 @@ ggplot(explore, aes(y = enrolled, x = path))+
 ```
 
 <img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-11-1.png" width="70%" style="display: block; margin: auto;" />
+
+Our first observation is that the median years enrolled is less for
+nontraditional students than for traditional students.
 
 Using the second category, sex, we find that the median years enrolled
 is less for women than for men.
@@ -196,22 +198,24 @@ ggplot(explore, aes(y = enrolled, x = sex_path))+
 
 <img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-14-1.png" width="70%" style="display: block; margin: auto;" />
 
-In this version, you can see the increasing median and that women in bot
-traditional and nontradiotnal paths are enrolled fewer years than men.
+In this version, you can see the increasing median and that women in
+both traditional and nontraditional paths are enrolled fewer years than
+men.
 
 <a href="#top">Top of page</a>
 
 ## carpentry
 
 A data carpentry file typically begins by reading the source data file.
-In this case, the data have already been loaded with the graphclassmate
-package.
+In this case, the data are loaded with the graphclassmate package.
 
 From the exploration, I’ll be using the years enrolled as the
 quantitative variable. I’ll create the new categorical variable
 `sex_path` and order it by the years enrolled.
 
 ``` r
+library("graphclassmate")
+
 nontrad <- nontraditional %>% 
   mutate(sex_path = str_c(sex, path, sep = " ")) %>% 
   mutate(sex_path = fct_reorder(sex_path, enrolled))
@@ -265,7 +269,7 @@ p
 
 <img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-19-1.png" width="70%" style="display: block; margin: auto;" />
 
-We can further distiguish between traditional and nontraditional by
+We can further distinguish between traditional and nontraditional by
 adding a fill argument to `aes()` and `scale_fill_manual()` to select
 colors.
 
@@ -313,45 +317,55 @@ To edit the outlier visual, we
   - use a point geom to draw the outliers as a layer on top of the
     boxplot and jitter them
 
-First, create a new variable for the outliers
+First, create a new data frame that has a logical outlier variable
+(values = TRUE or FALSE). We isolate outliers below the lower whisker
+only because none appear above the upper whisker.
 
 ``` r
-nontrad2 <- nontrad %>%
+outlier_only <- nontrad %>%
     group_by(sex_path) %>%
-    mutate(outlier = enrolled < median(enrolled) - IQR(enrolled) * 1.5) %>%
-    ungroup()
+    mutate(outlier = 
+         enrolled < median(enrolled) - 1.5 * IQR(enrolled)) %>%
+    ungroup() %>% 
+    filter(outlier == TRUE)
 ```
 
-Next, graph the box plot using the revised data frame, but with outliers
-omitted from the boxplot geom. I’ve also added a alpha and width
-argument to the box and increased the legend symbols
+Confirm the new data frame has only outliers in it.
+
+``` r
+unique(outlier_only$outlier)
+#> [1] TRUE
+```
+
+Next, graph the original box plot with outliers omitted by
+`outlier.shape = NA`. I’ve also added a alpha and width argument to the
+box and increased the legend symbols
 slightly.
 
 ``` r
-p <- ggplot(nontrad2, aes(y = enrolled, x = sex_path, color = path, fill = path))+
+p <- ggplot(nontrad, aes(y = enrolled, x = sex_path, color = path, fill = path))+
     geom_boxplot(width = 0.45, alpha = 0.75, outlier.shape = NA) +
     coord_flip() +
     labs(y = "Years enrolled", x = "", title = "Graduating students") +
     theme_graphclass() +
-    scale_color_manual(values = c(rcb("dark_BG"), rcb("dark_Br"))) +
-    scale_fill_manual(values = c(rcb("light_BG"), rcb("light_Br"))) +
+    scale_color_manual(values = c(rcb("dark_BG"),  rcb("dark_Br"))) +
+    scale_fill_manual(values  = c(rcb("light_BG"), rcb("light_Br"))) +
     guides(fill = guide_legend(title = NULL, reverse = TRUE, keyheight = 2), color = "none") 
 p
 ```
 
-<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-24-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-25-1.png" width="70%" style="display: block; margin: auto;" />
 
-Now add the outliers as jittered points.
+Now add the outliers as jittered points. Note that we can assign a new
+data argument in the geom.
 
 ``` r
 p <- p + 
-    geom_jitter(data = function(x)
-        dplyr::filter_(x, ~outlier),
-        width = 0.05, height = 0.2, alpha = 0.25, shape = 21)
+    geom_jitter(data = outlier_only, width = 0.05, height = 0.2, alpha = 0.25, shape = 21)
 p
 ```
 
-<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-25-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-26-1.png" width="70%" style="display: block; margin: auto;" />
 
 And the figure is ready to save, using width and height to control the
 aspect ratio.
@@ -367,8 +381,8 @@ ggsave(filename = "d1-04-boxplot-nontraditional.png",
 )
 ```
 
-<a name="completed-boxplot"></a> *Publication-ready
-boxplot*
+<a name="completed-boxplot"></a> *Completed box
+plot*
 
 <img src="../figures/d1-04-boxplot-nontraditional.png" width="100%" style="display: block; margin: auto;" />
 
@@ -378,13 +392,42 @@ boxplot*
 
 **1. Speed ski**
 
-Create `practice/d1_exercise_boxplot-speedski.R`
+Create `practice/d1_exercise_boxplot_speedski.R`
 
-Use a box plot design to reproduce the [final publication
-graph](cm201_strip-plot.md#completed-strip-chart) from the [strip plot
-tutorial](cm201_strip-plot.md#top).
+  - Reproduce the completed strip plot from the [strip plot
+    tutorial](cm201_strip-plot.md#top) using a box plot design.  
+  - Identify the number, type, and levels of variables  
+  - After tidying the data, save it to
+    `data/d1_exercise_boxplot_speedski.rds`  
+  - Create the final graph with ordered rows, use `theme_graphclass()`,
+    edit axis labels, and add additional formatting you think suitable
+    for publication.  
+  - When the graph is complete, save it to
+    `figures/d1_exercise_boxplot_speedski.png`
 
-**2. Exercise**
+**2. Diamonds**
+
+Create `practice/d1_exercise_boxplot_diamonds.R`
+
+The set *diamonds* from the ggplot2 package (part of the tidyverse)
+includes information on the characteristics of 53,940 diamonds. Run `?
+diamonds` to open the help page for the data set.
+
+  - Explore the data by computing the price per carat and examine the
+    distribution grouped by cut, color, and clarity, independently and
+    pairwise.  
+  - Find a combination of categorical variables that tells an
+    interesting story, then identify the number, type, and levels of
+    variables you plan to use in a graph  
+  - What is the interesting story?  
+  - Save a tidy data frame to `data/d1_exercise_boxplot_diamonds.rds`  
+  - Read the tidy data, make the appropriate categorical variable a
+    factor, and order its levels  
+  - Create the final graph with ordered rows, use `theme_graphclass()`,
+    edit axis labels, and add additional formatting you think suitable
+    for publication.  
+  - When the graph is complete, save it to
+    \`figures/d1\_exercise\_boxplot\_diamonds.png
 
 <a href="#top">Top of page</a>
 
