@@ -3,7 +3,7 @@
 
 # portfolio studio
 
-<img src="../resources/header-portfolio-lab.png" width="70%" style="display: block; margin: auto;" />
+<img src="../resources/header-portfolio-lab.png" width="70%" />
 
 <small> *Troy from Mount Ida* (No. 11 of The Hudson River Portfolio) is
 licensed under

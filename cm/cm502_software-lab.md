@@ -1,7 +1,5 @@
 
-<a name="top"></a>
-
-# software studio
+<a name="top"></a> \# software studio
 
 <img src="../resources/header-software-lab.png" width="70%" />
 
@@ -16,7 +14,7 @@ E. Watkins (American, 1829–1916) is licensed under
 [setup GitHub](#setup-github)  
 [create a repo](#create-a-repo)  
 [invite collaborator](#invite-collaborator)  
-[create an Rproject](#create-an-rproject)  
+[create an R project](#create-an-r-project)  
 [create the Renviron](#create-the-renviron)  
 [setup directories](#setup-directories)  
 [edit gitignore](#edit-gitignore)  
@@ -25,6 +23,8 @@ E. Watkins (American, 1829–1916) is licensed under
 [commits](#commits)  
 [references](#references)
 
+<a href="#top">Top of page</a>
+
 ## prerequisites
 
 You should already have done the following
@@ -32,6 +32,8 @@ You should already have done the following
   - Installed git locally
   - Obtained a free GitHub account
   - Practiced creating a test repo (when you cached your credentials)
+
+<a href="#top">Top of page</a>
 
 ## setup GitHub
 
@@ -73,6 +75,8 @@ Cleanup
   - Delete the test repo on GitHub, *Settings \> Danger Zone \> Delete
     this repository*
 
+<a href="#top">Top of page</a>
+
 ## create a repo
 
 Create a repo on GitHub called `portfolio-last-first`, replacing `last`
@@ -85,6 +89,8 @@ name (given name or forename)
   - A license is optional (private repos for classwork don’t generally
     need a license)
   - *Create repository*
+
+<a href="#top">Top of page</a>
 
 ## invite collaborator
 
@@ -103,13 +109,17 @@ GitHub and
 
 <img src="../resources/github-collaborate-2.png" width="100%" />
 
-## create an Rproject
+<br>
+
+<a href="#top">Top of page</a>
+
+## create an R project
 
 Instructions adapted from (Bryan, [2018](#ref-Bryan:2018))
 
   - Navigate to your portfolio repo on GitHub  
-  - Copy the HTTPS clone URL to your clipboard via the green “Clone or
-    Download” button. The URL will look something like this:
+  - Copy the HTTPS clone URL to your clipboard via the green â€œClone or
+    Downloadâ€ button. The URL will look something like this:
     `https://github.com/jennybc/myrepo.git`
 
 In RStudio,
@@ -149,6 +159,8 @@ setup a repo for an existing RStudio Project.
     first](http://happygitwithr.com/existing-github-first.html)
   - [Existing project, GitHub
     last](http://happygitwithr.com/existing-github-last.html)
+
+<a href="#top">Top of page</a>
 
 ## create the Renviron
 
@@ -214,6 +226,8 @@ Remember, every time you create a new project (with or without version
 control), paste a copy of the `.Renviron` file at the top level of the
 project directory
 
+<a href="#top">Top of page</a>
+
 ## setup directories
 
 All we are going to do is create a set of empty sub-directories
@@ -234,6 +248,8 @@ shown below.
 <img src="../resources/icon-folder.png" width="2%" /> practice  
 <img src="../resources/icon-folder.png" width="2%" /> reports  
 <img src="../resources/icon-folder.png" width="2%" /> resources
+
+<a href="#top">Top of page</a>
 
 ## edit gitignore
 
@@ -264,15 +280,19 @@ can create the file as follows,
 Once the file exists,
 
   - Open the `.gitignore` file
-
   - Add these lines
-    
-    \# R files not version controlled .Rhistory .Rapp.history .RData
+
+<!-- end list -->
+
+    # R files not version controlled
+    .Rhistory
+    .Rapp.history
+    .RData
     .Rproj.user/
-
-# project files not version controlled
-
-manage practice
+    
+    # project files not version controlled 
+    manage
+    practice
 
 We can also generally omit HTML files (we are using github-specific .md
 files for the web pages) and binary files like Office .docx, .pptx, and
@@ -379,6 +399,8 @@ now contain the following files:
 <img src="../resources/icon-RStudio.png" width="2%" /> README.md  
 <img src="../resources/icon-Rproj.png" width="2%" /> portfolio.Rproj
 
+<a href="#top">Top of page</a>
+
 ## setup reading response
 
 The reading response report is the first R markdown report to set up.
@@ -418,7 +440,7 @@ Next we add some prompts and space for your
     
     **Response:**  
     
-    **Prompt:** Explain how the author’s argument might be used to support a decision you would make in 
+    **Prompt:** Explain how the authorâ€™s argument might be used to support a decision you would make in 
     designing a display. 
     
     **Response:** 
@@ -427,6 +449,8 @@ Next we add some prompts and space for your
   - Knit the file to see the rendered output document
   - When you read the article, return to this file and write your
     responses.
+
+<a href="#top">Top of page</a>
 
 ## commits
 
@@ -454,6 +478,8 @@ If there are files shown in the Git pane,
 
 Navigate to your online repo and you should find that it includes all
 your changes.
+
+<a href="#top">Top of page</a>
 
 ## references
 
