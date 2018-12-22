@@ -46,27 +46,27 @@ to name them.
 
 **Adopt a scheme to consistently name your files**. For example,
 
-    carpentry/ d7_extract-and-tidy.R
-    data/      d7_survey-data.csv
-    data-raw/  d7_survey-data-raw.csv
-    design/    d7_div-stack-bar.R
-    figures/   d7_div-stack-bar.png
-    reports/   d7_report.Rmd
+    carpentry/ d1_stripplot_speedski_carpentry.R
+    data/      d1_stripplot_speedski_data.rds
+    data-raw/  d1_stripplot_speedski_data-raw.csv
+    design/    d1_stripplot_speedski_design.R
+    figures/   d1_stripplot_speedski_figure.png 
+    reports/   d1_report.Rmd
 
 **Explicitly link files using relative file paths**. For example, report
 script `reports/d7_report.Rmd` contains the text of the report
 interleaved with code chunks that run every R script,
 
-    source("carpentry/d7_extract-and-tidy.R")
-    source("design/d7_div-stack-bar.R")
+    source("carpentry/d1_stripplot_speedski_carpentry.R")
+    source("design/d1_stripplot_speedski_design.R")
 
 import data to print a data table,
 
-    read_csv("data/d7_survey-data.csv")
+    readRDS("data/d1_stripplot_speedski_data.rds")
 
 and import figures.
 
-    include_graphics("figures/d7_div-stack-bar.png")
+    include_graphics("figures/d1_stripplot_speedski_figure.png")
 
 ## know your desired data structure
 

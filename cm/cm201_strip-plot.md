@@ -47,39 +47,16 @@ comparing distributions.”
 
 ## prerequisites
 
-**Packages**
-
-  - tidyverse  
-  - GDAdata  
-  - graphclassmate
-
-**File management**
-
-We assume you followed the course guidelines for creating your
-[directory structure](cm101_data-lab.md#file-management). For the
-tutorial, write all the R code in the file
-
-    practice/  d1_stripplot_speedski_tutorial.R
-
-which saves results using the file names,
-
-    data/      d1_stripplot_speedski_data.rds
-    figures/   d1_stripplot_speedski_figure.png 
-
-If this work had been part of the portfolio, our file list might include
-
-``` 
-carpentry/ d1_stripplot_speedski_carpentry.R
-data/      d1_stripplot_speedski_data.rds
-design/    d1_stripplot_speedski_design.R
-figures/   d1_stripplot_speedski_figure.png  
-```
+  - Assumed [directory structure](cm101_data-lab.md#file-management)  
+  - Packages used: tidyverse, graphclassmate, GDAdata  
+  - Create the file: `practice/d1-stripplot-speedski-tutorial.R`
 
 <a href="#top">Top of page</a>
 
 ## explore
 
-Create the R file `practice/d1_stripplot_speedski_tutorial.R`
+In `practice/d1-stripplot-speedski-tutorial.R`, start by loading the
+packages.
 
 ``` r
 library("tidyverse")
@@ -95,8 +72,8 @@ For exploring the data, I assign it a new name, leaving the original
 data frame unaltered.
 
 ``` r
-explore <- SpeedSki
-glimpse(explore)
+explore <- SpeedSki %>% 
+    glimpse()
 #> Observations: 91
 #> Variables: 10
 #> $ Rank       <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, ...
@@ -125,20 +102,8 @@ summary(explore$Speed)
 #>   160.2   171.8   183.1   184.1   192.3   211.7
 ```
 
-When categorical variables are encoded as factors, their levels are
-found with `levels()`. The output indicates that the factor levels are
-ordered alphabetically.
-
-``` r
-# view the categorical variables and the order of their levels 
-levels(explore$Event)
-#> [1] "Speed Downhill"        "Speed Downhill Junior" "Speed One"
-levels(explore$Sex)
-#> [1] "Female" "Male"
-```
-
-We use `count()` to assess the number of people in each combination of
-category levels.
+For categorical variables, we can see the levels and count at every
+combination of levels with `count()`.
 
 ``` r
 explore %>% 
@@ -171,7 +136,7 @@ ggplot(explore, aes(x = Speed, y = allevents)) +
     geom_point()
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-8-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-7-1.png" width="70%" style="display: block; margin: auto;" />
 
 We reduce the amount of overprinting by replacing `geom_point()` with
 `geom_jitter()`. So that subsequent data markers appear in the same
@@ -184,7 +149,7 @@ ggplot(explore, aes(x = Speed, y = allevents)) +
     geom_jitter(width = 0, height = 0.1)
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-9-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-8-1.png" width="70%" style="display: block; margin: auto;" />
 
 One approach to grouping data is by adding a color argument to the main
 `aes()` function. For example, adding the argument `color = Event` shows
@@ -196,7 +161,7 @@ ggplot(explore, aes(x = Speed, y = allevents, color = Event)) +
     geom_jitter(width = 0, height = 0.1) 
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-10-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-9-1.png" width="70%" style="display: block; margin: auto;" />
 
 Changing the grouping to `color = Sex` shows that men significantly
 outnumber women.
@@ -207,7 +172,7 @@ ggplot(explore, aes(x = Speed, y = allevents, color = Sex)) +
     geom_jitter(width = 0, height = 0.1) 
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-11-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-10-1.png" width="70%" style="display: block; margin: auto;" />
 
 We have two categorical variables however, so assigning one to the
 y-variable and one to the color argument may be more informative. For
@@ -220,7 +185,7 @@ ggplot(SpeedSki, aes(x = Speed, y = Sex, color = Event)) +
     geom_jitter(width = 0, height = 0.1) 
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-12-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-11-1.png" width="70%" style="display: block; margin: auto;" />
 
 Swapping the category assignments to `y = Event` and `color = Sex`
 yields a display that tells (perhaps) the most interesting story.
@@ -231,7 +196,7 @@ ggplot(SpeedSki, aes(x = Speed, y = Event, color = Sex)) +
     geom_jitter(width = 0, height = 0.1)
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-13-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-12-1.png" width="70%" style="display: block; margin: auto;" />
 
 We see here that
 
@@ -302,7 +267,7 @@ A data carpentry file typically concludes by saving the data frame.
 
 ``` r
 # RDS format preserves factors
-saveRDS(speed_ski, "data/d1_stripplot_speedski_data.rds")
+saveRDS(speed_ski, "data/d1-stripplot-speedski.rds")
 ```
 
 <a href="#top">Top of page</a>
@@ -316,7 +281,7 @@ the same `practice/` R script we started above.
 A design file typically starts by reading the tidy data file.
 
 ``` r
-speed_ski <- readRDS("data/d1_stripplot_speedski_data.rds") %>% 
+speed_ski <- readRDS("data/d1-stripplot-speedski.rds") %>% 
     glimpse()
 #> Observations: 91
 #> Variables: 3
@@ -334,7 +299,7 @@ p <- ggplot(speed_ski, aes(x = speed, y = event, color = sex)) +
 p
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-21-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-20-1.png" width="70%" style="display: block; margin: auto;" />
 
 For formatting the graph, the `theme_graphclass()` is a good starting
 point.
@@ -345,7 +310,7 @@ p <- p +
 p
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-22-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-21-1.png" width="70%" style="display: block; margin: auto;" />
 
 To manually control the data marker color, we use
 `ggplot2::scale_color_manual()`. We are also using the
@@ -358,7 +323,7 @@ p <- p +
 p
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-23-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-22-1.png" width="70%" style="display: block; margin: auto;" />
 
 We can assign a separate fill color to a data marker by using `shape
 = 21`, adding `fill = sex` to the `aes()` function, then using
@@ -375,7 +340,7 @@ p <- ggplot(speed_ski, aes(x = speed, y = event, color = sex, fill = sex)) +
 p
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-24-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-23-1.png" width="70%" style="display: block; margin: auto;" />
 
 We can edit the data markers further by adding a `size` and `alpha`
 argument to
@@ -390,7 +355,7 @@ p <- ggplot(speed_ski, aes(x = speed, y = event, color = sex, fill = sex)) +
 p
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-25-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-24-1.png" width="70%" style="display: block; margin: auto;" />
 
 We can label the data directly using `geom_text()`, manually selecting
 the coordinates of the text and matching the text color by sex. Then the
@@ -406,14 +371,14 @@ p <- p +
 p
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-26-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-25-1.png" width="70%" style="display: block; margin: auto;" />
 
 A design file typically concludes by saving the graph to the `figures/`
 directory. Using `ggsave()` to control the figure dimensions, we can
 control the aspect ratio and dpi to produce the final version.
 
 ``` r
-ggsave(filename = "d1_stripplot_speedski_figure.png",
+ggsave(filename = "d1-stripplot-speedski.png",
        path     = "figures",
        device   = "png",
        width    = 8,
@@ -431,18 +396,18 @@ tutorial.)
 
 ``` r
 # do not run this code chunk
-source("carpentry/d1_stripplot_speedski_carpentry.R")
-source("design/d1_stripplot_speedski_design.R")
+source("carpentry/d1-stripplot-speedski-carpentry.R")
+source("design/d1-stripplot-speedski-design.R")
 ```
 
 We import the final figure into the report using
 `knitr::include_graphics()`.
 
 ``` r
-include_graphics("../figures/d1_stripplot_speedski_figure.png")
+include_graphics("../figures/d1-stripplot-speedski.png")
 ```
 
-<img src="../figures/d1_stripplot_speedski_figure.png" width="100%" style="display: block; margin: auto;" />
+<img src="../figures/d1-stripplot-speedski.png" width="100%" style="display: block; margin: auto;" />
 
 <a href="#top">Top of page</a>
 
@@ -450,29 +415,29 @@ include_graphics("../figures/d1_stripplot_speedski_figure.png")
 
 **1. Museum exhibits**
 
-Create `practice/d1_exercise_stripplot_museum.R`
+Create `practice/d1-stripplot-museum-exercise.R`
 
   - Examine the `museum_exhibits` data from the graphclassmate package  
   - Explore the data, identify the number, type, and levels of
     variables, create exploratory graphs to compare distributions  
-  - Save a tidy data frame to `data/d1_exercise_stripplot_museum.rds`  
+  - Save a tidy data frame to `data/d1-stripplot-museum-exercise.rds`  
   - Read the tidy data, make the appropriate categorical variable a
     factor, and order its levels  
   - Create the final graph with ordered rows, use `theme_graphclass()`,
     edit axis labels, and add additional formatting you think suitable
     for publication.  
   - When the graph is complete, save it to
-    `figures/d1_exercise_stripplot_museum.png`
+    `figures/d1-stripplot-museum-exercise.png`
 
 **2. Ozone readings**
 
-Create `practice/d1_exercise_stripplot_ozone.R`
+Create `practice/d1-stripplot-ozone-exercise.R`
 
   - Examine the `airquality` data in base R  
   - Explore the ozone readings using month as the categorical variable,
     identify the number, type, and levels of variables, create
     exploratory graphs to compare distributions  
-  - Save a tidy data frame to `data/d1_exercise_stripplot_ozone.csv`  
+  - Save a tidy data frame to `data/d1-stripplot-ozone-exercise.rds`  
   - Read the tidy data, make the appropriate categorical variable a
     factor, and order its levels
 
@@ -482,7 +447,7 @@ and ozone measurements to the y-scale.
   - Create the final graph, use `theme_graphclass()`, edit axis labels,
     and add additional formatting you think suitable for publication.  
   - When the graph is complete, save it to
-    `figures/d1_exercise_stripplot_ozone.png`
+    `figures/d1-stripplot-ozone-exercise.png`
 
 <a href="#top">Top of page</a>
 

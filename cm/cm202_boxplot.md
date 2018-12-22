@@ -12,6 +12,7 @@
 [explore](#explore)  
 [carpentry](#carpentry)  
 [design](#design)  
+[report](#report)  
 [exercises](#exercises)  
 [references](#references)
 
@@ -75,7 +76,7 @@ informative.
 
 ## explore
 
-Create the R file `practice/d1_tutorial_boxplot_nontraditional.R`.
+Create the R file `practice/d1-boxplot-nontrad-tutorial.R`.
 
 ``` r
 library("tidyverse")
@@ -224,7 +225,7 @@ nontrad <- nontraditional %>%
 A data carpentry file typically concludes by saving the data frame.
 
 ``` r
-saveRDS(nontrad, "data/d1_tutorial_boxplot-nontraditional.rds")
+saveRDS(nontrad, "data/d1-boxplot-nontrad.rds")
 ```
 
 <a href="#top">Top of page</a>
@@ -234,7 +235,7 @@ saveRDS(nontrad, "data/d1_tutorial_boxplot-nontraditional.rds")
 A graph design file typically starts by reading the tidy data file.
 
 ``` r
-nontrad <- readRDS("data/d1_tutorial_boxplot-nontraditional.rds") %>%  
+nontrad <- readRDS("data/d1-boxplot-nontrad.rds") %>%  
   glimpse()
 #> Observations: 269,057
 #> Variables: 6
@@ -371,7 +372,7 @@ And the figure is ready to save, using width and height to control the
 aspect ratio.
 
 ``` r
-ggsave(filename = "d1-04-boxplot-nontraditional.png",
+ggsave(filename = "d1-boxplot-nontrad.png",
              path     = "figures",
              device   = "png",
              width    = 8,
@@ -381,10 +382,29 @@ ggsave(filename = "d1-04-boxplot-nontraditional.png",
 )
 ```
 
-<a name="completed-boxplot"></a> *Completed box
-plot*
+<a name="completed-boxplot"></a>
 
-<img src="../figures/d1-04-boxplot-nontraditional.png" width="100%" style="display: block; margin: auto;" />
+## report
+
+In an Rmd report document, we include a code chunk to run the carpentry
+file and the design file using `source()`. (These commands are shown to
+illustrate the process only—we did not create these files for the
+tutorial.)
+
+``` r
+# do not run this code chunk
+source("carpentry/d1-boxplot-nontrad-carpentry.R")
+source("design/d1-boxplot-nontrad-design.R")
+```
+
+We import the final figure into the report using
+`knitr::include_graphics()`.
+
+``` r
+include_graphics("../figures/d1-boxplot-nontrad.png")
+```
+
+<img src="../figures/d1-boxplot-nontrad.png" width="100%" style="display: block; margin: auto;" />
 
 <a href="#top">Top of page</a>
 
@@ -392,22 +412,22 @@ plot*
 
 **1. Speed ski**
 
-Create `practice/d1_exercise_boxplot_speedski.R`
+Create `practice/d1-boxplot-speedski-exercise.R`
 
   - Reproduce the completed strip plot from the [strip plot
     tutorial](cm201_strip-plot.md#top) using a box plot design.  
   - Identify the number, type, and levels of variables  
   - After tidying the data, save it to
-    `data/d1_exercise_boxplot_speedski.rds`  
+    `data/d1-boxplot-speedski-exercise.rds`  
   - Create the final graph with ordered rows, use `theme_graphclass()`,
     edit axis labels, and add additional formatting you think suitable
     for publication.  
   - When the graph is complete, save it to
-    `figures/d1_exercise_boxplot_speedski.png`
+    `figures/d1-boxplot-speedski-exercise.png`
 
 **2. Diamonds**
 
-Create `practice/d1_exercise_boxplot_diamonds.R`
+Create `practice/d1-boxplot-diamonds-exercise.R`
 
 The set *diamonds* from the ggplot2 package (part of the tidyverse)
 includes information on the characteristics of 53,940 diamonds. Run `?
@@ -420,14 +440,14 @@ diamonds` to open the help page for the data set.
     interesting story, then identify the number, type, and levels of
     variables you plan to use in a graph  
   - What is the interesting story?  
-  - Save a tidy data frame to `data/d1_exercise_boxplot_diamonds.rds`  
+  - Save a tidy data frame to `data/d1-boxplot-diamonds-exercise.rds`  
   - Read the tidy data, make the appropriate categorical variable a
     factor, and order its levels  
   - Create the final graph with ordered rows, use `theme_graphclass()`,
     edit axis labels, and add additional formatting you think suitable
     for publication.  
   - When the graph is complete, save it to
-    \`figures/d1\_exercise\_boxplot\_diamonds.png
+    `figures/d1-boxplot-diamonds-exercise.png`
 
 <a href="#top">Top of page</a>
 
