@@ -3,7 +3,7 @@
 
 # box plot
 
-<img src="../figures/cm202_header.png" width="100%" style="display: block; margin: auto;" />
+<img src="../cm/figures/cm202_header.png" width="100%" style="display: block; margin: auto;" />
 
 ## contents
 
@@ -38,7 +38,7 @@ Graph characteristics
   - a horizontal layout can make it easier to read category
 labels
 
-<img src="../figures/cm202_define-boxplot.png" width="40%" style="display: block; margin: auto;" />
+<img src="../cm/figures/cm202_define-boxplot.png" width="40%" style="display: block; margin: auto;" />
 
 <br>
 
@@ -65,7 +65,7 @@ plot is shown below—with nearly 270,000 observations over a range of
 roughly 6 years, the strip plot is not visually
 informative.
 
-<img src="../figures/cm202_why-use-boxplot.png" width="100%" style="display: block; margin: auto;" />
+<img src="../cm/figures/cm202_why-use-boxplot.png" width="100%" style="display: block; margin: auto;" />
 
 ## prerequisites
 
