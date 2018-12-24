@@ -1,7 +1,7 @@
 
 <a name="top"></a>
 
-# file management
+# managing files
 
 <img src="../resources/cm101_header.png" width="70%" />
 
@@ -10,16 +10,18 @@ BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) </small>
 
 ## contents
 
-[directory structure](#directory-structure)  
-[file naming](#file-naming)  
-[file searching](#file-searching)  
-[relative paths](#relative-paths)
+[organizing the directory](#organizing-the-directory)  
+[naming files](#naming-files)  
+[using relative paths](#using-relative-paths)  
+[searching files](#searching-files)
 
-## directory structure
+## organizing the directory
 
 The directory structure for the course given below. The purpose of each
 file and folder is described in detail in [Basic elements of file
 management](../slides/w03-4-file-management.pdf) slides.
+
+This directory structure is required.
 
 <img src="../resources/icon-folder.png" width="2%" /> carpentry  
 <img src="../resources/icon-folder.png" width="2%" /> data  
@@ -37,15 +39,19 @@ management](../slides/w03-4-file-management.pdf) slides.
 <img src="../resources/icon-md.png" width="2%" /> README.md  
 <img src="../resources/icon-Rproj.png" width="2%" /> portfolio.Rproj
 
-## file naming
+## naming files
 
 Carefully consider your file naming scheme when you write your first
-script. Rough out the expected file names for each directory
-contributing to a particular report. For example, suppose for portfolio
-display D1, I designed a strip plot to display the `speedski` data. I
-might use the file naming scheme: every file starts with the display
-number, `d1`, followed by the graph type, `-stripplot`, and the data
-set, `-speedski`.
+script.
+
+PRO TIP: Write out a set of file names for each directory you think may
+contribute to a particular report and stick to it. It is really
+time-consuming and error-prone to change a file-naming scheme after
+several files are written.
+
+To illustrate a potential scheme, as a suggestion only, suppose for
+portfiolio display D1, we design a strip plot to display `speedski`
+data. My file naming plan might be:
 
     carpentry/ d1-stripplot-speedski-carpentry.R
     data/      d1-stripplot-speedski.rds
@@ -53,8 +59,11 @@ set, `-speedski`.
     figures/   d1-stripplot-speedski.png 
     reports/   d1-stripplot-speedski.Rmd
 
-I am likely to have at least two R scripts (carpentry and design), so I
-add it’s category, `-carpentry.R` or `-design.R`.
+  - Every file starts with the display number `d1`  
+  - Followed by the graph type `-stripplot`  
+  - Then the data set `-speedski`  
+  - I am likely to have at least two R scripts (carpentry and design),
+    so I add it’s category `-carpentry.R` or `-design.R`
 
 If I need more than one script of the same type in a directory, I’ll add
 a sequential number to the file name. e.g.,
@@ -62,12 +71,22 @@ a sequential number to the file name. e.g.,
     carpentry/ d1-stripplot-speedski-carpentry-01.R
     carpentry/ d1-stripplot-speedski-carpentry-02.R
 
-This scheme is a suggestion—you may design your own.
+This file-naming scheme is a suggestion only
 
+  - You may design your own  
   - You are also likely to change your approach with every project.  
   - But pick a scheme and use it\!
 
-## relative paths
+Underscores "\_" in filenames are particularly useful if the file name
+contains meta-data such as the file date. Use a hyphen “-” to separate
+words for ease of reading. Jenny Bryan offers this example of mixing
+underscores and hyphens to identify the date, assay, sample set, and
+“well” (Bryan, [2015](#ref-Bryan:2015))
+,
+
+<img src="../resources/cm101-02.png" width="70%" /><img src="../resources/cm101-03.png" width="70%" />
+
+## using relative paths
 
 Explicitly link files using relative file paths. For example, report
 script
@@ -88,7 +107,7 @@ and import figures.
 
     include_graphics("figures/d1-stripplot-speedski.png")
 
-## file searching
+## searching files
 
 The advantage of planning this file naming scheme at the beginning of
 the work is that it supports machine readability. For example, I can use
@@ -119,23 +138,31 @@ list.files(path = this_path, pattern = "speedski", recursive = TRUE, ignore.case
 #> [6] "slides/d1-stripplot-speedski-slides.png"
 ```
 
-Or for all file names that start with `d1` and end with `.png`
+Or for all file names that start with `d1` and end with `.png`. Here we
+see that I created one set of images for the course website and another
+set for the lecture slides.
 
 ``` r
 intersect(
   list.files(path = this_path, pattern = "^d1", recursive = TRUE, ignore.case = TRUE),     
   list.files(path = this_path, pattern = "\\.png$", recursive = TRUE, ignore.case = TRUE)
     )
-#> [1] "cm/figures/d1-01-stripchart-speed-ski.png"
-#> [2] "figures/d1-boxplot-nontrad.png"           
-#> [3] "figures/d1-stripplot-speedski.png"        
-#> [4] "slides/d1-boxplot-nontrad-slides.png"     
-#> [5] "slides/d1-stripplot-speedski-slides.png"
+#> [1] "figures/d1-boxplot-nontrad.png"         
+#> [2] "figures/d1-stripplot-speedski.png"      
+#> [3] "slides/d1-boxplot-nontrad-slides.png"   
+#> [4] "slides/d1-stripplot-speedski-slides.png"
 ```
 
 ## references
 
 <div id="refs">
+
+<div id="ref-Bryan:2015">
+
+Bryan J (2015) Naming things.
+<https://speakerdeck.com/jennybc/how-to-name-files>
+
+</div>
 
 </div>
 

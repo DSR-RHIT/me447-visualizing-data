@@ -1,5 +1,7 @@
 
-<a name="top"></a> \# software studio
+<a name="top"></a>
+
+# software studio
 
 <img src="../resources/header-software-lab.png" width="70%" />
 
@@ -7,6 +9,8 @@
 E. Watkins (American, 1829–1916) is licensed under
 [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/legalcode)
 </small>
+
+\(\alpha = 2\beta\)
 
 ## contents
 
@@ -16,6 +20,7 @@ E. Watkins (American, 1829–1916) is licensed under
 [invite collaborator](#invite-collaborator)  
 [create an R project](#create-an-r-project)  
 [create the Renviron](#create-the-renviron)  
+[install packages](#install-packages)  
 [setup directories](#setup-directories)  
 [edit gitignore](#edit-gitignore)  
 [setup README](#setup-readme)  
@@ -118,8 +123,8 @@ GitHub and
 Instructions adapted from (Bryan, [2018](#ref-Bryan:2018))
 
   - Navigate to your portfolio repo on GitHub  
-  - Copy the HTTPS clone URL to your clipboard via the green â€œClone or
-    Downloadâ€ button. The URL will look something like this:
+  - Copy the HTTPS clone URL to your clipboard via the green “Clone or
+    Download” button. The URL will look something like this:
     `https://github.com/jennybc/myrepo.git`
 
 In RStudio,
@@ -178,10 +183,28 @@ the stand-alone package library you created earlier.
   - Windows: `R_LIBS_USER="C:/R/library"`
   - Linux: `R_LIBS_USER="~/R/library"`
 
-Now let’s see if the library path you made works.
+Save and close to recognize the .Renviron file.
 
   - Save and close the `.Renviron` file.
   - Close RStudio
+
+Let’s check your project directory. While you may have additional files
+or folders (for example, when you initialized your repo you may have
+created `.gitignore` or `README.md`), you should have at least the
+following folders and files,
+
+    portfolio-last-first/
+        |-- .Renviron
+        `-- portfolio-last-first.Rproj
+
+Remember, every time you create a new project (with or without version
+control), paste a copy of the `.Renviron` file at the top level of the
+project directory.
+
+## install packages
+
+Now let’s see if the library path you made works.
+
   - Re-open the R project for your portfolio  
   - Find the RStudio pane with *Packages* in its ribbon. Select
     *Packages \> Install*
@@ -213,18 +236,29 @@ If all goes well, you’ll see something like this in the R Console
     ## 
     ## package 'tidyverse' successfully unpacked and MD5 sums checked
 
-Let’s check your project directory. While you may have additional files
-or folders (for example, when you initialized your repo you may have
-created `.gitignore` or `README.md`), you should have at least the
-following folders and files,
+Packages can also be installed from the command line, for example, the
+tidyverse package could have been installed by typing
 
-    portfolio-last-first/
-        |-- .Renviron
-        `-- portfolio-last-first.Rproj
+``` r
+install.packages("tidyverse")
+```
 
-Remember, every time you create a new project (with or without version
-control), paste a copy of the `.Renviron` file at the top level of the
-project directory
+However, these methods work only for pacakges available from the
+Comprehensive R Archive Network (CRAN). Some authors make their packages
+available on GitHub only. To install packages from GitHub, first install
+the devtools package using the RStudio *Packages \> Install* as shown
+above, or from the console by typing
+
+``` r
+install.packages("devtools")
+```
+
+Now use the devtools function `install_github()` to install a package
+containing companion materials for our course,
+
+``` r
+devtools::install_github("graphclassmate")
+```
 
 <a href="#top">Top of page</a>
 
@@ -440,7 +474,7 @@ Next we add some prompts and space for your
     
     **Response:**  
     
-    **Prompt:** Explain how the authorâ€™s argument might be used to support a decision you would make in 
+    **Prompt:** Explain how the author’s argument might be used to support a decision you would make in 
     designing a display. 
     
     **Response:** 
