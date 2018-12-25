@@ -1,5 +1,5 @@
-
-# about the course
+about the course
+================
 
 The course is about creating truthful and compelling data visuals.
 Students from all disciplinary backgrounds are welcome.
@@ -31,7 +31,7 @@ are:
 
   - R is free, open source, and available on every major platform,
     making it easy for others to replicate your work.
-  - The variety of R packages—13543 R packages as of 2018-12-22—many of
+  - The variety of R packages—13548 R packages as of 2018-12-24—many of
     them cutting edge tools.
   - R packages provide deep-seated support for data analysis, e.g.,
     missing values, data frames, and subsetting.
@@ -43,6 +43,8 @@ RStudio, an integrated development environment (IDE) for R, includes a
 console, editor, and tools for plotting, history, debugging, and
 workspace management as well as access to GitHub for collaboration and
 version control (RStudio Team, [2016](#ref-RStudio:2016)).
+
+<br> <a href="#top">▲ top of page</a>
 
 ## an introduction to visual rhetoric
 
@@ -85,6 +87,8 @@ dramatically increasing, probably correlated to the opioid crisis
 coupled with a 40% reduction in state and local STD budgets since
 2003 \[3\].
 
+<br> <a href="#top">▲ top of page</a>
+
 ## references
 
 <div id="refs">
@@ -123,7 +127,7 @@ Raton, FL <http://adv-r.had.co.nz/>
 ## notes
 
 1.  This graph was crafted by Americans United for Life (AUL), an
-    organization dedicated to [restricting womenâ€™s reproductive
+    organization dedicated to [restricting women’s reproductive
     rights](https://www.theatlantic.com/politics/archive/2015/07/what-pro-life-activists-really-want/398297/)
     in the US and abroad. AUL has deleted the original webpage, we can
     still [view
@@ -137,3 +141,17 @@ Raton, FL <http://adv-r.had.co.nz/>
 3.  National Coalition of STD directors (2018–08–28) [STDs hit record
     highs again, threatening millions of America
     lives](http://www.ncsddc.org/stds-hit-record-highs-again-threatening-millions-of-american-lives/)
+
+&nbsp;
+<hr />
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<p style="text-align: center;">
+<a href="https://github.com/graphdr/" class="fa fa-github"></a>
+ Richard Layton
+<a href="mailto:graphdoctor@gmail.com"> graphdoctor@gmail.com</a>
+</p>
+
+&nbsp;

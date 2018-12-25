@@ -37,8 +37,8 @@ holding
 */*.xlsx
 
 # ignore all HTML
-*.html
-*/*.html
+#*.html
+#*/*.html
 
 # ignore RStudio files
 .Rproj.user/

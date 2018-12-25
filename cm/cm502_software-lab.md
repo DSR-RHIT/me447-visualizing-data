@@ -1,7 +1,5 @@
-
-<a name="top"></a>
-
-# software studio
+software studio
+================
 
 <img src="../resources/header-software-lab.png" width="70%" />
 
@@ -9,8 +7,6 @@
 E. Watkins (American, 1829–1916) is licensed under
 [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/legalcode)
 </small>
-
-\(\alpha = 2\beta\)
 
 ## contents
 
@@ -28,8 +24,6 @@ E. Watkins (American, 1829–1916) is licensed under
 [commits](#commits)  
 [references](#references)
 
-<a href="#top">Top of page</a>
-
 ## prerequisites
 
 You should already have done the following
@@ -38,7 +32,7 @@ You should already have done the following
   - Obtained a free GitHub account
   - Practiced creating a test repo (when you cached your credentials)
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## setup GitHub
 
@@ -80,7 +74,7 @@ Cleanup
   - Delete the test repo on GitHub, *Settings \> Danger Zone \> Delete
     this repository*
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## create a repo
 
@@ -95,7 +89,7 @@ name (given name or forename)
     need a license)
   - *Create repository*
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## invite collaborator
 
@@ -114,9 +108,7 @@ GitHub and
 
 <img src="../resources/github-collaborate-2.png" width="100%" />
 
-<br>
-
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## create an R project
 
@@ -165,7 +157,7 @@ setup a repo for an existing RStudio Project.
   - [Existing project, GitHub
     last](http://happygitwithr.com/existing-github-last.html)
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## create the Renviron
 
@@ -200,6 +192,8 @@ following folders and files,
 Remember, every time you create a new project (with or without version
 control), paste a copy of the `.Renviron` file at the top level of the
 project directory.
+
+<br> <a href="#top">▲ top of page </a>
 
 ## install packages
 
@@ -260,7 +254,7 @@ containing companion materials for our course,
 devtools::install_github("graphclassmate")
 ```
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page </a>
 
 ## setup directories
 
@@ -283,7 +277,7 @@ shown below.
 <img src="../resources/icon-folder.png" width="2%" /> reports  
 <img src="../resources/icon-folder.png" width="2%" /> resources
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page </a>
 
 ## edit gitignore
 
@@ -362,6 +356,8 @@ If you select the `Git` tab in the RStudio pane, all files you
 identified in `.gitignore` should disappear from the list of unstaged
 files.
 
+<br> <a href="#top">▲ top of page </a>
+
 ## setup README
 
 The README file that resides at the top level of your project directory
@@ -433,7 +429,7 @@ now contain the following files:
 <img src="../resources/icon-RStudio.png" width="2%" /> README.md  
 <img src="../resources/icon-Rproj.png" width="2%" /> portfolio.Rproj
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page </a>
 
 ## setup reading response
 
@@ -484,7 +480,7 @@ Next we add some prompts and space for your
   - When you read the article, return to this file and write your
     responses.
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page </a>
 
 ## commits
 
@@ -513,7 +509,7 @@ If there are files shown in the Git pane,
 Navigate to your online repo and you should find that it includes all
 your changes.
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## references
 
@@ -535,8 +531,6 @@ Whitmore S (2018) Art of README.
 
 </div>
 
------
-
-<a href="#top">Top of page</a>  
-[Calendar](../README.md#calendar)  
-[Index](../README.md#index)
+<a href="#top">▲ top of page</a>  
+[◄ calendar](../README.md#calendar)  
+[◄ index](../README.md#index)
