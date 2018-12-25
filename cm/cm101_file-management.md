@@ -1,7 +1,5 @@
-
-<a name="top"></a>
-
-# managing files
+managing files
+================
 
 <img src="../resources/cm101_header.png" width="70%" />
 
@@ -38,6 +36,8 @@ This directory structure is required.
 <img src="../resources/icon-Rmd.png" width="2%" /> README.Rmd  
 <img src="../resources/icon-md.png" width="2%" /> README.md  
 <img src="../resources/icon-Rproj.png" width="2%" /> portfolio.Rproj
+
+<br> <a href="#top">▲ top of page</a>
 
 ## naming files
 
@@ -86,6 +86,8 @@ underscores and hyphens to identify the date, assay, sample set, and
 
 <img src="../resources/cm101-02.png" width="70%" /><img src="../resources/cm101-03.png" width="70%" />
 
+<br> <a href="#top">▲ top of page</a>
+
 ## using relative paths
 
 Explicitly link files using relative file paths. For example, report
@@ -106,6 +108,8 @@ import data to print a data table,
 and import figures.
 
     include_graphics("figures/d1-stripplot-speedski.png")
+
+<br> <a href="#top">▲ top of page</a>
 
 ## searching files
 
@@ -153,6 +157,8 @@ intersect(
 #> [4] "slides/d1-stripplot-speedski-slides.png"
 ```
 
+<br> <a href="#top">▲ top of page</a>
+
 ## references
 
 <div id="refs">
@@ -166,8 +172,6 @@ Bryan J (2015) Naming things.
 
 </div>
 
------
-
-<a href="#top">Top of page</a>  
-[Calendar](../README.md#calendar)  
-[Index](../README.md#index)
+<a href="#top">▲ top of page</a>  
+[◄ calendar](../README.md#calendar)  
+[◄ index](../README.md#index)

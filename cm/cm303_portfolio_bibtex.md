@@ -1,6 +1,4 @@
 
-<a name="top"></a>
-
 <br>
 
 <img src="../resources/header-bibtex.png" width="30%" />
@@ -19,7 +17,7 @@
 [in proceedings](#in-proceedings)  
 [web pages](#web-pages)  
 [software](#software)  
-[sample references](#sample-references)
+\[sample references\]
 
 ## summary
 
@@ -87,6 +85,8 @@ and a specified CSL file.
       url          = {URL}
     }
 
+<br> <a href="#top">▲ top of page</a>
+
 ## notes on usage
 
   - Multiple author names in the author field are separated by `and`.
@@ -109,6 +109,8 @@ and a specified CSL file.
     date for online resources.  
   - A tilde is a non-breaking space, e.g., `{R~package version~0.2.0}`
 
+<br> <a href="#top">▲ top of page</a>
+
 ## articles
 
 Cite an article in a journal or magazine.
@@ -130,6 +132,8 @@ Cite an article in a journal or magazine.
       url     = {},
     }
 
+<br> <a href="#top">▲ top of page</a>
+
 ## books
 
 Cite a book with an explicit publisher.
@@ -149,6 +153,8 @@ Cite a book with an explicit publisher.
       address   = {Summit, NJ},
       url       = {},
     }
+
+<br> <a href="#top">▲ top of page</a>
 
 ## in a book
 
@@ -174,6 +180,8 @@ Cite a part of a book such as a chapter or section.
       url       = {},
     }
 
+<br> <a href="#top">▲ top of page</a>
+
 ## in proceedings
 
 Cite an article in a conference proceedings.
@@ -195,6 +203,8 @@ Cite an article in a conference proceedings.
       url       = {https://peer.asee.org/4683},
     }
 
+<br> <a href="#top">▲ top of page</a>
+
 ## web pages
 
 Cite sources available only as web pages
@@ -211,6 +221,8 @@ Cite sources available only as web pages
       title  = {{LOTR repository}},
       url    = {https://github.com/jennybc/lotr},
     }
+
+<br> <a href="#top">▲ top of page</a>
 
 ## software
 
@@ -251,7 +263,9 @@ Cite software in general
       url          = {http://www.rstudio.com/},
       }
 
-## sample references
+<br> <a href="#top">▲ top of page</a>
+
+## references
 
 <div id="refs">
 
@@ -307,8 +321,6 @@ RStudio, Inc., Boston, MA <http://www.rstudio.com/>
 
 </div>
 
------
-
-<a href="#top">Top of page</a>  
-[Calendar](../README.md#calendar)  
-[Index](../README.md#index)
+<a href="#top">▲ top of page</a>  
+[◄ calendar](../README.md#calendar)  
+[◄ index](../README.md#index)

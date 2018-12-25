@@ -1,9 +1,7 @@
+multiway dot plot
+================
 
-<a name="top"></a>
-
-# multiway dot plot
-
-<img src="../cm/figures/cm203_header.png" width="100%" style="display: block; margin: auto;" />
+<img src="../cm/figures/cm203_header.png" width="100%" />
 
 ## contents
 
@@ -55,12 +53,16 @@ Reading a multiway graph
   - To explore the comparison between panels, we swap the row and panel
     categories, creating the *dual* multiway.
 
+<br> <a href="#top">▲ top of page</a>
+
 ## prerequisites
 
   - [directory structure](cm101_data-lab.md#file-management) has been
     set up  
   - tidyverse package installed
   - graphclassmate package installed
+
+<br> <a href="#top">▲ top of page</a>
 
 ## explore
 
@@ -87,7 +89,7 @@ Summarize data and discuss
 
 Explore graph and discuss
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## carpentry
 
@@ -111,7 +113,7 @@ A data carpentry file typically concludes by saving the data frame.
 # saveRDS(xxx, "data/dx-plot-data.rds")
 ```
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## design
 
@@ -133,7 +135,7 @@ ggplot(metro_pop, aes(x = population / 1000, y = race)) +
     theme_graphclass()
 ```
 
-<img src="cm203_multiway_files/figure-gfm/unnamed-chunk-7-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm203_multiway_files/figure-gfm/unnamed-chunk-7-1.png" width="70%" />
 
 And the figure is ready to save, using width and height to control the
 aspect ratio.
@@ -160,7 +162,7 @@ ggplot(metro_pop, aes(x = population / 1000, y = county)) +
     theme_graphclass()
 ```
 
-<img src="cm203_multiway_files/figure-gfm/unnamed-chunk-9-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm203_multiway_files/figure-gfm/unnamed-chunk-9-1.png" width="70%" />
 
 Dual
 
@@ -175,7 +177,7 @@ ggsave(filename = "d2-multiway-metropop-02.png",
 )
 ```
 
-<a name="completed-multiway"></a>
+<br> <a href="#top">▲ top of page</a>
 
 ## report
 
@@ -197,7 +199,7 @@ We import the final figure into the report using
 include_graphics("../figures/d2-multiway-metropop-01.png")
 ```
 
-<img src="../figures/d2-multiway-metropop-01.png" width="100%" style="display: block; margin: auto;" />
+<img src="../figures/d2-multiway-metropop-01.png" width="100%" />
 
 Dual
 
@@ -205,9 +207,9 @@ Dual
 include_graphics("../figures/d2-multiway-metropop-02.png")
 ```
 
-<img src="../figures/d2-multiway-metropop-02.png" width="100%" style="display: block; margin: auto;" />
+<img src="../figures/d2-multiway-metropop-02.png" width="100%" />
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## exercises
 
@@ -219,7 +221,7 @@ Create `practice/dx-plot-data-exercise.R`
   - When the graph is complete, save it to
     `figures/dx-plot-data-exercise.png`
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## references
 
@@ -233,8 +235,6 @@ Cleveland WS (1993) *Visualizing Data.* Hobart Press, Summit, NJ
 
 </div>
 
------
-
-<a href="#top">Top of page</a>  
-[Calendar](../README.md#calendar)  
-[Index](../README.md#index)
+<a href="#top">▲ top of page</a>  
+[◄ calendar](../README.md#calendar)  
+[◄ index](../README.md#index)

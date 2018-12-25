@@ -1,7 +1,5 @@
-
-<a name="top"></a>
-
-# install software
+install software
+================
 
 <img src="../resources/header-install-software.png" width="70%" />
 
@@ -38,6 +36,8 @@ be useful
     Xenial](https://www.datascienceriot.com//r/install-ubuntu16/) by
     Kris Eberwein (or you can Google more recent instructions)
 
+<br> <a href="#top">▲ top of page</a>
+
 ## install git
 
 Git is version control software you install on your machine. Once
@@ -57,6 +57,8 @@ moment to talk about version
 control?](https://dx.doi.org/10.7287%2Fpeerj.preprints.3159v2) for a
 good introduction to version control.
 
+<br> <a href="#top">▲ top of page</a>
+
 ## create a library for packages
 
 Packages are like “apps” for R. As Hadley Wickham
@@ -75,6 +77,8 @@ example,
   - Windows: `C:/R/library`  
   - Linux: `~/R/library`
 
+<br> <a href="#top">▲ top of page</a>
+
 ## test the installation
 
 Here we perform some simple checks to determine if the initial software
@@ -85,7 +89,7 @@ panic—we’ll have some time in lab to make things work.
 
 A window should open that looks something like this.
 
-![](../resources/open-rstudio.png)<!-- -->
+<img src="../resources/open-rstudio.png" width="70%" />
 
 You can type R code in the Console pane, and press Enter to run it. For
 example,
@@ -95,7 +99,7 @@ example,
 
 <!-- end list -->
 
-    ## [1] 9
+    #> [1] 9
 
 We can draw a simple graph that should appear in the Plots pane.
 
@@ -109,7 +113,7 @@ y <- sin(t)
 plot(t, y)
 ```
 
-<img src="../resources/cm501-sine-1.png" width="50%" />
+<img src="cm501_install-software_files/figure-gfm/sine-1.png" width="50%" />
 
 Lastly, let’s check if RStudio can see git locally. In RStudio,
 
@@ -127,6 +131,8 @@ in the terminal something like this
 
 If not, no worries. We’ll take care of it in lab.
 
+<br> <a href="#top">▲ top of page</a>
+
 ## references
 
 <div id="refs">
@@ -140,8 +146,6 @@ Raton, FL <http://adv-r.had.co.nz/>
 
 </div>
 
------
-
-<a href="#top">Top of page</a>  
-[Calendar](../README.md#calendar)  
-[Index](../README.md#index)
+<a href="#top">▲ top of page</a>  
+[◄ calendar](../README.md#calendar)  
+[◄ index](../README.md#index)

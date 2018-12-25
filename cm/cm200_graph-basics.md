@@ -1,7 +1,5 @@
-
-<a name="top"></a>
-
-# make a graph
+make a graph
+================
 
 ## contents
 
@@ -11,7 +9,7 @@
 
 ## introduction
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## prerequisites
 
@@ -34,7 +32,7 @@ Install the following packages rom
   - Packages used: tidyverse, graphclassmate, gapminder  
   - Create the file: `practice/make-a-graph-tutorial.R`
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## references
 
@@ -42,8 +40,6 @@ Install the following packages rom
 
 </div>
 
------
-
-<a href="#top">Top of page</a>  
-[Calendar](../README.md#calendar)  
-[Index](../README.md#index)
+<a href="#top">▲ top of page</a>  
+[◄ calendar](../README.md#calendar)  
+[◄ index](../README.md#index)

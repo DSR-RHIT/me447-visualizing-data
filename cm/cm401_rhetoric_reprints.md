@@ -1,7 +1,5 @@
-
-<a name="top"></a>
-
-# signout reprints
+signout reprints
+================
 
 <img src="../resources/header-reprints.png" width="70%" />
 
@@ -39,8 +37,6 @@ decisions*. Graphics Press, Cheshire, CT, 16–31
 
 </div>
 
------
-
-<a href="#top">Top of page</a>  
-[Calendar](../README.md#calendar)  
-[Index](../README.md#index)
+<a href="#top">▲ top of page</a>  
+[◄ calendar](../README.md#calendar)  
+[◄ index](../README.md#index)

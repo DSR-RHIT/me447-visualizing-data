@@ -1,9 +1,7 @@
+box plot
+================
 
-<a name="top"></a>
-
-# box plot
-
-<img src="../cm/figures/cm202_header.png" width="100%" style="display: block; margin: auto;" />
+<img src="../cm/figures/cm202_header.png" width="100%" />
 
 ## contents
 
@@ -35,10 +33,9 @@ Graph characteristics
   - shows a 5-point statistical summary  
   - shows range, outliers, and data symmetry or skew about the median  
   - data can be grouped by one or more categorical variables
-  - a horizontal layout can make it easier to read category
-labels
+  - a horizontal layout can make it easier to read category labels
 
-<img src="../cm/figures/cm202_define-boxplot.png" width="40%" style="display: block; margin: auto;" />
+<img src="../cm/figures/cm202_define-boxplot.png" width="40%" />
 
 <br>
 
@@ -62,10 +59,11 @@ with a small range of values (Robbins, [2013](#ref-Robbins:2013), 85).
 Later in the tutorial, we create box plots to visualize the
 `nontraditional` data set (in graphclassmate). The same data in a strip
 plot is shown below—with nearly 270,000 observations over a range of
-roughly 6 years, the strip plot is not visually
-informative.
+roughly 6 years, the strip plot is not visually informative.
 
-<img src="../cm/figures/cm202_why-use-boxplot.png" width="100%" style="display: block; margin: auto;" />
+<img src="../cm/figures/cm202_why-use-boxplot.png" width="100%" />
+
+<br> <a href="#top">▲ top of page</a>
 
 ## prerequisites
 
@@ -73,6 +71,8 @@ informative.
     set up  
   - tidyverse package installed
   - graphclassmate package installed
+
+<br> <a href="#top">▲ top of page</a>
 
 ## explore
 
@@ -148,7 +148,7 @@ ggplot(explore, aes(x = enrolled, y = path))+
     geom_boxplot()
 ```
 
-<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-10-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-10-1.png" width="70%" />
 
 We don’t have a boxplot because in ggplot2, the boxplot geom expects the
 quantitative variable to be assigned to the y-scale. Making that change
@@ -159,7 +159,7 @@ ggplot(explore, aes(y = enrolled, x = path))+
     geom_boxplot()
 ```
 
-<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-11-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-11-1.png" width="70%" />
 
 Our first observation is that the median years enrolled is less for
 nontraditional students than for traditional students.
@@ -172,7 +172,7 @@ ggplot(explore, aes(y = enrolled, x = sex))+
     geom_boxplot()
 ```
 
-<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-12-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-12-1.png" width="70%" />
 
 We can view both categories by adding a fill argument,
 
@@ -181,7 +181,7 @@ ggplot(explore, aes(y = enrolled, x = sex, fill = path))+
     geom_boxplot()
 ```
 
-<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-13-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-13-1.png" width="70%" />
 
 The IQRs are fairly consistent. The trend, if any, appears to be the
 median value. To order the box plots in order of increasing median, we
@@ -197,13 +197,13 @@ ggplot(explore, aes(y = enrolled, x = sex_path))+
     geom_boxplot()
 ```
 
-<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-14-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-14-1.png" width="70%" />
 
 In this version, you can see the increasing median and that women in
 both traditional and nontraditional paths are enrolled fewer years than
 men.
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## carpentry
 
@@ -228,7 +228,7 @@ A data carpentry file typically concludes by saving the data frame.
 saveRDS(nontrad, "data/d1-boxplot-nontrad.rds")
 ```
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## design
 
@@ -257,7 +257,7 @@ p <- ggplot(nontrad, aes(y = enrolled, x = sex_path))+
 p
 ```
 
-<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-18-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-18-1.png" width="70%" />
 
 Edit labels and apply the class theme,
 
@@ -268,7 +268,7 @@ p <- p  +
 p
 ```
 
-<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-19-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-19-1.png" width="70%" />
 
 We can further distinguish between traditional and nontraditional by
 adding a fill argument to `aes()` and `scale_fill_manual()` to select
@@ -281,7 +281,7 @@ p <- p +
 p
 ```
 
-<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-20-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-20-1.png" width="70%" />
 
 Edit the color of the box outlines and the outliers by adding a color
 argument to `aes()` and `scale_color_manual()` to select colors.
@@ -293,7 +293,7 @@ p <- p +
 p
 ```
 
-<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-21-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-21-1.png" width="70%" />
 
 We can omit the legend title using `guides()`. We set `color = "none"`
 to avoid printing a second legend.
@@ -305,7 +305,7 @@ p <- p +
 p
 ```
 
-<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-22-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-22-1.png" width="70%" />
 
 Lastly, I’d like to do something about the outliers. As drawn, it
 appears that there are only a few, but because of overprinting, there
@@ -355,7 +355,7 @@ p <- ggplot(nontrad, aes(y = enrolled, x = sex_path, color = path, fill = path))
 p
 ```
 
-<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-25-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-25-1.png" width="70%" />
 
 Now add the outliers as jittered points. Note that we can assign a new
 data argument in the geom.
@@ -366,7 +366,7 @@ p <- p +
 p
 ```
 
-<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-26-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm202_boxplot_files/figure-gfm/unnamed-chunk-26-1.png" width="70%" />
 
 And the figure is ready to save, using width and height to control the
 aspect ratio.
@@ -382,7 +382,7 @@ ggsave(filename = "d1-boxplot-nontrad.png",
 )
 ```
 
-<a name="completed-boxplot"></a>
+<br> <a href="#top">▲ top of page</a>
 
 ## report
 
@@ -404,9 +404,9 @@ We import the final figure into the report using
 include_graphics("../figures/d1-boxplot-nontrad.png")
 ```
 
-<img src="../figures/d1-boxplot-nontrad.png" width="100%" style="display: block; margin: auto;" />
+<img src="../figures/d1-boxplot-nontrad.png" width="100%" />
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## exercises
 
@@ -449,7 +449,7 @@ diamonds` to open the help page for the data set.
   - When the graph is complete, save it to
     `figures/d1-boxplot-diamonds-exercise.png`
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## references
 
@@ -471,8 +471,6 @@ Zhao J and Bryan J (2016) R Graph Catalog.
 
 </div>
 
------
-
-<a href="#top">Top of page</a>  
-[Calendar](../README.md#calendar)  
-[Index](../README.md#index)
+<a href="#top">▲ top of page</a>  
+[◄ calendar](../README.md#calendar)  
+[◄ index](../README.md#index)

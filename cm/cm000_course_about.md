@@ -124,10 +124,14 @@ Raton, FL <http://adv-r.had.co.nz/>
 
 </div>
 
+<a href="#top">▲ top of page</a>  
+[◄ calendar](../README.md#calendar)  
+[◄ index](../README.md#index)
+
 ## notes
 
 1.  This graph was crafted by Americans United for Life (AUL), an
-    organization dedicated to [restricting women’s reproductive
+    organization dedicated to [restricting womenâ€™s reproductive
     rights](https://www.theatlantic.com/politics/archive/2015/07/what-pro-life-activists-really-want/398297/)
     in the US and abroad. AUL has deleted the original webpage, we can
     still [view
@@ -141,17 +145,3 @@ Raton, FL <http://adv-r.had.co.nz/>
 3.  National Coalition of STD directors (2018–08–28) [STDs hit record
     highs again, threatening millions of America
     lives](http://www.ncsddc.org/stds-hit-record-highs-again-threatening-millions-of-american-lives/)
-
-&nbsp;
-<hr />
-
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<p style="text-align: center;">
-<a href="https://github.com/graphdr/" class="fa fa-github"></a>
- Richard Layton
-<a href="mailto:graphdoctor@gmail.com"> graphdoctor@gmail.com</a>
-</p>
-
-&nbsp;

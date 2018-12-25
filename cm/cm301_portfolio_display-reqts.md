@@ -1,7 +1,5 @@
-
-<a name="top"></a>
-
-# portfolio display requirements
+portfolio display requirements
+================
 
 <img src="../resources/header-display-requirements.png" width="70%" />
 
@@ -63,7 +61,7 @@ Examples
 
   - [Speed skiing strip plot](cm201_strip-plot.md#completed-strip-chart)
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## D2 multiway
 
@@ -83,13 +81,15 @@ Data requirements
       - 4 levels in category 1 and at least 6 levels in category 2  
       - 5 levels in category 1 and at least 5 levels in category 2
 
-Multiway example  
-<a href="#top">Top of page</a>
+Multiway example
+
+<br> <a href="#top">▲ top of page</a>
 
 ## D3 correlations
 
-Scatterplot example  
-<a href="#top">Top of page</a>
+Scatterplot example
+
+<br> <a href="#top">▲ top of page</a>
 
 ## D4 injuries or fatalities
 
@@ -99,8 +99,9 @@ graph type depends on the data. The two graph types shown are the most
 commonly encountered.
 
 Dot plot example  
-Line graph example  
-<a href="#top">Top of page</a>
+Line graph example
+
+<br> <a href="#top">▲ top of page</a>
 
 ## D5 redesign a graphical lie
 
@@ -108,8 +109,9 @@ Consult with me on your data selection—the graph type depends on the
 data. The two graph types shown are the most commonly encountered.
 
 Time series example  
-Constant dollars example  
-<a href="#top">Top of page</a>
+Constant dollars example
+
+<br> <a href="#top">▲ top of page</a>
 
 ## D6 multivariate
 
@@ -139,8 +141,9 @@ coordinate plot.
 
 Conditioning plot example  
 Scatterplot matrix example  
-Parallel coordinate example  
-<a href="#top">Top of page</a>
+Parallel coordinate example
+
+<br> <a href="#top">▲ top of page</a>
 
 ## D7 self-taught
 
@@ -151,8 +154,10 @@ from the list and include it in the portfolio.
   - [financial (OHLC) plot](#financial-ohlc-plot)
   - [mosaic plot](#mosaic-plot)  
   - [linked micromaps](#linked-micromaps)  
-  - [diverging stacked
-bar](#diverging-stacked-bar)
+  - [diverging stacked bar](#diverging-stacked-bar)
+
+<br> <a href="#top">▲ top of
+page</a>
 
 <!-- ## q-q plot -->
 
@@ -170,7 +175,7 @@ bar](#diverging-stacked-bar)
 
 For additional technical details, see
 
-<a href="#top">Data requirements summary</a>
+<br> <a href="#top">▲ top of page</a>
 
 <!-- ## Sankey diagram   -->
 
@@ -189,11 +194,11 @@ average.
 
 Data requirements
 
-<a href="#top">Data requirements summary</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## mosaic plot
 
-<a href="#top">Data requirements summary</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## diverging stacked bar
 
@@ -205,13 +210,13 @@ Disagree, No Opinion, Agree, Strongly Agree.
 For additional technical details, see Heiberger and Robbins
 ([2014](#ref-Heiberger+Robbins:2014)).
 
-<a href="#top">Data requirements summary</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## linked micromaps
 
 Data requirements
 
-<a href="#top">Data requirements summary</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## references
 
@@ -228,8 +233,6 @@ Software* **57**(5)
 
 </div>
 
------
-
-<a href="#top">Top of page</a>  
-[Calendar](../README.md#calendar)  
-[Index](../README.md#index)
+<a href="#top">▲ top of page</a>  
+[◄ calendar](../README.md#calendar)  
+[◄ index](../README.md#index)

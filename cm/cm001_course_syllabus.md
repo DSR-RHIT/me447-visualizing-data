@@ -1,5 +1,5 @@
-
-# syllabus
+syllabus
+================
 
 <img src="../resources/header-syllabus.png" width="70%" />
 
@@ -45,6 +45,8 @@ students only with a project underway generating quantitative data.
 Richard Layton, Ph.D.<br> Professor of Mechanical Engineering<br> Moench
 Hall C-217<br> <layton@rose-hulman.edu><br> 812-877-8905
 
+<br> <a href="#top">▲ top of page</a>
+
 ## required textbook
 
 A [web-version](http://r4ds.had.co.nz/) of the book is available at no
@@ -62,6 +64,8 @@ After successfully completing this course, students should be able to:
   - Credibly explain their design rationale
   - Produce publication-quality visuals
   - Credibly critique a data display
+
+<br> <a href="#top">▲ top of page</a>
 
 ## grades
 
@@ -94,6 +98,8 @@ Weekly assignments include
     before class on the day of discussion.
   - Presentations of displays D1 through D7 plus written critiques.
 
+<br> <a href="#top">▲ top of page</a>
+
 ## labs
 
 Lab periods are used for working with software and for presentating and
@@ -113,6 +119,8 @@ Attendance is required for periods in which we have discussions of
 readings and presentations. The penalty for missing more than two of
 these periods without a valid excuse is a one-letter-grade course grade
 reduction.
+
+<br> <a href="#top">▲ top of page</a>
 
 ## valid excuses
 
@@ -152,6 +160,8 @@ Procedures](http://www.rose-hulman.edu/campus-life/student-services/registrar/ru
 It is my policy to follow the letter and intent of the Rules and
 Procedures regarding academic misconduct.
 
+<br> <a href="#top">▲ top of page</a>
+
 ## academic accommodations
 
 I understand that “invisible” disabilities (learning and attention
@@ -169,3 +179,15 @@ week* in advance of the event.
 I reserve the right to modify the course content, schedule, policies,
 etc. outlined in this syllabus. I will do my best to give you adequate
 notice of revisions.
+
+<br> <a href="#top">▲ top of page</a>
+
+## references
+
+<div id="refs">
+
+</div>
+
+<a href="#top">▲ top of page</a>  
+[◄ calendar](../README.md#calendar)  
+[◄ index](../README.md#index)

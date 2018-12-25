@@ -1,7 +1,5 @@
-
-<a name="top"></a>
-
-# portfolio studio
+portfolio studio
+================
 
 <img src="../resources/header-portfolio-lab.png" width="70%" />
 
@@ -37,6 +35,8 @@ prospective employers.
 [This sample](https://github.com/graphdr/portfolio-sample) shows the
 basic layout of the portfolio website we are about to start building.
 
+<br> <a href="#top">▲ top of page</a>
+
 ## preparation
 
 Using an R Project sets the working directory to your portfolio folder,
@@ -44,6 +44,8 @@ making relative file paths easy to use.
 
   - Always start your work session by launching the `.Rproj` file you
     created for the portfolio.
+
+<br> <a href="#top">▲ top of page</a>
 
 ## organize the README file
 
@@ -91,6 +93,8 @@ Instructions for the portfolio README file
     class that include the student’s own ideas and peer feedback. The
     purpose of the notes is to inform the critiques.
 
+<br> <a href="#top">▲ top of page</a>
+
 ## importing images
 
 All work is performed within RStudio with your `portfolio.Rproj` file
@@ -98,6 +102,8 @@ open.
 
 > Instructions on saving any image to the resources folder. Then as an
 > example, import to the README page as a placeholder.
+
+<br> <a href="#top">▲ top of page</a>
 
 ## start a report
 
@@ -110,6 +116,8 @@ the graph design, and elements of visual rhetoric relevant to the story.
 > Instructions for creating the first report template, `reports/d1.Rmd`.
 > Push to github and test the link from README to the report.
 
+<br> <a href="#top">▲ top of page</a>
+
 ## data tables
 
 All work is performed within RStudio with your `portfolio.Rproj` file
@@ -118,6 +126,8 @@ open.
 > In the sample report, show how to create a sample data table.
 > Typically wide. Brief introduction to principles from Stephen few on
 > table layout—adapted to the GitHub environment.
+
+<br> <a href="#top">▲ top of page</a>
 
 ## create the bib file
 
@@ -158,6 +168,8 @@ What the fields mean:
 See our [BiBTeX page](cm303_portfolio_bibtex.md) for more details on the
 types of entries and their required and optional fields.
 
+<br> <a href="#top">▲ top of page</a>
+
 ## YAML bibliography argument
 
 Open the report Rmd file you started earlier. Edit the YAML header to
@@ -171,6 +183,8 @@ bibliography: "../resources/references.bib"
 Because the report Rmd script is in the reports directory, the relative
 path goes up one level `../`, then down to the `resources/` folder and
 there we find the `references.bib` file.
+
+<br> <a href="#top">▲ top of page</a>
 
 ## add a citation
 
@@ -197,6 +211,8 @@ the citation using its default author-date format.
 
 You will find the reference itself at the bottom of your document.
 
+<br> <a href="#top">▲ top of page</a>
+
 ## add a references heading
 
 At the end of the Rmd script, add a references section heading.
@@ -212,6 +228,8 @@ you want the references to appear followed by the HTML`<div>` markup,
     ## References
     
     <div id="refs"></div>
+
+<br> <a href="#top">▲ top of page</a>
 
 ## format the citations and references
 
@@ -243,6 +261,8 @@ csl: "../resources/journal-of-glaciology.csl"
 Knit your document and both the citation formatting and the references
 formatting will change throughout the document.
 
+<br> <a href="#top">▲ top of page</a>
+
 ## presentation prompts
 
 All work is performed within RStudio with your `portfolio.Rproj` file
@@ -256,6 +276,8 @@ presentation.
 
 > Instructions on using the template file
 
+<br> <a href="#top">▲ top of page</a>
+
 ## reading prompts
 
 All work is performed within RStudio with your `portfolio.Rproj` file
@@ -268,6 +290,8 @@ Visual design and rhetorical decisions are expected to be supported by
 evidence from our readings.
 
 > Instructions on using the template file
+
+<br> <a href="#top">▲ top of page</a>
 
 <!-- portfolio checklist (revise)  -->
 
@@ -290,8 +314,6 @@ Inc., Sebastopol, CA <https://r4ds.had.co.nz/>
 
 </div>
 
------
-
-<a href="#top">Top of page</a>  
-[Calendar](../README.md#calendar)  
-[Index](../README.md#index)
+<a href="#top">▲ top of page</a>  
+[◄ calendar](../README.md#calendar)  
+[◄ index](../README.md#index)

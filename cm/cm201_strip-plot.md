@@ -1,9 +1,7 @@
+strip plot
+================
 
-<a name="top"></a>
-
-# strip plot
-
-<img src="../cm/figures/cm201_header.png" width="100%" style="display: block; margin: auto;" />
+<img src="../cm/figures/cm201_header.png" width="100%" />
 
 ## contents
 
@@ -43,7 +41,7 @@ a small range of values. In such a case,
 [box-and-whisker](cm202_boxplot.md#boxplot) plots are better for
 comparing distributions.”
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## prerequisites
 
@@ -51,7 +49,7 @@ comparing distributions.”
   - Packages used: tidyverse, graphclassmate, GDAdata  
   - Create the file: `practice/d1-stripplot-speedski-tutorial.R`
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## explore
 
@@ -136,7 +134,7 @@ ggplot(explore, aes(x = Speed, y = allevents)) +
     geom_point()
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-7-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-7-1.png" width="70%" />
 
 We reduce the amount of overprinting by replacing `geom_point()` with
 `geom_jitter()`. So that subsequent data markers appear in the same
@@ -149,7 +147,7 @@ ggplot(explore, aes(x = Speed, y = allevents)) +
     geom_jitter(width = 0, height = 0.1)
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-8-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-8-1.png" width="70%" />
 
 One approach to grouping data is by adding a color argument to the main
 `aes()` function. For example, adding the argument `color = Event` shows
@@ -161,7 +159,7 @@ ggplot(explore, aes(x = Speed, y = allevents, color = Event)) +
     geom_jitter(width = 0, height = 0.1) 
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-9-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-9-1.png" width="70%" />
 
 Changing the grouping to `color = Sex` shows that men significantly
 outnumber women.
@@ -172,7 +170,7 @@ ggplot(explore, aes(x = Speed, y = allevents, color = Sex)) +
     geom_jitter(width = 0, height = 0.1) 
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-10-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-10-1.png" width="70%" />
 
 We have two categorical variables however, so assigning one to the
 y-variable and one to the color argument may be more informative. For
@@ -185,7 +183,7 @@ ggplot(SpeedSki, aes(x = Speed, y = Sex, color = Event)) +
     geom_jitter(width = 0, height = 0.1) 
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-11-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-11-1.png" width="70%" />
 
 Swapping the category assignments to `y = Event` and `color = Sex`
 yields a display that tells (perhaps) the most interesting story.
@@ -196,7 +194,7 @@ ggplot(SpeedSki, aes(x = Speed, y = Event, color = Sex)) +
     geom_jitter(width = 0, height = 0.1)
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-12-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-12-1.png" width="70%" />
 
 We see here that
 
@@ -209,7 +207,7 @@ We see here that
 This concludes our initial exploration. This final graph will be the
 starting point for the final design.
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## carpentry
 
@@ -270,7 +268,7 @@ A data carpentry file typically concludes by saving the data frame.
 saveRDS(speed_ski, "data/d1-stripplot-speedski.rds")
 ```
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## design
 
@@ -299,7 +297,7 @@ p <- ggplot(speed_ski, aes(x = speed, y = event, color = sex)) +
 p
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-20-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-20-1.png" width="70%" />
 
 For formatting the graph, the `theme_graphclass()` is a good starting
 point.
@@ -310,7 +308,7 @@ p <- p +
 p
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-21-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-21-1.png" width="70%" />
 
 To manually control the data marker color, we use
 `ggplot2::scale_color_manual()`. We are also using the
@@ -323,7 +321,7 @@ p <- p +
 p
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-22-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-22-1.png" width="70%" />
 
 We can assign a separate fill color to a data marker by using `shape
 = 21`, adding `fill = sex` to the `aes()` function, then using
@@ -340,7 +338,7 @@ p <- ggplot(speed_ski, aes(x = speed, y = event, color = sex, fill = sex)) +
 p
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-23-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-23-1.png" width="70%" />
 
 We can edit the data markers further by adding a `size` and `alpha`
 argument to
@@ -355,7 +353,7 @@ p <- ggplot(speed_ski, aes(x = speed, y = event, color = sex, fill = sex)) +
 p
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-24-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-24-1.png" width="70%" />
 
 We can label the data directly using `geom_text()`, manually selecting
 the coordinates of the text and matching the text color by sex. Then the
@@ -371,7 +369,7 @@ p <- p +
 p
 ```
 
-<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-25-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="cm201_strip-plot_files/figure-gfm/unnamed-chunk-25-1.png" width="70%" />
 
 A design file typically concludes by saving the graph to the `figures/`
 directory. Using `ggsave()` to control the figure dimensions, we can
@@ -386,6 +384,8 @@ ggsave(filename = "d1-stripplot-speedski.png",
        units    = "in",
        dpi      = 600)
 ```
+
+<br> <a href="#top">▲ top of page</a>
 
 ## report
 
@@ -407,9 +407,9 @@ We import the final figure into the report using
 include_graphics("../figures/d1-stripplot-speedski.png")
 ```
 
-<img src="../figures/d1-stripplot-speedski.png" width="100%" style="display: block; margin: auto;" />
+<img src="../figures/d1-stripplot-speedski.png" width="100%" />
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## exercises
 
@@ -449,7 +449,7 @@ and ozone measurements to the y-scale.
   - When the graph is complete, save it to
     `figures/d1-stripplot-ozone-exercise.png`
 
-<a href="#top">Top of page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## references
 
@@ -472,8 +472,6 @@ with R.* R package version 0.93
 
 </div>
 
------
-
-<a href="#top">Top of page</a>  
-[Calendar](../README.md#calendar)  
-[Index](../README.md#index)
+<a href="#top">▲ top of page</a>  
+[◄ calendar](../README.md#calendar)  
+[◄ index](../README.md#index)
