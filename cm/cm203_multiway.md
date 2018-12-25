@@ -236,5 +236,5 @@ Cleveland WS (1993) *Visualizing Data.* Hobart Press, Summit, NJ
 </div>
 
 <a href="#top">▲ top of page</a>  
-[◄ calendar](../README.md#calendar)  
-[◄ index](../README.md#index)
+[◁ calendar](../README.md#calendar)  
+[◁ index](../README.md#index)

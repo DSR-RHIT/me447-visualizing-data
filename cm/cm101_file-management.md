@@ -173,5 +173,5 @@ Bryan J (2015) Naming things.
 </div>
 
 <a href="#top">▲ top of page</a>  
-[◄ calendar](../README.md#calendar)  
-[◄ index](../README.md#index)
+[◁ calendar](../README.md#calendar)  
+[◁ index](../README.md#index)

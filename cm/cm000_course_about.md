@@ -131,7 +131,7 @@ Raton, FL <http://adv-r.had.co.nz/>
 ## notes
 
 1.  This graph was crafted by Americans United for Life (AUL), an
-    organization dedicated to [restricting women’s reproductive
+    organization dedicated to [restricting womenâ€™s reproductive
     rights](https://www.theatlantic.com/politics/archive/2015/07/what-pro-life-activists-really-want/398297/)
     in the US and abroad. AUL has deleted the original webpage, we can
     still [view

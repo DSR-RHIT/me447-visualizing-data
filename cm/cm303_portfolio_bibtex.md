@@ -322,5 +322,5 @@ RStudio, Inc., Boston, MA <http://www.rstudio.com/>
 </div>
 
 <a href="#top">▲ top of page</a>  
-[◄ calendar](../README.md#calendar)  
-[◄ index](../README.md#index)
+[◁ calendar](../README.md#calendar)  
+[◁ index](../README.md#index)

@@ -38,5 +38,5 @@ decisions*. Graphics Press, Cheshire, CT, 16–31
 </div>
 
 <a href="#top">▲ top of page</a>  
-[◄ calendar](../README.md#calendar)  
-[◄ index](../README.md#index)
+[◁ calendar](../README.md#calendar)  
+[◁ index](../README.md#index)

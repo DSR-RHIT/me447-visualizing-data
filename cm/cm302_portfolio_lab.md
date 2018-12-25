@@ -315,5 +315,5 @@ Inc., Sebastopol, CA <https://r4ds.had.co.nz/>
 </div>
 
 <a href="#top">▲ top of page</a>  
-[◄ calendar](../README.md#calendar)  
-[◄ index](../README.md#index)
+[◁ calendar](../README.md#calendar)  
+[◁ index](../README.md#index)
