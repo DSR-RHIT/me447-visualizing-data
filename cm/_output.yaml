@@ -1,6 +1,8 @@
 github_document:
   pandoc_args: [
-  	"--webtex"
+  	"--webtex",
+  	"--bibliography", "../resources/references.bib",
+  	"--csl", "../resources/journal-of-glaciology.csl"
   	]
   includes:
     after_body: "../resources/doc-suffix.md"

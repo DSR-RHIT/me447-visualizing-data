@@ -135,12 +135,24 @@ Or for all file names that include
 
 ``` r
 list.files(path = this_path, pattern = "speedski", recursive = TRUE, ignore.case = TRUE)
-#> [1] "carpentry/d1-stripplot-speedski-carpentry.R"
-#> [2] "data/d1-stripplot-speedski.rds"             
-#> [3] "design/d1-stripplot-speedski-design.R"      
-#> [4] "figures/d1-stripplot-speedski.png"          
-#> [5] "practice/d1-stripplot-speedski-tutorial.R"  
-#> [6] "slides/d1-stripplot-speedski-slides.png"
+#>  [1] "carpentry/d1-stripplot-speedski-carpentry.R"
+#>  [2] "cm/figures/cm201_speedski-design-1-1.png"   
+#>  [3] "cm/figures/cm201_speedski-design-2-1.png"   
+#>  [4] "cm/figures/cm201_speedski-design-3-1.png"   
+#>  [5] "cm/figures/cm201_speedski-design-4-1.png"   
+#>  [6] "cm/figures/cm201_speedski-design-5-1.png"   
+#>  [7] "cm/figures/cm201_speedski-design-6-1.png"   
+#>  [8] "cm/figures/cm201_speedski-explore-1-1.png"  
+#>  [9] "cm/figures/cm201_speedski-explore-2-1.png"  
+#> [10] "cm/figures/cm201_speedski-explore-3-1.png"  
+#> [11] "cm/figures/cm201_speedski-explore-4-1.png"  
+#> [12] "cm/figures/cm201_speedski-explore-5-1.png"  
+#> [13] "cm/figures/cm201_speedski-explore-6-1.png"  
+#> [14] "data/d1-stripplot-speedski.rds"             
+#> [15] "design/d1-stripplot-speedski-design.R"      
+#> [16] "figures/d1-stripplot-speedski.png"          
+#> [17] "practice/d1-stripplot-speedski-tutorial.R"  
+#> [18] "slides/d1-stripplot-speedski-slides.png"
 ```
 
 Or for all file names that start with `d1` and end with `.png`. Here we
