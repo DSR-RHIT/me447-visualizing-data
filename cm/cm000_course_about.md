@@ -125,8 +125,8 @@ Raton, FL <http://adv-r.had.co.nz/>
 </div>
 
 <a href="#top">▲ top of page</a>  
-[◀ calendar](../README.md#calendar)  
-[◀ index](../README.md#index)
+[◁ calendar](../README.md#calendar)  
+[◁ index](../README.md#index)
 
 ## notes
 
