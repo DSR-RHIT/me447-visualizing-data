@@ -291,8 +291,6 @@ evidence from our readings.
 
 > Instructions on using the template file
 
-<br> <a href="#top">▲ top of page</a>
-
 <!-- portfolio checklist (revise)  -->
 
 <!-- describe, discuss, and critique  -->

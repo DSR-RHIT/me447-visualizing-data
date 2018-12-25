@@ -449,8 +449,6 @@ diamonds` to open the help page for the data set.
   - When the graph is complete, save it to
     `figures/d1-boxplot-diamonds-exercise.png`
 
-<br> <a href="#top">▲ top of page</a>
-
 ## references
 
 <div id="refs">

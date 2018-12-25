@@ -32,8 +32,6 @@ Install the following packages rom
   - Packages used: tidyverse, graphclassmate, gapminder  
   - Create the file: `practice/make-a-graph-tutorial.R`
 
-<br> <a href="#top">▲ top of page</a>
-
 ## references
 
 <div id="refs">

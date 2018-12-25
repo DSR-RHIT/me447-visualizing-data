@@ -216,8 +216,6 @@ For additional technical details, see Heiberger and Robbins
 
 Data requirements
 
-<br> <a href="#top">▲ top of page</a>
-
 ## references
 
 <div id="refs">

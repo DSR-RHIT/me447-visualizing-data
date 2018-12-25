@@ -449,8 +449,6 @@ and ozone measurements to the y-scale.
   - When the graph is complete, save it to
     `figures/d1-stripplot-ozone-exercise.png`
 
-<br> <a href="#top">▲ top of page</a>
-
 ## references
 
 <div id="refs">

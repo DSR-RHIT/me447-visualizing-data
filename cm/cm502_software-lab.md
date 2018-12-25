@@ -509,8 +509,6 @@ If there are files shown in the Git pane,
 Navigate to your online repo and you should find that it includes all
 your changes.
 
-<br> <a href="#top">▲ top of page</a>
-
 ## references
 
 <div id="refs">

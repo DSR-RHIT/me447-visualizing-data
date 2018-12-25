@@ -221,8 +221,6 @@ Create `practice/dx-plot-data-exercise.R`
   - When the graph is complete, save it to
     `figures/dx-plot-data-exercise.png`
 
-<br> <a href="#top">▲ top of page</a>
-
 ## references
 
 <div id="refs">

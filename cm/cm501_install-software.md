@@ -131,8 +131,6 @@ in the terminal something like this
 
 If not, no worries. We’ll take care of it in lab.
 
-<br> <a href="#top">▲ top of page</a>
-
 ## references
 
 <div id="refs">

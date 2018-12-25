@@ -32,8 +32,8 @@ study elements of statistical analysis, programming in R, human
 perception, graphic design, and visual rhetoric and ethics. After
 successfully completing this course, students should be able to design
 effective and truthful data displays, credibly explain their design
-rationale, produce publication‐quality visuals, and credibly critique a
-data display. Prior experience with R is not required.
+rationale, produce publicationâ€quality visuals, and credibly critique
+a data display. Prior experience with R is not required.
 
 ## prerequisites
 
@@ -179,8 +179,6 @@ week* in advance of the event.
 I reserve the right to modify the course content, schedule, policies,
 etc. outlined in this syllabus. I will do my best to give you adequate
 notice of revisions.
-
-<br> <a href="#top">▲ top of page</a>
 
 ## references
 

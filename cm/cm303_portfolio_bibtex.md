@@ -263,8 +263,6 @@ Cite software in general
       url          = {http://www.rstudio.com/},
       }
 
-<br> <a href="#top">▲ top of page</a>
-
 ## references
 
 <div id="refs">
