@@ -1,12 +1,13 @@
 about the course
 ================
 
+<img src="../resources/hans.png" width="60%" />
+
+<small><br>Image from a TED talk by [Hans
+Rosling](https://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen#t-270297).</small>
+
 The course is about creating truthful and compelling data visuals.
 Students from all disciplinary backgrounds are welcome.
-
-<img src="../resources/hans.png" width="60%" /> <small><br>Image from a
-TED talk by [Hans
-Rosling](https://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen#t-270297).</small>
 
 After successfully completing this course, students should be able to
 design effective and truthful data displays, credibly explain their
@@ -57,7 +58,7 @@ Planned Parenthood, stating, “In pink, that’s the reduction in the
 breast exams, and the red is the increase in the abortions. That’s
 what’s going on in your organization.”
 
-<img src="../resources/lying-graphic-1.png" width="50%" />
+<img src="../resources/lying-graphic-1.png" width="70%" />
 
 This graph \[1\] is deliberately deceptive—a charge Chaffetz
 [denied](https://talkingpointsmemo.com/livewire/jason-chaffetz-planned-parenthood-cnn).
@@ -72,7 +73,7 @@ Cancer screening has indeed dropped off (due to changing medical
 standards for cancer screening as well as the passage of the ACA in
 2010) while abortion services have remained fairly constant.
 
-<img src="../resources/lying-graphic-2.png" width="50%" />
+<img src="../resources/lying-graphic-2.png" width="70%" />
 
 Showing all services provided by Planned Parenthood puts the original
 data in context. Abortion-related services consistently represent about

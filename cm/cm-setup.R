@@ -1,5 +1,4 @@
 library("knitr")
-opts_knit$set(root.dir = "../")
 opts_chunk$set(
 	collapse  = TRUE,
 	comment   = "#>",

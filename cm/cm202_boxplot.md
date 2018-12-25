@@ -1,7 +1,7 @@
 box plot
 ================
 
-<img src="../cm/figures/cm202_header.png" width="100%" />
+<img src="../resources/cm202_header.png" width="100%" />
 
 ## contents
 

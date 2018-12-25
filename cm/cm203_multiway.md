@@ -1,7 +1,7 @@
 multiway dot plot
 ================
 
-<img src="../cm/figures/cm203_header.png" width="100%" />
+<img src="../resources/cm203_header.png" width="100%" />
 
 ## contents
 
@@ -135,7 +135,7 @@ ggplot(metro_pop, aes(x = population / 1000, y = race)) +
     theme_graphclass()
 ```
 
-<img src="figures/cm203_metropop-unnamed-chunk-8-1.png" width="70%" />
+<img src="figures/cm203_metropop-unnamed-chunk-7-1.png" width="70%" />
 
 And the figure is ready to save, using width and height to control the
 aspect ratio.
@@ -162,7 +162,7 @@ ggplot(metro_pop, aes(x = population / 1000, y = county)) +
     theme_graphclass()
 ```
 
-<img src="figures/cm203_metropop-unnamed-chunk-10-1.png" width="70%" />
+<img src="figures/cm203_metropop-unnamed-chunk-9-1.png" width="70%" />
 
 Dual
 

@@ -1,7 +1,7 @@
 software studio
 ================
 
-<img src="../resources/header-software-lab.png" width="70%" />
+<img src="../resources/cm502_header.png" width="70%" />
 
 <small> *San Francisco, from California and Powell Street* by Carleton
 E. Watkins (American, 1829–1916) is licensed under

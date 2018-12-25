@@ -1,7 +1,7 @@
 install software
 ================
 
-<img src="../resources/header-install-software.png" width="70%" />
+<img src="../resources/cm501_header.png" width="70%" />
 
 <small> *Computer Code Fabric* by Colleen Greene is licensed under [CC
 BY-NC-SA 2.0](https://creativecommons.org/licenses/by-nc-sa/2.0/)
@@ -113,7 +113,7 @@ y <- sin(t)
 plot(t, y)
 ```
 
-<img src="cm501_install-software_files/figure-gfm/sine-1.png" width="50%" />
+<img src="figures/cm501-sine-1.png" width="50%" />
 
 Lastly, let’s check if RStudio can see git locally. In RStudio,
 

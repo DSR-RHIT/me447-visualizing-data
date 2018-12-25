@@ -1,7 +1,7 @@
 signout reprints
 ================
 
-<img src="../resources/header-reprints.png" width="70%" />
+<img src="../resources/cm401_header.png" width="70%" />
 
 Two of our readings are printed pages.
 
