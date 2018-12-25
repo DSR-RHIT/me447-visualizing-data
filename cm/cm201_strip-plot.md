@@ -472,6 +472,7 @@ with R.* R package version 0.93
 
 </div>
 
-<a href="#top">▲ top of page</a>  
-[◁ calendar](../README.md#calendar)  
-[◁ index](../README.md#index)
+***
+<a href="#top">&#9650; top of page</a>    
+[&#9665; calendar](../README.md#calendar)    
+[&#9665; index](../README.md#index)

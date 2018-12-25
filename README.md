@@ -1,5 +1,5 @@
-
-# visualizing data
+visualizing data
+================
 
 447 / 547 Visualizing Data. An introductory course by Richard Layton at
 Rose-Hulman Institute of Technology.
@@ -27,7 +27,7 @@ permission
 | 2  | M | Graph basics with ggplot2 \[tutorial\] \[exercises\]                                                                                                                                                                                                                                                                         | wk1 lab complete                |                                                                              |
 |    | T | ![](resources/icon-document.png) Tufte ([1997](#ref-Tufte:1997)) Decision to launch Challenger                                                                                                                                                                                                                               |                                 | [Reading prompts](reports/reading-prompts.Rmd)                               |
 |    | R | Data basics \[tutorial\] \[exercises\]                                                                                                                                                                                                                                                                                       |                                 |                                                                              |
-|    | F | [File management](cm/cm101_file-management.md#file-management)<br>[Data studio](cm/cm102_data-studio.md#data-studio)<br>[Start acquiring data](cm/cm301_portfolio_display-reqts.md#portfolio-display-requirements)<br>Return reprints                                                                                        |                                 |                                                                              |
+|    | F | [Managing files](cm/cm101_file-management.md#file-management)<br>[Data studio](cm/cm102_data-studio.md#data-studio)<br>[Start acquiring data](cm/cm301_portfolio_display-reqts.md#portfolio-display-requirements)<br>Return reprints                                                                                         |                                 |                                                                              |
 | 3  | M | Markdown basics \[tutorial\] \[exercises\]                                                                                                                                                                                                                                                                                   | wk2 lab, tutorials, & exercises |                                                                              |
 |    | T | ![](resources/icon-moodle.png) Robbins ([2013](#ref-Robbins:2013:Ch.6)) General design principles                                                                                                                                                                                                                            |                                 |                                                                              |
 |    | R | Comparing distributions<br>Strip plot \[[tutorial](cm/cm201_strip-plot.md#strip-plot)\] \[[exercises](cm/cm201_strip-plot.md#exercises)\]<br>Box plot \[[tutorial](cm/cm202_boxplot.md#box-plot)\] \[[exercises](cm/cm202_boxplot.md#exercises)\]<br>[D1 requirements](cm/cm301_portfolio_display-reqts.md#D1-distributions) | D1 data acquired                |                                                                              |
@@ -161,7 +161,7 @@ Software studio
 
 ## portfolio
 
-Displays
+Display requirements
 
   - [D1
     distributions](cm/cm301_portfolio_display-reqts.md#D1-distributions)
@@ -280,8 +280,6 @@ to improve healthcare*. Oxford University Press, Oxford, UK, 32–49
 
 </div>
 
------
-
-<a href="#top">Top of page</a>  
-[Calendar](#calendar)  
-[Index](#index)
+<a href="#top">▲ top of page</a>  
+[▲ calendar](README.md#calendar)  
+[▲ index](README.md#index)

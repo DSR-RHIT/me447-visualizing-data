@@ -1,0 +1,6 @@
+github_document:
+  pandoc_args: [
+  	"--webtex"
+  	]
+  includes:
+    after_body: "../resources/doc-suffix.md"

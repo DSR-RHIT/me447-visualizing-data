@@ -157,3 +157,8 @@ Create `practice/dx-plot-data-exercise.R`
 <a href="#top">Top of page</a>  
 [Calendar](../README.md#calendar)  
 [Index](../README.md#index)
+
+***
+<a href="#top">&#9650; top of page</a>    
+[&#9665; calendar](../README.md#calendar)    
+[&#9665; index](../README.md#index)

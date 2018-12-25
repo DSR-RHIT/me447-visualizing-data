@@ -11,7 +11,8 @@ BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) </small>
 [organizing the directory](#organizing-the-directory)  
 [naming files](#naming-files)  
 [using relative paths](#using-relative-paths)  
-[searching files](#searching-files)
+[searching files](#searching-files)  
+[references](#references)
 
 ## organizing the directory
 
@@ -157,8 +158,6 @@ intersect(
 #> [4] "slides/d1-stripplot-speedski-slides.png"
 ```
 
-<br> <a href="#top">▲ top of page</a>
-
 ## references
 
 <div id="refs">
@@ -172,6 +171,7 @@ Bryan J (2015) Naming things.
 
 </div>
 
-<a href="#top">▲ top of page</a>  
-[◁ calendar](../README.md#calendar)  
-[◁ index](../README.md#index)
+***
+<a href="#top">&#9650; top of page</a>    
+[&#9665; calendar](../README.md#calendar)    
+[&#9665; index](../README.md#index)

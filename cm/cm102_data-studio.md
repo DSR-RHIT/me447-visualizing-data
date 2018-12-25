@@ -1,10 +1,6 @@
 data studio
 ================
 
-``` r
-include_graphics("../resources/header-data-lab.png")
-```
-
 <img src="../resources/header-data-lab.png" width="70%" />
 
 <small> *Migrant Pea Picker’s Makeshift Home, Nipomo, California* is
@@ -17,7 +13,8 @@ licensed under
 [know your desired data structure](#know-your-desired-data-structure)  
 [practice data sets in R](#practice-data-sets-in-r)  
 [begin acquiring data](#begin-acquiring-data)  
-[classify your data](#classify-your-data)
+[classify your data](#classify-your-data)  
+[references](#references)
 
 ## know your desired data structure
 
@@ -223,14 +220,13 @@ State specifically how each data requirements has been met. This summary
 will be part of the prose description that accompanies each graph in the
 portfolio.
 
-<br> <a href="#top">▲ top of page</a>
-
 ## references
 
 <div id="refs">
 
 </div>
 
-<a href="#top">▲ top of page</a>  
-[◁ calendar](../README.md#calendar)  
-[◁ index](../README.md#index)
+***
+<a href="#top">&#9650; top of page</a>    
+[&#9665; calendar](../README.md#calendar)    
+[&#9665; index](../README.md#index)

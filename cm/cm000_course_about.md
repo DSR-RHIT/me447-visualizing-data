@@ -31,7 +31,7 @@ are:
 
   - R is free, open source, and available on every major platform,
     making it easy for others to replicate your work.
-  - The variety of R packages—13548 R packages as of 2018-12-24—many of
+  - The variety of R packages—13548 R packages as of 2018-12-25—many of
     them cutting edge tools.
   - R packages provide deep-seated support for data analysis, e.g.,
     missing values, data frames, and subsetting.
@@ -145,3 +145,8 @@ Raton, FL <http://adv-r.had.co.nz/>
 3.  National Coalition of STD directors (2018–08–28) [STDs hit record
     highs again, threatening millions of America
     lives](http://www.ncsddc.org/stds-hit-record-highs-again-threatening-millions-of-american-lives/)
+
+***
+<a href="#top">&#9650; top of page</a>    
+[&#9665; calendar](../README.md#calendar)    
+[&#9665; index](../README.md#index)
