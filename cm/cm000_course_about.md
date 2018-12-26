@@ -17,12 +17,11 @@ critique a data display. We study elements of
   - data carpentry and statistics using R (no prior experience required)
   - visual rhetoric and ethics
   - human perception
-  - graphic
-design
+  - graphic design
 
 ## why R?
 
-<img src="C:/Users/layton/C-Users-layton-docs/courses/me447-visualizing-data/resources/R_logo.png" width="15%" />
+<img src="../resources/R_logo.png" width="15%" />
 
 R is an open source language and environment for statistical computing
 and graphics (R Core Team, [2018](#ref-R:2018)), ranked by IEEE in 2018
@@ -57,10 +56,9 @@ During Congressional hearing in August 2015, Representative Jason
 Chaffetz used the following graph as part of his effort to defund
 Planned Parenthood, stating, “In pink, that’s the reduction in the
 breast exams, and the red is the increase in the abortions. That’s
-what’s going on in your
-organization.”
+what’s going on in your organization.”
 
-<img src="C:/Users/layton/C-Users-layton-docs/courses/me447-visualizing-data/resources/lying-graphic-1.png" width="50%" />
+<img src="../resources/lying-graphic-1.png" width="50%" />
 
 This graph \[1\] is deliberately deceptive—a charge Chaffetz
 [denied](https://talkingpointsmemo.com/livewire/jason-chaffetz-planned-parenthood-cnn).
@@ -73,10 +71,9 @@ A different story emerges in my redesign of this graphic in which all
 services are shown to the same scale and on a per capita basis \[2\].
 Cancer screening has indeed dropped off (due to changing medical
 standards for cancer screening as well as the passage of the ACA in
-2010) while abortion services have remained fairly
-constant.
+2010) while abortion services have remained fairly constant.
 
-<img src="C:/Users/layton/C-Users-layton-docs/courses/me447-visualizing-data/resources/lying-graphic-2.png" width="50%" />
+<img src="../resources/lying-graphic-2.png" width="50%" />
 
 Showing all services provided by Planned Parenthood puts the original
 data in context. Abortion-related services consistently represent about
