@@ -1,7 +1,7 @@
 about the course
 ================
 
-<img src="C:/Users/layton/C-Users-layton-docs/courses/me447-visualizing-data/resources/cm000_header2.png" width="100%" />
+<img src="../resources/cm000_header2.png" width="100%" />
 
 <small><br> *Ames Iowa Housing* adapted from [Visual data
 exploration](http://uc-r.github.io/gda) by Bradley Boehmke </small>
