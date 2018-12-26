@@ -21,12 +21,6 @@ Always start a session by opening your course R project.
 If any of these packages have not yet been installed, they can be
 installed using these commands,
 
-``` r
-install.packages("tidyverse")
-install.packages("gapminder")
-devtools::install_github("graphclassmate")
-```
-
 Install the following packages rom
 
   - Packages used: tidyverse, graphclassmate, gapminder  

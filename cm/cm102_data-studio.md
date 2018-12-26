@@ -1,7 +1,7 @@
 data studio
 ================
 
-<img src="../resources/header-data-lab.png" width="70%" />
+<img src="C:/Users/layton/C-Users-layton-docs/courses/me447-visualizing-data/resources/cm102_header.png" width="100%" />
 
 <small> *Migrant Pea Picker’s Makeshift Home, Nipomo, California* is
 licensed under

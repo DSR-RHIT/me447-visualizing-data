@@ -1,10 +1,10 @@
 about the course
 ================
 
-<img src="../resources/hans.png" width="60%" />
+<img src="C:/Users/layton/C-Users-layton-docs/courses/me447-visualizing-data/resources/cm000_header2.png" width="100%" />
 
-<small><br>Image from a TED talk by [Hans
-Rosling](https://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen#t-270297).</small>
+<small><br> *Ames Iowa Housing* adapted from [Visual data
+exploration](http://uc-r.github.io/gda) by Bradley Boehmke </small>
 
 The course is about creating truthful and compelling data visuals.
 Students from all disciplinary backgrounds are welcome.
@@ -17,11 +17,12 @@ critique a data display. We study elements of
   - data carpentry and statistics using R (no prior experience required)
   - visual rhetoric and ethics
   - human perception
-  - graphic design
+  - graphic
+design
 
 ## why R?
 
-<img src="../resources/R_logo.png" width="15%" />
+<img src="C:/Users/layton/C-Users-layton-docs/courses/me447-visualizing-data/resources/R_logo.png" width="15%" />
 
 R is an open source language and environment for statistical computing
 and graphics (R Core Team, [2018](#ref-R:2018)), ranked by IEEE in 2018
@@ -32,7 +33,7 @@ are:
 
   - R is free, open source, and available on every major platform,
     making it easy for others to replicate your work.
-  - The variety of R packages—13548 R packages as of 2018-12-25—many of
+  - The variety of R packages—13558 R packages as of 2018-12-26—many of
     them cutting edge tools.
   - R packages provide deep-seated support for data analysis, e.g.,
     missing values, data frames, and subsetting.
@@ -56,9 +57,10 @@ During Congressional hearing in August 2015, Representative Jason
 Chaffetz used the following graph as part of his effort to defund
 Planned Parenthood, stating, “In pink, that’s the reduction in the
 breast exams, and the red is the increase in the abortions. That’s
-what’s going on in your organization.”
+what’s going on in your
+organization.”
 
-<img src="../resources/lying-graphic-1.png" width="70%" />
+<img src="C:/Users/layton/C-Users-layton-docs/courses/me447-visualizing-data/resources/lying-graphic-1.png" width="50%" />
 
 This graph \[1\] is deliberately deceptive—a charge Chaffetz
 [denied](https://talkingpointsmemo.com/livewire/jason-chaffetz-planned-parenthood-cnn).
@@ -71,9 +73,10 @@ A different story emerges in my redesign of this graphic in which all
 services are shown to the same scale and on a per capita basis \[2\].
 Cancer screening has indeed dropped off (due to changing medical
 standards for cancer screening as well as the passage of the ACA in
-2010) while abortion services have remained fairly constant.
+2010) while abortion services have remained fairly
+constant.
 
-<img src="../resources/lying-graphic-2.png" width="70%" />
+<img src="C:/Users/layton/C-Users-layton-docs/courses/me447-visualizing-data/resources/lying-graphic-2.png" width="50%" />
 
 Showing all services provided by Planned Parenthood puts the original
 data in context. Abortion-related services consistently represent about
@@ -126,7 +129,7 @@ Raton, FL <http://adv-r.had.co.nz/>
 ### notes
 
 1.  This graph was crafted by Americans United for Life (AUL), an
-    organization dedicated to [restricting womenâ€™s reproductive
+    organization dedicated to [restricting women’s reproductive
     rights](https://www.theatlantic.com/politics/archive/2015/07/what-pro-life-activists-really-want/398297/)
     in the US and abroad. AUL has deleted the original webpage, we can
     still [view

@@ -1,26 +1,23 @@
 managing files
 ================
 
-<img src="../resources/cm101_header.png" width="70%" />
+<img src="C:/Users/layton/C-Users-layton-docs/courses/me447-visualizing-data/resources/cm101_header.png" width="100%" />
 
 <small> *Files* by Mitch Barrie is licensed under [CC
 BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) </small>
 
 ## contents
 
-[organizing the directory](#organizing-the-directory)  
-[naming files](#naming-files)  
+[plan the directory structure](#plan-the-directory-structure)  
+[plan a file-naming scheme](#plan-a-file-naming-scheme)  
 [using relative paths](#using-relative-paths)  
 [searching files](#searching-files)  
 [references](#references)
 
-## organizing the directory
+## plan the directory structure
 
-The directory structure for the course given below. The purpose of each
-file and folder is described in detail in [Basic elements of file
-management](../slides/w03-4-file-management.pdf) slides.
-
-This directory structure is required.
+The top level of the portfolio project has the following folders and
+files.
 
 <img src="../resources/icon-folder.png" width="2%" /> carpentry  
 <img src="../resources/icon-folder.png" width="2%" /> data  
@@ -38,9 +35,70 @@ This directory structure is required.
 <img src="../resources/icon-md.png" width="2%" /> README.md  
 <img src="../resources/icon-Rproj.png" width="2%" /> portfolio.Rproj
 
+Workflow directories (files that create the portfolio)
+
+  - **`data-raw/`**  
+    Data in their original form, never edited manually  
+    R scripts for web-scraping or downloading raw data  
+    Version control optional
+  - **`carpentry/`**  
+    R scripts that turn raw data into tidy data  
+    Reads from `data-raw/`  
+    Writes CSV or RDS to `data/`
+  - **`data/`**  
+    Data files ready for graphs or analysis
+  - **`design/`**  
+    R scripts that create and save graphs  
+    Reads CSV or RDS from `data/`  
+    Writes PNG to `figures/`
+  - **`figures/`**  
+    Publication-ready graphs
+  - **`reports/`**  
+    Rmd scripts that present and critique displays  
+    One report per required display  
+    Runs the R scripts in `carpentry/` and `design/`  
+    Inputs the graphs from `figures/`
+  - **`resources/`**  
+    Other files used to create the reports  
+    Bibliography and CSL files  
+    Image downloads
+  - **`README.Rmd`**  
+    Creates the main page of the portfolio website  
+    Provides explicit links to every report
+
+Top level files
+
+  - **`portfolio.Rproj`**  
+    Sets the current working directory to the project directory
+  - **`.gitignore`**  
+    Directs Git to ignore specific files, excusing them from version
+    control
+  - **`.Renviron`**  
+    Stores packages in a library separate from the base R installation
+
+Non-workflow directories, excused from version control
+
+  - **`manage/`**  
+    Correspondence and project management  
+    Project-related files sent by others
+  - **`practice/`**  
+    R scripts for exercises and learning R  
+    R scripts fpor practicing new techniques
+
+Alternative opinions on directory structure
+
+  - Mira Céline Klein (2017) [A meaningful file structure for R
+    projects](https://www.inwt-statistics.com/read-blog/a-meaningful-file-structure-for-r-projects.html)  
+  - Chris von Csefalvay (2018) [Structuring R
+    projects](https://chrisvoncsefalvay.com/structuring-r-projects/)  
+  - The Carpentries (n.d.) [Project management with
+    RStudio](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro/)
+  - Karl Broman (n.d.) [Organize your data and
+    code](https://kbroman.org/steps2rr/pages/organize.html)
+
 <br> <a href="#top">▲ top of page</a>
 
-## naming files
+## plan a file-naming scheme
 
 Carefully consider your file naming scheme when you write your first
 script.
@@ -85,7 +143,7 @@ underscores and hyphens to identify the date, assay, sample set, and
 “well” (Bryan, [2015](#ref-Bryan:2015))
 ,
 
-<img src="../resources/cm101-02.png" width="70%" /><img src="../resources/cm101-03.png" width="70%" />
+<img src="../resources/cm101-02.png" width="50%" /><img src="../resources/cm101-03.png" width="50%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -122,12 +180,7 @@ the `list.files()` function to search for all file names that include
 ``` r
 this_path <- "."
 list.files(path = this_path, pattern = "stripplot", recursive = TRUE, ignore.case = TRUE)
-#> [1] "carpentry/d1-stripplot-speedski-carpentry.R"
-#> [2] "data/d1-stripplot-speedski.rds"             
-#> [3] "design/d1-stripplot-speedski-design.R"      
-#> [4] "figures/d1-stripplot-speedski.png"          
-#> [5] "practice/d1-stripplot-speedski-tutorial.R"  
-#> [6] "slides/d1-stripplot-speedski-slides.png"
+#> character(0)
 ```
 
 Or for all file names that include
@@ -135,24 +188,18 @@ Or for all file names that include
 
 ``` r
 list.files(path = this_path, pattern = "speedski", recursive = TRUE, ignore.case = TRUE)
-#>  [1] "carpentry/d1-stripplot-speedski-carpentry.R"
-#>  [2] "cm/figures/cm201_speedski-design-1-1.png"   
-#>  [3] "cm/figures/cm201_speedski-design-2-1.png"   
-#>  [4] "cm/figures/cm201_speedski-design-3-1.png"   
-#>  [5] "cm/figures/cm201_speedski-design-4-1.png"   
-#>  [6] "cm/figures/cm201_speedski-design-5-1.png"   
-#>  [7] "cm/figures/cm201_speedski-design-6-1.png"   
-#>  [8] "cm/figures/cm201_speedski-explore-1-1.png"  
-#>  [9] "cm/figures/cm201_speedski-explore-2-1.png"  
-#> [10] "cm/figures/cm201_speedski-explore-3-1.png"  
-#> [11] "cm/figures/cm201_speedski-explore-4-1.png"  
-#> [12] "cm/figures/cm201_speedski-explore-5-1.png"  
-#> [13] "cm/figures/cm201_speedski-explore-6-1.png"  
-#> [14] "data/d1-stripplot-speedski.rds"             
-#> [15] "design/d1-stripplot-speedski-design.R"      
-#> [16] "figures/d1-stripplot-speedski.png"          
-#> [17] "practice/d1-stripplot-speedski-tutorial.R"  
-#> [18] "slides/d1-stripplot-speedski-slides.png"
+#>  [1] "figures/cm201_speedski-design-1-1.png" 
+#>  [2] "figures/cm201_speedski-design-2-1.png" 
+#>  [3] "figures/cm201_speedski-design-3-1.png" 
+#>  [4] "figures/cm201_speedski-design-4-1.png" 
+#>  [5] "figures/cm201_speedski-design-5-1.png" 
+#>  [6] "figures/cm201_speedski-design-6-1.png" 
+#>  [7] "figures/cm201_speedski-explore-1-1.png"
+#>  [8] "figures/cm201_speedski-explore-2-1.png"
+#>  [9] "figures/cm201_speedski-explore-3-1.png"
+#> [10] "figures/cm201_speedski-explore-4-1.png"
+#> [11] "figures/cm201_speedski-explore-5-1.png"
+#> [12] "figures/cm201_speedski-explore-6-1.png"
 ```
 
 Or for all file names that start with `d1` and end with `.png`. Here we
@@ -164,10 +211,7 @@ intersect(
   list.files(path = this_path, pattern = "^d1", recursive = TRUE, ignore.case = TRUE),     
   list.files(path = this_path, pattern = "\\.png$", recursive = TRUE, ignore.case = TRUE)
     )
-#> [1] "figures/d1-boxplot-nontrad.png"         
-#> [2] "figures/d1-stripplot-speedski.png"      
-#> [3] "slides/d1-boxplot-nontrad-slides.png"   
-#> [4] "slides/d1-stripplot-speedski-slides.png"
+#> character(0)
 ```
 
 ## references

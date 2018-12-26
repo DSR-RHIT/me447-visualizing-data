@@ -2,7 +2,7 @@ github_document:
   pandoc_args: [
   	"--webtex",
   	"--bibliography", "../resources/references.bib",
-  	"--csl", "../resources/journal-of-glaciology.csl"
+  	"--csl", "../resources/journal-of-glaciology.csl",
   	]
   includes:
     after_body: "../resources/doc-suffix.md"
