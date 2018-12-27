@@ -101,7 +101,7 @@ Data carpentry exercises
 
   - [Summary](cm/cm101_data-lab.md#file-management)  
   - [Basic elements of file
-    management](slides/sd034_file-management.pdf) (slides)
+    management](slides/wk-03-4-file-management.pdf) (slides)
 
 ## graphs
 

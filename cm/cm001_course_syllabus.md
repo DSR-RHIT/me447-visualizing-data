@@ -1,11 +1,11 @@
 syllabus
 ================
 
-<img src="C:/Users/layton/C-Users-layton-docs/courses/me447-visualizing-data/resources/cm001_header.png" width="100%" />
+<img src="../resources/cm001_header.png" width="100%" />
 
-<small> *Syllabusing* by Raul P (cropped) is licensed under [CC
-BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)  
-</small>
+<small><br> *Syllabusing* by Raul P (cropped) is licensed under [CC
+BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)
+</small><br>
 
 ## contents
 
@@ -32,8 +32,8 @@ study elements of statistical analysis, programming in R, human
 perception, graphic design, and visual rhetoric and ethics. After
 successfully completing this course, students should be able to design
 effective and truthful data displays, credibly explain their design
-rationale, produce publicationâ€quality visuals, and credibly critique
-a data display. Prior experience with R is not required.
+rationale, produce publication‐quality visuals, and credibly critique a
+data display. Prior experience with R is not required.
 
 ## prerequisites
 

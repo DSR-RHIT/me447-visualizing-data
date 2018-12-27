@@ -1,4 +1,4 @@
-box plot
+box plots
 ================
 
 <img src="../resources/cm202_header.png" width="100%" />

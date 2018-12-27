@@ -1,10 +1,10 @@
 managing files
 ================
 
-<img src="C:/Users/layton/C-Users-layton-docs/courses/me447-visualizing-data/resources/cm101_header.png" width="100%" />
+<img src="../resources/cm101_header.png" width="100%" />
 
-<small> *Files* by Mitch Barrie is licensed under [CC
-BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) </small>
+<small><br> *Files* by Mitch Barrie is licensed under [CC
+BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) </small><br>
 
 ## contents
 
@@ -16,8 +16,8 @@ BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) </small>
 
 ## plan the directory structure
 
-The top level of the portfolio project has the following folders and
-files.
+As shown in the [slides](../slides/wk03-4-file-management.pdf), the top
+level of the portfolio project has the following folders and files.
 
 <img src="../resources/icon-folder.png" width="2%" /> carpentry  
 <img src="../resources/icon-folder.png" width="2%" /> data  
@@ -66,7 +66,7 @@ Workflow directories (files that create the portfolio)
     Creates the main page of the portfolio website  
     Provides explicit links to every report
 
-Top level files
+Administrative files
 
   - **`portfolio.Rproj`**  
     Sets the current working directory to the project directory
@@ -87,7 +87,7 @@ Non-workflow directories, excused from version control
 
 Alternative opinions on directory structure
 
-  - Mira CÃ©line Klein (2017) [A meaningful file structure for R
+  - Mira Céline Klein (2017) [A meaningful file structure for R
     projects](https://www.inwt-statistics.com/read-blog/a-meaningful-file-structure-for-r-projects.html)  
   - Chris von Csefalvay (2018) [Structuring R
     projects](https://chrisvoncsefalvay.com/structuring-r-projects/)  
