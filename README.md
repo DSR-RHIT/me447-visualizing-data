@@ -69,8 +69,8 @@ Calendar links organized by topic
 ## course
 
   - [Introductory slides](slides/wk01-1-welcome.pdf)  
-  - [About the course](cm/cm000_course_about.md)
-  - [Syllabus](cm/cm001_course_syllabus.md)  
+  - [About the course](cm/cm000_course_about.md#about-the-course)
+  - [Syllabus](cm/cm001_course_syllabus.md#syllabus)  
   - [Calendar](#calendar)
   - Help links[](cm/admin-04_getting-help.md)
   - [License](LICENSE.md)
