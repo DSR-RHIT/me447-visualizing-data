@@ -32,7 +32,7 @@ syllabus](cm001_course_syllabus.md#syllabus).
 
 ## about the software
 
-<img src="C:/Users/layton/C-Users-layton-docs/courses/me447-visualizing-data/resources/logo-R.png" width="45px" />
+<img src="../resources/logo-R.png" width="45px" />
 
 R is an open source language and environment for statistical computing
 and graphics (R Core Team, [2018](#ref-R:2018)), ranked by IEEE in 2018
@@ -49,18 +49,16 @@ are:
     missing values, data frames, and subsetting.
   - R packages provide powerful tools for communicating results via
     html, pdf, docx, or interactive websites.
-  - It is easy to get help from experts in the R
-community.
+  - It is easy to get help from experts in the R community.
 
-<img src="C:/Users/layton/C-Users-layton-docs/courses/me447-visualizing-data/resources/logo-RStudio.png" width="40px" />
+<img src="../resources/logo-RStudio.png" width="40px" />
 
 RStudio is our basic software environment for using R. RStudio provides
 a console, editor, and tools for plotting, history, debugging, and
 workspace management as well as access to GitHub for collaboration and
-version control (RStudio Team,
-[2016](#ref-RStudio:2016)).
+version control (RStudio Team, [2016](#ref-RStudio:2016)).
 
-<img src="C:/Users/layton/C-Users-layton-docs/courses/me447-visualizing-data/resources/logo-GitHub.png" width="45px" />
+<img src="../resources/logo-GitHub.png" width="45px" />
 
 GitHub is a web-based hosting service for version control using Git. We
 will use it for sharing code and as a website for the course and for
@@ -101,7 +99,7 @@ abortions. That’s what’s going on in your organization.” His assertion
 echoes AUL’s “Planned Parenthood has become Abortion, Inc.”
 [propaganda](http://www.aul.org/new-leviathan/).
 
-<img src="C:/Users/layton/C-Users-layton-docs/courses/me447-visualizing-data/resources/lying-graphic-1.png" width="50%" />
+<img src="../resources/lying-graphic-1.png" width="50%" />
 
 This graph is deliberately deceptive—a charge Chaffetz
 [denied](https://talkingpointsmemo.com/livewire/jason-chaffetz-planned-parenthood-cnn).
@@ -116,10 +114,9 @@ A different story emerges in my redesign of this graphic in which all
 services are shown to the same scale and on a per capita basis. Cancer
 screening has indeed dropped off (due to changing medical standards for
 cancer screening as well as the passage of the ACA in 2010) while
-abortion services have remained fairly
-constant.
+abortion services have remained fairly constant.
 
-<img src="C:/Users/layton/C-Users-layton-docs/courses/me447-visualizing-data/resources/lying-graphic-2.png" width="50%" />
+<img src="../resources/lying-graphic-2.png" width="50%" />
 
 Showing all services provided by Planned Parenthood puts the original
 data in context. Abortion-related services consistently represent about
