@@ -21,8 +21,8 @@ visuals. We study elements of statistical analysis, programming in R,
 human perception, graphic design, and visual rhetoric and ethics. After
 successfully completing this course, students should be able to design
 effective and truthful data displays, credibly explain their design
-rationale, produce publicationâ€quality visuals, and credibly critique
-a data display.
+rationale, produce publication‐quality visuals, and credibly critique a
+data display.
 
 The class is designed for the R novice. Prior experience with any
 programming language is helpful though not necessary.
@@ -92,7 +92,7 @@ During a Congressional hearing in August 2015, Representative Jason
 Chaffetz, then chair of the House Oversight Committee, confronted Cecile
 Richards, president of Planned Parenthood, with a graph created by
 Americans United for Life (AUL), an organization dedicated to
-[restricting womenâ€™s reproductive
+[restricting women’s reproductive
 rights](https://www.theatlantic.com/politics/archive/2015/07/what-pro-life-activists-really-want/398297/)
 in the US and abroad. In justifying his attempt to eliminate Planned
 Parenthood’s federal funding, Chaffetz stated, “In pink, that’s the
