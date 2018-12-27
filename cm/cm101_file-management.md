@@ -87,7 +87,7 @@ Non-workflow directories, excused from version control
 
 Alternative opinions on directory structure
 
-  - Mira Céline Klein (2017) [A meaningful file structure for R
+  - Mira CÃ©line Klein (2017) [A meaningful file structure for R
     projects](https://www.inwt-statistics.com/read-blog/a-meaningful-file-structure-for-r-projects.html)  
   - Chris von Csefalvay (2018) [Structuring R
     projects](https://chrisvoncsefalvay.com/structuring-r-projects/)  
@@ -180,7 +180,13 @@ the `list.files()` function to search for all file names that include
 ``` r
 this_path <- "."
 list.files(path = this_path, pattern = "stripplot", recursive = TRUE, ignore.case = TRUE)
-#> character(0)
+#> [1] "carpentry/d1-stripplot-speedski-carpentry.R"
+#> [2] "cm/figures/d1-stripplot-speedski.png"       
+#> [3] "data/d1-stripplot-speedski.rds"             
+#> [4] "design/d1-stripplot-speedski-design.R"      
+#> [5] "figures/d1-stripplot-speedski.png"          
+#> [6] "practice/d1-stripplot-speedski-tutorial.R"  
+#> [7] "slides/d1-stripplot-speedski-slides.png"
 ```
 
 Or for all file names that include
@@ -188,18 +194,25 @@ Or for all file names that include
 
 ``` r
 list.files(path = this_path, pattern = "speedski", recursive = TRUE, ignore.case = TRUE)
-#>  [1] "figures/cm201_speedski-design-1-1.png" 
-#>  [2] "figures/cm201_speedski-design-2-1.png" 
-#>  [3] "figures/cm201_speedski-design-3-1.png" 
-#>  [4] "figures/cm201_speedski-design-4-1.png" 
-#>  [5] "figures/cm201_speedski-design-5-1.png" 
-#>  [6] "figures/cm201_speedski-design-6-1.png" 
-#>  [7] "figures/cm201_speedski-explore-1-1.png"
-#>  [8] "figures/cm201_speedski-explore-2-1.png"
-#>  [9] "figures/cm201_speedski-explore-3-1.png"
-#> [10] "figures/cm201_speedski-explore-4-1.png"
-#> [11] "figures/cm201_speedski-explore-5-1.png"
-#> [12] "figures/cm201_speedski-explore-6-1.png"
+#>  [1] "carpentry/d1-stripplot-speedski-carpentry.R"
+#>  [2] "cm/figures/cm201_speedski-design-1-1.png"   
+#>  [3] "cm/figures/cm201_speedski-design-2-1.png"   
+#>  [4] "cm/figures/cm201_speedski-design-3-1.png"   
+#>  [5] "cm/figures/cm201_speedski-design-4-1.png"   
+#>  [6] "cm/figures/cm201_speedski-design-5-1.png"   
+#>  [7] "cm/figures/cm201_speedski-design-6-1.png"   
+#>  [8] "cm/figures/cm201_speedski-explore-1-1.png"  
+#>  [9] "cm/figures/cm201_speedski-explore-2-1.png"  
+#> [10] "cm/figures/cm201_speedski-explore-3-1.png"  
+#> [11] "cm/figures/cm201_speedski-explore-4-1.png"  
+#> [12] "cm/figures/cm201_speedski-explore-5-1.png"  
+#> [13] "cm/figures/cm201_speedski-explore-6-1.png"  
+#> [14] "cm/figures/d1-stripplot-speedski.png"       
+#> [15] "data/d1-stripplot-speedski.rds"             
+#> [16] "design/d1-stripplot-speedski-design.R"      
+#> [17] "figures/d1-stripplot-speedski.png"          
+#> [18] "practice/d1-stripplot-speedski-tutorial.R"  
+#> [19] "slides/d1-stripplot-speedski-slides.png"
 ```
 
 Or for all file names that start with `d1` and end with `.png`. Here we
@@ -211,7 +224,11 @@ intersect(
   list.files(path = this_path, pattern = "^d1", recursive = TRUE, ignore.case = TRUE),     
   list.files(path = this_path, pattern = "\\.png$", recursive = TRUE, ignore.case = TRUE)
     )
-#> character(0)
+#> [1] "cm/figures/d1-stripplot-speedski.png"   
+#> [2] "figures/d1-boxplot-nontrad.png"         
+#> [3] "figures/d1-stripplot-speedski.png"      
+#> [4] "slides/d1-boxplot-nontrad-slides.png"   
+#> [5] "slides/d1-stripplot-speedski-slides.png"
 ```
 
 ## references

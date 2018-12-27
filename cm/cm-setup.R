@@ -1,7 +1,7 @@
 suppressPackageStartupMessages(library("tidyverse"))
-suppressPackageStartupMessages(library("here"))
 library("graphclassmate")
 library("knitr")
+library("here")
 
 # knitr options for all cm files
 opts_knit$set(root.dir = "../")
