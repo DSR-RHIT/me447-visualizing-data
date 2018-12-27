@@ -1,10 +1,9 @@
 managing files
 ================
 
-<img src="../resources/cm101_header.png" width="100%" />
-
-<small><br> *Files* by Mitch Barrie is licensed under [CC
-BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) </small><br>
+<img src="../resources/cm101_header.png" width="100%" /> <small><br>
+*Files* by Mitch Barrie is licensed under [CC
+BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) <br></small>
 
 ## contents
 
@@ -87,7 +86,7 @@ Non-workflow directories, excused from version control
 
 Alternative opinions on directory structure
 
-  - Mira Céline Klein (2017) [A meaningful file structure for R
+  - Mira CÃ©line Klein (2017) [A meaningful file structure for R
     projects](https://www.inwt-statistics.com/read-blog/a-meaningful-file-structure-for-r-projects.html)  
   - Chris von Csefalvay (2018) [Structuring R
     projects](https://chrisvoncsefalvay.com/structuring-r-projects/)  

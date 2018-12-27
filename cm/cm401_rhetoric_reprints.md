@@ -1,7 +1,10 @@
 signout reprints
 ================
 
-<img src="../resources/cm401_header.png" width="70%" />
+<img src="../resources/cm401_header.png" width="100%" />
+<!-- <small><br> -->
+<!-- *name* by author is licensed under [CC]()   -->
+<!-- <br></small> -->
 
 Two of our readings are printed pages.
 

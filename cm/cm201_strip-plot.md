@@ -1,7 +1,10 @@
 strip plot
 ================
 
-<img src="C:/Users/layton/C-Users-layton-docs/courses/me447-visualizing-data/resources/cm201_header.png" width="100%" />
+<img src="../resources/cm201_header.png" width="100%" />
+<!-- <small><br> -->
+<!-- *name* by author is licensed under [CC]()   -->
+<!-- <br></small> -->
 
 ## contents
 

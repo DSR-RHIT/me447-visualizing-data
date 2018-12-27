@@ -2,6 +2,9 @@ box plots
 ================
 
 <img src="../resources/cm202_header.png" width="100%" />
+<!-- <small><br> -->
+<!-- *name* by author is licensed under [CC]()   -->
+<!-- <br></small> -->
 
 ## contents
 

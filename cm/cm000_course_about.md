@@ -1,11 +1,10 @@
 about the course
 ================
 
-<img src="../resources/cm000_header2.png" width="100%" />
-
-<small><br> *Ames Iowa Housing*, a parallel-coordinate plot adapted from
-[Visual data exploration](http://uc-r.github.io/gda) by Bradley Boehmke.
-</small><br>
+<img src="../resources/cm000_header2.png" width="100%" /> <small><br>
+*Ames Iowa Housing*, a parallel-coordinate plot adapted from [Visual
+data exploration](http://uc-r.github.io/gda) by Bradley Boehmke.
+<br></small>
 
 ## contents
 
@@ -21,8 +20,8 @@ visuals. We study elements of statistical analysis, programming in R,
 human perception, graphic design, and visual rhetoric and ethics. After
 successfully completing this course, students should be able to design
 effective and truthful data displays, credibly explain their design
-rationale, produce publication‐quality visuals, and credibly critique a
-data display.
+rationale, produce publicationâ€quality visuals, and credibly critique
+a data display.
 
 The class is designed for the R novice. Prior experience with any
 programming language is helpful though not necessary.
@@ -90,7 +89,7 @@ During a Congressional hearing in August 2015, Representative Jason
 Chaffetz, then chair of the House Oversight Committee, confronted Cecile
 Richards, president of Planned Parenthood, with a graph created by
 Americans United for Life (AUL), an organization dedicated to
-[restricting women’s reproductive
+[restricting womenâ€™s reproductive
 rights](https://www.theatlantic.com/politics/archive/2015/07/what-pro-life-activists-really-want/398297/)
 in the US and abroad. In justifying his attempt to eliminate Planned
 Parenthood’s federal funding, Chaffetz stated, “In pink, that’s the

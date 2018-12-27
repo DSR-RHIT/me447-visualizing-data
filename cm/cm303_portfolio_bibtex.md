@@ -1,9 +1,10 @@
 
-<img src="../resources/cm303_header.png" width="30%" />
+<br>
 
-<small> BiBTeX logo by Grendelkhan, own work, public domain,
+<img src="../resources/cm303_header.png" width="50%" /> <small><br>
+BiBTeX logo by Grendelkhan, own work, public domain,
 [Wikimedia](https://commons.wikimedia.org/w/index.php?curid=1299548)
-</small>
+<br></small>
 
 ## contents
 

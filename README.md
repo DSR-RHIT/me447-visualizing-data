@@ -27,7 +27,7 @@ permission
 | 2  | M | Graph basics with ggplot2 \[tutorial\] \[exercises\]                                                                                                                                                                                                                                                                         | wk1 lab complete                |                                                                              |
 |    | T | ![](resources/icon-document.png) Tufte ([1997](#ref-Tufte:1997)) Decision to launch Challenger                                                                                                                                                                                                                               |                                 | [Reading prompts](reports/reading-prompts.Rmd)                               |
 |    | R | Data basics \[tutorial\] \[exercises\]                                                                                                                                                                                                                                                                                       |                                 |                                                                              |
-|    | F | [Managing files](cm/cm101_file-management.md#file-management)<br>[Data studio](cm/cm102_data-studio.md#data-studio)<br>[Start acquiring data](cm/cm301_portfolio_display-reqts.md#portfolio-display-requirements)<br>Return reprints                                                                                         |                                 |                                                                              |
+|    | F | [Managing files](cm/cm101_file-management.md#file-management) \[[slides](slides/wk03-4-file-management.pdf)\]<br>[Data studio](cm/cm102_data-studio.md#data-studio)<br>[Start acquiring data](cm/cm301_portfolio_display-reqts.md#portfolio-display-requirements)<br>Return reprints                                         |                                 |                                                                              |
 | 3  | M | Markdown basics \[tutorial\] \[exercises\]                                                                                                                                                                                                                                                                                   | wk2 lab, tutorials, & exercises |                                                                              |
 |    | T | ![](resources/icon-moodle.png) Robbins ([2013](#ref-Robbins:2013:Ch.6)) General design principles                                                                                                                                                                                                                            |                                 |                                                                              |
 |    | R | Comparing distributions<br>Strip plot \[[tutorial](cm/cm201_strip-plot.md#strip-plot)\] \[[exercises](cm/cm201_strip-plot.md#exercises)\]<br>Box plot \[[tutorial](cm/cm202_boxplot.md#box-plot)\] \[[exercises](cm/cm202_boxplot.md#exercises)\]<br>[D1 requirements](cm/cm301_portfolio_display-reqts.md#D1-distributions) | D1 data acquired                |                                                                              |
@@ -68,6 +68,7 @@ Calendar links organized by topic
 
 ## course
 
+  - [Introductory slides](slides/wk01-1-welcome.pdf)  
   - [About the course](cm/cm000_course_about.md)
   - [Syllabus](cm/cm001_course_syllabus.md)  
   - [Calendar](#calendar)
@@ -99,9 +100,15 @@ Data carpentry exercises
 
 ## file management
 
-  - [Summary](cm/cm101_file-management.md#managing-files)  
-  - [Basic elements of file
-    management](slides/wk03-4-file-management.pdf) (slides)
+  - [Introductory slides](slides/wk03-4-file-management.pdf)  
+  - [Managing files](cm/cm101_file-management.md#managing-files)  
+  - [Planning the directory
+    structure](cm/cm101_file-management.md#plan-the-directory-structure)  
+  - [Planning a file-naming
+    scheme](cm/cm101_file-management.md#plan-a-file-naming-scheme)  
+  - [Using relative
+    paths](cm/cm101_file-management.md#using-relative-paths)  
+  - [Searching files](cm/cm101_file-management.md#searching-files)
 
 ## graphs
 

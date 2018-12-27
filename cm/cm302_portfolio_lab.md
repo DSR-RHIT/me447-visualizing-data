@@ -1,12 +1,11 @@
 portfolio studio
 ================
 
-<img src="../resources/cm302_header.png" width="100%" />
-
-<small> *Troy from Mount Ida* (No. 11 of The Hudson River Portfolio) is
-licensed under
+<img src="../resources/cm302_header.png" width="100%" /> <small><br>
+*Troy from Mount Ida* (No. 11 of The Hudson River Portfolio) is licensed
+under
 [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/legalcode/)
-</small>
+<br></small>
 
 ## contents
 

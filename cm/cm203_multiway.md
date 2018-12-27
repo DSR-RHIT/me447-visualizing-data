@@ -2,6 +2,9 @@ multiway dot plot
 ================
 
 <img src="../resources/cm203_header.png" width="100%" />
+<!-- <small><br> -->
+<!-- *name* by author is licensed under [CC]()   -->
+<!-- <br></small> -->
 
 ## contents
 

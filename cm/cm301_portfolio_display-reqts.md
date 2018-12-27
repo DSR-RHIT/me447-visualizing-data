@@ -1,11 +1,10 @@
 portfolio display requirements
 ================
 
-<img src="../resources/cm301_header.png" width="100%" />
-
-<small> *dennisyang.com DOM graph* by Dennis Yang is licensed under [CC
+<img src="../resources/cm301_header.png" width="100%" /> <small><br>
+*dennisyang.com DOM graph* by Dennis Yang is licensed under [CC
 BY 2.0](https://creativecommons.org/licenses/by/2.0/)  
-</small>
+<br></small>
 
 The table summarizes the basic data structure for all portfolio
 graphs.  

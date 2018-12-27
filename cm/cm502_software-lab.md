@@ -1,12 +1,11 @@
 software studio
 ================
 
-<img src="../resources/cm502_header.png" width="70%" />
-
-<small> *San Francisco, from California and Powell Street* by Carleton
-E. Watkins (American, 1829–1916) is licensed under
+<img src="../resources/cm502_header.png" width="100%" /> <small><br>
+*San Francisco, from California and Powell Street* by Carleton E.
+Watkins (American, 1829–1916) is licensed under
 [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/legalcode)
-</small>
+<br></small>
 
 ## contents
 

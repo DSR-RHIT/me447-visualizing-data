@@ -1,6 +1,12 @@
 make a graph
 ================
 
+<!-- <small><br> -->
+
+<!-- *Ames Iowa Housing*, a parallel-coordinate plot adapted from [Visual data exploration](http://uc-r.github.io/gda) by Bradley Boehmke.  -->
+
+<!-- <br></small> -->
+
 ## contents
 
 [introduction](#introduction)  
