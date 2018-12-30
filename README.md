@@ -64,7 +64,10 @@ permission
 
 # index
 
-Calendar links organized by topic
+<img src="resources/cm000_index-header.png" width="50%" /> <small><br>
+*Index*, free clip artfrom
+[Clickartstockphotos](http://clipartstockphotos.com/)  
+</small>
 
 ## course
 
