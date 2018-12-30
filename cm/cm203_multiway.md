@@ -69,28 +69,138 @@ Reading a multiway graph
 
 ## explore
 
-Create the R file `practice/dx-graphtype-data-tutorial.R`.
+Create the R file `practice/d2-multiway-metropop-tutorial.R`. Start by
+loading the packages.
 
 ``` r
 library("tidyverse")
 library("graphclassmate")
 ```
 
-We will use the `xxx` data set from xxx. Run `? xxx` to open the help
-page for the data set.
+We are using `metro_pop` data from the graphclassmate package (Layton,
+[2019](#ref-Layton:2019:graphclassmate)). If you want to learn more
+about the data set, open its help page by running `? metro_pop`.
 
 For exploring the data, I assign it a new name, leaving the original
-data frame unaltered.
+data frame unaltered. Using `glimpse()` we find that the data have 60
+observations of 3 variables.
 
 ``` r
 # examine data 
-# explore <- xxx
-# glimpse(explore)
+explore <- metro_pop %>% 
+    glimpse()
+#> Observations: 60
+#> Variables: 3
+#> $ race       <chr> "White", "Latino", "Black", "Asian", "Others", "Whi...
+#> $ county     <chr> "Bronx", "Bronx", "Bronx", "Bronx", "Bronx", "Kings...
+#> $ population <dbl> 194000, 645000, 415000, 38000, 40000, 855000, 48800...
 ```
 
-Summarize data and discuss
+The population count is the quantitative, continuous variable. Its
+statistical range, median, and quartiles are obtained using `summary()`.
+We find a nearly three orders-of-magnitude difference between the
+minimum and maximum values.
 
-Explore graph and discuss
+``` r
+# summarize the quantitative variable 
+explore %>% 
+    select(population) %>% 
+    summary()
+#>    population     
+#>  Min.   :   6000  
+#>  1st Qu.:  38750  
+#>  Median : 125500  
+#>  Mean   : 232517  
+#>  3rd Qu.: 335750  
+#>  Max.   :1118000
+```
+
+For categorical variables, we can see the levels with `unique()`. We
+find that race has 5 levels and county has 12 levels.
+
+``` r
+# unique levels of categorical variables 
+explore %>% 
+    select(race) %>%
+    unique() %>% 
+    arrange(race)
+#> # A tibble: 5 x 1
+#>   race  
+#>   <chr> 
+#> 1 Asian 
+#> 2 Black 
+#> 3 Latino
+#> 4 Others
+#> 5 White
+
+explore %>% 
+    select(county) %>%
+    unique() %>% 
+    arrange(county)
+#> # A tibble: 12 x 1
+#>    county     
+#>    <chr>      
+#>  1 Bergen     
+#>  2 Bronx      
+#>  3 Hudson     
+#>  4 Kings      
+#>  5 Nassau     
+#>  6 New York   
+#>  7 Passiac    
+#>  8 Queens     
+#>  9 Richmond   
+#> 10 Rockland   
+#> 11 Suffolk    
+#> 12 Westchester
+```
+
+The data frame is complete, i.e., a count for every combination of race
+(5 levels) and county (12 levels), with 5 × 12 = 60 observations.
+
+Explore the data graphically. Use a strip plot to examine the
+distribution of population counts.
+
+``` r
+ggplot(explore, aes(x = population, y = race)) +
+  geom_point()
+```
+
+<img src="figures/cm203_metropop-unnamed-chunk-6-1.png" width="70%" />
+
+With the numbers in the hundreds of thousands, let’s divide the
+population by 1000.
+
+``` r
+ggplot(explore, aes(x = population / 1000, y = race)) +
+  geom_point() +
+  scale_x_continuous(breaks = seq(0, 1100, 100))
+```
+
+<img src="figures/cm203_metropop-unnamed-chunk-7-1.png" width="70%" />
+
+When a range of values spans orders of magnitude, a logarithmic scale
+can be useful. I’ll start with a base-10 scale,
+
+``` r
+ggplot(explore, aes(x = population / 1000, y = race)) +
+  geom_point() +
+  scale_x_continuous(trans = 'log10')
+```
+
+<img src="figures/cm203_metropop-unnamed-chunk-8-1.png" width="70%" />
+
+Try base-2. This works for these data. Each grid line represents a
+doubling of the previous grid line.
+
+``` r
+ggplot(explore, aes(x = population / 1000, y = race)) +
+  geom_point() +
+  scale_x_continuous(trans = 'log2')
+```
+
+<img src="figures/cm203_metropop-unnamed-chunk-9-1.png" width="70%" />
+
+Summary: we’ll divide the population by 1000 and use a log-base-2 scale.
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -99,21 +209,28 @@ Explore graph and discuss
 A data carpentry file typically begins by reading the source data file.
 In this case, the data are loaded with the graphclassmate package.
 
-From the exploration, I’ll be using what quantitative, what categorical
+From the exploration, population is the quantitative variable and race
+and county are the two categorical variables. For ordering the rows and
+panels, we’ll want the categories converted to factors and ordered by
+population median.
 
 ``` r
-# carpentry
+# start the carpentry
+data(metro_pop, package = "graphclassmate")
+
+# convert categories to factors orderd by population 
 metro_pop <- metro_pop %>% 
     mutate(county = factor(county)) %>% 
-    mutate(race = factor(race)) %>% 
     mutate(county = fct_reorder(county, population)) %>% 
-    mutate(race   = fct_reorder(race, population))
+    mutate(race = factor(race)) %>% 
+    mutate(race   = fct_reorder(race, population)) %>% 
+    mutate(population = population / 1000)
 ```
 
 A data carpentry file typically concludes by saving the data frame.
 
 ``` r
-# saveRDS(xxx, "data/dx-plot-data.rds")
+saveRDS(metro_pop, "data/d2-multiway-metropop.rds")
 ```
 
 <br> <a href="#top">▲ top of page</a>
@@ -123,76 +240,128 @@ A data carpentry file typically concludes by saving the data frame.
 A graph design file typically starts by reading the tidy data file.
 
 ``` r
-# xxx <- readRDS("data/dx-plot-data.rds") %>%  
-#   glimpse()
+# start the graph design 
+metro_pop <- readRDS("data/d2-multiway-metropop.rds") %>%  
+    glimpse()
+#> Observations: 60
+#> Variables: 3
+#> $ race       <fct> White, Latino, Black, Asian, Others, White, Latino,...
+#> $ county     <fct> Bronx, Bronx, Bronx, Bronx, Bronx, Kings, Kings, Ki...
+#> $ population <dbl> 194, 645, 415, 38, 40, 855, 488, 845, 184, 93, 703,...
 ```
 
-Create the graph design
+Create the basic multiway dot plot. The `as.table = FALSE` argument
+orders the panels like a plot with the highest value at the top-right.
 
 ``` r
-ggplot(metro_pop, aes(x = population / 1000, y = race)) +
-    geom_point(size = 2, shape = 21, color = rcb("dark_BG"), fill = rcb("light_BG")) +
-    facet_wrap(vars(county), ncol = 3, as.table = FALSE) +
-    labs(y = NULL, x = expression(paste("Population (thousands) ", log[2], " scale"))) +
-    scale_x_continuous(trans = 'log2', breaks = 2^seq(2, 10)) +
-    theme_graphclass()
+p <- ggplot(metro_pop, aes(x = population, y = race)) +
+    geom_point() +
+    facet_wrap(vars(county), as.table = FALSE)
+p
 ```
 
-<img src="figures/cm203_metropop-unnamed-chunk-7-1.png" width="70%" />
+<img src="figures/cm203_metropop-unnamed-chunk-13-1.png" width="70%" />
+
+Add the log-base-2 scale
+
+``` r
+p <- p +
+    scale_x_continuous(trans = 'log2', breaks = 2^seq(2, 10))
+p
+```
+
+<img src="figures/cm203_metropop-unnamed-chunk-14-1.png" width="70%" />
+
+Add a theme and labels.
+
+``` r
+p <- p +
+    theme_graphclass() +
+    labs(y = NULL, x = "Population (thousands) log-2 scale")
+p
+```
+
+<img src="figures/cm203_metropop-unnamed-chunk-15-1.png" width="70%" />
+
+Finally, edit `geom_point()` for size and color of the data markers and
+edit `facet_wrap()` to change the number of columns to reduce
+overprinting the scale text.
+
+``` r
+ggplot(metro_pop, aes(x = population, y = race)) +
+    geom_point(size = 2, shape = 21, color = rcb("dark_BG"), fill = rcb("light_BG")) +
+    facet_wrap(vars(county), as.table = FALSE, ncol = 3) +
+    scale_x_continuous(trans = 'log2', breaks = 2^seq(2, 10)) +
+    theme_graphclass() +
+    labs(y = NULL, x = "Population (thousands) log-2 scale")    
+```
+
+<img src="figures/cm203_metropop-unnamed-chunk-16-1.png" width="70%" />
 
 And the figure is ready to save, using width and height to control the
 aspect ratio.
 
 ``` r
 ggsave(filename = "d2-multiway-metropop-01.png",
-             path     = "figures",
-             device   = "png",
-             width    = 8,
-             height   = 5,
-             units    = "in",
-             dpi      = 600
-)
+       path     = "figures",
+       width    = 8,
+       height   = 5.5,
+       units    = "in",
+       dpi      = 300
+       )
 ```
 
-Dual
+In the dual multiway, we swap the rows and panels by setting `y =
+county` and `facet_wrap(vars(race))`.
 
 ``` r
-ggplot(metro_pop, aes(x = population / 1000, y = county)) +
+ggplot(metro_pop, aes(x = population, y = county)) +
     geom_point(size = 2, shape = 21, color = rcb("dark_BG"), fill = rcb("light_BG")) +
-    facet_wrap(vars(race), ncol = 3, as.table = FALSE) +
-    labs(y = NULL, x = expression(paste("Population (thousands) ", log[2], " scale"))) +
+    facet_wrap(vars(race), as.table = FALSE, ncol = 3) +
     scale_x_continuous(trans = 'log2', breaks = 2^seq(2, 10)) +
-    theme_graphclass()
+    theme_graphclass() +
+    labs(y = NULL, x = "Population (thousands) log-2 scale")
 ```
 
-<img src="figures/cm203_metropop-unnamed-chunk-9-1.png" width="70%" />
+<img src="figures/cm203_metropop-unnamed-chunk-18-1.png" width="70%" />
 
-Dual
+And write to file.
 
 ``` r
 ggsave(filename = "d2-multiway-metropop-02.png",
-             path     = "figures",
-             device   = "png",
-             width    = 8,
-             height   = 5,
-             units    = "in",
-             dpi      = 600
-)
+       path     = "figures",
+       width    = 8,
+       height   = 5.5,
+       units    = "in",
+       dpi      = 300
+       )
 ```
 
 <br> <a href="#top">▲ top of page</a>
 
 ## report
 
-In an Rmd report document, we include a code chunk to run the carpentry
-file and the design file using `source()`. (These commands are shown to
-illustrate the process only—we did not create these files for the
-tutorial.)
+In this tutorial, you write all your code in a single R script. However,
+if the graph had been part of your portfolio, the R scripts for
+exploring, data carpentry, and design would have been in separate R
+scripts, as shown below, as would the Rmd file for the report and
+critique,
+
+    # separate files if this graph were a portfolio submission 
+    practice/  d2-multiway-metropop-explore.R
+    carpentry/ d2-multiway-metropop-carpentry.R
+    design/    d2-multiway-metropop-design.R
+    reports/   d2-multiway-metropop.Rmd
+
+In such an Rmd report file, we would include a code chunk to run the
+carpentry file and the design file using `source()`. (These commands are
+shown to illustrate the process only—we did not create these files for
+the tutorial.)
 
 ``` r
 # do not run this code chunk
-# source("carpentry/dx-plot-data-carpentry.R")
-# source("design/dx-plot-data-design.R")
+source("carpentry/d2-multiway-metropop-carpentry.R")
+source("design/d2-multiway-metropop-design.R")
 ```
 
 We import the final figure into the report using
@@ -202,15 +371,17 @@ We import the final figure into the report using
 include_graphics("../figures/d2-multiway-metropop-01.png")
 ```
 
-<img src="../figures/d2-multiway-metropop-01.png" width="100%" />
+<img src="../figures/d2-multiway-metropop-01.png" width="80%" />
 
-Dual
+Import the dual. In the final portfolio, it is possible that only one of
+the two final graphs is shown, depending on which one tells the most
+interesting story.
 
 ``` r
 include_graphics("../figures/d2-multiway-metropop-02.png")
 ```
 
-<img src="../figures/d2-multiway-metropop-02.png" width="100%" />
+<img src="../figures/d2-multiway-metropop-02.png" width="80%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -231,6 +402,14 @@ Create `practice/dx-plot-data-exercise.R`
 <div id="ref-Cleveland:1993">
 
 Cleveland WS (1993) *Visualizing Data.* Hobart Press, Summit, NJ
+
+</div>
+
+<div id="ref-Layton:2019:graphclassmate">
+
+Layton R (2019) *graphclassmate: Companion materials for a course in
+data visualization.* R package version 0.1.0.9000
+<https://github.com/graphdr/graphclassmate>
 
 </div>
 

@@ -14,9 +14,8 @@ BiBTeX logo by Grendelkhan, own work, public domain,
 [books](#books)  
 [in a book](#in-a-book)  
 [in proceedings](#in-proceedings)  
-[web pages](#web-pages)  
-[software](#software)  
-\[sample references\]
+\[web page [software](#software)  
+[references](#references)
 
 ## summary
 

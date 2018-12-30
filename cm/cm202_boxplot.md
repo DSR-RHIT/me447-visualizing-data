@@ -38,7 +38,7 @@ Graph characteristics
   - data can be grouped by one or more categorical variables
   - a horizontal layout can make it easier to read category labels
 
-<img src="../cm/figures/cm202_define-boxplot.png" width="40%" />
+<img src="../resources/cm202_define-boxplot.png" width="40%" />
 
 <br>
 
@@ -62,9 +62,10 @@ with a small range of values (Robbins, [2013](#ref-Robbins:2013), 85).
 Later in the tutorial, we create box plots to visualize the
 `nontraditional` data set (in graphclassmate). The same data in a strip
 plot is shown below—with nearly 270,000 observations over a range of
-roughly 6 years, the strip plot is not visually informative.
+roughly 6 years, the strip plot is not visually
+informative.
 
-<img src="../cm/figures/cm202_why-use-boxplot.png" width="100%" />
+<img src="../resources/cm202_too-much-data-for-strip-plot.png" width="100%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -79,23 +80,26 @@ roughly 6 years, the strip plot is not visually informative.
 
 ## explore
 
-Create the R file `practice/d1-boxplot-nontrad-tutorial.R`.
+Create the R file `practice/d1-boxplot-nontrad-tutorial.R`. Start by
+loading the packages.
 
 ``` r
 library("tidyverse")
 library("graphclassmate")
 ```
 
-We will use the `nontraditional` data set from graphclassmate. Run `?
-nontraditional` to open the help page for the data set.
+We are using `nontraditional` data from the graphclassmate package
+(Layton, [2019](#ref-Layton:2019:graphclassmate)). If you want to learn
+more about the data set, open its help page by running `?
+nontraditional`.
 
 For exploring the data, I assign it a new name, leaving the original
 data frame unaltered.
 
 ``` r
 # examine data 
-explore <- nontraditional
-glimpse(explore)
+explore <- nontraditional %>% 
+    glimpse()
 #> Observations: 269,057
 #> Variables: 5
 #> $ sex      <chr> "Female", "Female", "Male", "Female", "Male", "Female...
@@ -111,36 +115,40 @@ obtained using `summary()`.
 
 ``` r
 # summarize the quantitative variable 
-summary(explore$enrolled)
-#>    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-#>   0.700   3.700   4.000   4.072   4.700   5.700
-```
-
-Sex and path are two categories we might like to examine. Both are
-character variables (`<chr>`) with two levels each.
-
-``` r
-unique(explore$sex)
-#> [1] "Female" "Male"
-unique(explore$path)
-#> [1] "Traditional"    "Nontraditional"
-```
-
-Using `count()` we see that the numbers of observations by sex are
-fairly close and that we have about 3 times as many traditional students
-as nontraditional students.
-
-``` r
 explore %>% 
-    count(path, sex)
-#> # A tibble: 4 x 3
-#>   path           sex         n
-#>   <chr>          <chr>   <int>
-#> 1 Nontraditional Female  27773
-#> 2 Nontraditional Male    30414
-#> 3 Traditional    Female 104688
-#> 4 Traditional    Male   106182
+    select(enrolled) %>% 
+    summary()
+#>     enrolled    
+#>  Min.   :0.700  
+#>  1st Qu.:3.700  
+#>  Median :4.000  
+#>  Mean   :4.072  
+#>  3rd Qu.:4.700  
+#>  Max.   :5.700
 ```
+
+Sex and path are two categories we might like to examine. Each
+observation is a unique person, so we can `count()` them by category,
+yielding the list of levels for both categories as well as how many
+people are in each group.
+
+``` r
+# categorical variables levels and count
+explore %>% 
+    count(sex, path) %>% 
+    arrange(desc(n))
+#> # A tibble: 4 x 3
+#>   sex    path                n
+#>   <chr>  <chr>           <int>
+#> 1 Male   Traditional    106182
+#> 2 Female Traditional    104688
+#> 3 Male   Nontraditional  30414
+#> 4 Female Nontraditional  27773
+```
+
+We see that the numbers of observations by sex are fairly close and that
+we have about 3 times as many traditional students as nontraditional
+students.
 
 For the first box plot, let’s compare traditional to nontraditional
 students. Assigning the quantitative years enrolled to the x-scale, we
@@ -218,7 +226,7 @@ quantitative variable. I’ll create the new categorical variable
 `sex_path` and order it by the years enrolled.
 
 ``` r
-library("graphclassmate")
+data(nontraditional, package = "graphclassmate")
 
 nontrad <- nontraditional %>% 
   mutate(sex_path = str_c(sex, path, sep = " ")) %>% 
@@ -376,23 +384,34 @@ aspect ratio.
 
 ``` r
 ggsave(filename = "d1-boxplot-nontrad.png",
-             path     = "figures",
-             device   = "png",
-             width    = 8,
-             height   = 2.5,
-             units    = "in",
-             dpi      = 600
-)
+       path     = "figures",
+       width    = 8,
+       height   = 2.5,
+       units    = "in",
+       dpi      = 300
+       )
 ```
 
 <br> <a href="#top">▲ top of page</a>
 
 ## report
 
-In an Rmd report document, we include a code chunk to run the carpentry
-file and the design file using `source()`. (These commands are shown to
-illustrate the process only—we did not create these files for the
-tutorial.)
+In this tutorial, you write all your code in a single R script. However,
+if the graph had been part of your portfolio, the R scripts for
+exploring, data carpentry, and design would have been in separate R
+scripts, as shown below, as would the Rmd file for the report and
+critique,
+
+    # separate files if this boxplot were a portfolio submission 
+    practice/  d1-boxplot-nontrad-explore.R
+    carpentry/ d1-boxplot-nontrad-carpentry.R
+    design/    d1-boxplot-nontrad-design.R
+    reports/   d1-boxplot-nontrad.Rmd
+
+In such an Rmd report file, we would include a code chunk to run the
+carpentry file and the design file using `source()`. (These commands are
+shown to illustrate the process only—we did not create these files for
+the tutorial.)
 
 ``` r
 # do not run this code chunk
@@ -400,11 +419,11 @@ source("carpentry/d1-boxplot-nontrad-carpentry.R")
 source("design/d1-boxplot-nontrad-design.R")
 ```
 
-We import the final figure into the report using
+We would import the final figure into the report using
 `knitr::include_graphics()`.
 
 ``` r
-include_graphics("../figures/d1-boxplot-nontrad.png")
+knitr::include_graphics("../figures/d1-boxplot-nontrad.png")
 ```
 
 <img src="../figures/d1-boxplot-nontrad.png" width="100%" />
@@ -455,6 +474,14 @@ diamonds` to open the help page for the data set.
 ## references
 
 <div id="refs">
+
+<div id="ref-Layton:2019:graphclassmate">
+
+Layton R (2019) *graphclassmate: Companion materials for a course in
+data visualization.* R package version 0.1.0.9000
+<https://github.com/graphdr/graphclassmate>
+
+</div>
 
 <div id="ref-Robbins:2013">
 

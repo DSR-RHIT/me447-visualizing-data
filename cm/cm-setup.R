@@ -10,7 +10,7 @@ opts_chunk$set(
 	message   = FALSE,
 	warning   = FALSE,
 	fig.width = 8,
-	fig.asp   = 1 / 2,
+	fig.asp   = 1/2,
 	out.width = "70%",
 	fig.keep = "high"
 )

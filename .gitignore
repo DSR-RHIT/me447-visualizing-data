@@ -2,8 +2,10 @@
 data-raw
 manage
 practice
-print_pages
-student_work
+resources/images
+resources/print_pages
+resources/readings
+resources/student_work
 
 # files
 README.Rmd

@@ -13,7 +13,7 @@ strip plot
 [explore](#explore)  
 [carpentry](#carpentry)  
 [design](#design)  
-[report](#report)  
+[report](#report-1)  
 [exercises](#exercises)  
 [references](#references)
 
@@ -48,16 +48,18 @@ comparing distributions.”
 
 ## prerequisites
 
-  - Assumed [directory structure](cm101_data-lab.md#file-management)  
-  - Packages used: tidyverse, graphclassmate, GDAdata  
-  - Create the file: `practice/d1-stripplot-speedski-tutorial.R`
+  - [directory structure](cm101_data-lab.md#file-management) has been
+    set up  
+  - tidyverse package installed
+  - graphclassmate package installed  
+  - GDAdata package installed
 
 <br> <a href="#top">▲ top of page</a>
 
 ## explore
 
-In `practice/d1-stripplot-speedski-tutorial.R`, start by loading the
-packages.
+Create the R file `practice/d1-stripplot-speedski-tutorial.R`. Start by
+loading the packages.
 
 ``` r
 library("tidyverse")
@@ -65,9 +67,9 @@ library("GDAdata")
 library("graphclassmate")
 ```
 
-We will use the `SpeedSki` data set from GDAdata (Unwin,
-[2015](#ref-Unwin:2015:package)). Run `? SpeedSki` to open the help page
-for the data set.
+We are using `SpeedSki` data from the GDAdata package (Unwin,
+[2015](#ref-Unwin:2015:GDAdata)). If you want to learn more about the
+data set, open its help page by running `? SpeedSki`.
 
 For exploring the data, I assign it a new name, leaving the original
 data frame unaltered.
@@ -98,25 +100,54 @@ statistical range, median, and quartiles are obtained using `summary()`,
 
 ``` r
 # summarize the quantitative variable 
-summary(explore$Speed)
-#>    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-#>   160.2   171.8   183.1   184.1   192.3   211.7
+explore %>% 
+    select(Speed) %>% 
+    summary()
+#>      Speed      
+#>  Min.   :160.2  
+#>  1st Qu.:171.8  
+#>  Median :183.1  
+#>  Mean   :184.1  
+#>  3rd Qu.:192.3  
+#>  Max.   :211.7
 ```
 
-For categorical variables, we can see the levels and count at every
-combination of levels with `count()`.
+Each observation is a unique person, so we can `count()` them by
+category, yielding the list of levels for both categories as well as how
+many people are in each group.
+
+``` r
+# categorical variables levels and count
+explore %>% 
+    count(Sex, Event)
+#> # A tibble: 5 x 3
+#>   Sex    Event                     n
+#>   <fct>  <fct>                 <int>
+#> 1 Female Speed Downhill Junior     5
+#> 2 Female Speed One                 7
+#> 3 Male   Speed Downhill           29
+#> 4 Male   Speed Downhill Junior    11
+#> 5 Male   Speed One                39
+```
+
+Note that there are no women competing in Speed Downhill. It is
+sometimes useful to make such implicit missing values into explicit
+missing values using `complete()`.
 
 ``` r
 explore %>% 
-    count(Event, Sex)
-#> # A tibble: 5 x 3
-#>   Event                 Sex        n
-#>   <fct>                 <fct>  <int>
-#> 1 Speed Downhill        Male      29
-#> 2 Speed Downhill Junior Female     5
-#> 3 Speed Downhill Junior Male      11
-#> 4 Speed One             Female     7
-#> 5 Speed One             Male      39
+    count(Sex, Event) %>% 
+    complete(Sex, Event, fill = list(n = 0)) %>% 
+    arrange(desc(n))
+#> # A tibble: 6 x 3
+#>   Sex    Event                     n
+#>   <fct>  <fct>                 <dbl>
+#> 1 Male   Speed One                39
+#> 2 Male   Speed Downhill           29
+#> 3 Male   Speed Downhill Junior    11
+#> 4 Female Speed One                 7
+#> 5 Female Speed Downhill Junior     5
+#> 6 Female Speed Downhill            0
 ```
 
 For our first graph of the data, we’ll look at the distribution of
@@ -218,7 +249,8 @@ A data carpentry file typically begins by reading the source data file.
 In this case, the data are loaded with the GDAdata package.
 
 ``` r
-library("GDAdata")
+# start the carpentry
+data(SpeedSki, package = "GDAdata")
 ```
 
 For data carpentry, I assign a new name, leaving the original data frame
@@ -392,10 +424,24 @@ ggsave(filename = "d1-stripplot-speedski.png",
 
 ## report
 
-In an Rmd report document, we include a code chunk to run the carpentry
-file and the design file using `source()`. (These commands are shown to
-illustrate the process only—we did not create these files for the
-tutorial.)
+## report
+
+In this tutorial, you write all your code in a single R script. However,
+if the graph had been part of your portfolio, the R scripts for
+exploring, data carpentry, and design would have been in separate R
+scripts, as shown below, as would the Rmd file for the report and
+critique,
+
+    # separate files if this graph were a portfolio submission 
+    practice/  d1-stripplot-speedski-practice.R
+    carpentry/ d1-stripplot-speedski-carpentry.R
+    design/    d1-stripplot-speedski-design.R
+    reports/   d2-stripplot-speedski.Rmd
+
+In such an Rmd report file, we would include a code chunk to run the
+carpentry file and the design file using `source()`. (These commands are
+shown to illustrate the process only—we did not create these files for
+the tutorial.)
 
 ``` r
 # do not run this code chunk
@@ -463,7 +509,7 @@ NJ
 
 </div>
 
-<div id="ref-Unwin:2015:package">
+<div id="ref-Unwin:2015:GDAdata">
 
 Unwin A (2015) *GDAdata: Datasets for the book Graphical Data Analysis
 with R.* R package version 0.93

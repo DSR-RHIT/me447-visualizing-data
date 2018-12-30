@@ -3,12 +3,12 @@ library("graphclassmate")
 
 nontrad <- readRDS("data/d1-boxplot-nontrad.rds")
 
-
 nontrad2 <- nontrad %>%
 	group_by(sex_path) %>%
 	mutate(outlier = enrolled < median(enrolled) - IQR(enrolled) * 1.5) %>%
 	ungroup()
 
+# for the cm web page
 ggplot(nontrad2, aes(y = enrolled, x = sex_path, color = path, fill = path))+
 	geom_boxplot(width = 0.45, alpha = 0.75, outlier.shape = NA) +
 	coord_flip() +
@@ -23,17 +23,15 @@ ggplot(nontrad2, aes(y = enrolled, x = sex_path, color = path, fill = path))+
 		dplyr::filter_(x, ~outlier),
 		width = 0.05, height = 0.2, alpha = 0.25, shape = 21)
 
-# this one is sized for the cm webpage
 ggsave(filename = "d1-boxplot-nontrad.png",
 			 path     = "figures",
-			 device   = "png",
 			 width    = 8,
 			 height   = 2.5,
 			 units    = "in",
-			 dpi      = 600
+			 dpi      = 300
 )
 
-
+# for the slides
 ggplot(nontrad2, aes(y = enrolled, x = sex_path, color = path, fill = path))+
 	geom_boxplot(width = 0.45, alpha = 0.75, outlier.shape = NA) +
 	coord_flip() +
@@ -47,13 +45,8 @@ ggplot(nontrad2, aes(y = enrolled, x = sex_path, color = path, fill = path))+
 		dplyr::filter_(x, ~outlier),
 		width = 0.05, height = 0.2, alpha = 0.25, shape = 21)
 
-
-
-
-# this first one is sized for slides
 ggsave(filename = "d1-boxplot-nontrad-slides.png",
 			 path     = "slides",
-			 device   = "png",
 			 width    = 5,
 			 height   = 2.5,
 			 units    = "in",
