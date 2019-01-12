@@ -74,20 +74,21 @@ data frame unaltered.
 
 ``` r
 explore <- SpeedSki %>% 
-    glimpse()
-#> Observations: 91
-#> Variables: 10
-#> $ Rank       <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, ...
-#> $ Bib        <int> 61, 59, 66, 57, 69, 75, 67, 58, 62, 56, 81, 80, 93,...
-#> $ FIS.Code   <int> 7039, 7078, 190130, 7178, 510089, 7204, 7053, 7170,...
-#> $ Name       <fct> ORIGONE Simone, ORIGONE Ivan, MONTES Bastien, SCHRO...
-#> $ Year       <int> 1979, 1987, 1985, 1979, 1970, 1993, 1975, 1991, 198...
-#> $ Nation     <fct> ITA, ITA, FRA, AUT, SUI, FRA, SWE, FRA, CZE, SWE, P...
-#> $ Speed      <dbl> 211.67, 209.70, 209.69, 209.67, 209.19, 208.33, 208...
-#> $ Sex        <fct> Male, Male, Male, Male, Male, Male, Male, Male, Mal...
-#> $ Event      <fct> Speed One, Speed One, Speed One, Speed One, Speed O...
-#> $ no.of.runs <int> 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, ...
+        glimpse()
 ```
+
+    #> Observations: 91
+    #> Variables: 10
+    #> $ Rank       <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, ...
+    #> $ Bib        <int> 61, 59, 66, 57, 69, 75, 67, 58, 62, 56, 81, 80, 93,...
+    #> $ FIS.Code   <int> 7039, 7078, 190130, 7178, 510089, 7204, 7053, 7170,...
+    #> $ Name       <fct> ORIGONE Simone, ORIGONE Ivan, MONTES Bastien, SCHRO...
+    #> $ Year       <int> 1979, 1987, 1985, 1979, 1970, 1993, 1975, 1991, 198...
+    #> $ Nation     <fct> ITA, ITA, FRA, AUT, SUI, FRA, SWE, FRA, CZE, SWE, P...
+    #> $ Speed      <dbl> 211.67, 209.70, 209.69, 209.67, 209.19, 208.33, 208...
+    #> $ Sex        <fct> Male, Male, Male, Male, Male, Male, Male, Male, Mal...
+    #> $ Event      <fct> Speed One, Speed One, Speed One, Speed One, Speed O...
+    #> $ no.of.runs <int> 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, ...
 
 The data set has 91 observations. The variables of interest are `Speed`,
 `Sex`, and `Event`. Speed is numeric (`<dbl>`) and sex and event are
@@ -99,16 +100,17 @@ statistical range, median, and quartiles are obtained using `summary()`,
 ``` r
 # summarize the quantitative variable 
 explore %>% 
-    select(Speed) %>% 
-    summary()
-#>      Speed      
-#>  Min.   :160.2  
-#>  1st Qu.:171.8  
-#>  Median :183.1  
-#>  Mean   :184.1  
-#>  3rd Qu.:192.3  
-#>  Max.   :211.7
+        select(Speed) %>% 
+        summary()
 ```
+
+    #>      Speed      
+    #>  Min.   :160.2  
+    #>  1st Qu.:171.8  
+    #>  Median :183.1  
+    #>  Mean   :184.1  
+    #>  3rd Qu.:192.3  
+    #>  Max.   :211.7
 
 Each observation is a unique person, so we can `count()` them by
 category, yielding the list of levels for both categories as well as how
@@ -116,17 +118,17 @@ many people are in each group.
 
 ``` r
 # categorical variables levels and count
-explore %>% 
-    count(Sex, Event)
-#> # A tibble: 5 x 3
-#>   Sex    Event                     n
-#>   <fct>  <fct>                 <int>
-#> 1 Female Speed Downhill Junior     5
-#> 2 Female Speed One                 7
-#> 3 Male   Speed Downhill           29
-#> 4 Male   Speed Downhill Junior    11
-#> 5 Male   Speed One                39
+explore %>% count(Sex, Event)
 ```
+
+    #> # A tibble: 5 x 3
+    #>   Sex    Event                     n
+    #>   <fct>  <fct>                 <int>
+    #> 1 Female Speed Downhill Junior     5
+    #> 2 Female Speed One                 7
+    #> 3 Male   Speed Downhill           29
+    #> 4 Male   Speed Downhill Junior    11
+    #> 5 Male   Speed One                39
 
 Note that there are no women competing in Speed Downhill. It is
 sometimes useful to make such implicit missing values into explicit
@@ -134,19 +136,20 @@ missing values using `complete()`.
 
 ``` r
 explore %>% 
-    count(Sex, Event) %>% 
-    complete(Sex, Event, fill = list(n = 0)) %>% 
-    arrange(desc(n))
-#> # A tibble: 6 x 3
-#>   Sex    Event                     n
-#>   <fct>  <fct>                 <dbl>
-#> 1 Male   Speed One                39
-#> 2 Male   Speed Downhill           29
-#> 3 Male   Speed Downhill Junior    11
-#> 4 Female Speed One                 7
-#> 5 Female Speed Downhill Junior     5
-#> 6 Female Speed Downhill            0
+        count(Sex, Event) %>% 
+        complete(Sex, Event, fill = list(n = 0)) %>% 
+        arrange(desc(n))
 ```
+
+    #> # A tibble: 6 x 3
+    #>   Sex    Event                     n
+    #>   <fct>  <fct>                 <dbl>
+    #> 1 Male   Speed One                39
+    #> 2 Male   Speed Downhill           29
+    #> 3 Male   Speed Downhill Junior    11
+    #> 4 Female Speed One                 7
+    #> 5 Female Speed Downhill Junior     5
+    #> 6 Female Speed Downhill            0
 
 For our first graph of the data, we’ll look at the distribution of
 speeds for all events. We don’t have a variable for “all events” so we
@@ -154,8 +157,8 @@ can add one,
 
 ``` r
 # add a new category with one level
-explore <- explore %>%
-    mutate(allevents = "All events")
+explore <- explore %>% 
+        mutate(allevents = "All events")
 ```
 
 Now we can plot using `x = Speed, y = allevents`.
@@ -163,10 +166,10 @@ Now we can plot using `x = Speed, y = allevents`.
 ``` r
 # examine the full distribution 
 ggplot(explore, aes(x = Speed, y = allevents)) +
-    geom_point()
+        geom_point()
 ```
 
-<img src="images/cm202-speedski-explore-1-1.png" width="70%" />
+<img src="images/cm202-speedski-explore-07-1.png" width="90%" />
 
 We reduce the amount of overprinting by replacing `geom_point()` with
 `geom_jitter()`. So that subsequent data markers appear in the same
@@ -176,10 +179,10 @@ jittered locations we set the random number seed as well.
 # full distribution, jittered
 set.seed(20181216)
 ggplot(explore, aes(x = Speed, y = allevents)) +
-    geom_jitter(width = 0, height = 0.1)
+        geom_jitter(width = 0, height = 0.1)
 ```
 
-<img src="images/cm202-speedski-explore-2-1.png" width="70%" />
+<img src="images/cm202-speedski-explore-08-1.png" width="90%" />
 
 One approach to grouping data is by adding a color argument to the main
 `aes()` function. For example, adding the argument `color = Event` shows
@@ -188,10 +191,10 @@ that the Speed One event has the largest number of competitors.
 ``` r
 # group by event
 ggplot(explore, aes(x = Speed, y = allevents, color = Event)) +
-    geom_jitter(width = 0, height = 0.1) 
+        geom_jitter(width = 0, height = 0.1) 
 ```
 
-<img src="images/cm202-speedski-explore-3-1.png" width="70%" />
+<img src="images/cm202-speedski-explore-09-1.png" width="90%" />
 
 Changing the grouping to `color = Sex` shows that men significantly
 outnumber women.
@@ -199,10 +202,10 @@ outnumber women.
 ``` r
 # group by sex
 ggplot(explore, aes(x = Speed, y = allevents, color = Sex)) +
-    geom_jitter(width = 0, height = 0.1) 
+        geom_jitter(width = 0, height = 0.1) 
 ```
 
-<img src="images/cm202-speedski-explore-4-1.png" width="70%" />
+<img src="images/cm202-speedski-explore-10-1.png" width="90%" />
 
 We have two categorical variables however, so assigning one to the
 y-variable and one to the color argument may be more informative. For
@@ -212,10 +215,10 @@ outnumber women and that women competed in only two of the three events.
 ``` r
 # group by sex and event, with sex on the rows
 ggplot(SpeedSki, aes(x = Speed, y = Sex, color = Event)) +
-    geom_jitter(width = 0, height = 0.1) 
+        geom_jitter(width = 0, height = 0.1) 
 ```
 
-<img src="images/cm202-speedski-explore-5-1.png" width="70%" />
+<img src="images/cm202-speedski-explore-11-1.png" width="90%" />
 
 Swapping the category assignments to `y = Event` and `color = Sex`
 yields a display that tells (perhaps) the most interesting story.
@@ -223,10 +226,10 @@ yields a display that tells (perhaps) the most interesting story.
 ``` r
 # with event on the rows
 ggplot(SpeedSki, aes(x = Speed, y = Event, color = Sex)) +
-    geom_jitter(width = 0, height = 0.1)
+        geom_jitter(width = 0, height = 0.1)
 ```
 
-<img src="images/cm202-speedski-explore-6-1.png" width="70%" />
+<img src="images/cm202-speedski-explore-12-1.png" width="90%" />
 
 We see here that
 
@@ -268,8 +271,8 @@ Select speed, event, and sex. Convert to a tibble.
 # select only the variables I need
 # use tibble for consistency through entire project
 speed_ski <- speed_ski %>% 
-    select(Event, Sex, Speed) %>% 
-    as_tibble()
+        select(Event, Sex, Speed) %>% 
+        as_tibble()
 ```
 
 This data set is already tidy, but I prefer lower case variable names,
@@ -277,14 +280,15 @@ This data set is already tidy, but I prefer lower case variable names,
 ``` r
 # prefer lowercase variable names
 speed_ski <- speed_ski %>%
-    rename(event = Event, sex = Sex, speed = Speed) %>% 
-    glimpse()
-#> Observations: 91
-#> Variables: 3
-#> $ event <fct> Speed One, Speed One, Speed One, Speed One, Speed One, S...
-#> $ sex   <fct> Male, Male, Male, Male, Male, Male, Male, Male, Male, Ma...
-#> $ speed <dbl> 211.67, 209.70, 209.69, 209.67, 209.19, 208.33, 208.03, ...
+        rename(event = Event, sex = Sex, speed = Speed) %>% 
+        glimpse()
 ```
+
+    #> Observations: 91
+    #> Variables: 3
+    #> $ event <fct> Speed One, Speed One, Speed One, Speed One, Speed One, S...
+    #> $ sex   <fct> Male, Male, Male, Male, Male, Male, Male, Male, Male, Ma...
+    #> $ speed <dbl> 211.67, 209.70, 209.69, 209.67, 209.19, 208.33, 208.03, ...
 
 From the exploration, I know I’ll want to order the event levels by the
 median speeds, so I convert event to a factor and order its levels by
@@ -293,8 +297,8 @@ speed.
 ``` r
 # factors for ordering data 
 speed_ski <- speed_ski %>% 
-    mutate(event = as_factor(event)) %>% 
-    mutate(event = fct_reorder(event, speed))
+        mutate(event = as_factor(event)) %>% 
+        mutate(event = fct_reorder(event, speed))
 ```
 
 A data carpentry file typically concludes by saving the data frame.
@@ -320,35 +324,36 @@ A design file typically starts by reading the tidy data file.
 
 ``` r
 speed_ski <- readRDS("data/0302-strip-plot-speedski-data.rds") %>% 
-    glimpse()
-#> Observations: 91
-#> Variables: 3
-#> $ event <fct> Speed One, Speed One, Speed One, Speed One, Speed One, S...
-#> $ sex   <fct> Male, Male, Male, Male, Male, Male, Male, Male, Male, Ma...
-#> $ speed <dbl> 211.67, 209.70, 209.69, 209.67, 209.19, 208.33, 208.03, ...
+        glimpse()
 ```
+
+    #> Observations: 91
+    #> Variables: 3
+    #> $ event <fct> Speed One, Speed One, Speed One, Speed One, Speed One, S...
+    #> $ sex   <fct> Male, Male, Male, Male, Male, Male, Male, Male, Male, Ma...
+    #> $ speed <dbl> 211.67, 209.70, 209.69, 209.67, 209.19, 208.33, 208.03, ...
 
 Draw the graph with the reordered event levels and the data increases
 from left to right and from bottom to top.
 
 ``` r
 p <- ggplot(speed_ski, aes(x = speed, y = event, color = sex)) +
-    geom_jitter(width = 0, height = 0.1)
+        geom_jitter(width = 0, height = 0.1)
 p
 ```
 
-<img src="images/cm202-speedski-design-1-1.png" width="70%" />
+<img src="images/cm202-speedski-design-03-1.png" width="90%" />
 
 For formatting the graph, the `theme_graphclass()` is a good starting
 point.
 
 ``` r
 p <- p + 
-    theme_graphclass()
+        theme_graphclass()
 p
 ```
 
-<img src="images/cm202-speedski-design-2-1.png" width="70%" />
+<img src="images/cm202-speedski-design-04-1.png" width="90%" />
 
 To manually control the data marker color, we use
 `ggplot2::scale_color_manual()`. We are also using the
@@ -356,12 +361,12 @@ To manually control the data marker color, we use
 from the RColorBrewer package.
 
 ``` r
-p <- p +
-    scale_color_manual(values = c(rcb("dark_BG"), rcb("dark_Br")))
+p <- p + 
+        scale_color_manual(values = c(rcb("dark_BG"), rcb("dark_Br")))
 p
 ```
 
-<img src="images/cm202-speedski-design-3-1.png" width="70%" />
+<img src="images/cm202-speedski-design-05-1.png" width="90%" />
 
 We can assign a separate fill color to a data marker by using `shape
 = 21`, adding `fill = sex` to the `aes()` function, then using
@@ -371,14 +376,14 @@ layer,
 
 ``` r
 p <- ggplot(speed_ski, aes(x = speed, y = event, color = sex, fill = sex)) +
-    geom_jitter(width = 0, height = 0.1, shape = 21) +
-    theme_graphclass() +
-    scale_color_manual(values = c(rcb("dark_BG"), rcb("dark_Br"))) +
-    scale_fill_manual(values = c(rcb("mid_BG"), rcb("mid_Br")))
+        geom_jitter(width = 0, height = 0.1, shape = 21) +
+        theme_graphclass() +
+        scale_color_manual(values = c(rcb("dark_BG"), rcb("dark_Br"))) +
+        scale_fill_manual(values = c(rcb("mid_BG"), rcb("mid_Br")))
 p
 ```
 
-<img src="images/cm202-speedski-design-4-1.png" width="70%" />
+<img src="images/cm202-speedski-design-06-1.png" width="90%" />
 
 We can edit the data markers further by adding a `size` and `alpha`
 argument to
@@ -386,14 +391,14 @@ argument to
 
 ``` r
 p <- ggplot(speed_ski, aes(x = speed, y = event, color = sex, fill = sex)) +
-    geom_jitter(width = 0, height = 0.1, shape = 21, size = 2, alpha = 0.7) +
-    theme_graphclass() +
-    scale_color_manual(values = c(rcb("dark_BG"), rcb("dark_Br"))) +
-    scale_fill_manual(values = c(rcb("mid_BG"), rcb("mid_Br")))
+        geom_jitter(width = 0, height = 0.1, shape = 21, size = 2, alpha = 0.7) +
+        theme_graphclass() +
+        scale_color_manual(values = c(rcb("dark_BG"), rcb("dark_Br"))) +
+        scale_fill_manual(values = c(rcb("mid_BG"), rcb("mid_Br")))
 p
 ```
 
-<img src="images/cm202-speedski-design-5-1.png" width="70%" />
+<img src="images/cm202-speedski-design-07-1.png" width="90%" />
 
 We can label the data directly using `geom_text()`, manually selecting
 the coordinates of the text and matching the text color by sex. Then the
@@ -401,15 +406,15 @@ legend can be omitted using the `legend.position` argument. We can also
 edit the axis labels.
 
 ``` r
-p <- p +
-    geom_text(aes(x = 200, y = 2.7, label = "women"), color = rcb("mid_BG")) +
-    geom_text(aes(x = 210, y = 2.7, label = "men"), color = rcb("mid_Br")) +
-    theme(legend.position = "none")  +
-    labs(x = "Speed (km/hr)", y = "") 
+p <- p + 
+        geom_text(aes(x = 200, y = 2.7, label = "women"), color = rcb("mid_BG")) +
+        geom_text(aes(x = 210, y = 2.7, label = "men"), color = rcb("mid_Br")) +
+        theme(legend.position = "none")  +
+        labs(x = "Speed (km/hr)", y = "") 
 p
 ```
 
-<img src="images/cm202-speedski-design-6-1.png" width="70%" />
+<img src="images/cm202-speedski-design-08-1.png" width="90%" />
 
 A design file typically concludes by saving the graph to the `figures/`
 directory. Using `ggsave()` to control the figure dimensions, we can
@@ -417,26 +422,25 @@ control the aspect ratio and dpi to produce the final version.
 
 ``` r
 ggsave(filename = "0302-strip-plot-speedski.png",
-       path     = "figures",
-       device   = "png",
-       width    = 8,
-       height   = 2.5,
-       units    = "in",
-       dpi      = 600)
+        path    = "figures",
+        device  = "png",
+        width   = 8,
+        height  = 2.5,
+        units   = "in",
+        dpi     = 600)
 ```
 
 <br> <a href="#top">▲ top of page</a>
 
 ## report
 
-If we were to include this graph in a report, the Rmd script would
-include a `knitr::include_graphics()` function
+If we were to include this graph in a report, we would insert the
+following code chunk in the Rmd script.
 
-``` r
-knitr::include_graphics("../figures/0302-strip-plot-speedski.png")
-```
-
-<img src="../figures/0302-strip-plot-speedski.png" width="100%" />
+    ```{r}
+    library("knitr")
+    include_graphics("../figures/0302-strip-plot-speedski.png")
+    ```
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -444,49 +448,46 @@ knitr::include_graphics("../figures/0302-strip-plot-speedski.png")
 
 **1. Museum exhibits**
 
-Create `explore/0303-boxplot-museum-explore.R`
+  - Data: `museum_exhibits` from the graphclassmate package. If you want
+    to learn more about the data set, open its help page by running `?
+    graphclassmate::museum_exhibits`.
 
-  - Use the explore script to examine the `museum_exhibits` data from
-    the graphclassmate package. Explore the data, identify the number,
-    type, and levels of variables, create exploratory graphs to compare
-    distributions
+  - Explore: Create `explore/0303-strip-plot-museum-explore.R` to
+    explore the data, identify the number, type, and levels of
+    variables, and create exploratory graphs to compare distributions.
 
-Create `carpentry/0303-strip-plot-museum-data.R`
+  - Carpentry: Create `carpentry/0303-strip-plot-museum-data.R` to
+    create a tidy data frame, make the appropriate categorical variable
+    a factor, and order its levels. Save to
+    `data/0303-strip-plot-museum-data.rds`.
 
-  - Use the carpentry script to create a tidy data frame, make the
-    appropriate categorical variable a factor, and order its levels.
-    Save to `data/0303-strip-plot-museum-data.rds`
-
-Create `design/0303-strip-plot-museum.R`
-
-  - Use the design script to read the tidy data, create the final graph
-    with ordered rows, use `theme_graphclass()`, edit axis labels, and
-    add additional formatting you think suitable for publication. Save
-    it to `figures/0303-strip-plot-museum.png`
+  - Design: Create `design/0303-strip-plot-museum.R` to read the tidy
+    data, create the final graph with ordered rows, use
+    `theme_graphclass()`, edit axis labels, and add additional
+    formatting you think suitable for publication. Save it to
+    `figures/0303-strip-plot-museum.png`.
 
 **2. Ozone readings**
 
-Create `explore/0304-strip-plot-ozone-explore.R`
+  - Data: `airquality` in base R. If you want to learn more about the
+    data set, open its help page by running `? airquality`.
 
-  - Use the explore script to examine the `airquality` data in base R.
-    Explore the ozone readings using month as the categorical variable,
-    identify the number, type, and levels of variables, create
-    exploratory graphs to compare distributions
+  - Explore: Create `explore/0304-strip-plot-ozone-explore.R` to examine
+    the data. Explore the ozone readings using month as the categorical
+    variable, identify the number, type, and levels of variables, create
+    exploratory graphs to compare distributions.
 
-Create `carpentry/0304-strip-plot-ozone-data.R`
+  - Carpentry: Create `carpentry/0304-strip-plot-ozone-data.R` to create
+    a tidy data frame, make the appropriate categorical variable a
+    factor, and order its levels. Save to
+    `data/0304-strip-plot-ozone-data.rds`.
 
-  - Use the carpentry script to create a tidy data frame, make the
-    appropriate categorical variable a factor, and order its levels.
-    Save to `data/0304-strip-plot-ozone-data.rds`
-
-Create `design/0304-strip-plot-ozone.R`
-
-  - As a time series, we would conventionally assign months to the
-    x-scale and ozone measurements to the y-scale. Use the design script
-    to read the tidy data, create the final graph, use
-    `theme_graphclass()`, edit axis labels, and add additional
-    formatting you think suitable for publication. Save it to
-    `figures/0304-strip-plot-ozone.png`
+  - Design: Create `design/0304-strip-plot-ozone.R`. As a time series,
+    we would conventionally assign months to the x-scale and ozone
+    measurements to the y-scale. Use the design script to read the tidy
+    data, create the final graph, use `theme_graphclass()`, edit axis
+    labels, and add additional formatting you think suitable for
+    publication. Save it to `figures/0304-strip-plot-ozone.png`.
 
 ## references
 
