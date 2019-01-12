@@ -2,9 +2,9 @@ R markdown basics
 ================
 
 <img src="../resources/cm305-report-rmd-basics-header.png" width="100%" />
-<small><br> *R Markdown flow* by RStudio from the [R Markdown quick
-tour](https://rmarkdown.rstudio.com/authoring_quick_tour.html). Our
-final documents are the portfolio reports on GitHub <br></small>
+<small> <br> <i>R Markdown flow</i> by RStudio from the
+<a href="https://rmarkdown.rstudio.com/authoring_quick_tour.html">R
+Markdown quick tour</a>. <br> </small>
 
 ## contents
 

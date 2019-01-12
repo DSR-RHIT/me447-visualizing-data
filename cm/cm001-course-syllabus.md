@@ -2,8 +2,9 @@ syllabus
 ================
 
 <img src="../resources/cm001-syllabus-header.png" width="100%" />
-<small><br><i>Syllabusing</i>by Raul P (cropped) is licensed under [CC
-BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)<br></small>
+<small> <br> <i>Syllabusing</i>by Raul P (cropped) is licensed under
+<a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY-NC-ND
+2.0</a> <br> </small>
 
 ## contents
 

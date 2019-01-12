@@ -2,8 +2,9 @@ managing files
 ================
 
 <img src="../resources/cm501-proj-m-manage-files-header.png" width="100%" />
-<small><br><i>Files</i> by Mitch Barrie is licensed under [CC
-BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)<br></small>
+<small> <br> <i>Files</i> by Mitch Barrie is licensed under
+<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA
+2.0</a> <br> </small>
 
 ## contents
 

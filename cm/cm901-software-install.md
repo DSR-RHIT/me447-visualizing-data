@@ -2,9 +2,9 @@ install software
 ================
 
 <img src="../resources/cm901-software-install-header.png" width="100%" />
-<small><br><i>Computer Code Fabric</i> by Colleen Greene is licensed
-under [CC
-BY-NC-SA 2.0](https://creativecommons.org/licenses/by-nc-sa/2.0/)<br></small>
+<small> <br> <i>Computer Code Fabric</i> by Colleen Greene is licensed
+under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC
+BY-NC-SA 2.0</a> <br> </small>
 
 ## contents
 

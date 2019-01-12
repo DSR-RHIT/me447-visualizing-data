@@ -2,9 +2,9 @@ about the course
 ================
 
 <img src="../resources/cm002-course-about-header-manual-crop.png" width="100%" />
-<small><br><i>Ames Iowa Housing</i>, a parallel-coordinate plot adapted
-from <a href="https://uc-r.github.io/gda">Visual data exploration</a> by
-Bradley Boehmke. <br></small>
+<small> <br> <i>Ames Iowa Housing</i>, a parallel-coordinate plot
+adapted from <a href="https://uc-r.github.io/gda">Visual data
+exploration</a> by Bradley Boehmke. <br> </small>
 
 ## contents
 

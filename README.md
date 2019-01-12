@@ -6,8 +6,8 @@ Rose-Hulman Institute of Technology.
 
 <img src="resources/header-readme.png" width="50%" />
 
-  - [About the course](cm/cm000_course_about.md#about-the-course)
-  - [Syllabus](cm/cm001_course_syllabus.md#syllabus)
+  - [About the course](cm/cm002-ourse-about.md#about-the-course)
+  - [Syllabus](cm/cm001-course-syllabus.md#syllabus)
   - [Index](#index)
   - Help links[](cm/admin-04_getting-help.md)  
   - [License](LICENSE.md#licenses)
@@ -66,10 +66,10 @@ permission
 
 # index
 
-<img src="resources/cm000_index-header.png" width="50%" /> <small><br>
-<i>Index</i>, free clip artfrom
-[Clickartstockphotos](http://clipartstockphotos.com/)  
-</small>
+<img src="resources/cm000-course-index-header.png" width="50%" />
+<small><br> <i>Index</i>, free clip art from
+<a href="http://clipartstockphotos.com/">Clickartstockphotos</a>
+<br><br></small>
 
 [course management](#course-management)  
 [data](#data)  

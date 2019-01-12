@@ -1,9 +1,10 @@
 document design
 ================
 
-<img src="../resources/cm304_header.png" width="100%" />
-<small><br><i>Wood and metal type<i/> licensed under [CC
-BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)<br></small>
+<img src="../resources/cm304_header.png" width="100%" /> <small> <br>
+<i>Wood and metal type</i> licensed under
+<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA
+2.0</a> <br> </small>
 
 Document design, whether for the printed page or the Internet, is a
 highly personal matter of taste and purpose. Here I give some general
