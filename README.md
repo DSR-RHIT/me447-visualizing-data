@@ -67,9 +67,8 @@ permission
 # index
 
 <img src="resources/cm000-course-index-header.png" width="50%" />
-<small><br> <i>Index</i>, free clip art from
-<a href="http://clipartstockphotos.com/">Clickartstockphotos</a>
-<br><br></small>
+<small><br><i>Index</i>, free clip art from
+<a href="http://clipartstockphotos.com/">Clickartstockphotos</a><br><br></small>
 
 [course management](#course-management)  
 [data](#data)  
