@@ -14,3 +14,9 @@ opts_chunk$set(
 	out.width = "70%",
 	fig.keep = "high"
 )
+
+# for writing about code chunks
+chunk  <- "```"
+yaml   <- "---"
+inline <- function(x = "") paste0("`` `r ", x, "` ``")
+inline_yaml <- function(x = "") paste0("`r ", x, "`")
