@@ -427,7 +427,7 @@ ggsave(filename = "0302-strip-plot-speedski.png",
         width   = 8,
         height  = 2.5,
         units   = "in",
-        dpi     = 600)
+        dpi     = 300)
 ```
 
 <br> <a href="#top">▲ top of page</a>

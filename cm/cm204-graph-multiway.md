@@ -57,12 +57,21 @@ Reading a multiway graph
 
 ## prerequisites
 
-  - Start every work session by launching `portfolio.Rproj`  
-  - Your [project directory
+Project setup
+
+  - Start every work session by launching the RStudio Project file for
+    the course, e.g., `portfolio.Rproj`  
+  - Ensure your [project directory
     structure](cm501-proj-m-manage-files.md#plan-the-directory-structure)
-    satisfies the course requirements  
-  - tidyverse package installed
-  - graphclassmate package installed
+    satisfies the course requirements
+
+Packages: Ensure you have installed the following packages. Eee [install
+packages](cm902-software-studio.md#install-packages) for instructions if
+needed.
+
+  - tidyverse  
+  - graphclassmate  
+  - vcdExtra
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -88,12 +97,13 @@ observations of 3 variables.
 # examine data 
 explore <- metro_pop %>% 
     glimpse()
-#> Observations: 60
-#> Variables: 3
-#> $ race       <chr> "White", "Latino", "Black", "Asian", "Others", "Whi...
-#> $ county     <chr> "Bronx", "Bronx", "Bronx", "Bronx", "Bronx", "Kings...
-#> $ population <dbl> 194000, 645000, 415000, 38000, 40000, 855000, 48800...
 ```
+
+    #> Observations: 60
+    #> Variables: 3
+    #> $ race       <chr> "White", "Latino", "Black", "Asian", "Others", "Whi...
+    #> $ county     <chr> "Bronx", "Bronx", "Bronx", "Bronx", "Bronx", "Kings...
+    #> $ population <dbl> 194000, 645000, 415000, 38000, 40000, 855000, 48800...
 
 The population count is the quantitative, continuous variable. Its
 statistical range, median, and quartiles are obtained using `summary()`.
@@ -105,14 +115,15 @@ minimum and maximum values.
 explore %>% 
     select(population) %>% 
     summary()
-#>    population     
-#>  Min.   :   6000  
-#>  1st Qu.:  38750  
-#>  Median : 125500  
-#>  Mean   : 232517  
-#>  3rd Qu.: 335750  
-#>  Max.   :1118000
 ```
+
+    #>    population     
+    #>  Min.   :   6000  
+    #>  1st Qu.:  38750  
+    #>  Median : 125500  
+    #>  Mean   : 232517  
+    #>  3rd Qu.: 335750  
+    #>  Max.   :1118000
 
 For categorical variables, we can see the levels with `unique()`. We
 find that race has 5 levels and county has 12 levels.
@@ -123,35 +134,39 @@ explore %>%
     select(race) %>%
     unique() %>% 
     arrange(race)
-#> # A tibble: 5 x 1
-#>   race  
-#>   <chr> 
-#> 1 Asian 
-#> 2 Black 
-#> 3 Latino
-#> 4 Others
-#> 5 White
+```
 
+    #> # A tibble: 5 x 1
+    #>   race  
+    #>   <chr> 
+    #> 1 Asian 
+    #> 2 Black 
+    #> 3 Latino
+    #> 4 Others
+    #> 5 White
+
+``` r
 explore %>% 
     select(county) %>%
     unique() %>% 
     arrange(county)
-#> # A tibble: 12 x 1
-#>    county     
-#>    <chr>      
-#>  1 Bergen     
-#>  2 Bronx      
-#>  3 Hudson     
-#>  4 Kings      
-#>  5 Nassau     
-#>  6 New York   
-#>  7 Passiac    
-#>  8 Queens     
-#>  9 Richmond   
-#> 10 Rockland   
-#> 11 Suffolk    
-#> 12 Westchester
 ```
+
+    #> # A tibble: 12 x 1
+    #>    county     
+    #>    <chr>      
+    #>  1 Bergen     
+    #>  2 Bronx      
+    #>  3 Hudson     
+    #>  4 Kings      
+    #>  5 Nassau     
+    #>  6 New York   
+    #>  7 Passiac    
+    #>  8 Queens     
+    #>  9 Richmond   
+    #> 10 Rockland   
+    #> 11 Suffolk    
+    #> 12 Westchester
 
 The data frame is complete, i.e., a count for every combination of race
 (5 levels) and county (12 levels), with 5 × 12 = 60 observations.
@@ -164,7 +179,7 @@ ggplot(explore, aes(x = population, y = race)) +
   geom_point()
 ```
 
-<img src="images/cm204-metropop-unnamed-chunk-6-1.png" width="70%" />
+<img src="images/cm204-metropop-explore-05-1.png" width="78.75%" />
 
 With the numbers in the hundreds of thousands, let’s divide the
 population by 1000.
@@ -175,7 +190,7 @@ ggplot(explore, aes(x = population / 1000, y = race)) +
   scale_x_continuous(breaks = seq(0, 1100, 100))
 ```
 
-<img src="images/cm204-metropop-unnamed-chunk-7-1.png" width="70%" />
+<img src="images/cm204-metropop-explore-06-1.png" width="78.75%" />
 
 When a range of values spans orders of magnitude, a logarithmic scale
 can be useful. I’ll start with a base-10 scale,
@@ -186,7 +201,7 @@ ggplot(explore, aes(x = population / 1000, y = race)) +
   scale_x_continuous(trans = 'log10')
 ```
 
-<img src="images/cm204-metropop-unnamed-chunk-8-1.png" width="70%" />
+<img src="images/cm204-metropop-explore-07-1.png" width="78.75%" />
 
 Try base-2. This works for these data. Each grid line represents a
 doubling of the previous grid line.
@@ -197,7 +212,7 @@ ggplot(explore, aes(x = population / 1000, y = race)) +
   scale_x_continuous(trans = 'log2')
 ```
 
-<img src="images/cm204-metropop-unnamed-chunk-9-1.png" width="70%" />
+<img src="images/cm204-metropop-explore-08-1.png" width="78.75%" />
 
 Summary: we’ll divide the population by 1000 and use a log-base-2 scale.
 
@@ -252,12 +267,13 @@ A design file typically starts by reading the tidy data file.
 # start the graph design 
 metro_pop <- readRDS("data/0402-multiway-metropop-data.rds") %>%  
     glimpse()
-#> Observations: 60
-#> Variables: 3
-#> $ race       <fct> White, Latino, Black, Asian, Others, White, Latino,...
-#> $ county     <fct> Bronx, Bronx, Bronx, Bronx, Bronx, Kings, Kings, Ki...
-#> $ population <dbl> 194, 645, 415, 38, 40, 855, 488, 845, 184, 93, 703,...
 ```
+
+    #> Observations: 60
+    #> Variables: 3
+    #> $ race       <fct> White, Latino, Black, Asian, Others, White, Latino,...
+    #> $ county     <fct> Bronx, Bronx, Bronx, Bronx, Bronx, Kings, Kings, Ki...
+    #> $ population <dbl> 194, 645, 415, 38, 40, 855, 488, 845, 184, 93, 703,...
 
 Create the basic multiway dot plot. The `as.table = FALSE` argument
 orders the panels like a plot with the highest value at the top-right.
@@ -269,7 +285,7 @@ p <- ggplot(metro_pop, aes(x = population, y = race)) +
 p
 ```
 
-<img src="images/cm204-metropop-unnamed-chunk-14-1.png" width="70%" />
+<img src="images/cm204-metropop-design-04-1.png" width="90%" />
 
 Add the log-base-2 scale
 
@@ -279,7 +295,7 @@ p <- p +
 p
 ```
 
-<img src="images/cm204-metropop-unnamed-chunk-15-1.png" width="70%" />
+<img src="images/cm204-metropop-design-05-1.png" width="90%" />
 
 Add a theme and labels.
 
@@ -290,7 +306,7 @@ p <- p +
 p
 ```
 
-<img src="images/cm204-metropop-unnamed-chunk-16-1.png" width="70%" />
+<img src="images/cm204-metropop-design-06-1.png" width="90%" />
 
 Finally, edit `geom_point()` for size and color of the data markers and
 edit `facet_wrap()` to change the number of columns to reduce
@@ -305,20 +321,21 @@ ggplot(metro_pop, aes(x = population, y = race)) +
     labs(y = NULL, x = "Population (thousands) log-2 scale")    
 ```
 
-<img src="images/cm204-metropop-unnamed-chunk-17-1.png" width="70%" />
+<img src="images/cm204-metropop-design-08-1.png" width="90%" />
 
 And the figure is ready to save, using width and height to control the
 aspect ratio.
 
 ``` r
 ggsave(filename = "0402-multiway-metropop-01.png",
-       path     = "figures",
-       width    = 8,
-       height   = 5.5,
-       units    = "in",
-       dpi      = 300
-       )
+        path    = "figures",
+        width   = 8,
+        height  = 5.3,
+        units   = "in",
+        dpi     = 300)
 ```
+
+<img src="images/cm204-metropop-unnamed-chunk-1-1.png" width="90%" />
 
 In the dual multiway, we swap the rows and panels by setting `y =
 county` and `facet_wrap(vars(race))`.
@@ -332,54 +349,85 @@ ggplot(metro_pop, aes(x = population, y = county)) +
     labs(y = NULL, x = "Population (thousands) log-2 scale")
 ```
 
-<img src="images/cm204-metropop-unnamed-chunk-19-1.png" width="70%" />
+<img src="images/cm204-metropop-design-10-1.png" width="90%" />
 
 And write to file.
 
 ``` r
 ggsave(filename = "0402-multiway-metropop-02.png",
-       path     = "figures",
-       width    = 8,
-       height   = 5.5,
-       units    = "in",
-       dpi      = 300
-       )
+        path    = "figures",
+        width   = 8,
+        height  = 5.3,
+        units   = "in",
+        dpi     = 300)
 ```
 
 <br> <a href="#top">▲ top of page</a>
 
 ## report
 
-If we were to include this graph in a report, the Rmd script would
-include a `knitr::include_graphics()` function
+In the final portfolio, it is possible that only one of the two final
+graphs is shown, depending on which one tells the most interesting
+story. Assuming the second graph were the more interesting, if we were
+to include it in a report, we would insert the following code chunk in
+the Rmd script.
 
-``` r
-include_graphics("../figures/0402-multiway-metropop-01.png")
-```
-
-<img src="../figures/0402-multiway-metropop-01.png" width="100%" />
-
-Import the dual. In the final portfolio, it is possible that only one of
-the two final graphs is shown, depending on which one tells the most
-interesting story.
-
-``` r
-include_graphics("../figures/0402-multiway-metropop-02.png")
-```
-
-<img src="../figures/0402-multiway-metropop-02.png" width="100%" />
+    ```{r}
+    library("knitr")
+    include_graphics("../figures/0402-multiway-metropop-02.png")
+    ```
 
 <br> <a href="#top">▲ top of page</a>
 
 ## exercises
 
-**1. exercise**
+**1. Alligator**
 
-Create `explore/0403-multiway-dataname-explore.R`
+  - Data: `Alligator` from the vcdExtra package. If you want to learn
+    more about the data set, open its help page by running `?
+    vcdExtra::Alligator`.
 
-**2. exercise**
+  - Explore: Create `explore/0403-multiway-alligator-explore.R` to
+    explore the data to find an interesting story. There are four
+    factors to choose from (any two at a time) and one quantitative
+    variable (count). In your exploration, the `sex` variable could be
+    combined with one of the other three factors to create a new
+    categorical variable.
 
-Create `explore/0404-multiway-dataname-explore.R`
+  - Carpentry: Create `carpentry/0403-multiway-alligator-data.R` to
+    create a tidy data frame, make the appropriate categorical variables
+    into factors, and order their levels. Save to
+    `data/0403-multiway-alligator-data.rds`.
+
+  - Design: Create `design/0403-multiway-alligator.R` to read the tidy
+    data, create the final graphs with ordered rows, use
+    `theme_graphclass()`, edit axis labels, and add additional
+    formatting you think suitable for publication. Save the graph to
+    `figures/0403-multiway-alligator-01.png` and its dual to
+    `figures/0403-multiway-alligator-02.png`.
+
+**2. UCB admissions**
+
+  - Data: `ucb_admit` in the graphclassmate package. If you want to
+    learn more about the data set, open its help page by running `?
+    graphclassmate::ucb_admit`. The data set in base R from which these
+    data were derived has a help page at `? UCBAdmissions`.
+
+  - Explore: Create `explore/0404-multiway-ucb-admit-explore.R` to
+    explore the data for interesting stories. A possible variable to
+    examine is the ratio of the number admitted to the number applied.
+
+  - Carpentry: Create `carpentry/0404-multiway-ucb-admit-data.R` to
+    create a tidy data frame, make the appropriate categorical variables
+    into factors, and order their levels. Save to
+    `data/0404-multiway-ucb-admit-data.rds`.
+
+  - Design: Create `design/0404-multiway-ucb-admit.R` to read the tidy
+    data, create the final graphs with ordered rows, use
+    `theme_graphclass()`, edit axis labels, and add additional
+    formatting you think suitable for publication. Save the graph to
+    `figures/0404-multiway-ucb-admit-01.png` and its dual to
+    `figures/0404-multiway-ucb-admit-02.png`.
 
 ## references
 

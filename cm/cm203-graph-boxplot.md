@@ -133,7 +133,8 @@ people are in each group.
 
 ``` r
 # categorical variables levels and count
-explore %>% count(sex, path) %>% 
+explore %>% 
+        count(sex, path) %>% 
         arrange(desc(n))
 ```
 
@@ -203,7 +204,7 @@ explore <- explore %>%
         mutate(sex_path = str_c(sex, path, sep = " ")) %>% 
         mutate(sex_path = fct_reorder(sex_path, enrolled))
 
-ggplot(explore, aes(y = enrolled, x = sex_path))+
+ggplot(explore, aes(y = enrolled, x = sex_path)) +
         geom_boxplot()
 ```
 
@@ -261,7 +262,8 @@ library("graphclassmate")
 A design file typically starts by reading the tidy data file.
 
 ``` r
-nontrad <- readRDS("data/0305-boxplot-nontrad-data.rds") %>% glimpse()
+nontrad <- readRDS("data/0305-boxplot-nontrad-data.rds") %>% 
+        glimpse()
 ```
 
     #> Observations: 269,057
@@ -285,11 +287,11 @@ p
 
 <img src="images/cm203-nontrad-design-04-1.png" width="90%" />
 
-Edit labels and apply the class
-theme,
+Edit labels and apply the class theme,
 
 ``` r
-p <- p + labs(y = "Years enrolled", x = "", title = "Graduating students") +
+p <- p + 
+        labs(y = "Years enrolled", x = "", title = "Graduating students") +
         theme_graphclass()
 p
 ```
@@ -301,7 +303,8 @@ adding a fill argument to `aes()` and `scale_fill_manual()` to select
 colors.
 
 ``` r
-p <- p + aes(fill = path) +
+p <- p + 
+        aes(fill = path) +
         scale_fill_manual(values = c(rcb("light_BG"), rcb("light_Br")))
 p
 ```
@@ -312,7 +315,8 @@ Edit the color of the box outlines and the outliers by adding a color
 argument to `aes()` and `scale_color_manual()` to select colors.
 
 ``` r
-p <- p + aes(color = path)+
+p <- p + 
+        aes(color = path) +
         scale_color_manual(values = c(rcb("dark_BG"), rcb("dark_Br")))
 p
 ```
@@ -323,7 +327,8 @@ We can omit the legend title using `guides()`. We set `color = "none"`
 to avoid printing a second legend.
 
 ``` r
-p <- p + guides(fill  = guide_legend(title = NULL), color = "none")
+p <- p + 
+        guides(fill  = guide_legend(title = NULL), color = "none")
 p
 ```
 
@@ -380,11 +385,11 @@ p
 <img src="images/cm203-nontrad-design-11-1.png" width="90%" />
 
 Now add the outliers as jittered points. Note that we can assign a new
-data argument in the
-geom.
+data argument in the geom.
 
 ``` r
-p <- p + geom_jitter(data = outlier_only, width = 0.05, height = 0.2, alpha = 0.25, shape = 21)
+p <- p + 
+        geom_jitter(data = outlier_only, width = 0.05, height = 0.2, alpha = 0.25, shape = 21)
 p
 ```
 

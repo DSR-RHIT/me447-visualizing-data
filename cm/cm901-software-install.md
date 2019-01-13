@@ -112,7 +112,7 @@ y <- sin(t)
 plot(t, y)
 ```
 
-<img src="images/cm901-sine-1.png" width="70%" />
+![](images/cm901-sine-1.png)<!-- -->
 
 Lastly, let’s check if RStudio can see git locally. In RStudio,
 

@@ -44,16 +44,16 @@ The Rmd script contains three types of content:
     `_italics_`
 3.  Chunks of R code surrounded by backticks ` ``` `
 
-<img src="../resources/cm321_00.png" width="70%" />
+![](../resources/cm321_00.png)<!-- -->
 
 <br>To render the document, click the *Knit* button or use the pulldown
 menu, *Knit \> Knit to HTML*
 
-<img src="../resources/cm321_01.png" width="70%" />
+![](../resources/cm321_01.png)<!-- -->
 
 <br>The report appears in your RStudio viewer.
 
-<img src="../resources/cm321_02.png" width="70%" />
+![](../resources/cm321_02.png)<!-- -->
 
 ## set the Rmd output format
 
@@ -90,7 +90,7 @@ output: github_document
 
 The report appears in your RStudio viewer.
 
-<img src="../resources/cm321_03.png" width="70%" />
+![](../resources/cm321_03.png)<!-- -->
 
 <br>If you take another look at the knit pulldown menu, its options have
 changed.
@@ -111,7 +111,7 @@ produce
 The default Rmd document, for example, illustrates several of these
 markups,
 
-<img src="../resources/cm321_04.png" width="70%" />
+![](../resources/cm321_04.png)<!-- -->
 
 <br> For the complete list of common markups, please read
 
