@@ -62,10 +62,10 @@ Project setup
   - Start every work session by launching the RStudio Project file for
     the course, e.g., `portfolio.Rproj`  
   - Ensure your [project directory
-    structure](cm501-proj-m-manage-files.md#plan-the-directory-structure)
+    structure](cm501-proj-m-manage-files.md#planning-the-directory-structure)
     satisfies the course requirements
 
-Packages: Ensure you have installed the following packages. Eee [install
+Packages: Ensure you have installed the following packages. See [install
 packages](cm902-software-studio.md#install-packages) for instructions if
 needed.
 

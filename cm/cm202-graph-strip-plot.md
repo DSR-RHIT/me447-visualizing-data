@@ -45,13 +45,21 @@ comparing distributions.”
 
 ## prerequisites
 
-  - Start every work session by launching `portfolio.Rproj`  
-  - Your [project directory
-    structure](cm501-proj-m-manage-files.md#plan-the-directory-structure)
-    satisfies the course requirements  
-  - The tidyverse package has been installed
-  - The graphclassmate has been package installed  
-  - The GDAdata package has been installed
+Project setup
+
+  - Start every work session by launching the RStudio Project file for
+    the course, e.g., `portfolio.Rproj`  
+  - Ensure your [project directory
+    structure](cm501-proj-m-manage-files.md#planning-the-directory-structure)
+    satisfies the course requirements
+
+Packages: Ensure you have installed the following packages. See [install
+packages](cm902-software-studio.md#install-packages) for instructions if
+needed.
+
+  - tidyverse  
+  - graphclassmate  
+  - GDAdata
 
 <br> <a href="#top">▲ top of page</a>
 

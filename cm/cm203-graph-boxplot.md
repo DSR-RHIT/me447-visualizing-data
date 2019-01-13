@@ -67,12 +67,20 @@ roughly 6 years, the strip plot is not visually informative.
 
 ## prerequisites
 
-  - Start every work session by launching `portfolio.Rproj`  
-  - Your [project directory
-    structure](cm501-proj-m-manage-files.md#plan-the-directory-structure)
+Project setup
+
+  - Start every work session by launching the RStudio Project file for
+    the course, e.g., `portfolio.Rproj`  
+  - Ensure your [project directory
+    structure](cm501-proj-m-manage-files.md#planning-the-directory-structure)
     satisfies the course requirements
-  - The tidyverse package has been installed
-  - The graphclassmate package has been installed
+
+Packages: Ensure you have installed the following packages. See [install
+packages](cm902-software-studio.md#install-packages) for instructions if
+needed.
+
+  - tidyverse  
+  - graphclassmate
 
 <br> <a href="#top">▲ top of page</a>
 
