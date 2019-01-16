@@ -98,7 +98,7 @@ Administrative files
 
 For different opinions on directory structure schemes, see
 
-  - Mira CÃ©line Klein (2017) [A meaningful file structure for R
+  - Mira Céline Klein (2017) [A meaningful file structure for R
     projects](https://www.inwt-statistics.com/read-blog/a-meaningful-file-structure-for-r-projects.html)  
   - Chris von Csefalvay (2018) [Structuring R
     projects](https://chrisvoncsefalvay.com/structuring-r-projects/)  
@@ -135,7 +135,8 @@ several files are written.
 For this course, I have done that planning for you. The file naming plan
 for the portfolio is:
 
-  - Every file starts with the display number `dn`  
+  - Every file starts with the display number `dn`, i.e., `d1`, `d2`,
+    etc.
   - Followed by the graph type and abbreviated data name
     `-graphtype-dataname`  
   - Followed by additional modifiers as needed such as `-explore` or
