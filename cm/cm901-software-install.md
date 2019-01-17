@@ -48,8 +48,8 @@ attended. I suggest you read all the instructions before starting.
     installed?](http://happygitwithr.com/install-git.html#git-already-installed)
   - [Windows](http://happygitwithr.com/install-git.html#install-git-windows)
     install
-  - [Mac OS](http://happygitwithr.com/install-git.html#mac-os) install
-  - [Linux](http://happygitwithr.com/install-git.html#linux) install
+  - [Mac OS](http://happygitwithr.com/install-git.html#macOS) install
+  - [Linux](http://happygitwithr.com/install-git.html#Linux) install
 
 Optional reading: Read sections 1 and 2 of [Excuse me, do you have a
 moment to talk about version
