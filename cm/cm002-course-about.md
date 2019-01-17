@@ -42,7 +42,7 @@ are:
 
   - R is free, open source, and available on every major platform,
     making it easy for others to replicate your work.
-  - The variety of R packages (more than 13,500 as of 2019-01-13), many
+  - The variety of R packages (more than 13,500 as of 2019-01-17), many
     of them cutting edge tools.
   - R packages provide deep-seated support for data analysis, e.g.,
     missing values, data frames, and subsetting.
@@ -89,14 +89,14 @@ During a Congressional hearing in August 2015, Representative Jason
 Chaffetz, then chair of the House Oversight Committee, confronted Cecile
 Richards, president of Planned Parenthood, with a graph created by
 Americans United for Life (AUL), an organization dedicated to
-[restricting womenâ€™s reproductive
+[restricting women’s reproductive
 rights](https://www.theatlantic.com/politics/archive/2015/07/what-pro-life-activists-really-want/398297/)
 in the US and abroad. In justifying his attempt to eliminate Planned
 Parenthood’s federal funding, Chaffetz stated, “In pink, that’s the
 reduction in the breast exams, and the red is the increase in the
 abortions. That’s what’s going on in your organization.” His assertion
-echoes AUL’s “Planned Parenthood has become Abortion, Inc.”
-[propaganda](http://www.aul.org/new-leviathan/).
+echoes AUL’s propaganda that [“Planned Parenthood has become Abortion,
+Inc.”](https://web.archive.org/web/20180325145518/http://www.aul.org/new-leviathan/)
 
 <img src="../resources/cm002-course-lying-graphic-1.png" width="50%" />
 
