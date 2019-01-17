@@ -40,9 +40,8 @@ Git-based projects—critically important for sharing with collaborators.
 Once you have a GitHub account, you will update your repositories using
 the RStudio interface.
 
-  - [Join GitHub
-    Education](http://happygitwithr.com/github-acct.html#free-private-repos)
-    Follow the links to join GitHub Education — it’s free.
+  - [Join GitHub Education](https://education.github.com/students) —
+    it’s free.
 
 Optional reading: Read section 4 of [Excuse me, do you have a moment to
 talk about version
@@ -114,8 +113,8 @@ GitHub and
 Instructions adapted from (Bryan, [2018](#ref-Bryan:2018))
 
   - Navigate to your portfolio repo on GitHub  
-  - Copy the HTTPS clone URL to your clipboard via the green â€œClone or
-    Downloadâ€ button. The URL will look something like this:
+  - Copy the HTTPS clone URL to your clipboard via the green “Clone or
+    Download” button. The URL will look something like this:
     `https://github.com/jennybc/myrepo.git`
 
 In RStudio,
@@ -145,16 +144,15 @@ least the following folders and files,
     portfolio-last-first/
         `-- portfolio-last-first.Rproj
 
-Optional reading if you want to read more about it or if you need to
-setup a repo for an existing RStudio Project.
+If you want to read more about it.
 
-  - [New project, GitHub
-    first](http://happygitwithr.com/new-github-first.html) These are the
-    steps I summarized above.
-  - [Existing project, GitHub
-    first](http://happygitwithr.com/existing-github-first.html)
-  - [Existing project, GitHub
-    last](http://happygitwithr.com/existing-github-last.html)
+  - Optional reading outlining the steps we just followed above: [New
+    project, GitHub
+    first](http://happygitwithr.com/new-github-first.html)  
+  - Optional reading if you need it at some point: [Existing project,
+    GitHub first](http://happygitwithr.com/existing-github-first.html)
+  - Optional reading if you need it at some point: [Existing project,
+    GitHub last](http://happygitwithr.com/existing-github-last.html)
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -266,15 +264,15 @@ Next, create new folders for `carpentry`, `data`, `data-raw`, etc. so
 that your top level project directory has the sub-directories (folders)
 shown below.
 
-<img src="../resources/icon-folder.png" width="2%" /> carpentry  
-<img src="../resources/icon-folder.png" width="2%" /> data  
-<img src="../resources/icon-folder.png" width="2%" /> data-raw  
-<img src="../resources/icon-folder.png" width="2%" /> design  
-<img src="../resources/icon-folder.png" width="2%" /> figures  
-<img src="../resources/icon-folder.png" width="2%" /> manage  
-<img src="../resources/icon-folder.png" width="2%" /> practice  
-<img src="../resources/icon-folder.png" width="2%" /> reports  
-<img src="../resources/icon-folder.png" width="2%" /> resources
+<img src="../resources/icon-folder.png" width="3.5%" /> carpentry  
+<img src="../resources/icon-folder.png" width="3.5%" /> data  
+<img src="../resources/icon-folder.png" width="3.5%" /> data-raw  
+<img src="../resources/icon-folder.png" width="3.5%" /> design  
+<img src="../resources/icon-folder.png" width="3.5%" /> explore  
+<img src="../resources/icon-folder.png" width="3.5%" /> figures  
+<img src="../resources/icon-folder.png" width="3.5%" /> manage  
+<img src="../resources/icon-folder.png" width="3.5%" /> reports  
+<img src="../resources/icon-folder.png" width="3.5%" /> resources
 
 <br> <a href="#top">▲ top of page </a>
 
@@ -421,12 +419,13 @@ produce the portfolio main webpage.
 
 Your project directory, in addition to the folders shown earlier, should
 now contain the following files:  
-<img src="../resources/icon-document-40px.png" width="2%" />
+<img src="../resources/icon-document-40px.png" width="3.5%" />
 .gitignore  
-<img src="../resources/icon-RStudio.png" width="2%" /> .Renviron  
-<img src="../resources/icon-RStudio.png" width="2%" /> README.Rmd  
-<img src="../resources/icon-RStudio.png" width="2%" /> README.md  
-<img src="../resources/icon-Rproj.png" width="2%" /> portfolio.Rproj
+<img src="../resources/icon-document-40px.png" width="3.5%" />
+.Renviron  
+<img src="../resources/icon-Rmd.png" width="3.5%" /> README.Rmd  
+<img src="../resources/icon-md.png" width="3.5%" /> README.md  
+<img src="../resources/icon-Rproj.png" width="3.5%" /> portfolio.Rproj
 
 <br> <a href="#top">▲ top of page </a>
 
@@ -469,7 +468,7 @@ Next we add some prompts and space for your
     
     **Response:**  
     
-    **Prompt:** Explain how the authorâ€™s argument might be used to support a decision you would make in 
+    **Prompt:** Explain how the author’s argument might be used to support a decision you would make in 
     designing a display. 
     
     **Response:** 
