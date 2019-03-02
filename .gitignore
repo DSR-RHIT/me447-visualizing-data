@@ -19,6 +19,7 @@ slides/*.nav
 slides/*.out
 slides/*.toc
 slides/*.snm
+slides/images
 
 # ignore holding folders
 holding
