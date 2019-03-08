@@ -4,13 +4,11 @@ output: github_document
 
 ## Reading prompts
 
-
 ## week 2
 
 Tufte, Edward (1997) The decision to launch the space shuttle Challenger. 
 In: *Visual and statistical thinking: Displays of evidence for making
 decisions.* Cheshire, CT: Graphics Press, 16--31.
-
 
 **Prompt:** Tufte says, "Regardless of the indirect cultural causes of the
 accident, there was a clear proximate cause." Summarize Tufte's explanation 
@@ -21,21 +19,14 @@ of the proximate cause.
 
 **Prompt:** Describe the evidence the author presents to support those ideas.
 
-
 **Response:**  
-
-
-
-
 
 
 **Prompt:** What data were used in making the decision to launch? What data 
 were not used but should have been used (according to Tufte) in making the
 launch decision?
 
-
 **Response:** 
-
 
 
 **Prompt:** On page 23, Tufte presents a graph that provides visual evidence
@@ -45,21 +36,12 @@ in 24 previous flight." Describe the structure of this data set:
 - Number of observations 
 - Data structure: classify each variable as quantitative (continuous or discrete) and categorical (nominal or ordinal and number of levels). 
 
-
 **Response:**  
-
-
-
 
 
 **Prompt:** Summarize the main thesis of the paper.  
 
-
 **Response:** 
-
-
-
-
 
 
 ## week 4
@@ -70,23 +52,17 @@ improve healthcare.* UK: Oxford University Press, 32--49.
 
 **Prompt:** 
 
-
 **Response:** 
 
 
 **Prompt:** 
-
 
 **Response:**  
 
 
 **Prompt:**  
 
-
 **Response:** 
-
-
-
 
 
 ## week 6
@@ -96,22 +72,17 @@ illustrations. *Technical Communication* 48(3): 265--274.
 
 **Prompt:** 
 
-
 **Response:** 
 
 
 **Prompt:** 
-
 
 **Response:**  
 
 
 **Prompt:**  
 
-
 **Response:** 
-
-
 
 
 ## week 8
@@ -121,23 +92,17 @@ of clarity. *IEEE Transactions on Professional Communication* 50(2): 280--294.
 
 **Prompt:** 
 
-
 **Response:** 
 
 
 **Prompt:** 
-
 
 **Response:**  
 
 
 **Prompt:**  
 
-
 **Response:** 
-
-
-
 
 
 ## week 10
@@ -148,21 +113,15 @@ Statistical Association, section on statistical graphics, 2426--2436.
 
 **Prompt:** 
 
-
 **Response:** 
 
 
 **Prompt:** 
-
 
 **Response:**  
 
 
 **Prompt:**  
 
-
 **Response:** 
-
-
-
 
