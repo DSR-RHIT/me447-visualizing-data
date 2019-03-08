@@ -1,0 +1,26 @@
+---
+output: github_document
+---
+
+## week 8 reading prompts  
+
+Kostelnick, Charles (2007) The visual rhetoric of data displays: The conundrum
+of clarity. *IEEE Transactions on Professional Communication* 50(2): 280--294.
+
+**Prompt:** 
+
+**Response:** 
+
+
+**Prompt:** 
+
+**Response:**  
+
+
+**Prompt:**  
+
+**Response:** 
+
+
+
+
