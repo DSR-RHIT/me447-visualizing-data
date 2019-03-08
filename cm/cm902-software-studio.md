@@ -248,7 +248,7 @@ Now use the devtools function `install_github()` to install a package
 containing companion materials for our course,
 
 ``` r
-devtools::install_github("graphclassmate")
+devtools::install_github("graphdr/graphclassmate")
 ```
 
 <br> <a href="#top">▲ top of page </a>
