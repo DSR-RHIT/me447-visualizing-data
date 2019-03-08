@@ -446,12 +446,11 @@ The reading response report is the first R markdown report to set up.
     ---
 
 Next, we’ll add a heading for the page and a heading for the week 2
-reading response. You can copy the following lines and paste them into
-your Rmd file.
+reading response. You can copy the lines from the [online Rmd
+file](../reports/reading-prompts-1.Rmd) and paste them into your Rmd
+file.
 
-    ## Reading responses 
-    
-    ## week 2
+    ## week 2 reading prompts  
     
     Tufte, Edward (1997) The decision to launch the space shuttle Challenger.
     In: *Visual and statistical thinking: Displays of evidence for making
