@@ -457,21 +457,21 @@ your Rmd file.
     In: *Visual and statistical thinking: Displays of evidence for making
     decisions.* Cheshire, CT: Graphics Press, 16--31.
 
-Next we add some prompts and space for your
-    responses.
+Next we add some prompts and space for your responses. (You can just
+copy the text from the online source and paste it into your Rmd script.
 
-    **Prompt:** Identify one or two of the author's theses. Briefly restate these ideas in your own words.
+    **Prompt:** Tufte says, "Regardless of the indirect cultural
+    causes of the accident, there was a clear proximate cause."
+    Summarize Tufte's explanation of the proximate cause.  
     
     **Response:** 
     
-    **Prompt:** Describe the evidence the author presents to support those ideas.
+    *Prompt:** Describe the evidence the author presents to 
+    support those ideas.
     
     **Response:**  
     
-    **Prompt:** Explain how the author’s argument might be used to support a decision you would make in 
-    designing a display. 
-    
-    **Response:** 
+    (and so forth) 
 
   - Save the file
   - Knit the file to see the rendered output document
