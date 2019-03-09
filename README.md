@@ -27,11 +27,11 @@ permission
 | 2  | M | Graph basics with ggplot2 \[exercises\]                                                                                                                                                                                                                                                                                 | wk1 lab complete                |                                                                              |
 |    | T | ![](resources/icon-document.png) Tufte ([1997](#ref-Tufte:1997)) Decision to launch Challenger                                                                                                                                                                                                                          |                                 | [Reading prompts](reports/reading-prompts-1.Rmd)                             |
 |    | R | Data basics \[exercises\]                                                                                                                                                                                                                                                                                               |                                 |                                                                              |
-|    | F | [Managing files](cm/cm501-proj-m-manage-files.md#file-management) \[[slides](slides/sd034-proj-m-manage-files.pdf)\]<br>[Data studio](cm/cm102-data-studio.md#data-studio)<br>[Portfolio display requirements](cm/cm301-report-display-reqts.md#portfolio-display-requirements)<br>Return reprints                      | Start acquiring data            |                                                                              |
+|    | F | [Managing files](cm/cm501-proj-m-manage-files.md#file-management) \[[slides](slides/sd034-proj-m-manage-files.pdf)\]<br>[Data studio](cm/cm102-data-studio.md#data-studio)<br>[Portfolio data requirements](cm/cm301-report-display-reqts.md#portfolio-display-requirements)<br>Return reprints                         | Start acquiring data            |                                                                              |
 | 3  | M | Markdown basics \[exercises\]                                                                                                                                                                                                                                                                                           | wk2 lab, tutorials, & exercises |                                                                              |
 |    | T | ![](resources/icon-moodle.png) Robbins ([2013](#ref-Robbins:2013:Ch.6)[a](#ref-Robbins:2013:Ch.6)) General design principles                                                                                                                                                                                            |                                 |                                                                              |
 |    | R | Comparing distributions<br>[Strip plot](cm/cm202-graph-strip-plot.md#strip-plot) \[[exercises](cm/cm202-graph-strip-plot.md#exercises)\]<br>[Box plot](cm/cm203-graph-boxplot.md#box-plot) \[[exercises](cm/cm203-graph-boxplot.md#exercises)\]<br>[D1 requirements](cm/cm301-report-display-reqts.md#D1-distributions) | D1 data acquired                |                                                                              |
-|    | F | [Portfolio studio](cm/cm302-report-portfolio-studio.md#portfolio-studio)<br>Start the portfolio draft                                                                                                                                                                                                                   |                                 |                                                                              |
+|    | F | [Portfolio document requirements](cm/cm300-report-portfolio-reqts.md#portfolio-document-requirements)<br>[Portfolio data requirements](cm/cm301-report-display-reqts.md#portfolio-display-requirements)<br>[Portfolio studio](cm/cm302-report-portfolio-studio.md#portfolio-studio)<br>Start the portfolio draft        |                                 |                                                                              |
 | 4  | M | Data carpentry \[exercises\]                                                                                                                                                                                                                                                                                            | wk3 lab, tutorials, & exercises |                                                                              |
 |    | T | ![](resources/icon-moodle.png) Wainer ([2014](#ref-Wainer:2014:Sec.2.9)) 15 displays about one thing                                                                                                                                                                                                                    |                                 | [Reading prompts](reports/reading-prompts-2.Rmd)                             |
 |    | R | [Multiway dot plot](cm/cm204-graph-multiway.md#multiway-dot-plot) \[[exercises](cm/cm204-graph-multiway.md#exercises)\]<br>[D2 requirements](cm/cm301-report-display-reqts.md#D2-multiway)                                                                                                                              | D2 data acquired                |                                                                              |
@@ -147,10 +147,11 @@ Graph exercises
 
 ## portfolio
 
+[Sample portfolio
+skeleton](https://github.com/graphdr/portfolio-sample)  
 [Document
-requirements](cm/cm300-report-portfolio-reqts.md#portfolio-document-requirements)
-
-[Display
+requirements](cm/cm300-report-portfolio-reqts.md#portfolio-document-requirements)  
+[Data
 requirements](cm/cm301-report-display-reqts.md#portfolio-display-requirements)
 
   - [D1
@@ -181,8 +182,6 @@ Resources
 Portfolio studio
 
   - [Media](cm/cm302-report-portfolio-studio.md#media)  
-  - [Sample portfolio
-    skeleton](https://github.com/graphdr/portfolio-sample)  
   - [Preparation](cm/cm302-report-portfolio-studio.md#preparation)  
   - [Organize the README
     file](cm/cm302-report-portfolio-studio.md#organize-the-README-file)  
