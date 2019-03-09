@@ -6,6 +6,8 @@ portfolio display requirements
 under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY
 2.0</a> <br><br> </small>
 
+See a sample of a portfolio skeleton at
+<https://github.com/graphdr/portfolio-sample>.  
 The table summarizes the basic data structure for all portfolio
 graphs.  
 More detailed requirements are provided

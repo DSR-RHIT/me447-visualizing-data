@@ -85,7 +85,7 @@ permission
   - [About the course](cm/cm002-course-about.md#about-the-course)
   - [Syllabus](cm/cm001-course-syllabus.md#syllabus)  
   - [Calendar](#calendar)
-  - Help links[](cm/admin-04_getting-help.md)
+  - [Help links](cm/cm003-getting-help.md)
   - [License](LICENSE.md)
 
 ## data
@@ -179,6 +179,8 @@ Resources
 Portfolio studio
 
   - [Media](cm/cm302-report-portfolio-studio.md#media)  
+  - [Sample portfolio
+    skeleton](https://github.com/graphdr/portfolio-sample)  
   - [Preparation](cm/cm302-report-portfolio-studio.md#preparation)  
   - [Organize the README
     file](cm/cm302-report-portfolio-studio.md#organize-the-README-file)  

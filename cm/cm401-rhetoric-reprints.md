@@ -3,16 +3,13 @@ signout reprints
 
 <img src="../resources/cm401-rhetoric-reprints-header.png" width="100%" />
 
-Two of our readings are printed pages.
-
   - The Doumont ([2009](#ref-Doumont:2009:Ch.4)) reprints are printed
-    with permission of the publisher for our course this term only.
+    with permission of the publisher for our course. These copies are
+    yours to keep. You may write in them.
+
   - The Tufte ([1997](#ref-Tufte:1997)) pamphlets are my personal
-    copies.
-
-During class, please sign for one copy of each.
-
-Please return them per the calendar.
+    copies. **These are not yours to keep; please do not write in
+    them.** Please return them per the calendar.
 
 ## references
 
