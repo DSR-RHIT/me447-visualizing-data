@@ -1,4 +1,4 @@
-portfolio display requirements
+portfolio data requirements
 ================
 
 <img src="../resources/cm301-report-display-reqts-header.png" width="100%" />
