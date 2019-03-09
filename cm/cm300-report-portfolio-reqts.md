@@ -1,6 +1,12 @@
 portfolio document requirements
 ================
 
+<img src="../resources/cm300-header.png" width="100%" /> <small> <br>
+<i>Requirements, requirements, requirements</i> by John Keane is
+licensed under
+<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA
+2.0</a> <br><br> </small>
+
 An exceptional portfolio showcases your ability to communicate truthful
 and compelling stories using quantitative data and effective visual
 rhetoric. My goal is to help you craft a document that you would be
