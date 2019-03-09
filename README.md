@@ -73,7 +73,7 @@ permission
 [course management](#course-management)  
 [data](#data)  
 [graphs](#graphs)  
-[reports](#reports)  
+[portfolio](#portfolio)  
 [visual rhetoric and graph design](#visual-rhetoric-and-graph-design)  
 [project management](#project-management)  
 [software](#software)  
@@ -145,9 +145,13 @@ Graph exercises
 
 [▲ index](README.md#index)
 
-## reports
+## portfolio
 
-Display requirements
+[Document
+requirements](cm/cm300-report-portfolio-reqts.md#portfolio-document-requirements)
+
+[Display
+requirements](cm/cm301-report-display-reqts.md#portfolio-display-requirements)
 
   - [D1
     distributions](cm/cm301-report-display-reqts.md#D1-distributions)
@@ -162,8 +166,6 @@ Display requirements
 
 Resources
 
-  - [Portfolio display
-    requirements](cm/cm301-report-display-reqts.md#portfolio-display-requirements)
   - [Setup reading
     responses](cm/cm902-software-studio.md#setup-reading-response)
   - [BiBTeX entry types](cm/cm303-report-bibtex.md)  

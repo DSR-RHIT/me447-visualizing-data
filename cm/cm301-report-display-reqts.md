@@ -29,8 +29,10 @@ below.
 | [D7 self-taught](#d7-self-taught)                           | [cycle plot](#cycle-plot)                                                 | one           | two           |
 |                                                             | [mosaic plot](#mosaic-plot)                                               | one           | three or more |
 |                                                             | [financial (OHLC) plot](#financial-ohlc-plot)                             | four          | one           |
-|                                                             | [linked micromaps](#linked-micromaps)                                     | one           |               |
 |                                                             | [diverging stacked bar](#diverging-stacked-bar)                           | one           | one           |
+|                                                             | [linked micromaps](#linked-micromaps)                                     | one           |               |
+|                                                             | [proportional symbol map](#proportional-symbol-map)                       |               |               |
+|                                                             | [dot density map](#dot-density-map)                                       |               |               |
 
 ## D1 distributions
 
@@ -56,7 +58,7 @@ Categorical variables
   - If one category is used, it must have at least three levels for a
     minimum of three comparisons.  
   - If two categories are used, they must have at least two levels each
-    for a minmum of four comparisons.
+    for a minimum of four comparisons.
 
 Examples
 
@@ -152,10 +154,12 @@ This is a graph type you learn to construct on your own. Select one only
 from the list and include it in the portfolio.
 
   - [cycle plot](#cycle-plot)
-  - [financial (OHLC) plot](#financial-ohlc-plot)
   - [mosaic plot](#mosaic-plot)  
+  - [financial (OHLC) plot](#financial-ohlc-plot)
+  - [diverging stacked bar](#diverging-stacked-bar)  
   - [linked micromaps](#linked-micromaps)  
-  - [diverging stacked bar](#diverging-stacked-bar)
+  - [proportional symbol map](#proportional-symbol-map)  
+  - [dot density map](#dot-density-map)
 
 <br> <a href="#top">▲ top of
 page</a>
@@ -174,13 +178,23 @@ page</a>
 
 ## cycle plot
 
-For additional technical details, see
+Description
 
-<br> <a href="#top">▲ top of page</a>
+Data requirements
+
+For additional technical details, see
 
 <!-- ## Sankey diagram   -->
 
 <!-- For additional technical details, see  -->
+
+## mosaic plot
+
+Description
+
+Data requirements
+
+For additional technical details, see
 
 ## financial (OHLC) plot
 
@@ -195,9 +209,7 @@ average.
 
 Data requirements
 
-<br> <a href="#top">▲ top of page</a>
-
-## mosaic plot
+For additional technical details, see
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -208,6 +220,8 @@ for reporting survey data. Respondents are typically asked to choose one
 response from a discrete number of options such as Strongly Disagree,
 Disagree, No Opinion, Agree, Strongly Agree.
 
+Data requirements
+
 For additional technical details, see Heiberger and Robbins
 ([2014](#ref-Heiberger+Robbins:2014)).
 
@@ -215,7 +229,27 @@ For additional technical details, see Heiberger and Robbins
 
 ## linked micromaps
 
+Description
+
 Data requirements
+
+For additional technical details, see
+
+## proportional symbol map
+
+Description
+
+Data requirements
+
+For additional technical details, see
+
+## dot density map
+
+Description
+
+Data requirements
+
+For additional technical details, see
 
 ## references
 
