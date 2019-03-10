@@ -12,11 +12,11 @@ still want to browse this section in case you find something new.
 [everything in R is an object](#everything-in-r-is-an-object)  
 [do things in R using functions](#do-things-in-r-using-functions)  
 [R functions come in packages](#r-functions-come-in-packages)  
-[R objects have a class](#r-objects-have-a-class)  
-[R objects have a structure](#r-objects-have-a-structure)  
-\[\]  
-\[\]  
-\[\]  
+[R objects have class](#r-objects-have-class)  
+[R objects have structure](#r-objects-have-structure)  
+[R does what you tell it](#r-does-what-you-tell-it)  
+[keyboard shortcuts](#keyboard-shortcuts)  
+[exercises](#exercises)  
 [references](#references)
 
 ## prerequisites
@@ -30,16 +30,7 @@ If any of these packages have not yet been installed, they can be
 installed using these commands,
 
     install.packages("tidyverse")
-    install.packages("gapminder")
-    devtools::install_github("graphdr/graphclassmate")
     devtools::install_github("kjhealy/socviz")
-
-Use *File \> New File \> R Script* to create a new R script in your
-`explore` directory
-
-``` 
-explore/0201-R-basics.R  
-```
 
 ## everything in R has a name
 
@@ -84,25 +75,20 @@ If the name is in use, a help page appears in the RStudio Help pane.
   - Some objects are loaded with packages
   - Some objects are created by you
 
-In your R script, type the following, then click the *Source* button,
+`c()` is the function to combine or concatenate its elements to create a
+vector. For example, the R line of code,
 
 ``` r
 c(1, 2, 3, 1, 3, 25)
+#> [1]  1  2  3  1  3 25
 ```
-
-The results should appear in your Console,
-
-    #> [1]  1  2  3  1  3 25
 
 Everything that comes back to us in the Console as the result of typing
 a command will be shown prefaced by a hash mark and greater-than symbol
 (`#>`).
 
-  - `c()` is the function to combine or concatenate its elements to
-    create a vector
-
 Instead of sending the result to the Console, we can assign the vector
-to a name. Add the following to your script, and *Source*
+to a name.
 
 ``` r
 x <- c(1, 2, 3, 1, 3, 25)
@@ -196,7 +182,10 @@ machine, you load it into your workspace using the `library()` function
 library("socviz")
 ```
 
-## R objects have a class
+Loading all the packages used in a script near the top of the script is
+good practice.
+
+## R objects have class
 
 Everything is an object and every object has a class.
 
@@ -272,7 +261,7 @@ titanic_tb
 
 The tibble includes additional information about the variables
 
-## R objects have a structure
+## R objects have structure
 
 To see inside an object ask for its structure using the `str()`
 function.
@@ -310,7 +299,7 @@ glimpse(titanic)
 #> $ n       <dbl> 1364, 126, 367, 344
 #> $ percent <dbl> 62.0, 5.7, 16.7, 15.6
 
-glimpse(titanic_tb)
+glimpse(titanic_tb) 
 #> Observations: 4
 #> Variables: 4
 #> $ fate    <fct> perished, perished, survived, survived
@@ -318,6 +307,57 @@ glimpse(titanic_tb)
 #> $ n       <dbl> 1364, 126, 367, 344
 #> $ percent <dbl> 62.0, 5.7, 16.7, 15.6
 ```
+
+## R does what you tell it
+
+Expect to make errors and don’t worry when that happens. You won’t break
+anything. Healy ([2019](#ref-Healy:2019)) offers this advice for three
+specific things to watch out for:
+
+  - Make sure parentheses are balanced—that every opening `(` has a
+    corresponding closing `)`.  
+  - Make sure you complete your expressions. If you see a `+` in the
+    Console instead of the usual prompt `>`, that means that R thinks
+    you haven’t written a complete expression. You can hit `Esc` or
+    `Ctrl C` to force your way back to the Console and try correcting
+    the code.  
+  - In ggplot specifically, as you will see, we create pllots layer by
+    layer, using a `+` character at the end of the line—not at the
+    beginning of the next line.
+
+For example, you would write this,
+
+    ggplot(data = mpg, aes(x = displ, y = hwy)) +
+      geom_point()
+
+not this,
+
+    ggplot(data = mpg, aes(x = displ, y = hwy))  
+      + geom_point()
+
+## keyboard shortcuts
+
+In Windows,
+
+  - `Ctrl L` clears the Console  
+  - `Ctrl Shift M` creates the pipe operator  
+  - `Ctrl Enter` runs the selected lilne(s) of code in an R script  
+  - `Ctrl Shift K` knits an Rmd file  
+  - `Alt -` creates the assignent operator `<-`
+
+## exercises
+
+Use *File \> New File \> R Script* to create a new R script in your
+`explore` directory
+
+``` 
+explore/0201-R-basics.R  
+```
+
+  - In this script type the code chunks from the tutorial above one line
+    at a time.  
+  - After every line, Save, and hit the Source button to run the code.  
+  - Confirm that your result matches the result in the tutorial.
 
 ## references
 

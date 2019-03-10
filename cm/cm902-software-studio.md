@@ -20,6 +20,7 @@ Watkins (1829–1916) is licensed under
 [edit gitignore](#edit-gitignore)  
 [setup README](#setup-readme)  
 [setup reading response](#setup-reading-response)  
+[setup correspondence](#setup-correspondence)  
 [commits](#commits)  
 [references](#references)
 
@@ -479,6 +480,49 @@ copy the text from the online source and paste it into your Rmd script.
 
 <br> <a href="#top">▲ top of page </a>
 
+## setup correspondence
+
+We will place a correspondence fuile in the reports folder for the two
+of us to correspond about the portfolio.
+
+Create a correspondence Rmd script just like we did above for the
+reading response.
+
+  - In RStudio *File \> New File \> R Markdown… \> OK*
+  - *Save As* the Untitled file to your `reports` folder with the name
+    `correspondence.Rmd`
+  - Delete all the default content
+  - Add a YAML header at the top of the file
+
+<!-- end list -->
+
+    ---
+    output: github_document
+    ---
+
+Copy the following text, paste it into the correspondence file, and edit
+the dates and your initials.
+
+    ### yyy-mm-dd (edit for today's date)
+    
+    **RL** This is an example of a second comment in reverse chronological order. 
+    
+    **xx** (replace with your initials) And its response. 
+    
+    
+    
+    ### yyy-mm-dd (edit for today's date)
+    
+    **RL** I will use this Rmd file for corresponding with you about your
+    portfolio. Entries will be dated and listed in reverse chronological
+    order--that is, with the most recent at the top of the page. You should record
+    your responses directly below, for example: 
+    
+    **xx** (replace with your initials) This is a sample response to the comment
+    above.
+
+<br> <a href="#top">▲ top of page </a>
+
 ## commits
 
 The process of *Commit \> Pull \> Push* is how you upload your latest
@@ -505,6 +549,15 @@ If there are files shown in the Git pane,
 
 Navigate to your online repo and you should find that it includes all
 your changes.
+
+I will clone your repo to my local machine to review and comment on your
+work. Therefore, to avoid version conflicts, it is critical that you:
+
+  - Every time you start a work session in your Rproj file, the first
+    thing you should do is select the Git tab and PULL.  
+  - Every time you commit changes, check all the stage boxes, type a
+    commit message, COMMIT, then PULL, then PUSH
+  - At the end of your work session, commit, PULL, then PUSH
 
 ## references
 
