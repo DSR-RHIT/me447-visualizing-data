@@ -6,7 +6,7 @@ print-pages
 resources/images
 print_pages
 resources/readings
-resources/student_work
+student_work
 
 # files
 README.Rmd
