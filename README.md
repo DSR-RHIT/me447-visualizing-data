@@ -117,6 +117,7 @@ Data carpentry exercises
 
 Graph tutorials
 
+  - [Graph basics](cm/cm201-graph-basics.md#graph-basics)  
   - [Strip plot](cm/cm202-graph-strip-plot.md#strip-plot)  
   - [Box plot](cm/cm203-graph-boxplot.md#box-plot)  
   - [Multiway dot plot](cm/cm204-graph-multiway.md#multiway-dot-plot)
@@ -131,6 +132,7 @@ Graph tutorials
 
 Graph exercises
 
+  - [Graph basics exercises](cm/cm201-graph-basics.md#exercises)
   - [Strip plot exercises](cm/cm202-graph-strip-plot.md#exercises)
   - [Box plot exercises](cm/cm203-graph-boxplot.md#exercises)  
   - [Multiway dot plot exercises](cm/cm204-graph-multiway.md#exercises)
@@ -263,6 +265,10 @@ Software studio
   - [Setup reading
     responses](cm/cm902-software-studio.md#setup-reading-response)  
   - [Commits](cm/cm902-software-studio.md#commits)
+
+R
+
+  - [R basics](cm/cm903-software-R-basics.md#R-basics)
 
 [▲ index](README.md#index)
 
