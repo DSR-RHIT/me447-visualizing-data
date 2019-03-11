@@ -22,33 +22,33 @@ my_gapminder <- my_gapminder %>%
 
 
 
-
-ggplot(data = my_gapminder) +
-	geom_point(mapping  = aes(x = gdpPercap / 1000, y = lifeExp, color = continent),
-						 size     = 1.5) +
-	geom_smooth(mapping = aes(x = gdpPercap / 1000, y = lifeExp),
-							method  = "loess",
-							se      = FALSE) +
-	labs(x = "GDP per capita (thousands of dollars)",
-			 y = "Life expectancy (years)",
-			 title = "Life expectancy by country in 2007",
-			 caption = "Source: Gapminder") +
-	theme_graphclass()
-
-
-
-
-ggplot(data    = my_gapminder,
-			 mapping = aes(x = gdpPercap / 1000, y = lifeExp)) +
-	geom_point(mapping = aes(color = continent),
-						 size    = 1.5) +
-	geom_smooth(method = "loess",
-							se     = FALSE) +
-	labs(x = "GDP per capita (thousands of dollars)",
-			 y = "Life expectancy (years)",
-			 title = "Life expectancy by country in 2007",
-			 caption = "Source: Gapminder") +
-	theme_graphclass()
+#
+# ggplot(data = my_gapminder) +
+# 	geom_point(mapping  = aes(x = gdpPercap / 1000, y = lifeExp, color = continent),
+# 						 size     = 1.5) +
+# 	geom_smooth(mapping = aes(x = gdpPercap / 1000, y = lifeExp),
+# 							method  = "loess",
+# 							se      = FALSE) +
+# 	labs(x = "GDP per capita (thousands of dollars)",
+# 			 y = "Life expectancy (years)",
+# 			 title = "Life expectancy by country in 2007",
+# 			 caption = "Source: Gapminder") +
+# 	theme_graphclass()
+#
+#
+#
+#
+# ggplot(data    = my_gapminder,
+# 			 mapping = aes(x = gdpPercap / 1000, y = lifeExp)) +
+# 	geom_point(mapping = aes(color = continent),
+# 						 size    = 1.5) +
+# 	geom_smooth(method = "loess",
+# 							se     = FALSE) +
+# 	labs(x = "GDP per capita (thousands of dollars)",
+# 			 y = "Life expectancy (years)",
+# 			 title = "Life expectancy by country in 2007",
+# 			 caption = "Source: Gapminder") +
+# 	theme_graphclass()
 
 
 

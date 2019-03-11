@@ -343,7 +343,9 @@ In Windows,
   - `Ctrl Shift M` creates the pipe operator  
   - `Ctrl Enter` runs the selected lilne(s) of code in an R script  
   - `Ctrl Shift K` knits an Rmd file  
-  - `Alt -` creates the assignent operator `<-`
+  - `Alt -` creates the assignent operator `<-`  
+  - `F7` (or possibly `Fn 7` depending on your keyboard) is a spell
+    check
 
 ## exercises
 
@@ -351,7 +353,7 @@ Use *File \> New File \> R Script* to create a new R script in your
 `explore` directory
 
 ``` 
-explore/0201-R-basics.R  
+explore/0201-R-basics-explore.R  
 ```
 
   - In this script type the code chunks from the tutorial above one line
