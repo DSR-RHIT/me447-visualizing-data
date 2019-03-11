@@ -1,6 +1,11 @@
 graph basics
 ================
 
+<img src="../resources/cm201-01.png" width="70%" /> <small> <br>
+<i>Decline</i> by Randall Munroe (xkcd.com) is licensed under
+<a href="https://creativecommons.org/licenses/by-nc/2.5/">CC BY-NC
+2.5</a> <br> </small>
+
 An introduction to ggplot2 adapted from Chapter 3 from (Healy,
 [2019](#ref-Healy:2019)). If you already have R experience, you might
 still want to browse this section in case you find something new.
@@ -123,7 +128,7 @@ told ggplot what sort of a graph we want.
 p
 ```
 
-![](images/cm201-unnamed-chunk-6-1.png)<!-- -->
+![](images/cm201-unnamed-chunk-7-1.png)<!-- -->
 
 Because the graph will be a scatterplot, we use the `geom_point()`
 layer.
@@ -135,7 +140,7 @@ p <- p +
 p # print the graph
 ```
 
-![](images/cm201-unnamed-chunk-7-1.png)<!-- -->
+![](images/cm201-unnamed-chunk-8-1.png)<!-- -->
 
 We could also have simply added the layer to the original
 object,
@@ -147,7 +152,7 @@ p <- ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) +
 p # print the graph
 ```
 
-![](images/cm201-unnamed-chunk-8-1.png)<!-- -->
+![](images/cm201-unnamed-chunk-9-1.png)<!-- -->
 
 Notice that the default axis labels are the variables names from the
 data frame. We can edit those with another layer
@@ -159,7 +164,7 @@ p <- p +
 p # print the graph
 ```
 
-![](images/cm201-unnamed-chunk-9-1.png)<!-- -->
+![](images/cm201-unnamed-chunk-10-1.png)<!-- -->
 
 Or,
 
@@ -171,7 +176,7 @@ p <- ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) +
 p # print the graph
 ```
 
-![](images/cm201-unnamed-chunk-10-1.png)<!-- -->
+![](images/cm201-unnamed-chunk-11-1.png)<!-- -->
 
 Summary. The basics steps for building up the layers of any graph
 consist of,
@@ -196,7 +201,7 @@ p <- ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) +
 p # print the graph
 ```
 
-![](images/cm201-unnamed-chunk-11-1.png)<!-- -->
+![](images/cm201-unnamed-chunk-12-1.png)<!-- -->
 
 You can show both the curve and the data by adding both
 layers,
@@ -210,7 +215,7 @@ p <- ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) +
 p # print the graph
 ```
 
-![](images/cm201-unnamed-chunk-12-1.png)<!-- -->
+![](images/cm201-unnamed-chunk-13-1.png)<!-- -->
 
 Because the data points overprint the smooth curve, we can rearrange the
 layer order to print the data markers then the fitted
@@ -225,7 +230,7 @@ p <- ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) +
 p # print the graph
 ```
 
-![](images/cm201-unnamed-chunk-13-1.png)<!-- -->
+![](images/cm201-unnamed-chunk-14-1.png)<!-- -->
 
 ## log scale
 
@@ -248,7 +253,7 @@ p <- p +
 p # print the graph
 ```
 
-![](images/cm201-unnamed-chunk-15-1.png)<!-- -->
+![](images/cm201-unnamed-chunk-16-1.png)<!-- -->
 
 In this case, a linear fit might be an improvement. We add the argument
 `method = "gam"` to the `geom_smooth()`
@@ -264,7 +269,7 @@ p <- ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) +
 p # print the graph
 ```
 
-![](images/cm201-unnamed-chunk-16-1.png)<!-- -->
+![](images/cm201-unnamed-chunk-17-1.png)<!-- -->
 
 The scales package allows us to change the GDP scale to dollars. Using
 the syntax `thepackage::thefunction` we can use the `scales::dollar`
@@ -281,7 +286,7 @@ p <- ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) +
 p # print the graph
 ```
 
-![](images/cm201-unnamed-chunk-17-1.png)<!-- -->
+![](images/cm201-unnamed-chunk-18-1.png)<!-- -->
 
 ## mapping aesthetics
 
@@ -300,7 +305,7 @@ p <- ggplot(data = gapminder,
 p # print the graph
 ```
 
-![](images/cm201-unnamed-chunk-18-1.png)<!-- -->
+![](images/cm201-unnamed-chunk-19-1.png)<!-- -->
 
 You can see that ggplot groups all data by continent and assigns a color
 to the data marker and the linear fit for each group of data. When
@@ -327,7 +332,7 @@ p <- ggplot(data = gapminder,
 p # print the graph
 ```
 
-![](images/cm201-unnamed-chunk-19-1.png)<!-- -->
+![](images/cm201-unnamed-chunk-20-1.png)<!-- -->
 
 Read more about [all the R color
 names](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf).
@@ -424,7 +429,7 @@ p <- ggplot(data = my_gapminder,
 p
 ```
 
-![](images/cm201-unnamed-chunk-24-1.png)<!-- -->
+![](images/cm201-unnamed-chunk-25-1.png)<!-- -->
 
 If we were to map the `continent` variable to color again, we would
 have,
@@ -438,7 +443,7 @@ p <- ggplot(data = my_gapminder,
 p # print the graph
 ```
 
-![](images/cm201-unnamed-chunk-25-1.png)<!-- -->
+![](images/cm201-unnamed-chunk-26-1.png)<!-- -->
 
 With the data by continent overlapping as much as it does, it is
 difficult to visually compare the groups. in such cases, we prefer to
@@ -455,7 +460,7 @@ p <- ggplot(data = my_gapminder,
 p # print the graph
 ```
 
-![](images/cm201-unnamed-chunk-26-1.png)<!-- -->
+![](images/cm201-unnamed-chunk-27-1.png)<!-- -->
 
 Comparisons are facilitated by having the facets appear in one column,
 by using the `ncols` argument of `facet_wrap()`.
@@ -467,7 +472,7 @@ p <- p +
 p # print the graph
 ```
 
-![](images/cm201-unnamed-chunk-27-1.png)<!-- -->
+![](images/cm201-unnamed-chunk-28-1.png)<!-- -->
 
 ## ordering the panels
 
@@ -522,7 +527,7 @@ p <- ggplot(data = my_gapminder,
 p # print the graph
 ```
 
-![](images/cm201-unnamed-chunk-30-1.png)<!-- -->
+![](images/cm201-unnamed-chunk-31-1.png)<!-- -->
 
 Setting the `as.table = FALSE` argument places the panel with the
 highest median in the top panel.
@@ -561,7 +566,7 @@ ggplot(data    = my_gapminder,
     theme(legend.position = "none")
 ```
 
-![](images/cm201-unnamed-chunk-31-1.png)<!-- -->
+![](images/cm201-unnamed-chunk-32-1.png)<!-- -->
 
 The `theme_graphclass()` function is a set of graph design choices I’ve
 included in the graphclassmate package for our use.

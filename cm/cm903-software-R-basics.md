@@ -1,6 +1,8 @@
 R basics
 ================
 
+<img src="../resources/logo-R.png" width="15%" />
+
 An introduction to R adapted from Chapter 2 from (Healy,
 [2019](#ref-Healy:2019)). If you already have R experience, you might
 still want to browse this section in case you find something new.
