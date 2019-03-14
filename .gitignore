@@ -1,10 +1,9 @@
 # ignore course management folders
-data-raw
 manage
 practice
-print-pages
-resources/images
 print_pages
+resources/data-raw
+resources/images
 resources/readings
 student_work
 
