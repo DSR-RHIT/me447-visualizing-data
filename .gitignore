@@ -35,9 +35,11 @@ holding
 *.docx
 */*.docx
 
-# ignore all XLSX
+# ignore all XLSX except in data-raw
 *.xlsx
 */*.xlsx
+
+
 
 # ignore all HTML
 #*.html
@@ -74,3 +76,6 @@ vignettes/*.pdf
 *.knit.md
 
 .Rproj.user
+
+# recursively allow files under subtree
+!/data-raw/**
