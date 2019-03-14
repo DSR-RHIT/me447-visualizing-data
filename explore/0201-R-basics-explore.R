@@ -1,4 +1,4 @@
-# week 2, graph basics
+# week 2, R basics
 
 c(1, 2, 3, 1, 3, 25)
 

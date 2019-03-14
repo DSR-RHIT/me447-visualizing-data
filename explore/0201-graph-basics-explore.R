@@ -1,6 +1,56 @@
+# explore graph basics with ggplot2
+# me447
+# RAL 2019-03-11
+
+
+
+
+# example of a code header to NOT USE
+#
+# **********************************************************************;
+# Project           : Sample Drug, Sample Indication,Study1
+#
+# Program name      : sample.sas
+#
+# Author            : smithb
+#
+# Date created      : 20100816
+#
+# Purpose           : Summarize demographics data for the study.
+#
+# Revision History  :
+#
+# Date        Author      Ref    Revision (Date in YYYYMMDD format)
+# 20100818    smithb      1      Removed subjects with who have not been dosed per spec.
+#
+# **********************************************************************;
+
+
+
 library("tidyverse")
 library("gapminder")
 library("graphclassmate")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# complexity
 
 unique(gapminder$year)
 

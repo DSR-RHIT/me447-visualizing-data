@@ -27,6 +27,7 @@ demonstrates the degree to which you can:
 [citing sources](#citing-sources)  
 [revising](#revising)  
 [technical discipline](#technical-discipline)  
+[sports data limit](#sports-data-limit)  
 [redesigns](#redesigns)  
 [reproductions](#reproductions)  
 [a compelling story](#a-compelling-story)  
@@ -121,6 +122,14 @@ technical area. You might consider:
     contribute to the teams’ work as well as your portfolio. Your
     teammates might resist however—avoid pressuring them to use your
     work.
+
+## sports data limit
+
+Because our goal is to create a portfolio of data displays suitable for
+an audience of your professional peers and prospective employers, I
+impose a limit on the number of sports-related data.
+
+No more than two of your displays can be related to sport.
 
 ## redesigns
 
