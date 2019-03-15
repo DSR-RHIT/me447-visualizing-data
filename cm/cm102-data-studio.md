@@ -11,11 +11,11 @@ licensed under
 
 [prerequisites](#prerequisites)  
 [data basics](#data-basics)  
-[classify your data structure](#classify-your-data-structure)  
 [use Notepad for CSV files](#use-notepad-for-csv-files)  
 [workflow basics](#workflow-basics)  
-[data transformation](#data-transformation)  
-[begin acquiring data](#begin-acquiring-data)  
+[data transformation](#data-transformation) [classify your data
+structure](#classify-your-data-structure) [begin acquiring
+data](#begin-acquiring-data)  
 [references](#references)
 
 ## prerequisites
@@ -25,36 +25,16 @@ licensed under
     structure](cm501-proj-m-manage-files.md#plan-the-directory-structure)
     satisfies the course requirements
 
+The following packages are used. Install them if you have not yet done
+so.
+
+  - tidyverse  
+  - nycflights13
+
 ## data basics
 
 The link to the [data basics](../slides/sd021-data-basics.pdf) material
 we covered in a previous session, for reference.
-
-## classify your data structure
-
-Every graph in your portfolio has a specific data structure, summarized
-in the [portfolio data
-summary](cm301-report-display-reqtss.md#portfolio-display-requirements).
-As you look for data—both for practice and for the final display—know
-the data structure you are looking for.
-
-When you think you have a data set suitable for a particular graph type,
-classify its structure, i.e.,
-
-  - determine the number of observations  
-  - determine the number of variables  
-  - classify every variable as quantitative or categorical  
-  - determine the number of levels in every categorical variable  
-  - classify every categorical variables as ordinal or nominal  
-  - classify every quantitative variable as continuous or discrete  
-  - other features, if any, relevant to the particular display type, for
-    example, a Sankey diagram requires identification of nodes and links
-
-State specifically how each data requirements has been met. This summary
-will be part of the prose description that accompanies each graph in the
-portfolio.
-
-<br> <a href="#top">▲ top of page</a>
 
 ## use Notepad for CSV files
 
@@ -130,6 +110,32 @@ mutate()](https://r4ds.had.co.nz/transform.html#add-new-variables-with-mutate)
 summaries](https://r4ds.had.co.nz/transform.html#grouped-summaries-with-summarise)
 
   - Exercise [5.6.7](https://r4ds.had.co.nz/transform.html#exercises-11)
+
+## classify your data structure
+
+Every graph in your portfolio has a specific data structure, summarized
+in the [portfolio data
+summary](cm301-report-display-reqtss.md#portfolio-display-requirements).
+As you look for data—both for practice and for the final display—know
+the data structure you are looking for.
+
+When you think you have a data set suitable for a particular graph type,
+classify its structure, i.e.,
+
+  - determine the number of observations  
+  - determine the number of variables  
+  - classify every variable as quantitative or categorical  
+  - determine the number of levels in every categorical variable  
+  - classify every categorical variables as ordinal or nominal  
+  - classify every quantitative variable as continuous or discrete  
+  - other features, if any, relevant to the particular display type, for
+    example, a Sankey diagram requires identification of nodes and links
+
+State specifically how each data requirements has been met. This summary
+will be part of the prose description that accompanies each graph in the
+portfolio.
+
+<br> <a href="#top">▲ top of page</a>
 
 ## begin acquiring data
 
