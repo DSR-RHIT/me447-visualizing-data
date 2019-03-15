@@ -10,16 +10,11 @@ licensed under
 ## contents
 
 [prerequisites](#prerequisites)  
-[the basic skills](#the-basic-skills)  
+[data basics](#data-basics)  
 [classify your data structure](#classify-your-data-structure)  
-[practice data sets in R](#practice-data-sets-in-r)  
 [use Notepad for CSV files](#use-notepad-for-csv-files)  
-\[\]  
-\[\]  
-\[\]  
-\[\]  
-\[\]  
-\[\]  
+[workflow basics](#workflow-basics)  
+[data transformation](#data-transformation)  
 [begin acquiring data](#begin-acquiring-data)  
 [references](#references)
 
@@ -30,14 +25,10 @@ licensed under
     structure](cm501-proj-m-manage-files.md#plan-the-directory-structure)
     satisfies the course requirements
 
-## the basic skills
+## data basics
 
-The four basic skills for preparing data for graphibg are
-
-1.  Obtain the raw data  
-2.  Read the raw data into R and examine it  
-3.  Identify the underlying structure of the data
-4.  Tidy the data and write it to file
+The link to the [data basics](../slides/sd021-data-basics.pdf) material
+we covered in a previous session, for reference.
 
 ## classify your data structure
 
@@ -54,7 +45,7 @@ classify its structure, i.e.,
   - determine the number of variables  
   - classify every variable as quantitative or categorical  
   - determine the number of levels in every categorical variable  
-  - classify every categorical variables sa ordinal or nominal  
+  - classify every categorical variables as ordinal or nominal  
   - classify every quantitative variable as continuous or discrete  
   - other features, if any, relevant to the particular display type, for
     example, a Sankey diagram requires identification of nodes and links
@@ -62,23 +53,6 @@ classify its structure, i.e.,
 State specifically how each data requirements has been met. This summary
 will be part of the prose description that accompanies each graph in the
 portfolio.
-
-<br> <a href="#top">▲ top of page</a>
-
-## practice data sets in R
-
-We use the practice data sets available in R to practice getting the
-data into the right form for the graph and for practice creating the
-various graph types. Thus you can work ahead on learning to create the
-various graph types before obtaining the final data sets used in the
-portfolio.
-
-Refer to the [lecture slides](../slides/sd021-data-basics.pdf) for a
-refresher on examining practice data in base R and in R packages. You
-may recall:
-
-    data()                     # to list data sets in base R 
-    data(package = "pkg_name") # to list data sets in package "pkg_name"
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -106,6 +80,56 @@ not alter the data. You can still open the CSV in Excel if you wish with
 a right-click on the file, open with, and choose Excel.
 
 <br> <a href="#top">▲ top of page</a>
+
+## workflow basics
+
+From the text, read the following sections and do the exercises
+indicated
+
+[4.1 Coding
+basics](https://r4ds.had.co.nz/workflow-basics.html#coding-basics)  
+[4.2 What’s in a
+name?](https://r4ds.had.co.nz/workflow-basics.html#whats-in-a-name)  
+[4.3 Calling
+functions](https://r4ds.had.co.nz/workflow-basics.html#calling-functions)
+
+  - Exercise
+    [4.4.1](https://r4ds.had.co.nz/workflow-basics.html#practice)  
+  - Exercise
+    [4.4.2](https://r4ds.had.co.nz/workflow-basics.html#practice)  
+  - Exercise
+    [4.4.3](https://r4ds.had.co.nz/workflow-basics.html#practice)
+
+## data transformation
+
+From the text, read the following sections and do the exercises
+indicated
+
+[5.1 Data
+transformation](https://r4ds.had.co.nz/transform.html#introduction-2)  
+[5.2
+filter()](https://r4ds.had.co.nz/transform.html#filter-rows-with-filter)
+
+  - Exercise [5.2.4](https://r4ds.had.co.nz/transform.html#exercises-7)
+
+[5.3
+arrange()](https://r4ds.had.co.nz/transform.html#arrange-rows-with-arrange)
+
+  - Exercise [5.3.1](https://r4ds.had.co.nz/transform.html#exercises-8)
+
+[5.4 select()](https://r4ds.had.co.nz/transform.html#select)
+
+  - Exercise [5.4.1](https://r4ds.had.co.nz/transform.html#exercises-9)
+
+[5.5
+mutate()](https://r4ds.had.co.nz/transform.html#add-new-variables-with-mutate)
+
+  - Exercise [5.5.2](https://r4ds.had.co.nz/transform.html#exercises-10)
+
+[5.6 grouped
+summaries](https://r4ds.had.co.nz/transform.html#grouped-summaries-with-summarise)
+
+  - Exercise [5.6.7](https://r4ds.had.co.nz/transform.html#exercises-11)
 
 ## begin acquiring data
 

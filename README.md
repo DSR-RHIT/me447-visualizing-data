@@ -93,12 +93,13 @@ permission
 Data studio
 
   - [Data basics slides](slides/sd021-data-basics.pdf)  
-  - [Know your desired data
-    structure](cm/cm102-data-studio.md#know-your-desired-data-structure)
-  - [Practice data sets in
-    R](cm/cm102-data-studio.md#practice-data-sets-in-R)
+  - [Classify your data
+    structure](cm/cm102-data-studio.md#classify-your-data-structure)  
+  - [Use Notepad for CSV
+    files](cm/cm102-data-studio.md#use-notepad-for-csv-files)  
+  - [Workflow basics](cm/cm102-data-studio.md#workflow-basics)  
+  - [Data transformation](cm/cm102-data-studio.md#data-transformation)  
   - [Begin acquiring data](cm/cm102-data-studio.md#begin-acquiring-data)
-  - [Classify your data](cm/cm102-data-studio.md#classify-your-data)
 
 Data tables
 
@@ -111,8 +112,6 @@ Data carpentry tutorials
 Data carpentry exercises
 
   - [Data basics exercises](cm/cm101-data-basics.md#exercises)
-
-cm101-data-basics.md
 
 [▲ index](README.md#index)
 
@@ -253,6 +252,12 @@ Getting started
   - [Test the initial
     installation](cm/cm901-software-install.md#test-the-installation)
 
+R
+
+  - [R basics](cm/cm903-software-R-basics.md#R-basics)
+  - [Interacting with
+    R](cm/cm101b-interacting-with-R.md#interacting-with-R)
+
 Software studio
 
   - [Setup GitHub](cm/cm902-software-studio.md#setup-GitHub)
@@ -268,10 +273,6 @@ Software studio
   - [Setup reading
     responses](cm/cm902-software-studio.md#setup-reading-response)  
   - [Commits](cm/cm902-software-studio.md#commits)
-
-R
-
-  - [R basics](cm/cm903-software-R-basics.md#R-basics)
 
 [▲ index](README.md#index)
 
