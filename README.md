@@ -92,13 +92,14 @@ permission
 
 Data studio
 
-  - [Data basics slides](slides/sd021-data-basics.pdf)  
   - [Classify your data
     structure](cm/cm102-data-studio.md#classify-your-data-structure)  
+  - [Data basics slides](slides/sd021-data-basics.pdf)  
   - [Use Notepad for CSV
     files](cm/cm102-data-studio.md#use-notepad-for-csv-files)  
   - [Workflow basics](cm/cm102-data-studio.md#workflow-basics)  
   - [Data transformation](cm/cm102-data-studio.md#data-transformation)  
+  - [Data import](cm/cm102-data-studio.md#data-import)  
   - [Begin acquiring data](cm/cm102-data-studio.md#begin-acquiring-data)
 
 Data tables
@@ -111,7 +112,23 @@ Data carpentry tutorials
 
 Data carpentry exercises
 
-  - [Data basics exercises](cm/cm101-data-basics.md#exercises)
+  - [Data basics exercises](cm/cm101-data-basics.md#exercises)  
+  - [4.4.1](https://r4ds.had.co.nz/workflow-basics.html#practice)
+    workflow  
+  - [4.4.2](https://r4ds.had.co.nz/workflow-basics.html#practice)
+    workflow  
+  - [4.4.3](https://r4ds.had.co.nz/workflow-basics.html#practice)
+    workflow  
+  - [5.2.4](https://r4ds.had.co.nz/transform.html#exercises-7)
+    `filter()`  
+  - [5.3.1](https://r4ds.had.co.nz/transform.html#exercises-8)
+    `arrange()`  
+  - [5.4.1](https://r4ds.had.co.nz/transform.html#exercises-9)
+    `select()`  
+  - [5.5.2](https://r4ds.had.co.nz/transform.html#exercises-10)
+    `mutate()`  
+  - [5.6.7](https://r4ds.had.co.nz/transform.html#exercises-11)
+    `group_by()`
 
 [▲ index](README.md#index)
 
