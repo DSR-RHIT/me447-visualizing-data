@@ -31,6 +31,8 @@ so.
   - tidyverse  
   - nycflights13
 
+<br> <a href="#top">▲ top of page</a>
+
 ## data basics
 
 The link to the [data basics](../slides/sd021-data-basics.pdf) material
@@ -110,6 +112,8 @@ mutate()](https://r4ds.had.co.nz/transform.html#add-new-variables-with-mutate)
 summaries](https://r4ds.had.co.nz/transform.html#grouped-summaries-with-summarise)
 
   - Exercise [5.6.7](https://r4ds.had.co.nz/transform.html#exercises-11)
+
+<br> <a href="#top">▲ top of page</a>
 
 ## classify your data structure
 
