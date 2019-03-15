@@ -13,9 +13,9 @@ licensed under
 [data basics](#data-basics)  
 [use Notepad for CSV files](#use-notepad-for-csv-files)  
 [workflow basics](#workflow-basics)  
-[data transformation](#data-transformation) [classify your data
-structure](#classify-your-data-structure) [begin acquiring
-data](#begin-acquiring-data)  
+[data transformation](#data-transformation)  
+[classify your data structure](#classify-your-data-structure)  
+[begin acquiring data](#begin-acquiring-data)  
 [references](#references)
 
 ## prerequisites
