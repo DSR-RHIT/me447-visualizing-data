@@ -30,7 +30,8 @@ Note: The instruction to **classify a data structure** implies that you
   - classify every variable as quantitative or categorical  
   - determine the number of levels in every categorical variable  
   - classify everycategorical variables sa ordinal or nominal  
-  - classify every quantitative variable as continuous or discrete
+  - classify every quantitative variable as continuous or discrete  
+  - other features relevant to the particular display type
 
 **1. Manually tidy Excel data**
 

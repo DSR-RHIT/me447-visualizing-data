@@ -10,10 +10,17 @@ licensed under
 ## contents
 
 [prerequisites](#prerequisites)  
-[know your desired data structure](#know-your-desired-data-structure)  
+[the basic skills](#the-basic-skills)  
+[classify your data structure](#classify-your-data-structure)  
 [practice data sets in R](#practice-data-sets-in-r)  
+[use Notepad for CSV files](#use-notepad-for-csv-files)  
+\[\]  
+\[\]  
+\[\]  
+\[\]  
+\[\]  
+\[\]  
 [begin acquiring data](#begin-acquiring-data)  
-[classify your data](#classify-your-data)  
 [references](#references)
 
 ## prerequisites
@@ -23,7 +30,16 @@ licensed under
     structure](cm501-proj-m-manage-files.md#plan-the-directory-structure)
     satisfies the course requirements
 
-## know your desired data structure
+## the basic skills
+
+The four basic skills for preparing data for graphibg are
+
+1.  Obtain the raw data  
+2.  Read the raw data into R and examine it  
+3.  Identify the underlying structure of the data
+4.  Tidy the data and write it to file
+
+## classify your data structure
 
 Every graph in your portfolio has a specific data structure, summarized
 in the [portfolio data
@@ -31,11 +47,21 @@ summary](cm301-report-display-reqtss.md#portfolio-display-requirements).
 As you look for data—both for practice and for the final display—know
 the data structure you are looking for.
 
-The elements of a prospective data set you should identify include
+When you think you have a data set suitable for a particular graph type,
+classify its structure, i.e.,
 
-  - the number of observations
-  - the number of quantitative variables
-  - the number of categorical variables and the number of levels of each
+  - determine the number of observations  
+  - determine the number of variables  
+  - classify every variable as quantitative or categorical  
+  - determine the number of levels in every categorical variable  
+  - classify every categorical variables sa ordinal or nominal  
+  - classify every quantitative variable as continuous or discrete  
+  - other features, if any, relevant to the particular display type, for
+    example, a Sankey diagram requires identification of nodes and links
+
+State specifically how each data requirements has been met. This summary
+will be part of the prose description that accompanies each graph in the
+portfolio.
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -47,90 +73,37 @@ various graph types. Thus you can work ahead on learning to create the
 various graph types before obtaining the final data sets used in the
 portfolio.
 
-To see the data sets included in your R workspace, use the *data()*
-function. A tab will open in the RStudio pane that looks like this:
+Refer to the [lecture slides](../slides/sd021-data-basics.pdf) for a
+refresher on examining practice data in base R and in R packages. You
+may recall:
 
-    Data sets in package 'datasets':
-    
-    AirPassengers      Monthly Airline Passenger Numbers 1949-1960
-    BJsales            Sales Data with Leading Indicator
-    BOD                Biochemical Oxygen Demand
-    CO2                Carbon Dioxide Uptake in Grass Plants
-    ChickWeight        Weight versus age of chicks on different diets
-    ...etc
+    data()                     # to list data sets in base R 
+    data(package = "pkg_name") # to list data sets in package "pkg_name"
 
-You can scroll down this list looking for interesting data. Some of
-these datasets are used regularly by R folks to illustrate package
-functionality.
+<br> <a href="#top">▲ top of page</a>
 
-Motor Trend car data. Type `?mtcars` in the Console to read more about
-it.
+## use Notepad for CSV files
 
-    #> Observations: 32
-    #> Variables: 11
-    #> $ mpg  <dbl> 21.0, 21.0, 22.8, 21.4, 18.7, 18.1, 14.3, 24.4, 22.8, 19....
-    #> $ cyl  <dbl> 6, 6, 4, 6, 8, 6, 8, 4, 4, 6, 6, 8, 8, 8, 8, 8, 8, 4, 4, ...
-    #> $ disp <dbl> 160.0, 160.0, 108.0, 258.0, 360.0, 225.0, 360.0, 146.7, 1...
-    #> $ hp   <dbl> 110, 110, 93, 110, 175, 105, 245, 62, 95, 123, 123, 180, ...
-    #> $ drat <dbl> 3.90, 3.90, 3.85, 3.08, 3.15, 2.76, 3.21, 3.69, 3.92, 3.9...
-    #> $ wt   <dbl> 2.620, 2.875, 2.320, 3.215, 3.440, 3.460, 3.570, 3.190, 3...
-    #> $ qsec <dbl> 16.46, 17.02, 18.61, 19.44, 17.02, 20.22, 15.84, 20.00, 2...
-    #> $ vs   <dbl> 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, ...
-    #> $ am   <dbl> 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, ...
-    #> $ gear <dbl> 4, 4, 4, 3, 3, 3, 3, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 4, 4, ...
-    #> $ carb <dbl> 4, 4, 1, 1, 2, 1, 4, 2, 2, 4, 4, 3, 3, 3, 4, 4, 4, 1, 2, ...
+We regularly store data in CSV files.
 
-Three species of iris (the flower). Type `?iris` in the Console to read
-more about it.
+On a Windows machine, MSExcel is typically the default software for
+opening CSV files. Unfortunately, Excel can alter the data in unexpected
+ways, so we need to change the default.
 
-    #> Observations: 150
-    #> Variables: 5
-    #> $ Sepal.Length <dbl> 5.1, 4.9, 4.7, 4.6, 5.0, 5.4, 4.6, 5.0, 4.4, 4.9,...
-    #> $ Sepal.Width  <dbl> 3.5, 3.0, 3.2, 3.1, 3.6, 3.9, 3.4, 3.4, 2.9, 3.1,...
-    #> $ Petal.Length <dbl> 1.4, 1.4, 1.3, 1.5, 1.4, 1.7, 1.4, 1.5, 1.4, 1.5,...
-    #> $ Petal.Width  <dbl> 0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.3, 0.2, 0.2, 0.1,...
-    #> $ Species      <fct> setosa, setosa, setosa, setosa, setosa, setosa, s...
+Open Excel. Use Save As… and select the CSV option.
 
-Survival of passengers on the Titanic. Type `?Titanic` in the Console to
-read more about it.
+In the `data-raw` directory, save the empty file as `test.csv` using CSV
+(Comma delimited) (\*.csv) from the menu.
 
-    #>  'table' num [1:4, 1:2, 1:2, 1:2] 0 0 35 0 0 0 17 0 118 154 ...
-    #>  - attr(*, "dimnames")=List of 4
-    #>   ..$ Class   : chr [1:4] "1st" "2nd" "3rd" "Crew"
-    #>   ..$ Sex     : chr [1:2] "Male" "Female"
-    #>   ..$ Age     : chr [1:2] "Child" "Adult"
-    #>   ..$ Survived: chr [1:2] "No" "Yes"
+Close the Excel file. In Explorer, find the file. Right-click and select
+*Open with…*, then *Choose default program …*. In the dialog box, select
+*Notepad* or any other text-only package.
 
-Star Wars characters, from the *dplyr* package. Type `?starwars` in the
-Console to read more about it.
+![](../resources/csv-default.png)
 
-    #> Observations: 87
-    #> Variables: 13
-    #> $ name       <chr> "Luke Skywalker", "C-3PO", "R2-D2", "Darth Vader", ...
-    #> $ height     <int> 172, 167, 96, 202, 150, 178, 165, 97, 183, 182, 188...
-    #> $ mass       <dbl> 77.0, 75.0, 32.0, 136.0, 49.0, 120.0, 75.0, 32.0, 8...
-    #> $ hair_color <chr> "blond", NA, NA, "none", "brown", "brown, grey", "b...
-    #> $ skin_color <chr> "fair", "gold", "white, blue", "white", "light", "l...
-    #> $ eye_color  <chr> "blue", "yellow", "red", "yellow", "brown", "blue",...
-    #> $ birth_year <dbl> 19.0, 112.0, 33.0, 41.9, 19.0, 52.0, 47.0, NA, 24.0...
-    #> $ gender     <chr> "male", NA, NA, "male", "female", "male", "female",...
-    #> $ homeworld  <chr> "Tatooine", "Tatooine", "Naboo", "Tatooine", "Alder...
-    #> $ species    <chr> "Human", "Droid", "Droid", "Human", "Human", "Human...
-    #> $ films      <list> [<"Revenge of the Sith", "Return of the Jedi", "Th...
-    #> $ vehicles   <list> [<"Snowspeeder", "Imperial Speeder Bike">, <>, <>,...
-    #> $ starships  <list> [<"X-wing", "Imperial shuttle">, <>, <>, "TIE Adva...
-
-US economic time series, from the *ggplot2* package. Type `?economics`
-in the Console to read more about it.
-
-    #> Observations: 574
-    #> Variables: 6
-    #> $ date     <date> 1967-07-01, 1967-08-01, 1967-09-01, 1967-10-01, 1967...
-    #> $ pce      <dbl> 507.4, 510.5, 516.3, 512.9, 518.1, 525.8, 531.5, 534....
-    #> $ pop      <int> 198712, 198911, 199113, 199311, 199498, 199657, 19980...
-    #> $ psavert  <dbl> 12.5, 12.5, 11.7, 12.5, 12.5, 12.1, 11.7, 12.2, 11.6,...
-    #> $ uempmed  <dbl> 4.5, 4.7, 4.6, 4.9, 4.7, 4.8, 5.1, 4.5, 4.1, 4.6, 4.4...
-    #> $ unemploy <int> 2944, 2945, 2958, 3143, 3066, 3018, 2878, 3001, 2877,...
+From now on, when you open a CSV file, it will default to Notepad, and
+not alter the data. You can still open the CSV in Excel if you wish with
+a right-click on the file, open with, and choose Excel.
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -193,20 +166,6 @@ Data tutorials from other authors
     from Data Camp
 
 <br> <a href="#top">▲ top of page</a>
-
-## classify your data
-
-When you think you have a data set suitable for a particular graph type,
-summarize its features, for example,
-
-  - the number of observations
-  - name, number, and range of quantitative variables  
-  - name, number, and discrete levels of categorical variables
-  - other features relevant to the particular display type
-
-State specifically how each data requirements has been met. This summary
-will be part of the prose description that accompanies each graph in the
-portfolio.
 
 ## references
 
