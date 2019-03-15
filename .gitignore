@@ -39,8 +39,6 @@ holding
 *.xlsx
 */*.xlsx
 
-
-
 # ignore all HTML
 #*.html
 #*/*.html
