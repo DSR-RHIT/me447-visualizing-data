@@ -75,5 +75,7 @@ vignettes/*.pdf
 
 .Rproj.user
 
-# recursively allow files under subtree
-!/data-raw/**
+# allow specific files
+!/data-raw/DSR-table1.xlsx
+!/data-raw/VADeaths.xlsx
+!/data-raw/scanvote.csv
