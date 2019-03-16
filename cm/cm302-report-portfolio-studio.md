@@ -15,6 +15,7 @@ licensed under
 [importing images](#importing-images)  
 [start a report](#start-a-report)  
 [data tables](#data-tables)  
+[typesetting mathematics](#typesetting-mathematics)  
 [create the bib file](#create-the-bib-file)  
 [YAML bibliography argument](#yaml-bibliography-argument)  
 [add a citation](#add-a-citation)  
@@ -125,6 +126,29 @@ open.
 > In the sample report, show how to create a sample data table.
 > Typically wide. Brief introduction to principles from Stephen few on
 > table layout—adapted to the GitHub environment.
+
+<br> <a href="#top">▲ top of page</a>
+
+## typesetting mathematics
+
+If you need to typeset math expressions in your portfolio, R Markdown is
+ready\!
+
+Markdown uses LaTeX math syntax, for example, this markup
+
+    $$
+    x^2 + y^2 = r^2
+    $$
+
+produces this output
+
+  
+![
+x^2 + y^2 = r^2
+](https://latex.codecogs.com/png.latex?%0Ax%5E2%20%2B%20y%5E2%20%3D%20r%5E2%0A
+"
+x^2 + y^2 = r^2
+")  
 
 <br> <a href="#top">▲ top of page</a>
 

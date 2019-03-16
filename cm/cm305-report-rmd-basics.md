@@ -11,6 +11,7 @@ Markdown quick tour</a>. <br> </small>
 [prerequisites](#prerequisites)  
 [create an Rmd script](#create-an-rmd-script)  
 [set the Rmd output format](#set-the-rmd-output-format)  
+[YAML header arguments](#yaml-header-arguments)  
 [how to format text](#how-to-format-text)  
 [initialize a report](#initialize-a-report)  
 [include\_graphics()](#include_graphics)  
@@ -21,9 +22,13 @@ Markdown quick tour</a>. <br> </small>
   - Start every work session by launching `portfolio.Rproj`  
   - Your [project directory
     structure](cm501-proj-m-manage-files.md#plan-the-directory-structure)
-    satisfies the course requirements  
-  - The png package has been installed
-  - The knitr package has been installed
+    satisfies the course requirements
+
+If any of these packages have not yet been installed, they can be
+installed using these commands,
+
+    install.packages("knitr")
+    install.packages("png")
 
 ## create an Rmd script
 
@@ -33,9 +38,9 @@ Markdown…*
 In the dialog box, leave all the default settings for now, select *OK*.
 
 An untitled R Markdown file is created. Use *File \> Save As…* to save
-the file to your `practice` directory with the filename
+the file to your `explore` directory with the filename
 
-    `practice/p3-1-Rmarkdown-basics-tutorial.Rmd`
+    explore/0301-rmd-basics-explore.Rmd
 
 The Rmd script contains three types of content:
 
@@ -44,21 +49,22 @@ The Rmd script contains three types of content:
     `_italics_`
 3.  Chunks of R code surrounded by backticks ` ``` `
 
-![](../resources/cm321_00.png)<!-- -->
+<img src="../resources/cm321_00.png" width="70%" />
 
 <br>To render the document, click the *Knit* button or use the pulldown
 menu, *Knit \> Knit to HTML*
 
-![](../resources/cm321_01.png)<!-- -->
+<img src="../resources/cm321_01.png" width="70%" />
 
 <br>The report appears in your RStudio viewer.
 
-![](../resources/cm321_02.png)<!-- -->
+<img src="../resources/cm321_02.png" width="70%" />
 
 ## set the Rmd output format
 
 The header or front matter is in YAML (YAML Ain’t Markup Language)
-syntax. The YAML header specifies how the file is rendered.
+syntax. The YAML header specifies how the file is rendered. The default
+YAML is this:
 
 ``` yaml
 ---
@@ -90,10 +96,53 @@ output: github_document
 
 The report appears in your RStudio viewer.
 
-![](../resources/cm321_03.png)<!-- -->
+<img src="../resources/cm321_03.png" width="70%" />
 
 <br>If you take another look at the knit pulldown menu, its options have
 changed.
+
+## YAML header arguments
+
+The only required argument in the YAML header is the output type. If you
+wish you may omit all other arguments for a minimal header:
+
+``` yaml
+---
+output: github_document
+---
+```
+
+Some of the most commonly used arguments include title, author, date,
+bibliography, and CSL for formatting citations. For example, the YAML
+header for the course README file includes:
+
+``` yaml
+---
+title: "visualizing data"
+output: 
+  github_document: 
+    pandoc_args: "--webtex"
+bibliography: "resources/references.bib"
+csl: "resources/journal-of-glaciology.csl"
+link-citations: yes
+---
+```
+
+In Rmd documents, math expressions are typically typeset using a TeX
+engine, producing beautiful mathematics. For example, the Rmd markup
+
+    $$
+    \tfrac{d}{dt}\nabla_{\dot{q}}T^* - \nabla_{q}T^* + \nabla_{q}V + \nabla_{\dot{q}} D = Q 
+    $$
+
+produces the output
+
+<img src="../resources/cm305-01.png" width="27%" />
+
+However, GitHub does not yet support TeX in its Markdown documents.
+Thus, if you write any mathematics in your portfolio prose, you must add
+the `pandoc_args: "--webtex"` argument to the YAML header as shown
+above.
 
 ## how to format text
 
@@ -111,7 +160,7 @@ produce
 The default Rmd document, for example, illustrates several of these
 markups,
 
-![](../resources/cm321_04.png)<!-- -->
+<img src="../resources/cm321_04.png" width="70%" />
 
 <br> For the complete list of common markups, please read
 
@@ -137,7 +186,7 @@ To initialize a new Rmd script, we delete most of the default text, add
 the author name and date, and assign settings to control code chunk
 behavior.
 
-In the `practice/03-1-Rmarkdown-basics-tutorial.Rmd` file,
+In the `explore/03-1-Rmarkdown-basics-tutorial.Rmd` file,
 
   - Delete everything below the YAML header
   - Knit
@@ -278,8 +327,8 @@ kable(explore)
 | homeworld |  n |
 | :-------- | -: |
 | Naboo     | 11 |
-| Tatooine  | 10 |
 | NA        | 10 |
+| Tatooine  | 10 |
 | Alderaan  |  3 |
 | Coruscant |  3 |
 | Kamino    |  3 |
@@ -320,7 +369,7 @@ the image in the output document.
 
 The file path argument for `include_graphics()` assumes that the working
 directory is the Rmd file folder. For us, this would usually be the
-`practice/` or `reports/` directory. So our relative path argument is
+`explore/` or `reports/` directory. So our relative path argument is
 composed of these elements: `../` to go up one level, `resources/` to go
 down one level, and `an_image.png` to retrieve the file.
 
