@@ -128,6 +128,7 @@ filter()](https://r4ds.had.co.nz/transform.html#filter-rows-with-filter)
 arrange()](https://r4ds.had.co.nz/transform.html#arrange-rows-with-arrange)
 
   - Exercise [5.3.1](https://r4ds.had.co.nz/transform.html#exercises-8)
+    problems 2, 3, 4
 
 [5.4 select()](https://r4ds.had.co.nz/transform.html#select)
 
@@ -165,7 +166,12 @@ know and I’ll add them to the lists.
 
 Data sites
 
-  - [National snow and ice data center](https://nsidc.org/)
+  - [FiveThirtyEight](https://data.fivethirtyeight.com/)  
+  - [US government](https://www.data.gov/)  
+  - [NOAA climate data](https://www.ncdc.noaa.gov/cdo-web/)  
+  - [Publications for which code and/or data are
+    available](https://reproducibleresearch.net/reproducible-material/)  
+  - [National snow and ice data center](https://nsidc.org/)  
   - [Visualizing obesity across United States by using data from
     Wikipedia](https://datascienceplus.com/visualizing-obesity-across-united-states-by-using-data-from-wikipedia/)
   - [Extracting tables from PDFs in R using the tabulizer
