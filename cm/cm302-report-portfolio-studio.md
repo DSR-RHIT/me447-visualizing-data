@@ -134,7 +134,8 @@ open.
 If you need to typeset math expressions in your portfolio, R Markdown is
 ready\!
 
-Markdown uses LaTeX math syntax, for example, this markup
+Markdown uses LaTeX math syntax, for example, this markup in the Rmd
+script
 
     $$
     x^2 + y^2 = r^2
