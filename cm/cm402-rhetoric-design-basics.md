@@ -58,6 +58,8 @@ Applying the principles in practice
 
   - Graphing data should be an iterative, experimental process  
   - Be prepared to control every pixel
+  - Imagine a design that tells your story; sketch it; develop the
+    coding expertise to create it.
 
 **Data and design**
 
