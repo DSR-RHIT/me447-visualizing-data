@@ -1,0 +1,215 @@
+design basics
+================
+
+<img src="../resources/cm402-header.png" width="100%" /> <small> <br>
+<i>Lastfm Graph</i> by kjell is licensed under
+<a href="https://creativecommons.org/licenses/by-sa/2.0/0/">CC BY-SA
+2.0</a> <br> </small>
+
+## contents
+
+[rhetoric of science](#rhetoric-of-science)  
+[guiding principles](#guiding-principles)  
+[workflow](#workflow)  
+[visual standards](#visual-standards)  
+[references](#references)
+
+## rhetoric of science
+
+If your education is in math, science, or engineering, your training in
+data graphics is most likely grounded in the “rhetoric of science”
+(Kostelnick, [2007](#ref-Kostelnick:2007)). From this perspective, data
+visualization is a rational, scientific process; its practitioners value
+clarity, minimalism, and truth.
+
+In this context (of the rhetoric of science), I outline the following
+principles of design.
+
+## guiding principles
+
+*The optimal graph design depends on two factors, primarily: the message
+to be conveyed to the audience, or, equivalently, the research question
+to be answered and the structure of the data set (the variables to be
+shown).* (Doumont, [2009](#ref-Doumont:2009:Ch.4))
+
+<img src="../resources/cm402-01.png" width="70%" />
+
+*What is to be sought in designs for the display of information is the
+clear portrayal of complexity. Not the complications of the simple;
+rather the task of the designer is to give visual access to the subtle
+and the difficult — that is, the revelation of the complex.* (Tufte,
+[1983](#ref-Tufte:1983))
+
+<img src="../resources/cm402-02.png" width="70%" />
+
+*What’s your point? — Seriously, that’s the most important question to
+ask when creating a data visualization. It’s the first thing I ask a
+client who sends me data for redesign. And it’s the primary reason we
+visualize: because we have a point to communicate to the world.*
+(Evergreen, [2017](#ref-Evergreen:2017))
+
+<img src="../resources/cm402-03.png" width="70%" />
+
+## workflow
+
+Applying the principles in practice
+
+**Process**
+
+  - Graphing data should be an iterative, experimental process  
+  - Be prepared to control every pixel
+
+**Data and design**
+
+  - Study the structure of your data
+  - Use different designs to visually explore the stories in the data
+  - Seek additional data to reveal the context of the stories
+  - A large amount of quantitative information can be packed into a
+    small region
+
+**Rhetoric**
+
+  - Align the logic of the display to the logic of your thinking
+  - Fine tune a display to meet the rhetorical goals for your audience
+  - You are allowed to ask your audience to give a graph careful,
+    detailed study
+
+## visual standards
+
+<img src="../resources/cm402-04.png" width="75%" />
+
+(Robbins, [2011](#ref-Robbins:2011))
+
+Our visual standards comprise the technical minutiae of graph
+construction within the rhetoric of science. These standards are
+primarily from (Robbins, [2013](#ref-Robbins:2013)) with additional
+details adapted from (Cleveland and others,
+[1988](#ref-Cleveland+McGill+McGill:1988); Talbot and others,
+[2012](#ref-Talbot+Gerth+Hanrahan:2012); Wickham,
+[2016](#ref-Wickham:2016)).
+
+**Terminology**
+
+|                  |             |                 |
+| :--------------- | :---------- | :-------------- |
+| aspect ratio     | geom        | scale           |
+| axis label       | grid, major | strip           |
+| axis rectangle   | grid, minor | subtitle        |
+| caption          | legend      | tick mark       |
+| data rectangle   | margin      | tick mark label |
+| facet or lattice | panel       | title           |
+
+**Visual clarity**
+
+1.  Make the data stand out.
+2.  Deemphasize grid lines and distinguish grid lines from data.
+3.  Avoid superfluity.
+4.  Use visually prominent graphical elements to show the data.
+5.  Overlapping plotting symbols must be visually distinguishable.
+6.  Superposed data sets must be readily visually assembled.
+7.  Do not clutter the interior of the axis rectangle.
+8.  Make the data rectangle slightly smaller than the axis rectangle.
+9.  Tick marks should point outward.
+10. Do not overdo the number of tick marks or tick mark labels.
+11. Attempt to preserve visual clarity under reduction and reproduction.
+12. Use color that can be distinguished by people with color-vision
+    deficiency.
+13. The graph must be consistent with the text.
+14. Proofread graphs.
+
+**Clear understanding**
+
+1.  Draw data to scale.
+2.  Select an aspect ratio “banks to 45” or that is flatter rather than
+    steeper.
+3.  Do not show changes in one dimension by area or volume.
+4.  Use a common baseline wherever possible.
+5.  Label data directly when it doesn’t clutter the graph.
+6.  Don’t require the audience to make calculations that a computer can
+    male easily.
+7.  Plot the variable of interest. If interested in change, plot the
+    change, not before and after.
+8.  Groups of charts need consistency in order, color, and other
+    graphical elements.
+9.  If more than one principle applies and they conflict with one
+    another, choose the principle least likely to mislead.
+
+## references
+
+<div id="refs">
+
+<div id="ref-Cleveland+McGill+McGill:1988">
+
+Cleveland WS, McGill ME and McGill R (1988) The shape parameter of a
+two-variable graph. *Journal of the American Statistical Association*
+**83**(402), 289–300 <https://www.jstor.org/stable/2288843>
+
+</div>
+
+<div id="ref-Doumont:2009:Ch.4">
+
+Doumont J-L (2009) Designing the graph. *Trees, maps, and theorems:
+Effective communication for rational minds*. Principiae, Kraainem,
+Belgium, 133–143 <http://www.treesmapsandtheorems.com/>
+
+</div>
+
+<div id="ref-Evergreen:2017">
+
+Evergreen S (2017) *Effective Data Visualization: The Right Chart for
+the Right Data.*, 1st edn. Sage, Thousand Oaks, CA
+
+</div>
+
+<div id="ref-Kostelnick:2007">
+
+Kostelnick C (2007) The visual rhetoric of data displays: The conundrum
+of clarity. *IEEE Transactions on Professional Communication* **50**(2),
+280–294
+
+</div>
+
+<div id="ref-Robbins:2011">
+
+Robbins N (2011) Thinking outside the chart menu.
+<https://www.forbes.com/sites/naomirobbins/2011/11/29/thinking-outside-the-chart-menu/#785f2c07171a>
+
+</div>
+
+<div id="ref-Robbins:2013">
+
+Robbins N (2013) *Creating More Effective Graphs.* Chart House, Wayne,
+NJ
+
+</div>
+
+<div id="ref-Talbot+Gerth+Hanrahan:2012">
+
+Talbot J, Gerth J and Hanrahan P (2012) An empirical model of slope
+ratio comparison. *IEEE Transactions on Visualization and Computer
+Graphics* **18**(12), 2613–2620
+<http://vis.stanford.edu/papers/slope-ratio-comparison>
+
+</div>
+
+<div id="ref-Tufte:1983">
+
+Tufte E (1983) *The visual display of quantitative information.*
+Graphics Press, Cheshire, CT
+<https://www.edwardtufte.com/tufte/books_vdqi>
+
+</div>
+
+<div id="ref-Wickham:2016">
+
+Wickham H (2016) *ggplot2: Elegant Graphics for Data Analysis.*
+Springer-Verlag, New York <http://ggplot2.org>
+
+</div>
+
+</div>
+
+***
+<a href="#top">&#9650; top of page</a>    
+[&#9665; calendar](../README.md#calendar)    
+[&#9665; index](../README.md#index)

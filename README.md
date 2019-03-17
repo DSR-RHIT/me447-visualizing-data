@@ -23,8 +23,8 @@ permission
 | 1  | M | Course goals and outcomes \[[slides](slides/sd011-course-welcome.pdf)\]<br>[Sign-out two reprints](cm/cm401-rhetoric-reprints.md#signout-reprints)                                                                                                                                                                      |                                                                                                                     |                                                                              |
 |    | T | Limitations of common graphs \[[slides](slides/sd012-limitations-common-graphs.pdf)\]<br>Calendar, [syllabus](cm/cm001-course-syllabus.md#syllabus), [portfolio](cm/cm301-report-display-reqts.md#portfolio-display-requirements)<br>[Install software](cm/cm901-software-install.md#install-software)                  |                                                                                                                     |                                                                              |
 |    | R | Relating data structure to graph design<br>![](resources/icon-document.png) Doumont ([2009](#ref-Doumont:2009:Ch.4)) Designing the graph                                                                                                                                                                                |                                                                                                                     |                                                                              |
-|    | F | [Software studio](cm/cm902-software-studio.md#software-studio)                                                                                                                                                                                                                                                          | Software setup complete                                                                                             |                                                                              |
-| 2  | M | [R basics](cm/cm903-software-R-basics.md#R-basics) \[[exercises](cm/cm903-software-R-basics.md#exercises)\]<br>[Graph basics](cm/cm201-graph-basics.md#graph-basics) \[[exercises](cm/cm201-graph-basics.md#exercises)\]                                                                                                | wk1 lab complete                                                                                                    |                                                                              |
+|    | F | [Software studio](cm/cm902-software-studio.md#software-studio)<br>[R basics](cm/cm903-software-R-basics.md#R-basics) \[[exercises](cm/cm903-software-R-basics.md#exercises)\]                                                                                                                                           | Software setup complete                                                                                             |                                                                              |
+| 2  | M | [Graph basics](cm/cm201-graph-basics.md#graph-basics) \[[exercises](cm/cm201-graph-basics.md#exercises)\]                                                                                                                                                                                                               | wk1 lab complete                                                                                                    |                                                                              |
 |    | T | ![](resources/icon-document.png) Tufte ([1997](#ref-Tufte:1997)) Decision to launch Challenger                                                                                                                                                                                                                          |                                                                                                                     | [Reading prompts](reports/reading-prompts-1.Rmd)                             |
 |    | R | Data basics \[[slides](slides/sd021-data-basics.pdf)\] \[[exercises](cm/cm101-data-basics.md#exercises)\]                                                                                                                                                                                                               |                                                                                                                     |                                                                              |
 |    | F | [Managing files](cm/cm501-proj-m-manage-files.md#file-management) \[[slides](slides/sd034-proj-m-manage-files.pdf)\]<br>[Interacting with R](cm/cm101b-interacting-with-R.md#interacting-with-R)<br>[Data studio](cm/cm102-data-studio.md#data-studio)<br>Return reprints                                               | Start acquiring data<br>[Portfolio data requirements](cm/cm301-report-display-reqts.md#portfolio-data-requirements) |                                                                              |
@@ -59,7 +59,7 @@ permission
 | 10 | M | Graph design improvisation                                                                                                                                                                                                                                                                                              | wk9 tutorials & exercises                                                                                           |                                                                              |
 |    | T | ![](resources/icon-moodle.png) Spence ([2006](#ref-Spence:2006)) Playfair & psychology of graphs                                                                                                                                                                                                                        |                                                                                                                     | [Reading prompts](reports/reading-prompts-5.Rmd)                             |
 |    | R | Work in class<br>Course evaluations                                                                                                                                                                                                                                                                                     |                                                                                                                     |                                                                              |
-|    | F | Presentations, practice, & portfolio studio                                                                                                                                                                                                                                                                             |                                                                                                                     | D7 graph & prose<br>[Presentation prompts](reports/presentation-prompts.Rmd) |
+|    | F | [Updating the R habitat](cm/cm904-software-R-update.md#updating-the-R-habitat)<br>Presentations, practice, & portfolio studio                                                                                                                                                                                           |                                                                                                                     | D7 graph & prose<br>[Presentation prompts](reports/presentation-prompts.Rmd) |
 | 11 | M | Finals week, no class                                                                                                                                                                                                                                                                                                   |                                                                                                                     | Portfolio                                                                    |
 
 <a href="#top">▲ top of page</a>
@@ -71,6 +71,7 @@ permission
 <a href="http://clipartstockphotos.com/">Clickartstockphotos</a><br><br></small>
 
 [course management](#course-management)  
+[R](#r)  
 [data](#data)  
 [graphs](#graphs)  
 [portfolio](#portfolio)  
@@ -87,6 +88,14 @@ permission
   - [Calendar](#calendar)
   - [Help links](cm/cm003-getting-help.md)
   - [License](LICENSE.md)
+
+## R
+
+  - [R basics](cm/cm903-software-R-basics.md#R-basics)
+  - [Interacting with
+    R](cm/cm101b-interacting-with-R.md#interacting-with-R)  
+  - [Updating the R
+    habitat](cm/cm904-software-R-update.md#updating-the-R-habitat)
 
 ## data
 
@@ -256,15 +265,18 @@ Portfolio studio
 
 ## visual rhetoric and graph design
 
-  - [Reading prompts: Tufte (1997) Decision to launch
+  - [Design basics](cm/cm402-rhetoric-design-basics.md#design-basics)
+
+**Reading promts**
+
+  - [Tufte (1997) Decision to launch
     Challenger](reports/reading-prompts-1.Rmd)  
-  - [Reading prompts: Wainer (2014) 15 displays about one
+  - [Wainer (2014) 15 displays about one
     thing](reports/reading-prompts-2.Rmd)  
-  - [Reading prompts: Dragga and Voss (2001) Cruel
-    pies](reports/reading-prompts-3.Rmd)  
-  - [Reading prompts: Kostelnick (2007) Conundrum of
+  - [Dragga and Voss (2001) Cruel pies](reports/reading-prompts-3.Rmd)  
+  - [Kostelnick (2007) Conundrum of
     clarity](reports/reading-prompts-4.Rmd)  
-  - [Reading prompts: Spence (2006) Playfair & psychology of
+  - [Spence (2006) Playfair & psychology of
     graphs](reports/reading-prompts-5.Rmd)
 
 ## project management
@@ -294,12 +306,6 @@ Getting started
     packages](cm/cm901-software-install.md#create-a-library-for-packages)
   - [Test the initial
     installation](cm/cm901-software-install.md#test-the-installation)
-
-R
-
-  - [R basics](cm/cm903-software-R-basics.md#R-basics)
-  - [Interacting with
-    R](cm/cm101b-interacting-with-R.md#interacting-with-R)
 
 Software studio
 
