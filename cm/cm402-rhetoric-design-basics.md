@@ -126,7 +126,7 @@ details adapted from (Cleveland and others,
 4.  Use a common baseline wherever possible.
 5.  Label data directly when it doesn’t clutter the graph.
 6.  Don’t require the audience to make calculations that a computer can
-    male easily.
+    make easily.
 7.  Plot the variable of interest. If interested in change, plot the
     change, not before and after.
 8.  Groups of charts need consistency in order, color, and other
