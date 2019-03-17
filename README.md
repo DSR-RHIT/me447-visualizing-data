@@ -28,7 +28,7 @@ permission
 |    | T | ![](resources/icon-document.png) Tufte ([1997](#ref-Tufte:1997)) Decision to launch Challenger                                                                                                                                                                                                                          |                                                                                                                     | [Reading prompts](reports/reading-prompts-1.Rmd)                             |
 |    | R | Data basics \[[slides](slides/sd021-data-basics.pdf)\] \[[exercises](cm/cm101-data-basics.md#exercises)\]                                                                                                                                                                                                               |                                                                                                                     |                                                                              |
 |    | F | [Managing files](cm/cm501-proj-m-manage-files.md#file-management) \[[slides](slides/sd034-proj-m-manage-files.pdf)\]<br>[Interacting with R](cm/cm101b-interacting-with-R.md#interacting-with-R)<br>[Data studio](cm/cm102-data-studio.md#data-studio)<br>Return reprints                                               | Start acquiring data<br>[Portfolio data requirements](cm/cm301-report-display-reqts.md#portfolio-data-requirements) |                                                                              |
-| 3  | M | Markdown basics \[exercises\]                                                                                                                                                                                                                                                                                           | wk2 lab, tutorials, & exercises                                                                                     |                                                                              |
+| 3  | M | Markdown basics \[[slides](slides/sd031-rmd-basics.pdf)\] \[[tutorial](cm/cm305-report-rmd-basics.md)\]                                                                                                                                                                                                                 | wk2 lab, tutorials, & exercises                                                                                     |                                                                              |
 |    | T | ![](resources/icon-moodle.png) Robbins ([2013](#ref-Robbins:2013:Ch.6)[a](#ref-Robbins:2013:Ch.6)) General design principles                                                                                                                                                                                            |                                                                                                                     |                                                                              |
 |    | R | Comparing distributions<br>[Strip plot](cm/cm202-graph-strip-plot.md#strip-plot) \[[exercises](cm/cm202-graph-strip-plot.md#exercises)\]<br>[Box plot](cm/cm203-graph-boxplot.md#box-plot) \[[exercises](cm/cm203-graph-boxplot.md#exercises)\]<br>[D1 requirements](cm/cm301-report-display-reqts.md#D1-distributions) | D1 data acquired                                                                                                    |                                                                              |
 |    | F | [Portfolio document requirements](cm/cm300-report-portfolio-reqts.md#portfolio-document-requirements)<br>[Portfolio data requirements](cm/cm301-report-display-reqts.md#portfolio-data-requirements)<br>[Portfolio studio](cm/cm302-report-portfolio-studio.md#portfolio-studio)<br>Start the portfolio draft           |                                                                                                                     |                                                                              |
@@ -186,6 +186,29 @@ requirements](cm/cm301-report-display-reqts.md#portfolio-data-requirements)
   - [D6 multivariate](cm/cm301-report-display-reqts.md#D6-multivariate)
   - [D7 self-taught](cm/cm301-report-display-reqts.md#D7-self-taught)
 
+R Markdown basics
+
+  - [Rmd basics](cm/cm305-report-rmd-basics.md)  
+  - [create an Rmd
+    script](cm/cm305-report-rmd-basics.md#create-an-Rmd-script)  
+  - [set the Rmd output
+    format](cm/cm305-report-rmd-basics.md#set-the-Rmd-output-format)  
+  - [how to format
+    text](cm/cm305-report-rmd-basics.m#how-to-format-text)  
+  - [initialize a
+    report](cm/cm305-report-rmd-basics.md#initialize-a-report)  
+  - [initialize knitr](cm/cm305-report-rmd-basics.md)  
+  - [introductory
+    prose](cm/cm305-report-rmd-basics.md#initialize-knitr)  
+  - [using code
+    chunks](cm/cm305-report-rmd-basics.md#using-code-chunks)  
+  - [source() R
+    scripts](cm/cm305-report-rmd-basics.md#source\(\)-R-cripts)  
+  - [data
+    table](cm/cm305-report-rmd-basics.md#data-able)  
+  - [include\_graphics()](cm/cm305-report-rmd-basics.md#include_graphics\(\))  
+  - [spell check](cm/cm305-report-rmd-basics.md#spell-check)
+
 Resources
 
   - [Setup reading
@@ -208,8 +231,11 @@ Portfolio studio
     file](cm/cm302-report-portfolio-studio.md#organize-the-README-file)  
   - [Importing
     images](cm/cm302-report-portfolio-studio.md#importing-images)  
-  - [Start a report](cm/cm302-report-portfolio-studio.md#media)  
-  - [Data tables](cm/cm302-report-portfolio-studio.md#start-a-report)  
+  - [Start a
+    report](cm/cm302-report-portfolio-studio.md#start-a-report)  
+  - [Data tables](cm/cm302-report-portfolio-studio.md#data-tables)  
+  - [Typesetting
+    mathematics](cm/cm302-report-portfolio-studio.md#typesetting-mathematics)  
   - [Create the bib
     file](cm/cm302-report-portfolio-studio.md#create-the-bib-file)  
   - [BiBTeX entry types](cm/cm303-report-bibtex.md)  

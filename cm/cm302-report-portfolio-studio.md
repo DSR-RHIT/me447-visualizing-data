@@ -131,9 +131,6 @@ open.
 
 ## typesetting mathematics
 
-If you need to typeset math expressions in your portfolio, R Markdown is
-ready\!
-
 Markdown uses LaTeX math syntax, for example, this markup in the Rmd
 script
 
@@ -141,7 +138,27 @@ script
     x^2 + y^2 = r^2
     $$
 
-produces this output
+produces this output (not what we wanted\!),
+
+    [x^2 + y^2 = r^2]
+
+The problem is that `github_document` does not correctly render math
+expressions. There are other advantages to using `github_document`
+though, so we will continue to use it but use a work-around for
+typesetting math.
+
+Edit the YAML output argument as follows
+
+``` yaml
+---
+output: 
+  github_document: 
+    pandoc_args: "--webtex"
+---
+```
+
+With this argument added to the YAML header, the output displays the
+equation correctly,
 
   
 ![
@@ -150,6 +167,34 @@ x^2 + y^2 = r^2
 "
 x^2 + y^2 = r^2
 ")  
+
+How it works:
+
+  - When you knit the file, [WebTeX](https://pkgw.github.io/webtex/)
+    typesets and creates a PNG image of the equation.
+  - A link to that image is created in the .md file of your document.
+  - The .md file of your report is what GitHub translates into the HTML
+    that you see online.
+
+A PNG image of an equation is not as beautiful as a correctly rendered
+LaTeX equation, but the advantages of the `github_document` output
+outweigh this disadvantage (in my opinion) given the limited amount of
+mathematics in most data graphics portfolios.
+
+This workaround is only necessary if you are
+
+  - using `github_document` output (we are)  
+  - writing mathematics in your output document (you might be)
+
+If you need to typeset math, these links can help you to learn the
+necessary LaTeX syntax.
+
+  - [Math in R
+    Markdown](http://www.stat.cmu.edu/~cshalizi/rmarkdown/#math-in-r-markdown)
+    for an introduction  
+  - [LaTeX math
+    symbols](http://web.ift.uib.no/Teori/KURS/WRK/TeX/symALL.html) for
+    commands for common symbols, operatoirs, etc.
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -184,7 +229,7 @@ What the fields mean:
     e.g., a book, an article, a chapter in a book, etc.
   - `Wickham+Grolemund:2017` is the unique label I assigned to this
     reference. I use the label `Author:YYYY` for one author,
-    `Author+Author:YYYY` for two authoirs, etc. You can use any style
+    `Author+Author:YYYY` for two authors, etc. You can use any style
     label as long as each reference label is unique.
   - The double braces, for example `title = {{R for Data Science}}` are
     used to preserve capitalization.
