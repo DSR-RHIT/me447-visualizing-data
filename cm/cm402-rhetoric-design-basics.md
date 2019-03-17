@@ -83,8 +83,8 @@ Applying the principles in practice
 Our visual standards comprise the technical minutiae of graph
 construction within the rhetoric of science. These standards are
 primarily from (Robbins, [2013](#ref-Robbins:2013)) with additional
-details adapted from (Cleveland and others,
-[1988](#ref-Cleveland+McGill+McGill:1988); Talbot and others,
+details adapted from (Tufte, [1983](#ref-Tufte:1983); Cleveland and
+others, [1988](#ref-Cleveland+McGill+McGill:1988); Talbot and others,
 [2012](#ref-Talbot+Gerth+Hanrahan:2012); Wickham,
 [2016](#ref-Wickham:2016)).
 
@@ -101,36 +101,32 @@ details adapted from (Cleveland and others,
 
 **Visual clarity**
 
-1.  Make the data stand out.
-2.  Deemphasize grid lines and distinguish grid lines from data.
-3.  Avoid superfluity.
-4.  Use visually prominent graphical elements to show the data.
-5.  Overlapping plotting symbols must be visually distinguishable.
-6.  Superposed data sets must be readily visually assembled.
-7.  Do not clutter the interior of the axis rectangle.
-8.  Make the data rectangle slightly smaller than the axis rectangle.
-9.  Tick marks should point outward.
-10. Do not overdo the number of tick marks or tick mark labels.
-11. Attempt to preserve visual clarity under reduction and reproduction.
-12. Use color that can be distinguished by people with color-vision
+1.  Make the data prominent. Deemphasize grid lines and distinguish grid
+    lines from data.
+2.  Avoid superfluity; eliminate “chart junk.”
+3.  Overlapping plotting symbols must be visually distinguishable.
+4.  Superposed data sets must be readily visually assembled.
+5.  Do not clutter the interior of the axis rectangle.
+6.  Make the data rectangle slightly smaller than the axis rectangle.
+7.  Do not overdo the number of tick marks or tick mark labels.
+8.  Use color that can be distinguished by people with color-vision
     deficiency.
-13. The graph must be consistent with the text.
-14. Proofread graphs.
+9.  The graph must be consistent with the text.
+10. Proofread graphs.
 
 **Clear understanding**
 
 1.  Draw data to scale.
-2.  Select an aspect ratio “banks to 45” or that is flatter rather than
-    steeper.
-3.  Do not show changes in one dimension by area or volume.
-4.  Use a common baseline wherever possible.
-5.  Label data directly when it doesn’t clutter the graph.
-6.  Don’t require the audience to make calculations that a computer can
-    make easily.
+2.  Select an aspect ratio that “banks to 45” or that is flatter rather
+    than steeper.
+3.  Do not show changes in one dimension by area (2D) or volume (3D).
+4.  Eliminate gratuitous 3D effects.
+5.  Use a common baseline wherever possible.
+6.  Label data directly when it doesn’t clutter the graph.
 7.  Plot the variable of interest. If interested in change, plot the
-    change, not before and after.
-8.  Groups of charts need consistency in order, color, and other
-    graphical elements.
+    change; if difference, plot the difference.
+8.  Use order, color, and other graphical elements consistently among
+    groups of charts.  
 9.  If more than one principle applies and they conflict with one
     another, choose the principle least likely to mislead.
 
