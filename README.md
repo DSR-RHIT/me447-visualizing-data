@@ -181,6 +181,7 @@ Graph exercises
 skeleton](https://github.com/graphdr/portfolio-sample)  
 [Document
 requirements](cm/cm300-report-portfolio-reqts.md#portfolio-document-requirements)  
+[Document design](cm304_portfolio_document-design.md#document-design)  
 [Data
 requirements](cm/cm301-report-display-reqts.md#portfolio-data-requirements)
 
@@ -211,11 +212,11 @@ R Markdown basics
     prose](cm/cm305-report-rmd-basics.md#initialize-knitr)  
   - [using code
     chunks](cm/cm305-report-rmd-basics.md#using-code-chunks)  
-  - [source() R
+  - [source R
     scripts](cm/cm305-report-rmd-basics.md#source\(\)-R-cripts)  
-  - [data
-    table](cm/cm305-report-rmd-basics.md#data-able)  
-  - [include\_graphics()](cm/cm305-report-rmd-basics.md#include_graphics\(\))  
+  - [data table](cm/cm305-report-rmd-basics.md#data-able)  
+  - [include
+    graphics](cm/cm305-report-rmd-basics.md#include_graphics\(\))  
   - [spell check](cm/cm305-report-rmd-basics.md#spell-check)
 
 Resources

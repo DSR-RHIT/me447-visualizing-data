@@ -16,9 +16,9 @@ Markdown quick tour</a>. <br> </small>
 [initialize knitr](#initialize-knitr)  
 [introductory prose](#introductory-prose)  
 [using code chunks](#using-code-chunks)  
-[source() R scripts](#source-r-scripts)  
+[source R scripts](#source-r-scripts)  
 [data table](#data-table)  
-[include\_graphics()](#include_graphics)  
+[include graphics](#include-graphics)  
 [spell check](#spell-check)
 
 ## prerequisites
@@ -139,7 +139,7 @@ For a preview of our course guidelines on text formatting and
 punctuation, see
 
   - [Document
-    design](cm/304_portfolio_document-design.md#document-design)
+    design](cm304_portfolio_document-design.md#document-design)
 
 ## initialize a report
 
@@ -388,7 +388,7 @@ ggplot(starwars_worlds, aes(x = n, y = homeworld)) +
 
 <img src="images/cm305-report-rmd-basics-unnamed-chunk-11-1.png" width="70%" />
 
-## source() R scripts
+## source R scripts
 
 In your portfolio reports, you should generally not be writing extensive
 R code in code chunks. Instead, your R code that operates on data or
@@ -575,7 +575,7 @@ table is better suited for print publication,
 Data table transformations like this is a topic for another day. We will
 cover it in the future.
 
-## include\_graphics()
+## include graphics
 
 Instead of the Markdown markup for importing images, we will usually use
 the `include_graphics()` function from the knitr package.
