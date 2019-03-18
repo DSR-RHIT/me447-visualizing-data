@@ -630,7 +630,12 @@ Your output document should now include the R logo.
 In RStudio, with the Rmd file open, press function F7 to spell check
 your document.
 
-Make corrections, save, and knit.
+Alternatively (there’s always more than one way to do things), you can
+use the spellcheck button in the menu.
+
+<img src="../resources/cm305-02.png" width="60%" />
+
+<br> Make spelling corrections, save, and knit.
 
 ## references
 
