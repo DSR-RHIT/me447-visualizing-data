@@ -138,8 +138,7 @@ reference:
 For a preview of our course guidelines on text formatting and
 punctuation, see
 
-  - [Document
-    design](cm304_portfolio_document-design.md#document-design)
+  - [Document design](cm304-report-document-design.md#document-design)
 
 ## initialize a report
 
