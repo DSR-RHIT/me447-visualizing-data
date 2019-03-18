@@ -12,8 +12,15 @@ is private, accessible only to people you invite as collaborators.
 However, your intended audience are your professional peers and
 prospective employers.
 
-[This sample](https://github.com/graphdr/portfolio-sample) shows the
-basic layout of the portfolio website we are about to start building.
+Other portfolio-related links
+
+[Sample portfolio
+skeleton](https://github.com/graphdr/portfolio-sample)  
+[Document
+requirements](cm300-report-portfolio-reqts.md#portfolio-document-requirements)  
+[Document design](cm304-report-document-design.md#document-design)  
+[Data
+requirements](cm301-report-display-reqts.md#portfolio-data-requirements)
 
 ## contents
 
@@ -30,8 +37,7 @@ basic layout of the portfolio website we are about to start building.
 [format the citations and
 references](#format-the-citations-and-references)  
 [presentation prompts](#presentation-prompts)  
-[reading prompts](#reading-prompts)  
-[document design](#document-design)
+[reading prompts](#reading-prompts)
 
 ## prerequisites
 
@@ -362,12 +368,6 @@ evidence from our readings.
 <!-- sample portfolio entries  -->
 
 <!-- commit-pull-push  -->
-
-## document design
-
-[Reading on document
-design](cm304_portfolio_document-design.md#document-design) for
-guidelines on text formatting and punctuation.
 
 ## references
 
