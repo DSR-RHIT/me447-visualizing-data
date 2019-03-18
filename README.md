@@ -236,7 +236,6 @@ Resources
 
 Portfolio studio
 
-  - [Preparation](cm/cm302-report-portfolio-studio.md#preparation)  
   - [Organize the README
     file](cm/cm302-report-portfolio-studio.md#organize-the-README-file)  
   - [Importing
