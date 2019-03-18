@@ -226,6 +226,7 @@ Resources
   - [BiBTeX entry types](cm/cm303-report-bibtex.md)  
   - [Document
     design](cm/cm304-report-document-design.md#document-design)
+  - [Media](cm/cm304-report-document-design.md#media)  
   - [Fonts](cm/cm304-report-document-design.md#fonts)  
   - [Headings](cm/cm304-report-document-design.md#headingsn)  
   - [Text color](cm/cm304-report-document-design.md#text-color)  
@@ -235,7 +236,6 @@ Resources
 
 Portfolio studio
 
-  - [Media](cm/cm302-report-portfolio-studio.md#media)  
   - [Preparation](cm/cm302-report-portfolio-studio.md#preparation)  
   - [Organize the README
     file](cm/cm302-report-portfolio-studio.md#organize-the-README-file)  

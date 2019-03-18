@@ -31,8 +31,7 @@ demonstrates the degree to which you can:
 [redesigns](#redesigns)  
 [reproductions](#reproductions)  
 [a compelling story](#a-compelling-story)  
-[500-level course](#level-course)  
-[document design](#document-design)
+[500-level course](#level-course)
 
 ## displays
 
@@ -205,17 +204,11 @@ project or thesis research to develop additional displays:
 2.  A final display suitable for publication in their thesis or project
     report, with critique
 
-## document design
+## references
 
-The portfolio is a GitHub repository.
+<div id="refs">
 
-  - Colors unambiguous for color-vision-deficient (CVD) readers.  
-  - [Portfolio
-    studio](cm302-report-portfolio-studio.md#portfolio-studio) for
-    details on constructing the portfolio
-  - [Sample portfolio
-    skeleton](https://github.com/graphdr/portfolio-sample) to see the
-    layout of the repository README
+</div>
 
 ***
 <a href="#top">&#9650; top of page</a>    

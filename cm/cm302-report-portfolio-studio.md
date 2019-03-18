@@ -7,9 +7,16 @@ licensed under
 <a href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">CC0
 1.0</a> <br> </small>
 
+Your portfolio is a website in the form of a GitHub repository. The repo
+is private, accessible only to people you invite as collaborators.
+However, your intended audience are your professional peers and
+prospective employers.
+
+[This sample](https://github.com/graphdr/portfolio-sample) shows the
+basic layout of the portfolio website we are about to start building.
+
 ## contents
 
-[media](#media)  
 [prerequisites](#prerequisites)  
 [organize the README file](#organize-the-readme-file)  
 [importing images](#importing-images)  
@@ -25,18 +32,6 @@ references](#format-the-citations-and-references)
 [presentation prompts](#presentation-prompts)  
 [reading prompts](#reading-prompts)  
 [document design](#document-design)
-
-## media
-
-Your portfolio is a website in the form of a GitHub repository. The repo
-is private, accessible only to people you invite as collaborators.
-However, your intended audience are your professional peers and
-prospective employers.
-
-[This sample](https://github.com/graphdr/portfolio-sample) shows the
-basic layout of the portfolio website we are about to start building.
-
-<br> <a href="#top">▲ top of page</a>
 
 ## prerequisites
 

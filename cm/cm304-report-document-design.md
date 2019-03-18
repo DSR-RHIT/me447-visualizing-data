@@ -8,23 +8,29 @@ document design
 
 Document design, whether for the printed page or the Internet, is a
 highly personal matter of taste and purpose. Here I give some general
-advice for formatting your portfolio online as a GitHub repository.
+advice for formatting your online portfolio.
 
-I expect the graphs in your portfolio to adhere to the design principles
-we discuss in class. You have much greater latitude in designing the
-portfolio.
-
-<br>
+The first principle is that all document design choices (fonts,
+headings, color, etc.) should be consistently applied on every page.
 
 ## contents
 
+[media](#media)  
 [fonts](#fonts)  
 [headings](#headings)  
 [text color](#text-color)  
 [emphasis](#emphasis)  
 [hyphens and dashes](#hyphens-and-dashes)
 
-<br>
+## media
+
+Your portfolio is a website in the form of a GitHub repository. The repo
+is private, accessible only to people you invite as collaborators.
+However, your intended audience are your professional peers and
+prospective employers.
+
+[This sample](https://github.com/graphdr/portfolio-sample) shows the
+basic layout.
 
 ## fonts
 
@@ -53,8 +59,6 @@ Use a serif font if you produce a printed version of your portfolio.
 
 <br> <a href="#top">▲ top of page</a>
 
-<br>
-
 ## headings
 
 In these course documents, my personal style preference is for lowercase
@@ -70,8 +74,6 @@ Other than the title, plan on having two levels of headings only. For a
   - `#### level-4 heading` for subsections  
   - <span style="color:darkgoldenrod"> `accented text` </span> can be a
     third level if needed
-
-<br>
 
 ## text color
 
@@ -93,10 +95,11 @@ The color <span style="color:darkgoldenrod"><big> `darkgoldenrod`
 names](https://www.w3schools.com/colors/colors_names.asp) supported by
 most browsers.
 
+Color choices must be unambiguous for color-vision-deficient (CVD)
+readers.
+
 <br> <a href="#top">▲ top of
 page</a>
-
-<br>
 
 ## emphasis
 
@@ -111,8 +114,6 @@ page</a>
   - **If everything is emphasized, then nothing is emphasized. Use bold
     and italic as little as
 possible**.
-
-<br>
 
 ## hyphens and dashes
 
@@ -133,11 +134,9 @@ Examples of punctuation using an em-dash:
 > The white sand, the warm water, the sparkling sun—this is what brought
 > them to Hawaii.
 
-<br>
-
 ## references
 
-<div id="refs" class="references">
+<div id="refs">
 
 <div id="ref-Baker:2001">
 
