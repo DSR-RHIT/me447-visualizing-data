@@ -62,8 +62,7 @@ Applying the principles in practice
     coding expertise to create it.
 
 <img src="../resources/cm402-05.png" width="50%" />
-
-<br>
+<small><br><br></small>
 
 **Data and design**
 
@@ -73,11 +72,10 @@ Applying the principles in practice
   - A large amount of quantitative information can be packed into a
     small region
 
-<img src="../resources/cm402-06.png" width="50%" /> <small><br>
-<https://thedoublethink.com/tuftes-principles-for-visualizing-quantitative-information/>
-<br> </small>
-
-<br>
+<img src="../resources/cm402-06.png" width="48%" /> <small><br>
+Sparkline graph by
+<a href="https://creativecommons.org/licenses/by-sa/2.0/0/">James
+Houghton</a> (2016) <br> </small>
 
 **Rhetoric**
 
@@ -86,9 +84,12 @@ Applying the principles in practice
   - You are allowed to ask your audience to give a graph careful,
     detailed study
 
-<img src="../resources/cm402-07.png" width="100%" /> <small><br> Charles
-Minard’s map of Napoleon’s disastrous Russian campaign of 1812. <br>
-</small>
+<img src="../resources/cm402-09b.png" width="51%" />
+<img src="../resources/cm402-11.png" width="45%" /> <small><br> John
+Snow’s map of the 1854 London cholera outbreak updated with density
+contours by
+<a href="https://freakonometrics.hypotheses.org/19213">Arthur
+Charpentier</a> (2015). <br> </small>
 
 ## visual standards
 
@@ -106,14 +107,17 @@ others, [1988](#ref-Cleveland+McGill+McGill:1988); Talbot and others,
 
 **Terminology**
 
-|                  |             |                 |
-| :--------------- | :---------- | :-------------- |
-| aspect ratio     | geom        | scale           |
-| axis label       | grid, major | strip           |
-| axis rectangle   | grid, minor | subtitle        |
-| caption          | legend      | tick mark       |
-| data rectangle   | margin      | tick mark label |
-| facet or lattice | panel       | title           |
+|                |                  |                 |
+| :------------- | :--------------- | :-------------- |
+| aspect ratio   | facet or lattice | scale           |
+| axis label     | grid, major      | strip           |
+| axis rectangle | grid, minor      | subtitle        |
+| caption        | legend           | tick mark       |
+| data marker    | margin           | tick mark label |
+| data rectangle | panel            | title           |
+
+<img src="../resources/cm402-12.png" width="75%" />
+<small><br><br></small>
 
 **Visual clarity**
 
@@ -130,6 +134,11 @@ others, [1988](#ref-Cleveland+McGill+McGill:1988); Talbot and others,
 9.  The graph must be consistent with the text.
 10. Proofread graphs.
 
+<img src="../resources/cm402-08.png" width="100%" /> <small> <br> An
+update of Hans Rosling’s graph on life expectancy and income, from the
+<a href="https://www.gapminder.org/tools/?from=world#$chart-type=bubbles">Gapminder
+project</a> (2018) <br> </small>
+
 **Clear understanding**
 
 1.  Draw data to scale.
@@ -145,6 +154,10 @@ others, [1988](#ref-Cleveland+McGill+McGill:1988); Talbot and others,
     groups of charts.  
 9.  If more than one principle applies and they conflict with one
     another, choose the principle least likely to mislead.
+
+<img src="../resources/cm402-07.png" width="100%" /> <small><br> Charles
+Joseph Minard’s map of Napoleon’s 1812 advance and retreat to Moscow.
+<br> </small>
 
 ## references
 
