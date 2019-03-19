@@ -61,6 +61,10 @@ Applying the principles in practice
   - Imagine a design that tells your story; sketch it; develop the
     coding expertise to create it.
 
+<img src="../resources/cm402-05.png" width="50%" />
+
+<br>
+
 **Data and design**
 
   - Study the structure of your data
@@ -69,12 +73,22 @@ Applying the principles in practice
   - A large amount of quantitative information can be packed into a
     small region
 
+<img src="../resources/cm402-06.png" width="50%" /> <small><br>
+<https://thedoublethink.com/tuftes-principles-for-visualizing-quantitative-information/>
+<br> </small>
+
+<br>
+
 **Rhetoric**
 
   - Align the logic of the display to the logic of your thinking
   - Fine tune a display to meet the rhetorical goals for your audience
   - You are allowed to ask your audience to give a graph careful,
     detailed study
+
+<img src="../resources/cm402-07.png" width="100%" /> <small><br> Charles
+Minard’s map of Napoleon’s disastrous Russian campaign of 1812. <br>
+</small>
 
 ## visual standards
 
