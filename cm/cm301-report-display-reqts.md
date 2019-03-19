@@ -89,10 +89,10 @@ Data requirements
 Tutorials and samples
 
   - [Multiway tutorial](cm204-graph-multiway.md#multiway-dot-plot)
-  - [Sample multiway 1: NY counties population by
-    race/ethnicity](../figures/0402-multiway-metropop-01.png)
-  - [Sample multiway 2: NY counties population by race/ethnicity
-    (dual)](../figures/0402-multiway-metropop-02.png)
+  - [Sample multiway: NY population, panels by
+    county](../figures/0402-multiway-metropop-01.png)
+  - [Sample multiway: NY population, panels by
+    race/ethnicity](../figures/0402-multiway-metropop-02.png)
 
 <br> <a href="#top">▲ top of page</a>
 
