@@ -44,9 +44,6 @@ We will use two prospective graph designs for comparing distributions.
 Include only one of these graph types in your portfolio. Select the
 design that best conveys the stories in your data.
 
-  - [strip plot](cm202-graph-strip-plot.md#top)  
-  - [box plot](cm203-graph-boxplot.md#box-plot)
-
 Data requirements
 
   - Minimum 200 observations of one quantitative variable  
@@ -60,9 +57,14 @@ Categorical variables
   - If two categories are used, they must have at least two levels each
     for a minimum of four comparisons.
 
-Examples
+Tutorials and samples
 
-  - [Speed skiing strip plot](../figures/0302-strip-plot-speedski.png)
+  - [Strip plot tutorial](cm202-graph-strip-plot.md#strip-plot)
+  - [Sample strip plot: Speed
+    skiing](../figures/0302-strip-plot-speedski.png)
+  - [Box plot tutorial](cm203-graph-boxplot.md#box-plot)
+  - [Sample box plot: Nontraditional students graduation
+    rates](../figures/0303-boxplot-nontrad.png)
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -84,9 +86,13 @@ Data requirements
       - 4 levels in category 1 and at least 6 levels in category 2  
       - 5 levels in category 1 and at least 5 levels in category 2
 
-Multiway example
+Tutorials and samples
 
-  - [multiway](cm204-graph-multiway.md#top)
+  - [Multiway tutorial](cm204-graph-multiway.md#multiway)
+  - [Sample multiway 1: NY counties population by
+    race/ethnicity](../figures/0402-multiway-metropop-01.png)
+  - [Sample multiway 2: NY counties population by race/ethnicity
+    (dual)](../figures/0402-multiway-metropop-02.png)
 
 <br> <a href="#top">▲ top of page</a>
 
