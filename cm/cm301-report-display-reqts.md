@@ -15,24 +15,24 @@ below.
 
 <!-- Quantitative variables are typically continuous. If you encounter a quantitative variable (other than time) that is discrete rather than continuous, please consult with me on its suitability for your graph.   -->
 
-| display                                                     | type                                                                                        | quantitative  | categorical   |
-| :---------------------------------------------------------- | :------------------------------------------------------------------------------------------ | :------------ | :------------ |
-| [D1 distributions](#d1-distributions)                       | [strip plot](cm202-graph-strip-plot.md#top) or [box plot](cm203-graph-boxplot.md#box-plots) | one           | one or two    |
-| [D2 multiway](#d2-multiway)                                 | [multiway](cm204-graph-multiway.md#top)                                                     | one           | two           |
-| [D3 correlations](#d3-correlations)                         | scatterplot                                                                                 | two           | one           |
-| [D4 injuries or fatalities](#d4-injuries-or-fatalities)     | dot plot                                                                                    | one           | optional      |
-|                                                             | line graph or scatterplot                                                                   | two           | optional      |
-| [D5 redesign a graphical lie](#d5-redesign-a-graphical-lie) | dot plot                                                                                    | one           | optional      |
-|                                                             | line graph or scatterplot                                                                   | two           | optional      |
-| [D6 multivariate](#d6-multivariate)                         | conditioning plot                                                                           | three or four |               |
-|                                                             | scatterplot matrix or parallel coordinate                                                   | four or more  |               |
-| [D7 self-taught](#d7-self-taught)                           | [cycle plot](#cycle-plot)                                                                   | one           | two           |
-|                                                             | [mosaic plot](#mosaic-plot)                                                                 | one           | three or more |
-|                                                             | [financial (OHLC) plot](#financial-ohlc-plot)                                               | four          | one           |
-|                                                             | [diverging stacked bar](#diverging-stacked-bar)                                             | one           | one           |
-|                                                             | [linked micromaps](#linked-micromaps)                                                       | one           |               |
-|                                                             | [proportional symbol map](#proportional-symbol-map)                                         |               |               |
-|                                                             | [dot density map](#dot-density-map)                                                         |               |               |
+| display                                                     | type                                                                                               | quantitative  | categorical   |
+| :---------------------------------------------------------- | :------------------------------------------------------------------------------------------------- | :------------ | :------------ |
+| [D1 distributions](#d1-distributions)                       | [strip plot](cm202-graph-strip-plot.md#strip-plot) or [box plot](cm203-graph-boxplot.md#box-plots) | one           | one or two    |
+| [D2 multiway](#d2-multiway)                                 | [multiway](cm204-graph-multiway.md#multiway)                                                       | one           | two           |
+| [D3 correlations](#d3-correlations)                         | scatterplot                                                                                        | two           | one           |
+| [D4 injuries or fatalities](#d4-injuries-or-fatalities)     | dot plot                                                                                           | one           | optional      |
+|                                                             | line graph or scatterplot                                                                          | two           | optional      |
+| [D5 redesign a graphical lie](#d5-redesign-a-graphical-lie) | dot plot                                                                                           | one           | optional      |
+|                                                             | line graph or scatterplot                                                                          | two           | optional      |
+| [D6 multivariate](#d6-multivariate)                         | conditioning plot                                                                                  | three or four |               |
+|                                                             | scatterplot matrix or parallel coordinate                                                          | four or more  |               |
+| [D7 self-taught](#d7-self-taught)                           | [cycle plot](#cycle-plot)                                                                          | one           | two           |
+|                                                             | [mosaic plot](#mosaic-plot)                                                                        | one           | three or more |
+|                                                             | [financial (OHLC) plot](#financial-ohlc-plot)                                                      | four          | one           |
+|                                                             | [diverging stacked bar](#diverging-stacked-bar)                                                    | one           | one           |
+|                                                             | [linked micromaps](#linked-micromaps)                                                              | one           |               |
+|                                                             | [proportional symbol map](#proportional-symbol-map)                                                |               |               |
+|                                                             | [dot density map](#dot-density-map)                                                                |               |               |
 
 ## D1 distributions
 
