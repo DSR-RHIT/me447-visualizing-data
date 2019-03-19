@@ -18,7 +18,7 @@ below.
 | display                                                     | type                                                                                       | quantitative  | categorical   |
 | :---------------------------------------------------------- | :----------------------------------------------------------------------------------------- | :------------ | :------------ |
 | [D1 distributions](#d1-distributions)                       | [strip plot](cm202-graph-strip-plot.md#top) or [box plot](cm203-graph-boxplot.md#box-plot) | one           | one or two    |
-| [D2 multiway](#d2-multiway)                                 | multiway                                                                                   | one           | two           |
+| [D2 multiway](#d2-multiway)                                 | [multiway](cm204-graph-multiway.md#top)                                                    | one           | two           |
 | [D3 correlations](#d3-correlations)                         | scatterplot                                                                                | two           | one           |
 | [D4 injuries or fatalities](#d4-injuries-or-fatalities)     | dot plot                                                                                   | one           | optional      |
 |                                                             | line graph or scatterplot                                                                  | two           | optional      |
@@ -62,7 +62,7 @@ Categorical variables
 
 Examples
 
-  - [Speed skiing strip plot](cm201_strip-plot.md#completed-strip-chart)
+  - [Speed skiing strip plot](../figures/0302-strip-plot-speedski.png)
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -85,6 +85,8 @@ Data requirements
       - 5 levels in category 1 and at least 5 levels in category 2
 
 Multiway example
+
+  - [multiway](cm204-graph-multiway.md#top)
 
 <br> <a href="#top">▲ top of page</a>
 
