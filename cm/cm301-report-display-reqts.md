@@ -18,7 +18,7 @@ below.
 | display                                                     | type                                                                                               | quantitative  | categorical   |
 | :---------------------------------------------------------- | :------------------------------------------------------------------------------------------------- | :------------ | :------------ |
 | [D1 distributions](#d1-distributions)                       | [strip plot](cm202-graph-strip-plot.md#strip-plot) or [box plot](cm203-graph-boxplot.md#box-plots) | one           | one or two    |
-| [D2 multiway](#d2-multiway)                                 | [multiway](cm204-graph-multiway.md#multiway)                                                       | one           | two           |
+| [D2 multiway](#d2-multiway)                                 | [multiway](cm204-graph-multiway.md#multiway-dot-plot)                                              | one           | two           |
 | [D3 correlations](#d3-correlations)                         | scatterplot                                                                                        | two           | one           |
 | [D4 injuries or fatalities](#d4-injuries-or-fatalities)     | dot plot                                                                                           | one           | optional      |
 |                                                             | line graph or scatterplot                                                                          | two           | optional      |
@@ -88,7 +88,7 @@ Data requirements
 
 Tutorials and samples
 
-  - [Multiway tutorial](cm204-graph-multiway.md#multiway)
+  - [Multiway tutorial](cm204-graph-multiway.md#multiway-dot-plot)
   - [Sample multiway 1: NY counties population by
     race/ethnicity](../figures/0402-multiway-metropop-01.png)
   - [Sample multiway 2: NY counties population by race/ethnicity
