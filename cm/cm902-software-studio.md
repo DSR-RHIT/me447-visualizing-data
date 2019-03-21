@@ -1,11 +1,10 @@
 software studio
 ================
 
-<img src="../resources/cm502_header.png" width="100%" /> <small> <br>
-<i>San Francisco, from California and Powell Street</i> by Carleton E.
-Watkins (1829–1916) is licensed under
-<a href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">CC0
-1.0</a> <br> </small>
+<img src="../resources/cm302_header.png" width="100%" /> <small> <br>
+<i>Troy from Mount Ida</i> by the NY Public Library has
+<a href="https://www.flickr.com/photos/nypl/3990762946/in/photolist-75DGMG">no
+known copyright restrictions</a> <br> </small>
 
 ## contents
 

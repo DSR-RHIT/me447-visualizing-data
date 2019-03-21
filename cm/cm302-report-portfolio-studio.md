@@ -1,34 +1,27 @@
 portfolio studio
 ================
 
-<img src="../resources/cm302_header.png" width="100%" /> <small> <br>
-<i>Troy from Mount Ida</i> (No. 11 of The Hudson River Portfolio) is
-licensed under
+<img src="../resources/cm502_header.png" width="100%" /> <small> <br>
+<i>San Francisco, from California and Powell Street</i> by Carleton E.
+Watkins (1829–1916) is licensed under
 <a href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">CC0
 1.0</a> <br> </small>
 
+The portfolio documents your professional growth and competence by
+providing tangible evidence of your knowledge and skills in data
+visualization and visual rhetoric.
+
 Your portfolio is a website in the form of a GitHub repository. The repo
 is private, accessible only to people you invite as collaborators.
-However, your intended audience are your professional peers and
-prospective employers.
-
-Other portfolio-related links
-
-[Sample portfolio
-skeleton](https://github.com/graphdr/portfolio-sample)  
-[Document
-requirements](cm300-report-portfolio-reqts.md#portfolio-document-requirements)  
-[Document design](cm304-report-document-design.md#document-design)  
-[Data
-requirements](cm301-report-display-reqts.md#portfolio-data-requirements)
+However, our goal is to create a portfolio that you could eventually
+make public to showcase your work for our intended audience: your
+professional peers and prospective employers.
 
 ## contents
 
 [prerequisites](#prerequisites)  
-[organize the README file](#organize-the-readme-file)  
+[adding links to README](#adding-links-to-readme)  
 [importing images](#importing-images)  
-[start a report](#start-a-report)  
-[data tables](#data-tables)  
 [typesetting mathematics](#typesetting-mathematics)  
 [create the bib file](#create-the-bib-file)  
 [YAML bibliography argument](#yaml-bibliography-argument)  
@@ -36,99 +29,194 @@ requirements](cm301-report-display-reqts.md#portfolio-data-requirements)
 [add a references heading](#add-a-references-heading)  
 [format the citations and
 references](#format-the-citations-and-references)  
-[presentation prompts](#presentation-prompts)  
-[reading prompts](#reading-prompts)
+[reading responses](#reading-responses)  
+[presentation responses](#presentation-responses)
 
 ## prerequisites
 
   - Start every work session by launching `portfolio.Rproj`  
   - Your [project directory
     structure](cm501-proj-m-manage-files.md#plan-the-directory-structure)
-    satisfies the course requirements
+    satisfies the course requirements  
+  - `README.Rmd` exists in the project top-level directory  
+  - `reading-responses.Rmd` exists in the `reports` directory
+
+These links contain additional information regarding the portfolio,
+collected here for your convenience.
+
+[Sample portfolio
+skeleton](https://github.com/graphdr/portfolio-sample)  
+[Document
+requirements](cm300-report-portfolio-reqts.md#portfolio-document-requirements)  
+[Document design](cm304-report-document-design.md#document-design)  
+[Data
+requirements](cm301-report-display-reqts.md#portfolio-data-requirements)  
+[BiBTeX entry types](cm/cm303-report-bibtex.md)  
+Sample portfolio critiques are posted to Moodle
 
 <br> <a href="#top">▲ top of page</a>
 
-## organize the README file
+## adding links to README
 
-The README file is the main page of the website. README introduces the
-reader to your portfolio and provides navigation links to your
-individual display reports. The introduction and display reports are the
-the main elements of a portfolio that you might eventually make public.
+Links on the README page take the reader to stand-alone reports for each
+display and to your notes on the readings and
+presentations.
 
-The responses to the prompts are essentially research material you use
-to write the reports and that I use to assess your progress.
+<!-- Each README link takes the reader to a stand-alone report about a specific display, its data, critique, and references.   -->
 
-> Write instructions to begin editing the README. Section headings and a
-> link to the first report. Some suggestions for editing the
-> Introduction.
+<!-- - README also includes links to  -->
 
-Instructions for the portfolio README file
+<!-- The README file creates the main webpage of the repo. It introduces the reader to your portfolio and provides navigation links to  your individual display reports. -->
 
-  - Your portfolio cover art is your audience’s first interaction with
-    your data display work. Use your best work here to attract the
-    reader’s attention, pique their curiosity, and invite them to read
-    further.
+<!-- - README starts with a compelling image and an Introduction. Showcase your best work and engage the reader so they have a reason to keep reading.  -->
 
-  - A portfolio documents your professional growth and competence by
-    providing tangible evidence of your knowledge and skills in data
-    visualization and visual rhetoric. The introduction is the reader’s
-    first glimpse of your work; give them a reason to keep reading.
+<!-- - Even if your repo is private, treat the portfolio as if you intended to make it available to a prospective employer.  -->
 
-  - The words on the README should be yours. Add your own text where
-    appropriate to present your portfolio. You may edit the section
-    headings.
+<!-- - The words on the README should be yours. Add your own text where appropriate to present your portfolio. You may edit the section headings.   -->
 
-  - Even if your repo is private, treat the portfolio as if you intended
-    to make it available to a prospective employer.
+<!-- - In the displays section, give each report a descriptive title and indicate the type of graph used, e.g., dot plot, scatterplot, parallel coordinate plot, etc. While the course is in session, please leave the tags D1, D2, etc., for my convenience. When the course concludes, of course, you may edit these labels as you wish.   -->
 
-  - Each link in the displays section takes the reader to a stand-alone
-    report about a specific display, its data, critique, and references.
+<!-- - The discussion notes are from weekly small-group discussions in class that include the student's own ideas and peer feedback. The purpose of the notes is to inform the critiques.  -->
 
-  - In the displays section, give each report a descriptive title and
-    indicate the type of graph used, e.g., dot plot, scatterplot,
-    parallel coordinate plot, etc. While the course is in session,
-    please leave the tags D1, D2, etc., for my convenience. When the
-    course concludes, of course, you may edit these labels as you wish.
+Let’s create a file in `reports` as a temporary stand-in for the D1
+report.
 
-  - The discussion notes are from weekly small-group discussions in
-    class that include the student’s own ideas and peer feedback. The
-    purpose of the notes is to inform the critiques.
+  - Create the file `reports/d1-temp.Rmd`  
+  - Output should be `github_document` as always.
+  - Edit the title
+  - Possibly keep the default text
+  - Knit it
 
-<br> <a href="#top">▲ top of page</a>
+Open your `README.Rmd` file. Your README currently has an Introduction
+section heading.
+
+Please add the next heading
+
+    ## Displays and critiques 
+
+Recall that while you do your editing in the Rmd file, it is the md file
+(created when you knit) that GitHub uses to create repo web pages.
+Therefore, the link from README yo a report uses the `.md` file.
+
+Skip a space and add the link using the Rmd markup `[]()` for links.
+
+    [Display 1](reports/d1-temp.md) Title of your graph    
+    State the type of graph (strip plot or box plot) and summarize the main points of the report. 
+
+To keep the lines separate, add four spaces after the “Title of your
+graph![\\textvisiblespace\\textvisiblespace\\textvisiblespace\\textvisiblespace](https://latex.codecogs.com/png.latex?%5Ctextvisiblespace%5Ctextvisiblespace%5Ctextvisiblespace%5Ctextvisiblespace
+"\\textvisiblespace\\textvisiblespace\\textvisiblespace\\textvisiblespace")”
+
+Add the next heading
+
+    ## Discussion notes 
+
+And add a link to your reading response
+    file.
+
+    [Reading responses](reports/reading-responses.md) Notes from the data graphics literature on elements of design and visual rhetoric. 
+
+To check the links, we push to GitHub
+
+  - Save and Knit the README and the two report files
+  - Commit, PULL, PUSH
+  - Navigate to your repo
+  - The README should have the new content
+  - Test the link to the temporary D1 report page
+  - Test the link to the reading response page
 
 ## importing images
 
-All work is performed within RStudio with your `portfolio.Rproj` file
-open.
+Your portfolio will include images from two sources generally: images
+you create and images created by others.
 
-> Instructions on saving any image to the resources folder. Then as an
-> example, import to the README page as a placeholder.
+  - Images you create are saved to the `figures/` directory
+  - Images created by others are saved in the `resources/` directory
 
-<br> <a href="#top">▲ top of page</a>
+Both types are imported using `knitr::include_graphics()`. The
+`out.width` chunk option controls how wide the image is as a percent of
+the webpage width.
 
-## start a report
+Importing an image to the README file has this form.
 
-All work is performed within RStudio with your `portfolio.Rproj` file
-open.
+    ```{r echo = FALSE, out.width = "100%"}   
+    include_graphics("resources/file_name.png")    
+    ```
 
-One Rmd report is written per display. Each report describes the data,
-the graph design, and elements of visual rhetoric relevant to the story.
+and importing an image to a report file has this form.
 
-> Instructions for creating the first report template, `reports/d1.Rmd`.
-> Push to github and test the link from README to the report.
+```` 
+```{r echo = FALSE, out.width = "70%"}   
+include_graphics("../resources/file_name.png")    
+```    
+````
 
-<br> <a href="#top">▲ top of page</a>
+To correctly cite an image by someone else, you should determine the
+title of the image, the creator’s name, the license type, and the URL to
+the license.
 
-## data tables
+Images by others are often referenced immediately below the image. To do
+that, we use the following HTML tags
 
-All work is performed within RStudio with your `portfolio.Rproj` file
-open.
+  - smaller text `<small>` some text `</small>`  
+  - hyperlink `<a href="url">` link text `</a>`
+  - italics `<i>` some text `</i>`
+  - line break `<br>`
 
-> In the sample report, show how to create a sample data table.
-> Typically wide. Brief introduction to principles from Stephen few on
-> table layout—adapted to the GitHub environment.
+For example the HTML markup for the reference under the imported image
+at the top of this page:
 
-<br> <a href="#top">▲ top of page</a>
+    <small>
+    <br>
+    <i>San Francisco, from California and Powell Street</i> 
+    by Carleton E. Watkins (1829--1916) is licensed under 
+    <a href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">CC0 1.0</a>
+    <br>
+    </small>
+
+For images used to decorate a page (like the one at the top of this
+page) I have found Flickr to be a great source of Creative Commons
+licensed material.
+
+  - Navigate to [Flickr](https://www.flickr.com/)
+  - Type a search term in the search box
+  - *License \> All Creative Commons*
+  - Find an image you like
+  - Click *Some rights reserved* link to determine if you are allowed to
+    use the work
+  - Obtain the title of the image, the creator’s name, the license type,
+    and the URL to the license and paste them in the HTML markup as
+    shown above.
+
+**Assignment**
+
+Let’s place a temporary image to decorate the top of your README page
+
+  - Find an image on Flickr you like that is licensed for your use  
+  - Download it to your `resources/` directory  
+  - From Flickr, obtain the title of the image, the creator’s name, the
+    license type, and the URL to the license  
+  - Add `include_graphics()` in a code chunk at the top of your README  
+  - Directly below the code chunk, add the HTML script to correctly cite
+    the source and license.
+
+Push to GitHub to check the work
+
+  - Save and Knit the files
+  - Commit, PULL, PUSH
+  - Navigate to your repo
+  - The repo should have the new content
+
+<br> <a href="#top">▲ top of
+page</a>
+
+<!-- ## data tables  -->
+
+<!-- > In the sample report, show how to create a sample data table. Typically wide. Brief introduction to principles from Stephen few on table layout---adapted to the GitHub environment.  -->
+
+<!-- <br> -->
+
+<!-- <a href="#top">&#9650; top of page</a> -->
 
 ## typesetting mathematics
 
@@ -195,14 +283,38 @@ necessary LaTeX syntax.
     for an introduction  
   - [LaTeX math
     symbols](http://web.ift.uib.no/Teori/KURS/WRK/TeX/symALL.html) for
-    commands for common symbols, operatoirs, etc.
+    commands for common symbols, operators, etc.
+
+**Assignment**
+
+In the temporary file `reports/d1-temp.Rmd`, edit the header as
+described above.
+
+Add a section heading
+
+    ##  try writing an equation 
+
+Read the math typesetting links above and try to typeset the following
+differential equation.
+
+  
+![
+m\\ddot{x} + c\\dot{x} + kx = F
+](https://latex.codecogs.com/png.latex?%0Am%5Cddot%7Bx%7D%20%2B%20c%5Cdot%7Bx%7D%20%2B%20kx%20%3D%20F%0A
+"
+m\\ddot{x} + c\\dot{x} + kx = F
+")  
+
+Push to GitHub to check the work
+
+  - Save and Knit the files
+  - Commit, PULL, PUSH
+  - Navigate to your repo
+  - The repo should have the new content
 
 <br> <a href="#top">▲ top of page</a>
 
 ## create the bib file
-
-All work is performed within RStudio with your `portfolio.Rproj` file
-open.
 
 The `.bib` file contains the complete list of references used in your
 portfolio. It can contain more references than needed; only those
@@ -235,20 +347,35 @@ What the fields mean:
   - The double braces, for example `title = {{R for Data Science}}` are
     used to preserve capitalization.
 
-See our [BiBTeX page](cm303_portfolio_bibtex.md) for more details on the
+See our [BiBTeX page](cm303-report-bibtex.md) for more details on the
 types of entries and their required and optional fields.
+
+**Assignment**
+
+Add entries to the bib file for the three readings we’ve done so far
+
+  - `@inbook` entry for the Doumont reading  
+  - `@inbook` entry for the Robbins reading  
+  - `@inbook` entry for the Tufte reading
+
+The information for the citations is shown in the
+[readings](../README.md#readings) section of the main page.
 
 <br> <a href="#top">▲ top of page</a>
 
 ## YAML bibliography argument
 
-Open the report Rmd file you started earlier. Edit the YAML header to
-specify the path and file name of the `.bib` file you just created.
+In the temporary file `reports/d1-temp.Rmd`, edit the header to specify
+the path and file name of the `.bib` file you just created.
 
-<pre class="r"><code>---
-output: github_document
+``` yaml
+---
+output: 
+  github_document: 
+    pandoc_args: "--webtex"
 bibliography: "../resources/references.bib"
----</code></pre>
+---
+```
 
 Because the report Rmd script is in the reports directory, the relative
 path goes up one level `../`, then down to the `resources/` folder and
@@ -261,7 +388,8 @@ there we find the `references.bib` file.
 The syntax for a citation is `[@label]`, where the label is the label
 you assigned in the `.bib` file.
 
-  - In your report, add a sentence with a citation such
+  - In the temporary file `reports/d1-temp.Rmd`, add a sentence with a
+    citation such
 as:
 
 <pre class="r"><code>Visualization is a great place to start with R programming, because the payoff is 
@@ -281,6 +409,13 @@ the citation using its default author-date format.
 
 You will find the reference itself at the bottom of your document.
 
+**Assignment**
+
+  - Add another sentence stating something you learned from the Tufte
+    reading.
+  - Add the citation.
+  - Knit and check the result.
+
 <br> <a href="#top">▲ top of page</a>
 
 ## add a references heading
@@ -291,13 +426,34 @@ At the end of the Rmd script, add a references section heading.
 
 Knit the document. The reference now appears after this heading.
 
-To place the references section other than at the end of the document,
-we use some HTML scripting as follows. Type the references heading where
-you want the references to appear followed by the HTML`<div>` markup,
+To create live links between the citation and the reference, add the
+`link-citations` argument to the header,
+
+``` yaml
+---
+output: 
+  github_document: 
+    pandoc_args: "--webtex"
+bibliography: "../resources/references.bib"
+link-citations: yes
+---
+```
+
+Optional: To place the references section other than at the end of the
+document, we use some HTML tags as follows. Type the references heading
+where you want the references to appear followed by the HTML`<div>`
+markup,
 
     ## References
     
     <div id="refs"></div>
+
+Push to GitHub to check the work
+
+  - Save and Knit the files
+  - Commit, PULL, PUSH
+  - Navigate to your repo
+  - The repo should have the new content
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -322,44 +478,90 @@ format.
   - Manually move the CSL file to your `portfolio/resources` directory  
   - Specify the CSL file in the YAML header
 
-<pre class="r"><code>---
-output: github_document
+<!-- end list -->
+
+``` yaml
+---
+output: 
+  github_document: 
+    pandoc_args: "--webtex"
 bibliography: "../resources/references.bib"
+link-citations: yes
 csl: "../resources/journal-of-glaciology.csl"
----</code></pre>
+---
+```
 
 Knit your document and both the citation formatting and the references
 formatting will change throughout the document.
 
-<br> <a href="#top">▲ top of page</a>
+This is probably the final version of your header.
 
-## presentation prompts
+Push to GitHub to check the work
 
-All work is performed within RStudio with your `portfolio.Rproj` file
-open.
-
-Complete the prompts before the start of class on the day of the
-presentation.
-
-  - These points guide the small-group discussions.
-  - Much of this work will be part of your portfolio critiques.
-
-> Instructions on using the template file
+  - Save and Knit the files
+  - Commit, PULL, PUSH
+  - Navigate to your repo
+  - The repo should have the new content
 
 <br> <a href="#top">▲ top of page</a>
 
-## reading prompts
+## reading responses
 
-All work is performed within RStudio with your `portfolio.Rproj` file
-open.
+The purpose of a written reading response is twofold: prepare you for
+the class discussion and provide you with written discussion points on
+visual design and visual rhetoric you can use to inform the critiques in
+your portfolio.
 
-Complete the prompts before the start of class on the day of the reading
-discussion.
+In the software studio, you [setup your first reading
+response](cm902-software-studio.md#setup-reading-response).
 
-Visual design and rhetorical decisions are expected to be supported by
-evidence from our readings.
+We have 5 readings with responses (weeks 2, 4, 6, 8, & 10).
 
-> Instructions on using the template file
+  - You can type all your responses in the same file if you like. In
+    that case, your README will have only the one link we created today.
+  - Or you can create a new Rmd file for each reading response. In that
+    case, your README file would contain one link for each report
+
+If you select the multiple-file option, I recommend a file naming scheme
+like this,
+
+``` 
+ reports/reading-response-1-Tufte-1997.Rmd 
+ reports/reading-response-2-Wainer-2014.Rmd
+```
+
+Then the links in the README would look
+    like,
+
+    [Reading response 1](reports/reading-response-1-Tufte-1997.md) Edward Tufte (1997) The decision to launch the space shuttle Challenger.    
+    [Reading response 2](reading-response-2-Wainer-2014.Rmd) Howard Wainer (2014) Fifteen displays about one thing.    
+    [Reading response 3] etc. 
+
+<br> <a href="#top">▲ top of page</a>
+
+## presentation responses
+
+The template for the presentation prompts file is found at the [Sample
+portfolio template](https://github.com/graphdr/portfolio-sample).
+
+In the same fashion that you created the reading response report,
+
+  - Create a presentation response Rmd file in your `reports`
+    directory  
+  - Pre-populate it with the text from the sample  
+  - Link to it from the README
+  - Similar to the reading responses, you may keep all the presentation
+    responses in one file or you may make one file per presentation (one
+    for each display)
+
+Push to GitHub to check the work
+
+  - Save and Knit the files
+  - Commit, PULL, PUSH
+  - Navigate to your repo
+  - The repo should have the new content
+
+<br> <a href="#top">▲ top of page</a>
 
 <!-- portfolio checklist (revise)  -->
 
