@@ -5,7 +5,28 @@ portfolio studio
 <i>San Francisco, from California and Powell Street</i> by Carleton E.
 Watkins (1829–1916) is licensed under
 <a href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">CC0
-1.0</a> <br> </small>
+1.0</a> <br>
+</small>
+
+<!-- - In the displays section, give each report a descriptive title and indicate the type of graph used, e.g., dot plot, scatterplot, parallel coordinate plot, etc. While the course is in session, please leave the tags D1, D2, etc., for my convenience. When the course concludes, of course, you may edit these labels as you wish.   -->
+
+<!-- - The discussion notes are from weekly small-group discussions in class that include the student's own ideas and peer feedback. The purpose of the notes is to inform the critiques.  -->
+
+<!-- ## data tables  -->
+
+<!-- > In the sample report, show how to create a sample data table. Typically wide. Brief introduction to principles from Stephen few on table layout---adapted to the GitHub environment.  -->
+
+<!-- <br> -->
+
+<!-- <a href="#top">&#9650; top of page</a> -->
+
+<!-- portfolio checklist (revise)  -->
+
+<!-- describe, discuss, and critique  -->
+
+<!-- sample portfolio entries  -->
+
+<!-- commit-pull-push  -->
 
 The portfolio documents your professional growth and competence by
 providing tangible evidence of your knowledge and skills in data
@@ -59,24 +80,7 @@ Sample portfolio critiques are posted to Moodle
 ## adding links to README
 
 Links on the README page take the reader to stand-alone reports for each
-display and to your notes on the readings and
-presentations.
-
-<!-- Each README link takes the reader to a stand-alone report about a specific display, its data, critique, and references.   -->
-
-<!-- - README also includes links to  -->
-
-<!-- The README file creates the main webpage of the repo. It introduces the reader to your portfolio and provides navigation links to  your individual display reports. -->
-
-<!-- - README starts with a compelling image and an Introduction. Showcase your best work and engage the reader so they have a reason to keep reading.  -->
-
-<!-- - Even if your repo is private, treat the portfolio as if you intended to make it available to a prospective employer.  -->
-
-<!-- - The words on the README should be yours. Add your own text where appropriate to present your portfolio. You may edit the section headings.   -->
-
-<!-- - In the displays section, give each report a descriptive title and indicate the type of graph used, e.g., dot plot, scatterplot, parallel coordinate plot, etc. While the course is in session, please leave the tags D1, D2, etc., for my convenience. When the course concludes, of course, you may edit these labels as you wish.   -->
-
-<!-- - The discussion notes are from weekly small-group discussions in class that include the student's own ideas and peer feedback. The purpose of the notes is to inform the critiques.  -->
+display and to your notes on the readings and presentations.
 
 Let’s create a file in `reports` as a temporary stand-in for the D1
 report.
@@ -125,6 +129,8 @@ To check the links, we push to GitHub
   - Test the link to the temporary D1 report page
   - Test the link to the reading response page
 
+<br> <a href="#top">▲ top of page</a>
+
 ## importing images
 
 Your portfolio will include images from two sources generally: images
@@ -153,7 +159,9 @@ include_graphics("../resources/file_name.png")
 
 To correctly cite an image by someone else, you should determine the
 title of the image, the creator’s name, the license type, and the URL to
-the license.
+the license. If you are interested, you can read more about it at
+[Creative Commons
+Images](http://guides.library.ubc.ca/c.php?g=698822&p=4965735#s-lib-ctab-15622493-1).
 
 Images by others are often referenced immediately below the image. To do
 that, we use the following HTML tags
@@ -207,16 +215,7 @@ Push to GitHub to check the work
   - Navigate to your repo
   - The repo should have the new content
 
-<br> <a href="#top">▲ top of
-page</a>
-
-<!-- ## data tables  -->
-
-<!-- > In the sample report, show how to create a sample data table. Typically wide. Brief introduction to principles from Stephen few on table layout---adapted to the GitHub environment.  -->
-
-<!-- <br> -->
-
-<!-- <a href="#top">&#9650; top of page</a> -->
+<br> <a href="#top">▲ top of page</a>
 
 ## typesetting mathematics
 
@@ -562,14 +561,6 @@ Push to GitHub to check the work
   - The repo should have the new content
 
 <br> <a href="#top">▲ top of page</a>
-
-<!-- portfolio checklist (revise)  -->
-
-<!-- describe, discuss, and critique  -->
-
-<!-- sample portfolio entries  -->
-
-<!-- commit-pull-push  -->
 
 ## references
 

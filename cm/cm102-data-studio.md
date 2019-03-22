@@ -38,7 +38,7 @@ installed on your machine, please install them.
 
 Every graph in your portfolio has a specific data structure, summarized
 in the [portfolio data
-summary](cm301-report-display-reqtss.md#portfolio-display-requirements).
+summary](cm301-report-display-reqts.md#portfolio-display-requirements).
 As you look for data—both for practice and for the final display—know
 the data structure you are looking for.
 
