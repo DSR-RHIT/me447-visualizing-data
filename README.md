@@ -25,7 +25,7 @@ permission
 |    | R | Relating data structure to graph design<br>![](resources/icon-document.png) Doumont ([2009](#ref-Doumont:2009:Ch.4)) Designing the graph                                                                                                                                                                                                                                                                                                                                                   |                                                                                                                     |                                                                              |
 |    | F | [Software studio](cm/cm902-software-studio.md#software-studio)<br>[R basics](cm/cm903-software-R-basics.md#R-basics) \[[exercises](cm/cm903-software-R-basics.md#exercises)\]                                                                                                                                                                                                                                                                                                              | Software setup complete                                                                                             |                                                                              |
 | 2  | M | [Graph basics](cm/cm201-graph-basics.md#graph-basics) \[[exercises](cm/cm201-graph-basics.md#exercises)\]                                                                                                                                                                                                                                                                                                                                                                                  | wk1 lab complete                                                                                                    |                                                                              |
-|    | T | ![](resources/icon-document.png) Tufte ([1997](#ref-Tufte:1997)) Decision to launch Challenger                                                                                                                                                                                                                                                                                                                                                                                             |                                                                                                                     | [Reading prompts](reports/reading-prompts-1.Rmd)                             |
+|    | T | ![](resources/icon-document.png) Tufte ([1997](#ref-Tufte:1997)) Decision to launch Challenger                                                                                                                                                                                                                                                                                                                                                                                             |                                                                                                                     | [Reading prompts 1](reports/reading-prompts-1.Rmd)                           |
 |    | R | Data basics \[[slides](slides/sd021-data-basics.pdf)\] \[[exercises](cm/cm101-data-basics.md#exercises)\]                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                                     |                                                                              |
 |    | F | [Data studio](cm/cm102-data-studio.md#data-studio)<br>[Managing files](cm/cm501-proj-m-manage-files.md#file-management) \[[slides](slides/sd034-proj-m-manage-files.pdf)\]<br>[Interacting with R](cm/cm101b-interacting-with-R.md#interacting-with-R)<br>Return reprints                                                                                                                                                                                                                  | Start acquiring data<br>[Portfolio data requirements](cm/cm301-report-display-reqts.md#portfolio-data-requirements) |                                                                              |
 | 3  | M | Markdown basics \[[slides](slides/sd031-rmd-basics.pdf)\] \[[tutorial](cm/cm305-report-rmd-basics.md)\]<br>[RStudio tips](cm/cm905-software-RStudio-tips.md#rstudio-tips)                                                                                                                                                                                                                                                                                                                  | wk2 lab, tutorials, & exercises                                                                                     |                                                                              |
@@ -33,7 +33,7 @@ permission
 |    | R | Comparing distributions<br>[Strip plot](cm/cm202-graph-strip-plot.md#strip-plot) \[[exercises](cm/cm202-graph-strip-plot.md#exercises)\]<br>[Box plot](cm/cm203-graph-boxplot.md#box-plots) \[[exercises](cm/cm203-graph-boxplot.md#exercises)\]<br>[D1 requirements](cm/cm301-report-display-reqts.md#D1-distributions)                                                                                                                                                                   | D1 data acquired                                                                                                    |                                                                              |
 |    | F | [Portfolio studio](cm/cm302-report-portfolio-studio.md#portfolio-studio)<br>[Sample portfolio skeleton](https://github.com/graphdr/portfolio-sample)<br>[Document design](cm/cm304-report-document-design.md#document-design)<br>[Document requirements](cm/cm300-report-portfolio-reqts.md#portfolio-document-requirements)<br>[Data requirements](cm/cm301-report-display-reqts.md#portfolio-data-requirements)<br>![](resources/icon-moodle.png) Sample portfolio entries and critiques |                                                                                                                     |                                                                              |
 | 4  | M | Data carpentry \[exercises\]                                                                                                                                                                                                                                                                                                                                                                                                                                                               | wk3 lab, tutorials, & exercises                                                                                     |                                                                              |
-|    | T | ![](resources/icon-moodle.png) Wainer ([2014](#ref-Wainer:2014:Sec.2.9)) 15 displays about one thing                                                                                                                                                                                                                                                                                                                                                                                       |                                                                                                                     | [Reading prompts](reports/reading-prompts-2.Rmd)                             |
+|    | T | ![](resources/icon-moodle.png) Wainer ([2014](#ref-Wainer:2014:Sec.2.9)) 15 displays about one thing                                                                                                                                                                                                                                                                                                                                                                                       |                                                                                                                     | [Reading prompts 2](reports/reading-prompts-2.Rmd)                           |
 |    | R | [Multiway dot plot](cm/cm204-graph-multiway.md#multiway-dot-plot) \[[exercises](cm/cm204-graph-multiway.md#exercises)\]<br>[D2 requirements](cm/cm301-report-display-reqts.md#D2-multiway)                                                                                                                                                                                                                                                                                                 | D2 data acquired                                                                                                    |                                                                              |
 |    | F | Presentations, practice, & portfolio studio                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                                                     | D1 graph & prose<br>[Presentation prompts](reports/presentation-prompts.Rmd) |
 | 5  | M | Data carpentry \[exercises\]                                                                                                                                                                                                                                                                                                                                                                                                                                                               | wk4 tutorials & exercises                                                                                           |                                                                              |
@@ -94,9 +94,9 @@ permission
   - [R basics](cm/cm903-software-R-basics.md#R-basics)
   - [Interacting with
     R](cm/cm101b-interacting-with-R.md#interacting-with-R)  
+  - [RStudio tips](cm/cm905-software-RStudio-tips.md#rstudio-tips)  
   - [Updating the R
-    habitat](cm/cm904-software-R-update.md#updating-the-R-habitat)  
-  - [RStudio tips](cm/cm905-software-RStudio-tips.md#rstudio-tips)
+    habitat](cm/cm904-software-R-update.md#updating-the-R-habitat)
 
 ## data
 
@@ -112,13 +112,13 @@ Data studio
   - [Data import](cm/cm102-data-studio.md#data-import)  
   - [Begin acquiring data](cm/cm102-data-studio.md#begin-acquiring-data)
 
-Data tables
+<!-- Data tables  -->
 
-  - link
+<!-- - link -->
 
-Data carpentry tutorials
+<!-- Data carpentry tutorials  -->
 
-  - link
+<!-- - link  -->
 
 Data carpentry exercises
 
@@ -234,17 +234,17 @@ Resources
   - [Emphasis](cm/cm304-report-document-design.md#emphasis)  
   - [Hyphens and
     dashes](cm/cm304-report-document-design.md#hyphens-and-dashes)
-  - [The portfolio after the term](cm/cm306-report-edit-after-term.md)
+  - [Portfolio final
+    editing](cm/cm307-report-final-editing.md#final-editing)
+  - [The portfolio after the
+    term](cm/cm306-report-edit-after-term.md#the-portfolio-after-the-term)
 
 Portfolio studio
 
-  - [Organize the README
-    file](cm/cm302-report-portfolio-studio.md#organize-the-README-file)  
+  - [Adding links to
+    README](cm/cm302-report-portfolio-studio.md#adding-links-to-README)  
   - [Importing
     images](cm/cm302-report-portfolio-studio.md#importing-images)  
-  - [Start a
-    report](cm/cm302-report-portfolio-studio.md#start-a-report)  
-  - [Data tables](cm/cm302-report-portfolio-studio.md#data-tables)  
   - [Typesetting
     mathematics](cm/cm302-report-portfolio-studio.md#typesetting-mathematics)  
   - [Create the bib
@@ -258,10 +258,10 @@ Portfolio studio
     heading](cm/cm302-report-portfolio-studio.md#add-a-references-heading)  
   - [Format the citations and
     references](cm/cm302-report-portfolio-studio.md#format-the-citations-and-references)  
-  - [Presentation
-    prompts](cm/cm302-report-portfolio-studio.md#presentation-prompts)  
   - [Reading
-    prompts](cm/cm302-report-portfolio-studio.md#reading-prompts)
+    responses](cm/cm302-report-portfolio-studio.md#reading-responses)
+  - [Presentation
+    responses](cm/cm302-report-portfolio-studio.md#presentation-responses)
 
 [▲ index](README.md#index)
 
