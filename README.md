@@ -26,7 +26,7 @@ permission
 |    | F | [Software studio](cm/cm902-software-studio.md#software-studio)<br>[R basics](cm/cm903-software-R-basics.md#R-basics) \[[exercises](cm/cm903-software-R-basics.md#exercises)\]                                                                                                                                                                                                                                                                                                              | Software setup complete                                                                                             |                                                                              |
 | 2  | M | [Graph basics](cm/cm201-graph-basics.md#graph-basics) \[[exercises](cm/cm201-graph-basics.md#exercises)\]                                                                                                                                                                                                                                                                                                                                                                                  | wk1 lab complete                                                                                                    |                                                                              |
 |    | T | ![](resources/icon-document.png) Tufte ([1997](#ref-Tufte:1997)) Decision to launch Challenger                                                                                                                                                                                                                                                                                                                                                                                             |                                                                                                                     | [Reading prompts 1](reports/reading-prompts-1.Rmd)                           |
-|    | R | Data basics \[[slides](slides/sd021-data-basics.pdf)\] \[[exercises](cm/cm101-data-basics.md#exercises)\]                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                                     |                                                                              |
+|    | R | [Data basics](cm/cm101-data-basics.md#data-basics) \[[slides](slides/sd021-data-basics.pdf)\] \[[exercises](cm/cm101-data-basics.md#exercises)\]                                                                                                                                                                                                                                                                                                                                           |                                                                                                                     |                                                                              |
 |    | F | [Data studio](cm/cm102-data-studio.md#data-studio)<br>[Managing files](cm/cm501-proj-m-manage-files.md#file-management) \[[slides](slides/sd034-proj-m-manage-files.pdf)\]<br>[Interacting with R](cm/cm101b-interacting-with-R.md#interacting-with-R)<br>Return reprints                                                                                                                                                                                                                  | Start acquiring data<br>[Portfolio data requirements](cm/cm301-report-display-reqts.md#portfolio-data-requirements) |                                                                              |
 | 3  | M | Markdown basics \[[slides](slides/sd031-rmd-basics.pdf)\] \[[tutorial](cm/cm305-report-rmd-basics.md)\]<br>[RStudio tips](cm/cm905-software-RStudio-tips.md#rstudio-tips)                                                                                                                                                                                                                                                                                                                  | wk2 lab, tutorials, & exercises                                                                                     |                                                                              |
 |    | T | [Design basics](cm/cm402-rhetoric-design-basics.md#design-basics)<br>![](resources/icon-moodle.png) Robbins ([2013](#ref-Robbins:2013:Ch.6)[a](#ref-Robbins:2013:Ch.6)) General design principles                                                                                                                                                                                                                                                                                          |                                                                                                                     |                                                                              |
@@ -100,11 +100,22 @@ permission
 
 ## data
 
+Basics
+
+  - [Data basics slides](../slides/sd021-data-basics.pdf)  
+  - [Four basic data
+    skills](cm/cm101-data-basics.md#four-basic-data-skills)  
+  - [Data in base R and in R
+    packages](cm/cm101-data-basics.md#data-in-base-R-and-in-R-package)  
+  - [Reading raw data
+    files](cm/cm101-data-basics.md#reading-raw-data-files)  
+  - [Data directory write and
+    read](cm/cm101-data-basics.md#data-directory-write-and-read)
+
 Data studio
 
   - [Classify your data
     structure](cm/cm102-data-studio.md#classify-your-data-structure)  
-  - [Data basics slides](slides/sd021-data-basics.pdf)  
   - [Use Notepad for CSV
     files](cm/cm102-data-studio.md#use-notepad-for-csv-files)  
   - [Workflow basics](cm/cm102-data-studio.md#workflow-basics)  
@@ -120,7 +131,7 @@ Data studio
 
 <!-- - link  -->
 
-Data carpentry exercises
+Data exercises
 
   - [Data basics exercises](cm/cm101-data-basics.md#exercises)  
   - [4.4.1](https://r4ds.had.co.nz/workflow-basics.html#practice)
