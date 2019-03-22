@@ -119,7 +119,7 @@ Conventional usage is `<-`. As Robert Kabakoff (2011) explains,
 
 > R allows the = sign to be used for object assignments. However, you
 > won’t find many programs written that way because it’s not standard
-> syntax, there are some situations in which it won’t work, and R
+> syntax, there are some situations in which it wonâ€™t work, and R
 > programmers will make fun of you.
 
 If you use = and it works, I will not make fun of you.
@@ -166,7 +166,7 @@ their values.
 ![](../resources/panes-2.png)
 
 In the corner of the Environment pane, use the pull-down menu to change
-”List” to ”Grid” to list the variable names, values, and types.
+â€Listâ€ to â€Gridâ€ to list the variable names, values, and types.
 
 ![](../resources/panes-3.png)
 
@@ -175,26 +175,20 @@ To list variables using the console, use `ls()`,
 ``` r
 # type this in your Console
 ls()
-#>  [1] "chunk"       "inline"      "inline_yaml" "name"        "set_fig_dim"
-#>  [6] "test"        "x"           "y"           "yaml"        "z"
+#> [1] "name" "test" "x"    "y"    "z"
 ```
 
 To list the variables, values, and types, use `ls.str()`
 
-```` r
+``` r
 # type this in your Console
 ls.str()
-#> chunk :  chr "```"
-#> inline : function (x = "")  
-#> inline_yaml : function (x = "")  
 #> name :  chr "John"
-#> set_fig_dim : function (fig.width, fig.height)  
 #> test :  logi TRUE
 #> x :  num 0.524
 #> y :  num 0.5
-#> yaml :  chr "---"
 #> z :  cplx 0+2i
-````
+```
 
 **Variable names in R** must start with a letter (A-Z) or (a-z). Names
 can include letters, digits (0-9), dots (.), and underscores (\_). R is

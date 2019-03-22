@@ -42,7 +42,7 @@ are:
 
   - R is free, open source, and available on every major platform,
     making it easy for others to replicate your work.
-  - The variety of R packages (more than 13,500 as of 2019-01-17), many
+  - The variety of R packages (more than 13,750 as of 2019-03-22), many
     of them cutting edge tools.
   - R packages provide deep-seated support for data analysis, e.g.,
     missing values, data frames, and subsetting.

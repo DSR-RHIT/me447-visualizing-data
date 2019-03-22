@@ -91,7 +91,7 @@ so each will conclude with its own set of references.
 
 First drafts ![\\neq](https://latex.codecogs.com/png.latex?%5Cneq
 "\\neq") final drafts. Plan to pre-write (elements of your argument),
-draft (it won’t be pretty but get it down), revise (writing is
+draft (it wonâ€™t be pretty but get it down), revise (writing is
 rewriting), edit (to polish), and check (facts and sources must be
 correct).
 

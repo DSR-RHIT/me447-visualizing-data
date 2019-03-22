@@ -32,9 +32,9 @@ help
 
 ## online books
 
+  - [R for Data Science](http://r4ds.had.co.nz/)  
   - [A Student’s Guide to
     R](https://github.com/ProjectMOSAIC/LittleBooks/blob/master/StudentGuide/MOSAIC-StudentGuide.pdf)
-  - [R for Data Science](http://r4ds.had.co.nz/)
 
 ## links I use regularly
 
