@@ -2,6 +2,9 @@
 output: github_document
 ---
 
+<br>
+Copy and paste the following raw Rmd script into your own Rmd file
+
 ## week 10 reading prompts  
 
 Spence, Ian (2006) William Playfair and the psychology of graphs. In: *IEEE

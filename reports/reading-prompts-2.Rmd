@@ -2,6 +2,9 @@
 output: github_document
 ---
 
+<br>
+Copy and paste the following raw Rmd script into your own Rmd file
+
 ## week 4 reading prompts  
 
 Wainer, Howard (2014) Fifteen displays about one thing. In: *Medical

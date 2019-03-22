@@ -2,6 +2,9 @@
 output: github_document
 ---
 
+<br>
+Copy and paste the following raw Rmd script into your own Rmd file
+
 ## week 6 reading prompts  
 
 Dragga, Sam & Dan Voss (2001) Cruel pies: The inhumanity of technical

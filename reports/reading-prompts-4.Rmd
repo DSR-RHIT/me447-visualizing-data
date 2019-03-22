@@ -2,6 +2,9 @@
 output: github_document
 ---
 
+<br>
+Copy and paste the following raw Rmd script into your own Rmd file
+
 ## week 8 reading prompts  
 
 Kostelnick, Charles (2007) The visual rhetoric of data displays: The conundrum

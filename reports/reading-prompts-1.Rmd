@@ -2,6 +2,9 @@
 output: github_document
 ---
 
+<br>
+Copy and paste the following raw Rmd script into your own Rmd file
+
 ## week 2 reading prompts  
 
 Tufte, Edward (1997) The decision to launch the space shuttle Challenger. 
