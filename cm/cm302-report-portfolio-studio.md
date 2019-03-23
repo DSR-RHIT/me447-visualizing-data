@@ -346,19 +346,18 @@ What the fields mean:
   - The double braces, for example `title = {{R for Data Science}}` are
     used to preserve capitalization.
 
-See our [BiBTeX page](cm303-report-bibtex.md) for more details on the
-types of entries and their required and optional fields.
-
 **Assignment**
 
-Add entries to the bib file for the three readings we’ve done so far
+See our [BiBTeX page](cm303-report-bibtex.md) for more details on the
+types of entries and their required and optional fields. Then add
+entries to the bib file for the three readings we’ve done so far
 
   - `@inbook` entry for the Doumont reading  
   - `@inbook` entry for the Robbins reading  
   - `@inbook` entry for the Tufte reading
 
-The information for the citations is shown in the
-[readings](../README.md#readings) section of the main page.
+The information that can be used to fill the bib-file “fields” is shown
+in the [readings](../README.md#readings) section of the main page.
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -413,7 +412,10 @@ You will find the reference itself at the bottom of your document.
   - Add another sentence stating something you learned from the Tufte
     reading.
   - Add the citation.
-  - Knit and check the result.
+  - Knit and check the result. An error is thrown if the bib file
+    contains errors. See our [BiBTeX page](cm303-report-bibtex.md) again
+    to check the formatting of the entry types and fields in the bib
+    file.
 
 <br> <a href="#top">▲ top of page</a>
 
