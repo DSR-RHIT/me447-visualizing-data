@@ -9,7 +9,9 @@
 ## contents
 
 [prerequisites](#prerequisites)  
-[summary](#summary)  
+[entry types](#entry-types)  
+[citation keys](#citation-keys)  
+[fields](#fields)  
 [notes on usage](#notes-on-usage)  
 [articles](#articles)  
 [books](#books)  
@@ -17,6 +19,7 @@
 [in proceedings](#in-proceedings)  
 [web pages](#web-pages)  
 [software](#software)  
+[summary](#summary)  
 [references](#references)
 
 ## prerequisites
@@ -24,78 +27,103 @@
   - Start every work session by launching `portfolio.Rproj`  
   - Your [project directory
     structure](cm501-proj-m-manage-files.md#plan-the-directory-structure)
-    satisfies the course requirements
+    satisfies the course requirements  
+  - `resources/references.bib` exists as described
+    [here](cm302-report-portfolio-studio.md#create-the-bib-file)
 
-## summary
+## entry types
 
-There are many standard BiBTeX entry types, but the ones listed here
-will probably meet most of your needs. These listings have been tested
-in our Rmd to github document environment with both default formatting
-and a specified CSL file.
+I’ll use the bib entry for the R for Data Science book to illustrate the
+arguiments of the bib entry.
 
-    @article{Last+Last:YYYY,
-      author  = {First Last and First Last},
-      year    = {YYYY},
-      title   = {{Title of the article}},
-      journal = {Name of the publication},
-      volume  = {n},
-      number  = {n},
-      pages   = {n--n},
-      url     = {URL}
-    }
-    
-    @book{Last:YYYY,
-      author    = {First Last},
-      year      = {YYYY},
-      title     = {{Title}},
-      edition   = {n}, 
-      publisher = {Publisher},
-      address   = {City, State},
-      url       = {URL}
-    }
-    
-    @inbook{Last:YYYY:Ch.N,
-      author    = {First Last},
-      year      = {YYYY},
-      title     = {{Title of section or chapter}},
-      booktitle = {{Book title with edition number if any}},
-      publisher = {Publisher},
-      address   = {City},
-      pages     = {n--n},
-      url       = {URL},
-    }
-    
-    @inproceedings{Last+Last+Last:YYYY,
-      author    = {First Last and First Last and First Last},
-      year      = {YYYY},
-      title     = {{Title of article}},
-      booktitle = {{Conference name}},
-      publisher = {Publisher},
-      address   = {City},
-      pages     = {n--n},
-      url       = {URL},
-    }
-    
-    @misc{Last:YYYY,
-      author = {First Last},
-      year   = {YYYY},
-      title  = {{Title}},
-      url    = {URL}
-    }
-    
-    @manual{Last:YYYY,
-      author       = {First Last},
-      year         = {YYYY},
-      title        = {{Title of software}},
-      organization = {Organization},
-      address      = {City},
-      url          = {URL}
+    @book{Wickham+Grolemund:2017,
+      author    = {Hadley Wickham and Garrett Grolemund},
+      year      = {2017},
+      title     = {{R for Data Science}},
+      edition   = {},
+      publisher = {{O'Reilly Media, Inc.}},
+      address   = {Sebastopol, CA},
+      url       = {https://r4ds.had.co.nz/},
     }
 
-<br> <a href="#top">▲ top of page</a>
+In this example, the entry type is `@book{}`, indicating that this
+reference would be formatted in the output document as a book. The
+reference types we will use are
+
+[`@article{}`](cm303-report-bibtex.md#articles)  
+[`@book{}`]()  
+[`@inbook{}`]()  
+[`@inproceedings{}`]()  
+[`@misc{}`]()  
+[`@manual{}`]()
+
+There are many more entry types in the BiBTeX world than the ones listed
+here. However, not all will give the expected results when using R
+Markdown with output to `github_document`. The six entry types listed
+here will cover most of our needs and they all work with GitHub.
+
+## citation keys
+
+The first argument is the citation key followed by a comma, for example,
+
+    @book{Wickham+Grolemund:2017,
+    }
+
+The key must be unique for all entries in your bibliography. In your Rmd
+document, you use the citation key to cross-reference the citation to
+the reference in the bib file. For example, the Rmd citation for the
+sample book would read `[@Wickham+Grolemund:2017]`.
+
+According to [BibTeX
+Intro](https://bibdesk.sourceforge.io/manual/BibDeskHelp_2.html),
+citation labels are
+
+  - arbitrary
+  - case-sensitive  
+  - unique
+  - and contain NO spaces, NO underscores, and NO special characters (`"
+    @ ' , \ # } { ~ %`)
+
+I suggest the following naming scheme for citation keys
+
+  - `Last:YYYY` for a single author
+  - `Last+Last:YYYY` for two authors
+  - `Last+Last+Last:YYYY` for three authors
+  - `Last:YYYY:Ch.n` for a chapter  
+  - `Last:YYYY:Sec.n.n` for a section  
+  - `Last:YYYY:package-name` for an R package  
+  - `Last:YYYY:tag` for a second reference by the same author in the
+    same year, with a `tag` word or phrase to distinguish this reference
+    from the first.
+
+## fields
+
+Fields that are compatible with the reference types we are using are
+listed below. Not all fields are compatible with all entry types.
+Comaptible fields are listed in the detailed descriptions of entry
+types.
+
+``` 
+author       = {},    
+year         = {},    
+title        = {},    
+booktitle    = {},    
+journal      = {},    
+volume       = {},    
+number       = {},    
+pages        = {},    
+edition      = {},     
+organization = {},    
+publisher    = {},    
+address      = {},    
+url          = {},     
+```
+
+Every field ends with a comma.
 
 ## notes on usage
 
+  - A book reference must have either an author or an editor
   - Multiple author names in the author field are separated by `and`.
   - Author middle initials are optional
   - If you use an ampersand in a field, escape it with a backslash, for
@@ -269,6 +297,74 @@ Cite software in general
       address      = {Boston, MA},
       url          = {http://www.rstudio.com/},
       }
+
+## summary
+
+There are many standard BiBTeX entry types, but the ones listed here
+will probably meet most of your needs. These listings have been tested
+in our Rmd to github document environment with both default formatting
+and a specified CSL file.
+
+    @article{Last+Last:YYYY,
+      author  = {First Last and First Last},
+      year    = {YYYY},
+      title   = {{Title of the article}},
+      journal = {Name of the publication},
+      volume  = {n},
+      number  = {n},
+      pages   = {n--n},
+      url     = {URL}
+    }
+    
+    @book{Last:YYYY,
+      author    = {First Last},
+      year      = {YYYY},
+      title     = {{Title}},
+      edition   = {n}, 
+      publisher = {Publisher},
+      address   = {City, State},
+      url       = {URL}
+    }
+    
+    @inbook{Last:YYYY:Ch.N,
+      author    = {First Last},
+      year      = {YYYY},
+      title     = {{Title of section or chapter}},
+      booktitle = {{Book title with edition number if any}},
+      publisher = {Publisher},
+      address   = {City},
+      pages     = {n--n},
+      url       = {URL},
+    }
+    
+    @inproceedings{Last+Last+Last:YYYY,
+      author    = {First Last and First Last and First Last},
+      year      = {YYYY},
+      title     = {{Title of article}},
+      booktitle = {{Conference name}},
+      publisher = {Publisher},
+      address   = {City},
+      pages     = {n--n},
+      url       = {URL},
+    }
+    
+    @misc{Last:YYYY,
+      author = {First Last},
+      year   = {YYYY},
+      title  = {{Title}},
+      url    = {URL}
+    }
+    
+    @manual{Last:YYYY,
+      author       = {First Last},
+      year         = {YYYY},
+      title        = {{Title of software}},
+      organization = {Organization},
+      address      = {City},
+      url          = {URL}
+    }
+
+<br> <a href="#top">▲ top of page</a>
 
 ## references
 
