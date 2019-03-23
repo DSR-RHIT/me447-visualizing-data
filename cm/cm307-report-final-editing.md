@@ -1,6 +1,11 @@
 final editing
 ================
 
+<img src="../resources/cm307-header.png" width="100%" /> <small> <br>
+<i>Edit</i> by Matt Hampel licensed under
+<a href="https://creativecommons.org/licenses/by/2.0//">CC BY 2.0</a>
+<br> </small>
+
 Having substantially completed the portfolio at this point, it is time
 for final editing.
 
