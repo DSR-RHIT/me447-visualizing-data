@@ -339,10 +339,9 @@ What the fields mean:
 
   - `@book{}` and its enclosing braces denotes the type of reference,
     e.g., a book, an article, a chapter in a book, etc.
-  - `Wickham+Grolemund:2017` is the unique label I assigned to this
-    reference. I use the label `Author:YYYY` for one author,
-    `Author+Author:YYYY` for two authors, etc. You can use any style
-    label as long as each reference label is unique.
+  - `Wickham+Grolemund:2017` is the unique citation key I assigned to
+    this reference. I use the key `Author:YYYY` for one author,
+    `Author+Author:YYYY` for two authors, etc.  
   - The double braces, for example `title = {{R for Data Science}}` are
     used to preserve capitalization.
 
@@ -383,8 +382,8 @@ there we find the `references.bib` file.
 
 ## add a citation
 
-The syntax for a citation is `[@label]`, where the label is the label
-you assigned in the `.bib` file.
+The syntax for a citation is `[@key]`, where the citation key was
+assigned in the `.bib` file.
 
   - In the temporary file `reports/d1-temp.Rmd`, add a sentence with a
     citation such
@@ -395,7 +394,11 @@ so clear: you get to make elegant and informative plots that help you understand
 data [@Wickham+Grolemund:2017]. 
 </code></pre>
 
-  - Knit the document. You should see output like this:
+  - Knit the document. If you get an error, the most likely cause is an
+    error in the bib file. Return to the [BiBTeX
+    page](cm303-report-bibtex.md) to check the formatting of the entry
+    types and fields in the bib file.
+  - If the knit is successful, you should see output like this:
 
 > Visualization is a great place to start with R programming, because
 > the payoff is so clear: you get to make elegant and informative plots
@@ -412,10 +415,7 @@ You will find the reference itself at the bottom of your document.
   - Add another sentence stating something you learned from the Tufte
     reading.
   - Add the citation.
-  - Knit and check the result. An error is thrown if the bib file
-    contains errors. See our [BiBTeX page](cm303-report-bibtex.md) again
-    to check the formatting of the entry types and fields in the bib
-    file.
+  - Knit and check the result.
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -440,21 +440,22 @@ link-citations: yes
 ---
 ```
 
-Optional: To place the references section other than at the end of the
-document, we use some HTML tags as follows. Type the references heading
-where you want the references to appear followed by the HTML`<div>`
-markup,
-
-    ## References
-    
-    <div id="refs"></div>
-
 Push to GitHub to check the work
 
   - Save and Knit the files
   - Commit, PULL, PUSH
   - Navigate to your repo
   - The repo should have the new content
+
+<small> <br> </small> **Optional.**   References are by default located
+at the bottom of the document. If we want something else at the bottom
+of the document, below the references, we use some HTML tags as follows.
+
+    ## References
+    
+    <div id="refs"></div>
+    
+    Then additional content can be placed here, after the references. 
 
 <br> <a href="#top">▲ top of page</a>
 
