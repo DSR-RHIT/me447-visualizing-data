@@ -235,7 +235,6 @@ Resources
 
   - [Setup reading
     responses](cm/cm902-software-studio.md#setup-reading-response)
-  - [BiBTeX entry types](cm/cm303-report-bibtex.md)  
   - [Document
     design](cm/cm304-report-document-design.md#document-design)
   - [Media](cm/cm304-report-document-design.md#media)  
@@ -249,6 +248,21 @@ Resources
     editing](cm/cm307-report-final-editing.md#final-editing)
   - [The portfolio after the
     term](cm/cm306-report-edit-after-term.md#the-portfolio-after-the-term)
+
+Citations and references
+
+  - [BiBTeX](cm/cm303-report-bibtex.md)  
+  - [entry types](cm/cm303-report-bibtex.md#entry-types)
+  - [citation keys](cm/cm303-report-bibtex.md#citation-keys)
+  - [fields](cm/cm303-report-bibtex.md#fields)
+  - [notes on usage](cm/cm303-report-bibtex.md#notes-on-usage)
+  - [articles](cm/cm303-report-bibtex.md#articles)  
+  - [books](cm/cm303-report-bibtex.md#books)
+  - [in a book](cm/cm303-report-bibtex.md#in-a-book)
+  - [in proceedings](cm/cm303-report-bibtex.md#in-proceedings)
+  - [web pages](cm/cm303-report-bibtex.md#web-pages)
+  - [software](cm/cm303-report-bibtex.md#software)
+  - [summary of entry types](cm/cm303-report-bibtex.md#summary)
 
 Portfolio studio
 
