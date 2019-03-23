@@ -16,7 +16,7 @@ licensed under
 [workflow basics](#workflow-basics)  
 [data transformation](#data-transformation)  
 [data import](#data-import)  
-[begin acquiring data](#begin-acquiring-data)  
+[data links](#data-links)  
 [references](#references)
 
 ## prerequisites
@@ -159,7 +159,7 @@ file](https://r4ds.had.co.nz/data-import.html#writing-to-a-file)
 [11.6 Other types of
 data](https://r4ds.had.co.nz/data-import.html#other-types-of-data)
 
-## begin acquiring data
+## data links
 
 If you find other sites you find useful or entertaining, please let me
 know and I’ll add them to the lists.

@@ -121,7 +121,7 @@ Data studio
   - [Workflow basics](cm/cm102-data-studio.md#workflow-basics)  
   - [Data transformation](cm/cm102-data-studio.md#data-transformation)  
   - [Data import](cm/cm102-data-studio.md#data-import)  
-  - [Begin acquiring data](cm/cm102-data-studio.md#begin-acquiring-data)
+  - [Data links](cm/cm102-data-studio.md#data-links)
 
 <!-- Data tables  -->
 
