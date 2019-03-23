@@ -34,7 +34,7 @@
 ## entry types
 
 I’ll use the bib entry for the R for Data Science book to illustrate the
-arguiments of the bib entry.
+arguments of the bib entry.
 
     @book{Wickham+Grolemund:2017,
       author    = {Hadley Wickham and Garrett Grolemund},
@@ -51,16 +51,20 @@ reference would be formatted in the output document as a book. The
 reference types we will use are
 
 [`@article{}`](cm303-report-bibtex.md#articles)  
-[`@book{}`]()  
-[`@inbook{}`]()  
-[`@inproceedings{}`]()  
-[`@misc{}`]()  
-[`@manual{}`]()
+[`@book{}`](cm303-report-bibtex.md#books)  
+[`@inbook{}`](cm303-report-bibtex.md#in-a-book)  
+[`@inproceedings{}`](cm303-report-bibtex.md#in-proceedings)  
+[`@misc{}`](cm303-report-bibtex.md#web-pages) for online references  
+[`@manual{}`](cm303-report-bibtex.md#software) for software
 
-There are many more entry types in the BiBTeX world than the ones listed
-here. However, not all will give the expected results when using R
-Markdown with output to `github_document`. The six entry types listed
+The BiBTeX habitat includes many more entry types than than the ones
+listed here. However, not all will give the expected results when using
+R Markdown with output to `github_document`. The six entry types listed
 here will cover most of our needs and they all work with GitHub.
+
+If you try [other entry
+types](http://bib-it.sourceforge.net/help/fieldsAndEntryTypes.php), PUSH
+to GitHub and check the results before committing to their use.
 
 ## citation keys
 
@@ -94,20 +98,19 @@ I suggest the following naming scheme for citation keys
   - `Last:YYYY:package-name` for an R package  
   - `Last:YYYY:tag` for a second reference by the same author in the
     same year, with a `tag` word or phrase to distinguish this reference
-    from the first.
+    from the first reference
 
 ## fields
 
 Fields that are compatible with the reference types we are using are
-listed below. Not all fields are compatible with all entry types.
-Comaptible fields are listed in the detailed descriptions of entry
-types.
+listed below.
 
 ``` 
 author       = {},    
+editor       = {},  
 year         = {},    
-title        = {},    
-booktitle    = {},    
+title        = {{}},    
+booktitle    = {{}},    
 journal      = {},    
 volume       = {},    
 number       = {},    
@@ -119,7 +122,40 @@ address      = {},
 url          = {},     
 ```
 
-Every field ends with a comma.
+Note
+
+  - Every field ends with a comma.  
+  - I use a double set of braces `{{}}` for title and booktitle to
+    preserve capitalization.
+  - Not all fields are compatible with all entry types. Compatible
+    fields are listed in the detailed samples below.
+
+Similar to the entry types, the BiBTeX habitat includes many more field
+types than than the ones listed here. Again, not all will give the
+expected results when using R Markdown with output to `github_document`.
+The fields listed in the detailed samples below all work with GitHub.
+
+If you try [other field
+types](http://bib-it.sourceforge.net/help/fieldsAndEntryTypes.php), PUSH
+to GitHub and check the results before committing to their use.
+
+Returning to our example,
+
+    @book{Wickham+Grolemund:2017,
+      author    = {Hadley Wickham and Garrett Grolemund},
+      year      = {2017},
+      title     = {{R for Data Science}},
+      edition   = {},
+      publisher = {{O'Reilly Media, Inc.}},
+      address   = {Sebastopol, CA},
+      url       = {https://r4ds.had.co.nz/},
+    }
+
+  - The final brace `}` is the closing brace of the entry type, in this
+    case, `@book{}`
+  - Multiple names in the `author` field are separated by `and`  
+  - The book has no edition, so the `edition` field is empty. Empty
+    fields produce no output in your document.
 
 ## notes on usage
 
