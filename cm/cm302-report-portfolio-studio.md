@@ -72,7 +72,7 @@ requirements](cm300-report-portfolio-reqts.md#portfolio-document-requirements)
 [Document design](cm304-report-document-design.md#document-design)  
 [Data
 requirements](cm301-report-display-reqts.md#portfolio-data-requirements)  
-[BiBTeX entry types](cm/cm303-report-bibtex.md)  
+[BiBTeX entry types](cm303-report-bibtex.md)  
 Sample portfolio critiques are posted to Moodle
 
 <br> <a href="#top">▲ top of page</a>
