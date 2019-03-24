@@ -77,7 +77,7 @@ vignettes/*.pdf
 
 # allow specific files
 data-raw
-# !/data-raw/DSR-table1.xlsx
-# !/data-raw/VADeaths.xlsx
-# !/data-raw/scanvote.csv
-# !/data-raw/2017-09-TB-notifications.csv
+!/data-raw/DSR-table1.xlsx
+!/data-raw/VADeaths.xlsx
+!/data-raw/scanvote.csv
+!/data-raw/2017-09-TB-notifications.csv
