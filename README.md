@@ -136,8 +136,8 @@ Data carpentry
   - [blocks\_to\_rowrecs()](cm/cm103-data-reshaping.md#blocks_to_rowrecs)  
   - [WHO case study in data
     reshaping](cm/cm103-data-reshaping.md#WHO-case-study-in-data-reshaping)  
-  - [rio::import() for web
-    download](cm/cm103-data-reshaping.md#rio::import\(\)-for-web-download)  
+  - [web download with
+    rio::import()](cm/cm103-data-reshaping.md#web-download-with-rio::import)  
   - [WHO data encoding](cm/cm103-data-reshaping.md#WHO-data-encoding)  
   - [select() with
     matches()](cm/cm103-data-reshaping.md#select\(\)-with-matches)  
