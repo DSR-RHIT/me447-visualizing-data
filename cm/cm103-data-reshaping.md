@@ -14,7 +14,7 @@ reshaping data
 [rowrecs\_to\_blocks()](#rowrecs_to_blocks)  
 [blocks\_to\_rowrecs()](#blocks_to_rowrecs)  
 [WHO case study in data reshaping](#who-case-study-in-data-reshaping)  
-[rio::import() for web download](#rioimport-for-web-download)  
+[web download using import()](#web-download-using-import)  
 [WHO data encoding](#who-data-encoding)  
 [select() with matches()](#select-with-matches)  
 [unpivot\_to\_blocks()](#unpivot_to_blocks)  
@@ -401,7 +401,7 @@ library("wrapr")
 library("rio")
 ```
 
-## rio::import() for web download
+## web download using import()
 
 The data are in a CSV file on the World Health Organization website. The
 following code will download the data and write it to your `data-raw`
