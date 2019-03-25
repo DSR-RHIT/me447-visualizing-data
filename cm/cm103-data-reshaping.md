@@ -10,13 +10,14 @@ reshaping data
 
 [prerequisites](#prerequisites)  
 [data in row names](#data-in-row-names)  
-[records, rows, and blocks](#records-rows-and-blocks)  
+[keys and values in coordinatized
+data](#keys-and-values-in-coordinatized-data)  
 [rowrecs\_to\_blocks()](#rowrecs_to_blocks)  
 [blocks\_to\_rowrecs()](#blocks_to_rowrecs)  
 [WHO case study in data reshaping](#who-case-study-in-data-reshaping)  
 [web download using import()](#web-download-using-import)  
 [WHO data encoding](#who-data-encoding)  
-[select() with matches()](#select-with-matches)  
+[select with matches()](#select-with-matches)  
 [unpivot\_to\_blocks()](#unpivot_to_blocks)  
 [drop\_na()](#drop_na)  
 [str\_replace()](#str_replace)  
@@ -142,7 +143,7 @@ VA_deaths <- VA_deaths %>%
 The row names have been replaced with the conventional integers. Note
 also that the spaces in the columns names are replaced with periods.
 
-## records, rows, and blocks
+## keys and values in coordinatized data
 
 [John Mount and Nina
 Zumel](http://winvector.github.io/FluidData/FluidDataReshapingWithCdata.html)
@@ -511,7 +512,7 @@ information, e.g. `f014` or `m3544`.
 For our exercise, I’m assuming that all information encoded as
 age-groups `04` and `514` is included in data for the age group `014`.
 
-## select() with matches()
+## select with matches()
 
 The most distinctive characteristic of the variable names we want are
 the sex-age groupings.
