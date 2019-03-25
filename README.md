@@ -131,9 +131,9 @@ Data carpentry
 
   - [data in row names](cm/cm103-data-reshaping.md#data-in-row-names)  
   - [records, rows, and
-    blocks](cm/cm103-data-reshaping.md#records,-rows,-and-blocks)  
-  - [rowrecs\_to\_blocks()](cm/cm103-data-reshaping.md#rowrecs_to_blocks\(\))  
-  - [blocks\_to\_rowrecs()](cm/cm103-data-reshaping.md#blocks_to_rowrecs\(\))  
+    blocks](cm/cm103-data-reshaping.md#records)  
+  - [rowrecs\_to\_blocks()](cm/cm103-data-reshaping.md#rowrecs_to_blocks)  
+  - [blocks\_to\_rowrecs()](cm/cm103-data-reshaping.md#blocks_to_rowrecs)  
   - [WHO case study in data
     reshaping](cm/cm103-data-reshaping.md#WHO-case-study-in-data-reshaping)  
   - [rio::import() for web
