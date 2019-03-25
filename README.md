@@ -127,9 +127,27 @@ Data studio
 
 <!-- - link -->
 
-<!-- Data carpentry tutorials  -->
+Data carpentry
 
-<!-- - link  -->
+  - [data in row names](cm/cm103-data-reshaping.md#data-in-row-names)  
+  - [records, rows, and
+    blocks](cm/cm103-data-reshaping.md#records,-rows,-and-blocks)  
+  - [rowrecs\_to\_blocks()](cm/cm103-data-reshaping.md#rowrecs_to_blocks\(\))  
+  - [blocks\_to\_rowrecs()](cm/cm103-data-reshaping.md#blocks_to_rowrecs\(\))  
+  - [WHO case study in data
+    reshaping](cm/cm103-data-reshaping.md#WHO-case-study-in-data-reshaping)  
+  - [rio::import() for web
+    download](cm/cm103-data-reshaping.md#rio::import\(\)-for-web-download)  
+  - [WHO data encoding](cm/cm103-data-reshaping.md#WHO-data-encoding)  
+  - [select() with
+    matches()](cm/cm103-data-reshaping.md#select\(\)-with-matches\(\))  
+  - [unpivot\_to\_blocks()](cm/cm103-data-reshaping.md#unpivot_to_blocks\(\))  
+  - [drop\_na()](cm/cm103-data-reshaping.md#drop_na\(\))  
+  - [str\_replace()](cm/cm103-data-reshaping.md#str_replace\(\))  
+  - [separate()](cm/cm103-data-reshaping.md#separate\(\))  
+  - [WHO group\_by() and
+    summarize()](cm/cm103-data-reshaping.md#WHO-group_by\(\)-and-summarize\(\))  
+  - [WHO graphs](cm/cm103-data-reshaping.md#WHO-graphs)
 
 Data exercises
 
