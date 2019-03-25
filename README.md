@@ -137,7 +137,7 @@ Data carpentry
   - [WHO case study in data
     reshaping](cm/cm103-data-reshaping.md#WHO-case-study-in-data-reshaping)  
   - [web download with
-    rio::import()](cm/cm103-data-reshaping.md#web-download-with-rio::import)  
+    rio::import()](cm/cm103-data-reshaping.md#web-download-with-rio)  
   - [WHO data encoding](cm/cm103-data-reshaping.md#WHO-data-encoding)  
   - [select() with
     matches()](cm/cm103-data-reshaping.md#select\(\)-with-matches)  
