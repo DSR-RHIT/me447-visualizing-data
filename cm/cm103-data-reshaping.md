@@ -172,8 +172,9 @@ logically belongs together.
 To graph these data using ggplot2, we need the data in tidy form. This
 is a case of an algorithm (ggplot2) that is “sensitive to how data is
 arranged in rows and columns, so there is a need to convert between
-representations” (Mount and Zumel, [2019](#ref-Mount+Zumel:2019)). To
-reshape the data into tidy form, we:
+representations” (Mount and Zumel,
+[2019](#ref-Mount+Zumel:2019:fluid-data)[a](#ref-Mount+Zumel:2019:fluid-data)).
+To reshape the data into tidy form, we:
 
   - add two new categorical variables `sex` (levels: male and female)
     and `geo_area` (levels: rural and urban)  
@@ -915,7 +916,7 @@ what `rowrecs_to_blocks()` is doing.
 **3. Pivot and unpivot**
 
 Given the tidy data frame `stocks` below, where the `half` variable
-indiactes the first or second half of the year,
+indicates the first or second half of the year,
 
 ``` r
 stocks <- tibble(
@@ -943,15 +944,56 @@ Then use `cdata::unpivot_to_blocks()` to recover the original layout.
 Use `all_equal()` to show that this version is identical to the original
 `stocks` data frame.
 
+**4. Coordinatize and reshape iris data**
+
+The `iris` data set in base R is in row-record form though not quite
+coordinatized. For example, the species and sepal length do not uniquely
+identify a measurement.
+
+``` r
+head(iris)
+#>   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+#> 1          5.1         3.5          1.4         0.2  setosa
+#> 2          4.9         3.0          1.4         0.2  setosa
+#> 3          4.7         3.2          1.3         0.2  setosa
+#> 4          4.6         3.1          1.5         0.2  setosa
+#> 5          5.0         3.6          1.4         0.2  setosa
+#> 6          5.4         3.9          1.7         0.4  setosa
+```
+
+Suppose we wanted to graph the iris data as shown below, with `Length`
+and `Width` on the axes, the panels conditioned by `flower_part`, and
+the data markers conditioned by `Species`.
+
+<img src="../resources/cm103-04.png" width="60%" />
+
+  - Coordinatize the iris data by adding a key column called `row_id`.
+    The values will be integers, 1–150.
+  - Create a control table for reshaping from row records to block form
+    such that the data could be used to create the graph shown (no graph
+    is necessary)
+  - Use `rowrecs_to_blocks()` to reshape the data to block form  
+  - Use `blocks_to_rowrecs()` to recover the original layout
+  - Use `all_equal()` to show that this version is identical to the
+    original coordinatized data frame
+
 ## references
 
 <div id="refs">
 
-<div id="ref-Mount+Zumel:2019">
+<div id="ref-Mount+Zumel:2019:fluid-data">
 
-Mount J and Zumel N (2019) *Coordinatized data: A fluid data
+Mount J and Zumel N (2019a) *Coordinatized data: A fluid data
 specification.* Win Vector LLC
 <http://winvector.github.io/FluidData/RowsAndColumns.html>
+
+</div>
+
+<div id="ref-Mount+Zumel:2019:iris">
+
+Mount J and Zumel N (2019b) *Designing transforms for data reshaping
+with cdata.* Win Vector LLC
+<https://winvector.github.io/cdata/articles/design.html>
 
 </div>
 

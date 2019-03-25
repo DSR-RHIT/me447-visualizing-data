@@ -138,7 +138,6 @@ Data carpentry
     reshaping](cm/cm103-data-reshaping.md#WHO-case-study-in-data-reshaping)  
   - [web download using
     import()](cm/cm103-data-reshaping.md#web-download-using-import)  
-  - [WHO data encoding](cm/cm103-data-reshaping.md#WHO-data-encoding)  
   - [select with
     matches()](cm/cm103-data-reshaping.md#select-with-matches)  
   - [unpivot\_to\_blocks()](cm/cm103-data-reshaping.md#unpivot_to_blocks)  
@@ -167,7 +166,9 @@ Data exercises
   - [5.5.2](https://r4ds.had.co.nz/transform.html#exercises-10)
     `mutate()`  
   - [5.6.7](https://r4ds.had.co.nz/transform.html#exercises-11)
-    `group_by()`
+    `group_by()`  
+  - [Data reshaping](cm/cm103-data-reshaping.md#exercises)
+    `pivot_to_rowrecs()` and `unpivot_to_blocks()`
 
 [▲ index](README.md#index)
 
