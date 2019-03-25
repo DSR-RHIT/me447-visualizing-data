@@ -143,6 +143,8 @@ VA_deaths <- VA_deaths %>%
 The row names have been replaced with the conventional integers. Note
 also that the spaces in the columns names are replaced with periods.
 
+<br> <a href="#top">▲ top of page</a>
+
 ## keys and values in coordinatized data
 
 [John Mount and Nina
@@ -233,6 +235,8 @@ Summary of new concepts
   - keys and values in coordinatized data
   - records in rows (row-oriented layout)
   - records in blocks (column-oriented layout)
+
+<br> <a href="#top">▲ top of page</a>
 
 ## rowrecs\_to\_blocks()
 
@@ -335,6 +339,8 @@ kable(VA_tall)
 | 70-74      | Urban     | Male   |        71.1 |
 | 70-74      | Urban     | Female |        50.0 |
 
+<br> <a href="#top">▲ top of page</a>
+
 ## blocks\_to\_rowrecs()
 
 The transformation can be reversed using the same control table and the
@@ -378,6 +384,8 @@ dplyr::all_equal(VA_deaths, VA_wide)
 #> [1] TRUE
 ```
 
+<br> <a href="#top">▲ top of page</a>
+
 ## WHO case study in data reshaping
 
 I adapted this study from the [Data
@@ -402,6 +410,8 @@ library("cdata")
 library("wrapr")
 library("rio")
 ```
+
+<br> <a href="#top">▲ top of page</a>
 
 ## web download using import()
 
@@ -496,6 +506,8 @@ who %>% select(year) %>%
 #> 1980 1981 1982 1983 1984 1985 1986 1987 1988 1989 1990 1991 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017
 ```
 
+<br> <a href="#top">▲ top of page</a>
+
 ## WHO data encoding
 
 A data dictionary on the [WHO tuberculosis
@@ -512,6 +524,8 @@ information, e.g. `f014` or `m3544`.
 
 For our exercise, I’m assuming that all information encoded as
 age-groups `04` and `514` is included in data for the age group `014`.
+
+<br> <a href="#top">▲ top of page</a>
 
 ## select with matches()
 
@@ -600,6 +614,8 @@ glimpse(who)
 This trims the data frame down to size. Now we have 8070 observations of
 61 variables.
 
+<br> <a href="#top">▲ top of page</a>
+
 ## unpivot\_to\_blocks()
 
 Examine the columns names. Country and year are already keys. All the
@@ -684,6 +700,8 @@ glimpse(who_tall)
 #> $ N       <int> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA...
 ```
 
+<br> <a href="#top">▲ top of page</a>
+
 ## drop\_na()
 
 As we’ve seen in some of our glimpses of the data, there are a large
@@ -703,6 +721,8 @@ who_tall <- who_tall %>%
 #> $ code    <chr> "new_sp_m014", "new_sp_m1524", "new_sp_m2534", "new_sp...
 #> $ N       <int> 0, 10, 6, 3, 5, 2, 0, 5, 38, 36, 14, 8, 0, 1, 30, 129,...
 ```
+
+<br> <a href="#top">▲ top of page</a>
 
 ## str\_replace()
 
@@ -776,6 +796,8 @@ who_tall <- who_tall %>%
         mutate(code = stringr::str_replace(code, "sexunk", "u"))
 ```
 
+<br> <a href="#top">▲ top of page</a>
+
 ## separate()
 
 We use `tidyr::separate()` to split the `code` values at the underscores
@@ -835,6 +857,8 @@ unique(who_tall$sex)
 #> [1] "m" "f" "u"
 ```
 
+<br> <a href="#top">▲ top of page</a>
+
 ## WHO group\_by() and summarize()
 
 Ignoring age group and summing all case types using `group_by()` and
@@ -852,6 +876,8 @@ who_sum    <- dplyr::summarise(this_group, N = sum(N)) %>%
 #> $ sex     <chr> "f", "m", "f", "m", "f", "m", "f", "m", "f", "m", "f",...
 #> $ N       <int> 102, 26, 1207, 571, 517, 228, 1751, 915, 3062, 1577, 4...
 ```
+
+<br> <a href="#top">▲ top of page</a>
 
 ## WHO graphs
 
@@ -891,6 +917,8 @@ p
 ```
 
 <img src="images/cm103-unnamed-chunk-40-1.png" width="100%" />
+
+<br> <a href="#top">▲ top of page</a>
 
 ## exercises
 

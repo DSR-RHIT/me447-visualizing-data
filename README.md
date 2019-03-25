@@ -32,7 +32,7 @@ permission
 |    | T | [Design basics](cm/cm402-rhetoric-design-basics.md#design-basics)<br>![](resources/icon-moodle.png) Robbins ([2013](#ref-Robbins:2013:Ch.6)[a](#ref-Robbins:2013:Ch.6)) General design principles                                                                                                                                                                                                                                                                                          |                                                                                                                     |                                                                              |
 |    | R | [D1 requirements:](cm/cm301-report-display-reqts.md#D1-distributions) Distributions<br>[Strip plot](cm/cm202-graph-strip-plot.md#strip-plot) \[[exercises](cm/cm202-graph-strip-plot.md#exercises)\]<br>[Box plot](cm/cm203-graph-boxplot.md#box-plots) \[[exercises](cm/cm203-graph-boxplot.md#exercises)\]                                                                                                                                                                               | D1 data acquired                                                                                                    |                                                                              |
 |    | F | [Portfolio studio](cm/cm302-report-portfolio-studio.md#portfolio-studio)<br>[Sample portfolio skeleton](https://github.com/graphdr/portfolio-sample)<br>[Document design](cm/cm304-report-document-design.md#document-design)<br>[Document requirements](cm/cm300-report-portfolio-reqts.md#portfolio-document-requirements)<br>[Data requirements](cm/cm301-report-display-reqts.md#portfolio-data-requirements)<br>![](resources/icon-moodle.png) Sample portfolio entries and critiques |                                                                                                                     |                                                                              |
-| 4  | M | [Reshaping data](cm/cm103-data-reshaping.md#reshaping-data) \[[exercises](cm/cm103-data-reshaping.md#exercises)\]                                                                                                                                                                                                                                                                                                                                                                          | wk3 lab, tutorials, & exercises                                                                                     |                                                                              |
+| 4  | M | [Reshaping data](cm/cm103-data-reshaping.md#reshaping-data) \[[exercises](cm/cm103-data-reshaping.md#exercises)\]<br>Read [12.2 Tidy data](https://r4ds.had.co.nz/tidy-data.html#tidy-data-1) and [12.4 Separating and uniting](https://r4ds.had.co.nz/tidy-data.html#separating-and-uniting)                                                                                                                                                                                              | wk3 lab, tutorials, & exercises                                                                                     |                                                                              |
 |    | T | ![](resources/icon-moodle.png) Wainer ([2014](#ref-Wainer:2014:Sec.2.9)) 15 displays about one thing                                                                                                                                                                                                                                                                                                                                                                                       |                                                                                                                     | [Reading prompts 2](reports/reading-prompts-2.Rmd)                           |
 |    | R | [D2 requirements:](cm/cm301-report-display-reqts.md#D2-multiway) Multiways<br>[Multiway dot plot](cm/cm204-graph-multiway.md#multiway-dot-plot) \[[exercises](cm/cm204-graph-multiway.md#exercises)\]                                                                                                                                                                                                                                                                                      | D2 data acquired                                                                                                    |                                                                              |
 |    | F | Presentations, practice, & portfolio studio                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                                                     | D1 graph & prose<br>[Presentation prompts](reports/presentation-prompts.Rmd) |
@@ -109,6 +109,8 @@ Basics
     packages](cm/cm101-data-basics.md#data-in-base-R-and-in-R-package)  
   - [Reading raw data
     files](cm/cm101-data-basics.md#reading-raw-data-files)  
+  - [Web download using
+    import()](cm/cm103-data-reshaping.md#web-download-using-import)
   - [Data directory write and
     read](cm/cm101-data-basics.md#data-directory-write-and-read)
 
@@ -119,7 +121,9 @@ Data studio
   - [Use Notepad for CSV
     files](cm/cm102-data-studio.md#use-notepad-for-csv-files)  
   - [Workflow basics](cm/cm102-data-studio.md#workflow-basics)  
-  - [Data transformation](cm/cm102-data-studio.md#data-transformation)  
+  - [Data transformation](cm/cm102-data-studio.md#data-transformation)
+    `filter()`, `arrange()`, `select()`, `mutate()`, `group_by()`, and
+    `dplyr::summarize()`  
   - [Data import](cm/cm102-data-studio.md#data-import)  
   - [Data links](cm/cm102-data-studio.md#data-links)
 
@@ -129,15 +133,15 @@ Data studio
 
 Data carpentry
 
-  - [data in row names](cm/cm103-data-reshaping.md#data-in-row-names)  
-  - [keys and values in coordinatized
+  - [Data in row names](cm/cm103-data-reshaping.md#data-in-row-names)  
+  - [Keys and values in coordinatized
     data](cm/cm103-data-reshaping.md#keys%20and-values-in-coordinatized-data)  
   - [rowrecs\_to\_blocks()](cm/cm103-data-reshaping.md#rowrecs_to_blocks)  
   - [blocks\_to\_rowrecs()](cm/cm103-data-reshaping.md#blocks_to_rowrecs)  
   - [WHO case study in data
     reshaping](cm/cm103-data-reshaping.md#WHO-case-study-in-data-reshaping)  
-  - [web download using
-    import()](cm/cm103-data-reshaping.md#web-download-using-import)  
+  - [Web download using
+    import()](cm/cm103-data-reshaping.md#web-download-using-import)
   - [select with
     matches()](cm/cm103-data-reshaping.md#select-with-matches)  
   - [unpivot\_to\_blocks()](cm/cm103-data-reshaping.md#unpivot_to_blocks)  
@@ -168,7 +172,8 @@ Data exercises
   - [5.6.7](https://r4ds.had.co.nz/transform.html#exercises-11)
     `group_by()`  
   - [Data reshaping](cm/cm103-data-reshaping.md#exercises)
-    `pivot_to_rowrecs()` and `unpivot_to_blocks()`
+    `pivot_to_rowrecs()`, `unpivot_to_blocks()`, `rowrecs_to_blocks()`,
+    and `blocks_to_rowrecs()`
 
 [▲ index](README.md#index)
 
