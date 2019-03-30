@@ -82,18 +82,18 @@ Houghton</a> (2016) <br> </small>
   - Align the logic of the display to the logic of your thinking
   - Fine tune a display to meet the rhetorical goals for your audience
   - You are allowed to ask your audience to give a graph careful,
-    detailed study
+    detailed
+study
 
-<img src="../resources/cm402-09b.png" width="51%" />
-<img src="../resources/cm402-11.png" width="45%" /> <small><br> John
-Snow’s map of the 1854 London cholera outbreak updated with density
-contours by
+<img src="../resources/cm402-09b.png" height="400px" /><img src="../resources/cm402-11.png" height="400px" />
+<small><br> John Snow’s map of the 1854 London cholera outbreak updated
+with density contours by
 <a href="https://freakonometrics.hypotheses.org/19213">Arthur
 Charpentier</a> (2015). <br> </small>
 
 ## visual standards
 
-<img src="../resources/cm402-04.png" width="75%" />
+<img src="../resources/cm402-04.png" width="70%" />
 
 (Robbins, [2011](#ref-Robbins:2011))
 
