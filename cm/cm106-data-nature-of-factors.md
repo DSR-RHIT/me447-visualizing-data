@@ -1,4 +1,4 @@
-meet factors
+introducing factors
 ================
 
 <img src="../resources/cm106-header.png" width="100%" /> <small> <br>
