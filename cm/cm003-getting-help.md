@@ -8,37 +8,41 @@ help
 
 ## contents
 
-[R Studio cheat sheets](#r-studio-cheat-sheets)  
-[Online books](#online-books)  
-[Links I use regularly](#links-i-use-regularly)  
-[Tips and tricks](#tips-and-tricks)  
-[Books I recommend](#books-i-recommend)
+[cheat sheets from RStudio](#cheat-sheets-from-rstudio)  
+[online books](#online-books)  
+[links I use regularly](#links-i-use-regularly)  
+[tips and tricks](#tips-and-tricks)  
+[books I recommend](#books-i-recommend)
 
-## R Studio cheat sheets
+## cheat sheets from RStudio
 
   - [R Studio](https://www.rstudio.com/resources/cheatsheets/#ide)
   - [R
     Markdown](https://www.rstudio.com/resources/cheatsheets/#rmarkdown)
-  - [readr for importing
-    data](https://www.rstudio.com/resources/cheatsheets/#import)
-  - [dplyr for transforming
-    data](https://www.rstudio.com/resources/cheatsheets/#dplyr)
-  - [ggplot2 for graphing
-    data](https://www.rstudio.com/resources/cheatsheets/#ggplot2)
-  - [stringr for manipulating
-    strings](https://www.rstudio.com/resources/cheatsheets/#stringr)
-  - [lubridate for dates and
-    times](https://www.rstudio.com/resources/cheatsheets/#lubridate)
+  - [readr](https://www.rstudio.com/resources/cheatsheets/#import) for
+    importing data  
+  - [dplyr](https://www.rstudio.com/resources/cheatsheets/#dplyr) for
+    transforming data
+  - [ggplot2](https://www.rstudio.com/resources/cheatsheets/#ggplot2)
+    for graphing data
+  - [stringr](https://www.rstudio.com/resources/cheatsheets/#stringr)
+    for manipulating
+    strings
+  - [lubridate](https://www.rstudio.com/resources/cheatsheets/#lubridate)
+    for dates and times  
+  - [forcats](https://www.rstudio.com/resources/cheatsheets/#forcats)
+    for factors
 
 ## online books
 
   - [R for Data Science](http://r4ds.had.co.nz/)  
   - [A Student’s Guide to
-    R](https://github.com/ProjectMOSAIC/LittleBooks/blob/master/StudentGuide/MOSAIC-StudentGuide.pdf)
+    R](https://github.com/ProjectMOSAIC/LittleBooks/blob/master/StudentGuide/MOSAIC-StudentGuide.pdf)  
+  - [Modern R with the
+    tidyverse](https://b-rodrigues.github.io/modern_R/)
 
 ## links I use regularly
 
-  - [Quick R](http://www.statmethods.net/) for everyday R tasks  
   - [R Markdown](http://rmarkdown.rstudio.com/) for syntax help  
   - [knitr options](http://yihui.name/knitr/options/)
   - [R-bloggers](https://www.r-bloggers.com/), a searchable collection

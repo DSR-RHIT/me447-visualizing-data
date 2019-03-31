@@ -694,11 +694,59 @@ ggplot(data = df, aes(x = partyid, y = n)) +
 
 ## exercises
 
-**1. **
+Create R script `explore/0502-working-with-factors-exercises.R`
 
-**2. **
+#### 1\. gapminder
 
-**3. **
+Data
+
+  - `gapminder::gapminder`  
+  - See its help page by running `? gapminder`
+
+Carpentry
+
+  - Subset the `gapminder` data for Asia in 2007  
+  - As a factor, order countries by life expectancy
+
+Design: Graph countries by life expectancy
+
+#### 2\. US state area
+
+Data
+
+  - `state.x77` in base R  
+  - See its help page by running `? state`
+
+Carpentry
+
+  - Move the state names to a column
+  - As a factor, order the states by area
+
+Design: Graph state by area with a log scale.
+
+#### 3\. Nontraditional students
+
+Data
+
+  - `graphclassmate::nontraditional`  
+  - See its help page by running `? nontraditional`
+
+Carpentry
+
+  - Determine the frequency (number of observations) by sex, race, and
+    path.  
+  - As factors, order each of sex, race, and path by the count `n`.  
+  - Recode the ethnicity `Hispanic` as `Latino` and `Asian` as
+    `Asian-American`.
+
+Design
+
+  - We will use one quantitative variable (frequency) and three
+    categorical variables (sex, race, and path)  
+  - Graph the number of students by race, conditioned by path and sex.
+    (The graph you are trying to create is shown below.)
+
+<img src="images/cm107-unnamed-chunk-49-1.png" width="70%" />
 
 ## references
 
