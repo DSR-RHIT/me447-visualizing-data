@@ -22,3 +22,28 @@ chunk  <- "```"
 yaml   <- "---"
 inline <- function(x = "") paste0("`` `r ", x, "` ``")
 inline_yaml <- function(x = "") paste0("`r ", x, "`")
+
+# functions borrowed from helfRlein
+checkfile <- function(path, recursive = TRUE, ...) {
+  # check if dir exists, if not, create it
+  if (!file.exists(path)) {
+    file.create(path = path, recursive = recursive, ...)
+  } else {
+    warning(paste0(path, " - already exists"))
+  }
+}
+
+initialize_R_script <- function(lesson_file) {
+  checkfile(lesson_file)
+  x <- c(
+      "# Richard Layton",
+      paste("#", lubridate::today()),
+      "",
+      "# load packages",
+      'library("tidyverse")'
+  )
+  write_lines(x, lesson_file, na = "NA", append = FALSE)
+}
+add_lines <- function(new_lines, lesson_file) {
+  write_lines(new_lines, lesson_file, sep = "\n", na = "NA", append = TRUE)
+}

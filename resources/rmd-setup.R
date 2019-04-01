@@ -23,3 +23,6 @@ chunk  <- "```"
 yaml   <- "---"
 inline <- function(x = "") paste0("`` `r ", x, "` ``")
 inline_yaml <- function(x = "") paste0("`r ", x, "`")
+
+
+

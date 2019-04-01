@@ -82,7 +82,7 @@ name (given name or forename)
 
   - Make the repo private
   - Check the box to *Initialize this repository with a README*
-  - Pulldown the *Add gitignore* menu to *R*
+  - Pull down the *Add gitignore* menu to *R*
   - A license is optional (private repos for classwork don’t generally
     need a license)
   - *Create repository*
@@ -234,7 +234,7 @@ tidyverse package could have been installed by typing
 install.packages("tidyverse")
 ```
 
-However, these methods work only for pacakges available from the
+However, these methods work only for packages available from the
 Comprehensive R Archive Network (CRAN). Some authors make their packages
 available on GitHub only. To install packages from GitHub, first install
 the devtools package using the RStudio *Packages \> Install* as shown
@@ -250,6 +250,22 @@ containing companion materials for our course,
 ``` r
 devtools::install_github("graphdr/graphclassmate")
 ```
+
+To check that graphclassmate was installed, in your Console type
+
+    library("graphclassmate")
+
+If a warning message appears, try to respond to it. If you are not sure
+what to do, you can copy the warning and google it. If that fails,
+discuss it with a classmate. If that fails, see me.
+
+Next, type
+
+    ? metro_pop
+
+A help page for the `metro_pop` data set in the graphclassmate package
+should appear in the RStudio Help pane. Again, if a warning message
+appears, please follow up on it as described above
 
 <br> <a href="#top">▲ top of page </a>
 
@@ -481,8 +497,8 @@ copy the text from the online source and paste it into your Rmd script.
 
 ## setup correspondence
 
-We will place a correspondence fuile in the reports folder for the two
-of us to correspond about the portfolio.
+We will place a correspondence file in the reports folder for the two of
+us to correspond about the portfolio.
 
 Create a correspondence Rmd script just like we did above for the
 reading response.
