@@ -28,7 +28,7 @@ or responses to a data visualization challenge
 After seeing the video clips (in class) and reading Knaflic’s blog posts
 (outside of class), select any two of our “discovering stories” authors
 to write about in your [reflection
-assignment](../reports/video-reflection-1.md).
+assignment](reports/video-reflection-1.md).
 
 ## videos
 
