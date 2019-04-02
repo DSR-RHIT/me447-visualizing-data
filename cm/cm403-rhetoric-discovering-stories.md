@@ -1,7 +1,7 @@
 discovering stories
 ================
 
-## blogs
+## reading
 
 Cole Nussbaumer Knaflic
 
@@ -52,13 +52,6 @@ visualization](https://www.ted.com/talks/david_mccandless_the_beauty_of_data_vis
 ## references
 
 <div id="refs">
-
-<div id="ref-Wickham+Grolemund:2017">
-
-Wickham H and Grolemund G (2017) *R for Data Science.* O’Reilly Media,
-Inc., Sebastopol, CA <https://r4ds.had.co.nz/>
-
-</div>
 
 </div>
 
