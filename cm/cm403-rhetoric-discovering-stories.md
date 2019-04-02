@@ -27,8 +27,31 @@ or responses to a data visualization challenge
 
 After seeing the video clips (in class) and reading Knaflic’s blog posts
 (outside of class), select any two of our “discovering stories” authors
-to write about in your [reflection
-assignment](../reports/video-reflection-1.md).
+to write about in your reflection assignment.
+
+  - Jonathan Corum (whale dive and feed)  
+  - Amanda Cox (one image, two interpretations)  
+  - David McCandless (the billion-dollar-o-gram)  
+  - Cole Nussbaumer Knaflic (blog posts)  
+  - Eric Rodenbeck (maps of emotion)
+
+For each of the two authors you select, reflect on their ideas and their
+messages.
+
+**Prompt:** What is the most significant idea you can borrow from your
+selected authors that you can apply to your own portfolio? Make your
+responses as specific as you can.
+
+  - Copy and paste the “discovering stories reflection” [Rmd
+    script](../reports/video-reflection-1.Rmd) into an Rmd file in your
+    `reports` directory. Add this report to your collection of reading
+    responses.  
+  - Link to this video reflection report from your portfolio README page
+    as illustrated on the [sample portfolio
+    repo](https://github.com/graphdr/portfolio-sample).  
+  - You can find my [sample
+    reflection](https://github.com/graphdr/portfolio-sample/blob/master/reports/video-reflection-1.md)
+    on the sample portfolio repo.
 
 ## videos
 

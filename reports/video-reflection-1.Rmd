@@ -2,20 +2,9 @@
 output: github_document
 ---
 
-<br>
-Copy and paste the [raw Rmd script](video-reflection-1.Rmd) into your own Rmd file.    
-A sample response is included at the end of the file. You may delete it when you are done.    
-Add this report to your collection of reading respnses.    
+Copy and paste the raw Rmd script below into your own Rmd file in your reports directory.  
 
 ## discovering stories reflection 
-
-After reading [Knaflic's blog posts](https://github.com/DSR-RHIT/me447-visualizing-data/blob/master/cm/cm403-rhetoric-discovering-stories.md#reading), select any two of our [discovering stories](https://github.com/DSR-RHIT/me447-visualizing-data/blob/master/cm/cm403-rhetoric-discovering-stories.md#discovering-stories) authors. 
-
-- Jonathan Corum (whale dive and feed)  
-- Amanda Cox (one image, two interpretations)  
-- David McCandless (the billion-dollar-o-gram)  
-- Cole Nussbaumer Knaflic (blog posts)  
-- Eric Rodenbeck (maps of emotion)  
 
 **Prompt:** For each of the two authors you select, reflect on their ideas and their messages. What is the most significant idea you can borrow from them that you can apply to your own portfolio?  Make your responses as specific as you can. 
 
