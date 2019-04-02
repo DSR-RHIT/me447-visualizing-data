@@ -50,7 +50,7 @@ responses as specific as you can.
     as illustrated on the [sample portfolio
     repo](https://github.com/graphdr/portfolio-sample#Discussion-notes).  
   - You can find my [sample
-    reflection](https://github.com/graphdr/portfolio-sample/blob/master/reports/video-reflection-1.md)
+    reflection](https://github.com/graphdr/portfolio-sample/blob/master/reports/video-reflection-1.md#discovering-stories-reflection)
     on the sample portfolio repo.
 
 ## videos
