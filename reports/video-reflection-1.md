@@ -2,7 +2,7 @@
 Copy and paste the raw Rmd script below into your own Rmd file in your
 reports directory.
 
-## discovering stories reflection
+## reflections on rhetoric
 
 **Prompt:** For each of the two authors you select, reflect on their
 ideas and their messages. What is the most significant idea you can
