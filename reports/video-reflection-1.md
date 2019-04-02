@@ -1,6 +1,6 @@
 
-<br> Copy and paste the following raw Rmd script into your own Rmd
-file.  
+<br> Copy and paste the [raw Rmd script](video-reflection-1.Rmd) into
+your own Rmd file.  
 A sample response is included at the end of the file. You may delete it
 when you are done.  
 Add this report to your collection of reading respnses.
