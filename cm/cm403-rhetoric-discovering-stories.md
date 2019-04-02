@@ -23,7 +23,7 @@ stories 2](http://www.storytellingwithdata.com/blog/2012/06/telling-multiple-sto
 is…](http://www.storytellingwithdata.com/blog/2012/12/and-winner-is)
 or responses to a data visualization challenge
 
-## reflection
+## reflection on rhetoric
 
 After seeing the video clips (in class) and reading Knaflic’s blog posts
 (outside of class), select any two of our “discovering stories” authors
@@ -42,15 +42,15 @@ messages.
 selected authors that you can apply to your own portfolio? Make your
 responses as specific as you can.
 
-  - Copy and paste the “discovering stories reflection” [Rmd
-    script](../reports/video-reflection-1.Rmd) into an Rmd file in your
-    `reports` directory. Add this report to your collection of reading
-    responses.  
-  - Link to this video reflection report from your portfolio README page
-    as illustrated on the [sample portfolio
+  - In your `reports` directory, create an Rmd file into which you copy
+    and paste the contents of the [Reflections on
+    rhetoric](../reports/video-reflection-1.Rmd) script. Add this report
+    to your collection of reading responses.  
+  - Link to this report from your portfolio README page as illustrated
+    on the [sample portfolio
     repo](https://github.com/graphdr/portfolio-sample#Discussion-notes).  
-  - You can find my [sample
-    reflection](https://github.com/graphdr/portfolio-sample/blob/master/reports/video-reflection-1.md#discovering-stories-reflection)
+  - You can find my [sample Reflections on
+    rhetoric](https://github.com/graphdr/portfolio-sample/blob/master/reports/video-reflection-1.md#discovering-stories-reflection)
     on the sample portfolio repo.
 
 ## videos
