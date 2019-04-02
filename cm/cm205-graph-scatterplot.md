@@ -237,7 +237,7 @@ ggplot(data = prep, aes(x = Height, y = Weight)) +
     geom_jitter()
 ```
 
-<img src="images/cm205-unnamed-chunk-12-1.png" width="70%" />
+<img src="images/cm205-unnamed-chunk-13-1.png" width="70%" />
 
 Looks like a possible correlation. Next, condition on sex,
 
@@ -246,7 +246,7 @@ ggplot(data = prep, aes(x = Height, y = Weight, color = Sex)) +
     geom_jitter()
 ```
 
-<img src="images/cm205-unnamed-chunk-13-1.png" width="70%" />
+<img src="images/cm205-unnamed-chunk-14-1.png" width="70%" />
 
 And a facet by sport,
 
@@ -256,7 +256,7 @@ ggplot(data = prep, aes(x = Height, y = Weight, color = Sex)) +
     facet_wrap(vars(Sport))
 ```
 
-<img src="images/cm205-unnamed-chunk-14-1.png" width="70%" />
+<img src="images/cm205-unnamed-chunk-15-1.png" width="70%" />
 
 We have a number of sports with only a few values. let’s count,
 
@@ -331,7 +331,7 @@ ggplot(data = prep, aes(x = Height, y = Weight, color = Sex)) +
     facet_wrap(vars(Sport))
 ```
 
-<img src="images/cm205-unnamed-chunk-16-1.png" width="70%" />
+<img src="images/cm205-unnamed-chunk-17-1.png" width="70%" />
 
 There is one weight outlier in Judo I think I’ll drop because he makes
 all the scales span more than need be for the rest of the facets.
@@ -345,7 +345,7 @@ ggplot(data = prep, aes(x = Height, y = Weight, color = Sex)) +
     facet_wrap(vars(Sport))
 ```
 
-<img src="images/cm205-unnamed-chunk-17-1.png" width="70%" />
+<img src="images/cm205-unnamed-chunk-18-1.png" width="70%" />
 
 Later, in design, we’ll continue to edit the visual elements, but this
 seems to be an acceptable layout.
@@ -515,7 +515,7 @@ p <- ggplot(data = oly12, aes(x = Height, y = Weight, col = Sex)) +
 p
 ```
 
-<img src="images/cm205-unnamed-chunk-26-1.png" width="70%" />
+<img src="images/cm205-unnamed-chunk-27-1.png" width="70%" />
 
 We need fewer columns to leave more room in the panel strips to be able
 to read the strip text (the sport). I’m also editing the breaks for tick
@@ -530,7 +530,7 @@ p <- p +
 p
 ```
 
-<img src="images/cm205-unnamed-chunk-27-1.png" width="70%" />
+<img src="images/cm205-unnamed-chunk-28-1.png" width="70%" />
 
 Next is the theme, labels, and manual color assignment using `rcb()`
 from graphclassmate.
@@ -549,7 +549,7 @@ p <-  p +
 p
 ```
 
-<img src="images/cm205-unnamed-chunk-28-1.png" width="70%" />
+<img src="images/cm205-unnamed-chunk-29-1.png" width="70%" />
 
 And write to file.
 

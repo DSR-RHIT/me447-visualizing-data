@@ -164,6 +164,9 @@ data](https://r4ds.had.co.nz/data-import.html#other-types-of-data)
 If you find other sites you find useful or entertaining, please let me
 know and I’ll add them to the lists.
 
+See [Data sources](cm108-data-sources.md#data-sources) for another set
+of links organized by topic. Some overlap with the list below.
+
 Data sites
 
   - [FiveThirtyEight](https://data.fivethirtyeight.com/)  
