@@ -563,7 +563,7 @@ ggsave(filename = "0503-scatterplot-oly12.png",
         width   = 8,
         height  = 16,
         units   = "in",
-        dpi     = 300)
+        dpi     = 72)
 ```
 
 <br> <a href="#top">▲ top of page</a>
