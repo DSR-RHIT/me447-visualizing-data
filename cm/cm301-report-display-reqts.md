@@ -19,7 +19,7 @@ below.
 | :---------------------------------------------------------- | :------------------------------------------------------------------------------------------------- | :------------ | :------------ |
 | [D1 distributions](#d1-distributions)                       | [strip plot](cm202-graph-strip-plot.md#strip-plot) or [box plot](cm203-graph-boxplot.md#box-plots) | one           | one or two    |
 | [D2 multiway](#d2-multiway)                                 | [multiway](cm204-graph-multiway.md#multiway-dot-plot)                                              | one           | two           |
-| [D3 correlations](#d3-correlations)                         | [scatterplot](\(cm205-graph-scatterplot.md#scatterplot\))                                          | two           | one or two    |
+| [D3 correlations](#d3-correlations)                         | [scatterplot](cm205-graph-scatterplot.md#scatterplot)                                              | two           | one or two    |
 | [D4 injuries or fatalities](#d4-injuries-or-fatalities)     | dot plot                                                                                           | one           | optional      |
 |                                                             | line graph or scatterplot                                                                          | two           | optional      |
 | [D5 redesign a graphical lie](#d5-redesign-a-graphical-lie) | dot plot                                                                                           | one           | optional      |
