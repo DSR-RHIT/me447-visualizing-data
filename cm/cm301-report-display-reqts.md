@@ -19,7 +19,7 @@ below.
 | :---------------------------------------------------------- | :------------------------------------------------------------------------------------------------- | :------------ | :------------ |
 | [D1 distributions](#d1-distributions)                       | [strip plot](cm202-graph-strip-plot.md#strip-plot) or [box plot](cm203-graph-boxplot.md#box-plots) | one           | one or two    |
 | [D2 multiway](#d2-multiway)                                 | [multiway](cm204-graph-multiway.md#multiway-dot-plot)                                              | one           | two           |
-| [D3 correlations](#d3-correlations)                         | scatterplot                                                                                        | two           | one           |
+| [D3 correlations](#d3-correlations)                         | scatterplot                                                                                        | two           | one or two    |
 | [D4 injuries or fatalities](#d4-injuries-or-fatalities)     | dot plot                                                                                           | one           | optional      |
 |                                                             | line graph or scatterplot                                                                          | two           | optional      |
 | [D5 redesign a graphical lie](#d5-redesign-a-graphical-lie) | dot plot                                                                                           | one           | optional      |
@@ -98,7 +98,31 @@ Tutorials and samples
 
 ## D3 correlations
 
-Scatterplot example
+A two-dimensional scatterplot reveals the strength of the relationship
+between two quantitative variables. When you condition on a categorical
+variable try two approaches and select the design that communicates most
+effectively.
+
+  - map the levels to data marker color or shape all in one panel
+  - use the categorical variable as the facet argument with one panel
+    for each level
+
+Data requirements
+
+  - Minimum 100 observations  
+  - Two quantitative variables  
+  - One or two categorical variables
+  - Time is excluded as a variable
+
+Categorical variables
+
+  - The first category must have at least 5 levels.  
+  - If a second category is used, it must have at least two levels.
+
+Scatterplot example: 2012 Summer Olympic athlete height and weight
+
+  - [Tutorial](cm205-graph-scatterplot.md#scatterplot)
+  - [Display](../figures/0503-scatterplot-oly12.png)
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -269,6 +293,13 @@ Heiberger RM and Robbins NB (2014) Design of diverging stacked bar
 charts for Likert scales and other applications. *Journal of Statistical
 Software* **57**(5)
 <https://www.jstatsoft.org/article/view/v057i05/v57i05.pdf>
+
+</div>
+
+<div id="ref-Wickham+Grolemund:2017">
+
+Wickham H and Grolemund G (2017) *R for Data Science.* O’Reilly Media,
+Inc., Sebastopol, CA <https://r4ds.had.co.nz/>
 
 </div>
 

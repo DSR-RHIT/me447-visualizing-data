@@ -16,8 +16,12 @@ scatterplot
 
 ## introduction
 
-**Scatterplots** display correlations: exploring relationships between
-two quantitative variables for different categories.
+“By encoding the data as positions along two orthogonal scales, a
+two-dimensional scatter plot reveals the strength of the relation
+between two variables, together with outliers. It can easily identify
+subsets with different markers, although these must be well contrasted,
+lest the display look cluttered.” (Doumont,
+[2009](#ref-Doumont:2009:Ch.4))
 
 Data characteristics
 
@@ -596,6 +600,21 @@ following code chunk in the Rmd script.
 ## references
 
 <div id="refs">
+
+<div id="ref-Doumont:2009:Ch.4">
+
+Doumont J-L (2009) Designing the graph. *Trees, maps, and theorems:
+Effective communication for rational minds*. Principiae, Kraainem,
+Belgium, 133–143 <http://www.treesmapsandtheorems.com/>
+
+</div>
+
+<div id="ref-Wickham+Grolemund:2017">
+
+Wickham H and Grolemund G (2017) *R for Data Science.* O’Reilly Media,
+Inc., Sebastopol, CA <https://r4ds.had.co.nz/>
+
+</div>
 
 </div>
 
