@@ -34,6 +34,8 @@ stories 2](http://www.storytellingwithdata.com/blog/2012/06/telling-multiple-sto
 is…](http://www.storytellingwithdata.com/blog/2012/12/and-winner-is)
 or responses to a data visualization challenge
 
+<br> <a href="#top">▲ top of page</a>
+
 ## reflection on rhetoric
 
 After seeing the video clips (in class) and reading Knaflic’s blog posts
@@ -64,6 +66,8 @@ responses as specific as you can.
     rhetoric](https://github.com/graphdr/portfolio-sample/blob/master/reports/video-reflection-1.md#discovering-stories-reflection)
     on the sample portfolio repo.
 
+<br> <a href="#top">▲ top of page</a>
+
 ## video links
 
 [Maps of emotion](https://vimeo.com/166948025#t=1m40s) (1:40–9:45) Eric
@@ -71,11 +75,15 @@ Rodenbeck
 
 <img src="../resources/cm403-02.png" width="70%" />
 
+<br> <a href="#top">▲ top of page</a>
+
 <br> [Show ideas +
 evidence](https://www.youtube.com/watch?v=VrQ8rQoOuhA&t=430s)
 (7:10–11:44) Jonathan Corum
 
 <img src="../resources/cm403-01.png" width="70%" />
+
+<br> <a href="#top">▲ top of page</a>
 
 <br> [The beauty of data
 visualization](https://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare&t=40s)
@@ -83,10 +91,14 @@ visualization](https://www.ted.com/talks/david_mccandless_the_beauty_of_data_vis
 
 <img src="../resources/cm403-03.png" width="70%" />
 
+<br> <a href="#top">▲ top of page</a>
+
 <br> [gapminder](https://www.youtube.com/watch?v=hVimVzgtD6w&t=180s)
 (3:00–6:17) Hans Rosling
 
 <img src="../resources/cm402-08.png" width="70%" />
+
+<br> <a href="#top">▲ top of page</a>
 
 <br> Amanda Cox
 

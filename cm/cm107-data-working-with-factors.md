@@ -165,6 +165,8 @@ frame—which in this example is chronological order. However, for this
 exercise, I wanted the levels in alphabetical order to illustrate how to
 reorder the levels manually.
 
+<br> <a href="#top">▲ top of page</a>
+
 ## reorder factor levels manually
 
 First I’ll reset the `name` variable from a factor back to its original
@@ -223,6 +225,8 @@ ggplot(data = df, aes(x = start, xend = end, y = name, yend = name)) +
 ```
 
 <img src="images/cm107-unnamed-chunk-12-1.png" width="70%" />
+
+<br> <a href="#top">▲ top of page</a>
 
 ## reorder factor levels by a date variable
 
@@ -288,6 +292,8 @@ ggplot(data = df, aes(x = start, xend = end, y = name, yend = name)) +
 ```
 
 <img src="images/cm107-unnamed-chunk-18-1.png" width="70%" />
+
+<br> <a href="#top">▲ top of page</a>
 
 ## reorder factor levels by a quantitative variable
 
@@ -448,6 +454,8 @@ ggplot(data = marital_relig_tv, aes(x = tvhours, y = relig)) +
 
 <img src="images/cm107-unnamed-chunk-31-1.png" width="70%" />
 
+<br> <a href="#top">▲ top of page</a>
+
 ## reorder factor levels by frequency of levels
 
 **Single variable**
@@ -520,6 +528,8 @@ ggplot(data = df, aes(x = n, y = relig)) +
 ```
 
 <img src="images/cm107-unnamed-chunk-37-1.png" width="70%" />
+
+<br> <a href="#top">▲ top of page</a>
 
 ## recode factor levels
 
@@ -625,6 +635,8 @@ df
 #> 6 Democrat, strong    3490
 ```
 
+<br> <a href="#top">▲ top of page</a>
+
 ## remove unused levels
 
 The `Other` group is small, so I’ll omit it,
@@ -675,6 +687,8 @@ ggplot(data = df, aes(x = partyid, y = n)) +
 ```
 
 <img src="images/cm107-unnamed-chunk-45-1.png" width="70%" />
+
+<br> <a href="#top">▲ top of page</a>
 
 ## reverse factor level order
 

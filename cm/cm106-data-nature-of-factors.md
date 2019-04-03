@@ -115,7 +115,7 @@ A date is enclosed in quotes but the type is `double`.
 
 ``` r
 (x_date <- lubridate::today())
-#> [1] "2019-03-30"
+#> [1] "2019-04-03"
 
 typeof(x_date)
 #> [1] "double"
@@ -162,6 +162,8 @@ Functions like `sin()` are stored as type `builtin`.
 typeof(x_function)
 #> [1] "builtin"
 ```
+
+<br> <a href="#top">▲ top of page</a>
 
 ## some R objects have attributes
 
@@ -224,6 +226,8 @@ attributes(x_tibble)
 #> [1] "tbl_df"     "tbl"        "data.frame"
 ```
 
+<br> <a href="#top">▲ top of page</a>
+
 ## all R objects have class
 
 From the attributes above, we only found two objects with the `class`
@@ -269,6 +273,8 @@ class(x_data_frame)
 class(x_tibble)
 #> [1] "tbl_df"     "tbl"        "data.frame"
 ```
+
+<br> <a href="#top">▲ top of page</a>
 
 ## factor type and attributes
 
@@ -371,6 +377,8 @@ particularly useful.
 sort(x)
 #> [1] "Apr" "Dec" "Jan" "Mar"
 ```
+
+<br> <a href="#top">▲ top of page</a>
 
 ## factor definition
 

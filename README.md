@@ -12,6 +12,7 @@ Rose-Hulman Institute of Technology.
   - [Syllabus](cm/cm001-course-syllabus.md#syllabus)
   - [License](LICENSE.md#licenses)
   - [Index](#index)
+  - [Readings](#readings)
 
 ## calendar
 
@@ -434,6 +435,48 @@ Belgium, 133–143 <http://www.treesmapsandtheorems.com/>
 
 Dragga S and Voss D (2001) Cruel pies: The inhumanity of technical
 illustrations. *Technical Communication* **48**(3), 265–274
+
+</div>
+
+<div id="ref-Knaflic:2012-05">
+
+Knaflic CN (2012a) Telling multiple stories (part 1).
+<http://www.storytellingwithdata.com/blog/2012/05/telling-multiple-stories-part-1>
+
+</div>
+
+<div id="ref-Knaflic:2012-06">
+
+Knaflic CN (2012b) Telling multiple stories (part 2).
+<http://www.storytellingwithdata.com/blog/2012/06/telling-multiple-stories-part-2>
+
+</div>
+
+<div id="ref-Knaflic:2012-12">
+
+Knaflic CN (2012c) And the winner is...
+<http://www.storytellingwithdata.com/blog/2012/12/and-winner-is>
+
+</div>
+
+<div id="ref-Knaflic:2013-09">
+
+Knaflic CN (2013a) Logic in order.
+<http://www.storytellingwithdata.com/blog/2013/09/logic-in-order>
+
+</div>
+
+<div id="ref-Knaflic:2013-10">
+
+Knaflic CN (2013b) The right amount of detail.
+<http://www.storytellingwithdata.com/blog/2013/10/the-right-amount-of-detail>
+
+</div>
+
+<div id="ref-Knaflic:2014-01">
+
+Knaflic CN (2014) Multifaceted data and story.
+<http://www.storytellingwithdata.com/blog/2014/01/multifaceted-data-and-story>
 
 </div>
 
