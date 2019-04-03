@@ -1,6 +1,17 @@
 discovering stories
 ================
 
+<img src="../resources/cm403-header.png" width="100%" /> <small> <br>
+<i>Control room</i> by Michael Newman is licensed under
+<a href="https://creativecommons.org/licenses/by-nc-nd/2.0/legalcode">CC
+BY-NC-ND 2.0</a> <br> </small>
+
+## contents
+
+[reading](#reading)  
+[reflection on rhetoric](#reflection-on-rhetoric)  
+[video links](#video-links)
+
 ## reading
 
 Cole Nussbaumer Knaflic
@@ -53,7 +64,7 @@ responses as specific as you can.
     rhetoric](https://github.com/graphdr/portfolio-sample/blob/master/reports/video-reflection-1.md#discovering-stories-reflection)
     on the sample portfolio repo.
 
-## videos
+## video links
 
 [Maps of emotion](https://vimeo.com/166948025#t=1m40s) (1:40–9:45) Eric
 Rodenbeck
