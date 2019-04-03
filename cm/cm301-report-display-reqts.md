@@ -121,9 +121,10 @@ Categorical variables
 
 [Tutorial:](cm205-graph-scatterplot.md#scatterplot) 2012 Summer Olympic
 athlete height and weight  
-Example (click on
-image):  
-<a href="../figures/0503-scatterplot-oly12.png"  target="_blank"><img src="images/cm205-scatterplot-header.png"><a>
+Example (click on image):
+
+<a href="../figures/0503-scatterplot-oly12.png" target="_blank">
+<img src="images/cm205-scatterplot-header.png"/> </a>
 
 <br> <a href="#top">▲ top of page</a>
 
