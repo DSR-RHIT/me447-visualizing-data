@@ -19,7 +19,7 @@ below.
 | :---------------------------------------------------------- | :------------------------------------------------------------------------------------------------- | :------------ | :------------ |
 | [D1 distributions](#d1-distributions)                       | [strip plot](cm202-graph-strip-plot.md#strip-plot) or [box plot](cm203-graph-boxplot.md#box-plots) | one           | one or two    |
 | [D2 multiway](#d2-multiway)                                 | [multiway](cm204-graph-multiway.md#multiway-dot-plot)                                              | one           | two           |
-| [D3 correlations](#d3-correlations)                         | scatterplot                                                                                        | two           | one or two    |
+| [D3 correlations](#d3-correlations)                         | [scatterplot](\(cm205-graph-scatterplot.md#scatterplot\))                                          | two           | one or two    |
 | [D4 injuries or fatalities](#d4-injuries-or-fatalities)     | dot plot                                                                                           | one           | optional      |
 |                                                             | line graph or scatterplot                                                                          | two           | optional      |
 | [D5 redesign a graphical lie](#d5-redesign-a-graphical-lie) | dot plot                                                                                           | one           | optional      |
@@ -119,13 +119,11 @@ Categorical variables
   - The first category must have at least 5 levels.  
   - If a second category is used, it must have at least two levels.
 
-[Tutorial:](cm205-graph-scatterplot.md#scatterplot) 2012 Summer Olympic
-athlete height and weight  
-Example (click on
-image):
+Tutorials and samples
 
-<a href="../figures/0503-scatterplot-oly12.png" target="_blank" width = 500>
-<img src="images/cm205-scatterplot-header.png"/> </a>
+  - [Scatterplot tutorial](cm205-graph-scatterplot.md#scatterplot)
+  - [Sample scatterplot: 2012 Summer Olympic athlete height and
+    weight](../figures/0503-scatterplot-oly12.png)
 
 <br> <a href="#top">▲ top of page</a>
 
