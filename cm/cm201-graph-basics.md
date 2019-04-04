@@ -58,6 +58,8 @@ library("gapminder")
 library("graphclassmate")
 ```
 
+<br> <a href="#top">▲ top of page</a>
+
 ## tidy data
 
 If the data set is “tidy”, then every row is an observation and every
@@ -99,6 +101,8 @@ gapminder
 Read more about [tidy
 data](https://r4ds.had.co.nz/tidy-data.html#tidy-data-1) in (Wickham and
 Grolemund, [2017](#ref-Wickham+Grolemund:2017)).
+
+<br> <a href="#top">▲ top of page</a>
 
 ## first plot
 
@@ -186,6 +190,8 @@ consist of,
   - choose a geom
   - adjust scales, labels, etc.
 
+<br> <a href="#top">▲ top of page</a>
+
 ## geom layers
 
 Suppose you wanted a smooth fit curve only. You can use the
@@ -231,6 +237,8 @@ p # print the graph
 ```
 
 ![](images/cm201-unnamed-chunk-14-1.png)<!-- -->
+
+<br> <a href="#top">▲ top of page</a>
 
 ## log scale
 
@@ -288,6 +296,8 @@ p # print the graph
 
 ![](images/cm201-unnamed-chunk-18-1.png)<!-- -->
 
+<br> <a href="#top">▲ top of page</a>
+
 ## mapping aesthetics
 
 The aesthetics of the display—such as the type or color of the data
@@ -315,6 +325,8 @@ variable name (column name) in the tidy dataframe.
 The `aes()` function is for mapping to variables only, not to change
 properties to a particular value.
 
+<br> <a href="#top">▲ top of page</a>
+
 ## setting properties
 
 If on the other hand we were fine with having all the data markers the
@@ -336,6 +348,8 @@ p # print the graph
 
 Read more about [all the R color
 names](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf).
+
+<br> <a href="#top">▲ top of page</a>
 
 ## data carpentry
 
@@ -415,6 +429,8 @@ object name, **then** `filter()` to keep those rows in which the `year`
 variable is equal (`==`) to the maximum (`max()`) year, **then**
 `glimpse()` the result.”
 
+<br> <a href="#top">▲ top of page</a>
+
 ## facets
 
 Let’s graph that version of the data and at the same time, change the
@@ -474,6 +490,8 @@ p # print the graph
 
 ![](images/cm201-unnamed-chunk-28-1.png)<!-- -->
 
+<br> <a href="#top">▲ top of page</a>
+
 ## ordering the panels
 
 The panels should be ordered by the data, not alphabetically.
@@ -532,6 +550,8 @@ p # print the graph
 Setting the `as.table = FALSE` argument places the panel with the
 highest median in the top panel.
 
+<br> <a href="#top">▲ top of page</a>
+
 ## beyond basics: a complex design
 
 To wrap up this introduction, I’ll show you how we can use functions in
@@ -571,6 +591,8 @@ ggplot(data    = my_gapminder,
 The `theme_graphclass()` function is a set of graph design choices I’ve
 included in the graphclassmate package for our use.
 
+<br> <a href="#top">▲ top of page</a>
+
 ## resize, save, and import the image
 
 For the best results in your portfolio, you should always conclude your
@@ -586,6 +608,8 @@ include_graphics("../figures/0201-graph-basics-gapminder.png")
 ```
 
 <img src="../figures/0201-graph-basics-gapminder.png" width="90%" />
+
+<br> <a href="#top">▲ top of page</a>
 
 ## exercises
 
