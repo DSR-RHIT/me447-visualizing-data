@@ -26,7 +26,7 @@ lest the display look cluttered.” (Doumont,
 Data characteristics
 
   - Two quantitative variables  
-  - One or more categorical variables (optional)
+  - One or more categorical variables (optional)  
   - A key variable if data are not coordinatized
 
 Graph characteristics
@@ -36,6 +36,9 @@ Graph characteristics
   - The levels of a category can be distinguished by data marker type or
     color or with facets
   - Facets, if used, have identical scales
+
+[D3 Correlations](cm301-report-display-reqts.md#D3-correlations) data
+and graph requirements
 
 <br> <a href="#top">▲ top of page</a>
 
