@@ -1,5 +1,10 @@
 ---
-output: github_document
+output: 
+  github_document: 
+    pandoc_args: "--webtex"
+bibliography: "../resources/references.bib"
+csl: "../resources/journal-of-glaciology.csl"
+link-citations: yes 
 ---
 
 ## D1 Title

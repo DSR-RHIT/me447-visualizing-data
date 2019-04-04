@@ -563,7 +563,7 @@ ggsave(filename = "0503-scatterplot-oly12.png",
         width   = 8,
         height  = 16,
         units   = "in",
-        dpi     = 72)
+        dpi     = 300)
 ```
 
 <br> <a href="#top">▲ top of page</a>
@@ -587,15 +587,88 @@ following code chunk in the Rmd script.
 
 ## exercises
 
-**1. xxxx**
+**1. gapminder**
 
-  - Data:
+In the gapminder data, dollar values are in constant 2007 “international
+dollars”, a hypothetical unit of currency that has the same [purchasing
+power parity
+(PPP)](https://financial-dictionary.thefreedictionary.com/purchasing+power+parity)
+that the US dollar had in the US at the time. [Constant
+dollars](https://financial-dictionary.thefreedictionary.com/constant+dollars)
+have been adjusted for inflation with respect to a particular year—in
+this case, 2007.
 
-  - explore:
+Scripts to initialize
 
-  - Carpentry:
+    explore/     0503-scatterplot-gapminder-explore.R  
+    carpentry/   0503-scatterplot-gapminder-data.R   
+    design/      0503-scatterplot-gapminder.R 
 
-  - Design:
+With the minimal instructions below, the graph you are trying to create
+is this one:
+
+<img src="../figures/0503-scatterplot-gapminder-01.png" width="70%" />
+
+Data: `gapminder` from the gapminder package. If you want to learn more
+about the data set, open its help page by running `?
+gapminder::gapminder`
+
+Explore script: write the code to determine the number of variables and
+for each variable, determine its
+
+  - type
+  - class
+  - levels (if categorical)
+
+Carpentry script
+
+  - omit the continent column
+  - extract the data for the countries shown
+  - reorder the levels of the country factor by life expectancy
+  - recode country level `"Korea, Rep."` to `"South Korea"`
+  - drop unused levels
+  - write the data frame to `data/0503-scatterplot-gapminder-01.rds`
+
+Design script
+
+  - read the data frame you just saved
+  - create the the graph shown, with panels ordered as shown
+  - save it to file `figures/0503-scatterplot-gapminder-01.png`
+
+**2. add two more variables**
+
+Continue the previous problem. In the design script,
+
+  - assign the color of the data marker to correspond year
+  - assign the size of the data marker to population
+  - save the figure to `figures/0503-scatterplot-gapminder-02.png`
+
+If you accomplish both, the graph should look like this,
+
+<img src="../figures/0503-scatterplot-gapminder-02.png" width="70%" />
+
+**3. one year, all countries**
+
+Carpentry script
+
+  - continue the same script  
+  - start with the full gapminder data frame
+  - extract the data for the most recent year
+  - omit the year column
+  - omit data for the continent “Oceania”
+  - reorder the levels of the continent factor by life expectancy
+  - drop unused levels
+  - write the data frame to `data/0503-scatterplot-gapminder-03.rds`
+
+Design script
+
+  - read the data frame you just saved
+  - create the the graph shown, with panels ordered as shown
+  - save it to file `figures/0503-scatterplot-gapminder-03.png`
+
+Answer:
+
+<img src="../figures/0503-scatterplot-gapminder-03.png" width="70%" />
 
 ## references
 

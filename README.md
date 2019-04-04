@@ -42,7 +42,7 @@ Rose-Hulman Institute of Technology.
 |    | F | Presentations, practice, & portfolio studio                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |                                                                                                                     | D1 graph & prose<br>[Presentation prompts](reports/presentation-prompts.Rmd)                                                             |
 | 5  | M | [Introducing factors](cm/cm106-data-nature-of-factors.md)<br>[Working with factors](cm/cm107-data-working-with-factors.md) \[[exercises](cm/cm107-data-working-with-factors.md#exercises)\]<br>![](resources/icon-r4ds.png) [15.2 Creating factors](https://r4ds.had.co.nz/factors.html#creating-factors)<br>![](resources/icon-r4ds.png) [15.4 Modifying factor order](https://r4ds.had.co.nz/factors.html#modifying-factor-order)<br>![](resources/icon-r4ds.png) [15.5 Modifying factor levels](https://r4ds.had.co.nz/factors.html#modifying-factor-levels)                                                                                                                                                                                                                                                                                                 | wk4 tutorials & exercises                                                                                           |                                                                                                                                          |
 |    | T | [Discovering stories](cm/cm403-rhetoric-discovering-stories.md#discovering-stories) \[[reading](cm/cm403-rhetoric-discovering-stories.md#reading)\] \[[reflection](cm/cm403-rhetoric-discovering-stories.md#reflection-on-rhetoric)\]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                                     |                                                                                                                                          |
-|    | R | [D3 requirements:](cm/cm301-report-display-reqts.md#D3-correlations) Exploring correlations<br>[Scatterplot](cm/cm205-graph-scatterplot.md#scatterplot) \[exercises\]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | D3 data acquired                                                                                                    |                                                                                                                                          |
+|    | R | [D3 requirements:](cm/cm301-report-display-reqts.md#D3-correlations) Exploring correlations<br>[Scatterplot](cm/cm205-graph-scatterplot.md#scatterplot) [\[exercises\]](cm/cm205-graph-scatterplot.md#exercises)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | D3 data acquired                                                                                                    |                                                                                                                                          |
 |    | F | Presentations, practice, & portfolio studio                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |                                                                                                                     | D2 graph & prose<br>[Presentation prompts](reports/presentation-prompts.Rmd)<br>[Reflection on rhetoric](reports/video-reflection-1.Rmd) |
 | 6  | M | Data carpentry \[exercises\]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | wk5 tutorials & exercises                                                                                           |                                                                                                                                          |
 |    | T | [D4 requirements:](cm/cm301-report-display-reqts.md#D4-injuries-or-fatalities) Graph injuries/fatalities ethically<br>Dot plot \[exercises\]<br>Line graph \[exercises\]<br>![](resources/icon-moodle.png) Dragga and Voss ([2001](#ref-Dragga+Voss:2001)) Cruel pies                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                                     | [Reading prompts 3](reports/reading-prompts-3.Rmd)                                                                                       |
@@ -100,7 +100,9 @@ Rose-Hulman Institute of Technology.
     R](cm/cm101b-interacting-with-R.md#interacting-with-R)  
   - [RStudio tips](cm/cm905-software-RStudio-tips.md#rstudio-tips)  
   - [Updating the R
-    habitat](cm/cm904-software-R-update.md#updating-the-R-habitat)
+    habitat](cm/cm904-software-R-update.md#updating-the-R-habitat)  
+  - [Color names in
+    R](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf)
 
 ## data
 
@@ -236,7 +238,7 @@ Graph exercises
   - [Strip plot exercises](cm/cm202-graph-strip-plot.md#exercises)
   - [Box plot exercises](cm/cm203-graph-boxplot.md#exercises)  
   - [Multiway dot plot exercises](cm/cm204-graph-multiway.md#exercises)
-  - Scatterplot exercises  
+  - [Scatterplot exercises](cm/cm205-graph-scatterplot.md#exercises)
   - Dot plot exercises  
   - Line graph exercises  
   - Time series exercises  
@@ -304,6 +306,8 @@ Resources
   - [Emphasis](cm/cm304-report-document-design.md#emphasis)  
   - [Hyphens and
     dashes](cm/cm304-report-document-design.md#hyphens-and-dashes)
+  - [Color names in
+    R](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf)  
   - [Portfolio final
     editing](cm/cm307-report-final-editing.md#final-editing)
   - [The portfolio after the
@@ -352,6 +356,8 @@ Portfolio studio
 
 ## visual rhetoric and graph design
 
+  - [Color names in
+    R](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf)  
   - [Design basics](cm/cm402-rhetoric-design-basics.md#design-basics)  
   - [Discovering
     stories](cm/cm403-rhetoric-discovering-stories.md#discovering-stories)  
@@ -441,42 +447,40 @@ illustrations. *Technical Communication* **48**(3), 265–274
 <div id="ref-Knaflic:2012-05">
 
 Knaflic CN (2012a) Telling multiple stories (part 1).
-<http://www.storytellingwithdata.com/blog/2012/05/telling-multiple-stories-part-1>
+<http://tinyurl.com/y4oz8vtv>
 
 </div>
 
 <div id="ref-Knaflic:2012-06">
 
 Knaflic CN (2012b) Telling multiple stories (part 2).
-<http://www.storytellingwithdata.com/blog/2012/06/telling-multiple-stories-part-2>
+<http://tinyurl.com/y4jk4jjs>
 
 </div>
 
 <div id="ref-Knaflic:2012-12">
 
-Knaflic CN (2012c) And the winner is...
-<http://www.storytellingwithdata.com/blog/2012/12/and-winner-is>
+Knaflic CN (2012c) And the winner is... <http://tinyurl.com/y462kkbz>
 
 </div>
 
 <div id="ref-Knaflic:2013-09">
 
-Knaflic CN (2013a) Logic in order.
-<http://www.storytellingwithdata.com/blog/2013/09/logic-in-order>
+Knaflic CN (2013a) Logic in order. <http://tinyurl.com/yxf8gspl>
 
 </div>
 
 <div id="ref-Knaflic:2013-10">
 
 Knaflic CN (2013b) The right amount of detail.
-<http://www.storytellingwithdata.com/blog/2013/10/the-right-amount-of-detail>
+<http://tinyurl.com/y24gn8o4>
 
 </div>
 
 <div id="ref-Knaflic:2014-01">
 
 Knaflic CN (2014) Multifaceted data and story.
-<http://www.storytellingwithdata.com/blog/2014/01/multifaceted-data-and-story>
+<http://tinyurl.com/yxq8xuf2>
 
 </div>
 
@@ -508,8 +512,7 @@ Wayne, NJ, 226–291
 
 Spence I (2006) William Playfair and the psychology of graphs. *IEEE
 Transactions on Professional Communication*. American Statistical
-Association, Alexandria, VA, 2426–2436
-<http://www.psych.utoronto.ca/users/spence/Spence%20(2006).pdf>
+Association, Alexandria, VA, 2426–2436 <http://tinyurl.com/y2njxrbv>
 
 </div>
 
