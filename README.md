@@ -11,7 +11,9 @@ Rose-Hulman Institute of Technology.
   - [Help links](cm/cm003-getting-help.md)  
   - [Syllabus](cm/cm001-course-syllabus.md#syllabus)
   - [License](LICENSE.md#licenses)
-  - [Index](#index)
+  - [Index](#index)  
+  - [Index to datasets and functions in
+    tutorials](cm906-software-functions-index.md#functions)  
   - [Readings](#readings)
 
 ## calendar
@@ -103,6 +105,8 @@ Rose-Hulman Institute of Technology.
     habitat](cm/cm904-software-R-update.md#updating-the-R-habitat)  
   - [Color names in
     R](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf)
+  - [R functions in
+    tutorials](cm906-software-functions-index.md#functions)
 
 ## data
 
@@ -127,7 +131,8 @@ Basics
   - [some R objects have
     attributes](cm/cm106-data-nature-of-factors.md#)  
   - [all R objects have
-    class](cm/cm106-data-nature-of-factors.md#all-R-objects-have-class)
+    class](cm/cm106-data-nature-of-factors.md#all-R-objects-have-class)  
+  - [Datasets in tutorials](cm906-software-functions-index.md#data)
 
 Factors
 
