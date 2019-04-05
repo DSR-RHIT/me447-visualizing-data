@@ -72,7 +72,13 @@ Tutorials and samples
 
 The distinguishing characteristic of multiway data is that there is a
 quantitative value associated with every combination of levels of two
-categorical variables.
+independent categorical variables.
+
+Time as a categorical variable: Though time can be considered an ordinal
+categorical variable, time series data are more commonly displayed using
+line graphs or spark charts where the dots can be connected. We would
+not expect to connect the dots in a multiway graph, thus we avoid using
+date and time as one of the two independent categories.
 
 Graph both the original multiway and its dual (swapping rows and
 panels). Include only one of these graphs in your portfolio. Select the
@@ -81,7 +87,8 @@ design that best conveys the stories in your data.
 Data requirements
 
   - One quantitative variable with a minimum of 24 observations
-  - Two categorical variables with minimum numbers of levels as follows
+  - Two independent categorical variables with minimum numbers of levels
+    as follows
       - 3 levels in category 1 and at least 8 levels in category 2
       - 4 levels in category 1 and at least 6 levels in category 2  
       - 5 levels in category 1 and at least 5 levels in category 2
@@ -292,8 +299,7 @@ For additional technical details, see
 
 Heiberger RM and Robbins NB (2014) Design of diverging stacked bar
 charts for Likert scales and other applications. *Journal of Statistical
-Software* **57**(5)
-<https://www.jstatsoft.org/article/view/v057i05/v57i05.pdf>
+Software* **57**(5) <http://tinyurl.com/y5yg2pze>
 
 </div>
 

@@ -17,8 +17,8 @@ multiway dot plot
 ## introduction
 
 A *multiway dot plot* is a set of graphs of a single quantitative
-variable (or response) dependent on two categorical variables. As
-Cleveland explains ([1993](#ref-Cleveland:1993)),
+variable (or response) dependent on two independent categorical
+variables. As Cleveland explains ([1993](#ref-Cleveland:1993)),
 
 > What distinguishes multiway data is the cross-classification of the
 > categorical variables; there is a value of the response for each
@@ -30,8 +30,13 @@ Data characteristics in tidy form
     *n* observations
   - Second categorical variable with *n* levels in a column with *m* ×
     *n* observations
-  - One quantitative variable in a column with *m* × *n* observations,
-    values are numerical, often an integer count
+  - The categorical variables must be independent
+  - One quantitative variable in a column with *m* × *n* observations  
+  - Though time can be considered an ordinal categorical variable, time
+    series data are more commonly displayed using line graphs, spark
+    charts. or cycle plots where the dots are connected to show changes
+    over time. A multiway form may not be the most effective type of
+    display for time-series data.
 
 Graph characteristics
 
@@ -444,6 +449,13 @@ Cleveland WS (1993) *Visualizing Data.* Hobart Press, Summit, NJ
 Layton R (2019) *graphclassmate: Companion materials for a course in
 data visualization.* R package version 0.1.0.9000
 <https://github.com/graphdr/graphclassmate>
+
+</div>
+
+<div id="ref-Wickham+Grolemund:2017">
+
+Wickham H and Grolemund G (2017) *R for Data Science.* O’Reilly Media,
+Inc., Sebastopol, CA <https://r4ds.had.co.nz/>
 
 </div>
 
