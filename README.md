@@ -13,7 +13,7 @@ Rose-Hulman Institute of Technology.
   - [License](LICENSE.md#licenses)
   - [Index](#index)  
   - [Index to datasets and functions in
-    tutorials](cm/cm906-software-function-index.md#functions)  
+    tutorials](cm/cm906-software-function-index.md)  
   - [Readings](#readings)
 
 ## calendar
