@@ -8,8 +8,7 @@ data and functions index
 [introduction](#introduction)  
 [functions by name](#functions-by-name)  
 [functions by package](#functions-by-package)  
-[datasets by name](#datasets-by-name)  
-[datasets by package](#datasets-by-package)  
+[datasets](#datasets)  
 [references](#references)
 
 ## introduction
@@ -18,78 +17,6 @@ I’ll sometimes recall that I used a particular data set or function in a
 tutorial but can’t remember which one. This index is meant to help us
 find at least the first instance in which a function or data set is
 introduced.
-
-    #> Observations: 11
-    #> Variables: 2
-    #> $ name_tutorial <chr> "data basics", "interacting with R", "data studi...
-    #> $ link          <chr> "[data basics](cm101-data-basics.md)", "[interac...
-    #> Observations: 10
-    #> Variables: 2
-    #> $ dataset <chr> "SpeedSki", "oly12", "gapminder", "state.x77", "nontra...
-    #> $ package <chr> "GDAdata", "VGAMdata", "gapminder", "datasets", "graph...
-    #> Observations: 14
-    #> Variables: 3
-    #> $ rowid         <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
-    #> $ dataset       <chr> "SpeedSki", "SpeedSki", "oly12", "gapminder", "g...
-    #> $ name_tutorial <chr> "strip plot", "boxplot", "scatterplot", "working...
-
-| name\_tutorial       | link                                                       |
-| :------------------- | :--------------------------------------------------------- |
-| data basics          | [data basics](cm101-data-basics.md)                        |
-| interacting with R   | [interacting with R](cm101b-interacting-with-R.md)         |
-| data studio          | [data studio](cm102-data-studio.md)                        |
-| reshaping data       | [reshaping data](cm103-data-reshaping.md)                  |
-| introducing factors  | [introducing factors](cm106-data-nature-of-factors.md)     |
-| working with factors | [working with factors](cm107-data-working-with-factors.md) |
-| graph basics         | [graph basics](cm201-graph-basics.md)                      |
-| strip plot           | [strip plot](cm202-graph-strip-plot.md)                    |
-| boxplot              | [boxplot](cm203-graph-boxplot.md)                          |
-| multiway             | [multiway](cm204-graph-multiway.md)                        |
-| scatterplot          | [scatterplot](cm205-graph-scatterplot.md)                  |
-
-| dataset          | package        |
-| :--------------- | :------------- |
-| SpeedSki         | GDAdata        |
-| oly12            | VGAMdata       |
-| gapminder        | gapminder      |
-| state.x77        | datasets       |
-| nontraditional   | graphclassmate |
-| metro\_pop       | graphclassmate |
-| Alligator        | vcdExtra       |
-| museum\_exhibits | graphclassmate |
-| airquality       | datasets       |
-| diamonds         | ggplot2        |
-
-| rowid | dataset          | name\_tutorial       |
-| ----: | :--------------- | :------------------- |
-|     1 | SpeedSki         | strip plot           |
-|     2 | SpeedSki         | boxplot              |
-|     3 | oly12            | scatterplot          |
-|     4 | gapminder        | working with factors |
-|     5 | gapminder        | graph basics         |
-|     6 | state.x77        | working with factors |
-|     7 | nontraditional   | working with factors |
-|     8 | nontraditional   | boxplot              |
-|     9 | metro\_pop       | multiway             |
-|    10 | ucb\_admit       | multiway             |
-|    11 | Alligator        | multiway             |
-|    12 | museum\_exhibits | strip plot           |
-|    13 | airquality       | strip plot           |
-|    14 | diamonds         | boxplot              |
-
-| dataset          | links to tutorials                                                                                |
-| :--------------- | :------------------------------------------------------------------------------------------------ |
-| airquality       | [strip plot](cm202-graph-strip-plot.md)                                                           |
-| Alligator        | [multiway](cm204-graph-multiway.md)                                                               |
-| diamonds         | [boxplot](cm203-graph-boxplot.md)                                                                 |
-| gapminder        | [working with factors](cm107-data-working-with-factors.md), [graph basics](cm201-graph-basics.md) |
-| metro\_pop       | [multiway](cm204-graph-multiway.md)                                                               |
-| museum\_exhibits | [strip plot](cm202-graph-strip-plot.md)                                                           |
-| nontraditional   | [working with factors](cm107-data-working-with-factors.md), [boxplot](cm203-graph-boxplot.md)     |
-| oly12            | [scatterplot](cm205-graph-scatterplot.md)                                                         |
-| SpeedSki         | [strip plot](cm202-graph-strip-plot.md), [boxplot](cm203-graph-boxplot.md)                        |
-| state.x77        | [working with factors](cm107-data-working-with-factors.md)                                        |
-| ucb\_admit       | [multiway](cm204-graph-multiway.md)                                                               |
 
 ## functions by name
 
@@ -261,43 +188,24 @@ introduced.
 | wrapr          | build\_frame()         | [reshaping data](cm103-data-reshaping.md)                  |
 | </font>        |                        |                                                            |
 
-## datasets by name
+## datasets
 
 <font size="2">
 
-| dataset          | package        | tutorial                                                                                          |
+| dataset          | package        | tutorials                                                                                         |
 | :--------------- | :------------- | :------------------------------------------------------------------------------------------------ |
 | airquality       | datasets       | [strip plot](cm202-graph-strip-plot.md)                                                           |
 | Alligator        | vcdExtra       | [multiway](cm204-graph-multiway.md)                                                               |
 | diamonds         | ggplot2        | [boxplot](cm203-graph-boxplot.md)                                                                 |
-| gapminder        | gapminder      | [graph basics](cm201-graph-basics.md), [working with factors](cm107-data-working-with-factors.md) |
+| gapminder        | gapminder      | [working with factors](cm107-data-working-with-factors.md), [graph basics](cm201-graph-basics.md) |
 | metro\_pop       | graphclassmate | [multiway](cm204-graph-multiway.md)                                                               |
 | museum\_exhibits | graphclassmate | [strip plot](cm202-graph-strip-plot.md)                                                           |
-| nontraditional   | graphclassmate | [boxplot](cm203-graph-boxplot.md), [working with factors](cm107-data-working-with-factors.md)     |
+| nontraditional   | graphclassmate | [working with factors](cm107-data-working-with-factors.md), [boxplot](cm203-graph-boxplot.md)     |
 | oly12            | VGAMdata       | [scatterplot](cm205-graph-scatterplot.md)                                                         |
-| SpeedSki         | GDAdata        | [boxplot](cm203-graph-boxplot.md), [strip plot](cm202-graph-strip-plot.md)                        |
+| SpeedSki         | GDAdata        | [strip plot](cm202-graph-strip-plot.md), [boxplot](cm203-graph-boxplot.md)                        |
 | state.x77        | datasets       | [working with factors](cm107-data-working-with-factors.md)                                        |
 | ucb\_admit       | graphclassmate | [multiway](cm204-graph-multiway.md)                                                               |
 | </font>          |                |                                                                                                   |
-
-## datasets by package
-
-<font size="2">
-
-| package        | dataset          | tutorial                                                                                          |
-| :------------- | :--------------- | :------------------------------------------------------------------------------------------------ |
-| datasets       | airquality       | [strip plot](cm202-graph-strip-plot.md)                                                           |
-| datasets       | state.x77        | [working with factors](cm107-data-working-with-factors.md)                                        |
-| gapminder      | gapminder        | [graph basics](cm201-graph-basics.md), [working with factors](cm107-data-working-with-factors.md) |
-| GDAdata        | SpeedSki         | [boxplot](cm203-graph-boxplot.md), [strip plot](cm202-graph-strip-plot.md)                        |
-| ggplot2        | diamonds         | [boxplot](cm203-graph-boxplot.md)                                                                 |
-| graphclassmate | metro\_pop       | [multiway](cm204-graph-multiway.md)                                                               |
-| graphclassmate | museum\_exhibits | [strip plot](cm202-graph-strip-plot.md)                                                           |
-| graphclassmate | nontraditional   | [boxplot](cm203-graph-boxplot.md), [working with factors](cm107-data-working-with-factors.md)     |
-| graphclassmate | ucb\_admit       | [multiway](cm204-graph-multiway.md)                                                               |
-| vcdExtra       | Alligator        | [multiway](cm204-graph-multiway.md)                                                               |
-| VGAMdata       | oly12            | [scatterplot](cm205-graph-scatterplot.md)                                                         |
-| </font>        |                  |                                                                                                   |
 
 ## references
 
