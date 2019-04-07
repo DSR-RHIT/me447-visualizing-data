@@ -20,8 +20,6 @@ used.
 
 ## data
 
-<font size="1">
-
 | item             | package        | tutorials                                                                                         | class      | dimension | title                                                    |
 | :--------------- | :------------- | :------------------------------------------------------------------------------------------------ | :--------- | :-------- | :------------------------------------------------------- |
 | airquality       | datasets       | [strip plot](cm202-graph-strip-plot.md)                                                           | data.frame | 153x6     | New York Air Quality Measurements                        |
@@ -35,14 +33,11 @@ used.
 | SpeedSki         | GDAdata        | [boxplot](cm203-graph-boxplot.md), [strip plot](cm202-graph-strip-plot.md)                        | data.frame | 91x10     | World Speed Skiing Competition, Verbier 21st April, 2011 |
 | state.x77        | datasets       | [working with factors](cm107-data-working-with-factors.md)                                        | matrix     | 50x8      | US State Facts and Figures                               |
 | ucb\_admit       | graphclassmate | [multiway](cm204-graph-multiway.md)                                                               | data.frame | 12x4      | Student admissions at UC Berkeley                        |
-| </font>          |                |                                                                                                   |            |           |                                                          |
 
 <br> <a href="#top">▲ top of
 page</a>
 
 ## functions
-
-<font size="1">
 
 | item                   | package        | tutorials                                                                                             |
 | :--------------------- | :------------- | :---------------------------------------------------------------------------------------------------- |
@@ -120,14 +115,11 @@ page</a>
 | unclass()              | base           | [introducing factors](cm106-data-nature-of-factors.md)                                                |
 | ungroup()              | dplyr          | [boxplot](cm203-graph-boxplot.md)                                                                     |
 | unpivot\_to\_blocks()  | cdata          | [reshaping data](cm103-data-reshaping.md)                                                             |
-| </font>                |                |                                                                                                       |
 
 <br> <a href="#top">▲ top of
 page</a>
 
 ## functions by package
-
-<font size="1">
 
 | package        | item                   | tutorials                                                                                             |
 | :------------- | :--------------------- | :---------------------------------------------------------------------------------------------------- |
@@ -205,7 +197,6 @@ page</a>
 | utils          | data()                 | [data basics](cm101-data-basics.md)                                                                   |
 | utils          | read.table()           | [data basics](cm101-data-basics.md)                                                                   |
 | wrapr          | build\_frame()         | [reshaping data](cm103-data-reshaping.md)                                                             |
-| </font>        |                        |                                                                                                       |
 
 <br> <a href="#top">▲ top of page</a>
 
