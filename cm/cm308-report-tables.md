@@ -28,6 +28,8 @@ well by GitHub. Because we are using `github_ducument` output, we will
 use knitr or stargazer for tables, with `knitr::kable()` being used most
 often.
 
+<br> <a href="#top">▲ top of page</a>
+
 ## start with a data frame
 
 ``` r
@@ -37,11 +39,15 @@ df <- tli[1:10, ] %>%
     as.data.frame()
 ```
 
+<br> <a href="#top">▲ top of page</a>
+
 ## reshape for readability
 
   - representative sample
   - multiway
   - summary statistics
+
+<br> <a href="#top">▲ top of page</a>
 
 ## select an output type
 
@@ -71,6 +77,8 @@ knitr::kable(df, caption = "Table with kable()")
 |     7 | M   | YES     | HISPANIC |     87 |
 
 Table with kable()
+
+<br> <a href="#top">▲ top of page</a>
 
 ``` r
 library("stargazer")
@@ -489,9 +497,15 @@ HISPANIC
 
 </table>
 
+<br> <a href="#top">▲ top of page</a>
+
 ## cells with multiple entries
 
+<br> <a href="#top">▲ top of page</a>
+
 ## cells with links
+
+<br> <a href="#top">▲ top of page</a>
 
 ## cells with images
 
@@ -507,10 +521,12 @@ library(knitr)
 kable(dat)
 ```
 
-| country       | abbr | var1 |     var2 | flag                                             |
-| :------------ | :--- | ---: | -------: | :----------------------------------------------- |
-| Canada        | ca   |    1 | 2.307316 | ![](http://flagpedia.net/data/flags/mini/ca.png) |
-| United Kindom | gb   |    2 | 1.164249 | ![](http://flagpedia.net/data/flags/mini/gb.png) |
+| country       | abbr | var1 |        var2 | flag                                             |
+| :------------ | :--- | ---: | ----------: | :----------------------------------------------- |
+| Canada        | ca   |    1 | \-0.4422673 | ![](http://flagpedia.net/data/flags/mini/ca.png) |
+| United Kindom | gb   |    2 |   0.8596928 | ![](http://flagpedia.net/data/flags/mini/gb.png) |
+
+<br> <a href="#top">▲ top of page</a>
 
 ## references
 
