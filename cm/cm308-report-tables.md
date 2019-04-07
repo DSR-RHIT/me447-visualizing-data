@@ -6,84 +6,142 @@ tables
 <a href="https://creativecommons.org/licenses/by/2.0//">CC BY 2.0</a>
 <br> </small>
 
-Intructions are for `github_document` output specifically. Our default
-printing function is `knitr::kable()`.
+## contents
 
-## multiway data table
+[introduction](#introduction)  
+[start with a data frame](#start-with-a-data-frame)  
+[reshape for readability](#reshape-for-readability)  
+[select an output type](#select-an-output-type)  
+[cells with multiple entries](#cells-with-multiple-entries)  
+[cells with links](#cells-with-links)  
+[cells with images](#cells-with-images)  
+[references](#references)
 
-## table of representative data
+## introduction
 
-When data set is large
+The RStudio [cheat sheet for R
+Markdown](https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)
+suggests three possible packages for creating tables: knitr, stargazer,
+and xtable. We will not use xtable because—while it produces very nice
+tables in LaTeX or HTML—its HTML output is not rendered particularly
+well by GitHub. Because we are using `github_ducument` output, we will
+use knitr or stargazer for tables, with `knitr::kable()` being used most
+often.
 
-## code chunk output
-
-## xtable
-
-xtable creates an HTML or LaTeX table, not sure we can use it with
-`github_document`
+## start with a data frame
 
 ``` r
 library("xtable")
-## Load example dataset
 data(tli)
-
-## Demonstrate data.frame
 df <- tli[1:10, ] %>% 
     as.data.frame()
-
-
-
-formatted_tbl <- xtable(df) 
-    
-print(formatted_tbl, 
-            type = "html", 
-            include.rownames = FALSE, 
-            scalebox = 0.7)
 ```
 
-<!-- html table generated in R 3.5.3 by xtable 1.8-3 package -->
+## reshape for readability
 
-<!-- Sun Apr 07 14:59:24 2019 -->
+  - representative sample
+  - multiway
+  - summary statistics
 
-<table border="1">
+## select an output type
+
+  - print()
+  - glimpse()
+  - summary()
+  - kable()
+  - stargazer()
+
+<!-- end list -->
+
+``` r
+knitr::kable(df, caption = "Table with kable()")
+```
+
+| grade | sex | disadvg | ethnicty | tlimth |
+| ----: | :-- | :------ | :------- | -----: |
+|     6 | M   | YES     | HISPANIC |     43 |
+|     7 | M   | NO      | BLACK    |     88 |
+|     5 | F   | YES     | HISPANIC |     34 |
+|     3 | M   | YES     | HISPANIC |     65 |
+|     8 | M   | YES     | WHITE    |     75 |
+|     5 | M   | NO      | BLACK    |     74 |
+|     8 | F   | YES     | HISPANIC |     72 |
+|     4 | M   | YES     | BLACK    |     79 |
+|     6 | M   | NO      | WHITE    |     88 |
+|     7 | M   | YES     | HISPANIC |     87 |
+
+Table with kable()
+
+``` r
+library("stargazer")
+stargazer(df, 
+                    type = "html",
+                    title = "Table with stargazer", 
+                    summary = FALSE, 
+                    rownames = FALSE)
+```
+
+<table style="text-align:center">
+
+<caption>
+
+<strong>Table with stargazer</strong>
+
+</caption>
 
 <tr>
 
-<th>
+<td colspan="5" style="border-bottom: 1px solid black">
 
-grade
-
-</th>
-
-<th>
-
-sex
-
-</th>
-
-<th>
-
-disadvg
-
-</th>
-
-<th>
-
-ethnicty
-
-</th>
-
-<th>
-
-tlimth
-
-</th>
+</td>
 
 </tr>
 
 <tr>
 
-<td align="right">
+<td style="text-align:left">
+
+grade
+
+</td>
+
+<td>
+
+sex
+
+</td>
+
+<td>
+
+disadvg
+
+</td>
+
+<td>
+
+ethnicty
+
+</td>
+
+<td>
+
+tlimth
+
+</td>
+
+</tr>
+
+<tr>
+
+<td colspan="5" style="border-bottom: 1px solid black">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left">
 
 6
 
@@ -107,7 +165,7 @@ HISPANIC
 
 </td>
 
-<td align="right">
+<td>
 
 43
 
@@ -117,7 +175,7 @@ HISPANIC
 
 <tr>
 
-<td align="right">
+<td style="text-align:left">
 
 7
 
@@ -141,7 +199,7 @@ BLACK
 
 </td>
 
-<td align="right">
+<td>
 
 88
 
@@ -151,7 +209,7 @@ BLACK
 
 <tr>
 
-<td align="right">
+<td style="text-align:left">
 
 5
 
@@ -175,7 +233,7 @@ HISPANIC
 
 </td>
 
-<td align="right">
+<td>
 
 34
 
@@ -185,7 +243,7 @@ HISPANIC
 
 <tr>
 
-<td align="right">
+<td style="text-align:left">
 
 3
 
@@ -209,7 +267,7 @@ HISPANIC
 
 </td>
 
-<td align="right">
+<td>
 
 65
 
@@ -219,7 +277,7 @@ HISPANIC
 
 <tr>
 
-<td align="right">
+<td style="text-align:left">
 
 8
 
@@ -243,7 +301,7 @@ WHITE
 
 </td>
 
-<td align="right">
+<td>
 
 75
 
@@ -253,7 +311,7 @@ WHITE
 
 <tr>
 
-<td align="right">
+<td style="text-align:left">
 
 5
 
@@ -277,7 +335,7 @@ BLACK
 
 </td>
 
-<td align="right">
+<td>
 
 74
 
@@ -287,7 +345,7 @@ BLACK
 
 <tr>
 
-<td align="right">
+<td style="text-align:left">
 
 8
 
@@ -311,7 +369,7 @@ HISPANIC
 
 </td>
 
-<td align="right">
+<td>
 
 72
 
@@ -321,7 +379,7 @@ HISPANIC
 
 <tr>
 
-<td align="right">
+<td style="text-align:left">
 
 4
 
@@ -345,7 +403,7 @@ BLACK
 
 </td>
 
-<td align="right">
+<td>
 
 79
 
@@ -355,7 +413,7 @@ BLACK
 
 <tr>
 
-<td align="right">
+<td style="text-align:left">
 
 6
 
@@ -379,7 +437,7 @@ WHITE
 
 </td>
 
-<td align="right">
+<td>
 
 88
 
@@ -389,7 +447,7 @@ WHITE
 
 <tr>
 
-<td align="right">
+<td style="text-align:left">
 
 7
 
@@ -413,7 +471,7 @@ HISPANIC
 
 </td>
 
-<td align="right">
+<td>
 
 87
 
@@ -421,55 +479,42 @@ HISPANIC
 
 </tr>
 
+<tr>
+
+<td colspan="5" style="border-bottom: 1px solid black">
+
+</td>
+
+</tr>
+
 </table>
-
-``` r
-# 
-# # set pander table-layout options
-# library(pander)
-# panderOptions('table.alignment.default', function(df)
-#     ifelse(sapply(df, is.numeric), 'right', 'left'))
-# panderOptions('table.split.table', Inf)
-# panderOptions('big.mark', ",")
-# panderOptions('keep.trailing.zeros', TRUE)
-# 
-# 
-# pander(df)
-# 
-# kable(df)
-```
-
-<small>
-
-| grade | sex | disadvg | ethnicty | tlimth |
-| ----: | :-- | :------ | :------- | -----: |
-|     6 | M   | YES     | HISPANIC |     43 |
-|     7 | M   | NO      | BLACK    |     88 |
-|     5 | F   | YES     | HISPANIC |     34 |
-|     3 | M   | YES     | HISPANIC |     65 |
-|     8 | M   | YES     | WHITE    |     75 |
-|     5 | M   | NO      | BLACK    |     74 |
-|     8 | F   | YES     | HISPANIC |     72 |
-|     4 | M   | YES     | BLACK    |     79 |
-|     6 | M   | NO      | WHITE    |     88 |
-|     7 | M   | YES     | HISPANIC |     87 |
-
-</small>
 
 ## cells with multiple entries
 
 ## cells with links
 
+## cells with images
+
+``` r
+dat <- data.frame(
+  country = c('Canada', 'United Kindom'),
+  abbr = c('ca', 'gb'),
+  var1 = c(1, 2),
+  var2 = rnorm(2)
+)
+dat$flag <- sprintf('![](http://flagpedia.net/data/flags/mini/%s.png)', dat$abbr)
+library(knitr)
+kable(dat)
+```
+
+| country       | abbr | var1 |     var2 | flag                                             |
+| :------------ | :--- | ---: | -------: | :----------------------------------------------- |
+| Canada        | ca   |    1 | 2.307316 | ![](http://flagpedia.net/data/flags/mini/ca.png) |
+| United Kindom | gb   |    2 | 1.164249 | ![](http://flagpedia.net/data/flags/mini/gb.png) |
+
 ## references
 
 <div id="refs">
-
-<div id="ref-Wickham+Grolemund:2017">
-
-Wickham H and Grolemund G (2017) *R for Data Science.* O’Reilly Media,
-Inc., Sebastopol, CA <https://r4ds.had.co.nz/>
-
-</div>
 
 </div>
 
