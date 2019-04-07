@@ -28,27 +28,26 @@ library("xtable")
 data(tli)
 
 ## Demonstrate data.frame
-df <- tli[1:20, ] %>% 
+df <- tli[1:10, ] %>% 
     as.data.frame()
 
 
 
 formatted_tbl <- xtable(df) 
     
-print(formatted_tbl, type = "html", row.names = FALSE)
+print(formatted_tbl, 
+            type = "html", 
+            include.rownames = FALSE, 
+            scalebox = 0.7)
 ```
 
 <!-- html table generated in R 3.5.3 by xtable 1.8-3 package -->
 
-<!-- Sun Apr 07 14:49:22 2019 -->
+<!-- Sun Apr 07 14:59:24 2019 -->
 
 <table border="1">
 
 <tr>
-
-<th>
-
-</th>
 
 <th>
 
@@ -86,12 +85,6 @@ tlimth
 
 <td align="right">
 
-1
-
-</td>
-
-<td align="right">
-
 6
 
 </td>
@@ -126,12 +119,6 @@ HISPANIC
 
 <td align="right">
 
-2
-
-</td>
-
-<td align="right">
-
 7
 
 </td>
@@ -163,12 +150,6 @@ BLACK
 </tr>
 
 <tr>
-
-<td align="right">
-
-3
-
-</td>
 
 <td align="right">
 
@@ -206,12 +187,6 @@ HISPANIC
 
 <td align="right">
 
-4
-
-</td>
-
-<td align="right">
-
 3
 
 </td>
@@ -243,12 +218,6 @@ HISPANIC
 </tr>
 
 <tr>
-
-<td align="right">
-
-5
-
-</td>
 
 <td align="right">
 
@@ -286,12 +255,6 @@ WHITE
 
 <td align="right">
 
-6
-
-</td>
-
-<td align="right">
-
 5
 
 </td>
@@ -323,12 +286,6 @@ BLACK
 </tr>
 
 <tr>
-
-<td align="right">
-
-7
-
-</td>
 
 <td align="right">
 
@@ -366,12 +323,6 @@ HISPANIC
 
 <td align="right">
 
-8
-
-</td>
-
-<td align="right">
-
 4
 
 </td>
@@ -403,12 +354,6 @@ BLACK
 </tr>
 
 <tr>
-
-<td align="right">
-
-9
-
-</td>
 
 <td align="right">
 
@@ -446,12 +391,6 @@ WHITE
 
 <td align="right">
 
-10
-
-</td>
-
-<td align="right">
-
 7
 
 </td>
@@ -482,420 +421,25 @@ HISPANIC
 
 </tr>
 
-<tr>
-
-<td align="right">
-
-11
-
-</td>
-
-<td align="right">
-
-3
-
-</td>
-
-<td>
-
-M
-
-</td>
-
-<td>
-
-NO
-
-</td>
-
-<td>
-
-WHITE
-
-</td>
-
-<td align="right">
-
-79
-
-</td>
-
-</tr>
-
-<tr>
-
-<td align="right">
-
-12
-
-</td>
-
-<td align="right">
-
-6
-
-</td>
-
-<td>
-
-F
-
-</td>
-
-<td>
-
-NO
-
-</td>
-
-<td>
-
-WHITE
-
-</td>
-
-<td align="right">
-
-84
-
-</td>
-
-</tr>
-
-<tr>
-
-<td align="right">
-
-13
-
-</td>
-
-<td align="right">
-
-8
-
-</td>
-
-<td>
-
-M
-
-</td>
-
-<td>
-
-NO
-
-</td>
-
-<td>
-
-WHITE
-
-</td>
-
-<td align="right">
-
-90
-
-</td>
-
-</tr>
-
-<tr>
-
-<td align="right">
-
-14
-
-</td>
-
-<td align="right">
-
-5
-
-</td>
-
-<td>
-
-M
-
-</td>
-
-<td>
-
-NO
-
-</td>
-
-<td>
-
-WHITE
-
-</td>
-
-<td align="right">
-
-73
-
-</td>
-
-</tr>
-
-<tr>
-
-<td align="right">
-
-15
-
-</td>
-
-<td align="right">
-
-8
-
-</td>
-
-<td>
-
-F
-
-</td>
-
-<td>
-
-NO
-
-</td>
-
-<td>
-
-WHITE
-
-</td>
-
-<td align="right">
-
-72
-
-</td>
-
-</tr>
-
-<tr>
-
-<td align="right">
-
-16
-
-</td>
-
-<td align="right">
-
-6
-
-</td>
-
-<td>
-
-F
-
-</td>
-
-<td>
-
-NO
-
-</td>
-
-<td>
-
-BLACK
-
-</td>
-
-<td align="right">
-
-82
-
-</td>
-
-</tr>
-
-<tr>
-
-<td align="right">
-
-17
-
-</td>
-
-<td align="right">
-
-4
-
-</td>
-
-<td>
-
-M
-
-</td>
-
-<td>
-
-NO
-
-</td>
-
-<td>
-
-WHITE
-
-</td>
-
-<td align="right">
-
-69
-
-</td>
-
-</tr>
-
-<tr>
-
-<td align="right">
-
-18
-
-</td>
-
-<td align="right">
-
-3
-
-</td>
-
-<td>
-
-F
-
-</td>
-
-<td>
-
-YES
-
-</td>
-
-<td>
-
-HISPANIC
-
-</td>
-
-<td align="right">
-
-17
-
-</td>
-
-</tr>
-
-<tr>
-
-<td align="right">
-
-19
-
-</td>
-
-<td align="right">
-
-3
-
-</td>
-
-<td>
-
-M
-
-</td>
-
-<td>
-
-NO
-
-</td>
-
-<td>
-
-HISPANIC
-
-</td>
-
-<td align="right">
-
-37
-
-</td>
-
-</tr>
-
-<tr>
-
-<td align="right">
-
-20
-
-</td>
-
-<td align="right">
-
-5
-
-</td>
-
-<td>
-
-M
-
-</td>
-
-<td>
-
-NO
-
-</td>
-
-<td>
-
-WHITE
-
-</td>
-
-<td align="right">
-
-70
-
-</td>
-
-</tr>
-
 </table>
 
 ``` r
-# set pander table-layout options
-library(pander)
-panderOptions('table.alignment.default', function(df)
-    ifelse(sapply(df, is.numeric), 'right', 'left'))
-panderOptions('table.split.table', Inf)
-panderOptions('big.mark', ",")
-panderOptions('keep.trailing.zeros', TRUE)
-
-
-pander(df)
+# 
+# # set pander table-layout options
+# library(pander)
+# panderOptions('table.alignment.default', function(df)
+#     ifelse(sapply(df, is.numeric), 'right', 'left'))
+# panderOptions('table.split.table', Inf)
+# panderOptions('big.mark', ",")
+# panderOptions('keep.trailing.zeros', TRUE)
+# 
+# 
+# pander(df)
+# 
+# kable(df)
 ```
+
+<small>
 
 | grade | sex | disadvg | ethnicty | tlimth |
 | ----: | :-- | :------ | :------- | -----: |
@@ -909,16 +453,8 @@ pander(df)
 |     4 | M   | YES     | BLACK    |     79 |
 |     6 | M   | NO      | WHITE    |     88 |
 |     7 | M   | YES     | HISPANIC |     87 |
-|     3 | M   | NO      | WHITE    |     79 |
-|     6 | F   | NO      | WHITE    |     84 |
-|     8 | M   | NO      | WHITE    |     90 |
-|     5 | M   | NO      | WHITE    |     73 |
-|     8 | F   | NO      | WHITE    |     72 |
-|     6 | F   | NO      | BLACK    |     82 |
-|     4 | M   | NO      | WHITE    |     69 |
-|     3 | F   | YES     | HISPANIC |     17 |
-|     3 | M   | NO      | HISPANIC |     37 |
-|     5 | M   | NO      | WHITE    |     70 |
+
+</small>
 
 ## cells with multiple entries
 
