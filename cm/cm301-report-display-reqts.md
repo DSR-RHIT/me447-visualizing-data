@@ -156,12 +156,14 @@ Data requirements
     or fatality  
   - One or two categorical variables, one of which can be time (time
     series)  
-  - If you display a time series, consider whether or not the data
-    should be normalized. For example, graphing injuries per capita may
-    be more truthful than graphing the raw number of injuries.
+  - If you display a time series, consider whether or not the
+    quantitative variable should be normalized. For example, graphing
+    injuries per capita may be more truthful than graphing the raw
+    number of injuries.
 
 Dot plot example  
-Line graph example
+Line graph example  
+[Bar graph example](../resources/bipolar-disorder-bar-chart.png)
 
 <br> <a href="#top">▲ top of page</a>
 
