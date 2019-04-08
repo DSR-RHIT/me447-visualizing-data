@@ -77,33 +77,23 @@ Other than the title, plan on having two levels of headings only. For a
 
 ## text color
 
-No custom text color for you\!
-
 Rmd does not have a built-in method for creating color text. Often, if
 Rmd lacks a markup feature, we can write short chunks of HTML markup.
-
 However, GitHub [aggressively
 sanitizes](https://github.com/github/markup/tree/master#html-sanitization)
 HTML markup, allowing only a limited number of HTML elements and
-attribute—and text color is not one of them.
+attributes—and text color is not one of them.
 
-GitHub does enable syntax highlighting for R code chunks, e.g,
+Thus you cannot color plain text in a GitHub .md file.
+
+GitHub .md files are rendered with colored text for [links]() and for
+code syntax highlighting, e.g.,
 
 ``` r
 ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) +
         geom_smooth(size = 2) +
         labs(x = "GDP per capita", y = "Life expectancy (years)")
 ```
-
-<!-- ```html -->
-
-<!-- <span style="color:darkgoldenrod"> Accented text </span> can be a third level if needed.  -->
-
-<!-- ``` -->
-
-<!-- produces the output  -->
-
-<!-- <span style="color:darkgoldenrod">&nbsp;&nbsp;&nbsp;&nbsp;Accented text </span> can be a third level if needed.  -->
 
 <br> <a href="#top">▲ top of
 page</a>
