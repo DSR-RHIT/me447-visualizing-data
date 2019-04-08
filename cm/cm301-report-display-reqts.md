@@ -20,7 +20,7 @@ below.
 | [D1 distributions](#d1-distributions)                       | [strip plot](cm202-graph-strip-plot.md#strip-plot) or [box plot](cm203-graph-boxplot.md#box-plots) | one           | one or two    |
 | [D2 multiway](#d2-multiway)                                 | [multiway](cm204-graph-multiway.md#multiway-dot-plot)                                              | one           | two           |
 | [D3 correlations](#d3-correlations)                         | [scatterplot](cm205-graph-scatterplot.md#scatterplot)                                              | two           | one or two    |
-| [D4 injuries or fatalities](#d4-injuries-or-fatalities)     | dot plot                                                                                           | one           | optional      |
+| [D4 injuries or fatalities](#d4-injuries-or-fatalities)     | dot plot                                                                                           | one           | one or more   |
 |                                                             | line graph or scatterplot                                                                          | two           | optional      |
 | [D5 redesign a graphical lie](#d5-redesign-a-graphical-lie) | dot plot                                                                                           | one           | optional      |
 |                                                             | line graph or scatterplot                                                                          | two           | optional      |
@@ -74,11 +74,14 @@ The distinguishing characteristic of multiway data is that there is a
 quantitative value associated with every combination of levels of two
 independent categorical variables.
 
-Time as a categorical variable: Though time can be considered an ordinal
-categorical variable, time series data are more commonly displayed using
-line graphs or spark charts where the dots can be connected. We would
-not expect to connect the dots in a multiway graph, thus we avoid using
-date and time as one of the two independent categories.
+  - 2019: For those students who discussed it with me in lab, we will
+    accept time as an ordinal categorical variable in a multiway graph  
+  - 2020: Time as a categorical variable: Though time can be considered
+    an ordinal categorical variable, time series data are more commonly
+    displayed using line graphs or spark charts where the dots can be
+    connected. We would not expect to connect the dots in a multiway
+    graph, thus we avoid using date and time as one of the two
+    independent categories.
 
 Graph both the original multiway and its dual (swapping rows and
 panels). Include only one of these graphs in your portfolio. Select the
@@ -136,10 +139,26 @@ Tutorials and samples
 
 ## D4 injuries or fatalities
 
-The data must convey information about human injury or fatality (similar
-to the data in *Cruel Pies*). Consult with me on your data selection—the
-graph type depends on the data. The two graph types shown are the most
-commonly encountered.
+The data must convey information about human injury or fatality similar
+to the data in *Cruel Pies* (Dragga and Voss,
+[2001](#ref-Dragga+Voss:2001)). Consult with me on your data
+selection—the graph type depends on the data. Finding a “cruel pie” in
+a publication and redesigning it is an acceptable submission.
+
+If you redesign a published graph, include the original in your
+portfolio and discuss its shortcomings in your critique. The redesigned
+graphs are often dot plots or line graphs (especially for time series).
+
+Data requirements
+
+  - Minimum 10 observations  
+  - One quantitative variable conveying information about human injury
+    or fatality  
+  - One or two categorical variables, one of which can be time (time
+    series)  
+  - If you display a time series, consider whether or not the data
+    should be normalized. For example, graphing injuries per capita may
+    be more truthful than graphing the raw number of injuries.
 
 Dot plot example  
 Line graph example
@@ -294,6 +313,13 @@ For additional technical details, see
 ## references
 
 <div id="refs">
+
+<div id="ref-Dragga+Voss:2001">
+
+Dragga S and Voss D (2001) Cruel pies: The inhumanity of technical
+illustrations. *Technical Communication* **48**(3), 265–274
+
+</div>
 
 <div id="ref-Heiberger+Robbins:2014">
 

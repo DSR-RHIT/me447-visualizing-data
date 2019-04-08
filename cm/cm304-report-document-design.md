@@ -77,26 +77,33 @@ Other than the title, plan on having two levels of headings only. For a
 
 ## text color
 
-Rmd does not have a built-in method for creating color text, but you can
-use HTML markup to get it. For example, the HTML
-markup
+No custom text color for you\!
 
-``` html
-<span style="color:darkgoldenrod"> Accented text </span> can be a third level if needed. 
+Rmd does not have a built-in method for creating color text. Often, if
+Rmd lacks a markup feature, we can write short chunks of HTML markup.
+
+However, GitHub [aggressively
+sanitizes](https://github.com/github/markup/tree/master#html-sanitization)
+HTML markup, allowing only a limited number of HTML elements and
+attribute—and text color is not one of them.
+
+GitHub does enable syntax highlighting for R code chunks, e.g,
+
+``` r
+ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) +
+        geom_smooth(size = 2) +
+        labs(x = "GDP per capita", y = "Life expectancy (years)")
 ```
 
-produces the output
+<!-- ```html -->
 
-<span style="color:darkgoldenrod">    Accented text </span> can be a
-third level if needed.
+<!-- <span style="color:darkgoldenrod"> Accented text </span> can be a third level if needed.  -->
 
-The color <span style="color:darkgoldenrod"><big> `darkgoldenrod`
-</big></span> is one of 140 [color
-names](https://www.w3schools.com/colors/colors_names.asp) supported by
-most browsers.
+<!-- ``` -->
 
-Color choices must be unambiguous for color-vision-deficient (CVD)
-readers.
+<!-- produces the output  -->
+
+<!-- <span style="color:darkgoldenrod">&nbsp;&nbsp;&nbsp;&nbsp;Accented text </span> can be a third level if needed.  -->
 
 <br> <a href="#top">▲ top of
 page</a>
@@ -140,8 +147,7 @@ Examples of punctuation using an em-dash:
 
 <div id="ref-Baker:2001">
 
-Baker WH (2001) Guide to Document Design.
-<http://wdl.camden.rutgers.edu/wp-content/uploads/2015/10/WDL-Document-design.pdf>
+Baker WH (2001) Guide to Document Design. <http://tinyurl.com/y3p6dxv3>
 
 </div>
 
@@ -149,7 +155,7 @@ Baker WH (2001) Guide to Document Design.
 
 House R, Layton R, Livingston J and Moseley S (2017) *The Engineering
 Communication Manual.* Oxford University Press, New York, NY
-<https://global.oup.com/ushe/product/the-engineering-communication-manual>
+<http://tinyurl.com/y3f2k8s5>
 
 </div>
 

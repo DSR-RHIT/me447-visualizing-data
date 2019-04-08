@@ -6,14 +6,24 @@ Rose-Hulman Institute of Technology.
 
 <img src="resources/header-readme.png" width="50%" />
 
+<div class="row">
+
+<div class="col-md-6">
+
 Introduction
 
   - [About the course](cm/cm002-course-about.md#about-the-course)  
   - [Syllabus](cm/cm001-course-syllabus.md#syllabus)  
   - [License](LICENSE.md#licenses)
 
+</div>
+
+<div class="col-md-6">
+
 Frequent links
 
+  - [Portfolio document
+    requirements](cm/cm300-report-portfolio-reqts.md#portfolio-document-requirements)
   - [Portfolio data
     requirements](cm/cm301-report-display-reqts.md#portfolio-data-requirements)  
   - [Data and functions index](cm/cm906-software-function-index.md)  
@@ -21,6 +31,10 @@ Frequent links
   - [Readings](#readings)  
   - [Index](#index)  
   - [Help](cm/cm003-getting-help.md)
+
+</div>
+
+</div>
 
 ## calendar
 
