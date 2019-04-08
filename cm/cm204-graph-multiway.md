@@ -231,20 +231,25 @@ In this case, the data are loaded with the graphclassmate package.
 From the exploration, population is the quantitative variable and race
 and county are the two categorical variables. For ordering the rows and
 panels, we’ll want the categories converted to factors and ordered by
-population median. Create the R file
-`carpentry/0402-multiway-metropop-data.R`. Start by loading the
-packages.
+population median.
+
+Create the R file `carpentry/0402-multiway-metropop-data.R`. Start by
+loading the packages.
 
 ``` r
 # start the carpentry
 data(metro_pop, package = "graphclassmate")
+```
 
-# convert categories to factors orderd by population 
+When order the levels of a factor by a quantitative variable, the
+default metric is the median. Here, we will use `sum` rather than
+median.
+
+``` r
+# convert categories to factors ordered by total population 
 metro_pop <- metro_pop %>% 
-    mutate(county = factor(county)) %>% 
-    mutate(county = fct_reorder(county, population)) %>% 
-    mutate(race = factor(race)) %>% 
-    mutate(race   = fct_reorder(race, population)) %>% 
+    mutate(county = fct_reorder(county, population, sum)) %>% 
+    mutate(race   = fct_reorder(race, population, sum)) %>% 
     mutate(population = population / 1000)
 ```
 
@@ -340,7 +345,7 @@ ggsave(filename = "0402-multiway-metropop-01.png",
         dpi     = 300)
 ```
 
-<img src="images/cm204-metropop-unnamed-chunk-1-1.png" width="90%" />
+<img src="images/cm204-metropop-unnamed-chunk-2-1.png" width="90%" />
 
 In the dual multiway, we swap the rows and panels by setting `y =
 county` and `facet_wrap(vars(race))`.
@@ -381,6 +386,31 @@ the Rmd script.
     library("knitr")
     include_graphics("../figures/0402-multiway-metropop-02.png")
     ```
+
+If we were to include a data table in the report, it would look
+something like this, with rows and columns ordered by descending
+subtotals of populatioon. [Reshaping
+data](cm103-data-reshaping.md#reshaping-data) and creating
+[tables](cm308-report-tables.md#tables) are developed in separate
+tutorials.
+
+| county       | White | Latino | Black | Asian | Others | subtotal |
+| :----------- | ----: | -----: | ----: | ----: | -----: | -------: |
+| Kings        |   855 |    488 |   845 |   184 |     93 |     2465 |
+| Queens       |   733 |    556 |   420 |   392 |    128 |     2229 |
+| New York     |   703 |    418 |   233 |   143 |     39 |     1536 |
+| Suffolk      |  1118 |    149 |    92 |    34 |     26 |     1419 |
+| Nassau       |   986 |    133 |   129 |    62 |     24 |     1334 |
+| Bronx        |   194 |    645 |   415 |    38 |     40 |     1332 |
+| Westchester  |   592 |    145 |   123 |    41 |     23 |      924 |
+| Bergen       |   638 |     91 |    43 |    94 |     18 |      884 |
+| Hudson       |   215 |    242 |    73 |    57 |     22 |      609 |
+| Passiac      |   252 |    147 |    60 |    18 |     12 |      489 |
+| Richmond     |   317 |     54 |    40 |    24 |      9 |      444 |
+| Rockland     |   205 |     29 |    30 |    16 |      6 |      286 |
+| **subtotal** |  6808 |   3097 |  2503 |  1103 |    440 |    13951 |
+
+Table 1: Population of selected NY counties (in thousands)
 
 <br> <a href="#top">▲ top of page</a>
 
