@@ -86,8 +86,9 @@ attributes—and text color is not one of them.
 
 Thus you cannot color plain text in a GitHub .md file.
 
-GitHub .md files are rendered with colored text for [links]() and for
-code syntax highlighting, e.g.,
+GitHub .md files are rendered with colored text for
+[links](cm304-report-docume%20nt-design.md#text-color) and for code
+syntax highlighting, e.g.,
 
 ``` r
 ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) +
