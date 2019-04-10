@@ -139,8 +139,8 @@ Tutorials and samples
 
 ## D4 injuries or fatalities
 
-The data must convey information about human injury or fatality similar
-to the data in *Cruel Pies* (Dragga and Voss,
+The data must convey information about human ailments, injuries or
+fatalities similar to the data in *Cruel Pies* (Dragga and Voss,
 [2001](#ref-Dragga+Voss:2001)). Consult with me on your data
 selection—the graph type depends on the data. Finding a “cruel pie” in
 a publication and redesigning it is an acceptable submission.
@@ -161,9 +161,18 @@ Data requirements
     injuries per capita may be more truthful than graphing the raw
     number of injuries.
 
-Dot plot example  
-Line graph example  
-[Bar graph example](../resources/bipolar-disorder-bar-chart.png)
+Tutorials and samples
+
+  - Dot plot tutorial  
+  - [Sample dot plot: US infant births and
+    deaths](images/cm206-cdc-birth-death-humanized.png)  
+  - Line graph tutorial  
+  - Sample line graph: dataset name  
+  - [Sample bar graph: Borderline personality
+    disorder](../resources/bipolar-disorder-bar-chart.png) and the most
+    common co-occuring disorders. One quantitative variable, one
+    categorical variable with 8 levels, 8 observations, one of which has
+    a range (self-injury, 55–85%).
 
 <br> <a href="#top">▲ top of page</a>
 
