@@ -20,7 +20,7 @@ below.
 | [D1 distributions](#d1-distributions)                       | [strip plot](cm202-graph-strip-plot.md#strip-plot) or [box plot](cm203-graph-boxplot.md#box-plots) | one           | one or two    |
 | [D2 multiway](#d2-multiway)                                 | [multiway](cm204-graph-multiway.md#multiway-dot-plot)                                              | one           | two           |
 | [D3 correlations](#d3-correlations)                         | [scatterplot](cm205-graph-scatterplot.md#scatterplot)                                              | two           | one or two    |
-| [D4 injuries or fatalities](#d4-injuries-or-fatalities)     | dot plot                                                                                           | one           | one or more   |
+| [D4 injuries or fatalities](#d4-injuries-or-fatalities)     | [dot plot](cm206-graph-dot-plot.md#dot-plot)                                                       | one           | one or more   |
 |                                                             | line graph or scatterplot                                                                          | two           | optional      |
 | [D5 redesign a graphical lie](#d5-redesign-a-graphical-lie) | dot plot                                                                                           | one           | optional      |
 |                                                             | line graph or scatterplot                                                                          | two           | optional      |
@@ -163,9 +163,9 @@ Data requirements
 
 Tutorials and samples
 
-  - Dot plot tutorial  
-  - [Sample dot plot: US infant births and
-    deaths](images/cm206-cdc-birth-death-humanized.png)  
+  - [Dot plot tutorial](cm206-graph-dot-plot.md#dot-plot)  
+  - [Sample dot plot: US infant
+    mortality](../figures/0602-dotplot-cdc-infants-2.png)  
   - Line graph tutorial  
   - Sample line graph: dataset name  
   - [Sample bar graph: Borderline personality
