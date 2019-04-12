@@ -1,0 +1,7 @@
+# Richard Layton
+# 2019-04-12
+
+# load packages
+library("tidyverse")
+library("graphclassmate")
+library("seplyr")

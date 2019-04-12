@@ -28,8 +28,6 @@ checkfile <- function(path, recursive = TRUE, ...) {
   # check if dir exists, if not, create it
   if (!file.exists(path)) {
     file.create(path = path, recursive = recursive, ...)
-  } else {
-    warning(paste0(path, " - already exists"))
   }
 }
 

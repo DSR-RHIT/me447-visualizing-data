@@ -6,12 +6,10 @@ data sources
 <a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode">CC
 BY-SA 2.0</a> <br> </small>
 
-From [Public Data
-Sources](https://docs.google.com/document/d/1Ads4XsCjXmDrdGRgfmm_OgRdpFcl6Qhs6SOllNGyq7Y/edit)
-by Cole Nussbaumer Knaflic
-
 ## contents
 
+[introduction](#introduction)  
+[packages to import data](#packages-to-import-data)  
 [health](#health)  
 [university data sources](#university-data-sources)  
 [geo-spatial data](#geo-spatial-data)  
@@ -24,8 +22,43 @@ by Cole Nussbaumer Knaflic
 [science](#science)  
 [economics](#economics)  
 [various unsorted](#various-unsorted)  
-[more lists of data
-    sources](#more-lists-of-data-sources)
+[more lists of data sources](#more-lists-of-data-sources)  
+[references](#references)
+
+## introduction
+
+Here are some places to find publicly available data. Most links were
+copied from (Knaflic, [2018](#ref-Knaflic:2018)).
+
+The links on this page answer the question, “Where do I find data?” Most
+links take you to the data source—the organization that curates the
+data—with two exceptions:
+
+  - [packages to import data](#packages-to-import-data) for R packages
+    designed to import data from specific sources  
+  - [more lists of data sources](#more-lists-of-data-sources) for more
+    pages like this one
+
+## packages to import data
+
+Some R packages are designed to simplify the process of importing data
+from specific sources such as the US Census, the Federal Reserve, NOAA,
+Twitter, Google, etc. For
+    example,
+
+  - [tidycensus](https://walkerke.github.io/tidycensus/articles/basic-usage.html)
+    to import data from the US
+    Census  
+  - [rtweet](https://cran.r-project.org/web/packages/rtweet/vignettes/intro.html)
+    to import data from Twitter  
+  - [FredR](https://github.com/jcizel/FredR) to import data from the
+    Federal Reserve  
+  - [rnoaa](https://ropensci.org/tutorials/rnoaa_tutorial/) to import
+    data from the National Oceanic and Atmospheric Administration
+
+See [R packages to import public data](http://bit.ly/RDataPkgs) by
+Machlis ([2018](#ref-Machlis:2018)) for the complete
+    list.
 
 ## health
 
@@ -363,16 +396,189 @@ by Cole Nussbaumer Knaflic
     Know](https://www.kdnuggets.com/2017/12/big-data-free-sources.html)
   - [University of Rochester LibGuide
     Data-Stats](http://libguides.lib.rochester.edu/data-stats)
-    Repository listing many public data sources & datasets.
+    Repository listing many public data sources &
+datasets.
+
+<!-- --- -->
+
+<!-- Government -->
+
+<!-- - [Data.gov]()  It is the first stage and acts as a portal to all sorts of amazing information on everything from climate to crime freely by the US Government.  -->
+
+<!-- - [Data.gov.uk]()  There are datasets from all UK central departments and a number of other public sector and local authorities. It acts as a portal to all sorts of information on everything, including business and economy, crime and justice, defence, education, environment, government, health, society and transportation.  -->
+
+<!-- - [US. Census Bureau]()  The website is about the government-informed statistics on the lives of US citizens including population, economy, education, geography, and more.  -->
+
+<!-- - [The CIA World Factbook]()  Facts on every country in the world; focuses on history, government, population, economy, energy, geography, communications, transportation, military, and transnational issues of 267 countries.  -->
+
+<!-- - [Socrata]()  Socrata is a mission-driven software company that is another interesting place to explore government-related data with some visualization tools built-in. Its data as a service has been adopted by more than 1200 government agencies for open data, performance management and data-driven government.  -->
+
+<!-- - [European Union Open Data Portal]()  It is the single point of access to a growing range of data from the institutions and other bodies of the European Union. The data boosts includes economic development within the EU and transparency within the EU institutions, including geographic, geopolitical and financial data, statistics, election results, legal acts, and data on crime, health, the environment, transport and scientific research. They could be reused in different databases and reports. And more, a variety of digital formats are available from the EU institutions and other EU bodies. The portal provides a standardised catalogue, a list of apps and web tools reusing these data, a SPARQL endpoint query editor and rest API access, and tips on how to make best use of the site.  -->
+
+<!-- - [Canada Open Data]() is a pilot project with many government and geospatial datasets. It could help you explore how the Government of Canada creates greater transparency, accountability, increases citizen engagement, and drives innovation and economic opportunities through open data, open information, and open dialogue.  -->
+
+<!-- - [Datacatalogs.org]()  It offers open government data from US, EU, Canada, CKAN, and more.  -->
+
+<!-- - [U.S. National Center for Education Statistics]()  The National Center for Education Statistics (NCES) is the primary federal entity for collecting and analyzing data related to education in the U.S. and other nations.  -->
+
+<!-- - [UK Data Service]()  The UK Data Service collection includes major UK government-sponsored surveys, cross-national surveys, longitudinal studies, UK census data, international aggregate, business data, and qualitative data.  -->
+
+<!-- Crime -->
+
+<!-- - [Uniform Crime Reporting]()  The UCR Program has been the starting place for law enforcement executives, students, researchers, members of the media, and the public seeking information on crime in the US.  -->
+
+<!-- - [FBI Crime Statistics]()  Statistical crime reports and publications detailing specific offenses and outlining trends to understand crime threats at both local and national levels.  -->
+
+<!-- - [Bureau of Justice Statistics]()  Information on anything related to U.S. justice system, including arrest-related deaths, census of jail inmates, national survey of DNA crime labs, surveys of law enforcement gang units, etc.  -->
+
+<!-- - [National Sex Offender Search]()  It is an unprecedented public safety resource that provides the public with access to sex offender data nationwide. It presents the most up-to-date information as provided by each Jurisdiction.  -->
+
+<!-- Health -->
+
+<!-- - [U.S. Food & Drug Administration]()  Here you will find a compressed data file of the Drugs@FDA database. Drugs@FDA, is updated daily, this data file is updated once per week, on Tuesday.  -->
+
+<!-- - [UNICEF]()  UNICEF gathers evidence on the situation of children and women around the world. The data sets include accurate, nationally representative data from household surveys and other sources.  -->
+
+<!-- - [World Health Organisation]()   statistics concerning nutrition, disease and health in more than 150 countries.  -->
+
+<!-- - [Healthdata.gov]()  125 years of US healthcare data including claim-level Medicare data, epidemiology and population statistics.  -->
+
+<!-- - [NHS Health and Social Care Information Centre]()  Health data sets from the UK National Health Service. The organization produces more than 260 official and national statistical publications. This includes national comparative data for secondary uses, developed from the long-running Hospital Episode Statistics which can help local decision makers to improve the quality and efficiency of frontline care.  -->
+
+<!-- Financial and Economic Data -->
+
+<!-- - [World Bank Open Data]()  Education statistics about everything from finances to service delivery indicators around the world.  -->
+
+<!-- - [IMF Economic Data]()  An incredibly useful source of information that includes global financial stability reports, regional economic reports, international financial statistics, exchange rates, directions of trade, and more.  -->
+
+<!-- - [UN Comtrade Database]()  Free access to detailed global trade data with visualizations. UN Comtrade is a repository of official international trade statistics and relevant analytical tables. All data is accessible through API.  -->
+
+<!-- - [Global Financial Data]()  With data on over 60,000 companies covering 300 years, Global Financial Data offers a unique source to analyze the twists and turns of the global economy.  -->
+
+<!-- - [Google Finance]()  Real-time stock quotes and charts, financial news, currency conversions, or tracked portfolios.  -->
+
+<!-- - [Google Public Data Explorer]()  Google's Public Data Explorer provides public data and forecasts from a range of international organizations and academic institutions including the World Bank, OECD, Eurostat and the University of Denver. These can be displayed as line graphs, bar graphs, cross sectional plots or on maps.  -->
+
+<!-- - [U.S. Bureau of Economic Analysis]()  U.S. official macroeconomic and industry statistics, most notably reports about the gross domestic product (GDP) of the United States and its various units. They also provide information about personal income, corporate profits, and government spending in their National Income and Product Accounts (NIPAs).  -->
+
+<!-- - [Financial Data Finder at OSU]()  Plentiful links to anything related to finance, no matter how obscure, including World Development Indicators Online, World Bank Open Data, Global Financial Data, International Monetary Fund Statistical Databases, and EMIS Intelligence.  -->
+
+<!-- - [National Bureau of Economic Research]()  Macro data, industry data, productivity data, trade data, international finance, data, and more.  -->
+
+<!-- - [U.S. Securities and Exchange Commission]()  Quarterly datasets of extracted information from exhibits to corporate financial reports filed with the Commission.  -->
+
+<!-- - [Visualizing Economics]()  Data visualizations about the economy.  -->
+
+<!-- - [Financial Times]()  The Financial Times provides a broad range of information, news and services for the global business community.  -->
+
+<!-- Marketing and Social Media -->
+
+<!-- - [Amazon API]()  Browse Amazon Web Services’ Public Data Sets by category for a huge wealth of information. Amazon API Gateway allows developers to securely connect mobile and web applications to APIs that run on Amazon Web(AWS) Lambda, Amazon EC2, or other publicly addressable web services that are hosted outside of AWS.  -->
+
+<!-- - [American Society of Travel Agents]()  ASTA is the world's largest association of travel professionals. It provides members information including travel agents and the companies whose products they sell such as tours, cruises, hotels, car rentals, etc.  -->
+
+<!-- - [Social Mention]()  Social Mention is a social media search and analysis platform that aggregates user-generated content from across the universe into a single stream of information.  -->
+
+<!-- - [Google Trends]()  Google Trends shows how often a particular search-term is entered relative to the total search-volume across various regions of the world in various languages.  -->
+
+<!-- - [Facebook API]()  Learn how to publish to and retrieve data from Facebook using the Graph API.  -->
+
+<!-- - [Twitter API]()  The Twitter Platform connects your website or application with the worldwide conversation happening on Twitter.  -->
+
+<!-- - [Instagram API]()  The Instagram API Platform can be used to build non-automated, authentic, high-quality apps and services.  -->
+
+<!-- - [Foursquare API]()  The Foursquare API gives you access to our world-class places database and the ability to interact with Foursquare users and merchants.  -->
+
+<!-- - [HubSpot]()  A large repository of marketing data. You could find the latest marketing stats and trends here. It also provides tools for social media marketing, content management, web analytics, landing pages and search engine optimization.  -->
+
+<!-- - [Moz]()  Insights on SEO that includes keyword research, link building, site audits, and page optimization insights in order to help companies to have a better view of the position they have on search engines and how to improve their ranking.  -->
+
+<!-- - [Content Marketing Institute]()  The latest news, studies, and research on content marketing.  -->
+
+<!-- Journalism and Media -->
+
+<!-- - [The New York Times Developer Network]() Search Times articles from 1851 to today, retrieving headlines, abstracts and links to associated multimedia. You can also search book reviews, NYC event listings, movie reviews, top stories with images and more.  -->
+
+<!-- - [Associated Press API]()  The AP Content API allows you to search and download content using your own editorial tools, without having to visit AP portals. It provides access to images from AP-owned, member-owned and third-party, and videos produced by AP and selected third-party.  -->
+
+<!-- - [Google Books Ngram Viewer]()  It is an online search engine that charts frequencies of any set of comma-delimited search strings using a yearly count of n-grams found in sources printed between 1500 and 2008 in Google's text corpora.  -->
+
+<!-- - [Wikipedia Database]()  Wikipedia offers free copies of all available content to interested users.  -->
+
+<!-- - [FiveThirtyEight]()  It is a website that focuses on opinion poll analysis, politics, economics, and sports blogging. The data and code on Github is behind the stories and interactives at FiveThirtyEight.  -->
+
+<!-- - [Google Scholar]()  Google Scholar is a freely accessible web search engine that indexes the full text or metadata of scholarly literature across an array of publishing formats and disciplines. It includes most peer-reviewed online academic journals and books, conference papers, theses and dissertations, preprints, abstracts, technical reports, and other scholarly literature, including court opinions and patents.  -->
+
+<!-- Real Estate -->
+
+<!-- - [Castles]()  Castles are a successful, privately owned independent agency. Established in 1981, they offer a comprehensive service incorporating residential sales, letting and management, and surveys and valuations.  -->
+
+<!-- - [Realestate.com]()  RealEstate.com serves as the ultimate resource for first-time home buyers, offering easy-to-understand tools and expert advice at every stage in the process.  -->
+
+<!-- - [Gumtree]()  Gumtree is the first site for free classifieds ads in the UK. Buy and sell items, cars, properties, and find or offer jobs in your area is all available on the website.  -->
+
+<!-- - [James Hayward]()  It provides an innovative database approach to residential sales, lettings & management.  -->
+
+<!-- - [Lifull Home’s]()  Japan’s property website.  -->
+
+<!-- - [Immobiliare.it]()  Italy’s property website.  -->
+
+<!-- - [Subito]()  Italy’s property website.  -->
+
+<!-- - [Immoweb]()  Belgium's leading property website.  -->
+
+<!-- Business Directory and Review -->
+
+<!-- - [LinkedIn]()  LinkedIn is a business- and employment-oriented social networking service that operates via websites and mobile apps. It has 500 million members in 200 countries and you could find the business directory here.  -->
+
+<!-- - [OpenCorporates]()  OpenCorporates is the largest open database of companies and company data in the world, with in excess of 100 million companies in a similarly large number of jurisdictions. Our primary goal is to make information on companies more usable and more widely available for the public benefit, particularly to tackle the use of companies for criminal or anti-social purposes, for example corruption, money laundering and organised crime.  -->
+
+<!-- - [Yellowpages]()  The original source to find and connect with local plumbers, handymen, mechanics, attorneys, dentists, and more.  -->
+
+<!-- - [Craigslist]()  Craigslist is an American classified advertisements website wi th sections devoted to jobs, housing, personals, for sale, items wanted, services, community, gigs, résumés, and discussion forums. -->
+
+<!-- - [GAF Master Elite Contractor]()  Founded in 1886, GAF has become North America’s largest manufacturer of commercial and residential roofing (Source]()  Fredonia Group study). Our success in growing the company to nearly $3 billion in sales has been a result of our relentless pursuit of quality, combined with industry-leading expertise and comprehensive roofing solutions. Jim Schnepper is the President of GAF, an operating subsidiary of Standard Industries. When you are looking to protect the things you treasure most, here are just some of the reasons why we believe you should choose GAF.  -->
+
+<!-- - [CertainTeed]()  You could find contractors, remodelers, installers or builders in the US or Canada on your residential or commercial project here.  -->
+
+<!-- - [Companies in California]()  All information about companies in California.  -->
+
+<!-- - [Manta]()  Manta is one of the largest online resources that deliver products, services and educational opportunities. The Manta directory boasts millions of unique visitors every month who search comprehensive database for individual businesses, industry segments and geographic-specific listings.  -->
+
+<!-- - [EU-Startups]()  Directory about startups in EU.  -->
+
+<!-- - [Kansas Bar Association]()  Directory for lawyers. The Kansas Bar Association (KBA) was founded in 1882 as a voluntary association for dedicated legal professionals and has more than 7,000 members, including lawyers, judges, law students, and paralegals.  -->
+
+<!-- Other Portal Websites -->
+
+<!-- - [Capterra]()  Directory about business software and reviews.  -->
+
+<!-- - [Monster]()  Data source for jobs and career opportunities.  -->
+
+<!-- - [Glassdoor]()  Directory about jobs and information about inside scoop on companies with employee reviews, personalized salary tools, and more.  -->
+
+<!-- - [The Good Garage Scheme]()  Directory about car service, MOT or car repair.  -->
+
+<!-- - [OSMOZ]()  Information about fragrance.  -->
+
+<!-- - [Octoparse]()  A free data extraction tool to collect all the web data mentioned above online  -->
+
+<!-- --- -->
 
 ## references
 
 <div id="refs">
 
-<div id="ref-Wickham+Grolemund:2017">
+<div id="ref-Knaflic:2018">
 
-Wickham H and Grolemund G (2017) *R for Data Science.* O’Reilly Media,
-Inc., Sebastopol, CA <https://r4ds.had.co.nz/>
+Knaflic CN (2018) Public data sources. <https://tinyurl.com/y3smsxdj>
+
+</div>
+
+<div id="ref-Machlis:2018">
+
+Machlis S (2018) These R packages import sports, weather, stock data and
+more. *Computerworld* (2018-03-07) <http://bit.ly/RDataPkgs>
 
 </div>
 
