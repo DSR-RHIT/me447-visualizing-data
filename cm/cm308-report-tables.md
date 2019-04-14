@@ -2069,8 +2069,8 @@ kable(dat)
 
 | country       | abbr | var1 |        var2 | flag                                             |
 | :------------ | :--- | ---: | ----------: | :----------------------------------------------- |
-| Canada        | ca   |    1 | \-1.0760425 | ![](http://flagpedia.net/data/flags/mini/ca.png) |
-| United Kindom | gb   |    2 | \-0.4167928 | ![](http://flagpedia.net/data/flags/mini/gb.png) |
+| Canada        | ca   |    1 |   0.9999167 | ![](http://flagpedia.net/data/flags/mini/ca.png) |
+| United Kindom | gb   |    2 | \-1.0205930 | ![](http://flagpedia.net/data/flags/mini/gb.png) |
 
 <br> <a href="#top">▲ top of page</a>
 
