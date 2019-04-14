@@ -275,25 +275,6 @@ page</a>
 
 ## references
 
-Citations for the packages tabulated above.
-
-Mount and Zumel ([2019](#ref-R-cdata)[a](#ref-R-cdata)), Wickham and
-François and others ([2019](#ref-R-dplyr)), Wickham
-([2019](#ref-R-forcats)[a](#ref-R-forcats)), Bryan
-([2017](#ref-R-gapminder)), Unwin ([2015](#ref-R-GDAdata)), Wickham and
-Chang and others ([2019](#ref-R-ggplot2)), Layton
-([2019](#ref-R-graphclassmate)), Spinu and others
-([2018](#ref-R-lubridate)), Ooms ([2018](#ref-R-magick)), Layton and
-others ([2018](#ref-R-midfielddata)), Wickham and others
-([2018](#ref-R-readr)), Wickham and Bryan ([2019](#ref-R-readxl)), Chan
-and Leeper ([2018](#ref-R-rio)), Mount ([2019](#ref-R-seplyr)), Healy
-([2019](#ref-R-socviz)), Wickham
-([2019](#ref-R-stringr)[b](#ref-R-stringr)), Müller and Wickham
-([2019](#ref-R-tibble)), Wickham and Henry ([2019](#ref-R-tidyr)), Henry
-and Wickham ([2018](#ref-R-tidyselect)), Friendly
-([2017](#ref-R-vcdExtra)), Yee ([2017](#ref-R-VGAMdata)), Mount and
-Zumel ([2019](#ref-R-wrapr)[b](#ref-R-wrapr))
-
 <div id="refs">
 
 <div id="ref-R-gapminder">
@@ -453,6 +434,26 @@ Yee T (2017) *VGAMdata: Data supporting the ’vgam’ package.*
 </div>
 
 </div>
+
+-----
+
+<small> Citations for references listed above: Mount and Zumel
+([2019](#ref-R-cdata)[a](#ref-R-cdata)), Wickham and François and others
+([2019](#ref-R-dplyr)), Wickham
+([2019](#ref-R-forcats)[a](#ref-R-forcats)), Bryan
+([2017](#ref-R-gapminder)), Unwin ([2015](#ref-R-GDAdata)), Wickham and
+Chang and others ([2019](#ref-R-ggplot2)), Layton
+([2019](#ref-R-graphclassmate)), Spinu and others
+([2018](#ref-R-lubridate)), Ooms ([2018](#ref-R-magick)), Layton and
+others ([2018](#ref-R-midfielddata)), Wickham and others
+([2018](#ref-R-readr)), Wickham and Bryan ([2019](#ref-R-readxl)), Chan
+and Leeper ([2018](#ref-R-rio)), Mount ([2019](#ref-R-seplyr)), Healy
+([2019](#ref-R-socviz)), Wickham
+([2019](#ref-R-stringr)[b](#ref-R-stringr)), Müller and Wickham
+([2019](#ref-R-tibble)), Wickham and Henry ([2019](#ref-R-tidyr)), Henry
+and Wickham ([2018](#ref-R-tidyselect)), Friendly
+([2017](#ref-R-vcdExtra)), Yee ([2017](#ref-R-VGAMdata)), Mount and
+Zumel ([2019](#ref-R-wrapr)[b](#ref-R-wrapr)) </small>
 
 ***
 <a href="#top">&#9650; top of page</a>    
