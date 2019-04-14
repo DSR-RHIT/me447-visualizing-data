@@ -201,7 +201,13 @@ Data carpentry
   - [separate()](cm/cm103-data-reshaping.md#separate)  
   - [WHO group\_by() and
     summarize()](cm/cm103-data-reshaping.md#WHO-group_by\(\)-and-summarize)  
-  - [WHO graphs](cm/cm103-data-reshaping.md#WHO-graphs)
+  - [WHO graphs](cm/cm103-data-reshaping.md#WHO-graphs)  
+  - [Data carpentry with
+    joins](cm/cm105-data-joins.md#data-carpentry-with-joins)  
+  - [MIDFIELD data](cm/cm105-data-joins.md#data)  
+  - [MIDFIELD joins](cm/cm105-data-joins.md#joins)  
+  - [MIDFIELD carpentry](cm/cm105-data-joins.md#carpentry)  
+  - [MIDFIELD design](cm/cm105-data-joins.md#design)
 
 Data exercises
 
@@ -225,6 +231,7 @@ Data exercises
   - [Data reshaping](cm/cm103-data-reshaping.md#exercises)
     `pivot_to_rowrecs()`, `unpivot_to_blocks()`, `rowrecs_to_blocks()`,
     and `blocks_to_rowrecs()`
+  - [Data carpentry with joins](cm/cm105-data-joins.md#exercises)
 
 [▲ index](README.md#index)
 
