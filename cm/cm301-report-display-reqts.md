@@ -151,7 +151,7 @@ graphs are often dot plots or line graphs (especially for time series).
 
 Data requirements
 
-  - Minimum 10 observations  
+  - Minimum 20 observations  
   - One quantitative variable conveying information about human injury
     or fatality  
   - One or two categorical variables, one of which can be time (time
