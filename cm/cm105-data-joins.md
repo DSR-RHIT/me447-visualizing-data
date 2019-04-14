@@ -1,4 +1,4 @@
-joins
+data carpentry with joins
 ================
 
 <img src="../resources/cm105-header.png" width="100%" /> <small> <br>
