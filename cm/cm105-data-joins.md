@@ -1,4 +1,4 @@
-data carpentry with joins
+carpentry with joins
 ================
 
 <img src="../resources/cm105-header.png" width="100%" /> <small> <br>
@@ -355,8 +355,8 @@ grad <- left_join(x = grad, y = engr_major, by = "cip4") %>%
 
 ## carpentry
 
-Before creating graphs, I’d like to clean up the data, The syudent ID
-and gthe CIP codes are no longer needed.
+Before creating graphs, I’d like to clean up the data, The student ID
+and the CIP codes are no longer needed.
 
 ``` r
 grad <- grad %>% 
@@ -384,7 +384,7 @@ grad <- grad %>%
 #> $ race  <chr> "Black", "White", "White", "White", "White", "White", "W...
 ```
 
-Recode the institution values by shortening the strin “Institution” to
+Recode the institution values by shortening the string “Institution” to
 “Inst”.
 
 ``` r
@@ -400,7 +400,7 @@ grad <- grad %>%
 ```
 
 Create a new variable `race_sex` that unites race and sex—a useful
-variable in this tyope of graph.
+variable in this type of graph.
 
 ``` r
 grad <- grad %>%
@@ -417,9 +417,9 @@ grad <- grad %>%
 
 ## design
 
-Use `count()` to quickly group and summaraize, then convert the
-character variables into factors ordered by `n` (`count()` creates a
-variable `n`).
+Use `count()` to quickly group and summarize, then convert the character
+variables into factors ordered by `n` (`count()` creates a variable
+`n`).
 
 ``` r
 grad1 <- grad %>% 
@@ -442,8 +442,8 @@ ggplot(data = grad1, mapping = aes(x = n, y = race_sex)) +
 
 <img src="images/cm105-unnamed-chunk-20-1.png" width="70%" />
 
-Not all populations are present at all instuitutions, so I’ll do a
-recount, this time omitting institution. Cy eliminating this category, I
+Not all populations are present at all institutions, so I’ll do a
+recount, this time omitting institution. By eliminating this category, I
 can use race and sex separately.
 
 ``` r

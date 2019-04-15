@@ -15,10 +15,8 @@ data and functions index
 
 I’ll sometimes recall that I used a particular data set or function in a
 tutorial but can’t remember which one. This index is meant to help us
-find at least one tutorial in which a function or data set is used.
-
-    #> Loading package: midfielddata 
-    #> Loading package: socviz
+find at least one tutorial in which a function or data set is
+used.
 
 ## data
 
