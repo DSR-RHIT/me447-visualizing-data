@@ -6,6 +6,18 @@ data sources
 <a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode">CC
 BY-SA 2.0</a> <br> </small>
 
+Many R packages include bundled data to help one learn about the package
+functionality. Such data, while excellent for practice, are generally
+unsuitable for portfolio displays because they have been “tamed”—much of
+the work of creating an effective graph (and therefore much of the
+learning in the course) is in obtaining data “in the wild” and
+performing the necessary data carpentry to tame it yourself.
+
+An exception can be made for *R data packages* such as the
+[midfielddata](https://midfieldr.github.io/midfielddata/) package where
+the *package is the source*, that is, the package provides public access
+to data that is otherwise unavailable.
+
 ## contents
 
 [introduction](#introduction)  
@@ -41,24 +53,25 @@ data—with two exceptions:
 
 ## packages to import data
 
-Some R packages are designed to simplify the process of importing data
-from specific sources such as the US Census, the Federal Reserve, NOAA,
-Twitter, Google, etc. For
-    example,
+[R packages to import public data](http://bit.ly/RDataPkgs) by Machlis
+([2018](#ref-Machlis:2018)): R packages designed to help you access
+public data. These packages vastly simplify the process of obtaining
+data from public sources such as the Census or the Federal Reserve.
+Follow the link and scroll down to the table for the complete list. For
+example,
 
   - [tidycensus](https://walkerke.github.io/tidycensus/articles/basic-usage.html)
-    to import data from the US
+    package for importing data from the US
     Census  
   - [rtweet](https://cran.r-project.org/web/packages/rtweet/vignettes/intro.html)
-    to import data from Twitter  
-  - [FredR](https://github.com/jcizel/FredR) to import data from the
-    Federal Reserve  
-  - [rnoaa](https://ropensci.org/tutorials/rnoaa_tutorial/) to import
-    data from the National Oceanic and Atmospheric Administration
-
-See [R packages to import public data](http://bit.ly/RDataPkgs) by
-Machlis ([2018](#ref-Machlis:2018)) for the complete
-    list.
+    package for importing data from Twitter  
+  - [FredR](https://github.com/jcizel/FredR) package for importing data
+    from the Federal Reserve  
+  - [rnoaa](https://ropensci.org/tutorials/rnoaa_tutorial/) package for
+    importing data from the National Oceanic and Atmospheric
+    Administration  
+  - and many
+    more
 
 ## health
 
@@ -111,7 +124,7 @@ Machlis ([2018](#ref-Machlis:2018)) for the complete
     Part of the UC Berkeley library system. Hey, they’ve even on
     Twitter.
   - [Data and Story Library](https://dasl.datadescription.com/) An
-    online library of datafiles and stories that illustrate the use of
+    online library of data files and stories that illustrate the use of
     basic statistics methods, from Carnegie Mellon
   - [UC Irvine Machine Learning
     Repository](http://archive.ics.uci.edu/ml/index.php) Nearly 400
@@ -136,14 +149,14 @@ Machlis ([2018](#ref-Machlis:2018)) for the complete
     communities across the US.
   - [TIGER](https://www.census.gov/geo/maps-data/data/tiger.html) From
     the US Census Bureau, detailed data about roads, railroads, rivers,
-    and zipcodes. Probably the most extensive you’re going to find.
+    and zip codes. Probably the most extensive you’re going to find.
 
 ## news organizations
 
   - [The Economist](https://www.economist.com/markets-data) markets &
     data.
   - [FiveThirtyEight](https://fivethirtyeight.com/) Datasets used in its
-    articles available via Github repository.
+    articles available via GitHub repository.
   - [Guardian Datablog](https://www.theguardian.com/data) Provides a lot
     of free-to-use data via Google spreadsheets.
   - [PermID from Thomson Reuters](https://permid.org/) PermIDs are open,
@@ -194,7 +207,7 @@ Machlis ([2018](#ref-Machlis:2018)) for the complete
     relating to the London.
   - [Toronto Open
     Data](https://www.toronto.ca/city-government/data-research-maps/open-data/)
-    Open data catalogue from city of Toronto.
+    Open data catalog from city of Toronto.
   - [Transport for
     London](https://tfl.gov.uk/info-for/open-data-users/our-open-data?intcmp=3671#on-this-page-5)
     TFL data feeds.
@@ -233,7 +246,7 @@ Machlis ([2018](#ref-Machlis:2018)) for the complete
     markets to solar photovoltaic projects to MTA turnstile usage.
   - [Office for National Statistics](https://www.ons.gov.uk/) The UK’s
     largest independent producer of official statistics and the
-    recognised national statistical institute of the UK.
+    recognized national statistical institute of the UK.
   - [Ontario Open Data](https://www.ontario.ca/search/data-catalogue)
     Open data from the provincial government of Ontario, Canada
   - [Open Data Nederland](https://opendatanederland.org/) Open data from

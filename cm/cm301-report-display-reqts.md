@@ -6,14 +6,18 @@ portfolio data requirements
 under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY
 2.0</a> <br><br> </small>
 
-See a sample of a portfolio skeleton at
-<https://github.com/graphdr/portfolio-sample>.  
-The table summarizes the basic data structure for all portfolio
-graphs.  
-More detailed requirements are provided
-below.
+Many R packages include bundled data to help one learn about the package
+functionality. Such data, while excellent for practice, are generally
+unsuitable for portfolio displays because they have been “tamed”—much of
+the work of creating an effective graph (and therefore much of the
+learning in the course) is in obtaining data “in the wild” and
+performing the necessary data carpentry to tame it yourself.
 
-<!-- Quantitative variables are typically continuous. If you encounter a quantitative variable (other than time) that is discrete rather than continuous, please consult with me on its suitability for your graph.   -->
+An exception can be made for *R data packages* such as the
+[midfielddata](https://midfieldr.github.io/midfielddata/) package where
+the *package is the source*, that is, the package provides public access
+to data that is otherwise
+unavailable.
 
 | display                                                     | type                                                                                               | quantitative  | categorical   |
 | :---------------------------------------------------------- | :------------------------------------------------------------------------------------------------- | :------------ | :------------ |
@@ -170,7 +174,7 @@ Tutorials and samples
   - Sample line graph: dataset name  
   - [Sample bar graph: Borderline personality
     disorder](../resources/bipolar-disorder-bar-chart.png) and the most
-    common co-occuring disorders. One quantitative variable, one
+    common co-occurring disorders. One quantitative variable, one
     categorical variable with 8 levels, 8 observations, one of which has
     a range (self-injury, 55–85%).
 
