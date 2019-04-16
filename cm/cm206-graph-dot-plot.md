@@ -187,7 +187,7 @@ ggplot(df, aes(x = income, y = rate, color = race)) +
         facet_wrap(vars(age), as.table = FALSE)
 ```
 
-<img src="images/cm206-unnamed-chunk-9-1.png" width="70%" />
+<img src="images/cm206-unnamed-chunk-8-1.png" width="70%" />
 
 We see right away that the two extreme age groups can be omitted from
 the dataset.
@@ -202,7 +202,7 @@ ggplot(df, aes(x = rate, y = age, color = race)) +
         facet_wrap(vars(region), as.table = FALSE)
 ```
 
-<img src="images/cm206-unnamed-chunk-10-1.png" width="70%" />
+<img src="images/cm206-unnamed-chunk-9-1.png" width="70%" />
 
 I think the age groups would be better along the x-axis. And this time,
 when we use facets, we’ll use two variables, race and region, and
@@ -221,7 +221,7 @@ ggplot(df, aes(x = age, y = rate, color = race)) +
         facet_grid(rows = vars(region), cols = vars(race), as.table = FALSE)
 ```
 
-<img src="images/cm206-unnamed-chunk-11-1.png" width="70%" />
+<img src="images/cm206-unnamed-chunk-10-1.png" width="70%" />
 
   - The mortality rates for Black infants is much higher than the other
     race/ethnic groups
@@ -236,7 +236,7 @@ ggplot(df, aes(x = income, y = rate, color = race)) +
         facet_grid(rows = vars(age), cols = vars(race), as.table = FALSE)
 ```
 
-<img src="images/cm206-unnamed-chunk-12-1.png" width="70%" />
+<img src="images/cm206-unnamed-chunk-11-1.png" width="70%" />
 
 So again, really no income effect, possibly because county median income
 is too coarse a measure. Had we looked at the mother’s family income we
@@ -420,7 +420,7 @@ p <- ggplot(data = df, mapping = aes(x = age, y = rate)) +
 p
 ```
 
-<img src="images/cm206-unnamed-chunk-21-1.png" width="70%" />
+<img src="images/cm206-unnamed-chunk-20-1.png" width="70%" />
 
 I think one row would serve us better
 
@@ -430,7 +430,7 @@ p <- p +
 p
 ```
 
-<img src="images/cm206-unnamed-chunk-22-1.png" width="70%" />
+<img src="images/cm206-unnamed-chunk-21-1.png" width="70%" />
 
 Let’s make the axis labels clear. Including `\n` in the character string
 adds a line space between the label and the graph.
@@ -443,7 +443,7 @@ p <- p +
 p
 ```
 
-<img src="images/cm206-unnamed-chunk-23-1.png" width="70%" />
+<img src="images/cm206-unnamed-chunk-22-1.png" width="70%" />
 
 To address the overprinting in the x-axis, I’m going to edit the levels
 of the age category by changing them to an integer that is the upper
@@ -460,7 +460,7 @@ p <- p %+%
 p
 ```
 
-<img src="images/cm206-unnamed-chunk-24-1.png" width="70%" />
+<img src="images/cm206-unnamed-chunk-23-1.png" width="70%" />
 
 ## design aesthetics
 
@@ -489,7 +489,7 @@ p <- p +
 p
 ```
 
-<img src="images/cm206-unnamed-chunk-25-1.png" width="70%" />
+<img src="images/cm206-unnamed-chunk-24-1.png" width="70%" />
 
 Next I’ll increase the data marker size, use the shape `21` that has
 separate border color and fill color. Then I can add `fill = race` to
@@ -503,7 +503,7 @@ p <- p +
 p
 ```
 
-<img src="images/cm206-unnamed-chunk-26-1.png" width="70%" />
+<img src="images/cm206-unnamed-chunk-25-1.png" width="70%" />
 
 To directly label specific data markers in one panel only, I create a
 new data frame. Then inside `geom_text()` I assign the new data frame
