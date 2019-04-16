@@ -606,9 +606,9 @@ child  <- image_quantize(child,  max = 10, colorspace = "gray")
 mother <- image_quantize(mother, max = 10, colorspace = "gray")
 ```
 
-<img src="C:\Users\layton\AppData\Local\Temp\Rtmp4cXbMS\file1b90109f7725.png" width="30%" />
+<img src="C:\Users\layton\AppData\Local\Temp\Rtmp6lhOTh\file3f3038971c8b.png" width="30%" />
 
-<img src="C:\Users\layton\AppData\Local\Temp\Rtmp4cXbMS\file1b901df46267.png" width="20%" />
+<img src="C:\Users\layton\AppData\Local\Temp\Rtmp6lhOTh\file3f3021ec5da4.png" width="20%" />
 
 <br> Adjust the brightness and contrast
 
@@ -618,7 +618,7 @@ mother <- image_modulate(mother, brightness = 200)
 mother <- image_contrast(mother, sharpen = 0)
 ```
 
-<img src="C:\Users\layton\AppData\Local\Temp\Rtmp4cXbMS\file1b9072a42472.png" width="20%" />
+<img src="C:\Users\layton\AppData\Local\Temp\Rtmp6lhOTh\file3f30361f7093.png" width="20%" />
 
 <br> Overlay a partially opaque white rectangle to soften the images
 
@@ -628,9 +628,9 @@ child  <- image_colorize(child,  opacity = 25, color = "white")
 mother <- image_colorize(mother, opacity = 25, color = "white")
 ```
 
-<img src="C:\Users\layton\AppData\Local\Temp\Rtmp4cXbMS\file1b905e92320.png" width="30%" />
+<img src="C:\Users\layton\AppData\Local\Temp\Rtmp6lhOTh\file3f304dba1c79.png" width="30%" />
 
-<img src="C:\Users\layton\AppData\Local\Temp\Rtmp4cXbMS\file1b9055933ed4.png" width="20%" />
+<img src="C:\Users\layton\AppData\Local\Temp\Rtmp6lhOTh\file3f303ef23a37.png" width="20%" />
 
 <br> Scale the images to the same width and join them together
 
@@ -643,7 +643,7 @@ mother <- image_scale(mother, "500")
 people <- image_append(c(child, mother), stack = TRUE)
 ```
 
-<img src="C:\Users\layton\AppData\Local\Temp\Rtmp4cXbMS\file1b9049456e69.png" width="20%" />
+<img src="C:\Users\layton\AppData\Local\Temp\Rtmp6lhOTh\file3f305fd673d3.png" width="20%" />
 
 <br> Add a stippling effect and a border
 
@@ -655,7 +655,7 @@ people <- image_noise(people)
 people <- image_border(people, rcb("pale_Gray"), "15x15")
 ```
 
-<img src="C:\Users\layton\AppData\Local\Temp\Rtmp4cXbMS\file1b905fab1f3e.png" width="20%" />
+<img src="C:\Users\layton\AppData\Local\Temp\Rtmp6lhOTh\file3f3015e85cfe.png" width="20%" />
 
 <br> Add the same border to the graph, scale them to the same height,
 and join them
@@ -672,7 +672,7 @@ the_graph <- image_scale(the_graph, "x500")
 final_img <- image_append(c(people, the_graph), stack = FALSE)
 ```
 
-<img src="C:\Users\layton\AppData\Local\Temp\Rtmp4cXbMS\file1b902ad66aba.png" width="100%" />
+<img src="C:\Users\layton\AppData\Local\Temp\Rtmp6lhOTh\file3f30ffc3ff0.png" width="100%" />
 
 <br> Create a headline box, scaled to match the width of the graph
 image.
@@ -697,7 +697,7 @@ text_box <- image_annotate(text_box,
         font     = "Georgia")
 ```
 
-<img src="C:\Users\layton\AppData\Local\Temp\Rtmp4cXbMS\file1b90767e2414.png" width="100%" />
+<img src="C:\Users\layton\AppData\Local\Temp\Rtmp6lhOTh\file3f30215c2a2b.png" width="100%" />
 
 <br> And join the headline to the figure
 
