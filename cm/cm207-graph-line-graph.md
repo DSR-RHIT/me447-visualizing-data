@@ -74,7 +74,7 @@ Source, and compare your results to the results shown.
 ## time series with separate year month day
 
 From the help page (`? airquality`) we find that these data were
-obatained in 1973, and the month and day are in separate columns.
+obtained in 1973, and the month and day are in separate columns.
 
 ``` r
 glimpse(airquality)
@@ -179,12 +179,20 @@ text at the top of the file.
 ``` r
 co2 <- read.table(co2_file)
 names(co2) <- c("year", "month", "decimal_date", "average",
-                   "interpolated", "trend", "ndays") %>% 
-    glimpse()
-#>  chr [1:7] "year" "month" "decimal_date" "average" "interpolated" ...
+                   "interpolated", "trend", "ndays") 
+glimpse(co2)
+#> Observations: 733
+#> Variables: 7
+#> $ year         <int> 1958, 1958, 1958, 1958, 1958, 1958, 1958, 1958, 1...
+#> $ month        <int> 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6...
+#> $ decimal_date <dbl> 1958.208, 1958.292, 1958.375, 1958.458, 1958.542,...
+#> $ average      <dbl> 315.71, 317.45, 317.50, -99.99, 315.86, 314.93, 3...
+#> $ interpolated <dbl> 315.71, 317.45, 317.50, 317.10, 315.86, 314.93, 3...
+#> $ trend        <dbl> 314.62, 315.29, 314.71, 314.85, 314.98, 315.94, 3...
+#> $ ndays        <int> -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -...
 ```
 
-Make the missing vales explicit NA.
+Make the missing values explicit NA.
 
 ``` r
 co2 <- co2 %>% 
@@ -225,7 +233,7 @@ ggplot(co2, aes(x = date_meas, y = interpolated)) +
 ## edit the date scale
 
 ggplot2 has scale functions for dates. here we can set the interval
-between tick marks tp 5 years.
+between tick marks to 5 years.
 
 ``` r
 ggplot(co2, aes(x = date_meas, y = interpolated)) +
@@ -262,16 +270,66 @@ ggplot(co2, aes(x = date_meas, y = interpolated)) +
 
 <img src="images/cm207-unnamed-chunk-14-1.png" width="78.75%" />
 
+Let’s replace the strip label (months 1 through 12) with month
+abbreviations, Jan, Feb, etc.
+
+``` r
+co2 <- co2 %>% 
+    mutate(month_abbrev = month.abb[month]) %>% 
+    glimpse()
+#> Observations: 733
+#> Variables: 9
+#> $ year         <int> 1958, 1958, 1958, 1958, 1958, 1958, 1958, 1958, 1...
+#> $ month        <int> 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6...
+#> $ decimal_date <dbl> 1958.208, 1958.292, 1958.375, 1958.458, 1958.542,...
+#> $ average      <dbl> 315.71, 317.45, 317.50, NA, 315.86, 314.93, 313.2...
+#> $ interpolated <dbl> 315.71, 317.45, 317.50, 317.10, 315.86, 314.93, 3...
+#> $ trend        <dbl> 314.62, 315.29, 314.71, 314.85, 314.98, 315.94, 3...
+#> $ ndays        <int> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N...
+#> $ date_meas    <date> 1958-03-17, 1958-04-17, 1958-05-17, 1958-06-17, ...
+#> $ month_abbrev <chr> "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", ...
+```
+
+My abbreviation needs to be a factor,
+
+``` r
+co2 <- co2 %>% 
+    mutate(month_abbrev = factor(month_abbrev, levels = month.abb)) %>% 
+    glimpse()
+#> Observations: 733
+#> Variables: 9
+#> $ year         <int> 1958, 1958, 1958, 1958, 1958, 1958, 1958, 1958, 1...
+#> $ month        <int> 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6...
+#> $ decimal_date <dbl> 1958.208, 1958.292, 1958.375, 1958.458, 1958.542,...
+#> $ average      <dbl> 315.71, 317.45, 317.50, NA, 315.86, 314.93, 313.2...
+#> $ interpolated <dbl> 315.71, 317.45, 317.50, 317.10, 315.86, 314.93, 3...
+#> $ trend        <dbl> 314.62, 315.29, 314.71, 314.85, 314.98, 315.94, 3...
+#> $ ndays        <int> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N...
+#> $ date_meas    <date> 1958-03-17, 1958-04-17, 1958-05-17, 1958-06-17, ...
+#> $ month_abbrev <fct> Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec,...
+```
+
+OK
+
+``` r
+ggplot(co2, aes(x = date_meas, y = interpolated)) +
+    geom_line() +
+    scale_x_date(date_breaks = "10 years", date_labels = "%y") +
+    facet_wrap(vars(month_abbrev))
+```
+
+<img src="images/cm207-unnamed-chunk-17-1.png" width="78.75%" />
+
 ## line color by group
 
 ``` r
-ggplot(co2, aes(x = date_meas, y = interpolated, group = month, color = month)) +
+ggplot(co2, aes(x = date_meas, y = interpolated, group = month_abbrev, color = month_abbrev)) +
     geom_line() +
     scale_x_date(date_breaks = "5 years", date_labels = "%Y") +
     guides(color = guide_legend(reverse = FALSE)) 
 ```
 
-<img src="images/cm207-unnamed-chunk-15-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-18-1.png" width="78.75%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -329,15 +387,16 @@ crimea <- unpivot_to_blocks(
 ```
 
 The graph with the same scales shows how significant disease was
-comapred to other causes of death.
+compared to other causes of death.
 
 ``` r
 ggplot(data = crimea, mapping = aes(x = Date, y = rate)) + 
     geom_line() +
-  facet_wrap(vars(cause), ncol = 1)
+  facet_wrap(vars(cause), ncol = 1) +
+    scale_x_date(date_breaks = "4 months", date_labels = "%b %Y")
 ```
 
-<img src="images/cm207-unnamed-chunk-18-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-21-1.png" width="78.75%" />
 
 However, if we want to see specific values, we can free the y scales.
 Each panel has its own scale.
@@ -345,10 +404,11 @@ Each panel has its own scale.
 ``` r
 ggplot(data = crimea, mapping = aes(x = Date, y = rate)) + 
     geom_line() +
-  facet_wrap(vars(cause), ncol = 1, scales = "free_y")
+  facet_wrap(vars(cause), ncol = 1, scales = "free_y") +
+    scale_x_date(date_breaks = "4 months", date_labels = "%b %Y")
 ```
 
-<img src="images/cm207-unnamed-chunk-19-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-22-1.png" width="78.75%" />
 
 <br> <a href="#top">▲ top of page</a>
 
