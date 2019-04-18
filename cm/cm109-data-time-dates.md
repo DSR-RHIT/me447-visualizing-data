@@ -13,6 +13,7 @@ time and dates
 [the Date class](#the-date-class)  
 [the POSIXct class](#the-posixct-class)  
 [creating date-time objects](#creating-date-time-objects)  
+[decimal dates](#decimal-dates)  
 [math with date-times](#math-with-date-times)  
 [references](#references)
 
@@ -36,8 +37,8 @@ To add to our confusion, R includes [more than one class of time series
 variables](https://cran.r-project.org/web/views/TimeSeries.html). We
 will generally use class `Date`, but we will sometimes encounter class
 `POSIXct` ([POSIX](https://en.wikipedia.org/wiki/POSIX) calendar time)
-and class `ts` (time series). Time series are not dates precisely, so
-they are discussed in a separate tutorial.
+and class `ts` (time series). Time-Series objects are not dates
+precisely, so they are discussed in a separate tutorial.
 
   - class `Date` are calendar dates as the number of days since the
     beginning of 1970  
@@ -45,6 +46,7 @@ they are discussed in a separate tutorial.
     beginning of 1970  
   - class `ts` are time-series objects, typically numeric data vectors,
     that are observed at equally-spaced time intervals in time.
+  - class `numeric` for decimal dates
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -336,6 +338,65 @@ date/times](https://r4ds.had.co.nz/dates-and-times.html#creating-datetimes)
 in the text.
 
 <br> <a href="#top">▲ top of page</a>
+
+## decimal dates
+
+Decimal dates are floating point numbers `yyyy.nnn` where `nnn`
+represents the time, day, and month to the nearest 1/1000 of the year.
+For example, 9am on 2019-04-18 to the nearest 1/1000 year is 2019.294.
+
+You can create decimal dates from POSIXct date using `decimal_date()`.
+
+``` r
+(x <- "2019-04-18 00:00 EDT")
+#> [1] "2019-04-18 00:00 EDT"
+
+(x_posix   <- ymd_hm(x, tz = "US/Eastern"))
+#> [1] "2019-04-18 EDT"
+
+(x_decimal <- decimal_date(x_posix))
+#> [1] 2019.293
+class(x_decimal)
+#> [1] "numeric"
+```
+
+Decimal dates have a finite resolution. For example, if I add 4 hours to
+the previous date, I get the same decimal result. But adding 5 hours,
+and I get the next decimal. So the uncertainty in a decimal date is
+between 4 and 5 hours.
+
+``` r
+# the previous date-time plus 3 hours
+x <- "2019-04-18 04:00 EDT"
+x_posix   <- ymd_hm(x, tz = "US/Eastern")
+(x_decimal <- decimal_date(x_posix))
+#> [1] 2019.293
+
+# add one more hour
+x <- "2019-04-18 05:00 EDT"
+x_posix   <- ymd_hm(x, tz = "US/Eastern")
+(x_decimal <- decimal_date(x_posix))
+#> [1] 2019.294
+```
+
+If you encounter decimal dates in a data frame, they can be converted to
+POSIXct using `date_decimal()` and then to Date class using `as
+_date()`.
+
+``` r
+(x_decimal <- 219.294) 
+#> [1] 219.294
+
+(x_posix <- date_decimal(x_decimal))
+#> [1] "0219-04-18 07:26:24 UTC"
+class(x_posix)
+#> [1] "POSIXct" "POSIXt"
+
+(x_date <- as_date(x_posix))
+#> [1] "0219-04-18"
+class(x_date)
+#> [1] "Date"
+```
 
 ## math with date-times
 

@@ -5,226 +5,65 @@ line graphs and dates
 
 Notes: introduce the idea of using a separate data frame to add lines,
 with a data argument and aes() argument in the geom layer instead of the
-plot layer.
+plot
+layer.
 
 ## contents
 
 [introduction](#introduction)  
 [prerequisites](#prerequisites)  
-[date type and attributes](#date-type-and-attributes)  
-[creating
-dates](#creating-dates)  
-[explore](#explore)  
-[carpentry](#carpentry)  
-[design](#design)  
-[report](#report)  
-[exercises](#exercises)  
+\[\]  
+\[\]  
+\[\]  
+\[\]  
+\[\]  
 [references](#references)
 
 <http://homepage.stat.uiowa.edu/~luke/classes/STAT4580/timeseries.html#time-series-objects>
 
 ## introduction
 
-“Dates and times are hard because they have to reconcile two physical
-phenomena (the rotation of the Earth and its orbit around the sun) with
-a whole raft of geopolitical phenomena including months, time zones, and
-Daylight Savings Time” (Wickham and Grolemund,
-[2017](#ref-Wickham+Grolemund:2017),
-[Ch. 16](https://r4ds.had.co.nz/dates-and-times.html)). Adding to these
-inherent difficulties, data are often mssing, intervals may be
-irregular, and different organizations use different formats, e.g.,
-“2019-04-16”, “16 Apr 2019”, “04/16/2019”
-
-To add to the complexity, there are many [time series
-classes](https://cran.r-project.org/web/views/TimeSeries.html) in R. I
-will adhere primarily to the `Date` class, though we may have to deal
-with the `ts` (time series) and `POSIXct`
-([POSIX](https://en.wikipedia.org/wiki/POSIX) calendar time) classes
-from time to time.
-
-Being able to deal with dates is important, however, becuase so much
-data is collected with date or time variables, for example, economic
-indicators, climate data, medical research data, etc.
-
-Time series data is often graphed with lines (using `geom_line`) with or
-without data markers (`geom_point`). Thus, this tutorial on line graphs
-is paired with an introduction to dates, times, and the lubridate
-package.
+Line graphs are often used for time-series data, thus this tutorial is
+paired with an introduction to dates, times, and the lubridate package.
 
 <br> <a href="#top">▲ top of page</a>
 
 ## prerequisites
 
+Project setup
+
+  - Start every work session by launching the RStudio Project file for
+    the course, e.g., `portfolio.Rproj`  
+  - Ensure your [project directory
+    structure](cm501-proj-m-manage-files.md#planning-the-directory-structure)
+    satisfies the course requirements
+
+Ensure you have installed the following packages. See [install
+packages](cm902-software-studio.md#install-packages) for instructions if
+needed.
+
+  - tidyverse  
   - lubridate
 
-<!-- end list -->
+Scripts to initialize
+
+``` 
+explore/     0603-line-graph-explore.R  
+```
+
+And start with a minimal header
 
 ``` r
+# your name
+# date
+
+# load packages
 library("tidyverse")
 library("lubridate")
 ```
 
-<br> <a href="#top">▲ top of page</a>
-
-## date type and attributes
-
-Like factors, the `Date` class are displayed as character strings but
-are encoded as numeric values. In this example, I start with a chacter
-vector, convert it to a Date using `lubridate::ymd()`,
-
-``` r
-x <- c("2019-03-01", "2019-06-01", "2019-09-01", "2019-12-01")
-typeof(x)
-#> [1] "character"
-
-x_date <- ymd(x)
-x_date
-#> [1] "2019-03-01" "2019-06-01" "2019-09-01" "2019-12-01"
-
-typeof(x_date)
-#> [1] "double"
-attributes(x_date)
-#> $class
-#> [1] "Date"
-```
-
-The Date class in base R are internally stored as the number of days
-since 1970-01-01. If we `unclass()` the variable, we remove the class
-and reveal the hidden numbers.
-
-``` r
-x_date <- ymd("1971-01-01")
-x_date
-#> [1] "1971-01-01"
-unclass(x_date)
-#> [1] 365
-
-x_date <- ymd("1970-01-01")
-x_date
-#> [1] "1970-01-01"
-unclass(x_date)
-#> [1] 0
-
-x_date <- ymd("1969-01-01")
-x_date
-#> [1] "1969-01-01"
-unclass(x_date)
-#> [1] -365
-
-# leap years are accounted for
-x_date <- ymd("1968-01-01")
-x_date
-#> [1] "1968-01-01"
-unclass(x_date)
-#> [1] -731
-```
-
-Because of these hidden numbers, dates are always ordered.
-
-<br> <a href="#top">▲ top of page</a>
-
-## creating dates
-
-Lubridate has some simple functions for converting the most common date
-strings into `Date` objects.
-
-  - `ymd()` for a string “2017-01-31”
-
-<!-- end list -->
-
-``` r
-(x <- "2017-01-31")
-#> [1] "2017-01-31"
-(z <- ymd(x))
-#> [1] "2017-01-31"
-
-class(z)
-#> [1] "Date"
-attributes(z)
-#> $class
-#> [1] "Date"
-unclass(z)
-#> [1] 17197
-```
-
-  - `mdy()` for a string “January 31st, 2017” or “01/31/17”
-
-<!-- end list -->
-
-``` r
-x <- "January 31st, 2017"
-mdy(x)
-#> [1] "2017-01-31"
-
-class(x)
-#> [1] "character"
-class(ymd(x))
-#> [1] "Date"
-
-
-x <- "01/31/2017"
-mdy(x)
-#> [1] "2017-01-31"
-
-class(x)
-#> [1] "character"
-class(mdy(x))
-#> [1] "Date"
-```
-
-  - `dmy()` for a string “31-Jan-2017”
-
-<!-- end list -->
-
-``` r
-x <- "31-Jan-2017"
-dmy(x)
-#> [1] "2017-01-31"
-
-class(x)
-#> [1] "character"
-class(dmy(x))
-#> [1] "Date"
-```
-
-  - `make_date()` when the year, month, and day are separate variables,
-    like you might find in a data frame. The variables can be character
-    or numeric.
-
-<!-- end list -->
-
-``` r
-yyyy <- "2017" 
-mm   <- "1"
-dd   <- "31" 
-z    <- make_date(year = yyyy, month = mm, day = dd)
-z
-#> [1] "2017-01-31"
-class(z)
-#> [1] "Date"
-
-yyyy <- 2017 
-mm   <- 1
-dd   <- 31 
-z    <- make_date(year = yyyy, month = mm, day = dd)
-z
-#> [1] "2017-01-31"
-class(z)
-#> [1] "Date"
-```
-
-For more on creating dates, read [16.2 Creating
-date/times](https://r4ds.had.co.nz/dates-and-times.html#creating-datetimes)
-in the text.
-
-``` r
-z <- ymd("1969-01-01")
-attributes(z)
-#> $class
-#> [1] "Date"
-unclass(z)
-#> [1] -365
-```
+Duplicate the lines of code in the session one chunk at a time. Save,
+Source, and compare your results to the results shown.
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -277,7 +116,7 @@ ggplot(df, aes(x = meas_date, y = Ozone)) +
     coord_fixed(ratio = 2/20)
 ```
 
-<img src="images/cm207-unnamed-chunk-11-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-5-1.png" width="78.75%" />
 
 omit missing values
 
@@ -296,23 +135,40 @@ ggplot(df, aes(x = meas_date, y = Solar.R)) +
     coord_fixed(ratio = 1/20)
 ```
 
-<img src="images/cm207-unnamed-chunk-12-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-6-1.png" width="78.75%" />
 
 ``` r
 library(lubridate)
-url <- "ftp://aftp.cmdl.noaa.gov/products/trends/co2/co2_mm_mlo.txt"
+co2_ftp <- "ftp://aftp.cmdl.noaa.gov/products/trends/co2/co2_mm_mlo.txt"
+co2_file <- "data/noaa_co2.txt"
 
-if (! file.exists("data/co2new.dat") ||
-    now() > file.mtime("data/co2new.dat") + weeks(4))
-    {download.file(url, "data/co2new.dat")}
+# update file if more than 4 weeks since last download
+if (!file.exists(co2_file) | now() > file.mtime(co2_file) + weeks(4)) {
+    download.file(co2_ftp, co2_file)
+}
+```
 
+If you open the text file, you see that missing data are encoded using
+-99.99 and the column names are
+    shown.
 
-co2new <- read.table("data/co2new.dat")
+    # CO2 expressed as a mole fraction in dry air, micromol/mol, abbreviated as ppm
+    #
+    #  (-99.99 missing data;  -1 no data for #daily means in month)
+    #
+    #            decimal     average   interpolated    trend    #days
+    #             date                             (season corr)
+    1958   3    1958.208      315.71      315.71      314.62     -1
+    1958   4    1958.292      317.45      317.45      315.29     -1
+    1958   5    1958.375      317.50      317.50      314.71     -1
+    1958   6    1958.458      -99.99      317.10      314.85     -1
 
-names(co2new) <- c("year", "month", "decimal_data", "average",
+``` r
+co2 <- read.table(co2_file)
+names(co2) <- c("year", "month", "decimal_data", "average",
                    "interpolated", "trend", "ndays")
 
-glimpse(co2new)
+glimpse(co2)
 #> Observations: 733
 #> Variables: 7
 #> $ year         <int> 1958, 1958, 1958, 1958, 1958, 1958, 1958, 1958, 1...
@@ -322,10 +178,12 @@ glimpse(co2new)
 #> $ interpolated <dbl> 315.71, 317.45, 317.50, 317.10, 315.86, 314.93, 3...
 #> $ trend        <dbl> 314.62, 315.29, 314.71, 314.85, 314.98, 315.94, 3...
 #> $ ndays        <int> -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -...
-co2new <- mutate(co2new, average = ifelse(average < -90, NA, average))
+co2 <- co2 %>% 
+    mutate(average = ifelse(average < -90, NA, average)) %>% 
+    mutate(ndays = ifelse(ndays == -1, NA, ndays))
 
-co2new <- co2new %>% 
-    mutate(yyyymmdd = date_decimal(decimal_data)) %>% 
+co2 <- co2 %>% 
+    mutate(co2_date = date_decimal(decimal_data)) %>% 
     glimpse()
 #> Observations: 733
 #> Variables: 8
@@ -335,14 +193,14 @@ co2new <- co2new %>%
 #> $ average      <dbl> 315.71, 317.45, 317.50, NA, 315.86, 314.93, 313.2...
 #> $ interpolated <dbl> 315.71, 317.45, 317.50, 317.10, 315.86, 314.93, 3...
 #> $ trend        <dbl> 314.62, 315.29, 314.71, 314.85, 314.98, 315.94, 3...
-#> $ ndays        <int> -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -...
-#> $ yyyymmdd     <dttm> 1958-03-17 22:04:49, 1958-04-17 13:55:12, 1958-0...
+#> $ ndays        <int> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N...
+#> $ co2_date     <dttm> 1958-03-17 22:04:49, 1958-04-17 13:55:12, 1958-0...
 
-ggplot(co2new, aes(x = yyyymmdd, y = interpolated)) +
+ggplot(co2, aes(x = co2_date, y = interpolated)) +
     geom_line()
 ```
 
-<img src="images/cm207-unnamed-chunk-13-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-8-1.png" width="78.75%" />
 
 ``` r
 library("HistData")
@@ -382,7 +240,7 @@ ggplot(nd, aes(Date, value)) + geom_line() +
     facet_wrap(vars(series), ncol = 1) # scales = "free_y", 
 ```
 
-<img src="images/cm207-unnamed-chunk-14-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-9-1.png" width="78.75%" />
 
 ``` r
 library(nsRFA)
@@ -394,39 +252,9 @@ ggplot(annualflows, aes(anno, dato, group = cod)) +
     facet_wrap(vars(cod))
 ```
 
-<img src="images/cm207-unnamed-chunk-15-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-10-1.png" width="78.75%" />
 
 <br> <a href="#top">▲ top of page</a>
-
-## carpentry
-
-<br> <a href="#top">▲ top of page</a>
-
-## design
-
-<br> <a href="#top">▲ top of page</a>
-
-## report
-
-<br> <a href="#top">▲ top of page</a>
-
-## exercises
-
-**1. xxx**
-
-Scripts to initialize
-
-    explore/     wwdd-nextgraphtype-dataset-explore.R  
-    carpentry/   wwdd-nextgraphtype-dataset-data.R   
-    design/      wwdd-nextgraphtype-dataset.R 
-
-Data:
-
-Explore script:
-
-Carpentry script
-
-Design script
 
 ## references
 
