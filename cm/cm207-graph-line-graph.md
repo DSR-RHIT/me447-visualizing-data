@@ -5,18 +5,20 @@ line graphs and dates
 
 Notes: introduce the idea of using a separate data frame to add lines,
 with a data argument and aes() argument in the geom layer instead of the
-plot
-layer.
+plot layer.
 
 ## contents
 
 [introduction](#introduction)  
 [prerequisites](#prerequisites)  
-\[\]  
-\[\]  
-\[\]  
-\[\]  
-\[\]  
+[time series with separate year month
+day](#time-series-with-separate-year-month-day)  
+[time series with decimal dates](#time-series-with-decimal-dates)  
+[edit the date scale](#edit-the-date-scale)  
+[facet by a date variable](#facet-by-a-date-variable)  
+[line color by group](#line-color-by-group)  
+[panels with free
+y-scales](#panels-with-free-y-scales)  
 [references](#references)
 
 <http://homepage.stat.uiowa.edu/~luke/classes/STAT4580/timeseries.html#time-series-objects>
@@ -44,6 +46,7 @@ needed.
 
   - tidyverse  
   - lubridate
+  - cdata
 
 Scripts to initialize
 
@@ -60,6 +63,7 @@ And start with a minimal header
 # load packages
 library("tidyverse")
 library("lubridate")
+library("cdata")
 ```
 
 Duplicate the lines of code in the session one chunk at a time. Save,
@@ -67,7 +71,7 @@ Source, and compare your results to the results shown.
 
 <br> <a href="#top">▲ top of page</a>
 
-## explore
+## time series with separate year month day
 
 From the help page (`? airquality`) we find that these data were
 obatained in 1973, and the month and day are in separate columns.
@@ -84,12 +88,29 @@ glimpse(airquality)
 #> $ Day     <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,...
 ```
 
-We use the lubridate package to create a variable of class “Date”.
+We add a year column
 
 ``` r
 df <- airquality %>% 
     mutate(Year = 1973L) %>% 
-    mutate(meas_date = lubridate::make_date(year = Year, month = Month, day = Day)) %>% 
+    glimpse()
+#> Observations: 153
+#> Variables: 7
+#> $ Ozone   <int> 41, 36, 12, 18, NA, 28, 23, 19, 8, NA, 7, 16, 11, 14, ...
+#> $ Solar.R <int> 190, 118, 149, 313, NA, NA, 299, 99, 19, 194, NA, 256,...
+#> $ Wind    <dbl> 7.4, 8.0, 12.6, 11.5, 14.3, 14.9, 8.6, 13.8, 20.1, 8.6...
+#> $ Temp    <int> 67, 72, 74, 62, 56, 66, 65, 59, 61, 69, 74, 69, 66, 68...
+#> $ Month   <int> 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, ...
+#> $ Day     <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,...
+#> $ Year    <int> 1973, 1973, 1973, 1973, 1973, 1973, 1973, 1973, 1973, ...
+```
+
+We create the `Date` class variable `meas-date`
+
+``` r
+df <- airquality %>% 
+    mutate(Year = 1973L) %>% 
+    mutate(meas_date = make_date(year = Year, month = Month, day = Day)) %>% 
     glimpse()
 #> Observations: 153
 #> Variables: 8
@@ -107,39 +128,27 @@ class(df$meas_date)
 #> [1] "Date"
 ```
 
-graph the time series
+Graph the time series as a line graph and with data points shown. Note
+that missing data are not connected by the line.
 
 ``` r
 ggplot(df, aes(x = meas_date, y = Ozone)) + 
     geom_line() + 
-    geom_point()+
-    coord_fixed(ratio = 2/20)
-```
-
-<img src="images/cm207-unnamed-chunk-5-1.png" width="78.75%" />
-
-omit missing values
-
-``` r
-df <- df %>%
-    drop_na()
-
-# x <- df$meas_date
-# y <- df$Ozone
-# 
-# ratio <- ggthemes::bank_slopes(x = as.numeric(x), y = y, method = "ms")
-
-ggplot(df, aes(x = meas_date, y = Solar.R)) + 
-    geom_line() + 
-    geom_point() +
-    coord_fixed(ratio = 1/20)
+    geom_point() 
 ```
 
 <img src="images/cm207-unnamed-chunk-6-1.png" width="78.75%" />
 
+<br> <a href="#top">▲ top of page</a>
+
+## time series with decimal dates
+
+CO<sub>2</sub> levels from the NOAA dataset from 1958 to the latest
+available. Download using `download.file()` works well for text
+files.
+
 ``` r
-library(lubridate)
-co2_ftp <- "ftp://aftp.cmdl.noaa.gov/products/trends/co2/co2_mm_mlo.txt"
+co2_ftp  <- "ftp://aftp.cmdl.noaa.gov/products/trends/co2/co2_mm_mlo.txt"
 co2_file <- "data/noaa_co2.txt"
 
 # update file if more than 4 weeks since last download
@@ -148,9 +157,10 @@ if (!file.exists(co2_file) | now() > file.mtime(co2_file) + weeks(4)) {
 }
 ```
 
-If you open the text file, you see that missing data are encoded using
--99.99 and the column names are
-    shown.
+If you open the text file, you see that dates are recorded as decimal
+dates; missing data are encoded -99.99; -1 indicates no data for \#days.
+Columns names are show
+    too.
 
     # CO2 expressed as a mole fraction in dry air, micromol/mol, abbreviated as ppm
     #
@@ -163,44 +173,114 @@ If you open the text file, you see that missing data are encoded using
     1958   5    1958.375      317.50      317.50      314.71     -1
     1958   6    1958.458      -99.99      317.10      314.85     -1
 
+To bring this file into R, use `read.table()`. It skips the explanatory
+text at the top of the file.
+
 ``` r
 co2 <- read.table(co2_file)
-names(co2) <- c("year", "month", "decimal_data", "average",
-                   "interpolated", "trend", "ndays")
+names(co2) <- c("year", "month", "decimal_date", "average",
+                   "interpolated", "trend", "ndays") %>% 
+    glimpse()
+#>  chr [1:7] "year" "month" "decimal_date" "average" "interpolated" ...
+```
 
-glimpse(co2)
-#> Observations: 733
-#> Variables: 7
-#> $ year         <int> 1958, 1958, 1958, 1958, 1958, 1958, 1958, 1958, 1...
-#> $ month        <int> 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6...
-#> $ decimal_data <dbl> 1958.208, 1958.292, 1958.375, 1958.458, 1958.542,...
-#> $ average      <dbl> 315.71, 317.45, 317.50, -99.99, 315.86, 314.93, 3...
-#> $ interpolated <dbl> 315.71, 317.45, 317.50, 317.10, 315.86, 314.93, 3...
-#> $ trend        <dbl> 314.62, 315.29, 314.71, 314.85, 314.98, 315.94, 3...
-#> $ ndays        <int> -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -...
+Make the missing vales explicit NA.
+
+``` r
 co2 <- co2 %>% 
     mutate(average = ifelse(average < -90, NA, average)) %>% 
     mutate(ndays = ifelse(ndays == -1, NA, ndays))
+```
 
+Convert the decimal dates to POSIXct to Date class.
+
+``` r
 co2 <- co2 %>% 
-    mutate(co2_date = date_decimal(decimal_data)) %>% 
+    mutate(date_meas = date_decimal(decimal_date)) %>% 
+    mutate(date_meas = as_date(date_meas)) %>% 
     glimpse()
 #> Observations: 733
 #> Variables: 8
 #> $ year         <int> 1958, 1958, 1958, 1958, 1958, 1958, 1958, 1958, 1...
 #> $ month        <int> 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6...
-#> $ decimal_data <dbl> 1958.208, 1958.292, 1958.375, 1958.458, 1958.542,...
+#> $ decimal_date <dbl> 1958.208, 1958.292, 1958.375, 1958.458, 1958.542,...
 #> $ average      <dbl> 315.71, 317.45, 317.50, NA, 315.86, 314.93, 313.2...
 #> $ interpolated <dbl> 315.71, 317.45, 317.50, 317.10, 315.86, 314.93, 3...
 #> $ trend        <dbl> 314.62, 315.29, 314.71, 314.85, 314.98, 315.94, 3...
 #> $ ndays        <int> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N...
-#> $ co2_date     <dttm> 1958-03-17 22:04:49, 1958-04-17 13:55:12, 1958-0...
+#> $ date_meas    <date> 1958-03-17, 1958-04-17, 1958-05-17, 1958-06-17, ...
+```
 
-ggplot(co2, aes(x = co2_date, y = interpolated)) +
+And graph it.
+
+``` r
+ggplot(co2, aes(x = date_meas, y = interpolated)) +
     geom_line()
 ```
 
-<img src="images/cm207-unnamed-chunk-8-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-11-1.png" width="78.75%" />
+
+<br> <a href="#top">▲ top of page</a>
+
+## edit the date scale
+
+ggplot2 has scale functions for dates. here we can set the interval
+between tick marks tp 5 years.
+
+``` r
+ggplot(co2, aes(x = date_meas, y = interpolated)) +
+    geom_line() +
+    scale_x_date(date_breaks = "5 years")
+```
+
+<img src="images/cm207-unnamed-chunk-12-1.png" width="78.75%" />
+
+The `date_labels` argument lets us change the format of the date on the
+scale. See available date formats by running `? strptime`.
+
+``` r
+ggplot(co2, aes(x = date_meas, y = interpolated)) +
+    geom_line() +
+    scale_x_date(date_breaks = "5 years", date_labels = "%Y")
+```
+
+<img src="images/cm207-unnamed-chunk-13-1.png" width="78.75%" />
+
+<br> <a href="#top">▲ top of page</a>
+
+## facet by a date variable
+
+Cycle plots use faceting by some time period. Here, we have a month
+variable in the data frame. We can use month as a facet variable.
+
+``` r
+ggplot(co2, aes(x = date_meas, y = interpolated)) +
+    geom_line() +
+    scale_x_date(date_breaks = "10 years", date_labels = "%y") +
+    facet_wrap(vars(month))
+```
+
+<img src="images/cm207-unnamed-chunk-14-1.png" width="78.75%" />
+
+## line color by group
+
+``` r
+ggplot(co2, aes(x = date_meas, y = interpolated, group = month, color = month)) +
+    geom_line() +
+    scale_x_date(date_breaks = "5 years", date_labels = "%Y") +
+    guides(color = guide_legend(reverse = FALSE)) 
+```
+
+<img src="images/cm207-unnamed-chunk-15-1.png" width="78.75%" />
+
+<br> <a href="#top">▲ top of page</a>
+
+## panels with free y-scales
+
+After witnessing deplorable sanitary conditions in the Crimea, Florence
+Nightingale wrote several influential texts showing the number of deaths
+in the Crimean from battle compared to disease or preventable causes
+that could be reduced by better battlefield nursing care.
 
 ``` r
 library("HistData")
@@ -220,39 +300,55 @@ head(Nightingale)
 #> 4         0.0        9.6
 #> 5         0.4       11.9
 #> 6        32.1       27.7
-
-library(tidyr)
-nd <- gather(Nightingale, series, value, 8:10)
-glimpse(nd)
-#> Observations: 72
-#> Variables: 9
-#> $ Date    <date> 1854-04-01, 1854-05-01, 1854-06-01, 1854-07-01, 1854-...
-#> $ Month   <ord> Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec, Jan, Feb,...
-#> $ Year    <int> 1854, 1854, 1854, 1854, 1854, 1854, 1854, 1854, 1854, ...
-#> $ Army    <int> 8571, 23333, 28333, 28722, 30246, 30290, 30643, 29736,...
-#> $ Disease <int> 1, 12, 11, 359, 828, 788, 503, 844, 1725, 2761, 2120, ...
-#> $ Wounds  <int> 0, 0, 0, 0, 1, 81, 132, 287, 114, 83, 42, 32, 48, 49, ...
-#> $ Other   <int> 5, 9, 6, 23, 30, 70, 128, 106, 131, 324, 361, 172, 57,...
-#> $ series  <chr> "Disease.rate", "Disease.rate", "Disease.rate", "Disea...
-#> $ value   <dbl> 1.4, 6.2, 4.7, 150.0, 328.5, 312.2, 197.0, 340.6, 631....
-
-ggplot(nd, aes(Date, value)) + geom_line() +
-    facet_wrap(vars(series), ncol = 1) # scales = "free_y", 
 ```
 
-<img src="images/cm207-unnamed-chunk-9-1.png" width="78.75%" />
+The variables named `.rate` are the annual rate of deaths per 1000
+people. We’d like to reshape the data so that all the rates are in one
+column.
 
 ``` r
-library(nsRFA)
-data(hydroSIMN)
-annualflows <- mutate(annualflows, cod = factor(cod))
-
-ggplot(annualflows, aes(anno, dato, group = cod)) +
-  geom_line() + 
-    facet_wrap(vars(cod))
+these_names <- c("Disease.rate", "Wounds.rate", "Other.rate")
+crimea <- unpivot_to_blocks(
+        data                  = Nightingale,
+        nameForNewKeyColumn   = "cause",
+        nameForNewValueColumn = "rate",
+        columnsToTakeFrom     = these_names
+        ) %>% 
+    glimpse()
+#> Observations: 72
+#> Variables: 9
+#> $ Date    <date> 1854-04-01, 1854-04-01, 1854-04-01, 1854-05-01, 1854-...
+#> $ Month   <ord> Apr, Apr, Apr, May, May, May, Jun, Jun, Jun, Jul, Jul,...
+#> $ Year    <int> 1854, 1854, 1854, 1854, 1854, 1854, 1854, 1854, 1854, ...
+#> $ Army    <int> 8571, 8571, 8571, 23333, 23333, 23333, 28333, 28333, 2...
+#> $ Disease <int> 1, 1, 1, 12, 12, 12, 11, 11, 11, 359, 359, 359, 828, 8...
+#> $ Wounds  <int> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 81, 81, 8...
+#> $ Other   <int> 5, 5, 5, 9, 9, 9, 6, 6, 6, 23, 23, 23, 30, 30, 30, 70,...
+#> $ cause   <chr> "Disease.rate", "Wounds.rate", "Other.rate", "Disease....
+#> $ rate    <dbl> 1.4, 0.0, 7.0, 6.2, 0.0, 4.6, 4.7, 0.0, 2.5, 150.0, 0....
 ```
 
-<img src="images/cm207-unnamed-chunk-10-1.png" width="78.75%" />
+The graph with the same scales shows how significant disease was
+comapred to other causes of death.
+
+``` r
+ggplot(data = crimea, mapping = aes(x = Date, y = rate)) + 
+    geom_line() +
+  facet_wrap(vars(cause), ncol = 1)
+```
+
+<img src="images/cm207-unnamed-chunk-18-1.png" width="78.75%" />
+
+However, if we want to see specific values, we can free the y scales.
+Each panel has its own scale.
+
+``` r
+ggplot(data = crimea, mapping = aes(x = Date, y = rate)) + 
+    geom_line() +
+  facet_wrap(vars(cause), ncol = 1, scales = "free_y")
+```
+
+<img src="images/cm207-unnamed-chunk-19-1.png" width="78.75%" />
 
 <br> <a href="#top">▲ top of page</a>
 
