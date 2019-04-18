@@ -22,7 +22,7 @@ variable and the quantitative observation is the dependent variable.
 
 In many cases, the quantitative variables IA a column in a data frame
 encoded as class `Date` or `POSIXct` (these classes are discussed in the
-[dates and times](cm109-dates-and-times.md) tutorial). In other cases,
+[time and dates](cm109-data-time-dates.md) tutorial). In other cases,
 the quantitative variable is a vector encoded as an R `Time-Series`
 object. I will use “time series” (lowercase) to denote time-dependent
 data in general and “Time-Series” to denote the R object of class `ts`.
