@@ -19,9 +19,10 @@ day](#time-series-with-separate-year-month-day)
 [line color by group](#line-color-by-group)  
 [panels with free
 y-scales](#panels-with-free-y-scales)  
+[exercises](#exercises)  
 [references](#references)
 
-<http://homepage.stat.uiowa.edu/~luke/classes/STAT4580/timeseries.html#time-series-objects>
+<!-- http://homepage.stat.uiowa.edu/~luke/classes/STAT4580/timeseries.html#time-series-objects  -->
 
 ## introduction
 
@@ -47,6 +48,8 @@ needed.
   - tidyverse  
   - lubridate
   - cdata
+  - HistData  
+  - nycflights
 
 Scripts to initialize
 
@@ -64,6 +67,7 @@ And start with a minimal header
 library("tidyverse")
 library("lubridate")
 library("cdata")
+library("HistData")
 ```
 
 Duplicate the lines of code in the session one chunk at a time. Save,
@@ -341,7 +345,6 @@ in the Crimean from battle compared to disease or preventable causes
 that could be reduced by better battlefield nursing care.
 
 ``` r
-library("HistData")
 data(Nightingale, package = "HistData")
 head(Nightingale)
 #>         Date Month Year  Army Disease Wounds Other Disease.rate
@@ -411,6 +414,55 @@ ggplot(data = crimea, mapping = aes(x = Date, y = rate)) +
 <img src="images/cm207-unnamed-chunk-22-1.png" width="78.75%" />
 
 <br> <a href="#top">▲ top of page</a>
+
+## exercises
+
+**1. NYC flights**
+
+Script: `explore/0603-line-graph-flights-explore.R`
+
+Data: `flights` in the nycflights13 package
+
+  - Explore: Identify the number of observations and the number and type
+    and class of variables. Determine the type of date variable.
+
+  - Carpentry: Count the number of flights by year, month, and day. Use
+    `wday()` to create a new variable whose values are the 3-letter
+    abbreviations of a weekday.
+
+  - Design: Graph of the number of flights per day faceted by day of the
+    week. Edit the scale to show the month.
+
+*Answer*
+
+    #> Observations: 365
+    #> Variables: 6
+    #> $ year        <int> 2013, 2013, 2013, 2013, 2013, 2013, 2013, 2013, 20...
+    #> $ month       <int> 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,...
+    #> $ day         <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,...
+    #> $ n           <int> 842, 943, 914, 915, 720, 832, 933, 899, 902, 932, ...
+    #> $ date_2013   <date> 2013-01-01, 2013-01-02, 2013-01-03, 2013-01-04, 2...
+    #> $ day_of_week <ord> Tue, Wed, Thu, Fri, Sat, Sun, Mon, Tue, Wed, Thu, ...
+
+<img src="images/cm207-unnamed-chunk-23-1.png" width="78.75%" />
+
+**2. jj earnings**
+
+Script: `explore/0603-line-graph-jj-explore.R`
+
+Data: `jj` in the astsa package
+
+  - Explore: Identify the number of observations and the number and type
+    and class of variables. Determine the type of date variable. Recall
+    that you can see a help page on any data set supplied with a
+    package, e.g., `? jj`
+
+  - Carpentry: Separate the Time-Series variables and create a data
+    frame
+
+  - Design: Graph quarterly earnings over time
+
+<img src="images/cm207-unnamed-chunk-25-1.png" width="78.75%" />
 
 ## references
 

@@ -185,13 +185,45 @@ you have a `ts` class object, you can use the base R `time()` function
 to extract the time data, then a lubridate function to convert it to a
 `Date` class.
 
-  - extract the time data from the `ts` object (because `date()` is a
-    base R function, I try to avoid using `date` as a variable name)
+  - extract the time data from the `ts` object. We have a vector of
+    years, but it is still class `ts`
 
 <!-- end list -->
 
 ``` r
-lake_date <- time(LakeHuron)
+(lake_date <- time(LakeHuron))
+#> Time Series:
+#> Start = 1875 
+#> End = 1972 
+#> Frequency = 1 
+#>  [1] 1875 1876 1877 1878 1879 1880 1881 1882 1883 1884 1885 1886 1887 1888
+#> [15] 1889 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902
+#> [29] 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916
+#> [43] 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930
+#> [57] 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944
+#> [71] 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958
+#> [85] 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972
+class(lake_date)
+#> [1] "ts"
+```
+
+  - `unclass()` to remove the `ts` class
+
+<!-- end list -->
+
+``` r
+(lake_date <- unclass(lake_date))
+#>  [1] 1875 1876 1877 1878 1879 1880 1881 1882 1883 1884 1885 1886 1887 1888
+#> [15] 1889 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902
+#> [29] 1903 1904 1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915 1916
+#> [43] 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930
+#> [57] 1931 1932 1933 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944
+#> [71] 1945 1946 1947 1948 1949 1950 1951 1952 1953 1954 1955 1956 1957 1958
+#> [85] 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972
+#> attr(,"tsp")
+#> [1] 1875 1972    1
+class(lake_date)
+#> [1] "numeric"
 ```
 
   - convert it to `Date` class
@@ -200,6 +232,8 @@ lake_date <- time(LakeHuron)
 
 ``` r
 lake_date <- make_date(lake_date)
+class(lake_date)
+#> [1] "Date"
 ```
 
   - convert the quantitative variable to numeric
@@ -230,7 +264,7 @@ ggplot(data = df, mapping = aes(x = lake_date, y = lake_level)) +
     geom_line()
 ```
 
-<img src="images/cm109-unnamed-chunk-14-1.png" width="78.75%" />
+<img src="images/cm109-unnamed-chunk-15-1.png" width="78.75%" />
 
 ## references
 
