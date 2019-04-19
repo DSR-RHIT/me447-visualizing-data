@@ -134,11 +134,11 @@ Basics
     import()](cm/cm103-data-reshaping.md#web-download-using-import)
   - [Data directory write and
     read](cm/cm101-data-basics.md#data-directory-write-and-read)  
-  - [all R objects have
+  - [All R objects have
     types](cm/cm106-data-nature-of-factors.md#all-R-objects-have-types)  
-  - [some R objects have
+  - [Some R objects have
     attributes](cm/cm106-data-nature-of-factors.md#)  
-  - [all R objects have
+  - [All R objects have
     class](cm/cm106-data-nature-of-factors.md#all-R-objects-have-class)  
   - [Datasets in tutorials](cm/cm906-software-function-index.md#data)  
   - [Time and dates](cm/cm109-data-time-dates.md)  
@@ -146,25 +146,25 @@ Basics
 
 Factors
 
-  - [factor type and
+  - [Factor type and
     attributes](cm/cm106-data-nature-of-factors.md#factor-type-and-attributes)  
-  - [factor
+  - [Factor
     definition](cm/cm106-data-nature-of-factors.md#factor-definition)  
-  - [creating a factor
+  - [Creating a factor
     variable](cm/cm107-data-working-with-factors.md#creating-a-factor-variable)  
-  - [reorder factor levels
+  - [Reorder factor levels
     manually](cm/cm107-data-working-with-factors.md#reorder-factor-levels-manually)  
-  - [reorder factor levels by a date
+  - [Reorder factor levels by a date
     variable](cm/cm107-data-working-with-factors.md#reorder-factor-levels-by-a-date-variable)  
-  - [reorder factor levels by a quantitative
+  - [Reorder factor levels by a quantitative
     variable](cm/cm107-data-working-with-factors.md#reorder-factor-levels-by-a-quantitative-variable)  
-  - [reorder factor levels by frequency of
+  - [Reorder factor levels by frequency of
     levels](cm/cm107-data-working-with-factors.md#reorder-factor-levels-by-frequency-of-levels)  
-  - [recode factor
+  - [Recode factor
     levels](cm/cm107-data-working-with-factors.md#recode-factor-levels)  
-  - [remove unused
+  - [Remove unused
     levels](cm/cm107-data-working-with-factors.md#remove-unused-levels)  
-  - [reverse factor level
+  - [Reverse factor level
     order](cm/cm107-data-working-with-factors.md#reverse-factor-level-order)
 
 Data studio
@@ -179,6 +179,17 @@ Data studio
     `dplyr::summarize()`  
   - [Data import](cm/cm102-data-studio.md#data-import)  
   - [Data links](cm/cm102-data-studio.md#data-links)
+
+Time series
+
+  - [Time series with separate year month
+    day](cm/cm110-data-time-series.md#time-series-with-separate-year-month-day)  
+  - [Time series with decimal
+    dates](cm/cm110-data-time-series.md#time-series-with-decimal-dates)  
+  - [Edit the date
+    scale](cm/cm110-data-time-series.md#edit-the-date-scale)  
+  - [Facet by a date
+    variable](cm/cm110-data-time-series.md#facet-by-a-date-variable)
 
 <!-- Data tables  -->
 
@@ -267,6 +278,13 @@ Graph exercises
   - Scatterplot matrix exercises  
   - Parallel coordinate exercises
 
+Graph elements
+
+  - [Line color by
+    group](cm/cm110-data-time-series.md#line-color-by-group)  
+  - [Panels with free
+    y-scales](cm/cm110-data-time-series.md#panels-with-free-y-scales)
+
 [▲ index](README.md#index)
 
 ## portfolio
@@ -307,7 +325,7 @@ R Markdown basics
   - [using code
     chunks](cm/cm305-report-rmd-basics.md#using-code-chunks)  
   - [source R
-    scripts](cm/cm305-report-rmd-basics.md#source\(\)-R-cripts)  
+    scripts](cm/cm305-report-rmd-basics.md#source\(\)-R-scripts)  
   - [data table](cm/cm305-report-rmd-basics.md#data-able)  
   - [include
     graphics](cm/cm305-report-rmd-basics.md#include_graphics\(\))  
