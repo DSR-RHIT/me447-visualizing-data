@@ -1,11 +1,9 @@
-line graphs and dates
+line graphs
 ================
 
 <img src="images/cm207-header.png" width="100%" />
 
-Notes: introduce the idea of using a separate data frame to add lines,
-with a data argument and aes() argument in the geom layer instead of the
-plot layer.
+<!-- Notes: introduce the idea of using a separate data frame to add lines, with a data argument and aes() argument in the geom layer instead of the plot layer.  -->
 
 ## contents
 
@@ -50,6 +48,7 @@ needed.
   - cdata
   - HistData  
   - nycflights
+  - astsa
 
 Scripts to initialize
 
@@ -68,6 +67,7 @@ library("tidyverse")
 library("lubridate")
 library("cdata")
 library("HistData")
+library("astsa")
 ```
 
 Duplicate the lines of code in the session one chunk at a time. Save,
@@ -458,9 +458,11 @@ Data: `jj` in the astsa package
     package, e.g., `? jj`
 
   - Carpentry: Separate the Time-Series variables and create a data
-    frame
+    frame where the date is `Date` class and the earnings are `numeric`
 
   - Design: Graph quarterly earnings over time
+
+*Answer*
 
 <img src="images/cm207-unnamed-chunk-25-1.png" width="78.75%" />
 
