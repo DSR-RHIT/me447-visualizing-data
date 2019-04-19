@@ -1,4 +1,4 @@
-line graphs
+line graph
 ================
 
 <img src="images/cm207-header.png" width="100%" />
@@ -25,7 +25,9 @@ y-scales](#panels-with-free-y-scales)
 ## introduction
 
 Line graphs are often used for time-series data, thus this tutorial is
-paired with an introduction to dates, times, and the lubridate package.
+paired with our introduction to time and dates. `geom_line()` can of
+course be used with other data structures, but the time series is
+possibly its most common application.
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -45,8 +47,8 @@ needed.
 
   - tidyverse  
   - lubridate
-  - cdata
   - HistData  
+  - cdata
   - nycflights
   - astsa
 
@@ -65,9 +67,8 @@ And start with a minimal header
 # load packages
 library("tidyverse")
 library("lubridate")
-library("cdata")
 library("HistData")
-library("astsa")
+library("cdata")
 ```
 
 Duplicate the lines of code in the session one chunk at a time. Save,
@@ -444,7 +445,7 @@ Data: `flights` in the nycflights13 package
     #> $ date_2013   <date> 2013-01-01, 2013-01-02, 2013-01-03, 2013-01-04, 2...
     #> $ day_of_week <ord> Tue, Wed, Thu, Fri, Sat, Sun, Mon, Tue, Wed, Thu, ...
 
-<img src="images/cm207-unnamed-chunk-23-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-25-1.png" width="78.75%" />
 
 **2. jj earnings**
 
@@ -457,14 +458,46 @@ Data: `jj` in the astsa package
     that you can see a help page on any data set supplied with a
     package, e.g., `? jj`
 
-  - Carpentry: Separate the Time-Series variables and create a data
-    frame where the date is `Date` class and the earnings are `numeric`
+  - Carpentry: Convert the Time-Series to a data frame. Convert the
+    resulting time or date variable to an appropriate class or type.
 
   - Design: Graph quarterly earnings over time
 
 *Answer*
 
-<img src="images/cm207-unnamed-chunk-25-1.png" width="78.75%" />
+    #> Observations: 84
+    #> Variables: 2
+    #> $ qtr_date <date> 1960-01-01, 1960-04-01, 1960-07-01, 1960-10-01, 1961...
+    #> $ qtr_earn <dbl> 0.71, 0.63, 0.85, 0.44, 0.61, 0.69, 0.92, 0.55, 0.72,...
+
+<img src="images/cm207-unnamed-chunk-27-1.png" width="78.75%" />
+
+**3. blood tests**
+
+Script: `explore/0603-line-graph-blood-explore.R`
+
+Data: `blood` in the astsa package
+
+  - Explore: Identify the number of observations and the number and type
+    and class of variables. Determine the type of date variable. Recall
+    that you can see a help page on any data set supplied with a
+    package, e.g., `? blood`
+
+  - Carpentry: Convert the Time-Series to a data frame. Convert the
+    resulting time or date variable to an appropriate class or type.
+
+  - Design: Line graph of the test results as a function of observation,
+    faceted by test type.
+
+*Answer*
+
+    #> Observations: 273
+    #> Variables: 3
+    #> $ test_id     <chr> "WBC", "WBC", "WBC", "WBC", "WBC", "WBC", "WBC", "...
+    #> $ test_result <dbl> 2.332, 1.887, 2.079, 1.820, 1.820, 1.529, 1.644, 1...
+    #> $ observation <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,...
+
+<img src="images/cm207-unnamed-chunk-29-1.png" width="78.75%" />
 
 ## references
 
