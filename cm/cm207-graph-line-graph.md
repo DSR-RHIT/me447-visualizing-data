@@ -201,8 +201,8 @@ Make the missing values explicit NA.
 
 ``` r
 co2 <- co2 %>% 
-    mutate(average = ifelse(average < -90, NA, average)) %>% 
-    mutate(ndays = ifelse(ndays == -1, NA, ndays))
+    mutate(average = if_else(average < -90, NA_real_, average)) %>% 
+    mutate(ndays = if_else(ndays == -1, NA_integer_, ndays))
 ```
 
 Convert the decimal dates to POSIXct to Date class.
