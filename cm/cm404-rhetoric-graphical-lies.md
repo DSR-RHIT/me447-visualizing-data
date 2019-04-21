@@ -74,24 +74,23 @@ min)
 
 ## reflection on rhetoric
 
-Preparation
+Source material
 
-  - In your `reports` directory, create an Rmd file into which you copy
-    and paste the contents of the [Reflections on rhetoric
-    2](../reports/video-reflection-2.Rmd) script. Add this report to
-    your collection of reading responses.  
-  - Link to this report from your portfolio README page as illustrated
-    on the [sample portfolio
-    repo](https://github.com/graphdr/portfolio-sample#Discussion-notes).  
   - Watch the Albert Cairo talk (in class)  
-  - Watch the other short videos (outside of class)
   - Read the article by Wainer ([2000](#ref-Wainer:2000:Ch.1))
+  - Watch the other short videos (outside of class)
 
 Assignment
 
-  - Select any two of the authors to discuss.
-  - In the written reflection document, describe the author’s idea or
-    ideas that you found most memorable.
+  - In your `reports` directory, create an Rmd file into which you copy
+    and paste the contents of the [Reflections on rhetoric: graphical
+    lies](../reports/video-reflection-2.Rmd) script. Add this report to
+    your collection of reading responses.  
+  - Link to this report from your portfolio README page as illustrated
+    on the [sample portfolio
+    repo](https://github.com/graphdr/portfolio-sample#Discussion-notes).
+  - For the Cairo talk and the Wainer article, describe the author’s
+    idea or ideas that you found most memorable.
   - Discuss how you will apply the idea(s) to one of your designs
 
 <br> <a href="#top">▲ top of page</a>
