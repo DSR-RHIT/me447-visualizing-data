@@ -470,7 +470,9 @@ the region.
 For example, the number of hate crimes in the FBI data.
 
 ``` r
-hate_crimes <- read_csv("data-raw/hate_crime.csv") %>% 
+hate_crimes <- read_csv("data-raw/hate_crime.csv") 
+
+hate_crimes <- hate_crimes %>%
     select(DATA_YEAR, OFFENDER_RACE, VICTIM_COUNT, OFFENSE_NAME) %>% 
     dplyr::rename(year    = DATA_YEAR, 
                                 race    = OFFENDER_RACE, 
