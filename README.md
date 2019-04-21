@@ -401,12 +401,11 @@ Portfolio studio
     stories](cm/cm403-rhetoric-discovering-stories.md#discovering-stories)  
   - [Video links](cm/cm403-rhetoric-discovering-stories.md#video-links)
     discovering stories  
-  - [Video
-    links](cm/cm405-rhetoric-correcting-graphical-lies.md#video-links)
+  - [Video links](cm/cm404-rhetoric-graphical-lies.md#video-links)
     correcting graphical lies
 
-**Reading prompts** Copy and paste the Rmd markup into your own Rmd
-file(s)
+**Reading and reflection prompts** Copy and paste the Rmd markup into
+your own Rmd file(s)
 
   - [Reading prompts 1](reports/reading-prompts-1.Rmd) Tufte (1997)
     Decision to launch Challenger  
