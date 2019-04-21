@@ -402,7 +402,7 @@ Portfolio studio
   - [Follow good design
     practices](cm/cm405-rhetoric-correcting-graphical-lies.md#follow-good-design-practices)  
   - [Beware Simpson’s
-    paradox](cm/cm405-rhetoric-correcting-graphical-lies.md#beware-simpson)  
+    paradox](cm/cm405-rhetoric-correcting-graphical-lies.md#beware-simpson's-paradox)  
   - [Adjust for
     inflation](cm/cm405-rhetoric-correcting-graphical-lies.md#adjust-for-inflation)  
   - [Adjust for
