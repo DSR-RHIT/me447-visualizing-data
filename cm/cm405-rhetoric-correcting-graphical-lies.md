@@ -12,10 +12,12 @@ BY-SA 2.0</a> <br> </small>
 [follow good design practices](#follow-good-design-practices)  
 [beware Simpson’s paradox](#beware-simpsons-paradox)  
 [adjust for inflation](#adjust-for-inflation)  
-[adjust for ppp](#adjust-for-ppp)  
+[adjust for PPP](#adjust-for-ppp)  
 [adjust for population](#adjust-for-population)  
 [adjust for lack of context](#adjust-for-lack-of-context)  
 [references](#references)
+
+<br> <a href="#top">▲ top of page</a>
 
 ## introduction
 
@@ -37,6 +39,8 @@ Don’t
   - Do not cherry-pick your data, do not omit relevant data  
   - Do not use double-y scales
   - Do not use irrelevant data
+
+<br> <a href="#top">▲ top of page</a>
 
 ## beware Simpson’s paradox
 
@@ -128,6 +132,8 @@ The paradox does occur in actual research. For example,
     departments altogether (both department and the difficulty of entry
     are hidden variables), admissions were biased *in favor of men*
     (Bickel and others, [1975](#ref-Bickel+Hammel+OConnell:1975)).
+
+<br> <a href="#top">▲ top of page</a>
 
 ## adjust for inflation
 
@@ -449,21 +455,148 @@ In summary, we have used the OECD housing index to account for the
 fluctuations in house prices and we have used the CPI to account for
 inflation.
 
-## adjust for ppp
+<br> <a href="#top">▲ top of page</a>
 
-Similarly, if you are comparing currencies between countries, a graph
-that does not adjust for the purchasing power of the currency is lying.
+## adjust for PPP
+
+Purchasing Power Parities (PPP) are the rates of currency conversion
+that equalize the purchasing power of different currencies by
+eliminating the differences in price levels between countries.
+
+Thus, a graph about money among countries that does not adjust for PPP
+is lying. If you have data thjat needs to be adjutsed for PPP, consult
+the following sites:
+
+[What are
+PPPs?](http://www.oecd.org/sdd/purchasingpowerparities-frequentlyaskedquestionsfaqs.htm#FAQ1)
+from OECD  
+[Where can I download PPP
+data?](http://www.oecd.org/sdd/purchasingpowerparities-frequentlyaskedquestionsfaqs.htm#FAQ5)
+
+<br> <a href="#top">▲ top of page</a>
 
 ## adjust for population
 
 Greater numbers of people in a region may inherently mean more of *X* in
 the region.
 
+  - [tidycensus](https://walkerke.github.io/tidycensus/index.html)
+    obtain information about US population
+  - [gapminder](https://www.gapminder.org/data/) for world population
+    data
+
+For example, the number of hate crimes in the FBI data.
+
+``` r
+hate_crimes <- read_csv("data-raw/hate_crime.csv") %>% 
+    select(DATA_YEAR, OFFENDER_RACE, VICTIM_COUNT, OFFENSE_NAME) %>% 
+    dplyr::rename(year    = DATA_YEAR, 
+                                race    = OFFENDER_RACE, 
+                                n       = VICTIM_COUNT, 
+                                offense = OFFENSE_NAME) %>% 
+    glimpse()
+```
+
+    #> Observations: 194,194
+    #> Variables: 4
+    #> $ year    <dbl> 1991, 1991, 1991, 1991, 1991, 1991, 1991, 1991, 1991, ...
+    #> $ race    <chr> "White", "Black or African American", "Black or Africa...
+    #> $ n       <dbl> 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+    #> $ offense <chr> "Intimidation", "Simple Assault", "Aggravated Assault"...
+
+``` r
+hate_crimes <- seplyr::group_summarize(hate_crimes, 
+                                                                             c("year"), 
+                                                                             n = sum(n, na.rm = TRUE)) 
+
+glimpse(hate_crimes)
+```
+
+    #> Observations: 27
+    #> Variables: 2
+    #> $ year <dbl> 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 200...
+    #> $ n    <dbl> 4735, 6838, 7842, 6164, 8379, 9362, 8647, 8297, 8291, 861...
+
+``` r
+ggplot(hate_crimes, aes(year, n)) +
+    geom_line()
+```
+
+<img src="images/cm405-unnamed-chunk-22-1.png" width="70%" />
+
+Now adjust for population. The `economics` data set in ggplot2 has
+population numbers from 1967 to 2015.
+
+``` r
+data(economics, package = "ggplot2")
+glimpse(economics)
+```
+
+    #> Observations: 574
+    #> Variables: 6
+    #> $ date     <date> 1967-07-01, 1967-08-01, 1967-09-01, 1967-10-01, 1967...
+    #> $ pce      <dbl> 507.4, 510.5, 516.3, 512.9, 518.1, 525.8, 531.5, 534....
+    #> $ pop      <int> 198712, 198911, 199113, 199311, 199498, 199657, 19980...
+    #> $ psavert  <dbl> 12.5, 12.5, 11.7, 12.5, 12.5, 12.1, 11.7, 12.2, 11.6,...
+    #> $ uempmed  <dbl> 4.5, 4.7, 4.6, 4.9, 4.7, 4.8, 5.1, 4.5, 4.1, 4.6, 4.4...
+    #> $ unemploy <int> 2944, 2945, 2958, 3143, 3066, 3018, 2878, 3001, 2877,...
+
+``` r
+pop <- economics %>% 
+    mutate(year = year(date)) %>% 
+    mutate(month = month(date)) %>% 
+    filter(month == 12) %>% 
+    select(year, pop) %>% 
+    glimpse()
+```
+
+    #> Observations: 48
+    #> Variables: 2
+    #> $ year <dbl> 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 197...
+    #> $ pop  <int> 199657, 201621, 203675, 206238, 208740, 210821, 212785, 2...
+
+Now join.
+
+``` r
+hate_crimes <- left_join(hate_crimes, pop, by = "year") %>%
+mutate(rate = n / pop) %>% 
+    glimpse()
+```
+
+    #> Observations: 27
+    #> Variables: 4
+    #> $ year <dbl> 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 200...
+    #> $ n    <dbl> 4735, 6838, 7842, 6164, 8379, 9362, 8647, 8297, 8291, 861...
+    #> $ pop  <int> 254964, 258413, 261674, 264804, 267943, 271125, 274372, 2...
+    #> $ rate <dbl> 0.01857125, 0.02646152, 0.02996859, 0.02327759, 0.0312715...
+
+And the graph shows that while the numb wer of hate crimes is up, the
+per capita rate is the lowest its been since 1991.
+
+``` r
+ggplot(hate_crimes, aes(year, rate * 1000)) +
+    geom_line() + 
+    labs(title = "Hate crimes in the US (per 1000 people)") +
+    scale_y_continuous(limits = c(0, 40))
+```
+
+<img src="images/cm405-unnamed-chunk-25-1.png" width="70%" />
+
+I would not release this graph however because mopre work is needed to
+understand this story. These data are aggregated—there are differences
+to be found by city or region and by race and poverty.
+
+I include the example simply to illustrate a population adjustment.
+
+<br> <a href="#top">▲ top of page</a>
+
 ## adjust for lack of context
 
 adjusting for lack of context usually means you need to obtain more
 data, either more of the same data over a longer time period or
 comparable data over the same time period.
+
+<br> <a href="#top">▲ top of page</a>
 
 ## references
 
