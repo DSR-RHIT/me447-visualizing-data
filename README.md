@@ -399,6 +399,18 @@ Portfolio studio
   - [Design basics](cm/cm402-rhetoric-design-basics.md#design-basics)  
   - [Discovering
     stories](cm/cm403-rhetoric-discovering-stories.md#discovering-stories)  
+  - [Follow good design
+    practices](cm/cm405-rhetoric-correcting-graphical-lies.md#follow-good-design-practices)  
+  - [Beware Simpson’s
+    paradox](cm/cm405-rhetoric-correcting-graphical-lies.md#beware-simpson)  
+  - [Adjust for
+    inflation](cm/cm405-rhetoric-correcting-graphical-lies.md#adjust-for-inflation)  
+  - [Adjust for
+    population](cm/cm405-rhetoric-correcting-graphical-lies.md#adjust-for-population)  
+  - [Adjust for
+    PPP](cm/cm405-rhetoric-correcting-graphical-lies.md#adjust-for-PPP)  
+  - [Adjust for lack of
+    context](cm/cm405-rhetoric-correcting-graphical-lies.md#adjust-for-lack-of-context)  
   - [Video links](cm/cm403-rhetoric-discovering-stories.md#video-links)
     discovering stories  
   - [Video links](cm/cm404-rhetoric-graphical-lies.md#video-links)
@@ -421,7 +433,7 @@ your own Rmd file(s)
     rhetoric](cm/cm403-rhetoric-discovering-stories.md#reflection-on-rhetoric)
     discovering stories
   - [Reflection on
-    rhetoric](cm/cm405-rhetoric-correcting-graphical-lies.md#reflection-on-rhetoric)
+    rhetoric](cm/cm404-rhetoric-graphical-lies.md#reflection-on-rhetoric)
     correcting graphical lies
 
 ## project management
