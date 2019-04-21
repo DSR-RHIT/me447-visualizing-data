@@ -400,6 +400,10 @@ Portfolio studio
   - [Discovering
     stories](cm/cm403-rhetoric-discovering-stories.md#discovering-stories)  
   - [Video links](cm/cm403-rhetoric-discovering-stories.md#video-links)
+    discovering stories  
+  - [Video
+    links](cm/cm405-rhetoric-correcting-graphical-lies.md#video-links)
+    correcting graphical lies
 
 **Reading prompts** Copy and paste the Rmd markup into your own Rmd
 file(s)
@@ -416,6 +420,10 @@ file(s)
     Playfair & psychology of graphs  
   - [Reflection on
     rhetoric](cm/cm403-rhetoric-discovering-stories.md#reflection-on-rhetoric)
+    discovering stories
+  - [Reflection on
+    rhetoric](cm/cm405-rhetoric-correcting-graphical-lies.md#reflection-on-rhetoric)
+    correcting graphical lies
 
 ## project management
 
