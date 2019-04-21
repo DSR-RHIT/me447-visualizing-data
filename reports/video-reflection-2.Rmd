@@ -1,0 +1,42 @@
+---
+output: github_document
+---
+
+Copy and paste the raw Rmd script below into your own Rmd file in your reports directory.  Select two of the authors to discuss and you may delete the others. 
+
+## reflections on rhetoric 2
+
+Select two of the authors to discuss. 
+
+- Describe the author's idea or ideas that you found most memorable. 
+- Discuss how you will apply the idea(s) to one of your designs
+
+
+<br>
+**Reading:** How to display data badly (Wainer, 2000)
+
+**Response:** Memorable idea and application 
+
+
+<br>
+**Video:** [How charts lie](https://www.youtube.com/watch?v=Cd046xZhO_8&t=21m29s) by Alberto Cairo    
+
+**Response:** Memorable idea and application 
+
+<br>
+**Video:** [Misleading graphs in real life](https://www.youtube.com/watch?time_continue=1&v=1F7gm_BG0iQ) by Stephanie Glen    
+
+
+**Response:** Memorable idea and application 
+
+
+<br>
+**Video:** [How to spot a misleading graph](https://www.youtube.com/watch?v=E91bGT9BjYk) by Lea Gaslowitz   
+
+
+**Response:** Memorable idea and application 
+
+<br>
+**Video:** [Lurking variables: Simpson's paradox](https://www.youtube.com/watch?v=sxYrzzy3cq8) by Mark Liddell 
+
+**Response:** Memorable idea and application 
