@@ -12,8 +12,8 @@ BY-SA 2.0</a> <br> </small>
 [follow good design practices](#follow-good-design-practices)  
 [beware Simpson’s paradox](#beware-simpsons-paradox)  
 [adjust for inflation](#adjust-for-inflation)  
-[adjust for PPP](#adjust-for-ppp)  
 [adjust for population](#adjust-for-population)  
+[adjust for PPP](#adjust-for-ppp)  
 [adjust for lack of context](#adjust-for-lack-of-context)  
 [references](#references)
 
@@ -457,24 +457,6 @@ inflation.
 
 <br> <a href="#top">▲ top of page</a>
 
-## adjust for PPP
-
-Purchasing Power Parities (PPP) are the rates of currency conversion
-that equalize the purchasing power of different currencies by
-eliminating the differences in price levels between countries.
-
-Thus, a graph about money among countries that does not adjust for PPP
-is lying. If you have data thjat needs to be adjutsed for PPP, consult
-the following sites:
-
-[What are
-PPPs?](http://www.oecd.org/sdd/purchasingpowerparities-frequentlyaskedquestionsfaqs.htm#FAQ1)
-from OECD  
-[Where can I download PPP
-data?](http://www.oecd.org/sdd/purchasingpowerparities-frequentlyaskedquestionsfaqs.htm#FAQ5)
-
-<br> <a href="#top">▲ top of page</a>
-
 ## adjust for population
 
 Greater numbers of people in a region may inherently mean more of *X* in
@@ -590,11 +572,32 @@ I include the example simply to illustrate a population adjustment.
 
 <br> <a href="#top">▲ top of page</a>
 
+## adjust for PPP
+
+Purchasing Power Parities (PPP) are the rates of currency conversion
+that equalize the purchasing power of different currencies by
+eliminating the differences in price levels between countries.
+
+Thus, a graph about money among countries that does not adjust for PPP
+is lying. If you have data thjat needs to be adjutsed for PPP, consult
+the following sites:
+
+[What are
+PPPs?](http://www.oecd.org/sdd/purchasingpowerparities-frequentlyaskedquestionsfaqs.htm#FAQ1)
+from OECD  
+[Where can I download PPP
+data?](http://www.oecd.org/sdd/purchasingpowerparities-frequentlyaskedquestionsfaqs.htm#FAQ5)
+
+<br> <a href="#top">▲ top of page</a>
+
 ## adjust for lack of context
 
-adjusting for lack of context usually means you need to obtain more
+Adjusting for lack of context usually means you need to obtain more
 data, either more of the same data over a longer time period or
 comparable data over the same time period.
+
+There were several examples in the [Correcting graphical lies
+slides](../slides/sd072-correcting-graphical-lies.pdf).
 
 <br> <a href="#top">▲ top of page</a>
 
