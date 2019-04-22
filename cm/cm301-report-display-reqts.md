@@ -214,7 +214,7 @@ Tutorials and samples
   - [Sample line graph: air
     quality](images/0603-line-graph-airquality.png)  
   - [Beware Simpson’s
-    paradox](cm405-rhetoric-correcting-graphical-lies.md#beware-simpson-s-paradox)
+    paradox](cm405-rhetoric-correcting-graphical-lies.md#beware-simpsons-paradox)
   - [Adjust for
     inflation](cm405-rhetoric-correcting-graphical-lies.md#adjust-for-inflation)
   - [Adjust for
