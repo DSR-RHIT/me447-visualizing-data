@@ -544,7 +544,7 @@ section.
 ``` r
 ggsave(plot = final_graph, 
         filename = "0602-dotplot-cdc-infants-1.png",
-        path    = "figures",
+        path    = "cm/images",
         width   = 8,
         height  = 4,
         units   = "in",

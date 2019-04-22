@@ -231,7 +231,7 @@ ggplot(co2, aes(x = date_meas, y = interpolated)) +
     geom_line()
 ```
 
-<img src="images/cm207-unnamed-chunk-11-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-12-1.png" width="78.75%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -246,7 +246,7 @@ ggplot(co2, aes(x = date_meas, y = interpolated)) +
     scale_x_date(date_breaks = "5 years")
 ```
 
-<img src="images/cm207-unnamed-chunk-12-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-13-1.png" width="78.75%" />
 
 The `date_labels` argument lets us change the format of the date on the
 scale. See available date formats by running `? strptime`.
@@ -257,7 +257,7 @@ ggplot(co2, aes(x = date_meas, y = interpolated)) +
     scale_x_date(date_breaks = "5 years", date_labels = "%Y")
 ```
 
-<img src="images/cm207-unnamed-chunk-13-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-14-1.png" width="78.75%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -273,7 +273,7 @@ ggplot(co2, aes(x = date_meas, y = interpolated)) +
     facet_wrap(vars(month))
 ```
 
-<img src="images/cm207-unnamed-chunk-14-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-15-1.png" width="78.75%" />
 
 Let’s replace the strip label (months 1 through 12) with month
 abbreviations, Jan, Feb, etc.
@@ -323,7 +323,7 @@ ggplot(co2, aes(x = date_meas, y = interpolated)) +
     facet_wrap(vars(month_abbrev))
 ```
 
-<img src="images/cm207-unnamed-chunk-17-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-18-1.png" width="78.75%" />
 
 ## line color by group
 
@@ -334,7 +334,7 @@ ggplot(co2, aes(x = date_meas, y = interpolated, group = month_abbrev, color = m
     guides(color = guide_legend(reverse = FALSE)) 
 ```
 
-<img src="images/cm207-unnamed-chunk-18-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-19-1.png" width="78.75%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -400,7 +400,7 @@ ggplot(data = crimea, mapping = aes(x = Date, y = rate)) +
     scale_x_date(date_breaks = "4 months", date_labels = "%b %Y")
 ```
 
-<img src="images/cm207-unnamed-chunk-21-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-22-1.png" width="78.75%" />
 
 However, if we want to see specific values, we can free the y scales.
 Each panel has its own scale.
@@ -412,7 +412,7 @@ ggplot(data = crimea, mapping = aes(x = Date, y = rate)) +
     scale_x_date(date_breaks = "4 months", date_labels = "%b %Y")
 ```
 
-<img src="images/cm207-unnamed-chunk-22-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-23-1.png" width="78.75%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -445,7 +445,7 @@ Data: `flights` in the nycflights13 package
     #> $ date_2013   <date> 2013-01-01, 2013-01-02, 2013-01-03, 2013-01-04, 2...
     #> $ day_of_week <ord> Tue, Wed, Thu, Fri, Sat, Sun, Mon, Tue, Wed, Thu, ...
 
-<img src="images/cm207-unnamed-chunk-25-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-26-1.png" width="78.75%" />
 
 **2. jj earnings**
 
@@ -470,7 +470,7 @@ Data: `jj` in the astsa package
     #> $ qtr_date <date> 1960-01-01, 1960-04-01, 1960-07-01, 1960-10-01, 1961...
     #> $ qtr_earn <dbl> 0.71, 0.63, 0.85, 0.44, 0.61, 0.69, 0.92, 0.55, 0.72,...
 
-<img src="images/cm207-unnamed-chunk-27-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-28-1.png" width="78.75%" />
 
 **3. blood tests**
 
@@ -497,7 +497,7 @@ Data: `blood` in the astsa package
     #> $ test_result <dbl> 2.332, 1.887, 2.079, 1.820, 1.820, 1.529, 1.644, 1...
     #> $ observation <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,...
 
-<img src="images/cm207-unnamed-chunk-29-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-30-1.png" width="78.75%" />
 
 ## references
 

@@ -170,8 +170,7 @@ Tutorials and samples
   - [Dot plot tutorial](cm206-graph-dot-plot.md#dot-plot)  
   - [Sample dot plot: US infant
     mortality](../figures/0602-dotplot-cdc-infants-2.png)  
-  - Line graph tutorial  
-  - Sample line graph: dataset name  
+  - [Line graph tutorial](cm207-graph-line-graph.md#line-graph)  
   - [Sample bar graph: Borderline personality
     disorder](../resources/bipolar-disorder-bar-chart.png) and the most
     common co-occurring disorders. One quantitative variable, one
@@ -182,11 +181,44 @@ Tutorials and samples
 
 ## D5 redesign a graphical lie
 
-Consult with me on your data selection—the graph type depends on the
-data. The two graph types shown are the most commonly encountered.
+The original graph that you redesign must not be one that has been used
+in class or by other data journalists or data scientists to illustrate
+deceptive data graphics.
 
-Time series example  
-Constant dollars example
+You might read my blog post, [Another look at a misleading
+graph](http://www.graphdoctor.com/archives/1248), as an example of the
+type of critique that I expect.
+
+Use Alberto Cairo’s taxonomy (from his
+[talk](https://www.youtube.com/watch?v=Cd046xZhO_8&t=21m29s)) to
+classify the orginal offense(s). The orginal data display lies by:
+
+  - pandering to our expectations or biases
+  - using the wrong data
+  - showing an inappropriate amount of data, either too little or too
+    much
+  - representing the data incorrectly
+  - suggesting spurious patterns or fails to reveal crucial ones
+  - concealing or confuses uncertainty
+
+Data requirements
+
+  - Minimum 20 observations  
+  - One or two quantitative variables  
+  - Categories are optional, depending on the data
+
+Tutorials and samples
+
+  - [Dot plot tutorial](cm206-graph-dot-plot.md#dot-plot)  
+  - [Line graph tutorial](cm207-graph-line-graph.md#line-graph)  
+  - [Sample line graph: air
+    quality](images/0603-line-graph-airquality.png)  
+  - [Beware Simpson’s
+    paradox](cm405-rhetoric-correcting-graphical-lies.md#beware-Simpson-s-paradox)  
+  - [Adjust for
+    inflation](cm405-rhetoric-correcting-graphical-lies.md#adjust-for-inflation)
+  - [Adjust for
+    population](cm405-rhetoric-correcting-graphical-lies.md#adjust-for-population)
 
 <br> <a href="#top">▲ top of page</a>
 
