@@ -181,13 +181,24 @@ Tutorials and samples
 
 ## D5 redesign a graphical lie
 
-The original graph that you redesign must not be one that has been used
-in class or by other data journalists or data scientists to illustrate
-deceptive data graphics.
+Sources
 
-You might read my blog post, [Another look at a misleading
-graph](http://www.graphdoctor.com/archives/1248), as an example of the
-type of critique that I expect.
+  - The original graph that you redesign must not be one that has been
+    used in class or by other data journalists or data scientists to
+    illustrate deceptive data graphics.
+  - In recent years, Republicans and Fox News have used deceptive graphs
+    with incredible frequency. There are websites devoted to the
+    subject. If anyone finds a deceptive graph from the left, I would
+    appreciate a link.  
+  - Advertising is a good source
+  - The tobacco industry and fossil fuel industry (climate-change
+    deniers) are all good sources for cherry-picking data, incorrect
+    representation, and using the wrong data
+  - Politicians are a good source for graphs that pander to their
+    audience’s biases
+  - Consider reviewing data graphics in your discipline’s publications
+    for any of the offenses described by Alberto Cairo’s taxonomy
+    (below).
 
 Use Alberto Cairo’s taxonomy (from his
 [talk](https://www.youtube.com/watch?v=Cd046xZhO_8&t=21m29s)) to
@@ -225,6 +236,10 @@ types might be appropriate.
   - [Scatterplot](cm205-graph-scatterplot.md#scatterplot)
   - [Dot plot](cm206-graph-dot-plot.md#dot-plot)  
   - [Line graph](cm207-graph-line-graph.md#line-graph)
+
+Read my blog post, [Another look at a misleading
+graph](http://www.graphdoctor.com/archives/1248), as an example of the
+type of critique that I expect.
 
 <br> <a href="#top">▲ top of page</a>
 
