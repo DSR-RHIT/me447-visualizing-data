@@ -19,24 +19,24 @@ the *package is the source*, that is, the package provides public access
 to data that is otherwise
 unavailable.
 
-| display                                                     | type                                                                                                        | quantitative  | categorical   |
-| :---------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- | :------------ | :------------ |
-| [D1 distributions](#d1-distributions)                       | [strip plot](cm202-graph-strip-plot.md#strip-plot) or [box plot](cm203-graph-boxplot.md#box-plots)          | one           | one or two    |
-| [D2 multiway](#d2-multiway)                                 | [multiway](cm204-graph-multiway.md#multiway-dot-plot)                                                       | one           | two           |
-| [D3 correlations](#d3-correlations)                         | [scatterplot](cm205-graph-scatterplot.md#scatterplot)                                                       | two           | one or two    |
-| [D4 injuries or fatalities](#d4-injuries-or-fatalities)     | [dot plot](cm206-graph-dot-plot.md#dot-plot)                                                                | one           | one or more   |
-|                                                             | [line graph](cm207-graph-line-graph.md#line-graph) or [scatterplot](cm205-graph-scatterplot.md#scatterplot) | two           | optional      |
-| [D5 redesign a graphical lie](#d5-redesign-a-graphical-lie) | [dot plot](cm206-graph-dot-plot.md#dot-plot)                                                                | one           | optional      |
-|                                                             | [line graph](cm207-graph-line-graph.md#line-graph) or [scatterplot](cm205-graph-scatterplot.md#scatterplot) | two           | optional      |
-| [D6 multivariate](#d6-multivariate)                         | conditioning plot                                                                                           | three or four |               |
-|                                                             | scatterplot matrix or parallel coordinate                                                                   | four or more  |               |
-| [D7 self-taught](#d7-self-taught)                           | [cycle plot](#cycle-plot)                                                                                   | one           | two           |
-|                                                             | [mosaic plot](#mosaic-plot)                                                                                 | one           | three or more |
-|                                                             | [financial (OHLC) plot](#financial-ohlc-plot)                                                               | four          | one           |
-|                                                             | [diverging stacked bar](#diverging-stacked-bar)                                                             | one           | one           |
-|                                                             | [linked micromaps](#linked-micromaps)                                                                       | one           |               |
-|                                                             | [proportional symbol map](#proportional-symbol-map)                                                         |               |               |
-|                                                             | [dot density map](#dot-density-map)                                                                         |               |               |
+| display                                                     | type                                                                                                                                                   | quantitative  | categorical   |
+| :---------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------- | :------------ | :------------ |
+| [D1 distributions](#d1-distributions)                       | [strip plot](cm202-graph-strip-plot.md#strip-plot) or [box plot](cm203-graph-boxplot.md#box-plots)                                                     | one           | one or two    |
+| [D2 multiway](#d2-multiway)                                 | [multiway](cm204-graph-multiway.md#multiway-dot-plot)                                                                                                  | one           | two           |
+| [D3 correlations](#d3-correlations)                         | [scatterplot](cm205-graph-scatterplot.md#scatterplot)                                                                                                  | two           | one or two    |
+| [D4 injuries or fatalities](#d4-injuries-or-fatalities)     | [dot plot](cm206-graph-dot-plot.md#dot-plot)                                                                                                           | one           | one or more   |
+|                                                             | [line graph](cm207-graph-line-graph.md#line-graph) or [scatterplot](cm205-graph-scatterplot.md#scatterplot)                                            | two           | optional      |
+| [D5 redesign a graphical lie](#d5-redesign-a-graphical-lie) | [dot plot](cm206-graph-dot-plot.md#dot-plot)                                                                                                           | one           | optional      |
+|                                                             | [line graph](cm207-graph-line-graph.md#line-graph) or [scatterplot](cm205-graph-scatterplot.md#scatterplot)                                            | two           | optional      |
+| [D6 multivariate](#d6-multivariate)                         | [conditioning plot](cm208-graph-conditioning-plot.md#conditioning-plot)                                                                                | three or four |               |
+|                                                             | [scatterplot matrix](cm209-graph-scatterplot-matrix.md#scatterplot-matrix) or [parallel coordinate](cm210-graph-parallel-coord.md#parallel-coordinate) | four or more  |               |
+| [D7 self-taught](#d7-self-taught)                           | [cycle plot](#cycle-plot)                                                                                                                              | one           | two           |
+|                                                             | [mosaic plot](#mosaic-plot)                                                                                                                            | one           | three or more |
+|                                                             | [financial (OHLC) plot](#financial-ohlc-plot)                                                                                                          | four          | one           |
+|                                                             | [diverging stacked bar](#diverging-stacked-bar)                                                                                                        | one           | one           |
+|                                                             | [linked micromaps](#linked-micromaps)                                                                                                                  | one           |               |
+|                                                             | [proportional symbol map](#proportional-symbol-map)                                                                                                    |               |               |
+|                                                             | [dot density map](#dot-density-map)                                                                                                                    |               |               |
 
 ## D1 distributions
 
@@ -269,9 +269,14 @@ Use a conditioning plot (coplot) for three or four variables.
 For four or more variables, use a scatterplot matrix or a parallel
 coordinate plot.
 
-Conditioning plot example  
-Scatterplot matrix example  
-Parallel coordinate example
+Tutorials
+
+  - [Conditioning
+    plot](cm208-graph-conditioning-plot.md#conditioning-plot)  
+  - [Scatterplot
+    matrix](cm209-graph-scatterplot-matrix.md#scatterplot-matrix)  
+  - [Parallel
+    coordinate](cm210-graph-parallel-coord.md#parallel-coordinate)
 
 <br> <a href="#top">▲ top of page</a>
 
