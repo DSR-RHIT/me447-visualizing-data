@@ -159,6 +159,8 @@ Federal Reserve (FRED), from 1913 to the present.
     economy due to cyclic influences such as the season or holidays.
     Otherwise, the seasonally unadjusted data are used.
 
+**Obtaining the CPI**
+
 When reading a table from FRED today (2019-04-21) we use the following
 table codes:
 
@@ -205,12 +207,11 @@ cpi <- read.table(cpi_file,
                 header = TRUE, 
                 stringsAsFactors = FALSE) %>% 
         glimpse()
+#> Observations: 1,275
+#> Variables: 2
+#> $ DATE  <chr> "1913-01-01", "1913-02-01", "1913-03-01", "1913-04-01", ...
+#> $ VALUE <dbl> 9.8, 9.8, 9.8, 9.8, 9.7, 9.8, 9.9, 9.9, 10.0, 10.0, 10.1...
 ```
-
-    #> Observations: 1,275
-    #> Variables: 2
-    #> $ DATE  <chr> "1913-01-01", "1913-02-01", "1913-03-01", "1913-04-01", ...
-    #> $ VALUE <dbl> 9.8, 9.8, 9.8, 9.8, 9.7, 9.8, 9.9, 9.9, 10.0, 10.0, 10.1...
 
   - Change the column names
 
@@ -220,12 +221,11 @@ cpi <- read.table(cpi_file,
 cpi <- cpi %>% 
         dplyr::rename(date = DATE, cpi = VALUE) %>% 
         glimpse()
+#> Observations: 1,275
+#> Variables: 2
+#> $ date <chr> "1913-01-01", "1913-02-01", "1913-03-01", "1913-04-01", "...
+#> $ cpi  <dbl> 9.8, 9.8, 9.8, 9.8, 9.7, 9.8, 9.9, 9.9, 10.0, 10.0, 10.1,...
 ```
-
-    #> Observations: 1,275
-    #> Variables: 2
-    #> $ date <chr> "1913-01-01", "1913-02-01", "1913-03-01", "1913-04-01", "...
-    #> $ cpi  <dbl> 9.8, 9.8, 9.8, 9.8, 9.7, 9.8, 9.9, 9.9, 10.0, 10.0, 10.1,...
 
   - Convert the date to a date variable and extract the year
 
@@ -236,13 +236,12 @@ cpi <- cpi %>%
         mutate(date = ymd(date)) %>% 
         mutate(year = year(date)) %>% 
         glimpse()
+#> Observations: 1,275
+#> Variables: 3
+#> $ date <date> 1913-01-01, 1913-02-01, 1913-03-01, 1913-04-01, 1913-05-...
+#> $ cpi  <dbl> 9.8, 9.8, 9.8, 9.8, 9.7, 9.8, 9.9, 9.9, 10.0, 10.0, 10.1,...
+#> $ year <dbl> 1913, 1913, 1913, 1913, 1913, 1913, 1913, 1913, 1913, 191...
 ```
-
-    #> Observations: 1,275
-    #> Variables: 3
-    #> $ date <date> 1913-01-01, 1913-02-01, 1913-03-01, 1913-04-01, 1913-05-...
-    #> $ cpi  <dbl> 9.8, 9.8, 9.8, 9.8, 9.7, 9.8, 9.9, 9.9, 10.0, 10.0, 10.1,...
-    #> $ year <dbl> 1913, 1913, 1913, 1913, 1913, 1913, 1913, 1913, 1913, 191...
 
   - Omit 2019 data because we don’t have a full year
   - Group and summarize by year to determine the annual CPI (this
@@ -256,17 +255,16 @@ cpi <- cpi %>%
         seplyr::group_summarise(., "year", cpi = mean(cpi)) %>% 
         mutate(cpi = round(cpi, 2)) %>% 
         glimpse()
+#> Observations: 106
+#> Variables: 2
+#> $ year <dbl> 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 192...
+#> $ cpi  <dbl> 9.88, 10.02, 10.11, 10.88, 12.82, 15.04, 17.33, 20.04, 17...
 ```
 
-    #> Observations: 106
-    #> Variables: 2
-    #> $ year <dbl> 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 192...
-    #> $ cpi  <dbl> 9.88, 10.02, 10.11, 10.88, 12.82, 15.04, 17.33, 20.04, 17...
-
-To see what the CPI numbers look like, we can graph it
+To see what the CPI numbers look like, we can graph it.
 
 ``` r
-p <- ggplot(data = cpi, mapping = aes(x = year,y =  cpi)) + 
+p <- ggplot(data = cpi, mapping = aes(x = year, y =  cpi)) + 
     geom_line()
 p
 ```
@@ -287,54 +285,66 @@ p
 
 <img src="images/cm405-unnamed-chunk-13-1.png" width="70%" />
 
+**Create the price index**
+
 Inflation-adjusted dollars are often called “constant dollars” with
 respect to the basis year. For example, we might say that data are
-reported in “constant 1984 dollars” or “constant 2018 dollars”. I
-recommend that you always use the most recent basis year because the
-purchasing power of recent dollars is what your audience will be most
-familiar with.
+reported in “constant 1984 dollars” or “constant 2018 dollars”. Unless
+you have a compelling reason otherwise, I recommend that you always use
+the most recent basis year because the purchasing power of recent
+dollars is what your audience will be most familiar with.
 
-To use the CPI, we first select a basis year. I’ll use 2018. Divide all
-CPI values by the CPI in the basis year.
+In the housing data I use later, the latest information we have is 2017,
+so I’ll use 2017 as the basis year.
 
 ``` r
-cpi_2018 <- cpi$cpi[cpi$year == 2018]
-cpi <- cpi %>% 
-        mutate(adjust = cpi/cpi_2018) %>% 
-    glimpse()
+(cpi_2017 <- cpi$cpi[cpi$year == 2017])
+#> [1] 245.12
 ```
 
-    #> Observations: 106
-    #> Variables: 3
-    #> $ year   <dbl> 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 1...
-    #> $ cpi    <dbl> 9.88, 10.02, 10.11, 10.88, 12.82, 15.04, 17.33, 20.04, ...
-    #> $ adjust <dbl> 0.03934531, 0.03990283, 0.04026124, 0.04332763, 0.05105...
+To use the CPI, we create a *price index* by dividing the all CPI values
+by the CPI in the basis year.
+
+``` r
+cpi <- cpi %>% 
+        mutate(index = cpi / cpi_2017) %>% 
+    glimpse()
+#> Observations: 106
+#> Variables: 3
+#> $ year  <dbl> 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 19...
+#> $ cpi   <dbl> 9.88, 10.02, 10.11, 10.88, 12.82, 15.04, 17.33, 20.04, 1...
+#> $ index <dbl> 0.04030679, 0.04087794, 0.04124510, 0.04438642, 0.052300...
+
+ggplot(data = cpi, mapping = aes(x = year, y =  index)) + 
+    geom_line() 
+```
+
+<img src="images/cm405-unnamed-chunk-15-1.png" width="70%" />
+
+**Nominal housing prices**
 
 Obtain some practice data with dollars recorded as “nominal” dollars.
 “Nominal” indicates that the dollars have not been adjusted for
-inflation.
-
-I manually downloaded annual US housing price data (OECD,
-[2019](#ref-OECD:2019:UShousing)) and saved it in the `data-raw`
-directory. You can download it manually from the course `data-raw`
-directory.
+inflation. For this example, I manually downloaded annual US housing
+price data (OECD, [2019](#ref-OECD:2019:UShousing)) and saved it in the
+`data-raw` directory. You can download it manually from the course
+`data-raw` directory.
 
 ``` r
 data_file <- "data-raw/DP_LIVE_21042019192003239.csv"
 housing   <- read_csv(data_file) %>% 
     glimpse()
+#> Observations: 48
+#> Variables: 8
+#> $ LOCATION     <chr> "USA", "USA", "USA", "USA", "USA", "USA", "USA", ...
+#> $ INDICATOR    <chr> "HOUSECOST", "HOUSECOST", "HOUSECOST", "HOUSECOST...
+#> $ SUBJECT      <chr> "NOMINAL", "NOMINAL", "NOMINAL", "NOMINAL", "NOMI...
+#> $ MEASURE      <chr> "IDX2015", "IDX2015", "IDX2015", "IDX2015", "IDX2...
+#> $ FREQUENCY    <chr> "A", "A", "A", "A", "A", "A", "A", "A", "A", "A",...
+#> $ TIME         <dbl> 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1...
+#> $ Value        <dbl> 11.14842, 12.04820, 12.91322, 14.44506, 15.76601,...
+#> $ `Flag Codes` <lgl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N...
 ```
-
-    #> Observations: 48
-    #> Variables: 8
-    #> $ LOCATION     <chr> "USA", "USA", "USA", "USA", "USA", "USA", "USA", ...
-    #> $ INDICATOR    <chr> "HOUSECOST", "HOUSECOST", "HOUSECOST", "HOUSECOST...
-    #> $ SUBJECT      <chr> "NOMINAL", "NOMINAL", "NOMINAL", "NOMINAL", "NOMI...
-    #> $ MEASURE      <chr> "IDX2015", "IDX2015", "IDX2015", "IDX2015", "IDX2...
-    #> $ FREQUENCY    <chr> "A", "A", "A", "A", "A", "A", "A", "A", "A", "A",...
-    #> $ TIME         <dbl> 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1...
-    #> $ Value        <dbl> 11.14842, 12.04820, 12.91322, 14.44506, 15.76601,...
-    #> $ `Flag Codes` <lgl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N...
 
   - keep the TIME and Value columns
   - rename the columns
@@ -344,30 +354,44 @@ housing   <- read_csv(data_file) %>%
 ``` r
 housing <- housing %>% 
     select(TIME, Value) %>% 
-    dplyr::rename(year = TIME, value = Value) %>% 
+    dplyr::rename(year = TIME, nominal = Value) %>% 
     glimpse()
+#> Observations: 48
+#> Variables: 2
+#> $ year    <dbl> 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, ...
+#> $ nominal <dbl> 11.14842, 12.04820, 12.91322, 14.44506, 15.76601, 16.7...
 ```
-
-    #> Observations: 48
-    #> Variables: 2
-    #> $ year  <dbl> 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 19...
-    #> $ value <dbl> 11.14842, 12.04820, 12.91322, 14.44506, 15.76601, 16.749...
 
 The prices have been normalized with a 2015 basis, that is in 2015, the
-price is 100. To convert that to dollars, let’s assume that 100
-represents the price of sa $100,000 home.
+price is 100. I’d like to normalize these data to 2017 prices by
+dividing all nominal values by the one recorded for 2017, then multiply
+by 100, so that the $100 price value is in the same basis year as my
+price index.
 
 ``` r
+(nominal_2017 <- housing$nominal[housing$year == 2017])
+#> [1] 113.0211
+
 housing <- housing %>% 
-    mutate(nominal = value) %>% 
-  glimpse()
+  mutate(nominal = nominal / nominal_2017 * 100)
+
+tail(housing, n = 10L)
+#> # A tibble: 10 x 2
+#>     year nominal
+#>    <dbl>   <dbl>
+#>  1  2008    82.9
+#>  2  2009    78.0
+#>  3  2010    75.7
+#>  4  2011    72.5
+#>  5  2012    74.6
+#>  6  2013    79.9
+#>  7  2014    84.0
+#>  8  2015    88.5
+#>  9  2016    93.8
+#> 10  2017   100
 ```
 
-    #> Observations: 48
-    #> Variables: 3
-    #> $ year    <dbl> 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, ...
-    #> $ value   <dbl> 11.14842, 12.04820, 12.91322, 14.44506, 15.76601, 16.7...
-    #> $ nominal <dbl> 11.14842, 12.04820, 12.91322, 14.44506, 15.76601, 16.7...
+**Real housing prices**
 
   - Join the CPI data to the housing data
 
@@ -375,81 +399,89 @@ housing <- housing %>%
 
 ``` r
 housing <- left_join(housing, cpi, by = "year") %>% 
-    glimpse()
+    select(year, nominal, index)
+
+tail(housing)
+#> # A tibble: 6 x 3
+#>    year nominal index
+#>   <dbl>   <dbl> <dbl>
+#> 1  2012    74.6 0.937
+#> 2  2013    79.9 0.950
+#> 3  2014    84.0 0.966
+#> 4  2015    88.5 0.967
+#> 5  2016    93.8 0.979
+#> 6  2017   100   1
 ```
 
-    #> Observations: 48
-    #> Variables: 5
-    #> $ year    <dbl> 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, ...
-    #> $ value   <dbl> 11.14842, 12.04820, 12.91322, 14.44506, 15.76601, 16.7...
-    #> $ nominal <dbl> 11.14842, 12.04820, 12.91322, 14.44506, 15.76601, 16.7...
-    #> $ cpi     <dbl> 38.83, 40.49, 41.82, 44.40, 49.31, 53.82, 56.91, 60.61...
-    #> $ adjust  <dbl> 0.1546334, 0.1612441, 0.1665406, 0.1768149, 0.1963681,...
-
-  - The house prices in constant 2018 dollars are the product of the
-    nominal price and the inflation adjustment
-
-<!-- end list -->
+After joining, you can see that in 2017, the price index is 1 and the
+nominal house price is $100. Divide the nominal price by the price index
+to obtain the real price (adjusted for inflation).
 
 ``` r
 housing <- housing %>% 
-    mutate(adjusted = nominal * adjust) %>% 
+    mutate(real = nominal / index) %>% 
     glimpse()
+#> Observations: 48
+#> Variables: 4
+#> $ year    <dbl> 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, ...
+#> $ nominal <dbl> 9.864023, 10.660136, 11.425499, 12.780854, 13.949620, ...
+#> $ index   <dbl> 0.1584122, 0.1651844, 0.1706103, 0.1811358, 0.2011668,...
+#> $ real    <dbl> 62.26807, 64.53476, 66.96840, 70.55953, 69.34356, 67.4...
+
+tail(housing)
+#> # A tibble: 6 x 4
+#>    year nominal index  real
+#>   <dbl>   <dbl> <dbl> <dbl>
+#> 1  2012    74.6 0.937  79.7
+#> 2  2013    79.9 0.950  84.1
+#> 3  2014    84.0 0.966  87.0
+#> 4  2015    88.5 0.967  91.5
+#> 5  2016    93.8 0.979  95.8
+#> 6  2017   100   1     100
 ```
 
-    #> Observations: 48
-    #> Variables: 6
-    #> $ year     <dbl> 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978,...
-    #> $ value    <dbl> 11.14842, 12.04820, 12.91322, 14.44506, 15.76601, 16....
-    #> $ nominal  <dbl> 11.14842, 12.04820, 12.91322, 14.44506, 15.76601, 16....
-    #> $ cpi      <dbl> 38.83, 40.49, 41.82, 44.40, 49.31, 53.82, 56.91, 60.6...
-    #> $ adjust   <dbl> 0.1546334, 0.1612441, 0.1665406, 0.1768149, 0.1963681...
-    #> $ adjusted <dbl> 1.723919, 1.942701, 2.150575, 2.554102, 3.095941, 3.5...
+If the 2017 price of a house is $100, it would have been priced as
+follows in previous years (in constant 2017 dollars).
 
 ``` r
-ggplot(data = housing, mapping = aes(x = year, y =  adjusted)) +
-                geom_line() +
-    labs(x = "Year", 
-             y = "Index", 
-             title = "US housing index in constant 2018 dollars", 
-             caption = "Source: OECD 2019 housing and FRED CPI"
-             )
+ggplot(data = housing, mapping = aes(x = year, y =  real)) +
+                geom_line()
 ```
 
-<img src="images/cm405-unnamed-chunk-20-1.png" width="70%" />
+<img src="images/cm405-unnamed-chunk-21-1.png" width="70%" />
 
-In 2018, the median house price is about $230,000. Multiply the index by
-230 to see what that house would have cost in earlier years. I’ve added
-a line to indicate the 20087 global financial disaster.
+You can scale the y-axis by any amount to obtain a comparison for any
+2017 house price. For example, the median house price in the US in 2017
+was $200k. If we multiply our real dollar column by 2, we obtain a graph
+of how much that house would have cost in previous years in constant
+2017 dollars (in thousands).
 
 ``` r
 housing <- housing %>% 
-    mutate(median = adjusted * 230) %>% 
+    mutate(real = real * 2) %>% 
     glimpse()
+#> Observations: 48
+#> Variables: 4
+#> $ year    <dbl> 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, ...
+#> $ nominal <dbl> 9.864023, 10.660136, 11.425499, 12.780854, 13.949620, ...
+#> $ index   <dbl> 0.1584122, 0.1651844, 0.1706103, 0.1811358, 0.2011668,...
+#> $ real    <dbl> 124.5361, 129.0695, 133.9368, 141.1191, 138.6871, 134....
 ```
 
-    #> Observations: 48
-    #> Variables: 7
-    #> $ year     <dbl> 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978,...
-    #> $ value    <dbl> 11.14842, 12.04820, 12.91322, 14.44506, 15.76601, 16....
-    #> $ nominal  <dbl> 11.14842, 12.04820, 12.91322, 14.44506, 15.76601, 16....
-    #> $ cpi      <dbl> 38.83, 40.49, 41.82, 44.40, 49.31, 53.82, 56.91, 60.6...
-    #> $ adjust   <dbl> 0.1546334, 0.1612441, 0.1665406, 0.1768149, 0.1963681...
-    #> $ adjusted <dbl> 1.723919, 1.942701, 2.150575, 2.554102, 3.095941, 3.5...
-    #> $ median   <dbl> 396.5013, 446.8211, 494.6322, 587.4434, 712.0665, 825...
+I’ve added a line to indicate the 2008 global financial disaster.
 
 ``` r
-ggplot(data = housing, mapping = aes(x = year, y =  median)) +
+ggplot(data = housing, mapping = aes(x = year, y =  real)) +
                 geom_line() +
     labs(x = "Year", 
-             y = "Price (constant 2018 USD)", 
-             title = "A $230k house in 2018 could have been bought for ...", 
+             y = "Price (1000s USD)", 
+             title = "In constant 2017 dollars, a $200k house in 2017 would have sold for ...", 
              caption = "Source: OECD 2019 housing and FRED CPI"
              ) +
     geom_vline(xintercept = 2008, linetype = 2, color = "gray50")
 ```
 
-<img src="images/cm405-unnamed-chunk-21-1.png" width="70%" />
+<img src="images/cm405-unnamed-chunk-23-1.png" width="70%" />
 
 In summary, we have used the OECD housing index to account for the
 fluctuations in house prices and we have used the CPI to account for
@@ -479,34 +511,28 @@ hate_crimes <- hate_crimes %>%
                                 n       = VICTIM_COUNT, 
                                 offense = OFFENSE_NAME) %>% 
     glimpse()
-```
+#> Observations: 194,194
+#> Variables: 4
+#> $ year    <dbl> 1991, 1991, 1991, 1991, 1991, 1991, 1991, 1991, 1991, ...
+#> $ race    <chr> "White", "Black or African American", "Black or Africa...
+#> $ n       <dbl> 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+#> $ offense <chr> "Intimidation", "Simple Assault", "Aggravated Assault"...
 
-    #> Observations: 194,194
-    #> Variables: 4
-    #> $ year    <dbl> 1991, 1991, 1991, 1991, 1991, 1991, 1991, 1991, 1991, ...
-    #> $ race    <chr> "White", "Black or African American", "Black or Africa...
-    #> $ n       <dbl> 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
-    #> $ offense <chr> "Intimidation", "Simple Assault", "Aggravated Assault"...
-
-``` r
 hate_crimes <- seplyr::group_summarize(hate_crimes, 
                                                                              c("year"), 
                                                                              n = sum(n, na.rm = TRUE)) 
 
 glimpse(hate_crimes)
-```
+#> Observations: 27
+#> Variables: 2
+#> $ year <dbl> 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 200...
+#> $ n    <dbl> 4735, 6838, 7842, 6164, 8379, 9362, 8647, 8297, 8291, 861...
 
-    #> Observations: 27
-    #> Variables: 2
-    #> $ year <dbl> 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 200...
-    #> $ n    <dbl> 4735, 6838, 7842, 6164, 8379, 9362, 8647, 8297, 8291, 861...
-
-``` r
 ggplot(hate_crimes, aes(year, n)) +
     geom_line()
 ```
 
-<img src="images/cm405-unnamed-chunk-22-1.png" width="70%" />
+<img src="images/cm405-unnamed-chunk-24-1.png" width="70%" />
 
 Now adjust for population. The `economics` data set in ggplot2 has
 population numbers from 1967 to 2015.
@@ -514,30 +540,26 @@ population numbers from 1967 to 2015.
 ``` r
 data(economics, package = "ggplot2")
 glimpse(economics)
-```
+#> Observations: 574
+#> Variables: 6
+#> $ date     <date> 1967-07-01, 1967-08-01, 1967-09-01, 1967-10-01, 1967...
+#> $ pce      <dbl> 507.4, 510.5, 516.3, 512.9, 518.1, 525.8, 531.5, 534....
+#> $ pop      <int> 198712, 198911, 199113, 199311, 199498, 199657, 19980...
+#> $ psavert  <dbl> 12.5, 12.5, 11.7, 12.5, 12.5, 12.1, 11.7, 12.2, 11.6,...
+#> $ uempmed  <dbl> 4.5, 4.7, 4.6, 4.9, 4.7, 4.8, 5.1, 4.5, 4.1, 4.6, 4.4...
+#> $ unemploy <int> 2944, 2945, 2958, 3143, 3066, 3018, 2878, 3001, 2877,...
 
-    #> Observations: 574
-    #> Variables: 6
-    #> $ date     <date> 1967-07-01, 1967-08-01, 1967-09-01, 1967-10-01, 1967...
-    #> $ pce      <dbl> 507.4, 510.5, 516.3, 512.9, 518.1, 525.8, 531.5, 534....
-    #> $ pop      <int> 198712, 198911, 199113, 199311, 199498, 199657, 19980...
-    #> $ psavert  <dbl> 12.5, 12.5, 11.7, 12.5, 12.5, 12.1, 11.7, 12.2, 11.6,...
-    #> $ uempmed  <dbl> 4.5, 4.7, 4.6, 4.9, 4.7, 4.8, 5.1, 4.5, 4.1, 4.6, 4.4...
-    #> $ unemploy <int> 2944, 2945, 2958, 3143, 3066, 3018, 2878, 3001, 2877,...
-
-``` r
 pop <- economics %>% 
     mutate(year = year(date)) %>% 
     mutate(month = month(date)) %>% 
     filter(month == 12) %>% 
     select(year, pop) %>% 
     glimpse()
+#> Observations: 48
+#> Variables: 2
+#> $ year <dbl> 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 197...
+#> $ pop  <int> 199657, 201621, 203675, 206238, 208740, 210821, 212785, 2...
 ```
-
-    #> Observations: 48
-    #> Variables: 2
-    #> $ year <dbl> 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 197...
-    #> $ pop  <int> 199657, 201621, 203675, 206238, 208740, 210821, 212785, 2...
 
 Now join.
 
@@ -545,17 +567,16 @@ Now join.
 hate_crimes <- left_join(hate_crimes, pop, by = "year") %>%
 mutate(rate = n / pop) %>% 
     glimpse()
+#> Observations: 27
+#> Variables: 4
+#> $ year <dbl> 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 200...
+#> $ n    <dbl> 4735, 6838, 7842, 6164, 8379, 9362, 8647, 8297, 8291, 861...
+#> $ pop  <int> 254964, 258413, 261674, 264804, 267943, 271125, 274372, 2...
+#> $ rate <dbl> 0.01857125, 0.02646152, 0.02996859, 0.02327759, 0.0312715...
 ```
 
-    #> Observations: 27
-    #> Variables: 4
-    #> $ year <dbl> 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 200...
-    #> $ n    <dbl> 4735, 6838, 7842, 6164, 8379, 9362, 8647, 8297, 8291, 861...
-    #> $ pop  <int> 254964, 258413, 261674, 264804, 267943, 271125, 274372, 2...
-    #> $ rate <dbl> 0.01857125, 0.02646152, 0.02996859, 0.02327759, 0.0312715...
-
-And the graph shows that while the numb wer of hate crimes is up, the
-per capita rate is the lowest its been since 1991.
+And the graph shows that while the number of hate crimes is up, the per
+capita rate is the lowest its been since 1991.
 
 ``` r
 ggplot(hate_crimes, aes(year, rate * 1000)) +
@@ -564,9 +585,9 @@ ggplot(hate_crimes, aes(year, rate * 1000)) +
     scale_y_continuous(limits = c(0, 40))
 ```
 
-<img src="images/cm405-unnamed-chunk-25-1.png" width="70%" />
+<img src="images/cm405-unnamed-chunk-27-1.png" width="70%" />
 
-I would not release this graph however because mopre work is needed to
+I would not release this graph however because more work is needed to
 understand this story. These data are aggregated—there are differences
 to be found by city or region and by race and poverty.
 
@@ -581,7 +602,7 @@ that equalize the purchasing power of different currencies by
 eliminating the differences in price levels between countries.
 
 Thus, a graph about money among countries that does not adjust for PPP
-is lying. If you have data thjat needs to be adjutsed for PPP, consult
+is lying. If you have data that needs to be adjusted for PPP, consult
 the following sites:
 
 [What are
