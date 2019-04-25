@@ -741,7 +741,12 @@ unloadNamespace("VIM")
 
 **1. D1 distributions**
 
-  - Open the explore file for your D1 display.
+Open a new explore file for your D1 display.
+
+``` 
+explore/d1-missing-values-explore.R    
+```
+
   - From the source data frame, select only those variables you graph in
     the final data display
   - Use the VIM package to visualize the missing values in these
@@ -751,11 +756,23 @@ unloadNamespace("VIM")
 
 **2. D2 multiway**
 
-Repeat for D2.
+Open a new explore file for your D2 display.
+
+``` 
+explore/d2-missing-values-explore.R    
+```
+
+Repeat the steps from above.
 
 **3. D3 correlations**
 
-Repeat for D3.
+Open a new explore file for your D3 display.
+
+``` 
+explore/d3-missing-values-explore.R    
+```
+
+Repeat the steps from above.
 
 ## references
 
