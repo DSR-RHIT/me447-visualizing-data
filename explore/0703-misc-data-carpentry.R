@@ -3,3 +3,6 @@
 
 # load packages
 library("tidyverse")
+library("tidyverse")
+library("nycflights")
+library("wrapr")

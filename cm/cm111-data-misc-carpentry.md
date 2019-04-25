@@ -41,10 +41,11 @@ packages](cm902-software-studio.md#install-packages) for instructions if
 needed.
 
   - tidyverse  
-
   - nycflights13
+  - wrapr
+  - fivethirtyeight
+  - VIM
 
-  - 
 Scripts to initialize
 
 ``` 
@@ -177,7 +178,6 @@ filter(flights, dep_delay > 370)
 #> #   arr_delay <dbl>, carrier <chr>, flight <int>, tailnum <chr>,
 #> #   origin <chr>, dest <chr>, air_time <dbl>, distance <dbl>, hour <dbl>,
 #> #   minute <dbl>, time_hour <dttm>
-
 
 # filter includes NA values if you so specify
 filter(flights, is.na(dep_delay) | dep_delay > 30)
