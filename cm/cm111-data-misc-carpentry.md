@@ -292,8 +292,7 @@ all data frames must have the same number of rows.
 This approach can be error-prone: it depends on the rows of both data
 frames being in the same order so that the rows match by position.
 
-Instead, I suggest you use joins with coordinatized
-data.
+Instead, I suggest you use joins with coordinatized data.
 
 <!-- ## rbind()  -->
 
@@ -546,8 +545,7 @@ df <- df %>%
                 include.lowest = TRUE, 
                 breaks = quantile(Income, probs = c(0, 0.25, 0.5, 0.75, 1)), 
                 labels = c("Lower 25%", 
-                        "Lower middle, 
-                        25-50%", 
+                        "Lower middle, 25-50%", 
                         "Upper middle, 50-75%", 
                         "State median income in the upper 25%")
                 )) %>% 
