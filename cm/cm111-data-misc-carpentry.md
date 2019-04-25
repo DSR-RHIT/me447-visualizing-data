@@ -739,7 +739,23 @@ unloadNamespace("VIM")
 
 ## exercises
 
-TBD
+**1. D1 distributions**
+
+  - Open the explore file for your D1 display.
+  - From the source data frame, select only those variables you graph in
+    the final data display
+  - Use the VIM package to visualize the missing values in these
+    variables
+  - Add a comment about the missing values to your discussion and a
+    brief explanation of what you did about the missing values (if any).
+
+**2. D2 multiway**
+
+Repeat for D2.
+
+**3. D3 correlations**
+
+Repeat for D3.
 
 ## references
 
