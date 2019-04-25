@@ -14,7 +14,8 @@ BY-NC 2.0</a> <br> </small>
 [bind\_rows()](#bind_rows)  
 [bind\_cols()](#bind_cols)  
 [cut()](#cut)  
-[summarizing missing values](#summarizing-missing-values)  
+[visualizing missing values](#visualizing-missing-values)  
+[dealing with missing values](#dealing-with-missing-values)  
 [unloading a package](#unloading-a-package)  
 [exercises](#exercises)  
 [references](#references)
@@ -584,7 +585,11 @@ ggplot(data = df, mapping = aes(x = Literacy, y = Life.Exp)) +
 
 <img src="images/cm111-unnamed-chunk-15-1.png" width="78.75%" />
 
-## summarizing missing values
+## visualizing missing values
+
+Visualizing missing values is part of the data carpentry process—these
+graphs would not necessarily be part of a portfolio presentation, but
+are part of you investigation of the data.
 
 Using the VIM package to visualize missing data. I’m using the `biopics`
 data set from fivethirtyeight.
@@ -651,6 +656,49 @@ Column-wise we can extract that
 
   - 0.32 + 0.10 = 42% of the rows are missing earnings
   - 0.16 + 0.10 = 26% of the rows are missing race
+
+We can also select two of the columns and visualize how their missing
+values interact using `VIM::spineMiss()`. From the previous graph, we
+see that earnings and race are the two variables that have the missing
+values.
+
+The width of the bars represents the relative frequency of the levels;
+the height represents the relative proportion of missing to observed.
+Thus the area represents the relative proportion of missing values among
+these two values.
+
+``` r
+x <- biopics %>% 
+    select("subj_race", "earnings")
+spineMiss(x, 
+                    col = c(rcb("pale_BG"), rcb("mid_BG")))
+```
+
+<img src="images/cm111-unnamed-chunk-18-1.png" width="78.75%" />
+
+The bar chart at the far right gives an overall ratio of missing
+earnings for all races combined.
+
+## dealing with missing values
+
+Dealing with missing values is beyond our scope of work, but you should
+know that the essential approaches are
+
+  - omit the missing observations  
+  - impute the missing observations
+
+Imputation is a process of replacing missing data with substituted
+values that are a “best guess” at what the values would have been. I
+have used the **mice** package for imputing missing data when necessary.
+
+Some articles on imputation, for future references:
+
+  - [How to handle missing
+    data](https://towardsdatascience.com/how-to-handle-missing-data-8646b18db0d4)  
+  - [Imputing missing data with R: MICE
+    package](https://datascienceplus.com/imputing-missing-data-with-r-mice-package/)  
+  - [The mice
+    package](https://cran.r-project.org/web/packages/mice/mice.pdf)
 
 ## unloading a package
 
