@@ -39,9 +39,6 @@ to data that is otherwise unavailable.
 
 ## introduction
 
-Here are some places to find publicly available data. Most links were
-copied from (Knaflic, [2018](#ref-Knaflic:2018)).
-
 The links on this page answer the question, “Where do I find data?” Most
 links take you to the data source—the organization that curates the
 data—with two exceptions:
@@ -53,25 +50,44 @@ data—with two exceptions:
 
 ## packages to import data
 
-[R packages to import public data](http://bit.ly/RDataPkgs) by Machlis
-([2018](#ref-Machlis:2018)): R packages designed to help you access
-public data. These packages vastly simplify the process of obtaining
-data from public sources such as the Census or the Federal Reserve.
-Follow the link and scroll down to the table for the complete list. For
-example,
+R packages designed to help you access public data. These packages
+vastly simplify the process of obtaining data from public sources such
+as the Census or the Federal Reserve.
+
+Packages I’ve
+    tried
 
   - [tidycensus](https://walkerke.github.io/tidycensus/articles/basic-usage.html)
-    package for importing data from the US
-    Census  
-  - [rtweet](https://cran.r-project.org/web/packages/rtweet/vignettes/intro.html)
-    package for importing data from Twitter  
+    package for importing data from the US Census  
   - [FredR](https://github.com/jcizel/FredR) package for importing data
     from the Federal Reserve  
   - [rnoaa](https://ropensci.org/tutorials/rnoaa_tutorial/) package for
     importing data from the National Oceanic and Atmospheric
     Administration  
-  - and many
-    more
+  - [OECD](https://cran.r-project.org/web/packages/OECD/vignettes/OECD.html)
+    for importing data from the Organisation for Economic Co-operation
+    and Development (OECD)
+
+For more data-import packages, see the table in the article [R packages
+to import public data](http://bit.ly/RDataPkgs) (Machlis,
+[2018](#ref-Machlis:2018)). Links are provided to these packages:
+
+  - bea : Bureau of Economis Analysis
+  - blscrape : Bureau of Labor Statistics  
+  - censusapi : Complete Census API
+  - data.world: Data World  
+  - edgarWebR : Securities and Exchange Commission  
+  - eu.us.opendata : US and EU data sets
+  - forbesListR : private companies, business schools, and venture
+    capitalists
+  - ipumsr : Raw IPUMS microdata  
+  - Lahman : Lahman baseball database  
+  - pollstR : political polling data from the Huffington Post
+  - quantmod : Google Finance, Yahoo Finance and the St. Louis Federal
+    Reserve  
+  - RSocrata : municipalities that use the Socrata data platform  
+  - rtweet : Twitter
+    data
 
 ## health
 
@@ -156,7 +172,7 @@ example,
   - [The Economist](https://www.economist.com/markets-data) markets &
     data.
   - [FiveThirtyEight](https://fivethirtyeight.com/) Datasets used in its
-    articles available via GitHub repository.
+    articles available via GitHub repository
   - [Guardian Datablog](https://www.theguardian.com/data) Provides a lot
     of free-to-use data via Google spreadsheets.
   - [PermID from Thomson Reuters](https://permid.org/) PermIDs are open,
@@ -166,6 +182,8 @@ example,
 ## sport
 
   - [Basketball Reference](https://www.basketball-reference.com/)
+  - [FiveThirtyEight](https://fivethirtyeight.com/) Datasets used in its
+    articles available via GitHub repository
   - [Lahman’s Baseball
     Database](http://www.seanlahman.com/baseball-archive/statistics/)
     Complete batting and pitching statistics from 1871 to 2016, plus
@@ -294,8 +312,10 @@ example,
     world.
   - [Informatics Lab Open Data](http://data.informaticslab.co.uk/) 80TB
     of meteorological data.
+  - [National snow and ice data center](https://nsidc.org/)  
   - [NASA Earth Data](https://earthdata.nasa.gov/) Data from The Earth
-    Observing System Data and Information System (EOSDIS).
+    Observing System Data and Information System (EOSDIS).  
+  - [NOAA climate data](https://www.ncdc.noaa.gov/cdo-web/)
 
 ## economics
 
@@ -380,6 +400,36 @@ example,
     Datasets on education, government, science, lifestyle and more.
   - [Western Pennsylvania Regional Data Center](http://www.wprdc.org/)
     Now serving 262 datasets and counting.
+  - [Assault deaths
+    to 2015](https://kieranhealy.org/blog/archives/2017/10/02/assault-deaths-to-2015/)
+  - [Pirating pirate data for pirate
+    day](http://blog.revolutionanalytics.com/2017/09/pirating-pirate-data-for-pirate-day.html)
+    Yes, it really is about 21st century pirates
+  - [Exploratory data analysis of tropical storms in
+    R](https://www.stoltzmaniac.com/exploratory-data-analysis-of-tropical-storms-in-r/)
+  - [Fun data for teaching
+    R](https://bartomeuslab.com/2016/01/21/fun-data-for-teaching-r/)
+    blog  
+  - [Discovering good data
+    packages](https://ropenscilabs.github.io/data-packages/) repo  
+  - [R packages for data
+    access](http://blog.revolutionanalytics.com/2016/08/r-packages-data-access.html)
+    blog  
+  - [Extracting tables from PDFs in R using the tabulizer
+    package](https://datascienceplus.com/extracting-tables-from-pdfs-in-r-using-the-tabulizer-package/)
+  - [Pulling data out of census spreadsheets using
+    R](https://datascienceplus.com/pulling-data-out-of-census-spreadsheets-using-r/)  
+  - [Publications for which code and/or data are
+    available](https://reproducibleresearch.net/reproducible-material/)  
+  - [Visualizing obesity across United States by using data from
+    Wikipedia](https://datascienceplus.com/visualizing-obesity-across-united-states-by-using-data-from-wikipedia/)
+  - [Gapminder: Time series data about the
+    world](http://www.gapminder.org/data/)
+  - [rOpenSci packages](https://ropensci.org/packages/#data_access)
+  - [Using data.gov APIs in
+    R](http://data.library.virginia.edu/using-data-gov-apis-in-r/)
+  - [Datasets for data mining and data
+    science](http://www.kdnuggets.com/datasets/index.html)
 
 ## more lists of data sources
 
@@ -397,6 +447,8 @@ example,
     Policing the police.
   - [Datasets to Practice Your Data
     Mining](http://www.rdatamining.com/resources/data)
+  - [Datasets for data mining and data
+    science](http://www.kdnuggets.com/datasets/index.html)  
   - [Enigma Public](https://public.enigma.com/) The world’s broadest
     collection of public data.
   - [Fifty free data sources you should
@@ -409,8 +461,9 @@ example,
     Know](https://www.kdnuggets.com/2017/12/big-data-free-sources.html)
   - [University of Rochester LibGuide
     Data-Stats](http://libguides.lib.rochester.edu/data-stats)
-    Repository listing many public data sources &
-datasets.
+    Repository listing many public data sources & datasets.
+  - [19 free public data sets for your first data science
+    project](https://www.springboard.com/blog/free-public-data-sets-data-science-project/)
 
 <!-- --- -->
 

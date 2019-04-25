@@ -78,6 +78,34 @@ Source, and compare your results to the results shown.
 Open the explore script you initialized earlier. Load the package that
 has the data.
 
+Conditioning plot, made with
+lattice
+
+<https://homepage.divms.uiowa.edu/~luke/classes/STAT4580/threenum.html#conditioning-plots-coplots>
+
+``` r
+library(lattice)
+scanvote <- read.csv("data-raw/scanvote.csv")
+glimpse(scanvote)
+#> Observations: 55
+#> Variables: 4
+#> $ District <fct> Uusimaa, Turku ja Pori, Hame, Kymi, Ahvenanmaa, Mikke...
+#> $ Yes      <dbl> 70.8, 53.4, 57.8, 65.2, 51.9, 54.2, 48.3, 44.4, 47.7,...
+#> $ Pop      <dbl> 117.5, 32.0, 39.5, 31.8, 15.4, 12.8, 15.4, 16.7, 15.2...
+#> $ Country  <fct> Fin, Fin, Fin, Fin, Fin, Fin, Fin, Fin, Fin, Fin, Fin...
+```
+
+``` r
+coplot(Yes ~ log10(Pop) | Country, 
+             data = scanvote, 
+             columns = 3,
+       panel = function(x, y, ...) {
+          panel.smooth(x, y, span = .8, iter = 5, ...)
+          abline(lm(y ~ x), col = "blue")})
+```
+
+<img src="images/cm208-unnamed-chunk-5-1.png" width="70%" />
+
 <br> <a href="#top">▲ top of page</a>
 
 ## carpentry

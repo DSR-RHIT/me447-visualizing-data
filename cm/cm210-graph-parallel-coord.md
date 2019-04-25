@@ -78,6 +78,33 @@ Source, and compare your results to the results shown.
 Open the explore script you initialized earlier. Load the package that
 has the data.
 
+Made with GGally, <http://ggobi.github.io/ggally/index.html>
+
+``` r
+library(GGally)
+data(diamonds, package = "ggplot2")
+diamonds.samp <- diamonds[sample(1:dim(diamonds)[1], 100), ]
+glimpse(diamonds.samp)
+#> Observations: 100
+#> Variables: 10
+#> $ carat   <dbl> 0.31, 0.40, 0.70, 0.31, 1.01, 1.06, 0.51, 1.33, 0.50, ...
+#> $ cut     <ord> Premium, Premium, Very Good, Very Good, Ideal, Good, I...
+#> $ color   <ord> G, H, I, H, G, G, E, I, D, G, D, J, H, J, G, H, E, H, ...
+#> $ clarity <ord> VVS1, VVS1, SI1, VS1, SI2, VS2, VS2, SI2, SI1, VS1, VS...
+#> $ depth   <dbl> 59.9, 61.8, 63.8, 62.4, 60.5, 63.1, 62.8, 59.7, 63.8, ...
+#> $ table   <dbl> 62.0, 58.0, 59.0, 58.0, 58.0, 59.0, 56.0, 59.0, 60.0, ...
+#> $ price   <int> 1046, 1017, 1890, 544, 4327, 6212, 1733, 5094, 1433, 2...
+#> $ x       <dbl> 4.37, 4.69, 5.56, 4.28, 6.52, 6.45, 5.14, 7.21, 5.03, ...
+#> $ y       <dbl> 4.35, 4.72, 5.60, 4.34, 6.48, 6.48, 5.11, 7.15, 5.00, ...
+#> $ z       <dbl> 2.61, 2.91, 3.56, 2.69, 3.93, 4.08, 3.22, 4.29, 3.20, ...
+```
+
+``` r
+ggparcoord(data = diamonds.samp, columns = c(1, 5:10))
+```
+
+<img src="images/cm208-unnamed-chunk-5-1.png" width="70%" />
+
 <br> <a href="#top">▲ top of page</a>
 
 ## carpentry

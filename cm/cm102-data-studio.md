@@ -16,7 +16,8 @@ licensed under
 [workflow basics](#workflow-basics)  
 [data transformation](#data-transformation)  
 [data import](#data-import)  
-[data links](#data-links)  
+[optional tutorials](#optional-tutorials)  
+[data sources](#data-sources)  
 [references](#references)
 
 ## prerequisites
@@ -120,29 +121,20 @@ indicated
 [5.1 Data
 transformation](https://r4ds.had.co.nz/transform.html#introduction-2)  
 [5.2
-filter()](https://r4ds.had.co.nz/transform.html#filter-rows-with-filter)
-
-  - Exercise [5.2.4](https://r4ds.had.co.nz/transform.html#exercises-7)
-
+filter()](https://r4ds.had.co.nz/transform.html#filter-rows-with-filter)  
 [5.3
-arrange()](https://r4ds.had.co.nz/transform.html#arrange-rows-with-arrange)
-
-  - Exercise [5.3.1](https://r4ds.had.co.nz/transform.html#exercises-8)
-    problems 2, 3, 4
-
-[5.4 select()](https://r4ds.had.co.nz/transform.html#select)
-
-  - Exercise [5.4.1](https://r4ds.had.co.nz/transform.html#exercises-9)
-
+arrange()](https://r4ds.had.co.nz/transform.html#arrange-rows-with-arrange)  
+[5.4 select()](https://r4ds.had.co.nz/transform.html#select)  
 [5.5
 mutate()](https://r4ds.had.co.nz/transform.html#add-new-variables-with-mutate)
 
+  - Exercise
+    [5.2.4](https://r4ds.had.co.nz/transform.html#exercises-7)  
+  - Exercise [5.3.1](https://r4ds.had.co.nz/transform.html#exercises-8)
+    problems 2, 3, 4  
+  - Exercise
+    [5.4.1](https://r4ds.had.co.nz/transform.html#exercises-9)  
   - Exercise [5.5.2](https://r4ds.had.co.nz/transform.html#exercises-10)
-
-[5.6
-groupby()](https://r4ds.had.co.nz/transform.html#grouped-summaries-with-summarise)
-
-  - Exercise [5.6.7](https://r4ds.had.co.nz/transform.html#exercises-11)
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -159,71 +151,21 @@ file](https://r4ds.had.co.nz/data-import.html#writing-to-a-file)
 [11.6 Other types of
 data](https://r4ds.had.co.nz/data-import.html#other-types-of-data)
 
-## data links
+## optional tutorials
 
-If you find other sites you find useful or entertaining, please let me
-know and I’ll add them to the lists.
+Browse these tutorials by Jenny Bryan for another perspective on
+obtaining public data
 
-See [Data sources](cm108-data-sources.md#data-sources) for another set
-of links organized by topic. Some overlap with the list below.
+[Getting data from the web
+part 1](https://github.com/STAT545-UBC/STAT545-UBC.github.io/blob/master/webdata02_activity.md)  
+[Getting data from the web
+part 2](https://github.com/STAT545-UBC/STAT545-UBC.github.io/blob/master/webdata03_activity.md)
 
-Data sites
+## data sources
 
-  - [FiveThirtyEight](https://data.fivethirtyeight.com/)  
-  - [US government](https://www.data.gov/)  
-  - [NOAA climate data](https://www.ncdc.noaa.gov/cdo-web/)  
-  - [Publications for which code and/or data are
-    available](https://reproducibleresearch.net/reproducible-material/)  
-  - [National snow and ice data center](https://nsidc.org/)  
-  - [Visualizing obesity across United States by using data from
-    Wikipedia](https://datascienceplus.com/visualizing-obesity-across-united-states-by-using-data-from-wikipedia/)
-  - [Extracting tables from PDFs in R using the tabulizer
-    package](https://datascienceplus.com/extracting-tables-from-pdfs-in-r-using-the-tabulizer-package/)
-  - [Pulling data out of census spreadsheets using
-    R](https://datascienceplus.com/pulling-data-out-of-census-spreadsheets-using-r/)
-  - [Gapminder: Time series data about the
-    world](http://www.gapminder.org/data/)
-  - [rOpenSci packages](https://ropensci.org/packages/#data_access)
-  - [Using data.gov APIs in
-    R](http://data.library.virginia.edu/using-data-gov-apis-in-r/)
-  - [Datasets for data mining and data
-    science](http://www.kdnuggets.com/datasets/index.html)
-  - [US Census](https://www.census.gov/data.html)
-
-Articles about interesting data
-
-  - [Assault deaths
-    to 2015](https://kieranhealy.org/blog/archives/2017/10/02/assault-deaths-to-2015/)
-  - [Pirating pirate data for pirate
-    day](http://blog.revolutionanalytics.com/2017/09/pirating-pirate-data-for-pirate-day.html)
-    Yes, it really is about 21st century pirates
-  - [Exploratory data analysis of tropical storms in
-    R](https://www.stoltzmaniac.com/exploratory-data-analysis-of-tropical-storms-in-r/)
-  - [Fun data for teaching
-    R](https://bartomeuslab.com/2016/01/21/fun-data-for-teaching-r/)
-    blog  
-  - [Discovering good data
-    packages](https://ropenscilabs.github.io/data-packages/) repo  
-  - [R packages for data
-    access](http://blog.revolutionanalytics.com/2016/08/r-packages-data-access.html)
-    blog  
-  - [19 free public data sets for your first data science
-    project](https://www.springboard.com/blog/free-public-data-sets-data-science-project/)
-
-Data tutorials from other authors
-
-  - [Getting data from the web
-    part 1](https://github.com/STAT545-UBC/STAT545-UBC.github.io/blob/master/webdata02_activity.md)
-    tutorial from Stat 545 by Jenny Bryan  
-  - [Getting data from the web
-    part 2](https://github.com/STAT545-UBC/STAT545-UBC.github.io/blob/master/webdata03_activity.md)
-    tutorial from Stat 545 by Jenny Bryan  
-  - [This R data import tutorial is everything you need,
-    part 1](https://www.datacamp.com/community/tutorials/r-data-import-tutorial/#gs.DdZtwPI)
-    from Data Camp  
-  - [Importing data into R,
-    part 2](https://www.datacamp.com/community/tutorials/importing-data-r-part-two#gs.uCsWBZE)
-    from Data Camp
+Go to our [data sources page](cm108-data-sources.md#data-sources) for a
+list of links to public data. Begin exploring the data available and
+selecting data you can use in your portfolio.
 
 <br> <a href="#top">▲ top of page</a>
 

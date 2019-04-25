@@ -78,6 +78,29 @@ Source, and compare your results to the results shown.
 Open the explore script you initialized earlier. Load the package that
 has the data.
 
+Made with GGally, <http://ggobi.github.io/ggally/index.html>
+
+``` r
+library(GGally)
+data(flea, package = "GGally")
+glimpse(flea)
+#> Observations: 74
+#> Variables: 7
+#> $ species <fct> Concinna, Concinna, Concinna, Concinna, Concinna, Conc...
+#> $ tars1   <int> 191, 185, 200, 173, 171, 160, 188, 186, 174, 163, 190,...
+#> $ tars2   <int> 131, 134, 137, 127, 118, 118, 134, 129, 131, 115, 143,...
+#> $ head    <int> 53, 50, 52, 50, 49, 47, 54, 51, 52, 47, 52, 50, 51, 53...
+#> $ aede1   <int> 150, 147, 144, 144, 153, 140, 151, 143, 144, 142, 141,...
+#> $ aede2   <int> 15, 13, 14, 16, 13, 15, 14, 14, 14, 15, 13, 15, 13, 15...
+#> $ aede3   <int> 104, 105, 102, 97, 106, 99, 98, 110, 116, 95, 99, 105,...
+```
+
+``` r
+ggscatmat(flea, columns = 2:4, color = "species", alpha = 0.8)
+```
+
+<img src="images/cm208-unnamed-chunk-5-1.png" width="70%" />
+
 <br> <a href="#top">▲ top of page</a>
 
 ## carpentry

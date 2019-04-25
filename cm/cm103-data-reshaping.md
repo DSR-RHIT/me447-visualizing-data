@@ -22,7 +22,7 @@ data](#keys-and-values-in-coordinatized-data)
 [drop\_na()](#drop_na)  
 [str\_replace()](#str_replace)  
 [separate()](#separate)  
-[WHO group\_by() and summarize()](#who-group_by-and-summarize)  
+[group\_summarize()](#group_summarize)  
 [WHO graphs](#who-graphs)  
 [exercises](#exercises)  
 [references](#references)
@@ -40,6 +40,7 @@ data](#keys-and-values-in-coordinatized-data)
       - graphclassmate
       - cdata  
       - wrapr  
+      - seplyr  
       - rio  
       - feather
 
@@ -55,6 +56,7 @@ work, write a minimal header and load the packages:
 library("tidyverse")
 library("cdata")
 library("wrapr")
+library("seplyr")
 ```
 
 <br> <a href="#top">▲ top of page</a>
@@ -100,7 +102,7 @@ we lose the information in the row names
 
 ``` r
 as_tibble(VADeaths) %>% 
-    print()
+        print()
 #> # A tibble: 5 x 4
 #>   `Rural Male` `Rural Female` `Urban Male` `Urban Female`
 #>          <dbl>          <dbl>        <dbl>          <dbl>
@@ -116,7 +118,7 @@ Instead, we convert the matrix to a data frame using the base R
 
 ``` r
 VA_deaths <- data.frame(VADeaths) %>% 
-    print()
+        print()
 #>       Rural.Male Rural.Female Urban.Male Urban.Female
 #> 50-54       11.7          8.7       15.4          8.4
 #> 55-59       18.1         11.7       24.3         13.6
@@ -130,8 +132,8 @@ Then create a new variable for the row names using
 
 ``` r
 VA_deaths <- VA_deaths %>% 
-    rownames_to_column("age_group") %>% 
-    print()
+        rownames_to_column("age_group") %>% 
+        print()
 #>   age_group Rural.Male Rural.Female Urban.Male Urban.Female
 #> 1     50-54       11.7          8.7       15.4          8.4
 #> 2     55-59       18.1         11.7       24.3         13.6
@@ -281,12 +283,12 @@ using the `wrapr::build_frame()` function.
 
 ``` r
 control_table <- wrapr::build_frame(
-    "geo_area",  "sex",     "death_rate"   |
-    "Rural",     "Male",    "Rural.Male"   |
-    "Rural",     "Female",  "Rural.Female" |
-    "Urban",     "Male",    "Urban.Male"   |
-    "Urban",     "Female",  "Urban.Female"
-   )
+        "geo_area",  "sex",     "death_rate"   |
+        "Rural",     "Male",    "Rural.Male"   |
+        "Rural",     "Female",  "Rural.Female" |
+        "Urban",     "Male",    "Urban.Male"   |
+        "Urban",     "Female",  "Urban.Female"
+        )
 ```
 
 The control table is one of the arguments in the
@@ -294,11 +296,11 @@ The control table is one of the arguments in the
 
 ``` r
 VA_tall <- rowrecs_to_blocks(
-  wideTable        = VA_deaths,
-  controlTable     = control_table,
-  controlTableKeys = c("geo_area", "sex"),
-  columnsToCopy    = c("age_group")
-  )
+        wideTable        = VA_deaths,
+        controlTable     = control_table,
+        controlTableKeys = c("geo_area", "sex"),
+        columnsToCopy    = c("age_group")
+        )
 ```
 
 Arguments:
@@ -349,10 +351,10 @@ to `tidyr::spread()` but generalized.
 
 ``` r
 VA_wide <- blocks_to_rowrecs(
-  tallTable        = VA_tall,
-  controlTable     = control_table,
-  controlTableKeys = c("geo_area", "sex"), 
-  keyColumns       = c("age_group")
+        tallTable        = VA_tall,
+        controlTable     = control_table,
+        controlTableKeys = c("geo_area", "sex"), 
+        keyColumns       = c("age_group")
 )
 ```
 
@@ -439,7 +441,7 @@ notifications](http://www.who.int/tb/country/data/download/en/).
 # read the CSV file 
 who <- read.csv("data-raw/TB-notifications.csv") %>% 
         as_tibble() %>% 
-    print()
+        print()
 #> # A tibble: 8,070 x 163
 #>    country iso2  iso3  iso_numeric g_whoregion  year new_sp new_sn new_su
 #>    <fct>   <fct> <fct>       <int> <fct>       <int>  <int>  <int>  <int>
@@ -839,8 +841,8 @@ character string after the first character, i.e., after the initial `f`,
 
 ``` r
 who_tall <- who_tall %>% 
-    separate(sex_age, c("sex", "age_group"), sep = 1) %>% 
-    glimpse()
+        separate(sex_age, c("sex", "age_group"), sep = 1) %>% 
+        glimpse()
 #> Observations: 86,998
 #> Variables: 5
 #> $ country   <fct> Afghanistan, Afghanistan, Afghanistan, Afghanistan, ...
@@ -859,14 +861,21 @@ unique(who_tall$sex)
 
 <br> <a href="#top">▲ top of page</a>
 
-## WHO group\_by() and summarize()
+## group\_summarize()
 
-Ignoring age group and summing all case types using `group_by()` and
-`dplyr::summarize()`.
+The `group_summarize()` function groups a data frame by the grouping
+variables you define, computes summaries from the data frame, and
+produces an output data frame with those summaries.
+
+In the WHO case study example, I want to group the data frame `who_tall`
+by the grouping variables `c("country", "year", "sex")`, and computed
+the `sum()` summary.
 
 ``` r
-this_group <- group_by(who_tall, country, year, sex)
-who_sum    <- dplyr::summarise(this_group, N = sum(N)) %>%
+grouping_variables <- c("country", "year", "sex")
+who_sum <- seplyr::group_summarise(who_tall, 
+                grouping_variables,
+                N = sum(N)) %>%
         as.data.frame() %>% 
         glimpse()
 #> Observations: 8,585
@@ -876,6 +885,19 @@ who_sum    <- dplyr::summarise(this_group, N = sum(N)) %>%
 #> $ sex     <chr> "f", "m", "f", "m", "f", "m", "f", "m", "f", "m", "f",...
 #> $ N       <int> 102, 26, 1207, 571, 517, 228, 1751, 915, 3062, 1577, 4...
 ```
+
+Other summary functions you might use include,
+
+  - `count()`
+  - `IQR(x)` interquartile range
+  - `max(x)` and `min(x)`  
+  - `mean(x)`  
+  - `median(x)`
+  - `sd(x)` standard deviation
+  - `sum(x)`
+  - `first(x)`, `nth(x, 2)`, `last(x)` for position
+  - `sum(!is.na(x))` number of non-missing values
+  - `n_distinct(x)` number of distinct values
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -889,12 +911,11 @@ p <- ggplot(data = who_sum, aes(x = year, y = N/1e+6, col = sex, group = sex)) +
         geom_line(size = 1) +
         facet_wrap(~reorder(country, N), ncol = 8, as.table = FALSE) +
         labs(x = "", 
-                 y = "", 
-             title   = "Annual cases of tuberculosis (millions)", 
-             caption = "Source: 2019 World Health Organization") +
+                y = "", 
+                title   = "Annual cases of tuberculosis (millions)", 
+                caption = "Source: 2019 World Health Organization") +
         scale_x_continuous(breaks = c(1980, 2000)) +
         theme_graphclass()
-
 p
 ```
 
