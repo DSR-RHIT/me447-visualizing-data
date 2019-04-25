@@ -333,7 +333,6 @@ Once the file exists,
     
     # project files not version controlled 
     manage
-    practice
 
 We can also generally omit HTML files (we are using github-specific .md
 files for the web pages) and binary files like Office .docx, .pptx, and
@@ -589,6 +588,13 @@ Bryan J (2018) Happy Git and GitHub for the useR.
 
 Whitmore S (2018) Art of README.
 <https://github.com/noffle/art-of-readme>
+
+</div>
+
+<div id="ref-Wickham+Grolemund:2017">
+
+Wickham H and Grolemund G (2017) *R for Data Science.* O’Reilly Media,
+Inc., Sebastopol, CA <https://r4ds.had.co.nz/>
 
 </div>
 

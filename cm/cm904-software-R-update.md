@@ -127,6 +127,13 @@ Bryan J and Hester J (2019) What They Forgot to Teach You About R.
 
 </div>
 
+<div id="ref-Wickham+Grolemund:2017">
+
+Wickham H and Grolemund G (2017) *R for Data Science.* O’Reilly Media,
+Inc., Sebastopol, CA <https://r4ds.had.co.nz/>
+
+</div>
+
 </div>
 
 ***

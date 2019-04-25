@@ -15,8 +15,7 @@ data and functions index
 
 I’ll sometimes recall that I used a particular data set or function in a
 tutorial but can’t remember which one. This index is meant to help us
-find at least one tutorial in which a function or data set is
-used.
+find at least one tutorial in which a function or data set is used.
 
 ## data
 
@@ -24,6 +23,7 @@ used.
 | :---------------- | :------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------- | :--------- | :-------- | :--------------------------------------------------------------------------- |
 | airquality        | datasets                                                             | [line graph](cm207-graph-line-graph.md), [strip plot](cm202-graph-strip-plot.md)                                                   | data.frame | 153x6     | New York Air Quality Measurements                                            |
 | Alligator         | [vcdExtra](https://CRAN.R-project.org/package=vcdExtra/vcdExtra.pdf) | [multiway](cm204-graph-multiway.md)                                                                                                | data.frame | 80x5      | Alligator Food Choice                                                        |
+| biopics           | [fivethirtyeight](https://tinyurl.com/yywwdvnd)                      | [misc data carpentry](cm111-data-misc-carpentry.md)                                                                                | data.frame | 761x14    | ‘Straight Outta Compton’ Is The Rare Biopic Not About White Dudes            |
 | blood             | [astsa](https://github.com/nickpoison/astsa)                         | [line graph](cm207-graph-line-graph.md)                                                                                            | ts         | 91x3      | Daily Blood Work                                                             |
 | county\_income    | [graphclassmate](https://github.com/graphdr/graphclassmate)          | [dot plot](cm206-graph-dot-plot.md)                                                                                                | data.frame | 3220x4    | Median income by US county in 2016                                           |
 | CPI               |                                                                      | [correcting graphical lies](cm405-rhetoric-correcting-graphical-lies.md)                                                           |            |           |                                                                              |
@@ -46,32 +46,33 @@ used.
 | oly12             | [VGAMdata](https://CRAN.R-project.org/package=VGAMdata/VGAMdata.pdf) | [scatterplot](cm205-graph-scatterplot.md)                                                                                          | data.frame | 10384x14  | 2012 Summer Olympics: Individuals Data                                       |
 | prodn             | [astsa](https://github.com/nickpoison/astsa)                         | [time series data](cm110-data-time-series.md)                                                                                      | ts         | 372       | Monthly Federal Reserve Board Production Index                               |
 | SpeedSki          | [GDAdata](https://CRAN.R-project.org/package=GDAdata/GDAdata.pdf)    | [boxplot](cm203-graph-boxplot.md), [strip plot](cm202-graph-strip-plot.md)                                                         | data.frame | 91x10     | World Speed Skiing Competition, Verbier 21st April, 2011                     |
-| state.x77         | datasets                                                             | [working with factors](cm107-data-working-with-factors.md)                                                                         | matrix     | 50x8      | US State Facts and Figures                                                   |
-| titanic           | [socviz](https://kjhealy.github.io/socviz/)                          | [R basics](cm903-software-R-basics.md)                                                                                             | data.frame | 4x4       | A table of survival rates from the Titanic                                   |
+| state.x77         | datasets                                                             | [misc data carpentry](cm111-data-misc-carpentry.md), [working with factors](cm107-data-working-with-factors.md)                    | matrix     | 50x8      | US State Facts and Figures                                                   |
+| titanic           | [socviz](https://kjhealy.github.io/socviz/)                          |                                                                                                                                    | data.frame | 4x4       | A table of survival rates from the Titanic                                   |
 | ucb\_admit        | [graphclassmate](https://github.com/graphdr/graphclassmate)          | [multiway](cm204-graph-multiway.md)                                                                                                | data.frame | 12x4      | Student admissions at UC Berkeley                                            |
 
-<br> <a href="#top">▲ top of
-page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## functions
 
 | item                   | package        | tutorials                                                                                                                                                                                                                                          |
 | :--------------------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| .libPaths()            | base           | [updating the R habitat](cm904-software-R-update.md)                                                                                                                                                                                               |
 | aes()                  | ggplot2        | [graph basics](cm201-graph-basics.md)                                                                                                                                                                                                              |
-| all\_equal()           | dplyr          | [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                                                          |
+| aggr()                 | VIM            | [misc data carpentry](cm111-data-misc-carpentry.md)                                                                                                                                                                                                |
+| all\_equal()           | dplyr          | [misc data carpentry](cm111-data-misc-carpentry.md), [reshaping data](cm103-data-reshaping.md)                                                                                                                                                     |
 | arrange()              | dplyr          | [data studio](cm102-data-studio.md)                                                                                                                                                                                                                |
 | as.POSIXct()           | base           | [time and dates](cm109-data-time-dates.md)                                                                                                                                                                                                         |
 | as\_date()             | lubridate      | [line graph](cm207-graph-line-graph.md), [time and dates](cm109-data-time-dates.md), [time series data](cm110-data-time-series.md)                                                                                                                 |
-| as\_tibble()           | tibble         | [R basics](cm903-software-R-basics.md)                                                                                                                                                                                                             |
 | attributes()           | base           | [introducing factors](cm106-data-nature-of-factors.md)                                                                                                                                                                                             |
+| bind\_rows()           | dplyr          | [misc data carpentry](cm111-data-misc-carpentry.md)                                                                                                                                                                                                |
 | blocks\_to\_rowrecs()  | cdata          | [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                                                          |
 | build\_frame()         | wrapr          | [carpentry with joins](cm105-data-joins.md), [reshaping data](cm103-data-reshaping.md)                                                                                                                                                             |
-| c()                    | base           | [R basics](cm903-software-R-basics.md)                                                                                                                                                                                                             |
-| class()                | base           | [introducing factors](cm106-data-nature-of-factors.md), [R basics](cm903-software-R-basics.md)                                                                                                                                                     |
+| class()                | base           | [introducing factors](cm106-data-nature-of-factors.md)                                                                                                                                                                                             |
 | complete()             | tidyr          | [strip plot](cm202-graph-strip-plot.md)                                                                                                                                                                                                            |
 | complete.cases()       | stats          | [dot plot](cm206-graph-dot-plot.md), [scatterplot](cm205-graph-scatterplot.md)                                                                                                                                                                     |
 | coord\_flip()          | ggplot2        | [boxplot](cm203-graph-boxplot.md)                                                                                                                                                                                                                  |
 | count()                | dplyr          | [carpentry with joins](cm105-data-joins.md)                                                                                                                                                                                                        |
+| cut()                  | base           | [misc data carpentry](cm111-data-misc-carpentry.md)                                                                                                                                                                                                |
 | data()                 | utils          | [data basics](cm101-data-basics.md)                                                                                                                                                                                                                |
 | date()                 | lubridate      | [working with factors](cm107-data-working-with-factors.md)                                                                                                                                                                                         |
 | date\_decimal()        | lubridate      | [line graph](cm207-graph-line-graph.md), [time and dates](cm109-data-time-dates.md)                                                                                                                                                                |
@@ -121,6 +122,8 @@ page</a>
 | image\_scale()         | magick         | [dot plot](cm206-graph-dot-plot.md)                                                                                                                                                                                                                |
 | image\_write           | magick         | [dot plot](cm206-graph-dot-plot.md)                                                                                                                                                                                                                |
 | import()               | rio            | [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                                                          |
+| install.packages()     | base           | [software studio](cm903-software-R-basics.md), [updating the R habitat](cm904-software-R-update.md)                                                                                                                                                |
+| install\_github()      | devtools       | [software studio](cm903-software-R-basics.md)                                                                                                                                                                                                      |
 | IQR()                  | stats          | [boxplot](cm203-graph-boxplot.md)                                                                                                                                                                                                                  |
 | labs()                 | ggplot2        | [graph basics](cm201-graph-basics.md)                                                                                                                                                                                                              |
 | left\_join()           | dplyr          | [carpentry with joins](cm105-data-joins.md), [correcting graphical lies](cm405-rhetoric-correcting-graphical-lies.md), [dot plot](cm206-graph-dot-plot.md)                                                                                         |
@@ -130,13 +133,14 @@ page</a>
 | make\_date()           | lubridate      | [line graph](cm207-graph-line-graph.md), [time and dates](cm109-data-time-dates.md)                                                                                                                                                                |
 | mdy()                  | lubridate      | [time and dates](cm109-data-time-dates.md)                                                                                                                                                                                                         |
 | mdy\_hm()              | lubridate      | [time and dates](cm109-data-time-dates.md)                                                                                                                                                                                                         |
-| mean()                 | base           | [R basics](cm903-software-R-basics.md)                                                                                                                                                                                                             |
 | month()                | lubridate      | [correcting graphical lies](cm405-rhetoric-correcting-graphical-lies.md)                                                                                                                                                                           |
 | mutate()               | dplyr          | [data studio](cm102-data-studio.md), [graph basics](cm201-graph-basics.md)                                                                                                                                                                         |
 | names()                | base           | [line graph](cm207-graph-line-graph.md)                                                                                                                                                                                                            |
 | nlevels()              | base           | [introducing factors](cm106-data-nature-of-factors.md)                                                                                                                                                                                             |
 | now()                  | lubridate      | [line graph](cm207-graph-line-graph.md)                                                                                                                                                                                                            |
 | pivot\_to\_rowrecs()   | cdata          | [dot plot](cm206-graph-dot-plot.md), [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                     |
+| qchar\_frame()         | wrapr          | [misc data carpentry](cm111-data-misc-carpentry.md)                                                                                                                                                                                                |
+| quantile()             | base           | [misc data carpentry](cm111-data-misc-carpentry.md)                                                                                                                                                                                                |
 | rcb()                  | graphclassmate | [multiway](cm204-graph-multiway.md)                                                                                                                                                                                                                |
 | read.table()           | utils          | [correcting graphical lies](cm405-rhetoric-correcting-graphical-lies.md), [data basics](cm101-data-basics.md), [line graph](cm207-graph-line-graph.md)                                                                                             |
 | read\_csv()            | readr          | [correcting graphical lies](cm405-rhetoric-correcting-graphical-lies.md), [data basics](cm101-data-basics.md)                                                                                                                                      |
@@ -158,20 +162,18 @@ page</a>
 | scale\_x\_continuous() | ggplot2        | [multiway](cm204-graph-multiway.md)                                                                                                                                                                                                                |
 | scale\_x\_date()       | ggplot2        | [line graph](cm207-graph-line-graph.md)                                                                                                                                                                                                            |
 | scale\_x\_log10()      | ggplot2        | [graph basics](cm201-graph-basics.md)                                                                                                                                                                                                              |
-| sd()                   | base           | [R basics](cm903-software-R-basics.md)                                                                                                                                                                                                             |
 | select()               | dplyr          | [data studio](cm102-data-studio.md)                                                                                                                                                                                                                |
 | select(matches())      | dplyr          | [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                                                          |
 | select\_if()           | dplyr          | [scatterplot](cm205-graph-scatterplot.md)                                                                                                                                                                                                          |
 | separate()             | tidyr          | [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                                                          |
+| seq()                  | base           | [install software](cm901-software-install.md), [install software](cm902-software-studio.md)                                                                                                                                                        |
 | sort()                 | base           | [introducing factors](cm106-data-nature-of-factors.md)                                                                                                                                                                                             |
-| str()                  | base           | [R basics](cm903-software-R-basics.md)                                                                                                                                                                                                             |
 | str\_c()               | stringr        | [boxplot](cm203-graph-boxplot.md), [carpentry with joins](cm105-data-joins.md)                                                                                                                                                                     |
 | str\_remove\_all()     | stringr        | [carpentry with joins](cm105-data-joins.md)                                                                                                                                                                                                        |
 | str\_replace()         | stringr        | [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                                                          |
 | str\_starts()          | stringr        | [carpentry with joins](cm105-data-joins.md)                                                                                                                                                                                                        |
 | str\_sub()             | stringr        | [carpentry with joins](cm105-data-joins.md)                                                                                                                                                                                                        |
-| summary()              | base           | [graph basics](cm201-graph-basics.md), [R basics](cm903-software-R-basics.md)                                                                                                                                                                      |
-| table()                | base           | [R basics](cm903-software-R-basics.md)                                                                                                                                                                                                             |
+| summary()              | base           | [graph basics](cm201-graph-basics.md)                                                                                                                                                                                                              |
 | theme()                | ggplot2        | [dot plot](cm206-graph-dot-plot.md), [strip plot](cm202-graph-strip-plot.md)                                                                                                                                                                       |
 | theme\_graphclass()    | graphclassmate | [graph basics](cm201-graph-basics.md)                                                                                                                                                                                                              |
 | ts\_df()               | tsbox          | [time series data](cm110-data-time-series.md)                                                                                                                                                                                                      |
@@ -179,50 +181,58 @@ page</a>
 | unclass()              | base           | [introducing factors](cm106-data-nature-of-factors.md)                                                                                                                                                                                             |
 | ungroup()              | dplyr          | [boxplot](cm203-graph-boxplot.md)                                                                                                                                                                                                                  |
 | unite()                | tidyr          | [carpentry with joins](cm105-data-joins.md)                                                                                                                                                                                                        |
+| unloadNamespace()      | base           | [misc data carpentry](cm111-data-misc-carpentry.md)                                                                                                                                                                                                |
 | unpivot\_to\_blocks()  | cdata          | [line graph](cm207-graph-line-graph.md), [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                 |
+| update.packages()      | base           | [updating the R habitat](cm904-software-R-update.md)                                                                                                                                                                                               |
+| update\_packages()     | devtools       | [updating the R habitat](cm904-software-R-update.md)                                                                                                                                                                                               |
+| updateR()              | installr       | [updating the R habitat](cm904-software-R-update.md)                                                                                                                                                                                               |
 | weeks()                | lubridate      | [line graph](cm207-graph-line-graph.md)                                                                                                                                                                                                            |
 | year()                 | lubridate      | [correcting graphical lies](cm405-rhetoric-correcting-graphical-lies.md), [time series data](cm110-data-time-series.md)                                                                                                                            |
 | ymd()                  | lubridate      | [correcting graphical lies](cm405-rhetoric-correcting-graphical-lies.md), [time and dates](cm109-data-time-dates.md)                                                                                                                               |
 | ymd\_hm()              | lubridate      | [time and dates](cm109-data-time-dates.md)                                                                                                                                                                                                         |
 | ymd\_hms()             | lubridate      | [time and dates](cm109-data-time-dates.md)                                                                                                                                                                                                         |
 
-<br> <a href="#top">▲ top of
-page</a>
+<br> <a href="#top">▲ top of page</a>
 
 ## functions by package
 
 | package        | item                   | tutorials                                                                                                                                                                                                                                          |
 | :------------- | :--------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| base           | .libPaths()            | [updating the R habitat](cm904-software-R-update.md)                                                                                                                                                                                               |
 | base           | as.POSIXct()           | [time and dates](cm109-data-time-dates.md)                                                                                                                                                                                                         |
 | base           | attributes()           | [introducing factors](cm106-data-nature-of-factors.md)                                                                                                                                                                                             |
-| base           | c()                    | [R basics](cm903-software-R-basics.md)                                                                                                                                                                                                             |
-| base           | class()                | [introducing factors](cm106-data-nature-of-factors.md), [R basics](cm903-software-R-basics.md)                                                                                                                                                     |
+| base           | class()                | [introducing factors](cm106-data-nature-of-factors.md)                                                                                                                                                                                             |
+| base           | cut()                  | [misc data carpentry](cm111-data-misc-carpentry.md)                                                                                                                                                                                                |
 | base           | factor()               | [introducing factors](cm106-data-nature-of-factors.md), [line graph](cm207-graph-line-graph.md)                                                                                                                                                    |
 | base           | file.exists()          | [line graph](cm207-graph-line-graph.md)                                                                                                                                                                                                            |
 | base           | file.mtime()           | [line graph](cm207-graph-line-graph.md)                                                                                                                                                                                                            |
+| base           | install.packages()     | [software studio](cm903-software-R-basics.md), [updating the R habitat](cm904-software-R-update.md)                                                                                                                                                |
 | base           | levels()               | [introducing factors](cm106-data-nature-of-factors.md)                                                                                                                                                                                             |
 | base           | ls()                   | [interacting with R](cm101b-interacting-with-R.md)                                                                                                                                                                                                 |
 | base           | ls.str()               | [interacting with R](cm101b-interacting-with-R.md)                                                                                                                                                                                                 |
-| base           | mean()                 | [R basics](cm903-software-R-basics.md)                                                                                                                                                                                                             |
 | base           | names()                | [line graph](cm207-graph-line-graph.md)                                                                                                                                                                                                            |
 | base           | nlevels()              | [introducing factors](cm106-data-nature-of-factors.md)                                                                                                                                                                                             |
+| base           | quantile()             | [misc data carpentry](cm111-data-misc-carpentry.md)                                                                                                                                                                                                |
 | base           | readRDS()              | [strip plot](cm202-graph-strip-plot.md)                                                                                                                                                                                                            |
 | base           | row.names()            | [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                                                          |
 | base           | sapply()               | [scatterplot](cm205-graph-scatterplot.md), [working with factors](cm107-data-working-with-factors.md)                                                                                                                                              |
 | base           | saveRDS()              | [strip plot](cm202-graph-strip-plot.md)                                                                                                                                                                                                            |
-| base           | sd()                   | [R basics](cm903-software-R-basics.md)                                                                                                                                                                                                             |
+| base           | seq()                  | [install software](cm901-software-install.md), [install software](cm902-software-studio.md)                                                                                                                                                        |
 | base           | sort()                 | [introducing factors](cm106-data-nature-of-factors.md)                                                                                                                                                                                             |
-| base           | str()                  | [R basics](cm903-software-R-basics.md)                                                                                                                                                                                                             |
-| base           | summary()              | [graph basics](cm201-graph-basics.md), [R basics](cm903-software-R-basics.md)                                                                                                                                                                      |
-| base           | table()                | [R basics](cm903-software-R-basics.md)                                                                                                                                                                                                             |
+| base           | summary()              | [graph basics](cm201-graph-basics.md)                                                                                                                                                                                                              |
 | base           | typeof()               | [introducing factors](cm106-data-nature-of-factors.md)                                                                                                                                                                                             |
 | base           | unclass()              | [introducing factors](cm106-data-nature-of-factors.md)                                                                                                                                                                                             |
+| base           | unloadNamespace()      | [misc data carpentry](cm111-data-misc-carpentry.md)                                                                                                                                                                                                |
+| base           | update.packages()      | [updating the R habitat](cm904-software-R-update.md)                                                                                                                                                                                               |
 | cdata          | blocks\_to\_rowrecs()  | [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                                                          |
 | cdata          | pivot\_to\_rowrecs()   | [dot plot](cm206-graph-dot-plot.md), [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                     |
 | cdata          | rowrecs\_to\_blocks()  | [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                                                          |
 | cdata          | unpivot\_to\_blocks()  | [line graph](cm207-graph-line-graph.md), [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                 |
-| dplyr          | all\_equal()           | [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                                                          |
+| devtools       | install\_github()      | [software studio](cm903-software-R-basics.md)                                                                                                                                                                                                      |
+| devtools       | update\_packages()     | [updating the R habitat](cm904-software-R-update.md)                                                                                                                                                                                               |
+| dplyr          | all\_equal()           | [misc data carpentry](cm111-data-misc-carpentry.md), [reshaping data](cm103-data-reshaping.md)                                                                                                                                                     |
 | dplyr          | arrange()              | [data studio](cm102-data-studio.md)                                                                                                                                                                                                                |
+| dplyr          | bind\_rows()           | [misc data carpentry](cm111-data-misc-carpentry.md)                                                                                                                                                                                                |
 | dplyr          | count()                | [carpentry with joins](cm105-data-joins.md)                                                                                                                                                                                                        |
 | dplyr          | distinct()             | [carpentry with joins](cm105-data-joins.md), [scatterplot](cm205-graph-scatterplot.md)                                                                                                                                                             |
 | dplyr          | filter()               | [data studio](cm102-data-studio.md), [graph basics](cm201-graph-basics.md)                                                                                                                                                                         |
@@ -266,6 +276,7 @@ page</a>
 | ggplot2        | theme()                | [dot plot](cm206-graph-dot-plot.md), [strip plot](cm202-graph-strip-plot.md)                                                                                                                                                                       |
 | graphclassmate | rcb()                  | [multiway](cm204-graph-multiway.md)                                                                                                                                                                                                                |
 | graphclassmate | theme\_graphclass()    | [graph basics](cm201-graph-basics.md)                                                                                                                                                                                                              |
+| installr       | updateR()              | [updating the R habitat](cm904-software-R-update.md)                                                                                                                                                                                               |
 | lubridate      | as\_date()             | [line graph](cm207-graph-line-graph.md), [time and dates](cm109-data-time-dates.md), [time series data](cm110-data-time-series.md)                                                                                                                 |
 | lubridate      | date()                 | [working with factors](cm107-data-working-with-factors.md)                                                                                                                                                                                         |
 | lubridate      | date\_decimal()        | [line graph](cm207-graph-line-graph.md), [time and dates](cm109-data-time-dates.md)                                                                                                                                                                |
@@ -307,7 +318,6 @@ page</a>
 | stringr        | str\_replace()         | [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                                                          |
 | stringr        | str\_starts()          | [carpentry with joins](cm105-data-joins.md)                                                                                                                                                                                                        |
 | stringr        | str\_sub()             | [carpentry with joins](cm105-data-joins.md)                                                                                                                                                                                                        |
-| tibble         | as\_tibble()           | [R basics](cm903-software-R-basics.md)                                                                                                                                                                                                             |
 | tibble         | glimpse()              | [graph basics](cm201-graph-basics.md)                                                                                                                                                                                                              |
 | tibble         | rownames\_to\_column() | [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                                                          |
 | tidyr          | complete()             | [strip plot](cm202-graph-strip-plot.md)                                                                                                                                                                                                            |
@@ -320,7 +330,9 @@ page</a>
 | utils          | data()                 | [data basics](cm101-data-basics.md)                                                                                                                                                                                                                |
 | utils          | download.file()        | [correcting graphical lies](cm405-rhetoric-correcting-graphical-lies.md), [line graph](cm207-graph-line-graph.md)                                                                                                                                  |
 | utils          | read.table()           | [correcting graphical lies](cm405-rhetoric-correcting-graphical-lies.md), [data basics](cm101-data-basics.md), [line graph](cm207-graph-line-graph.md)                                                                                             |
+| VIM            | aggr()                 | [misc data carpentry](cm111-data-misc-carpentry.md)                                                                                                                                                                                                |
 | wrapr          | build\_frame()         | [carpentry with joins](cm105-data-joins.md), [reshaping data](cm103-data-reshaping.md)                                                                                                                                                             |
+| wrapr          | qchar\_frame()         | [misc data carpentry](cm111-data-misc-carpentry.md)                                                                                                                                                                                                |
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -356,6 +368,14 @@ and data visualization.* <https://CRAN.R-project.org/package=HistData>
 
 </div>
 
+<div id="ref-R-installr">
+
+Galili T (2018) *Installr: Using r to install stuff (such as: R,
+’rtools’, rstudio, ’git’, and more\!).*
+<https://CRAN.R-project.org/package=installr>
+
+</div>
+
 <div id="ref-R-socviz">
 
 Healy K (2019) *Socviz: Utility functions and data sets for data
@@ -367,6 +387,14 @@ visualization.* <https://github.com/kjhealy/socviz>
 
 Henry L and Wickham H (2018) *Tidyselect: Select from a set of strings.*
 <https://CRAN.R-project.org/package=tidyselect>
+
+</div>
+
+<div id="ref-R-fivethirtyeight">
+
+Kim AY, Ismay C and Chunn J (2018) *Fivethirtyeight: Data and code
+behind the stories and interactives at ’fivethirtyeight’.*
+<https://CRAN.R-project.org/package=fivethirtyeight>
 
 </div>
 
@@ -441,6 +469,14 @@ Stoffer D (2017) *Astsa: Applied statistical time series analysis.*
 
 </div>
 
+<div id="ref-R-VIM">
+
+Templ M, Kowarik A, Alfons A and Prantner B (2019) *VIM: Visualization
+and imputation of missing values.*
+<https://CRAN.R-project.org/package=VIM>
+
+</div>
+
 <div id="ref-R-GDAdata">
 
 Unwin A (2015) *GDAdata: Datasets for the book graphical data analysis
@@ -498,6 +534,14 @@ and ’gather()’ functions.* <https://CRAN.R-project.org/package=tidyr>
 
 </div>
 
+<div id="ref-R-devtools">
+
+Wickham H, Hester J and Chang W (2019) *Devtools: Tools to make
+developing r packages easier.*
+<https://CRAN.R-project.org/package=devtools>
+
+</div>
+
 <div id="ref-R-readr">
 
 Wickham H, Hester J and Francois R (2018) *Readr: Read rectangular text
@@ -518,22 +562,26 @@ Yee T (2017) *VGAMdata: Data supporting the ’vgam’ package.*
 
 Citations for references listed above: Bryan ([2017](#ref-R-gapminder)),
 Chan and Leeper ([2018](#ref-R-rio)), Friendly
-([2018](#ref-R-HistData)), Friendly ([2017](#ref-R-vcdExtra)), Healy
-([2019](#ref-R-socviz)), Henry and Wickham ([2018](#ref-R-tidyselect)),
-Layton ([2019](#ref-R-graphclassmate)), Layton and others
+([2018](#ref-R-HistData)), Friendly ([2017](#ref-R-vcdExtra)), Galili
+([2018](#ref-R-installr)), Healy ([2019](#ref-R-socviz)), Henry and
+Wickham ([2018](#ref-R-tidyselect)), Layton
+([2019](#ref-R-graphclassmate)), Layton and others
 ([2018](#ref-R-midfielddata)), Mount and Zumel
 ([2019](#ref-R-cdata)[a](#ref-R-cdata)), Mount ([2019](#ref-R-seplyr)),
 Mount and Zumel ([2019](#ref-R-wrapr)[b](#ref-R-wrapr)), Müller and
 Wickham ([2019](#ref-R-tibble)), Ooms ([2018](#ref-R-magick)), Sax
 ([2019](#ref-R-tsbox)), Spinu and others ([2018](#ref-R-lubridate)),
-Stoffer ([2017](#ref-R-astsa)), Unwin ([2015](#ref-R-GDAdata)), Wickham
-and François and others ([2019](#ref-R-dplyr)), Wickham
+Stoffer ([2017](#ref-R-astsa)), Templ and others ([2019](#ref-R-VIM)),
+Unwin ([2015](#ref-R-GDAdata)), Wickham and Hester and others
+([2019](#ref-R-devtools)), Wickham and François and others
+([2019](#ref-R-dplyr)), Wickham
 ([2019](#ref-R-forcats)[a](#ref-R-forcats)), Wickham and Chang and
 others ([2019](#ref-R-ggplot2)), Wickham ([2018](#ref-R-nycflights13)),
 Wickham and others ([2018](#ref-R-readr)), Wickham and Bryan
 ([2019](#ref-R-readxl)), Wickham
 ([2019](#ref-R-stringr)[b](#ref-R-stringr)), Wickham and Henry
-([2019](#ref-R-tidyr)), Yee ([2017](#ref-R-VGAMdata))
+([2019](#ref-R-tidyr)), Kim and others ([2018](#ref-R-fivethirtyeight)),
+Yee ([2017](#ref-R-VGAMdata))
 
 ***
 <a href="#top">&#9650; top of page</a>    

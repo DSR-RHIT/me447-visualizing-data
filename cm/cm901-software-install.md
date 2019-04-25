@@ -107,7 +107,7 @@ We can draw a simple graph that should appear in the Plots pane.
 <!-- end list -->
 
 ``` r
-t <- seq(1, 6*pi, pi/16)
+t <- seq(from = 1, to = 6*pi, by = pi/16)
 y <- sin(t)
 plot(t, y)
 ```
@@ -138,6 +138,13 @@ If not, no worries. We’ll take care of it in lab.
 
 Wickham H (2014) *Advanced R.* CRC Press, Taylor & Francis Group, Boca
 Raton, FL <http://adv-r.had.co.nz/>
+
+</div>
+
+<div id="ref-Wickham+Grolemund:2017">
+
+Wickham H and Grolemund G (2017) *R for Data Science.* O’Reilly Media,
+Inc., Sebastopol, CA <https://r4ds.had.co.nz/>
 
 </div>
 

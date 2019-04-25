@@ -61,6 +61,7 @@ And start with a minimal header
 # load packages
 library("tidyverse")
 library("nycflights13")
+library("wrapr")
 ```
 
 Duplicate the lines of code in the session one chunk at a time. Save,
@@ -291,7 +292,7 @@ all data frames must have the same number of rows.
 This approach can be error-prone: it depends on the rows of both data
 frames being in the same order so that the rows match by position.
 
-I suggest you use joins with coordinatized
+Instead, I suggest you use joins with coordinatized
 data.
 
 <!-- ## rbind()  -->
