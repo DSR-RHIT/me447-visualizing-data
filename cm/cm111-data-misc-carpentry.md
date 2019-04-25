@@ -691,7 +691,7 @@ Imputation is a process of replacing missing data with substituted
 values that are a “best guess” at what the values would have been. I
 have used the **mice** package for imputing missing data when necessary.
 
-Some articles on imputation, for future references:
+Some articles on imputation, for future reference:
 
   - [How to handle missing
     data](https://towardsdatascience.com/how-to-handle-missing-data-8646b18db0d4)  
