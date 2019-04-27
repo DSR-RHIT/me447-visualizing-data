@@ -78,8 +78,7 @@ Source, and compare your results to the results shown.
 Open the explore script you initialized earlier. Load the package that
 has the data.
 
-Conditioning plot, made with
-lattice
+Conditioning plot, made with lattice
 
 <https://homepage.divms.uiowa.edu/~luke/classes/STAT4580/threenum.html#conditioning-plots-coplots>
 

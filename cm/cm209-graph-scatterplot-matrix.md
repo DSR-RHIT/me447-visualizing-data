@@ -1,37 +1,47 @@
 scatterplot matrix
 ================
 
-Notes: introduce the idea of using a separate data frame to add lines,
-with a data argument and aes() argument in the geom layer instead of the
-plot layer.
+<img src="../resources/cm209-header.png" width="100%" />
 
 ## contents
 
 [introduction](#introduction)  
 [prerequisites](#prerequisites)  
-[explore](#explore)  
-[carpentry](#carpentry)  
-[design](#design)  
-[report](#report)  
-[exercises](#exercises)  
+[data](#data)  
+[pairs()](#pairs)  
+[ggscatmat()](#ggscatmat)  
+[ggpairs()](#ggpairs)  
+[gpairs()](#gpairs)  
+[spm()](#spm)  
+[PairPlot()](#pairplot) [exercises](#exercises)  
 [references](#references)
 
 ## introduction
 
-intro
+A scatterplot matrix is a graph design for visualizing three or more
+quantitative variables and (possibly) categorical variables. The graph
+consists of a matrix of panels; each panel is a scatterplot of one pair
+of variables.
 
 Data characteristics
 
-  - x quantitative variables  
-  - x or more categorical variables (optional or not)  
+  - 3 or more quantitative variables  
+  - 1 or more categorical variables (optional). Some packages do not
+    allow categorical variables.  
   - A key variable if data are not coordinatized
 
 Graph characteristics
 
-  - x
-  - x
+  - A matrix of scatterplots
+  - The variable names are the labels of the rows and the columns of the
+    matrix
+  - Optional: loess or other smooth fit
+  - Optional: the matrix diagonal shows a statistical summary of the
+    variable
+  - Optional: pair-wise correlation coefficients
 
-[Dx graph type](link) data and graph requirements
+[D6 Multivariate](cm301-report-display-reqts.md#D6-multivariate) data
+and graph requirements
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -51,12 +61,13 @@ needed.
 
   - tidyverse  
   - graphclassmate
+  - gclus
 
 Scripts to initialize
 
-    explore/     0xxx-graphtype-dataname-explore.R  
-    carpentry/   0xxx-graphtype-dataname-data.R   
-    design/      0xxx-graphtype-dataname.R 
+``` 
+explore/     0801-scatmat-explore.R  
+```
 
 And start each file with a minimal header
 
@@ -66,6 +77,7 @@ And start each file with a minimal header
 
 # load packages
 library("tidyverse")
+library("graphclassmate")
 ```
 
 Duplicate the lines of code in the session one chunk at a time. Save,
@@ -73,33 +85,354 @@ Source, and compare your results to the results shown.
 
 <br> <a href="#top">▲ top of page</a>
 
-## explore
+## data
 
 Open the explore script you initialized earlier. Load the package that
-has the data.
-
-Made with GGally, <http://ggobi.github.io/ggally/index.html>
+has the data. These data are measurements made of genuine and
+counterfeit Swiss bamk notes.
 
 ``` r
-library(GGally)
-data(flea, package = "GGally")
-glimpse(flea)
-#> Observations: 74
+library("gclus")
+data(bank, package = "gclus")
+glimpse(bank)
+#> Observations: 200
 #> Variables: 7
-#> $ species <fct> Concinna, Concinna, Concinna, Concinna, Concinna, Conc...
-#> $ tars1   <int> 191, 185, 200, 173, 171, 160, 188, 186, 174, 163, 190,...
-#> $ tars2   <int> 131, 134, 137, 127, 118, 118, 134, 129, 131, 115, 143,...
-#> $ head    <int> 53, 50, 52, 50, 49, 47, 54, 51, 52, 47, 52, 50, 51, 53...
-#> $ aede1   <int> 150, 147, 144, 144, 153, 140, 151, 143, 144, 142, 141,...
-#> $ aede2   <int> 15, 13, 14, 16, 13, 15, 14, 14, 14, 15, 13, 15, 13, 15...
-#> $ aede3   <int> 104, 105, 102, 97, 106, 99, 98, 110, 116, 95, 99, 105,...
+#> $ Status   <int> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,...
+#> $ Length   <dbl> 214.8, 214.6, 214.8, 214.8, 215.0, 215.7, 215.5, 214....
+#> $ Left     <dbl> 131.0, 129.7, 129.7, 129.7, 129.6, 130.8, 129.5, 129....
+#> $ Right    <dbl> 131.1, 129.7, 129.7, 129.6, 129.7, 130.5, 129.7, 129....
+#> $ Bottom   <dbl> 9.0, 8.1, 8.7, 7.5, 10.4, 9.0, 7.9, 7.2, 8.2, 9.2, 7....
+#> $ Top      <dbl> 9.7, 9.5, 9.6, 10.4, 7.7, 10.1, 9.6, 10.7, 11.0, 10.0...
+#> $ Diagonal <dbl> 141.0, 141.7, 142.2, 142.0, 141.8, 141.4, 141.6, 141....
 ```
+
+The status variable is an integer, where 0 = a genuine bank note and 1 =
+a counterfeit bank note. To condition the graphs by status, we convert
+the variable to a factor with the levels “genuine” and “counterfeit.”
 
 ``` r
-ggscatmat(flea, columns = 2:4, color = "species", alpha = 0.8)
+bank <- bank %>%
+  mutate(Status = factor(Status, labels = c("genuine", "counterfeit")))
 ```
 
-<img src="images/cm208-unnamed-chunk-5-1.png" width="70%" />
+In the following graphs, I’ll use the scatterplot matrix function in
+several packages. Each has a somewhat different look and feel. Some are
+easier than others to edit.
+
+I’ll be using the same color scheme in each case, so I’ll assign a
+couple of color vecctors here.
+
+``` r
+my_color <- c(rcb("dark_BG"), rcb("dark_Br"))
+my_fill  <- c(rcb("pale_BG"), rcb("pale_Br"))
+```
+
+## pairs()
+
+I’ll start with the base R function `pairs()` as a baseline against
+which we can compare the alternatives.
+
+``` r
+pairs(bank[ , 2:7])
+```
+
+<img src="images/cm209-unnamed-chunk-7-1.png" width="100%" />
+
+<br> Include the Status category and edit the aesthetics
+
+``` r
+pairs(~ Length + Left + Right + Bottom + Top + Diagonal, 
+        data = bank, 
+        pch  = c(21, 21)[bank$Status],
+        col  = my_color[bank$Status],
+        bg   = my_fill[bank$Status],
+        gap  = 0, 
+        cex.labels = 1, 
+        upper.panel = NULL, 
+        las = 2
+)
+legend("topright", 
+       legend = levels(bank$Status), 
+       inset = 0.2)
+```
+
+<img src="images/cm209-unnamed-chunk-8-1.png" width="100%" />
+
+## ggscatmat()
+
+Package GGally
+
+``` r
+library("GGally")
+ggscatmat(bank, columns = 2:7)
+```
+
+<img src="images/cm209-unnamed-chunk-9-1.png" width="100%" />
+
+<br> Include the Status category and edit the aesthetics. Is compatible
+with ggplot2 functions such as `theme()`
+
+``` r
+ggscatmat(bank, 
+          columns = 2:7, 
+          color = "Status", 
+          alpha = 0.8) +
+  theme(legend.position = "top")
+```
+
+<img src="images/cm209-unnamed-chunk-10-1.png" width="100%" />
+
+## ggpairs()
+
+Package GGally
+
+``` r
+library("GGally")
+ggpairs(bank, columns = 2:7)
+```
+
+<img src="images/cm209-unnamed-chunk-11-1.png" width="100%" />
+
+<br> Include the Status category and edit the aesthetics
+
+``` r
+ggpairs(bank, 
+        columns = 2:7, 
+        mapping = aes(color = Status))
+```
+
+<img src="images/cm209-unnamed-chunk-12-1.png" width="100%" />
+
+## gpairs()
+
+Package gpairs
+
+``` r
+library("gpairs")
+gpairs(bank[ , 2:7],
+       lower.pars = list(scatter = "points"), 
+       upper.pars = list(scatter = 'stats'), 
+       scatter.pars = list(pch = 16, 
+                           size = unit(5, "pt"), 
+                           col  = rcb("mid_BG"), 
+                           frame.fill = NULL, 
+                           border.col = "gray50"), 
+       stat.pars = list(verbose = FALSE), 
+       gap = 0
+       )
+```
+
+<img src="images/cm209-unnamed-chunk-13-1.png" width="100%" />
+
+## spm()
+
+Package car
+
+``` r
+library("car")
+spm(~ Length + Left + Right + Bottom + Top + Diagonal | Status, 
+        data = bank, 
+        col  = c(rcb("mid_BG"), rcb("mid_Br")), 
+        fill = c(rcb("light_BG"), rcb("light_Br")), 
+        pch  = c(21, 21), 
+        cex  = 0.75 * c(1, 1), 
+        cex.axis = 1, 
+        cex.labels = 1, 
+        cex.main = 1)
+```
+
+<img src="images/cm209-unnamed-chunk-14-1.png" width="100%" />
+
+## PairPlot()
+
+Package WVPlots
+
+``` r
+library("WVPlots")
+PairPlot(bank, colnames(bank)[2:7], title = "Bank", group_var = "Status")
+```
+
+<img src="images/cm209-unnamed-chunk-15-1.png" width="100%" />
+
+<!-- ```{r} -->
+
+<!-- library("car") -->
+
+<!-- spm(~ palmitic + palmitoleic + stearic + oleic + linoleic + linolenic + arachidic + eicosenoic | Region, data = olives) -->
+
+<!-- ``` -->
+
+<!-- ```{r} -->
+
+<!-- library("gpairs") -->
+
+<!-- gpairs(olives[ , 3:10], -->
+
+<!--        lower.pars = list(scatter = "points"),  -->
+
+<!--        upper.pars = list(scatter = 'stats'),  -->
+
+<!--        # diagonal = "other", -->
+
+<!--        scatter.pars = list(pch = 21,  -->
+
+<!--                            size = unit(5, "pt"),  -->
+
+<!--                            col  = rcb("dark_BG"),  -->
+
+<!--                            fill = rcb("mid_BG"),  -->
+
+<!--                            frame.fill = NULL,  -->
+
+<!--                            border.col = "gray50"),  -->
+
+<!--        stat.pars = list(verbose = FALSE),  -->
+
+<!--        gap = 0.02 -->
+
+<!--        ) -->
+
+<!-- ``` -->
+
+<!-- Made with GGally, http://ggobi.github.io/ggally/index.html  -->
+
+<!-- library("extracat") -->
+
+<!-- data(olives) -->
+
+<!-- glimpse(olives) -->
+
+<!-- ```{r} -->
+
+<!-- library(GGally) -->
+
+<!-- data(flea, package = "GGally") -->
+
+<!-- glimpse(flea) -->
+
+<!-- ``` -->
+
+<!-- ```{r} -->
+
+<!-- ggscatmat(flea, columns = 2:4, color = "species", alpha = 0.8) -->
+
+<!-- ``` -->
+
+<!-- ```{r} -->
+
+<!-- data(airquality) -->
+
+<!-- names(airquality) -->
+
+<!-- ggscatmat(airquality, columns = 1:4) -->
+
+<!-- ``` -->
+
+<!-- ```{r} -->
+
+<!-- library(foreign) -->
+
+<!-- af <- read.dta("http://data.princeton.edu/wws509/datasets/afMentalHealth.dta") -->
+
+<!-- glimpse(af) -->
+
+<!-- ggscatmat(af, columns = 1:3) -->
+
+<!-- ``` -->
+
+<!-- ```{r} -->
+
+<!-- library("gclus") -->
+
+<!-- data(bank, package = "gclus") -->
+
+<!-- glimpse(bank) -->
+
+<!-- bank <- bank %>%  -->
+
+<!--   mutate(Status = factor(Status, labels = c("genuine", "counterfeit"))) -->
+
+<!-- ggscatmat(bank, columns = 2:7, color = "Status") -->
+
+<!-- ``` -->
+
+<!-- ```{r} -->
+
+<!-- library("extracat") -->
+
+<!-- data(olives) -->
+
+<!-- glimpse(olives) -->
+
+<!-- ggscatmat(olives, columns = 3:10, color = "Region") -->
+
+<!-- ``` -->
+
+<!-- ```{r} -->
+
+<!-- library("DAAG") -->
+
+<!-- data(leafshape) -->
+
+<!-- glimpse(leafshape) -->
+
+<!-- leafshape <- leafshape %>%  -->
+
+<!--   mutate(arch = factor(arch, labels = c("plagiotropic", "orthotropic"))) %>%  -->
+
+<!--   glimpse() -->
+
+<!-- ggscatmat(leafshape, columns = 1:3, color = "arch", alpha = 0.5) -->
+
+<!-- ``` -->
+
+<!-- ```{r} -->
+
+<!-- library("car") -->
+
+<!-- x <- leafshape[ , 1:3] -->
+
+<!-- x <- olives[ , 3:10] -->
+
+<!-- spm(x) -->
+
+<!-- ``` -->
+
+<!-- ```{r} -->
+
+<!-- library(gpairs) -->
+
+<!-- x <- leafshape[ , 1:3] -->
+
+<!-- x <- olives[ , 3:10] -->
+
+<!-- gpairs(x, -->
+
+<!--        lower.pars = list(scatter = "points"),  -->
+
+<!--        upper.pars = list(scatter = 'stats'),  -->
+
+<!--        diagonal = "other", -->
+
+<!--        scatter.pars = list(pch = 21,  -->
+
+<!--                            size = unit(5, "pt"),  -->
+
+<!--                            col  = rcb("dark_BG"),  -->
+
+<!--                            fill = rcb("mid_BG"),  -->
+
+<!--                            frame.fill = NULL,  -->
+
+<!--                            border.col = "gray50"),  -->
+
+<!--        stat.pars = list(verbose = FALSE),  -->
+
+<!--        gap = 0.02 -->
+
+<!--        ) -->
+
+<!-- ``` -->
 
 <br> <a href="#top">▲ top of page</a>
 

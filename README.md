@@ -14,8 +14,7 @@ Introduction
 
 Frequent links
 
-  - [Portfolio document
-    requirements](cm/cm300-report-portfolio-reqts.md#portfolio-document-requirements)
+  - [Portfolio](cm/cm300-report-portfolio-reqts.md#portfolio)
   - [Portfolio data
     requirements](cm/cm301-report-display-reqts.md#portfolio-data-requirements)  
   - [Data and functions index](cm/cm906-software-function-index.md)  
@@ -29,8 +28,7 @@ Frequent links
 ![](resources/icon-document.png) paper reprint, with permission  
 ![](resources/icon-moodle.png) e-copy on Moodle, with permission  
 ![](resources/icon-r4ds.png) suggested reading in *R for Data Science*
-(Wickham and Grolemund,
-[2017](#ref-Wickham+Grolemund:2017))
+(Wickham and Grolemund, [2017](#ref-Wickham+Grolemund:2017))
 
 | w  | d | agenda & assignments                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | milestones                                                                                                          | due                                                                                                                                      |
 | :- | :- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------- |
@@ -293,13 +291,11 @@ Graph elements
 
 ## portfolio
 
-[Sample portfolio
-skeleton](https://github.com/graphdr/portfolio-sample)  
-[Document
-requirements](cm/cm300-report-portfolio-reqts.md#portfolio-document-requirements)  
+[Portfolio](cm/cm300-report-portfolio-reqts.md#portfolio)  
 [Document design](cm/cm304-report-document-design.md#document-design)  
 [Data
-requirements](cm/cm301-report-display-reqts.md#portfolio-data-requirements)
+requirements](cm/cm301-report-display-reqts.md#portfolio-data-requirements)  
+[Sample README](https://github.com/graphdr/portfolio-sample)
 
   - [D1
     distributions](cm/cm301-report-display-reqts.md#D1-distributions)
@@ -323,9 +319,9 @@ R Markdown basics
     text](cm/cm305-report-rmd-basics.m#how-to-format-text)  
   - [initialize a
     report](cm/cm305-report-rmd-basics.md#initialize-a-report)  
-  - [initialize knitr](cm/cm305-report-rmd-basics.md)  
+  - [initialize knitr](cm/cm305-report-rmd-basics.md#initialize-knitr)  
   - [introductory
-    prose](cm/cm305-report-rmd-basics.md#initialize-knitr)  
+    prose](cm/cm305-report-rmd-basics.md#introductory-prose)  
   - [using code
     chunks](cm/cm305-report-rmd-basics.md#using-code-chunks)  
   - [source R
@@ -337,6 +333,9 @@ R Markdown basics
 
 Resources
 
+  - [Set up README](cm902-software-studio.md#setup-readme)  
+  - [Adding links to
+    README](cm302-report-portfolio-studio.md#adding-links-to-readme)  
   - [Setup reading
     responses](cm/cm902-software-studio.md#setup-reading-response)
   - [Document
