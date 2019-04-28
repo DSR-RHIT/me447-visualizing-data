@@ -9,25 +9,26 @@ scatterplot matrix
 [prerequisites](#prerequisites)  
 [data](#data)  
 [pairs()](#pairs)  
+[spm()](#spm)  
+[gpairs()](#gpairs)  
 [ggscatmat()](#ggscatmat)  
 [ggpairs()](#ggpairs)  
-[gpairs()](#gpairs)  
-[spm()](#spm)  
-[PairPlot()](#pairplot) [exercises](#exercises)  
+[exercises](#exercises)  
 [references](#references)
 
 ## introduction
 
-A scatterplot matrix is a graph design for visualizing three or more
-quantitative variables and (possibly) categorical variables. The graph
-consists of a matrix of panels; each panel is a scatterplot of one pair
-of variables.
+A *scatterplot matrix* (or *pairs plot*) is a graph design for
+visualizing three or more quantitative variables and (possibly)
+categorical variables. The scatterplot matrix is a grid of scatterplots
+showing the bivariate relationships between all pairs of variables
+(Emerson and others, [2013](#ref-Emerson+Green+etal:2013)).
 
 Data characteristics
 
   - 3 or more quantitative variables  
-  - 1 or more categorical variables (optional). Some packages do not
-    allow categorical variables.  
+  - 1 or more categorical variables (optional). If you have a
+    categorical variable, some packages cannot be used.  
   - A key variable if data are not coordinatized
 
 Graph characteristics
@@ -61,15 +62,19 @@ needed.
 
   - tidyverse  
   - graphclassmate
-  - gclus
+  - gclus  
+  - car
+  - gpairs
+  - GGally
+  - Sleuth2
 
 Scripts to initialize
 
 ``` 
-explore/     0801-scatmat-explore.R  
+explore/     0801-scatterplot-matrix-explore.R  
 ```
 
-And start each file with a minimal header
+And start the file with a minimal header
 
 ``` r
 # your name
@@ -89,7 +94,8 @@ Source, and compare your results to the results shown.
 
 Open the explore script you initialized earlier. Load the package that
 has the data. These data are measurements made of genuine and
-counterfeit Swiss bamk notes.
+counterfeit Swiss bank notes. To learn more about the data set, open its
+help page by running `? bank`. All dimensions are in mm.
 
 ``` r
 library("gclus")
@@ -112,19 +118,30 @@ the variable to a factor with the levels “genuine” and “counterfeit.”
 
 ``` r
 bank <- bank %>%
-  mutate(Status = factor(Status, labels = c("genuine", "counterfeit")))
+  mutate(Status = factor(Status, labels = c("genuine", "counterfeit"))) %>% 
+  glimpse()
+#> Observations: 200
+#> Variables: 7
+#> $ Status   <fct> genuine, genuine, genuine, genuine, genuine, genuine,...
+#> $ Length   <dbl> 214.8, 214.6, 214.8, 214.8, 215.0, 215.7, 215.5, 214....
+#> $ Left     <dbl> 131.0, 129.7, 129.7, 129.7, 129.6, 130.8, 129.5, 129....
+#> $ Right    <dbl> 131.1, 129.7, 129.7, 129.6, 129.7, 130.5, 129.7, 129....
+#> $ Bottom   <dbl> 9.0, 8.1, 8.7, 7.5, 10.4, 9.0, 7.9, 7.2, 8.2, 9.2, 7....
+#> $ Top      <dbl> 9.7, 9.5, 9.6, 10.4, 7.7, 10.1, 9.6, 10.7, 11.0, 10.0...
+#> $ Diagonal <dbl> 141.0, 141.7, 142.2, 142.0, 141.8, 141.4, 141.6, 141....
 ```
 
-In the following graphs, I’ll use the scatterplot matrix function in
+In the following graphs, I use the scatterplot matrix function from
 several packages. Each has a somewhat different look and feel. Some are
 easier than others to edit.
 
 I’ll be using the same color scheme in each case, so I’ll assign a
-couple of color vecctors here.
+couple of color vectors here.
 
 ``` r
-my_color <- c(rcb("dark_BG"), rcb("dark_Br"))
-my_fill  <- c(rcb("pale_BG"), rcb("pale_Br"))
+my_color <- c(rcb("dark_BG"),  rcb("dark_Br"))
+my_fill  <- c(rcb("light_BG"), rcb("light_Br"))
+my_title <- "Comparing Swiss banknote dimensions (mm)"
 ```
 
 ## pairs()
@@ -136,9 +153,10 @@ which we can compare the alternatives.
 pairs(bank[ , 2:7])
 ```
 
-<img src="images/cm209-unnamed-chunk-7-1.png" width="100%" />
+<img src="images/cm209-unnamed-chunk-6-1.png" width="70%" />
 
-<br> Include the Status category and edit the aesthetics
+<br> Here, I’ll use `pairs()` again but editing some of its aesthetics
+and grouping by status, i.e., are the bank notes genuine or counterfeit.
 
 ``` r
 pairs(~ Length + Left + Right + Bottom + Top + Diagonal, 
@@ -147,65 +165,76 @@ pairs(~ Length + Left + Right + Bottom + Top + Diagonal,
         col  = my_color[bank$Status],
         bg   = my_fill[bank$Status],
         gap  = 0, 
-        cex.labels = 1, 
         upper.panel = NULL, 
-        las = 2
+        cex.labels = 1, 
+              las  = 2, 
+        main = my_title
 )
-legend("topright", 
+par(xpd = NA)       # clip to device
+legend("topright",   
+             title  = "Swiss banknotes", 
        legend = levels(bank$Status), 
-       inset = 0.2)
+       col    = my_color, 
+       pt.bg  = my_fill, 
+       pch    = 21, 
+       inset  = c(0.2, 0.2), 
+             bty    = "n", # no border on legend 
+             cex    = 0.8, 
+             y.intersp = 0.75, 
+             title.adj = 0.5) 
 ```
 
-<img src="images/cm209-unnamed-chunk-8-1.png" width="100%" />
-
-## ggscatmat()
-
-Package GGally
+<img src="images/cm209-unnamed-chunk-7-1.png" width="70%" />
 
 ``` r
-library("GGally")
-ggscatmat(bank, columns = 2:7)
+par(xpd = FALSE) # return to default
 ```
 
-<img src="images/cm209-unnamed-chunk-9-1.png" width="100%" />
+## spm()
 
-<br> Include the Status category and edit the aesthetics. Is compatible
-with ggplot2 functions such as `theme()`
+Package car (Companion to Applied Regression), `spm()` builds on the
+base R `pairs()` function. Data must be numeric. `spm()` is an
+abbreviation for `scatterplotMatrix()`
 
 ``` r
-ggscatmat(bank, 
-          columns = 2:7, 
-          color = "Status", 
-          alpha = 0.8) +
-  theme(legend.position = "top")
+library("car")
+spm(~ Length + Left + Right + Bottom + Top + Diagonal, 
+        data = bank)
 ```
 
-<img src="images/cm209-unnamed-chunk-10-1.png" width="100%" />
+<img src="images/cm209-unnamed-chunk-8-1.png" width="70%" />
 
-## ggpairs()
-
-Package GGally
+Include the Status category and edit the aesthetics.
 
 ``` r
-library("GGally")
-ggpairs(bank, columns = 2:7)
+spm(~ Length + Left + Right + Bottom + Top + Diagonal | Status, 
+        data = bank, 
+        pch  = c(16, 3), 
+        cex  = 0.75 * c(1, 1), 
+            col  = my_color, 
+        cex.labels = 1, 
+            cex.axis = 1, 
+        cex.main = 1, 
+        main = my_title, 
+            use = "pairwise.complete.obs"
+        )
 ```
 
-<img src="images/cm209-unnamed-chunk-11-1.png" width="100%" />
-
-<br> Include the Status category and edit the aesthetics
-
-``` r
-ggpairs(bank, 
-        columns = 2:7, 
-        mapping = aes(color = Status))
-```
-
-<img src="images/cm209-unnamed-chunk-12-1.png" width="100%" />
+<img src="images/cm209-unnamed-chunk-9-1.png" width="70%" />
 
 ## gpairs()
 
-Package gpairs
+Package gpairs. Any combination of quantitative and categorical
+variables is acceptable.
+
+``` r
+library("gpairs")
+gpairs(bank[ , 2:7])
+```
+
+<img src="images/cm209-unnamed-chunk-10-1.png" width="70%" />
+
+Include the Status category and edit the aesthetics.
 
 ``` r
 library("gpairs")
@@ -214,7 +243,7 @@ gpairs(bank[ , 2:7],
        upper.pars = list(scatter = 'stats'), 
        scatter.pars = list(pch = 16, 
                            size = unit(5, "pt"), 
-                           col  = rcb("mid_BG"), 
+                           col  = my_color[bank$Status], 
                            frame.fill = NULL, 
                            border.col = "gray50"), 
        stat.pars = list(verbose = FALSE), 
@@ -222,294 +251,138 @@ gpairs(bank[ , 2:7],
        )
 ```
 
-<img src="images/cm209-unnamed-chunk-13-1.png" width="100%" />
+<img src="images/cm209-unnamed-chunk-11-1.png" width="70%" />
 
-## spm()
+## ggscatmat()
 
-Package car
+Package GGally extends ggplot2.
 
-``` r
-library("car")
-spm(~ Length + Left + Right + Bottom + Top + Diagonal | Status, 
-        data = bank, 
-        col  = c(rcb("mid_BG"), rcb("mid_Br")), 
-        fill = c(rcb("light_BG"), rcb("light_Br")), 
-        pch  = c(21, 21), 
-        cex  = 0.75 * c(1, 1), 
-        cex.axis = 1, 
-        cex.labels = 1, 
-        cex.main = 1)
-```
-
-<img src="images/cm209-unnamed-chunk-14-1.png" width="100%" />
-
-## PairPlot()
-
-Package WVPlots
+`ggscatmat()` treats continuous variables only, though a categorical
+variable can be mapped to the color aesthetic.
 
 ``` r
-library("WVPlots")
-PairPlot(bank, colnames(bank)[2:7], title = "Bank", group_var = "Status")
+library("GGally")
+ggscatmat(bank, columns = 2:7)
 ```
 
-<img src="images/cm209-unnamed-chunk-15-1.png" width="100%" />
-
-<!-- ```{r} -->
-
-<!-- library("car") -->
-
-<!-- spm(~ palmitic + palmitoleic + stearic + oleic + linoleic + linolenic + arachidic + eicosenoic | Region, data = olives) -->
-
-<!-- ``` -->
-
-<!-- ```{r} -->
-
-<!-- library("gpairs") -->
-
-<!-- gpairs(olives[ , 3:10], -->
-
-<!--        lower.pars = list(scatter = "points"),  -->
-
-<!--        upper.pars = list(scatter = 'stats'),  -->
-
-<!--        # diagonal = "other", -->
-
-<!--        scatter.pars = list(pch = 21,  -->
-
-<!--                            size = unit(5, "pt"),  -->
-
-<!--                            col  = rcb("dark_BG"),  -->
-
-<!--                            fill = rcb("mid_BG"),  -->
-
-<!--                            frame.fill = NULL,  -->
-
-<!--                            border.col = "gray50"),  -->
-
-<!--        stat.pars = list(verbose = FALSE),  -->
-
-<!--        gap = 0.02 -->
-
-<!--        ) -->
-
-<!-- ``` -->
-
-<!-- Made with GGally, http://ggobi.github.io/ggally/index.html  -->
-
-<!-- library("extracat") -->
-
-<!-- data(olives) -->
-
-<!-- glimpse(olives) -->
-
-<!-- ```{r} -->
-
-<!-- library(GGally) -->
-
-<!-- data(flea, package = "GGally") -->
-
-<!-- glimpse(flea) -->
-
-<!-- ``` -->
-
-<!-- ```{r} -->
-
-<!-- ggscatmat(flea, columns = 2:4, color = "species", alpha = 0.8) -->
-
-<!-- ``` -->
-
-<!-- ```{r} -->
-
-<!-- data(airquality) -->
-
-<!-- names(airquality) -->
-
-<!-- ggscatmat(airquality, columns = 1:4) -->
-
-<!-- ``` -->
-
-<!-- ```{r} -->
-
-<!-- library(foreign) -->
-
-<!-- af <- read.dta("http://data.princeton.edu/wws509/datasets/afMentalHealth.dta") -->
-
-<!-- glimpse(af) -->
-
-<!-- ggscatmat(af, columns = 1:3) -->
-
-<!-- ``` -->
-
-<!-- ```{r} -->
-
-<!-- library("gclus") -->
-
-<!-- data(bank, package = "gclus") -->
-
-<!-- glimpse(bank) -->
-
-<!-- bank <- bank %>%  -->
-
-<!--   mutate(Status = factor(Status, labels = c("genuine", "counterfeit"))) -->
-
-<!-- ggscatmat(bank, columns = 2:7, color = "Status") -->
-
-<!-- ``` -->
-
-<!-- ```{r} -->
-
-<!-- library("extracat") -->
-
-<!-- data(olives) -->
-
-<!-- glimpse(olives) -->
-
-<!-- ggscatmat(olives, columns = 3:10, color = "Region") -->
-
-<!-- ``` -->
-
-<!-- ```{r} -->
-
-<!-- library("DAAG") -->
-
-<!-- data(leafshape) -->
-
-<!-- glimpse(leafshape) -->
-
-<!-- leafshape <- leafshape %>%  -->
-
-<!--   mutate(arch = factor(arch, labels = c("plagiotropic", "orthotropic"))) %>%  -->
-
-<!--   glimpse() -->
-
-<!-- ggscatmat(leafshape, columns = 1:3, color = "arch", alpha = 0.5) -->
-
-<!-- ``` -->
-
-<!-- ```{r} -->
-
-<!-- library("car") -->
-
-<!-- x <- leafshape[ , 1:3] -->
-
-<!-- x <- olives[ , 3:10] -->
-
-<!-- spm(x) -->
-
-<!-- ``` -->
-
-<!-- ```{r} -->
-
-<!-- library(gpairs) -->
-
-<!-- x <- leafshape[ , 1:3] -->
-
-<!-- x <- olives[ , 3:10] -->
-
-<!-- gpairs(x, -->
-
-<!--        lower.pars = list(scatter = "points"),  -->
-
-<!--        upper.pars = list(scatter = 'stats'),  -->
-
-<!--        diagonal = "other", -->
-
-<!--        scatter.pars = list(pch = 21,  -->
-
-<!--                            size = unit(5, "pt"),  -->
-
-<!--                            col  = rcb("dark_BG"),  -->
-
-<!--                            fill = rcb("mid_BG"),  -->
-
-<!--                            frame.fill = NULL,  -->
-
-<!--                            border.col = "gray50"),  -->
-
-<!--        stat.pars = list(verbose = FALSE),  -->
-
-<!--        gap = 0.02 -->
-
-<!--        ) -->
-
-<!-- ``` -->
-
-<br> <a href="#top">▲ top of page</a>
-
-## carpentry
-
-Open the carpentry script you initialized earlier.
-
-A data carpentry file typically begins by reading the source data file.
+<img src="images/cm209-unnamed-chunk-12-1.png" width="70%" />
+
+<br> Include the Status category and edit the aesthetics. GGally is an
+extension of ggplot2, so its functions are generally compatible with
+ggplot2 functions such as `scale_color_manual()`, `labs()`, and
+`theme()`.
 
 ``` r
-library("tidyverse")
+ggscatmat(bank, columns = 2:7, color = "Status") +
+    geom_point(size = 1, alpha = 0.1, na.rm = TRUE)  +
+    scale_x_continuous(breaks = seq(0, 300, 1)) +
+    scale_y_continuous(breaks = seq(0, 300, 1)) +
+    scale_color_manual(values = my_color) +
+    labs(title = my_title) +
+  theme(legend.position = "right",
+            panel.spacing = unit(1, "mm"),  
+            axis.text.x = element_text(angle = 90, hjust = 1))
 ```
 
-A data carpentry file typically concludes by saving the data frame.
+<img src="images/cm209-unnamed-chunk-13-1.png" width="85%" />
+
+## ggpairs()
+
+Package GGally extends ggplot2.
+
+`ggpairs()` is the most general of the scatterplot matrix functions,
+permitting a lot of detailed control—and is thus more complex. It treats
+both quantitative and categorical variables in the panels. .
 
 ``` r
-saveRDS(df, "data/0xxx-graphtype-dataname-data.rds")
+library("GGally")
+ggpairs(bank, columns = 2:7)
 ```
 
-<br> <a href="#top">▲ top of page</a>
+<img src="images/cm209-unnamed-chunk-14-1.png" width="85%" />
 
-## design
-
-Open the design script you initialized earlier.
-
-A design file typically begins by reading the data prepared by the
-carpentry script.
+<br> Include the Status category and edit the aesthetics.
 
 ``` r
-library("tidyverse")
+pm <- ggpairs(bank, columns = 2:7,  
+                mapping = ggplot2::aes(color = Status, fill = Status), 
+                title   = my_title, 
+                legend  = 1, 
+                              upper   = list(continuous = wrap("cor", size = 2.5))) +
+        theme(legend.position = "right",
+                panel.spacing = unit(1, "mm"),  
+                 axis.text.x = element_text(angle = 90, hjust = 1))
+
+# loop through each panel to edit colors
+for(i in 1:pm$nrow) {
+        for(j in 1:pm$ncol){
+                pm[i, j] <- pm[i, j] + 
+                        scale_fill_manual(values  = my_fill) +
+                        scale_color_manual(values = my_color)
+        }}
+
+# index to the panels I want to edit alpha
+row_col_index <- wrapr::build_frame(
+    "row", "col" |
+        1, 1 |
+        2, 2 |
+        3, 3 |
+        4, 4 |
+        5, 5 |
+        6, 6
+)
+# add alpha to the density plots on the diagonal
+for(i in 1:nrow(row_col_index)) {
+        ii <- row_col_index$row[i]
+        jj <- row_col_index$col[i]
+        
+        p <- pm[ii, jj]
+        p <- p + geom_density(alpha = 0.6)
+        
+        pm[ii, jj] <- p
+}
+pm
 ```
 
-And write to file.
-
-``` r
-# ggsave(filename = "0xxx-graphtype-dataname.png",
-#         path    = "figures",
-#         width   = 8,
-#         height  = 16,
-#         units   = "in",
-#         dpi     = 300)
-```
-
-<br> <a href="#top">▲ top of page</a>
-
-## report
-
-If we were to include this graph in a report, we would insert the
-following code chunk in the Rmd script.
-
-    ```{r}
-    library("knitr")
-    include_graphics("../figures/0xxx-graphtype-dataname.png")
-    ```
-
-<br> <a href="#top">▲ top of page</a>
+<img src="images/cm209-unnamed-chunk-15-1.png" width="95%" />
 
 ## exercises
 
-**1. xxx**
+**1. case1202**
 
-Script: `explore/wwdd-graphtype-dataname-explore.R`
+Script: `explore/0801-scatterplot-matrix-case1202-explore.R`
 
-Data: name from source
+Data: `case1202` from package Sleuth2
 
   - Explore: Identify the number of observations and the number and type
-    and class of variables. Determine the type of date variable.
+    and class of variables.
 
-  - Carpentry: something
+  - Carpentry: Select the variables Sex, Senior, Age, Bsal, Sal77.
+    Convert dollars to 1000s and months to years.
 
-  - Design: Graph something
+  - Design: Create a scatterplot matrix using any of the
+    packages/functions illustrated above. Plot the quantitative
+    variables in the panels and condition by the categorical variable.
+    Attempt to create a loess curve in each panel.
+
+  - What stories do you see in these data?
 
 *Answer*
+
+<img src="images/cm209-unnamed-chunk-16-1.png" width="85%" />
 
 ## references
 
 <div id="refs">
+
+<div id="ref-Emerson+Green+etal:2013">
+
+Emerson JW, Green WA, Schloerke B, Crowley J, Cook D, Hofmann H and
+Wickham H (2013) The generalized pair plot. *Journal of Computational
+and Graphical Statistics* **22**(1), 79–91
+<doi:10.1080/10618600.2012.694762>
+
+</div>
 
 <div id="ref-Wickham+Grolemund:2017">
 
