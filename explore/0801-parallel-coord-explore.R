@@ -3,4 +3,5 @@
 
 # load packages
 library("tidyverse")
-library("VGAMdata")
+library("tidyverse")
+library("graphclassmate")
