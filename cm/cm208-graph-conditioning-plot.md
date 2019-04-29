@@ -1,10 +1,6 @@
 conditioning plot
 ================
 
-Notes: introduce the idea of using a separate data frame to add lines,
-with a data argument and aes() argument in the geom layer instead of the
-plot layer.
-
 ## contents
 
 [introduction](#introduction)  
@@ -104,6 +100,11 @@ coplot(Yes ~ log10(Pop) | Country,
 ```
 
 <img src="images/cm208-unnamed-chunk-5-1.png" width="70%" />
+
+This is the right package but not a good example. The three variables
+shouls all be quantitative and continuous.
+
+I’ll fix it ASAP.
 
 ## exercises
 

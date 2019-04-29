@@ -16,8 +16,7 @@ performing the necessary data carpentry to tame it yourself.
 An exception can be made for *R data packages* such as the
 [midfielddata](https://midfieldr.github.io/midfielddata/) package where
 the *package is the source*, that is, the package provides public access
-to data that is otherwise
-unavailable.
+to data that is otherwise unavailable.
 
 | display                                                     | type                                                                                                                                                   | quantitative  | categorical   |
 | :---------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------- | :------------ | :------------ |
@@ -28,8 +27,8 @@ unavailable.
 |                                                             | [line graph](cm207-graph-line-graph.md#line-graph) or [scatterplot](cm205-graph-scatterplot.md#scatterplot)                                            | two           | optional      |
 | [D5 redesign a graphical lie](#d5-redesign-a-graphical-lie) | [dot plot](cm206-graph-dot-plot.md#dot-plot)                                                                                                           | one           | optional      |
 |                                                             | [line graph](cm207-graph-line-graph.md#line-graph) or [scatterplot](cm205-graph-scatterplot.md#scatterplot)                                            | two           | optional      |
-| [D6 multivariate](#d6-multivariate)                         | [conditioning plot](cm208-graph-conditioning-plot.md#conditioning-plot)                                                                                | three or four |               |
-|                                                             | [scatterplot matrix](cm209-graph-scatterplot-matrix.md#scatterplot-matrix) or [parallel coordinate](cm210-graph-parallel-coord.md#parallel-coordinate) | four or more  |               |
+| [D6 multivariate](#d6-multivariate)                         | [scatterplot matrix](cm209-graph-scatterplot-matrix.md#scatterplot-matrix) or [parallel coordinate](cm210-graph-parallel-coord.md#parallel-coordinate) | four or more  | one optional  |
+|                                                             | [conditioning plot](cm208-graph-conditioning-plot.md#conditioning-plot)                                                                                | three or four | none          |
 | [D7 self-taught](#d7-self-taught)                           | [cycle plot](#cycle-plot)                                                                                                                              | one           | two           |
 |                                                             | [mosaic plot](#mosaic-plot)                                                                                                                            | one           | three or more |
 |                                                             | [financial (OHLC) plot](#financial-ohlc-plot)                                                                                                          | four          | one           |
@@ -202,7 +201,7 @@ Sources
 
 Use Alberto Cairo’s taxonomy (from his
 [talk](https://www.youtube.com/watch?v=Cd046xZhO_8&t=21m29s)) to
-classify the orginal offense(s). The orginal data display lies by:
+classify the original offense(s). The original data display lies by:
 
   - pandering to our expectations or biases
   - using the wrong data
@@ -246,37 +245,50 @@ type of critique that I expect.
 ## D6 multivariate
 
 We use the term *multivariate* for data comprising 3 or more
-quantitative variables per observation.
+quantitative variables per observation. We use three graph designs for
+exploring multivariate data. In your portfolio, only one of these graphs
+is required.
 
-We use three graph designs for exploring multivariate data.
-
-  - conditioning plot
   - scatterplot matrix
   - parallel coordinate plot
-
-Include only one of these graph types in your portfolio. Select the
-design that best conveys the stories in your data.
+  - conditioning plot
 
 Data requirements
 
   - Minimum 20 observations  
   - Three or more quantitative variables  
   - Time is excluded as a variable  
-  - No categorical variables
+  - Categorical variables are possible, depending on the graph type.
 
-Use a conditioning plot (coplot) for three or four variables.
+Selecting a chart type
 
-For four or more variables, use a scatterplot matrix or a parallel
-coordinate plot.
+  - In general, try to minimize the use of categorical variables. These
+    graphs types are most effective with multivariate, quantitative,
+    continuous data with at most one categorical variable assigned to
+    the color aesthetic.
+  - Always start the exploration using a scatterplot matrix to look for
+    pair-wise correlations, see how each variable is distributed, and
+    look for patterns.  
+  - If you have multiple categorical variables, use a scatterplot matrix
+    function that can handle categorical variables.
+  - After the initial exploration, if you have no categorical variables
+    no more than 4 quantitative variables, try a conditioning plot.
+    Co-plots are especially easy for technical audiences to grasp.
+  - On the other hand, if you do have categorical variables and/or 3, 4,
+    or more quantitative variables, try the parallel coordinate plot as
+    the next exploration. One categorical variable can be assigned to
+    the color aesthetic to group the data.
+  - If you have more than one categorical variable, use one as above and
+    plot the others along with the quantitative variables.
 
 Tutorials
 
-  - [Conditioning
-    plot](cm208-graph-conditioning-plot.md#conditioning-plot)  
   - [Scatterplot
     matrix](cm209-graph-scatterplot-matrix.md#scatterplot-matrix)  
   - [Parallel
-    coordinate](cm210-graph-parallel-coord.md#parallel-coordinate)
+    coordinate](cm210-graph-parallel-coord.md#parallel-coordinate)  
+  - [Conditioning
+    plot](cm208-graph-conditioning-plot.md#conditioning-plot)
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -293,8 +305,7 @@ from the list and include it in the portfolio.
   - [proportional symbol map](#proportional-symbol-map)  
   - [dot density map](#dot-density-map)
 
-<br> <a href="#top">▲ top of
-page</a>
+<br> <a href="#top">▲ top of page</a>
 
 <!-- ## q-q plot -->
 
