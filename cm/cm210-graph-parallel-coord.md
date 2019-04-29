@@ -89,7 +89,8 @@ Source, and compare your results to the results shown.
 ## explore
 
 Open the explore script you initialized earlier. Load the package that
-has the data.
+has the data. We.re going to use the same Swiss banknote data we used in
+the scatterplot matrix practice.
 
 ``` r
 library("gclus")
@@ -108,7 +109,7 @@ bank <- as_tibble(bank) %>%
 #> $ Diagonal <dbl> 141.0, 141.7, 142.2, 142.0, 141.8, 141.4, 141.6, 141....
 ```
 
-Baisx parallel coordinate plot.
+The basic parallel coordinate plot usibg `GGally::ggparcoord()`
 
 ``` r
 ggparcoord(bank, columns = 2:7)
@@ -121,6 +122,9 @@ my_color <- c(rcb("dark_BG"),  rcb("dark_Br"))
 my_fill  <- c(rcb("light_BG"), rcb("light_Br"))
 my_title <- "Comparing Swiss banknote dimensions (mm)"
 ```
+
+To use the bank not status \*genuine or counterfeit) as a conditioning
+factor, we have to make it a factor.
 
 ``` r
 bank <- bank %>%
@@ -138,15 +142,26 @@ bank <- bank %>%
 #> $ Diagonal <dbl> 141.0, 141.7, 142.2, 142.0, 141.8, 141.4, 141.6, 141....
 ```
 
+The possible values for the `scale` argument are
+
+    std           subtract mean and divide by standard deviation
+    robust        subtract median and divide by median absolute deviation
+    uniminmax     minimum of the variable is zero, and the maximum is one
+    globalminmax  no scaling
+    center        uniminmax then center each variable at scaleSummary
+    centerObs     uniminmax then center each variable at centerObsID
+
+Using `scale = robust` gives us an idea of the measurements with
+outliers and reduces their effect
+
 ``` r
 library("scagnostics")
-ggparcoord(data = bank, columns = 2:7, 
-           groupColumn  = "Status", 
+ggparcoord(data = bank, columns = 2:7, groupColumn  = "Status",
            scale        = "robust", 
-           # scaleSummary = "median", # with scale == “center”
-           # centerObsID  = 1,      # with scale == “centerObs”
+           # scaleSummary = "median", # use with  scale == “center”
+           # centerObsID  = 1,        # use with scale == “centerObs”
            missing      = "exclude", 
-           order        = "Skinny", # scagnostic measures 
+           order        = "Skewed", # scagnostic measures 
            alphaLines   = 0.4, 
            mapping      = NULL, 
            title        = my_title) +
@@ -154,6 +169,72 @@ ggparcoord(data = bank, columns = 2:7,
 ```
 
 <img src="images/cm210-unnamed-chunk-9-1.png" width="90%" />
+
+The order of the quantitative variables along the x-axis is important
+for us to discern any stories. The scagnostic package has the following
+ordering functions:
+
+    Outlying 
+    Skewed 
+    Clumpy 
+    Sparse 
+    Striated 
+    Convex 
+    Skinny 
+    Stringy 
+    Monotonic
+
+I selected skinny because of the shape of the distributions of the
+variables. From the scagnostics, the three top choices for the ordering
+are Skinny, Stringy, or Skewed.
+
+``` r
+bank2 <- bank %>% 
+  gather(type, value, Length:Diagonal)
+
+ggplot(bank2, aes(value, color = Status)) +
+  geom_density() +
+  facet_wrap(vars(type), scales = "free_x", as.table = FALSE)
+```
+
+<img src="images/cm210-unnamed-chunk-10-1.png" width="70%" />
+
+``` r
+
+library(scagnostics)
+scag <- scagnostics(bank)
+
+str(scag)
+#>  'scagnostics' num [1:9, 1:21] 0.2302 0.9215 0.9559 0.0824 0.7097 ...
+#>  - attr(*, "dimnames")=List of 2
+#>   ..$ : chr [1:9] "Outlying" "Skewed" "Clumpy" "Sparse" ...
+#>   ..$ : chr [1:21] "Status * Length" "Status * Left" "Length * Left" "Status * Right" ...
+
+attributes(scag)
+#> $dim
+#> [1]  9 21
+#> 
+#> $dimnames
+#> $dimnames[[1]]
+#> [1] "Outlying"  "Skewed"    "Clumpy"    "Sparse"    "Striated"  "Convex"   
+#> [7] "Skinny"    "Stringy"   "Monotonic"
+#> 
+#> $dimnames[[2]]
+#>  [1] "Status * Length"   "Status * Left"     "Length * Left"    
+#>  [4] "Status * Right"    "Length * Right"    "Left * Right"     
+#>  [7] "Status * Bottom"   "Length * Bottom"   "Left * Bottom"    
+#> [10] "Right * Bottom"    "Status * Top"      "Length * Top"     
+#> [13] "Left * Top"        "Right * Top"       "Bottom * Top"     
+#> [16] "Status * Diagonal" "Length * Diagonal" "Left * Diagonal"  
+#> [19] "Right * Diagonal"  "Bottom * Diagonal" "Top * Diagonal"   
+#> 
+#> 
+#> $class
+#> [1] "scagnostics"
+
+names(scag)
+#> NULL
+```
 
 <br> <a href="#top">▲ top of page</a>
 
