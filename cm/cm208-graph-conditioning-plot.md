@@ -10,9 +10,9 @@ plot layer.
 [introduction](#introduction)  
 [prerequisites](#prerequisites)  
 [explore](#explore)  
-[carpentry](#carpentry)  
-[design](#design)  
-[report](#report)  
+\[carpentry\]  
+\[design\]  
+\[report\]  
 [exercises](#exercises)  
 [references](#references)
 
@@ -105,78 +105,7 @@ coplot(Yes ~ log10(Pop) | Country,
 
 <img src="images/cm208-unnamed-chunk-5-1.png" width="70%" />
 
-<br> <a href="#top">▲ top of page</a>
-
-## carpentry
-
-Open the carpentry script you initialized earlier.
-
-A data carpentry file typically begins by reading the source data file.
-
-``` r
-library("tidyverse")
-```
-
-A data carpentry file typically concludes by saving the data frame.
-
-``` r
-saveRDS(df, "data/0xxx-graphtype-dataname-data.rds")
-```
-
-<br> <a href="#top">▲ top of page</a>
-
-## design
-
-Open the design script you initialized earlier.
-
-A design file typically begins by reading the data prepared by the
-carpentry script.
-
-``` r
-library("tidyverse")
-```
-
-And write to file.
-
-``` r
-# ggsave(filename = "0xxx-graphtype-dataname.png",
-#         path    = "figures",
-#         width   = 8,
-#         height  = 16,
-#         units   = "in",
-#         dpi     = 300)
-```
-
-<br> <a href="#top">▲ top of page</a>
-
-## report
-
-If we were to include this graph in a report, we would insert the
-following code chunk in the Rmd script.
-
-    ```{r}
-    library("knitr")
-    include_graphics("../figures/0xxx-graphtype-dataname.png")
-    ```
-
-<br> <a href="#top">▲ top of page</a>
-
 ## exercises
-
-**1. xxx**
-
-Script: `explore/wwdd-graphtype-dataname-explore.R`
-
-Data: name from source
-
-  - Explore: Identify the number of observations and the number and type
-    and class of variables. Determine the type of date variable.
-
-  - Carpentry: something
-
-  - Design: Graph something
-
-*Answer*
 
 ## references
 
