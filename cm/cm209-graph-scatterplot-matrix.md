@@ -8,11 +8,9 @@ scatterplot matrix
 [introduction](#introduction)  
 [prerequisites](#prerequisites)  
 [data](#data)  
-[pairs()](#pairs)  
-[spm()](#spm)  
-[gpairs()](#gpairs)  
 [ggscatmat()](#ggscatmat)  
 [ggpairs()](#ggpairs)  
+[non-ggplot packages](#non-ggplot-packages)  
 [exercises](#exercises)  
 [references](#references)
 
@@ -118,8 +116,8 @@ the variable to a factor with the levels “genuine” and “counterfeit.”
 
 ``` r
 bank <- bank %>%
-  mutate(Status = factor(Status, labels = c("genuine", "counterfeit"))) %>% 
-  glimpse()
+        mutate(Status = factor(Status, labels = c("genuine", "counterfeit"))) %>% 
+        glimpse()
 #> Observations: 200
 #> Variables: 7
 #> $ Status   <fct> genuine, genuine, genuine, genuine, genuine, genuine,...
@@ -144,114 +142,7 @@ my_fill  <- c(rcb("light_BG"), rcb("light_Br"))
 my_title <- "Comparing Swiss banknote dimensions (mm)"
 ```
 
-## pairs()
-
-I’ll start with the base R function `pairs()` as a baseline against
-which we can compare the alternatives.
-
-``` r
-pairs(bank[ , 2:7])
-```
-
-<img src="images/cm209-unnamed-chunk-6-1.png" width="70%" />
-
-<br> Here, I’ll use `pairs()` again but editing some of its aesthetics
-and grouping by status, i.e., are the bank notes genuine or counterfeit.
-
-``` r
-pairs(~ Length + Left + Right + Bottom + Top + Diagonal, 
-        data = bank, 
-        pch  = c(21, 21)[bank$Status],
-        col  = my_color[bank$Status],
-        bg   = my_fill[bank$Status],
-        gap  = 0, 
-        upper.panel = NULL, 
-        cex.labels = 1, 
-              las  = 2, 
-        main = my_title
-)
-par(xpd = NA)       # clip to device
-legend("topright",   
-             title  = "Swiss banknotes", 
-       legend = levels(bank$Status), 
-       col    = my_color, 
-       pt.bg  = my_fill, 
-       pch    = 21, 
-       inset  = c(0.2, 0.2), 
-             bty    = "n", # no border on legend 
-             cex    = 0.8, 
-             y.intersp = 0.75, 
-             title.adj = 0.5) 
-```
-
-<img src="images/cm209-unnamed-chunk-7-1.png" width="70%" />
-
-``` r
-par(xpd = FALSE) # return to default
-```
-
-## spm()
-
-Package car (Companion to Applied Regression), `spm()` builds on the
-base R `pairs()` function. Data must be numeric. `spm()` is an
-abbreviation for `scatterplotMatrix()`
-
-``` r
-library("car")
-spm(~ Length + Left + Right + Bottom + Top + Diagonal, 
-        data = bank)
-```
-
-<img src="images/cm209-unnamed-chunk-8-1.png" width="70%" />
-
-Include the Status category and edit the aesthetics.
-
-``` r
-spm(~ Length + Left + Right + Bottom + Top + Diagonal | Status, 
-        data = bank, 
-        pch  = c(16, 3), 
-        cex  = 0.75 * c(1, 1), 
-            col  = my_color, 
-        cex.labels = 1, 
-            cex.axis = 1, 
-        cex.main = 1, 
-        main = my_title, 
-            use = "pairwise.complete.obs"
-        )
-```
-
-<img src="images/cm209-unnamed-chunk-9-1.png" width="70%" />
-
-## gpairs()
-
-Package gpairs. Any combination of quantitative and categorical
-variables is acceptable.
-
-``` r
-library("gpairs")
-gpairs(bank[ , 2:7])
-```
-
-<img src="images/cm209-unnamed-chunk-10-1.png" width="70%" />
-
-Include the Status category and edit the aesthetics.
-
-``` r
-library("gpairs")
-gpairs(bank[ , 2:7],
-       lower.pars = list(scatter = "points"), 
-       upper.pars = list(scatter = 'stats'), 
-       scatter.pars = list(pch = 16, 
-                           size = unit(5, "pt"), 
-                           col  = my_color[bank$Status], 
-                           frame.fill = NULL, 
-                           border.col = "gray50"), 
-       stat.pars = list(verbose = FALSE), 
-       gap = 0
-       )
-```
-
-<img src="images/cm209-unnamed-chunk-11-1.png" width="70%" />
+<br> <a href="#top">▲ top of page</a>
 
 ## ggscatmat()
 
@@ -265,7 +156,7 @@ library("GGally")
 ggscatmat(bank, columns = 2:7)
 ```
 
-<img src="images/cm209-unnamed-chunk-12-1.png" width="70%" />
+<img src="images/cm209-unnamed-chunk-6-1.png" width="70%" />
 
 <br> Include the Status category and edit the aesthetics. GGally is an
 extension of ggplot2, so its functions are generally compatible with
@@ -274,17 +165,19 @@ ggplot2 functions such as `scale_color_manual()`, `labs()`, and
 
 ``` r
 ggscatmat(bank, columns = 2:7, color = "Status") +
-    geom_point(size = 1, alpha = 0.1, na.rm = TRUE)  +
-    scale_x_continuous(breaks = seq(0, 300, 1)) +
-    scale_y_continuous(breaks = seq(0, 300, 1)) +
-    scale_color_manual(values = my_color) +
-    labs(title = my_title) +
-  theme(legend.position = "right",
-            panel.spacing = unit(1, "mm"),  
-            axis.text.x = element_text(angle = 90, hjust = 1))
+        geom_point(size = 1, alpha = 0.1, na.rm = TRUE)  +
+        scale_x_continuous(breaks = seq(0, 300, 1)) +
+        scale_y_continuous(breaks = seq(0, 300, 1)) +
+        scale_color_manual(values = my_color) +
+        labs(title = my_title) +
+        theme(legend.position = "right",
+                panel.spacing = unit(1, "mm"),  
+                axis.text.x = element_text(angle = 90, hjust = 1))
 ```
 
-<img src="images/cm209-unnamed-chunk-13-1.png" width="85%" />
+<img src="images/cm209-unnamed-chunk-7-1.png" width="85%" />
+
+<br> <a href="#top">▲ top of page</a>
 
 ## ggpairs()
 
@@ -299,7 +192,7 @@ library("GGally")
 ggpairs(bank, columns = 2:7)
 ```
 
-<img src="images/cm209-unnamed-chunk-14-1.png" width="85%" />
+<img src="images/cm209-unnamed-chunk-8-1.png" width="85%" />
 
 <br> Include the Status category and edit the aesthetics.
 
@@ -308,22 +201,22 @@ pm <- ggpairs(bank, columns = 2:7,
                 mapping = ggplot2::aes(color = Status, fill = Status), 
                 title   = my_title, 
                 legend  = 1, 
-                              upper   = list(continuous = wrap("cor", size = 2.5))) +
+                upper   = list(continuous = wrap("cor", size = 2.5))) +
         theme(legend.position = "right",
                 panel.spacing = unit(1, "mm"),  
-                 axis.text.x = element_text(angle = 90, hjust = 1))
+                axis.text.x = element_text(angle = 90, hjust = 1))
 
 # loop through each panel to edit colors
 for(i in 1:pm$nrow) {
-        for(j in 1:pm$ncol){
-                pm[i, j] <- pm[i, j] + 
-                        scale_fill_manual(values  = my_fill) +
-                        scale_color_manual(values = my_color)
-        }}
+for(j in 1:pm$ncol){
+        pm[i, j] <- pm[i, j] + 
+        scale_fill_manual(values  = my_fill) +
+        scale_color_manual(values = my_color)
+}}
 
 # index to the panels I want to edit alpha
 row_col_index <- wrapr::build_frame(
-    "row", "col" |
+        "row", "col" |
         1, 1 |
         2, 2 |
         3, 3 |
@@ -331,6 +224,7 @@ row_col_index <- wrapr::build_frame(
         5, 5 |
         6, 6
 )
+
 # add alpha to the density plots on the diagonal
 for(i in 1:nrow(row_col_index)) {
         ii <- row_col_index$row[i]
@@ -344,7 +238,98 @@ for(i in 1:nrow(row_col_index)) {
 pm
 ```
 
-<img src="images/cm209-unnamed-chunk-15-1.png" width="95%" />
+<img src="images/cm209-unnamed-chunk-9-1.png" width="95%" />
+
+<br> <a href="#top">▲ top of page</a>
+
+## non-ggplot packages
+
+If the GGally functions suit your needs, you may skip this section.
+
+If not, here are some other packages that create scatterplot matrices.
+
+<br> **base R** `pairs()`
+
+Here I use the `pairs()` function and edit the aesthetics and group by
+status using base R syntax.
+
+``` r
+pairs(~ Length + Left + Right + Bottom + Top + Diagonal, 
+        data = bank, 
+        pch  = c(21, 21)[bank$Status],
+        col  = my_color[bank$Status],
+        bg   = my_fill[bank$Status],
+        gap  = 0, 
+        upper.panel = NULL, 
+        cex.labels = 1, 
+        las  = 2, 
+        main = my_title
+)
+par(xpd = NA) # clip to device
+legend("topright",   
+        title  = "Swiss banknotes", 
+        legend = levels(bank$Status), 
+        col    = my_color, 
+        pt.bg  = my_fill, 
+        pch    = 21, 
+        inset  = c(0.2, 0.2), 
+        bty    = "n", # no border on legend 
+        cex    = 0.8, 
+        y.intersp = 0.75, 
+        title.adj = 0.5) 
+```
+
+<img src="images/cm209-unnamed-chunk-10-1.png" width="70%" />
+
+``` r
+par(xpd = FALSE) # return to default
+```
+
+<br> **car** `scatterplotMatrix()`
+
+Package car (Companion to Applied Regression), `spm()` builds on the
+base R `pairs()` function. Data must be numeric.
+
+``` r
+library("car")
+scatterplotMatrix(~ Length + Left + Right + Bottom + Top + Diagonal | Status, 
+        data = bank, 
+        pch  = c(16, 3), 
+        cex  = 0.75 * c(1, 1), 
+        col  = my_color, 
+        cex.labels = 1, 
+        cex.axis = 1, 
+        cex.main = 1, 
+        main = my_title, 
+        use = "pairwise.complete.obs"
+)
+```
+
+<img src="images/cm209-unnamed-chunk-11-1.png" width="70%" />
+
+<br> **gpairs** `gpairs()`
+
+Package gpairs. Any combination of quantitative and categorical
+variables is acceptable.
+
+``` r
+library("gpairs")
+gpairs(bank[ , 2:7],
+        lower.pars = list(scatter = "points"), 
+        upper.pars = list(scatter = 'stats'), 
+        scatter.pars = list(pch = 16, 
+                size = unit(5, "pt"), 
+                col  = my_color[bank$Status], 
+                frame.fill = NULL, 
+                border.col = "gray50"), 
+        stat.pars = list(verbose = FALSE), 
+        gap = 0
+)
+```
+
+<img src="images/cm209-unnamed-chunk-12-1.png" width="70%" />
+
+<br> <a href="#top">▲ top of page</a>
 
 ## exercises
 
@@ -369,7 +354,7 @@ Data: `case1202` from package Sleuth2
 
 *Answer*
 
-<img src="images/cm209-unnamed-chunk-16-1.png" width="85%" />
+<img src="images/cm209-unnamed-chunk-13-1.png" width="85%" />
 
 ## references
 
