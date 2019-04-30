@@ -130,7 +130,7 @@ coplot(Ozone ~ Solar.R | Temp * Wind, data = airquality,
     #>  Missing rows: 5, 6, 10, 11, 25, 26, 27, 32, 33, 34, 35, 36, 37, 39, 42, 43, 45, 46, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 65, 72, 75, 83, 84, 96, 97, 98, 102, 103, 107, 115, 119, 150
 
 The aesthetics of the graph would be edited using base R graphics
-functions (which I will illustrate if I can fins some time).
+functions (which I will illustrate if I can find some time).
 
 ## exercises
 
