@@ -58,13 +58,36 @@ Ensure you have installed the following packages. See [install
 packages](cm902-software-studio.md#install-packages) for instructions if
 needed.
 
-  - tidyverse  
-  - graphclassmate
-  - gclus  
-  - GGally
-  - Sleuth2
-  - car (optional)  
-  - gpairs (optional)
+  - [**tidyverse**](http://tidyverse.tidyverse.org): The ‘tidyverse’ is
+    a set of packages that work in harmony because they share common
+    data representations and ‘API’ design. This package is designed to
+    make it easy to install and load multiple ‘tidyverse’ packages in a
+    single step. Learn more about the ‘tidyverse’ at
+    <https://tidyverse.org>.
+  - [**graphclassmate**](https://github.com/graphdr/graphclassmate): An
+    R package with companion materials for a course in data
+    visualization. The package provides data sets structured for a
+    variety of graph types plus a ggplot2 theme.  
+  - [**GGally**](https://ggobi.github.io/ggally): The R package
+    ‘ggplot2’ is a plotting system based on the grammar of graphics.
+    ‘GGally’ extends ‘ggplot2’ by adding several functions to reduce the
+    complexity of combining geometric objects with transformed data.
+    Some of these functions include a pairwise plot matrix, a two group
+    pairwise plot matrix, a parallel coordinates plot, a survival plot,
+    and several functions to plot networks.
+  - [**Sleuth2**](http://r-forge.r-project.org/projects/sleuth2/): Data
+    sets from Ramsey, F.L. and Schafer, D.W. (2002), “The Statistical
+    Sleuth: A Course in Methods of Data Analysis (2nd ed)”, Duxbury.
+  - [**car**](https://r-forge.r-project.org/projects/car/): Functions to
+    Accompany J. Fox and S. Weisberg, An R Companion to Applied
+    Regression, Third Edition, Sage, in press.
+  - [**gclus**](https://CRAN.R-project.org/package=gclus): Orders panels
+    in scatterplot matrices and parallel coordinate displays by some
+    merit index. Package contains various indices of merit, ordering
+    functions, and enhanced versions of pairs and parcoord which color
+    panels according to their merit level.
+  - [**gpairs**](https://CRAN.R-project.org/package=gpairs): Produces a
+    generalized pairs (gpairs) plot.
 
 Scripts to initialize
 
@@ -156,7 +179,7 @@ library("GGally")
 ggscatmat(bank, columns = 2:7)
 ```
 
-<img src="images/cm209-unnamed-chunk-6-1.png" width="70%" />
+<img src="images/cm209-unnamed-chunk-7-1.png" width="70%" />
 
 <br> Include the Status category and edit the aesthetics. GGally is an
 extension of ggplot2, so its functions are generally compatible with
@@ -175,7 +198,7 @@ ggscatmat(bank, columns = 2:7, color = "Status") +
                 axis.text.x = element_text(angle = 90, hjust = 1))
 ```
 
-<img src="images/cm209-unnamed-chunk-7-1.png" width="85%" />
+<img src="images/cm209-unnamed-chunk-8-1.png" width="85%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -192,7 +215,7 @@ library("GGally")
 ggpairs(bank, columns = 2:7)
 ```
 
-<img src="images/cm209-unnamed-chunk-8-1.png" width="85%" />
+<img src="images/cm209-unnamed-chunk-9-1.png" width="85%" />
 
 <br> Include the Status category and edit the aesthetics.
 
@@ -238,7 +261,7 @@ for(i in 1:nrow(row_col_index)) {
 pm
 ```
 
-<img src="images/cm209-unnamed-chunk-9-1.png" width="95%" />
+<img src="images/cm209-unnamed-chunk-10-1.png" width="95%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -279,7 +302,7 @@ legend("topright",
         title.adj = 0.5) 
 ```
 
-<img src="images/cm209-unnamed-chunk-10-1.png" width="70%" />
+<img src="images/cm209-unnamed-chunk-11-1.png" width="70%" />
 
 ``` r
 par(xpd = FALSE) # return to default
@@ -305,7 +328,7 @@ scatterplotMatrix(~ Length + Left + Right + Bottom + Top + Diagonal | Status,
 )
 ```
 
-<img src="images/cm209-unnamed-chunk-11-1.png" width="70%" />
+<img src="images/cm209-unnamed-chunk-12-1.png" width="70%" />
 
 <br> **gpairs** `gpairs()`
 
@@ -327,7 +350,7 @@ gpairs(bank[ , 2:7],
 )
 ```
 
-<img src="images/cm209-unnamed-chunk-12-1.png" width="70%" />
+<img src="images/cm209-unnamed-chunk-13-1.png" width="70%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -354,7 +377,7 @@ Data: `case1202` from package Sleuth2
 
 *Answer*
 
-<img src="images/cm209-unnamed-chunk-13-1.png" width="85%" />
+<img src="images/cm209-unnamed-chunk-14-1.png" width="85%" />
 
 ## references
 

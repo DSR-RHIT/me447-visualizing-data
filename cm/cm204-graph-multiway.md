@@ -74,9 +74,26 @@ Packages: Ensure you have installed the following packages. See [install
 packages](cm902-software-studio.md#install-packages) for instructions if
 needed.
 
-  - tidyverse  
-  - graphclassmate  
-  - vcdExtra
+  - [**tidyverse**](http://tidyverse.tidyverse.org): The ‘tidyverse’ is
+    a set of packages that work in harmony because they share common
+    data representations and ‘API’ design. This package is designed to
+    make it easy to install and load multiple ‘tidyverse’ packages in a
+    single step. Learn more about the ‘tidyverse’ at
+    <https://tidyverse.org>.
+  - [**graphclassmate**](https://github.com/graphdr/graphclassmate): An
+    R package with companion materials for a course in data
+    visualization. The package provides data sets structured for a
+    variety of graph types plus a ggplot2 theme.  
+  - [**vcdExtra**](https://CRAN.R-project.org/package=vcdExtra):
+    Provides additional data sets, methods and documentation to
+    complement the ‘vcd’ package for Visualizing Categorical Data and
+    the ‘gnm’ package for Generalized Nonlinear Models. In particular,
+    ‘vcdExtra’ extends mosaic, assoc and sieve plots from ‘vcd’ to
+    handle ‘glm()’ and ‘gnm()’ models and adds a 3D version in
+    ‘mosaic3d’. Additionally, methods are provided for comparing and
+    visualizing lists of ‘glm’ and ‘loglm’ objects. This package is now
+    a support package for the book, “Discrete Data Analysis with R” by
+    Michael Friendly and David Meyer.
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -345,7 +362,7 @@ ggsave(filename = "0402-multiway-metropop-01.png",
         dpi     = 300)
 ```
 
-<img src="images/cm204-metropop-unnamed-chunk-2-1.png" width="90%" />
+<img src="images/cm204-metropop-unnamed-chunk-3-1.png" width="90%" />
 
 In the dual multiway, we swap the rows and panels by setting `y =
 county` and `facet_wrap(vars(race))`.

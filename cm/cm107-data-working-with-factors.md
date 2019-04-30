@@ -53,9 +53,34 @@ Ensure you have installed the following packages. See [install
 packages](cm902-software-studio.md#install-packages) for instructions if
 needed.
 
-  - tidyverse  
-  - lubridate
-  - seplyr
+  - [**tidyverse**](http://tidyverse.tidyverse.org): The ‘tidyverse’ is
+    a set of packages that work in harmony because they share common
+    data representations and ‘API’ design. This package is designed to
+    make it easy to install and load multiple ‘tidyverse’ packages in a
+    single step. Learn more about the ‘tidyverse’ at
+    <https://tidyverse.org>.
+  - [**lubridate**](http://lubridate.tidyverse.org): Functions to work
+    with date-times and time-spans: fast and user friendly parsing of
+    date-time data, extraction and updating of components of a date-time
+    (years, months, days, hours, minutes, and seconds), algebraic
+    manipulation on date-time and time-span objects. The ‘lubridate’
+    package has a consistent and memorable syntax that makes working
+    with dates easy and fun. Parts of the ‘CCTZ’ source code, released
+    under the Apache 2.0 License, are included in this package. See
+    <https://github.com/google/cctz> for more details.
+  - [**seplyr**](https://github.com/WinVector/seplyr/): The ‘seplyr’
+    (standard evaluation plying) package supplies improved standard
+    evaluation adapter methods for important common ‘dplyr’ data
+    manipulation tasks. In addition the ‘seplyr’ package supplies
+    several new “key operations bound together” methods. These include
+    ‘group\_summarize()’ (which combines grouping, arranging and
+    calculation in an atomic unit), ‘add\_group\_summaries()’ (which
+    joins grouped summaries into a ‘data.frame’ in a well documented
+    manner), ‘add\_group\_indices()’ (which adds per-group identifiers
+    to a ‘data.frame’ without depending on row-order),
+    ‘partition\_mutate\_qt()’ (which optimizes mutate sequences), and
+    ‘if\_else\_device()’ (which simulates per-row if-else blocks in
+    expression sequences).
 
 Create a new script `explore/0502-data-working-with-factors.R`. Write a
 minimal header and load the packages.
@@ -112,7 +137,7 @@ ggplot(data = df, aes(x = start, xend = end, y = name, yend = name)) +
     geom_segment()
 ```
 
-<img src="images/cm107-unnamed-chunk-5-1.png" width="70%" />
+<img src="images/cm107-unnamed-chunk-6-1.png" width="70%" />
 
 Before doing any additional work, we notice that there are two Bush
 terms in the same row. To distinguish between them, we change the values
@@ -154,7 +179,7 @@ ggplot(data = df, aes(x = start, xend = end, y = name, yend = name)) +
     geom_segment()
 ```
 
-<img src="images/cm107-unnamed-chunk-8-1.png" width="70%" />
+<img src="images/cm107-unnamed-chunk-9-1.png" width="70%" />
 
 The name variable is now a factor, but its levels are in alphabetical
 order—this is the default behavior of base R `factor()`.
@@ -195,8 +220,7 @@ class(df$name)
 ```
 
 Then construct a vector to list all the levels in the desired order. You
-must include all the
-levels.
+must include all the levels.
 
 ``` r
 name_levels = c("Eisenhower", "Kennedy", "Johnson", "Nixon", "Ford", "Carter", "Reagan", "Bush_41", "Clinton", 
@@ -224,7 +248,7 @@ ggplot(data = df, aes(x = start, xend = end, y = name, yend = name)) +
     geom_segment()
 ```
 
-<img src="images/cm107-unnamed-chunk-12-1.png" width="70%" />
+<img src="images/cm107-unnamed-chunk-13-1.png" width="70%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -291,7 +315,7 @@ ggplot(data = df, aes(x = start, xend = end, y = name, yend = name)) +
     geom_segment()
 ```
 
-<img src="images/cm107-unnamed-chunk-18-1.png" width="70%" />
+<img src="images/cm107-unnamed-chunk-19-1.png" width="70%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -384,7 +408,7 @@ ggplot(data = relig_tv, aes(x = tvhours, y = relig)) +
     geom_point()
 ```
 
-<img src="images/cm107-unnamed-chunk-24-1.png" width="70%" />
+<img src="images/cm107-unnamed-chunk-25-1.png" width="70%" />
 
 Reorder `relig` factor levels by `tvhours` using `fct_reorder()` and
 graph again.
@@ -399,7 +423,7 @@ ggplot(data = relig_tv, aes(x = tvhours, y = relig)) +
     geom_point()
 ```
 
-<img src="images/cm107-unnamed-chunk-25-1.png" width="70%" />
+<img src="images/cm107-unnamed-chunk-26-1.png" width="70%" />
 
 Suppose we want to look at grouping by two variables, say, marital
 status and religion,
@@ -452,7 +476,7 @@ ggplot(data = marital_relig_tv, aes(x = tvhours, y = relig)) +
   facet_wrap(vars(marital), ncol = 1, as.table = FALSE)
 ```
 
-<img src="images/cm107-unnamed-chunk-31-1.png" width="70%" />
+<img src="images/cm107-unnamed-chunk-32-1.png" width="70%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -486,7 +510,7 @@ ggplot(data = df, aes(x = n, y = marital)) +
     geom_point() 
 ```
 
-<img src="images/cm107-unnamed-chunk-33-1.png" width="70%" />
+<img src="images/cm107-unnamed-chunk-34-1.png" width="70%" />
 
 **Two variables**
 
@@ -527,7 +551,7 @@ ggplot(data = df, aes(x = n, y = relig)) +
   facet_wrap(vars(marital), ncol = 1, as.table = FALSE)
 ```
 
-<img src="images/cm107-unnamed-chunk-37-1.png" width="70%" />
+<img src="images/cm107-unnamed-chunk-38-1.png" width="70%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -686,7 +710,7 @@ ggplot(data = df, aes(x = partyid, y = n)) +
     geom_point()
 ```
 
-<img src="images/cm107-unnamed-chunk-45-1.png" width="70%" />
+<img src="images/cm107-unnamed-chunk-46-1.png" width="70%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -704,7 +728,7 @@ ggplot(data = df, aes(x = partyid, y = n)) +
     geom_point()
 ```
 
-<img src="images/cm107-unnamed-chunk-46-1.png" width="70%" />
+<img src="images/cm107-unnamed-chunk-47-1.png" width="70%" />
 
 ## exercises
 
@@ -760,7 +784,7 @@ Design
   - Graph the number of students by race, conditioned by path and sex.
     (The graph you are trying to create is shown below.)
 
-<img src="images/cm107-unnamed-chunk-49-1.png" width="70%" />
+<img src="images/cm107-unnamed-chunk-50-1.png" width="70%" />
 
 ## references
 

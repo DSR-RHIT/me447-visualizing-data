@@ -19,15 +19,33 @@ Management is licensed under
 
 ## prerequisites
 
-  - Start every work session by launching `portfolio.Rproj`  
-  - Your [project directory
-    structure](cm501-proj-m-manage-files.md#plan-the-directory-structure)
-    satisfies the course requirements  
-  - If the any of the following packages are not yet installed on your
-    machine, please [install
-    them](cm902-software-studio.md#install-packages)
-      - tidyverse  
-      - lubridate
+Project setup
+
+  - Start every work session by launching the RStudio Project file for
+    the course, e.g., `portfolio.Rproj`  
+  - Ensure your [project directory
+    structure](cm501-proj-m-manage-files.md#planning-the-directory-structure)
+    satisfies the course requirements
+
+Ensure you have installed the following packages. See [install
+packages](cm902-software-studio.md#install-packages) for instructions if
+needed.
+
+  - [**tidyverse**](http://tidyverse.tidyverse.org): The ‘tidyverse’ is
+    a set of packages that work in harmony because they share common
+    data representations and ‘API’ design. This package is designed to
+    make it easy to install and load multiple ‘tidyverse’ packages in a
+    single step. Learn more about the ‘tidyverse’ at
+    <https://tidyverse.org>.
+  - [**lubridate**](http://lubridate.tidyverse.org): Functions to work
+    with date-times and time-spans: fast and user friendly parsing of
+    date-time data, extraction and updating of components of a date-time
+    (years, months, days, hours, minutes, and seconds), algebraic
+    manipulation on date-time and time-span objects. The ‘lubridate’
+    package has a consistent and memorable syntax that makes working
+    with dates easy and fun. Parts of the ‘CCTZ’ source code, released
+    under the Apache 2.0 License, are included in this package. See
+    <https://github.com/google/cctz> for more details.
 
 We’ll be using the forcats package that is loaded with the tidyverse. We
 use the lubridate package to show the Date class—later in the course
@@ -115,7 +133,7 @@ A date is enclosed in quotes but the type is `double`.
 
 ``` r
 (x_date <- lubridate::today())
-#> [1] "2019-04-03"
+#> [1] "2019-04-30"
 
 typeof(x_date)
 #> [1] "double"

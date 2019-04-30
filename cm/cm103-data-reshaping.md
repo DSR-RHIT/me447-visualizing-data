@@ -29,20 +29,68 @@ data](#keys-and-values-in-coordinatized-data)
 
 ## prerequisites
 
-  - Start every work session by launching `portfolio.Rproj`  
-  - Your [project directory
-    structure](cm501-proj-m-manage-files.md#plan-the-directory-structure)
-    satisfies the course requirements  
-  - If the any of the following packages are not yet installed on your
-    machine, please [install
-    them](cm902-software-studio.md#install-packages)
-      - tidyverse  
-      - graphclassmate
-      - cdata  
-      - wrapr  
-      - seplyr  
-      - rio  
-      - feather
+Project setup
+
+  - Start every work session by launching the RStudio Project file for
+    the course, e.g., `portfolio.Rproj`  
+  - Ensure your [project directory
+    structure](cm501-proj-m-manage-files.md#planning-the-directory-structure)
+    satisfies the course requirements
+
+Ensure you have installed the following packages. See [install
+packages](cm902-software-studio.md#install-packages) for instructions if
+needed.
+
+  - [**tidyverse**](http://tidyverse.tidyverse.org): The ‘tidyverse’ is
+    a set of packages that work in harmony because they share common
+    data representations and ‘API’ design. This package is designed to
+    make it easy to install and load multiple ‘tidyverse’ packages in a
+    single step. Learn more about the ‘tidyverse’ at
+    <https://tidyverse.org>.
+  - [**graphclassmate**](https://github.com/graphdr/graphclassmate): An
+    R package with companion materials for a course in data
+    visualization. The package provides data sets structured for a
+    variety of graph types plus a ggplot2 theme.  
+  - [**cdata**](https://github.com/WinVector/cdata/): Supplies
+    higher-order fluid data transform operators that include pivot and
+    anti-pivot as special cases. The methodology is describe in ‘Zumel’,
+    2018, “Fluid data reshaping with ‘cdata’”,
+    <http://winvector.github.io/FluidData/FluidDataReshapingWithCdata.html>
+    , <doi:10.5281/zenodo.1173299> . Works on in-memory data or on
+    remote data using ‘rquery’ and the ‘DBI’ database interface.
+  - [**wrapr**](https://github.com/WinVector/wrapr): Tools for writing
+    and debugging R code. Provides: ‘let()’ (converts non-standard
+    evaluation interfaces to parametric standard evaluation interfaces,
+    inspired by ‘gtools:strmacro()’ and ‘base::bquote()’), ‘%.\>%’
+    dot-pipe (an ‘S3’ configurable pipe),
+    ‘build\_frame()’/‘draw\_frame()’ (‘data.frame’ example tools),
+    ‘qc()’ (quoting concatenate), ‘:=’ (named map builder), and more.
+  - [**seplyr**](https://github.com/WinVector/seplyr/): The ‘seplyr’
+    (standard evaluation plying) package supplies improved standard
+    evaluation adapter methods for important common ‘dplyr’ data
+    manipulation tasks. In addition the ‘seplyr’ package supplies
+    several new “key operations bound together” methods. These include
+    ‘group\_summarize()’ (which combines grouping, arranging and
+    calculation in an atomic unit), ‘add\_group\_summaries()’ (which
+    joins grouped summaries into a ‘data.frame’ in a well documented
+    manner), ‘add\_group\_indices()’ (which adds per-group identifiers
+    to a ‘data.frame’ without depending on row-order),
+    ‘partition\_mutate\_qt()’ (which optimizes mutate sequences), and
+    ‘if\_else\_device()’ (which simulates per-row if-else blocks in
+    expression sequences).
+  - [**rio**](https://github.com/leeper/rio): Streamlined data import
+    and export by making assumptions that the user is probably willing
+    to make: ‘import()’ and ‘export()’ determine the data structure from
+    the file extension, reasonable defaults are used for data import and
+    export (e.g., ‘stringsAsFactors=FALSE’), web-based import is
+    natively supported (including from SSL/HTTPS), compressed files can
+    be read directly without explicit decompression, and fast import
+    packages are used where appropriate. An additional convenience
+    function, ‘convert()’, provides a simple method for converting
+    between file types.
+  - [**feather**](https://github.com/wesm/feather): Read and write
+    feather files, a lightweight binary columnar data store designed for
+    maximum speed.
 
 Create a new script `explore/0401-data-reshape-VADeaths.R` for today’s
 work, write a minimal header and load the packages:
@@ -517,7 +565,7 @@ website](http://www.who.int/tb/country/data/download/en/) describes the
 meaning of the variable names and how they encode additional data.
 
 We’re interested in columns for which the names contain sex and age
-information, e.g. `f014` or `m3544`.
+information, e.g. `f014` or `m3544`.
 
   - `f` is female, `m` male, and `sexunk` sex unknown  
   - `014` is the age group, from 0–14 years; other possible levels are
@@ -868,8 +916,8 @@ variables you define, computes summaries from the data frame, and
 produces an output data frame with those summaries.
 
 In the WHO case study example, I want to group the data frame `who_tall`
-by the grouping variables `c("country", "year", "sex")`, and computed
-the `sum()` summary.
+by the grouping variables `c("country", "year", "sex")` and compute the
+`sum()` summary.
 
 ``` r
 grouping_variables <- c("country", "year", "sex")
@@ -903,8 +951,7 @@ Other summary functions you might use include,
 
 ## WHO graphs
 
-All
-countries
+All countries
 
 ``` r
 p <- ggplot(data = who_sum, aes(x = year, y = N/1e+6, col = sex, group = sex)) +
@@ -919,7 +966,7 @@ p <- ggplot(data = who_sum, aes(x = year, y = N/1e+6, col = sex, group = sex)) +
 p
 ```
 
-<img src="images/cm103-unnamed-chunk-39-1.png" width="100%" />
+<img src="images/cm103-unnamed-chunk-40-1.png" width="100%" />
 
 Looking at selected countries.
 
@@ -937,7 +984,7 @@ p <- p %+%
 p
 ```
 
-<img src="images/cm103-unnamed-chunk-40-1.png" width="100%" />
+<img src="images/cm103-unnamed-chunk-41-1.png" width="100%" />
 
 <br> <a href="#top">▲ top of page</a>
 

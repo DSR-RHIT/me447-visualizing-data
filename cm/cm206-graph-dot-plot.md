@@ -60,11 +60,47 @@ Ensure you have installed the following packages. See [install
 packages](cm902-software-studio.md#install-packages) for instructions if
 needed.
 
-  - tidyverse  
-  - graphclassmate
-  - cdata
-  - selpyr
-  - magick
+  - [**tidyverse**](http://tidyverse.tidyverse.org): The ‘tidyverse’ is
+    a set of packages that work in harmony because they share common
+    data representations and ‘API’ design. This package is designed to
+    make it easy to install and load multiple ‘tidyverse’ packages in a
+    single step. Learn more about the ‘tidyverse’ at
+    <https://tidyverse.org>.
+  - [**graphclassmate**](https://github.com/graphdr/graphclassmate): An
+    R package with companion materials for a course in data
+    visualization. The package provides data sets structured for a
+    variety of graph types plus a ggplot2 theme.  
+  - [**cdata**](https://github.com/WinVector/cdata/): Supplies
+    higher-order fluid data transform operators that include pivot and
+    anti-pivot as special cases. The methodology is describe in ‘Zumel’,
+    2018, “Fluid data reshaping with ‘cdata’”,
+    <http://winvector.github.io/FluidData/FluidDataReshapingWithCdata.html>
+    , <doi:10.5281/zenodo.1173299> . Works on in-memory data or on
+    remote data using ‘rquery’ and the ‘DBI’ database interface.
+  - [**seplyr**](https://github.com/WinVector/seplyr/): The ‘seplyr’
+    (standard evaluation plying) package supplies improved standard
+    evaluation adapter methods for important common ‘dplyr’ data
+    manipulation tasks. In addition the ‘seplyr’ package supplies
+    several new “key operations bound together” methods. These include
+    ‘group\_summarize()’ (which combines grouping, arranging and
+    calculation in an atomic unit), ‘add\_group\_summaries()’ (which
+    joins grouped summaries into a ‘data.frame’ in a well documented
+    manner), ‘add\_group\_indices()’ (which adds per-group identifiers
+    to a ‘data.frame’ without depending on row-order),
+    ‘partition\_mutate\_qt()’ (which optimizes mutate sequences), and
+    ‘if\_else\_device()’ (which simulates per-row if-else blocks in
+    expression sequences).
+  - [**magick**](https://github.com/ropensci/magick#readme): Bindings to
+    ‘ImageMagick’: the most comprehensive open-source image processing
+    library available. Supports many common formats (png, jpeg, tiff,
+    pdf, etc) and manipulations (rotate, scale, crop, trim, flip, blur,
+    etc). All operations are vectorized via the Magick++ STL meaning
+    they operate either on a single frame or a series of frames for
+    working with layers, collages, or animation. In RStudio images are
+    automatically previewed when printed to the console, resulting in an
+    interactive editing environment. The latest version of the package
+    includes a native graphics device for creating in-memory graphics or
+    drawing onto images using pixel coordinates.
 
 Scripts to initialize
 
@@ -187,7 +223,7 @@ ggplot(df, aes(x = income, y = rate, color = race)) +
         facet_wrap(vars(age), as.table = FALSE)
 ```
 
-<img src="images/cm206-unnamed-chunk-8-1.png" width="70%" />
+<img src="images/cm206-unnamed-chunk-9-1.png" width="70%" />
 
 We see right away that the two extreme age groups can be omitted from
 the dataset.
@@ -202,7 +238,7 @@ ggplot(df, aes(x = rate, y = age, color = race)) +
         facet_wrap(vars(region), as.table = FALSE)
 ```
 
-<img src="images/cm206-unnamed-chunk-9-1.png" width="70%" />
+<img src="images/cm206-unnamed-chunk-10-1.png" width="70%" />
 
 I think the age groups would be better along the x-axis. And this time,
 when we use facets, we’ll use two variables, race and region, and
@@ -221,7 +257,7 @@ ggplot(df, aes(x = age, y = rate, color = race)) +
         facet_grid(rows = vars(region), cols = vars(race), as.table = FALSE)
 ```
 
-<img src="images/cm206-unnamed-chunk-10-1.png" width="70%" />
+<img src="images/cm206-unnamed-chunk-11-1.png" width="70%" />
 
   - The mortality rates for Black infants is much higher than the other
     race/ethnic groups
@@ -236,7 +272,7 @@ ggplot(df, aes(x = income, y = rate, color = race)) +
         facet_grid(rows = vars(age), cols = vars(race), as.table = FALSE)
 ```
 
-<img src="images/cm206-unnamed-chunk-11-1.png" width="70%" />
+<img src="images/cm206-unnamed-chunk-12-1.png" width="70%" />
 
 So again, really no income effect, possibly because county median income
 is too coarse a measure. Had we looked at the mother’s family income we
@@ -420,7 +456,7 @@ p <- ggplot(data = df, mapping = aes(x = age, y = rate)) +
 p
 ```
 
-<img src="images/cm206-unnamed-chunk-20-1.png" width="70%" />
+<img src="images/cm206-unnamed-chunk-21-1.png" width="70%" />
 
 I think one row would serve us better
 
@@ -430,7 +466,7 @@ p <- p +
 p
 ```
 
-<img src="images/cm206-unnamed-chunk-21-1.png" width="70%" />
+<img src="images/cm206-unnamed-chunk-22-1.png" width="70%" />
 
 Let’s make the axis labels clear. Including `\n` in the character string
 adds a line space between the label and the graph.
@@ -443,7 +479,7 @@ p <- p +
 p
 ```
 
-<img src="images/cm206-unnamed-chunk-22-1.png" width="70%" />
+<img src="images/cm206-unnamed-chunk-23-1.png" width="70%" />
 
 To address the overprinting in the x-axis, I’m going to edit the levels
 of the age category by changing them to an integer that is the upper
@@ -460,7 +496,7 @@ p <- p %+%
 p
 ```
 
-<img src="images/cm206-unnamed-chunk-23-1.png" width="70%" />
+<img src="images/cm206-unnamed-chunk-24-1.png" width="70%" />
 
 ## design aesthetics
 
@@ -489,7 +525,7 @@ p <- p +
 p
 ```
 
-<img src="images/cm206-unnamed-chunk-24-1.png" width="70%" />
+<img src="images/cm206-unnamed-chunk-25-1.png" width="70%" />
 
 Next I’ll increase the data marker size, use the shape `21` that has
 separate border color and fill color. Then I can add `fill = race` to
@@ -503,7 +539,7 @@ p <- p +
 p
 ```
 
-<img src="images/cm206-unnamed-chunk-25-1.png" width="70%" />
+<img src="images/cm206-unnamed-chunk-26-1.png" width="70%" />
 
 To directly label specific data markers in one panel only, I create a
 new data frame. Then inside `geom_text()` I assign the new data frame

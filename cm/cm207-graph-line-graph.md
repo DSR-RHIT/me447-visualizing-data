@@ -15,8 +15,7 @@ day](#time-series-with-separate-year-month-day)
 [edit the date scale](#edit-the-date-scale)  
 [facet by a date variable](#facet-by-a-date-variable)  
 [line color by group](#line-color-by-group)  
-[panels with free
-y-scales](#panels-with-free-y-scales)  
+[panels with free y-scales](#panels-with-free-y-scales)  
 [exercises](#exercises)  
 [references](#references)
 
@@ -45,12 +44,40 @@ Ensure you have installed the following packages. See [install
 packages](cm902-software-studio.md#install-packages) for instructions if
 needed.
 
-  - tidyverse  
-  - lubridate
-  - HistData  
-  - cdata
-  - nycflights
-  - astsa
+  - [**tidyverse**](http://tidyverse.tidyverse.org): The ‘tidyverse’ is
+    a set of packages that work in harmony because they share common
+    data representations and ‘API’ design. This package is designed to
+    make it easy to install and load multiple ‘tidyverse’ packages in a
+    single step. Learn more about the ‘tidyverse’ at
+    <https://tidyverse.org>.
+  - [**lubridate**](http://lubridate.tidyverse.org): Functions to work
+    with date-times and time-spans: fast and user friendly parsing of
+    date-time data, extraction and updating of components of a date-time
+    (years, months, days, hours, minutes, and seconds), algebraic
+    manipulation on date-time and time-span objects. The ‘lubridate’
+    package has a consistent and memorable syntax that makes working
+    with dates easy and fun. Parts of the ‘CCTZ’ source code, released
+    under the Apache 2.0 License, are included in this package. See
+    <https://github.com/google/cctz> for more details.
+  - [**cdata**](https://github.com/WinVector/cdata/): Supplies
+    higher-order fluid data transform operators that include pivot and
+    anti-pivot as special cases. The methodology is describe in ‘Zumel’,
+    2018, “Fluid data reshaping with ‘cdata’”,
+    <http://winvector.github.io/FluidData/FluidDataReshapingWithCdata.html>
+    , <doi:10.5281/zenodo.1173299> . Works on in-memory data or on
+    remote data using ‘rquery’ and the ‘DBI’ database interface.
+  - [**astsa**](http://www.stat.pitt.edu/stoffer/tsa4/%20https://github.com/nickpoison/astsa):
+    Included are data sets and scripts to accompany Time Series Analysis
+    and Its Applications: With R Examples (4th ed), by R.H. Shumway and
+    D.S. Stoffer. Springer Texts in Statistics, 2017.
+    <DOI:10.1007/978-3-319-52452-8>.
+  - [**HistData**](https://CRAN.R-project.org/package=HistData): The
+    ‘HistData’ package provides a collection of small data sets that
+    are interesting and important in the history of statistics and data
+    visualization. The goal of the package is to make these available,
+    both for instructional use and for historical research. Some of
+    these present interesting challenges for graphics or analysis in R.
+  - **nycflights**
 
 Scripts to initialize
 
@@ -142,15 +169,14 @@ ggplot(df, aes(x = meas_date, y = Ozone)) +
     geom_point() 
 ```
 
-<img src="images/cm207-unnamed-chunk-6-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-7-1.png" width="78.75%" />
 
 <br> <a href="#top">▲ top of page</a>
 
 ## time series with decimal dates
 
 CO<sub>2</sub> levels from the NOAA dataset from 1958 to the latest
-available. Download using `download.file()` works well for text
-files.
+available. Download using `download.file()` works well for text files.
 
 ``` r
 co2_ftp  <- "ftp://aftp.cmdl.noaa.gov/products/trends/co2/co2_mm_mlo.txt"
@@ -164,8 +190,7 @@ if (!file.exists(co2_file) | now() > file.mtime(co2_file) + weeks(4)) {
 
 If you open the text file, you see that dates are recorded as decimal
 dates; missing data are encoded -99.99; -1 indicates no data for \#days.
-Columns names are show
-    too.
+Columns names are show too.
 
     # CO2 expressed as a mole fraction in dry air, micromol/mol, abbreviated as ppm
     #
@@ -231,7 +256,7 @@ ggplot(co2, aes(x = date_meas, y = interpolated)) +
     geom_line()
 ```
 
-<img src="images/cm207-unnamed-chunk-12-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-13-1.png" width="78.75%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -246,7 +271,7 @@ ggplot(co2, aes(x = date_meas, y = interpolated)) +
     scale_x_date(date_breaks = "5 years")
 ```
 
-<img src="images/cm207-unnamed-chunk-13-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-14-1.png" width="78.75%" />
 
 The `date_labels` argument lets us change the format of the date on the
 scale. See available date formats by running `? strptime`.
@@ -257,7 +282,7 @@ ggplot(co2, aes(x = date_meas, y = interpolated)) +
     scale_x_date(date_breaks = "5 years", date_labels = "%Y")
 ```
 
-<img src="images/cm207-unnamed-chunk-14-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-15-1.png" width="78.75%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -273,7 +298,7 @@ ggplot(co2, aes(x = date_meas, y = interpolated)) +
     facet_wrap(vars(month))
 ```
 
-<img src="images/cm207-unnamed-chunk-15-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-16-1.png" width="78.75%" />
 
 Let’s replace the strip label (months 1 through 12) with month
 abbreviations, Jan, Feb, etc.
@@ -323,7 +348,7 @@ ggplot(co2, aes(x = date_meas, y = interpolated)) +
     facet_wrap(vars(month_abbrev))
 ```
 
-<img src="images/cm207-unnamed-chunk-18-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-19-1.png" width="78.75%" />
 
 ## line color by group
 
@@ -334,7 +359,7 @@ ggplot(co2, aes(x = date_meas, y = interpolated, group = month_abbrev, color = m
     guides(color = guide_legend(reverse = FALSE)) 
 ```
 
-<img src="images/cm207-unnamed-chunk-19-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-20-1.png" width="78.75%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -400,7 +425,7 @@ ggplot(data = crimea, mapping = aes(x = Date, y = rate)) +
     scale_x_date(date_breaks = "4 months", date_labels = "%b %Y")
 ```
 
-<img src="images/cm207-unnamed-chunk-22-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-23-1.png" width="78.75%" />
 
 However, if we want to see specific values, we can free the y scales.
 Each panel has its own scale.
@@ -412,7 +437,7 @@ ggplot(data = crimea, mapping = aes(x = Date, y = rate)) +
     scale_x_date(date_breaks = "4 months", date_labels = "%b %Y")
 ```
 
-<img src="images/cm207-unnamed-chunk-23-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-24-1.png" width="78.75%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -445,7 +470,7 @@ Data: `flights` in the nycflights13 package
     #> $ date_2013   <date> 2013-01-01, 2013-01-02, 2013-01-03, 2013-01-04, 2...
     #> $ day_of_week <ord> Tue, Wed, Thu, Fri, Sat, Sun, Mon, Tue, Wed, Thu, ...
 
-<img src="images/cm207-unnamed-chunk-26-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-27-1.png" width="78.75%" />
 
 **2. jj earnings**
 
@@ -470,7 +495,7 @@ Data: `jj` in the astsa package
     #> $ qtr_date <date> 1960-01-01, 1960-04-01, 1960-07-01, 1960-10-01, 1961...
     #> $ qtr_earn <dbl> 0.71, 0.63, 0.85, 0.44, 0.61, 0.69, 0.92, 0.55, 0.72,...
 
-<img src="images/cm207-unnamed-chunk-28-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-29-1.png" width="78.75%" />
 
 **3. blood tests**
 
@@ -497,7 +522,7 @@ Data: `blood` in the astsa package
     #> $ test_result <dbl> 2.332, 1.887, 2.079, 1.820, 1.820, 1.529, 1.644, 1...
     #> $ observation <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,...
 
-<img src="images/cm207-unnamed-chunk-30-1.png" width="78.75%" />
+<img src="images/cm207-unnamed-chunk-31-1.png" width="78.75%" />
 
 ## references
 

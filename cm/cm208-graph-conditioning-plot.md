@@ -49,7 +49,12 @@ Ensure you have installed the following packages. See [install
 packages](cm902-software-studio.md#install-packages) for instructions if
 needed.
 
-  - tidyverse
+  - [**tidyverse**](http://tidyverse.tidyverse.org): The ‘tidyverse’ is
+    a set of packages that work in harmony because they share common
+    data representations and ‘API’ design. This package is designed to
+    make it easy to install and load multiple ‘tidyverse’ packages in a
+    single step. Learn more about the ‘tidyverse’ at
+    <https://tidyverse.org>.
 
 Scripts to initialize
 
@@ -94,7 +99,7 @@ glimpse(soil)
 coplot(resistivity ~ northing | easting, data = soil)
 ```
 
-<img src="images/cm208-unnamed-chunk-5-1.png" width="70%" />
+<img src="images/cm208-unnamed-chunk-7-1.png" width="70%" />
 
 With 4 variables
 
@@ -119,7 +124,7 @@ coplot(Ozone ~ Solar.R | Temp * Wind, data = airquality,
 )
 ```
 
-<img src="images/cm208-unnamed-chunk-7-1.png" width="70%" />
+<img src="images/cm208-unnamed-chunk-9-1.png" width="70%" />
 
     #> 
     #>  Missing rows: 5, 6, 10, 11, 25, 26, 27, 32, 33, 34, 35, 36, 37, 39, 42, 43, 45, 46, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 65, 72, 75, 83, 84, 96, 97, 98, 102, 103, 107, 115, 119, 150

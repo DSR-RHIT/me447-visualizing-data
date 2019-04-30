@@ -79,8 +79,16 @@ Packages: Ensure you have installed the following packages. See [install
 packages](cm902-software-studio.md#install-packages) for instructions if
 needed.
 
-  - tidyverse  
-  - graphclassmate
+  - [**tidyverse**](http://tidyverse.tidyverse.org): The ‘tidyverse’ is
+    a set of packages that work in harmony because they share common
+    data representations and ‘API’ design. This package is designed to
+    make it easy to install and load multiple ‘tidyverse’ packages in a
+    single step. Learn more about the ‘tidyverse’ at
+    <https://tidyverse.org>.
+  - [**graphclassmate**](https://github.com/graphdr/graphclassmate): An
+    R package with companion materials for a course in data
+    visualization. The package provides data sets structured for a
+    variety of graph types plus a ggplot2 theme.
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -375,8 +383,7 @@ unique(outlier_only$outlier)
 
 Next, graph the original box plot with outliers omitted by
 `outlier.shape = NA`. I’ve also added a alpha and width argument to the
-box and increased the legend symbols
-slightly.
+box and increased the legend symbols slightly.
 
 ``` r
 p <- ggplot(nontrad, aes(y = enrolled, x = sex_path, color = path, fill = path)) +
@@ -492,6 +499,13 @@ data visualization.* R package version 0.1.0.9000
 
 Robbins N (2013) *Creating More Effective Graphs.* Chart House, Wayne,
 NJ
+
+</div>
+
+<div id="ref-Wickham+Grolemund:2017">
+
+Wickham H and Grolemund G (2017) *R for Data Science.* O’Reilly Media,
+Inc., Sebastopol, CA <https://r4ds.had.co.nz/>
 
 </div>
 

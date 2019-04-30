@@ -22,16 +22,27 @@ licensed under
 
 ## prerequisites
 
-  - Start every work session by launching `portfolio.Rproj`  
-  - Your [project directory
-    structure](cm501-proj-m-manage-files.md#plan-the-directory-structure)
+Project setup
+
+  - Start every work session by launching the RStudio Project file for
+    the course, e.g., `portfolio.Rproj`  
+  - Ensure your [project directory
+    structure](cm501-proj-m-manage-files.md#planning-the-directory-structure)
     satisfies the course requirements
 
-The following packages are used in this workshop. If any are not yet
-installed on your machine, please install them.
+Ensure you have installed the following packages. See [install
+packages](cm902-software-studio.md#install-packages) for instructions if
+needed.
 
-  - tidyverse  
-  - nycflights13
+  - [**tidyverse**](http://tidyverse.tidyverse.org): The ‘tidyverse’ is
+    a set of packages that work in harmony because they share common
+    data representations and ‘API’ design. This package is designed to
+    make it easy to install and load multiple ‘tidyverse’ packages in a
+    single step. Learn more about the ‘tidyverse’ at
+    <https://tidyverse.org>.
+  - [**nycflights13**](http://github.com/hadley/nycflights13): Airline
+    on-time data for all flights departing NYC in 2013. Also includes
+    useful ‘metadata’ on airlines, airports, weather, and planes.
 
 <br> <a href="#top">▲ top of page</a>
 

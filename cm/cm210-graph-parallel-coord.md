@@ -55,11 +55,34 @@ Ensure you have installed the following packages. See [install
 packages](cm902-software-studio.md#install-packages) for instructions if
 needed.
 
-  - tidyverse  
-  - graphclassmate
-  - GGally
-  - gclus
-  - scagnositcs
+  - [**tidyverse**](http://tidyverse.tidyverse.org): The ‘tidyverse’ is
+    a set of packages that work in harmony because they share common
+    data representations and ‘API’ design. This package is designed to
+    make it easy to install and load multiple ‘tidyverse’ packages in a
+    single step. Learn more about the ‘tidyverse’ at
+    <https://tidyverse.org>.
+  - [**graphclassmate**](https://github.com/graphdr/graphclassmate): An
+    R package with companion materials for a course in data
+    visualization. The package provides data sets structured for a
+    variety of graph types plus a ggplot2 theme.  
+  - [**GGally**](https://ggobi.github.io/ggally): The R package
+    ‘ggplot2’ is a plotting system based on the grammar of graphics.
+    ‘GGally’ extends ‘ggplot2’ by adding several functions to reduce the
+    complexity of combining geometric objects with transformed data.
+    Some of these functions include a pairwise plot matrix, a two group
+    pairwise plot matrix, a parallel coordinates plot, a survival plot,
+    and several functions to plot networks.
+  - [**scagnostics**](http://www.rforge.net/scagnostics/): Calculates
+    graph theoretic scagnostics. Scagnostics describe various measures
+    of interest for pairs of variables, based on their appearance on a
+    scatterplot. They are useful tool for discovering interesting or
+    unusual scatterplots from a scatterplot matrix, without having to
+    look at every individual plot.
+  - [**gclus**](https://CRAN.R-project.org/package=gclus): Orders panels
+    in scatterplot matrices and parallel coordinate displays by some
+    merit index. Package contains various indices of merit, ordering
+    functions, and enhanced versions of pairs and parcoord which color
+    panels according to their merit level.
 
 Scripts to initialize
 
@@ -115,7 +138,7 @@ The basic parallel coordinate plot usibg `GGally::ggparcoord()`
 ggparcoord(bank, columns = 2:7)
 ```
 
-<img src="images/cm210-unnamed-chunk-5-1.png" width="90%" />
+<img src="images/cm210-unnamed-chunk-6-1.png" width="90%" />
 
 ``` r
 my_color <- c(rcb("dark_BG"),  rcb("dark_Br"))
@@ -168,7 +191,7 @@ ggparcoord(data = bank, columns = 2:7, groupColumn  = "Status",
   labs(x = "", y = "")
 ```
 
-<img src="images/cm210-unnamed-chunk-9-1.png" width="90%" />
+<img src="images/cm210-unnamed-chunk-10-1.png" width="90%" />
 
 The order of the quantitative variables along the x-axis is important
 for us to discern any stories. The scagnostic package has the following
@@ -197,7 +220,7 @@ ggplot(bank2, aes(value, color = Status)) +
   facet_wrap(vars(type), scales = "free_x", as.table = FALSE)
 ```
 
-<img src="images/cm210-unnamed-chunk-10-1.png" width="70%" />
+<img src="images/cm210-unnamed-chunk-11-1.png" width="70%" />
 
 ``` r
 

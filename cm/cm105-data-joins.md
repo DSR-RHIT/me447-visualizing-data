@@ -50,11 +50,27 @@ Project setup
 
 Ensure you have installed the following packages. See [install
 packages](cm902-software-studio.md#install-packages) for instructions if
-needed.
+needed. For midfielddata, see the instructions below.
 
-  - tidyverse  
-  - wrapr  
-  - midfielddata (instructions below)
+  - [**tidyverse**](http://tidyverse.tidyverse.org): The ‘tidyverse’ is
+    a set of packages that work in harmony because they share common
+    data representations and ‘API’ design. This package is designed to
+    make it easy to install and load multiple ‘tidyverse’ packages in a
+    single step. Learn more about the ‘tidyverse’ at
+    <https://tidyverse.org>.
+  - [**wrapr**](https://github.com/WinVector/wrapr): Tools for writing
+    and debugging R code. Provides: ‘let()’ (converts non-standard
+    evaluation interfaces to parametric standard evaluation interfaces,
+    inspired by ‘gtools:strmacro()’ and ‘base::bquote()’), ‘%.\>%’
+    dot-pipe (an ‘S3’ configurable pipe),
+    ‘build\_frame()’/‘draw\_frame()’ (‘data.frame’ example tools),
+    ‘qc()’ (quoting concatenate), ‘:=’ (named map builder), and more.
+  - [**midfielddata**](https://github.com/MIDFIELDR/midfielddata): A
+    stratified sample of the MIDFIELD database of student records
+    (registrar’s data) for 98,000 undergraduates at participating US
+    institutions from 1987 to 2016. The data sample includes entering
+    demographics, individual course and term data, and graduation status
+    and degrees earned.
 
 Install midfielddata as follows,
 
@@ -440,7 +456,7 @@ ggplot(data = grad1, mapping = aes(x = n, y = race_sex)) +
     facet_grid(rows = vars(inst), cols = vars(major), as.table = FALSE)
 ```
 
-<img src="images/cm105-unnamed-chunk-20-1.png" width="70%" />
+<img src="images/cm105-unnamed-chunk-21-1.png" width="70%" />
 
 Not all populations are present at all institutions, so I’ll do a
 recount, this time omitting institution. By eliminating this category, I
@@ -465,7 +481,7 @@ ggplot(data = grad2, mapping = aes(x = n, y = race)) +
     facet_grid(rows = vars(sex), cols = vars(major), as.table = FALSE)
 ```
 
-<img src="images/cm105-unnamed-chunk-21-1.png" width="70%" />
+<img src="images/cm105-unnamed-chunk-22-1.png" width="70%" />
 
 Add a log scale to help compare small numbers and edit the theme.
 
@@ -478,7 +494,7 @@ ggplot(data = grad2, mapping = aes(x = n, y = race)) +
     theme_graphclass() 
 ```
 
-<img src="images/cm105-unnamed-chunk-22-1.png" width="70%" />
+<img src="images/cm105-unnamed-chunk-23-1.png" width="70%" />
 
 ## exercises
 
@@ -501,7 +517,7 @@ group?”
 
 Answer:
 
-<img src="images/cm105-unnamed-chunk-24-1.png" width="70%" />
+<img src="images/cm105-unnamed-chunk-25-1.png" width="70%" />
 
 ## references
 

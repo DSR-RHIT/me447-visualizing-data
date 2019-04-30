@@ -57,9 +57,19 @@ Packages: Ensure you have installed the following packages. See [install
 packages](cm902-software-studio.md#install-packages) for instructions if
 needed.
 
-  - tidyverse  
-  - graphclassmate  
-  - GDAdata
+  - [**tidyverse**](http://tidyverse.tidyverse.org): The ‘tidyverse’ is
+    a set of packages that work in harmony because they share common
+    data representations and ‘API’ design. This package is designed to
+    make it easy to install and load multiple ‘tidyverse’ packages in a
+    single step. Learn more about the ‘tidyverse’ at
+    <https://tidyverse.org>.
+  - [**graphclassmate**](https://github.com/graphdr/graphclassmate): An
+    R package with companion materials for a course in data
+    visualization. The package provides data sets structured for a
+    variety of graph types plus a ggplot2 theme.  
+  - [**GDAdata**](https://CRAN.R-project.org/package=GDAdata): Datasets
+    used in the book ‘Graphical Data Analysis with R’ (Antony Unwin, CRC
+    Press 2015).
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -379,8 +389,7 @@ p
 We can assign a separate fill color to a data marker by using `shape
 = 21`, adding `fill = sex` to the `aes()` function, then using
 `scale_fill_manual()` to assign the fill color. To do this, we redraw
-the figure instead of adding a
-layer,
+the figure instead of adding a layer,
 
 ``` r
 p <- ggplot(speed_ski, aes(x = speed, y = event, color = sex, fill = sex)) +
@@ -394,8 +403,7 @@ p
 <img src="images/cm202-speedski-design-06-1.png" width="90%" />
 
 We can edit the data markers further by adding a `size` and `alpha`
-argument to
-`geom_jitter()`.
+argument to `geom_jitter()`.
 
 ``` r
 p <- ggplot(speed_ski, aes(x = speed, y = event, color = sex, fill = sex)) +
@@ -513,6 +521,13 @@ NJ
 Unwin A (2015) *GDAdata: Datasets for the book Graphical Data Analysis
 with R.* R package version 0.93
 <https://CRAN.R-project.org/package=GDAdata>
+
+</div>
+
+<div id="ref-Wickham+Grolemund:2017">
+
+Wickham H and Grolemund G (2017) *R for Data Science.* O’Reilly Media,
+Inc., Sebastopol, CA <https://r4ds.had.co.nz/>
 
 </div>
 
