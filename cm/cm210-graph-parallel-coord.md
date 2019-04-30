@@ -201,7 +201,7 @@ ggplot(bank2, aes(value, color = Status)) +
 
 ``` r
 
-library(scagnostics)
+library("scagnostics")
 scag <- scagnostics(bank)
 
 str(scag)

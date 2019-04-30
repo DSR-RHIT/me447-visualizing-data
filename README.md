@@ -23,8 +23,6 @@ Frequent links
   - [Index](#index)  
   - [Help](cm/cm003-getting-help.md)
 
-s
-
 ## calendar
 
 ![](resources/icon-document.png) paper reprint, with permission  
@@ -220,7 +218,8 @@ Data carpentry
   - [MIDFIELD data](cm/cm105-data-joins.md#midfield-data)  
   - [MIDFIELD joins](cm/cm105-data-joins.md#joins)  
   - [MIDFIELD carpentry](cm/cm105-data-joins.md#carpentry)  
-  - [MIDFIELD design](cm/cm105-data-joins.md#design)
+  - [MIDFIELD design](cm/cm105-data-joins.md#design)  
+  - [Swiss bank data](cm/cm209-graph-scatterplot-matrix.md#data)
 
 Data exercises
 
@@ -259,12 +258,16 @@ Graph tutorials
   - [Scatterplot](cm/cm205-graph-scatterplot.md#scatterplot)
   - [Dot plot](cm/cm206-graph-dot-plot.md#dot-plot)  
   - [Line graph](cm/cm207-graph-line-graph.md#line-graph)  
-  - [Conditioning
-    plot](cm/cm208-graph-conditioning-plot.md#conditioning-plot)  
   - [Scatterplot
-    matrix](cm/cm209-graph-scatterplot-matrix.md#scatterplot-matrix)  
+    matrix](cm/cm209-graph-scatterplot-matrix.md#scatterplot-matrix),
+    [ggscatmat()](cm/cm209-graph-scatterplot-matrix.md#ggscatmat),
+    [ggpairs()](cm/cm209-graph-scatterplot-matrix.md#ggpairs), and
+    [non-ggplot
+    packages](cm/cm209-graph-scatterplot-matrix.md#non-ggplot-packages)  
   - [Parallel
-    coordinate](cm/cm210-graph-parallel-coord.md#parallel-coordinate)
+    coordinate](cm/cm210-graph-parallel-coord.md#parallel-coordinate)  
+  - [Conditioning
+    plot](cm/cm208-graph-conditioning-plot.md#conditioning-plot)
 
 Graph exercises
 
@@ -275,12 +278,12 @@ Graph exercises
   - [Scatterplot exercises](cm/cm205-graph-scatterplot.md#exercises)
   - [Dot plot exercises](cm/cm206-graph-dot-plot.md#exercises)  
   - [Line graph exercises](cm/cm207-graph-line-graph.md#exercises)  
-  - [Conditioning plot
-    exercises](cm/cm208-graph-conditioning-plot.md#exercises)  
   - [Scatterplot matrix
     exercises](cm/cm209-graph-scatterplot-matrix.md#exercises)  
   - [Parallel coordinate
-    exercises](cm/cm210-graph-parallel-coord.md#exercises)
+    exercises](cm/cm210-graph-parallel-coord.md#exercises)  
+  - [Conditioning plot
+    exercises](cm/cm208-graph-conditioning-plot.md#exercises)
 
 Graph elements
 

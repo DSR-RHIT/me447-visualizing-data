@@ -23,8 +23,10 @@ find at least one tutorial in which a function or data set is used.
 | :---------------- | :------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------- | :--------- | :-------- | :--------------------------------------------------------------------------- |
 | airquality        | datasets                                                             | [line graph](cm207-graph-line-graph.md), [strip plot](cm202-graph-strip-plot.md)                                                   | data.frame | 153x6     | New York Air Quality Measurements                                            |
 | Alligator         | [vcdExtra](https://CRAN.R-project.org/package=vcdExtra/vcdExtra.pdf) | [multiway](cm204-graph-multiway.md)                                                                                                | data.frame | 80x5      | Alligator Food Choice                                                        |
+| bank              | [gclus](https://CRAN.R-project.org/package=gclus/gclus.pdf)          | [parallel coordinate](cm210-graph-parallel-coordinate.md), [scatterplot matrix](cm209-graph-scatterplot-matrix.md)                 | data.frame | 200x7     | Swiss bank notes data                                                        |
 | biopics           | [fivethirtyeight](https://tinyurl.com/yywwdvnd)                      | [misc data carpentry](cm111-data-misc-carpentry.md)                                                                                | data.frame | 761x14    | ‘Straight Outta Compton’ Is The Rare Biopic Not About White Dudes            |
 | blood             | [astsa](https://github.com/nickpoison/astsa)                         | [line graph](cm207-graph-line-graph.md)                                                                                            | ts         | 91x3      | Daily Blood Work                                                             |
+| case1202          | Sleuth2                                                              | [scatterplot matrix](cm209-graph-scatterplot-matrix.md)                                                                            | data.frame | 93x7      | Sex discrimination in Employment                                             |
 | county\_income    | [graphclassmate](https://github.com/graphdr/graphclassmate)          | [dot plot](cm206-graph-dot-plot.md)                                                                                                | data.frame | 3220x4    | Median income by US county in 2016                                           |
 | CPI               |                                                                      | [correcting graphical lies](cm405-rhetoric-correcting-graphical-lies.md)                                                           |            |           |                                                                              |
 | diamonds          | [ggplot2](https://github.com/tidyverse/ggplot2)                      | [boxplot](cm203-graph-boxplot.md)                                                                                                  | data.frame | 53940x10  | Prices of 50,000 round cut diamonds                                          |
@@ -101,9 +103,13 @@ find at least one tutorial in which a function or data set is used.
 | geom\_smooth()         | ggplot2        | [graph basics](cm201-graph-basics.md)                                                                                                                                                                                                              |
 | geom\_text()           | ggplot2        | [dot plot](cm206-graph-dot-plot.md)                                                                                                                                                                                                                |
 | geom\_vline()          | ggplot2        | [correcting graphical lies](cm405-rhetoric-correcting-graphical-lies.md)                                                                                                                                                                           |
+| ggpairs()              | GGally         | [scatterplot matrix](cm209-graph-scatterplot-matrix.md)                                                                                                                                                                                            |
+| ggparcoord()           | GGally         | [parallel coordinate](cm210-graph-parallel-coordinate.md)                                                                                                                                                                                          |
 | ggplot()               | ggplot2        | [graph basics](cm201-graph-basics.md)                                                                                                                                                                                                              |
 | ggsave()               | ggplot2        | [graph basics](cm201-graph-basics.md)                                                                                                                                                                                                              |
+| ggscatmat()            | GGally         | [scatterplot matrix](cm209-graph-scatterplot-matrix.md)                                                                                                                                                                                            |
 | glimpse()              | tibble         | [graph basics](cm201-graph-basics.md)                                                                                                                                                                                                              |
+| gpairs()               | gpairs         | [scatterplot matrix](cm209-graph-scatterplot-matrix.md)                                                                                                                                                                                            |
 | group\_summarize()     | seplyr         | [correcting graphical lies](cm405-rhetoric-correcting-graphical-lies.md), [dot plot](cm206-graph-dot-plot.md), [working with factors](cm107-data-working-with-factors.md)                                                                          |
 | guide\_legend()        | ggplot2        | [boxplot](cm203-graph-boxplot.md), [line graph](cm207-graph-line-graph.md)                                                                                                                                                                         |
 | guides()               | ggplot2        | [boxplot](cm203-graph-boxplot.md), [line graph](cm207-graph-line-graph.md)                                                                                                                                                                         |
@@ -127,6 +133,7 @@ find at least one tutorial in which a function or data set is used.
 | IQR()                  | stats          | [boxplot](cm203-graph-boxplot.md)                                                                                                                                                                                                                  |
 | labs()                 | ggplot2        | [graph basics](cm201-graph-basics.md)                                                                                                                                                                                                              |
 | left\_join()           | dplyr          | [carpentry with joins](cm105-data-joins.md), [correcting graphical lies](cm405-rhetoric-correcting-graphical-lies.md), [dot plot](cm206-graph-dot-plot.md)                                                                                         |
+| legend()               | base           | [scatterplot matrix](cm209-graph-scatterplot-matrix.md)                                                                                                                                                                                            |
 | levels()               | base           | [introducing factors](cm106-data-nature-of-factors.md)                                                                                                                                                                                             |
 | ls()                   | base           | [interacting with R](cm101b-interacting-with-R.md)                                                                                                                                                                                                 |
 | ls.str()               | base           | [interacting with R](cm101b-interacting-with-R.md)                                                                                                                                                                                                 |
@@ -138,6 +145,8 @@ find at least one tutorial in which a function or data set is used.
 | names()                | base           | [line graph](cm207-graph-line-graph.md)                                                                                                                                                                                                            |
 | nlevels()              | base           | [introducing factors](cm106-data-nature-of-factors.md)                                                                                                                                                                                             |
 | now()                  | lubridate      | [line graph](cm207-graph-line-graph.md)                                                                                                                                                                                                            |
+| pairs()                | base           | [scatterplot matrix](cm209-graph-scatterplot-matrix.md)                                                                                                                                                                                            |
+| par()                  | base           | [scatterplot matrix](cm209-graph-scatterplot-matrix.md)                                                                                                                                                                                            |
 | pivot\_to\_rowrecs()   | cdata          | [dot plot](cm206-graph-dot-plot.md), [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                     |
 | qchar\_frame()         | wrapr          | [misc data carpentry](cm111-data-misc-carpentry.md)                                                                                                                                                                                                |
 | quantile()             | base           | [misc data carpentry](cm111-data-misc-carpentry.md)                                                                                                                                                                                                |
@@ -156,12 +165,14 @@ find at least one tutorial in which a function or data set is used.
 | sample\_n()            | dplyr          | [carpentry with joins](cm105-data-joins.md)                                                                                                                                                                                                        |
 | sapply()               | base           | [scatterplot](cm205-graph-scatterplot.md), [working with factors](cm107-data-working-with-factors.md)                                                                                                                                              |
 | saveRDS()              | base           | [strip plot](cm202-graph-strip-plot.md)                                                                                                                                                                                                            |
+| scagnostics()          | scagnostics    | [parallel coordinate](cm210-graph-parallel-coordinate.md)                                                                                                                                                                                          |
 | scale\_color\_manual() | ggplot2        | [strip plot](cm202-graph-strip-plot.md)                                                                                                                                                                                                            |
 | scale\_fill\_manual    | ggplot2        | [strip plot](cm202-graph-strip-plot.md)                                                                                                                                                                                                            |
 | scale\_fill\_manual()  | ggplot2        | [dot plot](cm206-graph-dot-plot.md)                                                                                                                                                                                                                |
 | scale\_x\_continuous() | ggplot2        | [multiway](cm204-graph-multiway.md)                                                                                                                                                                                                                |
 | scale\_x\_date()       | ggplot2        | [line graph](cm207-graph-line-graph.md)                                                                                                                                                                                                            |
 | scale\_x\_log10()      | ggplot2        | [graph basics](cm201-graph-basics.md)                                                                                                                                                                                                              |
+| scatterplotMatrix()    | car            | [scatterplot matrix](cm209-graph-scatterplot-matrix.md)                                                                                                                                                                                            |
 | select()               | dplyr          | [data studio](cm102-data-studio.md)                                                                                                                                                                                                                |
 | select(matches())      | dplyr          | [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                                                          |
 | select\_if()           | dplyr          | [scatterplot](cm205-graph-scatterplot.md)                                                                                                                                                                                                          |
@@ -185,7 +196,6 @@ find at least one tutorial in which a function or data set is used.
 | unpivot\_to\_blocks()  | cdata          | [line graph](cm207-graph-line-graph.md), [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                 |
 | update.packages()      | base           | [updating the R habitat](cm904-software-R-update.md)                                                                                                                                                                                               |
 | update\_packages()     | devtools       | [updating the R habitat](cm904-software-R-update.md)                                                                                                                                                                                               |
-| updateR()              | installr       | [updating the R habitat](cm904-software-R-update.md)                                                                                                                                                                                               |
 | weeks()                | lubridate      | [line graph](cm207-graph-line-graph.md)                                                                                                                                                                                                            |
 | year()                 | lubridate      | [correcting graphical lies](cm405-rhetoric-correcting-graphical-lies.md), [time series data](cm110-data-time-series.md)                                                                                                                            |
 | ymd()                  | lubridate      | [correcting graphical lies](cm405-rhetoric-correcting-graphical-lies.md), [time and dates](cm109-data-time-dates.md)                                                                                                                               |
@@ -207,11 +217,14 @@ find at least one tutorial in which a function or data set is used.
 | base           | file.exists()          | [line graph](cm207-graph-line-graph.md)                                                                                                                                                                                                            |
 | base           | file.mtime()           | [line graph](cm207-graph-line-graph.md)                                                                                                                                                                                                            |
 | base           | install.packages()     | [software studio](cm903-software-R-basics.md), [updating the R habitat](cm904-software-R-update.md)                                                                                                                                                |
+| base           | legend()               | [scatterplot matrix](cm209-graph-scatterplot-matrix.md)                                                                                                                                                                                            |
 | base           | levels()               | [introducing factors](cm106-data-nature-of-factors.md)                                                                                                                                                                                             |
 | base           | ls()                   | [interacting with R](cm101b-interacting-with-R.md)                                                                                                                                                                                                 |
 | base           | ls.str()               | [interacting with R](cm101b-interacting-with-R.md)                                                                                                                                                                                                 |
 | base           | names()                | [line graph](cm207-graph-line-graph.md)                                                                                                                                                                                                            |
 | base           | nlevels()              | [introducing factors](cm106-data-nature-of-factors.md)                                                                                                                                                                                             |
+| base           | pairs()                | [scatterplot matrix](cm209-graph-scatterplot-matrix.md)                                                                                                                                                                                            |
+| base           | par()                  | [scatterplot matrix](cm209-graph-scatterplot-matrix.md)                                                                                                                                                                                            |
 | base           | quantile()             | [misc data carpentry](cm111-data-misc-carpentry.md)                                                                                                                                                                                                |
 | base           | readRDS()              | [strip plot](cm202-graph-strip-plot.md)                                                                                                                                                                                                            |
 | base           | row.names()            | [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                                                          |
@@ -224,6 +237,7 @@ find at least one tutorial in which a function or data set is used.
 | base           | unclass()              | [introducing factors](cm106-data-nature-of-factors.md)                                                                                                                                                                                             |
 | base           | unloadNamespace()      | [misc data carpentry](cm111-data-misc-carpentry.md)                                                                                                                                                                                                |
 | base           | update.packages()      | [updating the R habitat](cm904-software-R-update.md)                                                                                                                                                                                               |
+| car            | scatterplotMatrix()    | [scatterplot matrix](cm209-graph-scatterplot-matrix.md)                                                                                                                                                                                            |
 | cdata          | blocks\_to\_rowrecs()  | [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                                                          |
 | cdata          | pivot\_to\_rowrecs()   | [dot plot](cm206-graph-dot-plot.md), [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                     |
 | cdata          | rowrecs\_to\_blocks()  | [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                                                          |
@@ -250,6 +264,9 @@ find at least one tutorial in which a function or data set is used.
 | forcats        | fct\_recode()          | [working with factors](cm107-data-working-with-factors.md)                                                                                                                                                                                         |
 | forcats        | fct\_reorder()         | [carpentry with joins](cm105-data-joins.md), [dot plot](cm206-graph-dot-plot.md), [working with factors](cm107-data-working-with-factors.md)                                                                                                       |
 | forcats        | fct\_rev()             | [working with factors](cm107-data-working-with-factors.md)                                                                                                                                                                                         |
+| GGally         | ggpairs()              | [scatterplot matrix](cm209-graph-scatterplot-matrix.md)                                                                                                                                                                                            |
+| GGally         | ggparcoord()           | [parallel coordinate](cm210-graph-parallel-coordinate.md)                                                                                                                                                                                          |
+| GGally         | ggscatmat()            | [scatterplot matrix](cm209-graph-scatterplot-matrix.md)                                                                                                                                                                                            |
 | ggplot2        | aes()                  | [graph basics](cm201-graph-basics.md)                                                                                                                                                                                                              |
 | ggplot2        | coord\_flip()          | [boxplot](cm203-graph-boxplot.md)                                                                                                                                                                                                                  |
 | ggplot2        | facet\_grid()          | [carpentry with joins](cm105-data-joins.md), [dot plot](cm206-graph-dot-plot.md)                                                                                                                                                                   |
@@ -274,9 +291,9 @@ find at least one tutorial in which a function or data set is used.
 | ggplot2        | scale\_x\_date()       | [line graph](cm207-graph-line-graph.md)                                                                                                                                                                                                            |
 | ggplot2        | scale\_x\_log10()      | [graph basics](cm201-graph-basics.md)                                                                                                                                                                                                              |
 | ggplot2        | theme()                | [dot plot](cm206-graph-dot-plot.md), [strip plot](cm202-graph-strip-plot.md)                                                                                                                                                                       |
+| gpairs         | gpairs()               | [scatterplot matrix](cm209-graph-scatterplot-matrix.md)                                                                                                                                                                                            |
 | graphclassmate | rcb()                  | [multiway](cm204-graph-multiway.md)                                                                                                                                                                                                                |
 | graphclassmate | theme\_graphclass()    | [graph basics](cm201-graph-basics.md)                                                                                                                                                                                                              |
-| installr       | updateR()              | [updating the R habitat](cm904-software-R-update.md)                                                                                                                                                                                               |
 | lubridate      | as\_date()             | [line graph](cm207-graph-line-graph.md), [time and dates](cm109-data-time-dates.md), [time series data](cm110-data-time-series.md)                                                                                                                 |
 | lubridate      | date()                 | [working with factors](cm107-data-working-with-factors.md)                                                                                                                                                                                         |
 | lubridate      | date\_decimal()        | [line graph](cm207-graph-line-graph.md), [time and dates](cm109-data-time-dates.md)                                                                                                                                                                |
@@ -309,6 +326,7 @@ find at least one tutorial in which a function or data set is used.
 | readxl         | read\_excel()          | [data basics](cm101-data-basics.md)                                                                                                                                                                                                                |
 | rio            | export()               | [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                                                          |
 | rio            | import()               | [reshaping data](cm103-data-reshaping.md)                                                                                                                                                                                                          |
+| scagnostics    | scagnostics()          | [parallel coordinate](cm210-graph-parallel-coordinate.md)                                                                                                                                                                                          |
 | seplyr         | group\_summarize()     | [correcting graphical lies](cm405-rhetoric-correcting-graphical-lies.md), [dot plot](cm206-graph-dot-plot.md), [working with factors](cm107-data-working-with-factors.md)                                                                          |
 | stats          | complete.cases()       | [dot plot](cm206-graph-dot-plot.md), [scatterplot](cm205-graph-scatterplot.md)                                                                                                                                                                     |
 | stats          | IQR()                  | [boxplot](cm203-graph-boxplot.md)                                                                                                                                                                                                                  |
@@ -354,6 +372,20 @@ Chan C-h and Leeper TJ (2018) *Rio: A swiss-army knife for data i/o.*
 
 </div>
 
+<div id="ref-R-gpairs">
+
+Emerson JW and Green WA (2014) *Gpairs: The generalized pairs plot.*
+<https://CRAN.R-project.org/package=gpairs>
+
+</div>
+
+<div id="ref-R-car">
+
+Fox J, Weisberg S and Price B (2018) *Car: Companion to applied
+regression.* <https://CRAN.R-project.org/package=car>
+
+</div>
+
 <div id="ref-R-vcdExtra">
 
 Friendly M (2017) *VcdExtra: ’Vcd’ extensions and additions.*
@@ -368,14 +400,6 @@ and data visualization.* <https://CRAN.R-project.org/package=HistData>
 
 </div>
 
-<div id="ref-R-installr">
-
-Galili T (2018) *Installr: Using r to install stuff (such as: R,
-’rtools’, rstudio, ’git’, and more\!).*
-<https://CRAN.R-project.org/package=installr>
-
-</div>
-
 <div id="ref-R-socviz">
 
 Healy K (2019) *Socviz: Utility functions and data sets for data
@@ -387,6 +411,13 @@ visualization.* <https://github.com/kjhealy/socviz>
 
 Henry L and Wickham H (2018) *Tidyselect: Select from a set of strings.*
 <https://CRAN.R-project.org/package=tidyselect>
+
+</div>
+
+<div id="ref-R-gclus">
+
+Hurley C (2019) *Gclus: Clustering graphics.*
+<https://CRAN.R-project.org/package=gclus>
 
 </div>
 
@@ -448,10 +479,26 @@ Ooms J (2018) *Magick: Advanced graphics and image-processing in r.*
 
 </div>
 
+<div id="ref-R-Sleuth2">
+
+Ramsey FL, Schafer DW, Sifneos J and Turlach BA (2019) *Sleuth2: Data
+sets from ramsey and schafer’s "statistical sleuth (2nd ed)".*
+<https://CRAN.R-project.org/package=Sleuth2>
+
+</div>
+
 <div id="ref-R-tsbox">
 
 Sax C (2019) *Tsbox: Class-agnostic time series.*
 <https://CRAN.R-project.org/package=tsbox>
+
+</div>
+
+<div id="ref-R-GGally">
+
+Schloerke B, Crowley J, Cook D, Briatte F, Marbach M, Thoen E, Elberg A
+and Larmarange J (2018) *GGally: Extension to ’ggplot2’.*
+<https://CRAN.R-project.org/package=GGally>
 
 </div>
 
@@ -549,6 +596,14 @@ data.* <https://CRAN.R-project.org/package=readr>
 
 </div>
 
+<div id="ref-R-scagnostics">
+
+Wilkinson L and Anand A (2018) *Scagnostics: Compute scagnostics -
+scatterplot diagnostics.*
+<https://CRAN.R-project.org/package=scagnostics>
+
+</div>
+
 <div id="ref-R-VGAMdata">
 
 Yee T (2017) *VGAMdata: Data supporting the ’vgam’ package.*
@@ -561,27 +616,30 @@ Yee T (2017) *VGAMdata: Data supporting the ’vgam’ package.*
 -----
 
 Citations for references listed above: Bryan ([2017](#ref-R-gapminder)),
-Chan and Leeper ([2018](#ref-R-rio)), Friendly
-([2018](#ref-R-HistData)), Friendly ([2017](#ref-R-vcdExtra)), Galili
-([2018](#ref-R-installr)), Healy ([2019](#ref-R-socviz)), Henry and
-Wickham ([2018](#ref-R-tidyselect)), Layton
+Chan and Leeper ([2018](#ref-R-rio)), Fox and others
+([2018](#ref-R-car)), Friendly ([2018](#ref-R-HistData)), Friendly
+([2017](#ref-R-vcdExtra)), Healy ([2019](#ref-R-socviz)), Henry and
+Wickham ([2018](#ref-R-tidyselect)), Hurley ([2019](#ref-R-gclus)),
+Ramsey and others ([2019](#ref-R-Sleuth2)), Layton
 ([2019](#ref-R-graphclassmate)), Layton and others
 ([2018](#ref-R-midfielddata)), Mount and Zumel
 ([2019](#ref-R-cdata)[a](#ref-R-cdata)), Mount ([2019](#ref-R-seplyr)),
 Mount and Zumel ([2019](#ref-R-wrapr)[b](#ref-R-wrapr)), Müller and
 Wickham ([2019](#ref-R-tibble)), Ooms ([2018](#ref-R-magick)), Sax
-([2019](#ref-R-tsbox)), Spinu and others ([2018](#ref-R-lubridate)),
-Stoffer ([2017](#ref-R-astsa)), Templ and others ([2019](#ref-R-VIM)),
-Unwin ([2015](#ref-R-GDAdata)), Wickham and Hester and others
-([2019](#ref-R-devtools)), Wickham and François and others
-([2019](#ref-R-dplyr)), Wickham
+([2019](#ref-R-tsbox)), Schloerke and others ([2018](#ref-R-GGally)),
+Spinu and others ([2018](#ref-R-lubridate)), Stoffer
+([2017](#ref-R-astsa)), Templ and others ([2019](#ref-R-VIM)), Unwin
+([2015](#ref-R-GDAdata)), Emerson and Green ([2014](#ref-R-gpairs)),
+Wickham and Hester and others ([2019](#ref-R-devtools)), Wickham and
+François and others ([2019](#ref-R-dplyr)), Wickham
 ([2019](#ref-R-forcats)[a](#ref-R-forcats)), Wickham and Chang and
 others ([2019](#ref-R-ggplot2)), Wickham ([2018](#ref-R-nycflights13)),
 Wickham and others ([2018](#ref-R-readr)), Wickham and Bryan
 ([2019](#ref-R-readxl)), Wickham
 ([2019](#ref-R-stringr)[b](#ref-R-stringr)), Wickham and Henry
-([2019](#ref-R-tidyr)), Kim and others ([2018](#ref-R-fivethirtyeight)),
-Yee ([2017](#ref-R-VGAMdata))
+([2019](#ref-R-tidyr)), Wilkinson and Anand
+([2018](#ref-R-scagnostics)), Kim and others
+([2018](#ref-R-fivethirtyeight)), Yee ([2017](#ref-R-VGAMdata))
 
 ***
 <a href="#top">&#9650; top of page</a>    

@@ -61,10 +61,10 @@ needed.
   - tidyverse  
   - graphclassmate
   - gclus  
-  - car
-  - gpairs
   - GGally
   - Sleuth2
+  - car (optional)  
+  - gpairs (optional)
 
 Scripts to initialize
 

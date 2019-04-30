@@ -6,9 +6,6 @@ conditioning plot
 [introduction](#introduction)  
 [prerequisites](#prerequisites)  
 [explore](#explore)  
-\[carpentry\]  
-\[design\]  
-\[report\]  
 [exercises](#exercises)  
 [references](#references)
 
@@ -78,33 +75,36 @@ Conditioning plot, made with lattice
 
 <https://homepage.divms.uiowa.edu/~luke/classes/STAT4580/threenum.html#conditioning-plots-coplots>
 
+`coplot()` is a base R graphics function
+
 ``` r
-library(lattice)
-scanvote <- read.csv("data-raw/scanvote.csv")
-glimpse(scanvote)
-#> Observations: 55
-#> Variables: 4
-#> $ District <fct> Uusimaa, Turku ja Pori, Hame, Kymi, Ahvenanmaa, Mikke...
-#> $ Yes      <dbl> 70.8, 53.4, 57.8, 65.2, 51.9, 54.2, 48.3, 44.4, 47.7,...
-#> $ Pop      <dbl> 117.5, 32.0, 39.5, 31.8, 15.4, 12.8, 15.4, 16.7, 15.2...
-#> $ Country  <fct> Fin, Fin, Fin, Fin, Fin, Fin, Fin, Fin, Fin, Fin, Fin...
+soil <- read.table("http://homepage.divms.uiowa.edu/~luke/data/soil.dat")
+
+coplot(resistivity ~ northing | easting, 
+             data = soil)
+```
+
+<img src="images/cm208-unnamed-chunk-4-1.png" width="70%" />
+
+With 4 variables
+
+``` r
+data(airquality)
 ```
 
 ``` r
-coplot(Yes ~ log10(Pop) | Country, 
-             data = scanvote, 
-             columns = 3,
-       panel = function(x, y, ...) {
-          panel.smooth(x, y, span = .8, iter = 5, ...)
-          abline(lm(y ~ x), col = "blue")})
+coplot(Ozone ~ Solar.R | Temp * Wind, 
+        data = airquality, 
+        panel = function(x,y,...) {
+                panel.smooth(x, y, span = .8, iter = 5, ...)
+            }
+             )
 ```
 
-<img src="images/cm208-unnamed-chunk-5-1.png" width="70%" />
+<img src="images/cm208-unnamed-chunk-6-1.png" width="70%" />
 
-This is the right package but not a good example. The three variables
-shouls all be quantitative and continuous.
-
-I’ll fix it ASAP.
+    #> 
+    #>  Missing rows: 5, 6, 10, 11, 25, 26, 27, 32, 33, 34, 35, 36, 37, 39, 42, 43, 45, 46, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 65, 72, 75, 83, 84, 96, 97, 98, 102, 103, 107, 115, 119, 150
 
 ## exercises
 
