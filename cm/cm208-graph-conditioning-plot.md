@@ -21,13 +21,19 @@ we use a conditioning plot (or coplot).
 Data characteristics
 
   - 3 or 4 quantitative variables  
-  - No categorical variables
+  - With 3 quantitative variables it is possible to have one categorical
+    variable as one of the two conditioning variables and possibly a
+    second categorical variable assigned to a data marker aesthetic  
+  - With 4 quantitative variables it is possible to have a categorical
+    variable assigned to a data marker aesthetic only
 
 Graph characteristics
 
-  - A matrix of scatterplots
-  - Each panel depends on a specified range of one or two other
-    quantitative variables
+  - A grid of panels
+  - Each panel is a scatterplot of the same two quantitative variables
+    conditioned by the value or range of one or two conditioning
+    variables - The conditioning variable ranges are shown in panels
+    above or adjacent to the main grid  
   - Optional: loess or other smooth fit per panel
 
 [D6 Multivariate](cm301-report-display-reqts.md#D6-multivariate) data
@@ -96,45 +102,94 @@ glimpse(soil)
 ```
 
 ``` r
-coplot(resistivity ~ northing | easting, data = soil)
+coplot(resistivity ~ northing | easting, 
+             data = soil)
 ```
 
-<img src="images/cm208-unnamed-chunk-7-1.png" width="70%" />
+<img src="images/cm208-unnamed-chunk-6-1.png" width="78.75%" />
+
+Add a panel function to create a smooth fit and use base R graphics
+functions to edit the aesthetics. For details on the arguments, see the
+help pages,
+
+  - `? panel.smooth`
+  - `? coplot`
+
+<!-- end list -->
+
+``` r
+my_panel <- function(x, y, ...) {
+        panel.smooth(x, y, 
+                span = 0.6, 
+                iter = 5, 
+                lwd  = 1,
+                col.smooth = rcb("dark_BG"), 
+                ...)
+}
+coplot(resistivity ~ northing | easting, 
+        data = soil, 
+        pch  = 21, 
+        col  = rcb("mid_BG"), 
+        bg   = rcb("pale_BG"), 
+        bar.bg = c(num = rcb("pale_BG"), fac = rcb("pale_BG")), 
+        panel = my_panel)
+```
+
+<img src="images/cm208-unnamed-chunk-7-1.png" width="78.75%" />
 
 With 4 variables
 
 ``` r
 data(airquality)
-glimpse(airquality)
-#> Observations: 153
+
+airquality <- as_tibble(airquality) %>% 
+    drop_na() %>% 
+    glimpse()
+#> Observations: 111
 #> Variables: 6
-#> $ Ozone   <int> 41, 36, 12, 18, NA, 28, 23, 19, 8, NA, 7, 16, 11, 14, ...
-#> $ Solar.R <int> 190, 118, 149, 313, NA, NA, 299, 99, 19, 194, NA, 256,...
-#> $ Wind    <dbl> 7.4, 8.0, 12.6, 11.5, 14.3, 14.9, 8.6, 13.8, 20.1, 8.6...
-#> $ Temp    <int> 67, 72, 74, 62, 56, 66, 65, 59, 61, 69, 74, 69, 66, 68...
+#> $ Ozone   <int> 41, 36, 12, 18, 23, 19, 8, 16, 11, 14, 18, 14, 34, 6, ...
+#> $ Solar.R <int> 190, 118, 149, 313, 299, 99, 19, 256, 290, 274, 65, 33...
+#> $ Wind    <dbl> 7.4, 8.0, 12.6, 11.5, 8.6, 13.8, 20.1, 9.7, 9.2, 10.9,...
+#> $ Temp    <int> 67, 72, 74, 62, 65, 59, 61, 69, 66, 68, 58, 64, 66, 57...
 #> $ Month   <int> 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, ...
-#> $ Day     <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,...
+#> $ Day     <int> 1, 2, 3, 4, 7, 8, 9, 12, 13, 14, 15, 16, 17, 18, 19, 2...
 ```
 
 ``` r
-coplot(Ozone ~ Solar.R | Temp * Wind, data = airquality, 
-        panel = function(x, y, ...) {
-                panel.smooth(x, y, span = .8, iter = 5, ...)
-        }
-)
+coplot(log(Ozone, base = 2) ~ Solar.R | Temp * Wind, 
+        data = airquality, 
+        pch  = 21, 
+        col  = rcb("dark_BG"), 
+        bg   = rcb("mid_BG"), 
+        bar.bg = c(num = rcb("pale_BG"), fac = rcb("pale_BG")), 
+        number = 4, 
+        overlap = 0.5,
+        panel = my_panel)
 ```
 
-<img src="images/cm208-unnamed-chunk-9-1.png" width="70%" />
-
-    #> 
-    #>  Missing rows: 5, 6, 10, 11, 25, 26, 27, 32, 33, 34, 35, 36, 37, 39, 42, 43, 45, 46, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 65, 72, 75, 83, 84, 96, 97, 98, 102, 103, 107, 115, 119, 150
-
-The aesthetics of the graph would be edited using base R graphics
-functions (which I will illustrate if I can find some time).
+<img src="images/cm208-unnamed-chunk-9-1.png" width="78.75%" />
 
 ## exercises
 
-TBD
+**1. gapminder**
+
+Script: `explore/0801-conditioning-plot-gapminder-explore.R`
+
+Data: `gapminder` in the gapminder package.
+
+Explore: Identify the number of observations and the number and type and
+class of variables. Recall that you can see a help page on any data set
+supplied with a package, e.g., `? gapminder`
+
+Carpentry: Reorder the `continent` factor by the `gdpPercap` variable
+
+Design: Create a coplot with `lifeExp` as a function of the log of
+`gdpPercap` conditioned by `continent` and the log of `pop`. Note that
+continent is a factor.
+
+*Answer*
+
+<img src="images/cm208-unnamed-chunk-11-1.png" width="78.75%" />
 
 ## references
 
