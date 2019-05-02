@@ -15,6 +15,15 @@ graph wrapup
 
 ## outline
 
+scales
+
+  - aspect ratio
+  - zero?
+  - date, log, limits, breaks
+  - math in axis label
+  - Robbins reading
+  - Text reading
+
 color
 
   - review color slides, select best stuff
@@ -22,33 +31,26 @@ color
   - graphclassmate rcb()
   - some reading
 
-scales
+edit symbols and lines
 
-  - aspect ratio
-  - zero?
-  - date, log, limits, breaks
-  - Robbins reading
-  - Text reading
+  - color
+  - size
+  - shape
+  - replace a data marker with text
 
-annotating
+adding extra text, points, lines
 
   - vline, hline, abline
   - regression lines
   - selected labels
   - selected panel then annotate  
   - similar annotations all panels
+  - math in annotation
 
-edit geoms
+theme
 
-  - edit data markers
-  - edit lines
-  - replace a data marker with text
-
-edit theme
-
-  - line size and color
-  - text size and color
-  - rotate strip text
+  - edit font and font size
+  - edit line size, type, and color
   - change panel spacing
   - other themes
 
