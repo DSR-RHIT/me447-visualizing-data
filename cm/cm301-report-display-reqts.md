@@ -30,10 +30,10 @@ to data that is otherwise unavailable.
 | [D6 multivariate](#d6-multivariate)                         | [scatterplot matrix](cm209-graph-scatterplot-matrix.md#scatterplot-matrix) or [parallel coordinate](cm210-graph-parallel-coord.md#parallel-coordinate) | four or more  | one optional  |
 |                                                             | [conditioning plot](cm208-graph-conditioning-plot.md#conditioning-plot)                                                                                | three or four | none          |
 | [D7 self-taught](#d7-self-taught)                           | [cycle plot](#cycle-plot)                                                                                                                              | one           | two           |
-|                                                             | [mosaic plot](#mosaic-plot)                                                                                                                            | one           | three or more |
+|                                                             | [multivariate bar](#multivariate-bar)                                                                                                                  | one           | three or more |
 |                                                             | [financial (OHLC) plot](#financial-ohlc-plot)                                                                                                          | four          | one           |
 |                                                             | [diverging stacked bar](#diverging-stacked-bar)                                                                                                        | one           | one           |
-|                                                             | [linked micromaps](#linked-micromaps)                                                                                                                  | one           |               |
+|                                                             | [micromap](#micromap)                                                                                                                                  | one           |               |
 |                                                             | [proportional symbol map](#proportional-symbol-map)                                                                                                    |               |               |
 |                                                             | [dot density map](#dot-density-map)                                                                                                                    |               |               |
 
@@ -297,27 +297,15 @@ Tutorials
 This is a graph type you learn to construct on your own. Select one only
 from the list and include it in the portfolio.
 
-  - [cycle plot](#cycle-plot)
-  - [mosaic plot](#mosaic-plot)  
-  - [financial (OHLC) plot](#financial-ohlc-plot)
-  - [diverging stacked bar](#diverging-stacked-bar)  
-  - [linked micromaps](#linked-micromaps)  
-  - [proportional symbol map](#proportional-symbol-map)  
-  - [dot density map](#dot-density-map)
+[cycle plot](#cycle-plot)  
+[multivariate bar](#multivariate-bar)  
+[financial (OHLC) plot](#financial-ohlc-plot)  
+[diverging stacked bar](#diverging-stacked-bar)  
+[micromap](#micromap)  
+[proportional symbol map](#proportional-symbol-map)  
+[dot density map](#dot-density-map)
 
 <br> <a href="#top">▲ top of page</a>
-
-<!-- ## q-q plot -->
-
-<!-- The quantile-quantile (q-q) plot is a graphical technique for determining if two groups of data come from populations with a common distribution. Data requirements:  -->
-
-<!-- - Two samples of one quantitative variable, min. 200 observations total.  -->
-
-<!-- - One categorical variable that defines the two groups (two levels only)  -->
-
-<!-- - The sample sizes of the two groups do not need to be equal  -->
-
-<!-- For additional technical details, see @Filliben+Heckert:2018.  -->
 
 ## cycle plot
 
@@ -327,11 +315,7 @@ Data requirements
 
 For additional technical details, see
 
-<!-- ## Sankey diagram   -->
-
-<!-- For additional technical details, see  -->
-
-## mosaic plot
+## multivariate bar
 
 Description
 
@@ -370,7 +354,7 @@ For additional technical details, see Heiberger and Robbins
 
 <br> <a href="#top">▲ top of page</a>
 
-## linked micromaps
+## micromap
 
 Description
 
@@ -421,6 +405,22 @@ Inc., Sebastopol, CA <https://r4ds.had.co.nz/>
 </div>
 
 </div>
+
+<!-- ## q-q plot -->
+
+<!-- The quantile-quantile (q-q) plot is a graphical technique for determining if two groups of data come from populations with a common distribution. Data requirements:  -->
+
+<!-- - Two samples of one quantitative variable, min. 200 observations total.  -->
+
+<!-- - One categorical variable that defines the two groups (two levels only)  -->
+
+<!-- - The sample sizes of the two groups do not need to be equal  -->
+
+<!-- For additional technical details, see @Filliben+Heckert:2018.  -->
+
+<!-- ## Sankey diagram   -->
+
+<!-- For additional technical details, see  -->
 
 ***
 <a href="#top">&#9650; top of page</a>    
