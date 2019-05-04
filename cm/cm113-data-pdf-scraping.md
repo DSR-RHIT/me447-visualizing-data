@@ -262,10 +262,10 @@ above into a function `clean_table()` that I can apply to each page, one
 at a time.
 
 ``` r
-clean_table <- function(table, start, end){
+clean_table <- function(table, table_start, table_end){
         table       <- str_split(table, "\r\n", simplify = TRUE)
-        table_start <- str_which(table, start)
-        table_end   <- str_which(table, end)
+        table_start <- str_which(table, table_start)
+        table_end   <- str_which(table, table_end)
         table       <- table[1, (table_start):(table_end - 1)]
         table <- str_replace_all(table, ",", "")
         table <- str_replace_all(table, "\\s{1,}", ";")
@@ -367,7 +367,8 @@ df
 #> # ... with 500 more rows
 ```
 
-There are 510 rows because we have 50 states plus DC, 10 years each.
+There are 510 rows because we have 50 states plus DC, 10 years each. We
+have two keys, state and year, and one value, population.
 
 ## write to file
 
