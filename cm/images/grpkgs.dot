@@ -1,7 +1,7 @@
 digraph whatever {
 	graph [root=grDevices, rankdir=TB, bgcolor=transparent, fontcolor=black, ratio=fill, splines=TRUE, rank=same, size="6.99999895833333,2.99999895833333"];
 	node [label="\N", fontname=Helvetica, fontsize=10, shape=circle, fixedsize=TRUE, fillcolor=gray90, color=black, fontcolor=black, height="0.5", width="0.75", style=filled];
-	edge [headport=center, arrowhead=none, color=black, dir=none, weight="1.0", fontcolor=black, arrowtail=none, fontsize=14, labelfontsize=11, arrowsize=1, style=solid];
+	edge [headport=center, arrowhead=none, color=black, dir=none, weight="1.0", fontcolor=black, arrowtail=none, fontsize=14, labelfontsize=11, arrowsize=1, style=solid, minlen=1];
 	graph [bb="0,0,817,350.14"];
 	subgraph cluster_0 {
 		graph [bb="719,10.531,809,339.61",

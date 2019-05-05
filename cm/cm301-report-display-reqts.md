@@ -29,7 +29,7 @@ to data that is otherwise unavailable.
 |                                                             | [line graph](cm207-graph-line-graph.md#line-graph) or [scatterplot](cm205-graph-scatterplot.md#scatterplot)                                            | two           | optional      |
 | [D6 multivariate](#d6-multivariate)                         | [scatterplot matrix](cm209-graph-scatterplot-matrix.md#scatterplot-matrix) or [parallel coordinate](cm210-graph-parallel-coord.md#parallel-coordinate) | four or more  | one optional  |
 |                                                             | [conditioning plot](cm208-graph-conditioning-plot.md#conditioning-plot)                                                                                | three or four | none          |
-| [D7 self-taught](#d7-self-taught)                           | [cycle plot](#cycle-plot)                                                                                                                              | one           | two           |
+| [D7 learn a display](#d7-learn-a-display)                   | [cycle plot](#cycle-plot)                                                                                                                              | one           | two           |
 |                                                             | [multivariate bar](#multivariate-bar)                                                                                                                  | one           | three or more |
 |                                                             | [financial (OHLC) plot](#financial-ohlc-plot)                                                                                                          | four          | one           |
 |                                                             | [diverging stacked bar](#diverging-stacked-bar)                                                                                                        | one           | one           |
@@ -292,7 +292,7 @@ Tutorials
 
 <br> <a href="#top">▲ top of page</a>
 
-## D7 self-taught
+## D7 learn a display
 
 This is a graph type you learn to construct on your own. Select one only
 from the list and include it in the portfolio.
@@ -309,74 +309,41 @@ from the list and include it in the portfolio.
 
 ## cycle plot
 
-Description
-
 Data requirements
-
-For additional technical details, see
 
 ## multivariate bar
 
-Description
-
 Data requirements
-
-For additional technical details, see
 
 ## financial (OHLC) plot
 
-A financial plot, or OHLC (open-high-low-close) plot, represents a time
-series of market behavior.
-
-The categorical variable is the date. Each day is one observation.
-
-The quantitative variables are the opening value, high value, low value,
-and closing value of a financial metric, e.g., the Dow Jones industrial
-average.
-
 Data requirements
-
-For additional technical details, see
 
 <br> <a href="#top">▲ top of page</a>
 
 ## diverging stacked bar
 
-Diverging stacked bar charts are the primary graphical display technique
-for reporting survey data. Respondents are typically asked to choose one
-response from a discrete number of options such as Strongly Disagree,
-Disagree, No Opinion, Agree, Strongly Agree.
-
 Data requirements
-
-For additional technical details, see Heiberger and Robbins
-([2014](#ref-Heiberger+Robbins:2014)).
 
 <br> <a href="#top">▲ top of page</a>
 
 ## micromap
 
-Description
-
 Data requirements
 
-For additional technical details, see
+<br> <a href="#top">▲ top of page</a>
 
 ## proportional symbol map
 
-Description
-
 Data requirements
 
-For additional technical details, see
+<br> <a href="#top">▲ top of page</a>
 
 ## dot density map
 
-Description
-
 Data requirements
 
-For additional technical details, see
+<br> <a href="#top">▲ top of page</a>
 
 ## references
 
@@ -389,14 +356,6 @@ illustrations. *Technical Communication* **48**(3), 265–274
 
 </div>
 
-<div id="ref-Heiberger+Robbins:2014">
-
-Heiberger RM and Robbins NB (2014) Design of diverging stacked bar
-charts for Likert scales and other applications. *Journal of Statistical
-Software* **57**(5) <http://tinyurl.com/y5yg2pze>
-
-</div>
-
 <div id="ref-Wickham+Grolemund:2017">
 
 Wickham H and Grolemund G (2017) *R for Data Science.* O’Reilly Media,
@@ -405,22 +364,6 @@ Inc., Sebastopol, CA <https://r4ds.had.co.nz/>
 </div>
 
 </div>
-
-<!-- ## q-q plot -->
-
-<!-- The quantile-quantile (q-q) plot is a graphical technique for determining if two groups of data come from populations with a common distribution. Data requirements:  -->
-
-<!-- - Two samples of one quantitative variable, min. 200 observations total.  -->
-
-<!-- - One categorical variable that defines the two groups (two levels only)  -->
-
-<!-- - The sample sizes of the two groups do not need to be equal  -->
-
-<!-- For additional technical details, see @Filliben+Heckert:2018.  -->
-
-<!-- ## Sankey diagram   -->
-
-<!-- For additional technical details, see  -->
 
 ***
 <a href="#top">&#9650; top of page</a>    
