@@ -12,7 +12,6 @@ April 1, 1990 to April 1, 2000</i> by the US Census. <br> </small>
 [read pdf](#read-pdf)  
 [split into rows](#split-into-rows)  
 [keep selected rows](#keep-selected-rows)  
-[setup column separation](#setup-column-separation)  
 [column separation](#column-separation)  
 [combine pages](#combine-pages)  
 [reshape](#reshape)  
@@ -144,7 +143,7 @@ table <- table[1, table_start : table_end] %>%
 #>  chr [1:40] "Alabama                4,040,389   4,050,055   4,099,156    4,154,014      4,214,202    4,260,229    4,296,800 "| __truncated__ ...
 ```
 
-## setup column separation
+## column separation
 
 In this particular data set, the original table columns are separated by
 spaces. Commas are used as digit separators only, so I can remove the
@@ -227,7 +226,7 @@ table
 #> # ... with 30 more rows
 ```
 
-## column separation
+Separate into columns
 
 ``` r
 table <- table %>% 
