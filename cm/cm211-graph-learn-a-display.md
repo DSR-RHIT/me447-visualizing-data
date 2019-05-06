@@ -1,7 +1,9 @@
 learn a display
 ================
 
-<img src="../resources/cm211-header.png" width="100%" />
+<img src="../resources/cm211-header.png" width="100%" /> <small> <br>
+<i>Moon, Earth-rise, Earth from the moon,</i> courtesy NASA.  
+<br> </small>
 
 ## contents
 
@@ -23,9 +25,9 @@ that you have to learn the syntax of a graphics system other than
 ggplot2. The structure of the R graphics system is illustrated in the
 figure.
 
-<img src="../resources/cm211-00.png" width="70%" /> <small> <br>
-<i>Figure 1.14 The structure of the R graphics system</i> by Paul
-Murrell ([2011](#ref-Murrell:2011)) <br> </small>
+<img src="../resources/cm211-00.png" width="70%" /> <small><br><i>Figure
+1.14 The structure of the R graphics system</i> by Paul Murrell
+([2011](#ref-Murrell:2011))<br></small>
 
 Working at a lower level—grid, graphics, or grDevices—can be quite a
 challenge. I would expect that if you have to learn a new graphics
@@ -49,13 +51,13 @@ Resources
   - [plotMonth()](ttps://CRAN.R-project.org/package=season) in the
     **season** package
 
-<br> Example
+Example
 
-<img src="../resources/cm211-cycle-plot-01.png" width="78.75%" />
+<img src="../resources/cm211-cycle-plot-01.png" width="70%" />
 
-<br> Example
+Example
 
-<img src="../resources/cm211-cycle-plot-02.png" width="78.75%" />
+<img src="../resources/cm211-cycle-plot-02.png" width="70%" />
 
 <!-- <br> -->
 
@@ -71,15 +73,21 @@ Resources
 
 ## multivariate bar graph
 
+Stephen Few argues that a mulitvariate bar graph is suoperior to a
+mosaic chart for understanding multivariate categorical data. A good
+source for raw material for creating a multivariate bar graph,
+therefore, is any mosaic chart.
+
 Resources
 
   - [Data
     requirements](cm301-report-display-reqts.md#multivariate-bar)  
   - [geom\_bar() and
     geom\_col()](https://ggplot2.tidyverse.org/reference/geom_bar.html)
-    in **ggplot2**
+    in **ggplot2**  
+  - Stephen Few ([2014](#ref-Few:2014))
 
-<br> Example
+Example
 
 <img src="../resources/cm211-multivariate-bar.png" width="50%" />
 
@@ -99,18 +107,18 @@ Average (DJIA).
 Resources
 
   - [Data
-    requirements](cm301-report-display-reqts.md#financial-\(OHLC\)-plot)
+    requirements](cm301-report-display-reqts.md#financial-\(OHLC\)-plot)  
   - [Open-high-low-close
     Chart](https://datavizcatalogue.com/methods/OHLC_chart.html) in the
     Data Visualization Catalog
 
-<br> Example
+Example
 
-<img src="../resources/cm211-financial-plot-01.png" width="78.75%" />
+<img src="../resources/cm211-financial-plot-01.png" width="70%" />
 
-<br> Example
+Example
 
-<img src="../resources/cm211-financial-plot-04.png" width="78.75%" />
+<img src="../resources/cm211-financial-plot-04.png" width="70%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -129,17 +137,17 @@ Resources
     the **HH** package  
   - Heiberger and Robbins ([2014](#ref-Heiberger+Robbins:2014))
 
-<br> Example
+Example
 
-<img src="../resources/cm211-diverging-stacked-bar-01.png" width="78.75%" />
+<img src="../resources/cm211-diverging-stacked-bar-01.png" width="70%" />
 
 Example
 
-<img src="../resources/cm211-diverging-stacked-bar-03.png" width="78.75%" />
+<img src="../resources/cm211-diverging-stacked-bar-03.png" width="70%" />
 
-<br> Example
+Example
 
-<img src="../resources/cm211-diverging-stacked-bar-04.png" width="78.75%" />
+<img src="../resources/cm211-diverging-stacked-bar-04.png" width="70%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -147,28 +155,29 @@ Example
 
 Resources
 
-  - [Data requirements](cm301-report-display-reqts.md#micromap)
-    [mmplot()](https://CRAN.R-project.org/package=micromap) in the
-    **micromap** package
+  - [Data requirements](cm301-report-display-reqts.md#micromap)  
+  - [mmplot()](https://CRAN.R-project.org/package=micromap) in the
+    **micromap** package  
   - [Linked
     micromaps](https://cran.r-project.org/web/packages/micromap/vignettes/Introduction_Guide.pdf)
-    Introduction to the **micromap** package
-  - [ggmap()](https://github.com/dkahle/ggmap) in the **ggmap** package
+    Introduction to the **micromap** package  
+  - [ggmap()](https://github.com/dkahle/ggmap) in the **ggmap**
+    package  
   - [Background maps](https://www.r-graph-gallery.com/map/) in the R
     Graph Gallery
 
-<br> Example
+Example
 
 <img src="../resources/cm211-micromap-03.png" width="50%" />
 
-<br> Example. These are chloropleth maps which generally are not as good
-as proportional symbol maps or dot density maps. I include these in the
+Example. These are chloropleth maps which generally are not as good as
+proportional symbol maps or dot density maps. I include these in the
 micromaps section because the maps are a small-multiple design.
 
 However, the data should be presented as proportional symbols or dot
 densities.
 
-<img src="../resources/cm211-micromap-02.png" width="78.75%" />
+<img src="../resources/cm211-micromap-02.png" width="70%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -177,25 +186,25 @@ densities.
 Resources
 
   - [Data
-    requirements](cm301-report-display-reqts.md#proportional-symbol-map)
-  - [ggmap package](https://github.com/dkahle/ggmap)
+    requirements](cm301-report-display-reqts.md#proportional-symbol-map)  
+  - [ggmap package](https://github.com/dkahle/ggmap)  
   - [Background maps](https://www.r-graph-gallery.com/map/) in the R
-    Graph Gallery
+    Graph Gallery  
   - [Bubblemap with
     ggplot2](https://www.r-graph-gallery.com/330-bubble-map-with-ggplot2/)
     in the R Graph Gallery
 
-<br> Example
+Example
 
-<img src="../resources/cm211-proportional-symbol-map-01.png" width="78.75%" />
+<img src="../resources/cm211-proportional-symbol-map-01.png" width="70%" />
 
-<br> Example
+Example
 
-<img src="../resources/cm211-proportional-symbol-map-02.png" width="78.75%" />
+<img src="../resources/cm211-proportional-symbol-map-02.png" width="70%" />
 
-<br> Example
+Example
 
-<img src="../resources/cm211-proportional-symbol-map-03.png" width="78.75%" />
+<img src="../resources/cm211-proportional-symbol-map-03.png" width="70%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -203,27 +212,33 @@ Resources
 
 Resources
 
-  - [Data requirements](cm301-report-display-reqts.md#dot-density-map)
-  - [ggmap package](https://github.com/dkahle/ggmap)
+  - [Data requirements](cm301-report-display-reqts.md#dot-density-map)  
+  - [ggmap package](https://github.com/dkahle/ggmap)  
   - [Background maps](https://www.r-graph-gallery.com/map/) in the R
-    Graph Gallery
+    Graph Gallery  
   - [sf
     package](https://www.cultureofinsight.com/blog/2018/05/02/2018-04-08-multivariate-dot-density-maps-in-r-with-sf-ggplot2/)
     Multivariate dot-density maps with sf and ggplot2
 
-<br> Example
+Example
 
-<img src="../resources/cm211-dot-density-map-01.png" width="78.75%" />
+<img src="../resources/cm211-dot-density-map-01.png" width="70%" />
 
-<br> Example
+Example
 
-<img src="../resources/cm211-dot-density-map-02.png" width="78.75%" />
+<img src="../resources/cm211-dot-density-map-02.png" width="70%" />
 
 <br> <a href="#top">▲ top of page</a>
 
 ## references
 
 <div id="refs">
+
+<div id="ref-Few:2014">
+
+Few S (2014) Are mosaic plots worthwhile? <https://tinyurl.com/y23majn2>
+
+</div>
 
 <div id="ref-Heiberger+Robbins:2014">
 
