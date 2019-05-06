@@ -45,16 +45,9 @@ Resources
 
   - [Data requirements](cm301-report-display-reqts.md#cycle-plot)  
   - [monthplot()](https://www.rdocumentation.org/packages/stats/versions/3.6.0/topics/monthplot)
-    in base R
-
-<https://stackoverflow.com/questions/5826703/how-to-replicate-a-monthly-cycle-chart-in-r>
-
-stl, monthplot, seasonplot
-
-<https://www.statmethods.net/advstats/timeseries.html>
-
-convert time series to tidt DF (tibbletime)
-<https://business-science.github.io/tibbletime/index.html>
+    in base R  
+  - [plotMonth()](ttps://CRAN.R-project.org/package=season) in the
+    **season** package
 
 <br> Example
 
@@ -64,11 +57,15 @@ convert time series to tidt DF (tibbletime)
 
 <img src="../resources/cm211-cycle-plot-02.png" width="78.75%" />
 
-<br> Example
+<!-- <br> -->
 
-<img src="../resources/cm211-cycle-plot-03.png" width="78.75%" />
+<!-- Example of cyclic data  -->
 
-<br> References
+<!-- ```{r} -->
+
+<!-- include_graphics("../resources/cm211-cycle-plot-03.png") -->
+
+<!-- ``` -->
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -76,13 +73,15 @@ convert time series to tidt DF (tibbletime)
 
 Resources
 
-  - [Data requirements](cm301-report-display-reqts.md#multivariate-bar)
+  - [Data
+    requirements](cm301-report-display-reqts.md#multivariate-bar)  
+  - [geom\_bar() and
+    geom\_col()](https://ggplot2.tidyverse.org/reference/geom_bar.html)
+    in **ggplot2**
 
 <br> Example
 
-<img src="../resources/cm211-multivariate-bar.png" width="78.75%" />
-
-References
+<img src="../resources/cm211-multivariate-bar.png" width="50%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -101,6 +100,9 @@ Resources
 
   - [Data
     requirements](cm301-report-display-reqts.md#financial-\(OHLC\)-plot)
+  - [Open-high-low-close
+    Chart](https://datavizcatalogue.com/methods/OHLC_chart.html) in the
+    Data Visualization Catalog
 
 <br> Example
 
@@ -123,8 +125,8 @@ Resources
 
   - [Data
     requirements](cm301-report-display-reqts.md#diverging-stacked-bar)  
-  - [HH package](https://cran.r-project.org/web/packages/HH/index.html)
-    `likert()` function  
+  - [likert()](https://cran.r-project.org/web/packages/HH/index.html) in
+    the **HH** package  
   - Heiberger and Robbins ([2014](#ref-Heiberger+Robbins:2014))
 
 <br> Example
@@ -146,12 +148,25 @@ Example
 Resources
 
   - [Data requirements](cm301-report-display-reqts.md#micromap)
+    [mmplot()](https://CRAN.R-project.org/package=micromap) in the
+    **micromap** package
+  - [Linked
+    micromaps](https://cran.r-project.org/web/packages/micromap/vignettes/Introduction_Guide.pdf)
+    Introduction to the **micromap** package
+  - [ggmap()](https://github.com/dkahle/ggmap) in the **ggmap** package
+  - [Background maps](https://www.r-graph-gallery.com/map/) in the R
+    Graph Gallery
 
 <br> Example
 
-<img src="../resources/cm211-micromap-03.png" width="78.75%" />
+<img src="../resources/cm211-micromap-03.png" width="50%" />
 
-<br> Example
+<br> Example. These are chloropleth maps which generally are not as good
+as proportional symbol maps or dot density maps. I include these in the
+micromaps section because the maps are a small-multiple design.
+
+However, the data should be presented as proportional symbols or dot
+densities.
 
 <img src="../resources/cm211-micromap-02.png" width="78.75%" />
 
@@ -163,6 +178,12 @@ Resources
 
   - [Data
     requirements](cm301-report-display-reqts.md#proportional-symbol-map)
+  - [ggmap package](https://github.com/dkahle/ggmap)
+  - [Background maps](https://www.r-graph-gallery.com/map/) in the R
+    Graph Gallery
+  - [Bubblemap with
+    ggplot2](https://www.r-graph-gallery.com/330-bubble-map-with-ggplot2/)
+    in the R Graph Gallery
 
 <br> Example
 
@@ -183,6 +204,12 @@ Resources
 Resources
 
   - [Data requirements](cm301-report-display-reqts.md#dot-density-map)
+  - [ggmap package](https://github.com/dkahle/ggmap)
+  - [Background maps](https://www.r-graph-gallery.com/map/) in the R
+    Graph Gallery
+  - [sf
+    package](https://www.cultureofinsight.com/blog/2018/05/02/2018-04-08-multivariate-dot-density-maps-in-r-with-sf-ggplot2/)
+    Multivariate dot-density maps with sf and ggplot2
 
 <br> Example
 

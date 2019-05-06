@@ -13,6 +13,7 @@ time series data
 [time series in Date class](#time-series-in-date-class)  
 [time series in ts class](#time-series-in-ts-class)  
 [convert ts to data frame](#convert-ts-to-data-frame)  
+[tsibble](#tsibble)  
 [references](#references)
 
 ## introduction
@@ -45,7 +46,7 @@ needed.
 
   - tidyverse  
   - lubridate
-  - ts box
+  - tsbox
   - astsa
 
 Scripts to initialize
@@ -459,6 +460,13 @@ ggplot(data = df_subset, mapping = aes(x = date, y = mortality)) +
 ```
 
 <img src="images/cm109-unnamed-chunk-24-1.png" width="78.75%" />
+
+## tsibble
+
+Have a look at package **tsibble** that extends the tidyverse to
+temporal data. Built on top of the tibble, a tsibble (or tbl\_ts) is a
+data-centric format that preserves time indices as the essential data
+column and makes heterogeneous data structures possible.
 
 ## references
 
