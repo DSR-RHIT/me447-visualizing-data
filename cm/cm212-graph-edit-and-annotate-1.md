@@ -1,4 +1,4 @@
-graph edit and annotate
+graph edit and annotate 1
 ================
 
 <!-- edit symbols and lines  -->
@@ -10,30 +10,6 @@ graph edit and annotate
 <!-- - shape  DONE-->
 
 <!-- - replace a data marker with text  -->
-
-<!-- adding extra text, points, lines  -->
-
-<!-- - vline, hline, abline  -->
-
-<!-- - regression lines  -->
-
-<!-- - selected labels  -->
-
-<!-- - selected panel then annotate   -->
-
-<!-- - similar annotations all panels  -->
-
-<!-- - math in annotation  -->
-
-<!-- theme -->
-
-<!-- - edit font and font size  -->
-
-<!-- - edit line size, type, and color  -->
-
-<!-- - change panel spacing  -->
-
-<!-- - other themes  -->
 
 ## contents
 
