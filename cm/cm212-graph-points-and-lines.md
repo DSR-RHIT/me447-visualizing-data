@@ -181,6 +181,8 @@ p
 
 <img src="images/cm212-unnamed-chunk-12-1.png" width="78.75%" />
 
+<br> <a href="#top">▲ top of page</a>
+
 ## symbol size
 
 To uniformly change the size of all data markers, use size in the geom.
@@ -242,6 +244,8 @@ ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer,
 ```
 
 <img src="images/cm212-unnamed-chunk-18-1.png" width="78.75%" />
+
+<br> <a href="#top">▲ top of page</a>
 
 ## symbol shape
 
@@ -314,6 +318,8 @@ ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer,
 
 <img src="images/cm212-unnamed-chunk-25-1.png" width="78.75%" />
 
+<br> <a href="#top">▲ top of page</a>
+
 ## symbol text
 
 You can use text that is already in the data frame, for example, the
@@ -325,7 +331,7 @@ unique(mpg$cyl)
 #> Levels: 8 6 4
 ```
 
-Because cyl is a variable, we assign it to `label` in `aes()` and use
+Because `cyl` is a variable, we assign it to `label` in `aes()` and use
 `geom_text()`
 
 ``` r
@@ -402,6 +408,8 @@ ggplot(data = df, mapping = aes(x = enrolled, y = path, label = abbrev)) +
 
 <img src="images/cm212-unnamed-chunk-31-1.png" width="78.75%" />
 
+<br> <a href="#top">▲ top of page</a>
+
 ## symbol text legend
 
 To create a legend that defines the abbreviations, recall that legends
@@ -449,6 +457,8 @@ ggplot(df, aes(x = enrolled, y = path, label = abbrev, fill = Key)) +
 ```
 
 <img src="images/cm212-unnamed-chunk-35-1.png" width="90%" />
+
+<br> <a href="#top">▲ top of page</a>
 
 ## line color size type
 
@@ -636,7 +646,7 @@ Facets with unique smooth fits in each
 
 ``` r
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) + 
-        geom_smooth(method = "loess", se = FALSE, smooth = 1) +
+        geom_smooth(method = "loess", se = FALSE, span = 1) +
         geom_point() +
         scale_color_manual(values = my_color) +
         guides(color = guide_legend(reverse = TRUE)) +
@@ -652,8 +662,9 @@ assigned in the smooth geom.
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) + 
         geom_smooth(method = "lm", 
                 formula = y ~ poly(x, 2), 
-                se = FALSE, color = "black", 
-                size = 0.5) +
+                se    = FALSE, 
+                color = "black", 
+                size  = 0.5) +
         geom_point() +
         scale_color_manual(values = my_color) +
         guides(color = guide_legend(reverse = TRUE)) +
