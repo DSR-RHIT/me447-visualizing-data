@@ -1,6 +1,12 @@
 points and lines
 ================
 
+<img src="../resources/cm212-header.png" width="100%" /> <small> <br>
+<i>Nur scheinbar durcheinander (Only seemingly confused)</i> by Renate
+Dodell is licensed under
+<a href="https://creativecommons.org/licenses/by-nd/2.0/legalcode">CC
+BY-ND 2.0</a> <br> </small>
+
 ## contents
 
 [introduction](#introduction)  
