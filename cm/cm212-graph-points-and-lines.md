@@ -1,0 +1,553 @@
+points and lines
+================
+
+## contents
+
+[introduction](#introduction)  
+[symbol color](#symbol-color)  
+[symbol size](#symbol-size)  
+[symbol shape](#symbol-shape)  
+[replace symbol with text](#replace-symbol-with-text)  
+[line color size type](#line-color-size-type)  
+[smooth fit lines](#smooth-fit-lines)  
+[references](#references)
+
+## introduction
+
+Here, we illustrate techniques for editing graphical elements and
+annotating graph panels. Some items were seen in previous tutorials. The
+list is not exhaustive, but does cover the most frequently requested
+editing and annotating tasks.
+
+## symbol color
+
+Color, size, and shape are the characteristics you are most likely to
+want to edit.
+
+``` r
+library("tidyverse")
+library("seplyr")
+```
+
+We’ll use the `mpg` dataset from ggplot2
+
+``` r
+ggplot2::mpg
+#> # A tibble: 234 x 11
+#>    manufacturer model displ  year   cyl trans drv     cty   hwy fl    class
+#>    <chr>        <chr> <dbl> <int> <int> <chr> <chr> <int> <int> <chr> <chr>
+#>  1 audi         a4      1.8  1999     4 auto~ f        18    29 p     comp~
+#>  2 audi         a4      1.8  1999     4 manu~ f        21    29 p     comp~
+#>  3 audi         a4      2    2008     4 manu~ f        20    31 p     comp~
+#>  4 audi         a4      2    2008     4 auto~ f        21    30 p     comp~
+#>  5 audi         a4      2.8  1999     6 auto~ f        16    26 p     comp~
+#>  6 audi         a4      2.8  1999     6 manu~ f        18    26 p     comp~
+#>  7 audi         a4      3.1  2008     6 auto~ f        18    27 p     comp~
+#>  8 audi         a4 q~   1.8  1999     4 manu~ 4        18    26 p     comp~
+#>  9 audi         a4 q~   1.8  1999     4 auto~ 4        16    25 p     comp~
+#> 10 audi         a4 q~   2    2008     4 manu~ 4        20    28 p     comp~
+#> # ... with 224 more rows
+```
+
+Simple graph
+
+``` r
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+  geom_point()
+```
+
+<img src="images/cm212-unnamed-chunk-4-1.png" width="78.75%" />
+
+If we want all the dots the same color, we change color in the geom.
+
+``` r
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+  geom_point(color = rcb("mid_BG"))
+```
+
+<img src="images/cm212-unnamed-chunk-5-1.png" width="78.75%" />
+
+If we use color to distinguish between cars with different class, we
+assign the color in the `aes()`.
+
+``` r
+# how many in each class?
+mpg %>% count(class)
+#> # A tibble: 7 x 2
+#>   class          n
+#>   <chr>      <int>
+#> 1 2seater        5
+#> 2 compact       47
+#> 3 midsize       41
+#> 4 minivan       11
+#> 5 pickup        33
+#> 6 subcompact    35
+#> 7 suv           62
+
+# let's omit the 2seater
+mpg <- mpg %>% 
+    filter(class != "2seater")
+
+# graph
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) + 
+  geom_point()
+```
+
+<img src="images/cm212-unnamed-chunk-6-1.png" width="78.75%" />
+
+To change these colors, we add
+
+``` r
+my_color <- c(rcb("dark_BG"), rcb("mid_BG"), rcb("light_BG"), rcb("light_Br"), rcb("mid_Br"), rcb("dark_Br"))
+
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) + 
+  geom_point() +
+    scale_color_manual(values = my_color)
+```
+
+<img src="images/cm212-unnamed-chunk-7-1.png" width="78.75%" />
+
+The classes should be ordered, so I convert class to a factor ordered by
+hwy.
+
+``` r
+mpg  <-  mpg %>% 
+    mutate(class = fct_reorder(class, hwy, mean))
+
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) + 
+  geom_point() +
+    scale_color_manual(values = my_color)
+```
+
+<img src="images/cm212-unnamed-chunk-8-1.png" width="78.75%" />
+
+I want the colors assigned in the reverse order so that green represents
+the best mileage and brown the worst.
+
+``` r
+my_color <- rev(my_color)
+
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) + 
+  geom_point() +
+    scale_color_manual(values = my_color)
+```
+
+<img src="images/cm212-unnamed-chunk-9-1.png" width="78.75%" />
+
+And I want the order of the legend reversed
+
+``` r
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) + 
+  geom_point() +
+    scale_color_manual(values = my_color) +
+    guides(color = guide_legend(reverse = TRUE))
+```
+
+<img src="images/cm212-unnamed-chunk-10-1.png" width="78.75%" />
+
+If we facet the graph on the same variable, the assigned colors remain
+
+``` r
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) + 
+  geom_point() +
+    scale_color_manual(values = my_color) +
+    guides(color = guide_legend(reverse = TRUE)) +
+    facet_wrap(vars(class), as.table = FALSE)
+```
+
+<img src="images/cm212-unnamed-chunk-11-1.png" width="78.75%" />
+
+If we facet on a different arable, the assigned colors remain.
+
+``` r
+mpg <- mpg %>% 
+    filter(cyl != 5) %>% 
+    mutate(cyl = fct_reorder(factor(cyl), hwy, mean)) 
+
+p <- ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) + 
+  geom_point() +
+    scale_color_manual(values = my_color) +
+    guides(color = guide_legend(reverse = TRUE)) +
+    facet_wrap(vars(cyl), as.table = FALSE) 
+p
+```
+
+<img src="images/cm212-unnamed-chunk-12-1.png" width="78.75%" />
+
+## symbol size
+
+To uniformly change the size of all data markers, use size in the geom.
+Here, I use `set.seed()` so that the random jittering is fixed.
+
+``` r
+set.seed(20190507)
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+  geom_jitter(size = 3, alpha = 0.3)
+```
+
+<img src="images/cm212-unnamed-chunk-14-1.png" width="78.75%" />
+
+Likewise, in the faceted graph,
+
+``` r
+p <- p +
+    geom_jitter(size = 3)
+p
+```
+
+<img src="images/cm212-unnamed-chunk-15-1.png" width="78.75%" />
+
+If size is assigned to a variable, we assign it in the `aes()`. Size can
+be assigned to a continuous variable, as shown here,
+
+``` r
+mpg <- mpg %>% 
+    mutate(manufacturer = fct_reorder(factor(manufacturer), hwy, mean)) 
+
+ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer, size = displ))+
+    geom_point(color = rcb("mid_BG"))
+```
+
+<img src="images/cm212-unnamed-chunk-16-1.png" width="78.75%" />
+
+Plotting size and color in `aes()` produces two legends
+
+``` r
+ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer, size = displ, color = class))+
+    geom_point() +
+    scale_color_manual(values = my_color) +
+    guides(color = guide_legend(reverse = TRUE))
+```
+
+<img src="images/cm212-unnamed-chunk-17-1.png" width="78.75%" />
+
+In this case, I’d like to increase the symbol size in the legend
+
+``` r
+ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer, size = displ, color = class))+
+    geom_point() +
+    scale_color_manual(values = my_color) +
+    guides(color = guide_legend(reverse = TRUE, override.aes = list(size = 4)))
+```
+
+<img src="images/cm212-unnamed-chunk-18-1.png" width="78.75%" />
+
+## symbol shape
+
+The 26 conventional R symbol shapes are these. Numbers 21–25 have both a
+color (border) and fill attribute.
+
+<img src="images/cm212-unnamed-chunk-20-1.png" width="78.75%" />
+
+Like color, shape can be assigned to all the symbols in the geom
+
+``` r
+set.seed(20190507)
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+  geom_jitter(shape = 5)
+```
+
+<img src="images/cm212-unnamed-chunk-21-1.png" width="78.75%" />
+
+Like color, different shapes are used if mapped to a variable using
+`aes()`.
+
+``` r
+ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer, shape = class))+
+    geom_jitter(size = 2, alpha = 0.5, width = 1, height = 0) +
+    guides(shape = guide_legend(reverse = TRUE, override.aes = list(size = 2.5)))
+```
+
+<img src="images/cm212-unnamed-chunk-22-1.png" width="78.75%" />
+
+We can specify the shapes we want with `scale_shape_manual()`
+
+``` r
+my_shape <- c(17, 16, 15, 2, 1, 0)
+
+ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer, shape = class))+
+    geom_jitter(size = 2, alpha = 0.5, width = 1, height = 0) +
+    guides(shape = guide_legend(reverse = TRUE, override.aes = list(size = 2.5))) +
+  scale_shape_manual(values = my_shape)
+```
+
+<img src="images/cm212-unnamed-chunk-23-1.png" width="78.75%" />
+
+And we can combine color and shape, but we get two legends,
+
+``` r
+ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer, shape = class, color = class))+
+    geom_jitter(size = 2, width = 1, height = 0) +
+    guides(shape = guide_legend(reverse = TRUE, override.aes = list(size = 2.5))) +
+  scale_shape_manual(values = my_shape) +
+    scale_color_manual(values = my_color)
+```
+
+<img src="images/cm212-unnamed-chunk-24-1.png" width="78.75%" />
+
+We can add color to the shape guide and omit the color-only legend.
+
+``` r
+ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer, 
+                                                                 shape = class, 
+                                                                 color = class)) +
+    geom_jitter(size = 2, width = 1, height = 0) +
+    guides(shape = guide_legend(reverse = TRUE, 
+                                                            override.aes = list(size = 2.5, color = my_color)), 
+                 color = "none") +
+  scale_shape_manual(values = my_shape) +
+    scale_color_manual(values = my_color)
+```
+
+<img src="images/cm212-unnamed-chunk-25-1.png" width="78.75%" />
+
+## replace symbol with text
+
+You can use text that is already in the data frame, for example, the
+number of cylinders is a factor
+
+``` r
+unique(mpg$cyl)
+#> [1] 4 6 8
+#> Levels: 8 6 4
+```
+
+Because cyl is a variable, we assign it to `label` in `aers()` and use
+`geom_text()`
+
+``` r
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy, label = cyl, color = cyl)) + 
+  geom_text(size = 3) +
+    scale_color_manual(values = my_color[c(1, 4, 5)]) +
+    guides(color = guide_legend(reverse = TRUE)) +
+    facet_wrap(vars(class), as.table = FALSE)
+```
+
+<img src="images/cm212-unnamed-chunk-27-1.png" width="78.75%" />
+
+Or you can add a column with a text variable.
+
+## line color size type
+
+Editing lines is similar to editing symbols. The main difference is that
+we use `geom_line()` instead of `geom_point()` and that “linetype” has 7
+levels,
+
+<img src="images/cm212-unnamed-chunk-29-1.png" width="78.75%" />
+
+I’ll use the `UKLungDeaths` dataset in base R for three time series
+giving the monthly deaths from bronchitis, emphysema, and asthma in the
+UK, 1974–1979, males (`mdeaths`), females (`fdeaths`), and total
+(`ldeaths`).
+
+I use the tsbox package to convert the Time Series data format to a tidy
+data frame.
+
+``` r
+library("tsbox")
+
+# collect the time series
+collected_ts <- ts_c(mdeaths, fdeaths, ldeaths)
+
+# convert to data frame 
+df <- ts_df(collected_ts)
+
+# then to a tibble
+df <- as_tibble(df)
+
+df
+#> # A tibble: 216 x 3
+#>    id      time       value
+#>    <chr>   <date>     <dbl>
+#>  1 mdeaths 1974-01-01  2134
+#>  2 mdeaths 1974-02-01  1863
+#>  3 mdeaths 1974-03-01  1877
+#>  4 mdeaths 1974-04-01  1877
+#>  5 mdeaths 1974-05-01  1492
+#>  6 mdeaths 1974-06-01  1249
+#>  7 mdeaths 1974-07-01  1280
+#>  8 mdeaths 1974-08-01  1131
+#>  9 mdeaths 1974-09-01  1209
+#> 10 mdeaths 1974-10-01  1492
+#> # ... with 206 more rows
+```
+
+Distinguish by color. First, convert the id to a factor and order it.
+
+``` r
+df <- df %>% 
+    mutate(id = fct_reorder(id, value))
+
+ggplot(data = df, mapping = aes(x = time, y = value, color = id)) +
+    geom_line() +
+    guides(color = guide_legend(reverse = TRUE))
+```
+
+<img src="images/cm212-unnamed-chunk-31-1.png" width="78.75%" />
+
+Distinguish by line type
+
+``` r
+ggplot(data = df, mapping = aes(x = time, y = value, linetype = id)) +
+    geom_line() +
+    guides(linetype = guide_legend(reverse = TRUE))
+```
+
+<img src="images/cm212-unnamed-chunk-32-1.png" width="78.75%" />
+
+Again, if we want to apply the same attributes to all lines, we do it in
+the geom.
+
+``` r
+ggplot(data = df, mapping = aes(x = time, y = value, linetype = id)) +
+    geom_line(color = rcb("dark_BG"), size = 1) +
+    guides(linetype = guide_legend(reverse = TRUE))
+```
+
+<img src="images/cm212-unnamed-chunk-33-1.png" width="78.75%" />
+
+And multiple attributes can be assigned is `aes()`.
+
+``` r
+ggplot(data = df, mapping = aes(x = time, y = value, linetype = id, color = id)) +
+    geom_line(size = 1) +
+    guides(color = guide_legend(reverse = TRUE), 
+                 linetype = "none")
+```
+
+<img src="images/cm212-unnamed-chunk-34-1.png" width="78.75%" />
+
+And colors can be manually assigned,
+
+``` r
+ggplot(data = df, mapping = aes(x = time, y = value, linetype = id, color = id)) +
+    geom_line(size = 1) +
+    scale_color_manual(values = my_color[c(4, 5, 2)]) +
+    guides(color = guide_legend(reverse = TRUE), 
+                 linetype = "none")
+```
+
+<img src="images/cm212-unnamed-chunk-35-1.png" width="78.75%" />
+
+Facets,
+
+``` r
+ggplot(data = df, mapping = aes(x = time, y = value)) +
+    geom_line(size = 1, color = rcb("dark_BG")) +
+    facet_wrap(vars(id), as.table = FALSE, ncol = 3)
+```
+
+<img src="images/cm212-unnamed-chunk-36-1.png" width="78.75%" />
+
+<br> <a href="#top">▲ top of page</a>
+
+## smooth fit lines
+
+The most common fits are linear and loess.
+
+A linear fit. Generally, plot the smooth curve first, then the symbols,
+so that the line does not obscure the data.
+
+``` r
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+    geom_smooth(method = "lm") +
+    geom_jitter(size = 2, alpha = 0.5) 
+```
+
+<img src="images/cm212-unnamed-chunk-38-1.png" width="78.75%" />
+
+Omit the confidence interval with `se = FALSE`
+
+``` r
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+    geom_smooth(method = "lm", se = FALSE) +
+    geom_jitter(size = 2, alpha = 0.5) 
+```
+
+<img src="images/cm212-unnamed-chunk-39-1.png" width="78.75%" />
+
+Size, linetype, and color,
+
+``` r
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+    geom_smooth(method = "lm", se = FALSE, size = 0.5, linetype = 2, color = rcb("dark_BG")) +
+      geom_jitter(size = 2, alpha = 0.5)
+```
+
+<img src="images/cm212-unnamed-chunk-40-1.png" width="78.75%" />
+
+Loess
+
+``` r
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+    geom_smooth(method = "loess", se = FALSE) +
+      geom_jitter(size = 2, alpha = 0.5)
+```
+
+<img src="images/cm212-unnamed-chunk-41-1.png" width="78.75%" />
+
+Control the amount of smoothing with `span`. Smaller numbers produce
+wigglier lines.
+
+``` r
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+    geom_smooth(method = "loess", se = FALSE, span = 0.3) +
+      geom_jitter(size = 2, alpha = 0.5)
+```
+
+<img src="images/cm212-unnamed-chunk-42-1.png" width="78.75%" />
+
+Larger `span` produces smoother lines.
+
+``` r
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+    geom_smooth(method = "loess", se = FALSE, span = 0.9) +
+      geom_jitter(size = 2, alpha = 0.5)
+```
+
+<img src="images/cm212-unnamed-chunk-43-1.png" width="78.75%" />
+
+Facets with unique smooth fits in each
+
+``` r
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) + 
+    geom_smooth(method = "loess", se = FALSE, smooth = 1) +
+  geom_point() +
+    scale_color_manual(values = my_color) +
+    guides(color = guide_legend(reverse = TRUE)) +
+    facet_wrap(vars(class), as.table = FALSE)
+```
+
+<img src="images/cm212-unnamed-chunk-44-1.png" width="78.75%" />
+
+You can also fit to a function such as a polynomial. Color can be
+assigned to override
+
+``` r
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) + 
+    geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = FALSE, color = "black", size = 0.5) +
+  geom_point() +
+    scale_color_manual(values = my_color) +
+    guides(color = guide_legend(reverse = TRUE)) +
+    facet_wrap(vars(class), as.table = FALSE)
+```
+
+<img src="images/cm212-unnamed-chunk-45-1.png" width="78.75%" />
+
+## references
+
+<div id="refs">
+
+<div id="ref-Wickham+Grolemund:2017">
+
+Wickham H and Grolemund G (2017) *R for Data Science.* O’Reilly Media,
+Inc., Sebastopol, CA <https://r4ds.had.co.nz/>
+
+</div>
+
+</div>
+
+***
+<a href="#top">&#9650; top of page</a>    
+[&#9665; calendar](../README.md#calendar)    
+[&#9665; index](../README.md#index)
