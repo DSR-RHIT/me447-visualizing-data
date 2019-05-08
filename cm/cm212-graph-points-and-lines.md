@@ -59,7 +59,7 @@ Simple graph
 
 ``` r
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-  geom_point()
+        geom_point()
 ```
 
 <img src="images/cm212-unnamed-chunk-4-1.png" width="78.75%" />
@@ -68,7 +68,7 @@ If we want all the dots the same color, we change color in the geom.
 
 ``` r
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-  geom_point(color = rcb("mid_BG"))
+        geom_point(color = rcb("mid_BG"))
 ```
 
 <img src="images/cm212-unnamed-chunk-5-1.png" width="78.75%" />
@@ -96,7 +96,7 @@ mpg <- mpg %>%
 
 # graph
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) + 
-  geom_point()
+        geom_point()
 ```
 
 <img src="images/cm212-unnamed-chunk-6-1.png" width="78.75%" />
@@ -107,8 +107,8 @@ To change these colors, we add
 my_color <- c(rcb("dark_BG"), rcb("mid_BG"), rcb("light_BG"), rcb("light_Br"), rcb("mid_Br"), rcb("dark_Br"))
 
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) + 
-  geom_point() +
-    scale_color_manual(values = my_color)
+        geom_point() +
+        scale_color_manual(values = my_color)
 ```
 
 <img src="images/cm212-unnamed-chunk-7-1.png" width="78.75%" />
@@ -118,11 +118,11 @@ hwy.
 
 ``` r
 mpg  <-  mpg %>% 
-    mutate(class = fct_reorder(class, hwy, mean))
+        mutate(class = fct_reorder(class, hwy, mean))
 
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) + 
-  geom_point() +
-    scale_color_manual(values = my_color)
+        geom_point() +
+        scale_color_manual(values = my_color)
 ```
 
 <img src="images/cm212-unnamed-chunk-8-1.png" width="78.75%" />
@@ -134,8 +134,8 @@ the best mileage and brown the worst.
 my_color <- rev(my_color)
 
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) + 
-  geom_point() +
-    scale_color_manual(values = my_color)
+        geom_point() +
+        scale_color_manual(values = my_color)
 ```
 
 <img src="images/cm212-unnamed-chunk-9-1.png" width="78.75%" />
@@ -144,9 +144,9 @@ And I want the order of the legend reversed
 
 ``` r
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) + 
-  geom_point() +
-    scale_color_manual(values = my_color) +
-    guides(color = guide_legend(reverse = TRUE))
+        geom_point() +
+        scale_color_manual(values = my_color) +
+        guides(color = guide_legend(reverse = TRUE))
 ```
 
 <img src="images/cm212-unnamed-chunk-10-1.png" width="78.75%" />
@@ -155,10 +155,10 @@ If we facet the graph on the same variable, the assigned colors remain
 
 ``` r
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) + 
-  geom_point() +
-    scale_color_manual(values = my_color) +
-    guides(color = guide_legend(reverse = TRUE)) +
-    facet_wrap(vars(class), as.table = FALSE)
+        geom_point() +
+        scale_color_manual(values = my_color) +
+        guides(color = guide_legend(reverse = TRUE)) +
+        facet_wrap(vars(class), as.table = FALSE)
 ```
 
 <img src="images/cm212-unnamed-chunk-11-1.png" width="78.75%" />
@@ -167,14 +167,14 @@ If we facet on a different arable, the assigned colors remain.
 
 ``` r
 mpg <- mpg %>% 
-    filter(cyl != 5) %>% 
-    mutate(cyl = fct_reorder(factor(cyl), hwy, mean)) 
+        filter(cyl != 5) %>% 
+        mutate(cyl = fct_reorder(factor(cyl), hwy, mean)) 
 
 p <- ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) + 
-  geom_point() +
-    scale_color_manual(values = my_color) +
-    guides(color = guide_legend(reverse = TRUE)) +
-    facet_wrap(vars(cyl), as.table = FALSE) 
+        geom_point() +
+        scale_color_manual(values = my_color) +
+        guides(color = guide_legend(reverse = TRUE)) +
+        facet_wrap(vars(cyl), as.table = FALSE) 
 p
 ```
 
@@ -188,7 +188,7 @@ Here, I use `set.seed()` so that the random jittering is fixed.
 ``` r
 set.seed(20190507)
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-  geom_jitter(size = 3, alpha = 0.3)
+        geom_jitter(size = 3, alpha = 0.3)
 ```
 
 <img src="images/cm212-unnamed-chunk-14-1.png" width="78.75%" />
@@ -197,7 +197,7 @@ Likewise, in the faceted graph,
 
 ``` r
 p <- p +
-    geom_jitter(size = 3)
+        geom_jitter(size = 3)
 p
 ```
 
@@ -208,10 +208,10 @@ be assigned to a continuous variable, as shown here,
 
 ``` r
 mpg <- mpg %>% 
-    mutate(manufacturer = fct_reorder(factor(manufacturer), hwy, mean)) 
+        mutate(manufacturer = fct_reorder(factor(manufacturer), hwy, mean)) 
 
 ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer, size = displ))+
-    geom_point(color = rcb("mid_BG"))
+        geom_point(color = rcb("mid_BG"))
 ```
 
 <img src="images/cm212-unnamed-chunk-16-1.png" width="78.75%" />
@@ -219,10 +219,12 @@ ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer, size = displ))+
 Plotting size and color in `aes()` produces two legends
 
 ``` r
-ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer, size = displ, color = class))+
-    geom_point() +
-    scale_color_manual(values = my_color) +
-    guides(color = guide_legend(reverse = TRUE))
+ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer, 
+                size = displ, 
+                color = class))+
+        geom_point() +
+        scale_color_manual(values = my_color) +
+        guides(color = guide_legend(reverse = TRUE))
 ```
 
 <img src="images/cm212-unnamed-chunk-17-1.png" width="78.75%" />
@@ -230,10 +232,12 @@ ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer, size = displ, color 
 In this case, I’d like to increase the symbol size in the legend
 
 ``` r
-ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer, size = displ, color = class))+
-    geom_point() +
-    scale_color_manual(values = my_color) +
-    guides(color = guide_legend(reverse = TRUE, override.aes = list(size = 4)))
+ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer, 
+                size = displ, 
+                color = class))+
+        geom_point() +
+        scale_color_manual(values = my_color) +
+        guides(color = guide_legend(reverse = TRUE, override.aes = list(size = 4)))
 ```
 
 <img src="images/cm212-unnamed-chunk-18-1.png" width="78.75%" />
@@ -250,7 +254,7 @@ Like color, shape can be assigned to all the symbols in the geom
 ``` r
 set.seed(20190507)
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-  geom_jitter(shape = 5)
+        geom_jitter(shape = 5)
 ```
 
 <img src="images/cm212-unnamed-chunk-21-1.png" width="78.75%" />
@@ -259,9 +263,9 @@ Like color, different shapes are used if mapped to a variable using
 `aes()`.
 
 ``` r
-ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer, shape = class))+
-    geom_jitter(size = 2, alpha = 0.5, width = 1, height = 0) +
-    guides(shape = guide_legend(reverse = TRUE, override.aes = list(size = 2.5)))
+ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer, shape = class)) +
+        geom_jitter(size = 2, alpha = 0.5, width = 1, height = 0) +
+        guides(shape = guide_legend(reverse = TRUE, override.aes = list(size = 2.5)))
 ```
 
 <img src="images/cm212-unnamed-chunk-22-1.png" width="78.75%" />
@@ -271,10 +275,10 @@ We can specify the shapes we want with `scale_shape_manual()`
 ``` r
 my_shape <- c(17, 16, 15, 2, 1, 0)
 
-ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer, shape = class))+
-    geom_jitter(size = 2, alpha = 0.5, width = 1, height = 0) +
-    guides(shape = guide_legend(reverse = TRUE, override.aes = list(size = 2.5))) +
-  scale_shape_manual(values = my_shape)
+ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer, shape = class)) +
+        geom_jitter(size = 2, alpha = 0.5, width = 1, height = 0) +
+        guides(shape = guide_legend(reverse = TRUE, override.aes = list(size = 2.5))) +
+        scale_shape_manual(values = my_shape)
 ```
 
 <img src="images/cm212-unnamed-chunk-23-1.png" width="78.75%" />
@@ -282,11 +286,13 @@ ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer, shape = class))+
 And we can combine color and shape, but we get two legends,
 
 ``` r
-ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer, shape = class, color = class))+
-    geom_jitter(size = 2, width = 1, height = 0) +
-    guides(shape = guide_legend(reverse = TRUE, override.aes = list(size = 2.5))) +
-  scale_shape_manual(values = my_shape) +
-    scale_color_manual(values = my_color)
+ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer, 
+                shape = class, 
+                color = class)) +
+        geom_jitter(size = 2, width = 1, height = 0) +
+        guides(shape = guide_legend(reverse = TRUE, override.aes = list(size = 2.5))) +
+        scale_shape_manual(values = my_shape) +
+        scale_color_manual(values = my_color)
 ```
 
 <img src="images/cm212-unnamed-chunk-24-1.png" width="78.75%" />
@@ -295,14 +301,14 @@ We can add color to the shape guide and omit the color-only legend.
 
 ``` r
 ggplot(data = mpg, mapping = aes(x = hwy, y = manufacturer, 
-                                                                 shape = class, 
-                                                                 color = class)) +
-    geom_jitter(size = 2, width = 1, height = 0) +
-    guides(shape = guide_legend(reverse = TRUE, 
-                                                            override.aes = list(size = 2.5, color = my_color)), 
-                 color = "none") +
-  scale_shape_manual(values = my_shape) +
-    scale_color_manual(values = my_color)
+                shape = class, 
+                color = class)) +
+        geom_jitter(size = 2, width = 1, height = 0) +
+        guides(shape = guide_legend(reverse = TRUE, 
+                override.aes = list(size = 2.5, color = my_color)), 
+                color = "none") +
+        scale_shape_manual(values = my_shape) +
+        scale_color_manual(values = my_color)
 ```
 
 <img src="images/cm212-unnamed-chunk-25-1.png" width="78.75%" />
@@ -322,11 +328,13 @@ Because cyl is a variable, we assign it to `label` in `aers()` and use
 `geom_text()`
 
 ``` r
-ggplot(data = mpg, mapping = aes(x = displ, y = hwy, label = cyl, color = cyl)) + 
-  geom_text(size = 3) +
-    scale_color_manual(values = my_color[c(1, 4, 5)]) +
-    guides(color = guide_legend(reverse = TRUE)) +
-    facet_wrap(vars(class), as.table = FALSE)
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy, 
+                label = cyl, 
+                color = cyl)) + 
+        geom_text(size = 3) +
+        scale_color_manual(values = my_color[c(1, 4, 5)]) +
+        guides(color = guide_legend(reverse = TRUE)) +
+        facet_wrap(vars(class), as.table = FALSE)
 ```
 
 <img src="images/cm212-unnamed-chunk-27-1.png" width="78.75%" />
@@ -382,11 +390,11 @@ Distinguish by color. First, convert the id to a factor and order it.
 
 ``` r
 df <- df %>% 
-    mutate(id = fct_reorder(id, value))
+        mutate(id = fct_reorder(id, value))
 
 ggplot(data = df, mapping = aes(x = time, y = value, color = id)) +
-    geom_line() +
-    guides(color = guide_legend(reverse = TRUE))
+        geom_line() +
+        guides(color = guide_legend(reverse = TRUE))
 ```
 
 <img src="images/cm212-unnamed-chunk-31-1.png" width="78.75%" />
@@ -395,8 +403,8 @@ Distinguish by line type
 
 ``` r
 ggplot(data = df, mapping = aes(x = time, y = value, linetype = id)) +
-    geom_line() +
-    guides(linetype = guide_legend(reverse = TRUE))
+        geom_line() +
+        guides(linetype = guide_legend(reverse = TRUE))
 ```
 
 <img src="images/cm212-unnamed-chunk-32-1.png" width="78.75%" />
@@ -406,8 +414,8 @@ the geom.
 
 ``` r
 ggplot(data = df, mapping = aes(x = time, y = value, linetype = id)) +
-    geom_line(color = rcb("dark_BG"), size = 1) +
-    guides(linetype = guide_legend(reverse = TRUE))
+        geom_line(color = rcb("dark_BG"), size = 1) +
+        guides(linetype = guide_legend(reverse = TRUE))
 ```
 
 <img src="images/cm212-unnamed-chunk-33-1.png" width="78.75%" />
@@ -415,10 +423,11 @@ ggplot(data = df, mapping = aes(x = time, y = value, linetype = id)) +
 And multiple attributes can be assigned is `aes()`.
 
 ``` r
-ggplot(data = df, mapping = aes(x = time, y = value, linetype = id, color = id)) +
-    geom_line(size = 1) +
-    guides(color = guide_legend(reverse = TRUE), 
-                 linetype = "none")
+ggplot(data = df, mapping = aes(x = time, y = value, 
+                linetype = id, 
+                color    = id)) +
+        geom_line(size = 1) +
+        guides(color = guide_legend(reverse = TRUE), linetype = "none")
 ```
 
 <img src="images/cm212-unnamed-chunk-34-1.png" width="78.75%" />
@@ -426,11 +435,12 @@ ggplot(data = df, mapping = aes(x = time, y = value, linetype = id, color = id))
 And colors can be manually assigned,
 
 ``` r
-ggplot(data = df, mapping = aes(x = time, y = value, linetype = id, color = id)) +
-    geom_line(size = 1) +
-    scale_color_manual(values = my_color[c(4, 5, 2)]) +
-    guides(color = guide_legend(reverse = TRUE), 
-                 linetype = "none")
+ggplot(data = df, mapping = aes(x = time, y = value, 
+                linetype = id, 
+                color    = id)) +
+        geom_line(size = 1) +
+        scale_color_manual(values = my_color[c(4, 5, 2)]) +
+        guides(color = guide_legend(reverse = TRUE), linetype = "none")
 ```
 
 <img src="images/cm212-unnamed-chunk-35-1.png" width="78.75%" />
@@ -439,8 +449,8 @@ Facets,
 
 ``` r
 ggplot(data = df, mapping = aes(x = time, y = value)) +
-    geom_line(size = 1, color = rcb("dark_BG")) +
-    facet_wrap(vars(id), as.table = FALSE, ncol = 3)
+        geom_line(size = 1, color = rcb("dark_BG")) +
+        facet_wrap(vars(id), as.table = FALSE, ncol = 3)
 ```
 
 <img src="images/cm212-unnamed-chunk-36-1.png" width="78.75%" />
@@ -456,8 +466,8 @@ so that the line does not obscure the data.
 
 ``` r
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-    geom_smooth(method = "lm") +
-    geom_jitter(size = 2, alpha = 0.5) 
+        geom_smooth(method = "lm") +
+        geom_jitter(size = 2, alpha = 0.5) 
 ```
 
 <img src="images/cm212-unnamed-chunk-38-1.png" width="78.75%" />
@@ -466,8 +476,8 @@ Omit the confidence interval with `se = FALSE`
 
 ``` r
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-    geom_smooth(method = "lm", se = FALSE) +
-    geom_jitter(size = 2, alpha = 0.5) 
+        geom_smooth(method = "lm", se = FALSE) +
+        geom_jitter(size = 2, alpha = 0.5) 
 ```
 
 <img src="images/cm212-unnamed-chunk-39-1.png" width="78.75%" />
@@ -486,8 +496,8 @@ Loess
 
 ``` r
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-    geom_smooth(method = "loess", se = FALSE) +
-      geom_jitter(size = 2, alpha = 0.5)
+        geom_smooth(method = "loess", se = FALSE) +
+        geom_jitter(size = 2, alpha = 0.5)
 ```
 
 <img src="images/cm212-unnamed-chunk-41-1.png" width="78.75%" />
@@ -507,8 +517,8 @@ Larger `span` produces smoother lines.
 
 ``` r
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-    geom_smooth(method = "loess", se = FALSE, span = 0.9) +
-      geom_jitter(size = 2, alpha = 0.5)
+        geom_smooth(method = "loess", se = FALSE, span = 0.9) +
+        geom_jitter(size = 2, alpha = 0.5)
 ```
 
 <img src="images/cm212-unnamed-chunk-43-1.png" width="78.75%" />
@@ -517,25 +527,28 @@ Facets with unique smooth fits in each
 
 ``` r
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) + 
-    geom_smooth(method = "loess", se = FALSE, smooth = 1) +
-  geom_point() +
-    scale_color_manual(values = my_color) +
-    guides(color = guide_legend(reverse = TRUE)) +
-    facet_wrap(vars(class), as.table = FALSE)
+        geom_smooth(method = "loess", se = FALSE, smooth = 1) +
+        geom_point() +
+        scale_color_manual(values = my_color) +
+        guides(color = guide_legend(reverse = TRUE)) +
+        facet_wrap(vars(class), as.table = FALSE)
 ```
 
 <img src="images/cm212-unnamed-chunk-44-1.png" width="78.75%" />
 
 You can also fit to a function such as a polynomial. Color can be
-assigned to override
+assigned in the smooth geom.
 
 ``` r
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) + 
-    geom_smooth(method = "lm", formula = y ~ poly(x, 2), se = FALSE, color = "black", size = 0.5) +
-  geom_point() +
-    scale_color_manual(values = my_color) +
-    guides(color = guide_legend(reverse = TRUE)) +
-    facet_wrap(vars(class), as.table = FALSE)
+        geom_smooth(method = "lm", 
+                formula = y ~ poly(x, 2), 
+                se = FALSE, color = "black", 
+                size = 0.5) +
+        geom_point() +
+        scale_color_manual(values = my_color) +
+        guides(color = guide_legend(reverse = TRUE)) +
+        facet_wrap(vars(class), as.table = FALSE)
 ```
 
 <img src="images/cm212-unnamed-chunk-45-1.png" width="78.75%" />
