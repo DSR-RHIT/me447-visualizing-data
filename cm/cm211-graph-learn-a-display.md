@@ -135,7 +135,11 @@ Resources
     requirements](cm301-report-display-reqts.md#diverging-stacked-bar)  
   - [likert()](https://cran.r-project.org/web/packages/HH/index.html) in
     the **HH** package  
-  - Heiberger and Robbins ([2014](#ref-Heiberger+Robbins:2014))
+  - Heiberger and Robbins ([2014](#ref-Heiberger+Robbins:2014))  
+  - ![](../resources/icon-blog.png) [Likert-plots and grouped
+    Likert-plots](https://strengejacke.wordpress.com/2019/05/08/likert-plots-and-grouped-likert-plots-rstats/)
+    an introduction to the [sjPlot
+    package](https://strengejacke.github.io/sjPlot/)
 
 Example
 

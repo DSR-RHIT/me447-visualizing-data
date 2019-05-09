@@ -291,8 +291,8 @@ We might add horizontal and vertical lines reference lines at 4 years.
 
 ``` r
 ggplot(data = df, mapping = aes(x = Traditional, y = Nontraditional)) +
-          geom_hline(yintercept = 4, color = rcb("light_Gray")) +
-            geom_vline(xintercept = 4, color = rcb("light_Gray")) +
+        geom_hline(yintercept = 4, color = rcb("light_Gray")) +
+        geom_vline(xintercept = 4, color = rcb("light_Gray")) +
         geom_abline(slope = 1, intercept = 0, color = rcb("light_Gray")) +
         geom_point() +
         coord_fixed(ratio = 1) +
