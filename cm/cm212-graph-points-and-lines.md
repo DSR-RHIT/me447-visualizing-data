@@ -17,6 +17,8 @@ BY-ND 2.0</a> <br> </small>
 [symbol text legend](#symbol-text-legend)  
 [line color size type](#line-color-size-type)  
 [smooth fit lines](#smooth-fit-lines)  
+[identical smooth fit in every
+panel](#identical-smooth-fit-in-every-panel)  
 [references](#references)
 
 ## introduction
@@ -672,6 +674,13 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) +
 ```
 
 <img src="images/cm212-unnamed-chunk-53-1.png" width="90%" />
+
+## identical smooth fit in every panel
+
+As final example, revisit the code that produced the complex graph I
+showed you at the end of the [Graph basics
+lesson](cm201-graph-basics.md#beyond-basics-a-complex-design). I suspect
+that the code will make more sense to you now than it did then.
 
 ## references
 

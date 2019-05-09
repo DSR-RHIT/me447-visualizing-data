@@ -39,10 +39,11 @@ BY-NC 2.0</a> <br> </small>
 ## contents
 
 [introduction](#introduction)  
-[highlight points](#highlight-points)  
-[highlight labels](#highlight-labels)  
-[text in one panel](#text-in-one-panel)  
-[text in multiple panels](#text-in-multiple-panels)  
+[highlight data symbols](#highlight-data-symbols)  
+[highlight data with labels](#highlight-data-with-labels)  
+[text placed arbitrarily](#text-placed-arbitrarily)  
+[text placed arbitrarily in multiple
+panels](#text-placed-arbitrarily-in-multiple-panels)  
 [references](#references)
 
 ## introduction
@@ -63,7 +64,7 @@ library("gapminder")
 library("ggrepel")
 ```
 
-## highlight points
+## highlight data symbols
 
 Suppose we have this graph
 
@@ -116,7 +117,7 @@ p1
 
 <img src="images/cm214-unnamed-chunk-5-1.png" width="78.75%" />
 
-## highlight labels
+## highlight data with labels
 
 To label the country, use could use `geom_text()`, but the printing
 overlaps the data points.
@@ -181,7 +182,7 @@ p3
 
 <img src="images/cm214-unnamed-chunk-8-1.png" width="78.75%" />
 
-## text in one panel
+## text placed arbitrarily
 
 I create a new data frame with one row that contains variables to locate
 the text in one panel. The variable names that place the text have to be
@@ -218,7 +219,7 @@ p4
 
 <img src="images/cm214-unnamed-chunk-10-1.png" width="78.75%" />
 
-## text in multiple panels
+## text placed arbitrarily in multiple panels
 
 Create a tibble like the one above, but this one has multiple rows; one
 row per text label.
