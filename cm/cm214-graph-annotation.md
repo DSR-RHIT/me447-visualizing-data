@@ -3,7 +3,7 @@ annotation
 
 <img src="../resources/cm214-header.png" width="100%" /> <small> <br>
 <i>Annotations</i> by Nicolas Nova is licensed under
-<a href="https://creativecommons.org/licenses/by-nc/2.0/legalcodee">CC
+<a href="https://creativecommons.org/licenses/by-nc/2.0/legalcode">CC
 BY-NC 2.0</a> <br> </small>
 
 <!-- adding extra text, points -->

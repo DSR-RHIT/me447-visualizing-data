@@ -3,7 +3,7 @@ lines
 
 <img src="../resources/cm213-header.png" width="100%" /> <small> <br>
 <i>Lines</i> by jurek.d is licensed under
-<a href="https://creativecommons.org/licenses/by-nc/2.0/legalcodee">CC
+<a href="https://creativecommons.org/licenses/by-nc/2.0/legalcode">CC
 BY-NC 2.0</a> <br> </small>
 
 ## contents
@@ -15,10 +15,6 @@ BY-NC 2.0</a> <br> </small>
 [reference lines vertical](#reference-lines-vertical)  
 [reference lines horizontal](#reference-lines-horizontal)  
 [reference lines sloped](#reference-lines-sloped)  
-[linear fit lines](#linear-fit-lines)  
-[loess fit lines](#loess-fit-lines)  
-[smooth fit identical in every
-panel](#smooth-fit-identical-in-every-panel)  
 [exercises](#exercises)  
 [references](#references)
 
@@ -483,146 +479,6 @@ are means.
 
 <br> <a href="#top">▲ top of page</a>
 
-## linear fit lines
-
-The most common smooth fits are linear and loess. We’ll use the mpg
-dataset again, slightly edited,
-
-``` r
-mpg <- mpg %>% 
-        filter(class != "2seater") %>% 
-        mutate(class  = fct_reorder(class, hwy, mean)) %>% 
-        filter(cyl   != 5) %>% 
-        mutate(cyl    = fct_reorder(factor(cyl), hwy, mean)) 
-```
-
-A linear fit. Generally, plot the smooth curve first, then the symbols,
-so that the line does not obscure the data.
-
-``` r
-ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-        geom_smooth(method = "lm") +
-        geom_jitter(size = 2, alpha = 0.5) 
-```
-
-<img src="images/cm213-unnamed-chunk-38-1.png" width="78.75%" />
-
-Omit the confidence interval with `se = FALSE`
-
-``` r
-ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-        geom_smooth(method = "lm", se = FALSE) +
-        geom_jitter(size = 2, alpha = 0.5) 
-```
-
-<img src="images/cm213-unnamed-chunk-39-1.png" width="78.75%" />
-
-Size, linetype, and color,
-
-``` r
-ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-    geom_smooth(method = "lm", se = FALSE, size = 0.5, linetype = 2, color = rcb("dark_BG")) +
-      geom_jitter(size = 2, alpha = 0.5)
-```
-
-<img src="images/cm213-unnamed-chunk-40-1.png" width="78.75%" />
-
-There are times where the data are so dense they obscure the smooth fit.
-In such a case, draw the data first, them the fit, using a thin line
-with high contrast.
-
-``` r
-ggplot(data = filter(diamonds, carat <= 3), mapping= aes(x = carat, y = price)) +
-    geom_point() + 
-    geom_smooth(method = "lm", color = rcb("light_Gray"), size = 0.5)
-```
-
-<img src="images/cm213-unnamed-chunk-41-1.png" width="78.75%" />
-
-<br> <a href="#top">▲ top of page</a>
-
-## loess fit lines
-
-A loess (local polynomial regression fitting) smooth fit is considered a
-“local” regression because the fitting at point x is weighted toward the
-data nearest to x.
-
-``` r
-ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-        geom_smooth(method = "loess", se = FALSE) +
-        geom_jitter(size = 2, alpha = 0.5)
-```
-
-<img src="images/cm213-unnamed-chunk-42-1.png" width="78.75%" />
-
-The distance from x that is considered “near” is controlled by the
-`span` setting between 0 and 1. Smaller numbers produce wigglier lines.
-
-``` r
-ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-    geom_smooth(method = "loess", se = FALSE, span = 0.3) +
-      geom_jitter(size = 2, alpha = 0.5)
-```
-
-<img src="images/cm213-unnamed-chunk-43-1.png" width="78.75%" />
-
-Larger `span` produces smoother lines.
-
-``` r
-ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-        geom_smooth(method = "loess", se = FALSE, span = 0.9) +
-        geom_jitter(size = 2, alpha = 0.5)
-```
-
-<img src="images/cm213-unnamed-chunk-44-1.png" width="78.75%" />
-
-Facets with unique smooth fits in each
-
-``` r
-ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) + 
-        geom_smooth(method = "loess", se = FALSE, span = 1) +
-        geom_point() +
-        scale_color_manual(values = my_color_6) +
-        guides(color = guide_legend(reverse = TRUE)) +
-        facet_wrap(vars(class), as.table = FALSE)
-```
-
-<img src="images/cm213-unnamed-chunk-45-1.png" width="78.75%" />
-
-You can also fit to a function such as a polynomial. Color can be
-assigned in the smooth geom.
-
-``` r
-ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = class)) + 
-        geom_smooth(method = "lm", 
-                formula = y ~ poly(x, 2), 
-                se    = FALSE, 
-                color = "black", 
-                size  = 0.5) +
-        geom_point() +
-        scale_color_manual(values = my_color_6) +
-        guides(color = guide_legend(reverse = TRUE)) +
-        facet_wrap(vars(class), as.table = FALSE)
-```
-
-<img src="images/cm213-unnamed-chunk-46-1.png" width="78.75%" />
-
-<br> <a href="#top">▲ top of page</a>
-
-## smooth fit identical in every panel
-
-As final example, revisit the code that produced the complex graph I
-showed you at the end of the [Graph basics
-lesson](cm201-graph-basics.md#beyond-basics-a-complex-design).
-
-I suspect that the code will make more sense to you now than it did
-then.
-
-Pay particular attention to the `data` and `aes()` arguments in the
-geoms.
-
-<br> <a href="#top">▲ top of page</a>
-
 ## exercises
 
 **1. nontraditional**
@@ -631,7 +487,7 @@ Edit this graph (developed earlier) to that the data markers are
 replaced with a letter to represent race and that sex is encoded using
 color.
 
-<img src="images/cm213-unnamed-chunk-47-1.png" width="78.75%" />
+<img src="images/cm213-unnamed-chunk-36-1.png" width="78.75%" />
 
 ## references
 
