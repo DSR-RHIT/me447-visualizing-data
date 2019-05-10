@@ -9,7 +9,7 @@ learn a display
 
 [introduction](#introduction)  
 [cycle plot](#cycle-plot)  
-[multivariate bar graph](#multivariate-bar-graph)  
+[multivariate bar](#multivariate-bar)  
 [financial (OHLC) plot](#financial-ohlc-plot)  
 [diverging stacked bar](#diverging-stacked-bar)  
 [micromaps](#micromaps)  
@@ -71,7 +71,7 @@ Example
 
 <br> <a href="#top">▲ top of page</a>
 
-## multivariate bar graph
+## multivariate bar
 
 Stephen Few argues that a mulitvariate bar graph is suoperior to a
 mosaic chart for understanding multivariate categorical data. A good
