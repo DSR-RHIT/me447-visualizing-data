@@ -29,13 +29,14 @@ to data that is otherwise unavailable.
 |                                                             | [line graph](cm207-graph-line-graph.md#line-graph) or [scatterplot](cm205-graph-scatterplot.md#scatterplot)                                            | two           | optional     |
 | [D6 multivariate](#d6-multivariate)                         | [scatterplot matrix](cm209-graph-scatterplot-matrix.md#scatterplot-matrix) or [parallel coordinate](cm210-graph-parallel-coord.md#parallel-coordinate) | four or more  | one optional |
 |                                                             | [conditioning plot](cm208-graph-conditioning-plot.md#conditioning-plot)                                                                                | three or four | none         |
-| [D7 learn a display](#d7-learn-a-display)                   | [cycle plot](#cycle-plot)                                                                                                                              | one           | time         |
-|                                                             | [multivariate bar](#multivariate-bar)                                                                                                                  | one           | two or more  |
-|                                                             | [financial (OHLC) plot](#financial-ohlc-plot)                                                                                                          | four          | time         |
-|                                                             | [diverging stacked bar](#diverging-stacked-bar)                                                                                                        | one           | two          |
-|                                                             | [micromap](#micromap)                                                                                                                                  | one           |              |
-|                                                             | [proportional symbol map](#proportional-symbol-map)                                                                                                    |               |              |
-|                                                             | [dot density map](#dot-density-map)                                                                                                                    |               |              |
+| [D7 learn a display](#d7-learn-a-display)                   |                                                                                                                                                        |               |              |
+| [D7 cycle plot](#d7-cycle-plot)                             | [cycle plot](cm211-graph-learn-a-display.md#cycle-plot)                                                                                                | one           | time         |
+| [D7 multivariate bar](#d7-multivariate-bar)                 | [multivariate bar](cm211-graph-learn-a-display.md#multivariate-bar)                                                                                    | one           | two or more  |
+| [D7 financial (OHLC) plot](#d7-financial-ohlc-plot)         | [financial (OHLC) plot](cm211-graph-learn-a-display.md#financial-\(OHLC\)-plot)                                                                        | four          | time         |
+| [D7 diverging stacked bar](#d7-diverging-stacked-bar)       | [diverging stacked bar](cm211-graph-learn-a-display.md#diverging-stacked-bar)                                                                          | one           | two          |
+| [D7 micromap](#d7-micromap)                                 | [micromap](cm211-graph-learn-a-display.md#micromap)                                                                                                    | one           |              |
+| [D7 proportional symbol map](#d7-proportional-symbol-map)   | [proportional symbol map](cm211-graph-learn-a-display.md#proportional-symbol-map)                                                                      |               |              |
+| [D7 dot density map](#d7-dot-density-map)                   | [dot density map](cm211-graph-learn-a-display.md#dot-density-map)                                                                                      |               |              |
 
 ## D1 distributions
 
@@ -297,17 +298,17 @@ Tutorials
 This is a graph type you learn to construct on your own. Select one only
 from the list and include it in the portfolio.
 
-[cycle plot](#cycle-plot)  
-[multivariate bar](#multivariate-bar)  
-[financial (OHLC) plot](#financial-ohlc-plot)  
-[diverging stacked bar](#diverging-stacked-bar)  
-[micromap](#micromap)  
-[proportional symbol map](#proportional-symbol-map)  
-[dot density map](#dot-density-map)
+\[cycle plot\]  
+\[multivariate bar\]  
+\[financial (OHLC) plot\]  
+\[diverging stacked bar\]  
+\[micromap\]  
+\[proportional symbol map\]  
+\[dot density map\]
 
 <br> <a href="#top">▲ top of page</a>
 
-## cycle plot
+## D7 cycle plot
 
 Data requirements
 
@@ -325,7 +326,7 @@ Graph requirements
     cyclic nature of the data, then display the cycle plot, and discuss
     your rationale for the period you selected.
 
-## multivariate bar
+## D7 multivariate bar
 
 Multivariate bar data has one quantitative value at each intersection of
 levels of the categories. Thus, the minimum of 2 quantitative variables,
@@ -339,7 +340,7 @@ Data requirements
   - Two categorical variables, one with 2 levels, one with 5 levels
     (minimum)
 
-## financial (OHLC) plot
+## D7 financial (OHLC) plot
 
 Data requirements
 
@@ -352,7 +353,7 @@ Data requirements
 
 <br> <a href="#top">▲ top of page</a>
 
-## diverging stacked bar
+## D7 diverging stacked bar
 
 Data requirements
 
@@ -369,19 +370,19 @@ Data requirements
 
 <br> <a href="#top">▲ top of page</a>
 
-## micromap
+## D7 micromap
 
 Data requirements
 
 <br> <a href="#top">▲ top of page</a>
 
-## proportional symbol map
+## D7 proportional symbol map
 
 Data requirements
 
 <br> <a href="#top">▲ top of page</a>
 
-## dot density map
+## D7 dot density map
 
 Data requirements
 
