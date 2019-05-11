@@ -132,7 +132,7 @@ bank <- as_tibble(bank) %>%
 #> $ Diagonal <dbl> 141.0, 141.7, 142.2, 142.0, 141.8, 141.4, 141.6, 141....
 ```
 
-The basic parallel coordinate plot usibg `GGally::ggparcoord()`
+The basic parallel coordinate plot using `GGally::ggparcoord()`
 
 ``` r
 ggparcoord(bank, columns = 2:7)
@@ -260,6 +260,15 @@ names(scag)
 ```
 
 <br> <a href="#top">▲ top of page</a>
+
+## java error
+
+If you have a character variable, and get a Java error like this
+
+    Error in newArray(jobj = x, ...) :
+    o does not refer to a java array
+
+Not solved yet. Related to rJava and scagnostics but not sure how.
 
 ## exercises
 

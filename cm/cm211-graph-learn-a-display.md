@@ -43,66 +43,97 @@ and some references to get you started.
 
 ## cycle plot
 
+As [Stephen Few](https://www.perceptualedge.com/blog/?p=1780) explains,
+“A cycle plot is a type of line graph that is useful for displaying
+cyclical patterns across time. Cycle plots were first created in 1978 by
+William Cleveland and his colleagues at Bell Labs.” The period of the
+cycle can vary depending on the data, e.g., hour of day, day of week,
+month of year, quarter of year, etc.
+
 Resources
 
+  - Introduction to cycle plots (Robbins, [2008](#ref-Robbins:2008))  
   - [Data requirements](cm301-report-display-reqts.md#cycle-plot)  
   - [monthplot()](https://www.rdocumentation.org/packages/stats/versions/3.6.0/topics/monthplot)
     in base R  
   - [plotMonth()](ttps://CRAN.R-project.org/package=season) in the
     **season** package
 
-Example
-
-<img src="../resources/cm211-cycle-plot-01.png" width="70%" />
-
-Example
+<br> Example: day of week cycle. First, at the left of the data
+rectangle, the Monday values are graphed for eight successive weeks,
+then the Tuesday values are graphed, and so forth. For each cycle
+subseries, the mean of the values is shown by a horizontal line segment.
 
 <img src="../resources/cm211-cycle-plot-02.png" width="70%" />
 
-<!-- <br> -->
+<br> Example: month of year cycle. First, at the left of the data
+rectangle, the October values are graphed for 34 successive years, then
+the November values are graphed, and so forth.
 
-<!-- Example of cyclic data  -->
+<img src="../resources/cm211-cycle-plot-01.png" width="70%" />
 
-<!-- ```{r} -->
+<br> Example: month of year cycle. First, at the left of the data
+rectangle, the January values are graphed for 11 successive years, then
+the February values are graphed, and so forth.
 
-<!-- include_graphics("../resources/cm211-cycle-plot-03.png") -->
-
-<!-- ``` -->
+<img src="../resources/cm211-cycle-plot-04.png" width="70%" />
 
 <br> <a href="#top">▲ top of page</a>
 
 ## multivariate bar
 
-Stephen Few argues that a mulitvariate bar graph is suoperior to a
-mosaic chart for understanding multivariate categorical data. A good
-source for raw material for creating a multivariate bar graph,
-therefore, is any mosaic chart.
+This type of bar graph is useful when we have multivariate categorical
+data.
+
+Such data is often illustrated using a [mosaic
+chart](https://ncss-wpengine.netdna-ssl.com/wp-content/themes/ncss/pdf/Procedures/NCSS/Mosaic_Plots.pdf)
+(a graph type we have not used in the course). However, Stephen Few
+argues that a multivariate bar graph is superior to a mosaic chart for
+understanding multivariate categorical data. “A coordinated set of bar
+graphs can reveal the same relationships in a way that can be more
+easily and accurately perceived and understood.” (Few,
+[2014](#ref-Few:2014))
+
+Thus, any mosaic chart you find can be a good candidate for redesigning
+as a multivariate bar chart.
 
 Resources
 
+  - Are mosaic plots worthwhile? (Few, [2014](#ref-Few:2014))  
   - [Data
     requirements](cm301-report-display-reqts.md#multivariate-bar)  
   - [geom\_bar() and
     geom\_col()](https://ggplot2.tidyverse.org/reference/geom_bar.html)
-    in **ggplot2**  
-  - Stephen Few ([2014](#ref-Few:2014))
+    in **ggplot2**
 
-Example
+<br> Example
+
+  - Two quantitative variables: number of people in study and percentage
+    who became paralyzed
+  - Two categorical variables: age group (6 levels) and vaccination
+    status (2 levels)
 
 <img src="../resources/cm211-multivariate-bar.png" width="50%" />
+
+<br> Example
+
+  - Two quantitative variables: number and percentage
+  - Four categorical variables: Sex (2 levels), shipboard status (4
+    levels), age (2 levels), and outcome (2 levels)
+
+<img src="../resources/cm211-multivariate-bar-02.png" width="70%" />
 
 <br> <a href="#top">▲ top of page</a>
 
 ## financial (OHLC) plot
 
 A financial plot, or OHLC (open-high-low-close) plot, represents a time
-series of market behavior.
-
-The categorical variable is the date.
+series of market behavior. You may use either a candlestick style or bar
+style.
 
 The quantitative variables are the opening value, high value, low value,
 and closing value of a financial metric, e.g., the Dow Jones Industrial
-Average (DJIA).
+Average (DJIA). The categorical variable is the date.
 
 Resources
 
@@ -110,15 +141,21 @@ Resources
     requirements](cm301-report-display-reqts.md#financial-\(OHLC\)-plot)  
   - [Open-high-low-close
     Chart](https://datavizcatalogue.com/methods/OHLC_chart.html) in the
-    Data Visualization Catalog
+    Data Visualization Catalog  
+  - [Candlesticks charts vs. bar charts
+    (OHLC)](https://www.youtube.com/watch?v=vv5ImI1X9G8) a video
+    introduction
 
-Example
+<br> Example OHLC plot, bar-style
 
 <img src="../resources/cm211-financial-plot-01.png" width="70%" />
 
-Example
+<br> Example OHLC plot, candle-stick-style. Here the high and low are
+the whiskers and the open and close are the box limits. Green indicates
+that the closing price was higher than the opening price; red that the
+closing price was lower.
 
-<img src="../resources/cm211-financial-plot-04.png" width="70%" />
+<img src="../resources/cm211-financial-plot-05.png" width="70%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -135,7 +172,8 @@ Resources
     requirements](cm301-report-display-reqts.md#diverging-stacked-bar)  
   - [likert()](https://cran.r-project.org/web/packages/HH/index.html) in
     the **HH** package  
-  - Heiberger and Robbins ([2014](#ref-Heiberger+Robbins:2014))  
+  - Design of diverging stacked bar charts (Heiberger and Robbins,
+    [2014](#ref-Heiberger+Robbins:2014))  
   - ![](../resources/icon-blog.png) [Likert-plots and grouped
     Likert-plots](https://strengejacke.wordpress.com/2019/05/08/likert-plots-and-grouped-likert-plots-rstats/)
     an introduction to the [sjPlot
@@ -240,7 +278,8 @@ Example
 
 <div id="ref-Few:2014">
 
-Few S (2014) Are mosaic plots worthwhile? <https://tinyurl.com/y23majn2>
+Few S (2014) Are mosaic plots worthwhile? *Visual Business Intelligence
+Newsletter*. Perceptual Edge <https://tinyurl.com/y23majn2>
 
 </div>
 
@@ -256,6 +295,13 @@ Software* **57**(5) <http://tinyurl.com/y5yg2pze>
 
 Murrell P (2011) *R Graphics.*, 2nd edn. CRC Press, Boca Raton, FL
 <https://www.stat.auckland.ac.nz/~paul/RG2e/>
+
+</div>
+
+<div id="ref-Robbins:2008">
+
+Robbins N (2008) Introduction to cycle plots. *Visual Business
+Intelligence Newsletter*. Perceptual Edge <https://tinyurl.com/y3n8dh89>
 
 </div>
 

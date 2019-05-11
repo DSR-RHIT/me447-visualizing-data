@@ -18,25 +18,25 @@ An exception can be made for *R data packages* such as the
 the *package is the source*, that is, the package provides public access
 to data that is otherwise unavailable.
 
-| display                                                     | type                                                                                                                                                   | quantitative  | categorical  |
-| :---------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------- | :------------ | :----------- |
-| [D1 distributions](#d1-distributions)                       | [strip plot](cm202-graph-strip-plot.md#strip-plot) or [box plot](cm203-graph-boxplot.md#box-plots)                                                     | one           | one or two   |
-| [D2 multiway](#d2-multiway)                                 | [multiway](cm204-graph-multiway.md#multiway-dot-plot)                                                                                                  | one           | two          |
-| [D3 correlations](#d3-correlations)                         | [scatterplot](cm205-graph-scatterplot.md#scatterplot)                                                                                                  | two           | one or two   |
-| [D4 injuries or fatalities](#d4-injuries-or-fatalities)     | [dot plot](cm206-graph-dot-plot.md#dot-plot)                                                                                                           | one           | one or more  |
-|                                                             | [line graph](cm207-graph-line-graph.md#line-graph) or [scatterplot](cm205-graph-scatterplot.md#scatterplot)                                            | two           | optional     |
-| [D5 redesign a graphical lie](#d5-redesign-a-graphical-lie) | [dot plot](cm206-graph-dot-plot.md#dot-plot)                                                                                                           | one           | optional     |
-|                                                             | [line graph](cm207-graph-line-graph.md#line-graph) or [scatterplot](cm205-graph-scatterplot.md#scatterplot)                                            | two           | optional     |
-| [D6 multivariate](#d6-multivariate)                         | [scatterplot matrix](cm209-graph-scatterplot-matrix.md#scatterplot-matrix) or [parallel coordinate](cm210-graph-parallel-coord.md#parallel-coordinate) | four or more  | one optional |
-|                                                             | [conditioning plot](cm208-graph-conditioning-plot.md#conditioning-plot)                                                                                | three or four | none         |
-| [D7 learn a display](#d7-learn-a-display)                   |                                                                                                                                                        |               |              |
-| [D7 cycle plot](#d7-cycle-plot)                             | [cycle plot](cm211-graph-learn-a-display.md#cycle-plot)                                                                                                | one           | time         |
-| [D7 multivariate bar](#d7-multivariate-bar)                 | [multivariate bar](cm211-graph-learn-a-display.md#multivariate-bar)                                                                                    | one           | two or more  |
-| [D7 financial (OHLC) plot](#d7-financial-ohlc-plot)         | [financial (OHLC) plot](cm211-graph-learn-a-display.md#financial-\(OHLC\)-plot)                                                                        | four          | time         |
-| [D7 diverging stacked bar](#d7-diverging-stacked-bar)       | [diverging stacked bar](cm211-graph-learn-a-display.md#diverging-stacked-bar)                                                                          | one           | two          |
-| [D7 micromap](#d7-micromap)                                 | [micromap](cm211-graph-learn-a-display.md#micromap)                                                                                                    | one           |              |
-| [D7 proportional symbol map](#d7-proportional-symbol-map)   | [proportional symbol map](cm211-graph-learn-a-display.md#proportional-symbol-map)                                                                      |               |              |
-| [D7 dot density map](#d7-dot-density-map)                   | [dot density map](cm211-graph-learn-a-display.md#dot-density-map)                                                                                      |               |              |
+| display details                                             | tutorials and examples                                                                                                                                 | quantitative  | categorical   |
+| :---------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------- | :------------ | :------------ |
+| [D1 distributions](#d1-distributions)                       | [strip plot](cm202-graph-strip-plot.md#strip-plot) or [box plot](cm203-graph-boxplot.md#box-plots)                                                     | one           | one or two    |
+| [D2 multiway](#d2-multiway)                                 | [multiway](cm204-graph-multiway.md#multiway-dot-plot)                                                                                                  | one           | two           |
+| [D3 correlations](#d3-correlations)                         | [scatterplot](cm205-graph-scatterplot.md#scatterplot)                                                                                                  | two           | one or two    |
+| [D4 injuries or fatalities](#d4-injuries-or-fatalities)     | [dot plot](cm206-graph-dot-plot.md#dot-plot)                                                                                                           | one           | one or more   |
+|                                                             | [line graph](cm207-graph-line-graph.md#line-graph) or [scatterplot](cm205-graph-scatterplot.md#scatterplot)                                            | two           | optional      |
+| [D5 redesign a graphical lie](#d5-redesign-a-graphical-lie) | [dot plot](cm206-graph-dot-plot.md#dot-plot)                                                                                                           | one           | optional      |
+|                                                             | [line graph](cm207-graph-line-graph.md#line-graph) or [scatterplot](cm205-graph-scatterplot.md#scatterplot)                                            | two           | optional      |
+| [D6 multivariate](#d6-multivariate)                         | [scatterplot matrix](cm209-graph-scatterplot-matrix.md#scatterplot-matrix) or [parallel coordinate](cm210-graph-parallel-coord.md#parallel-coordinate) | four or more  | one optional  |
+|                                                             | [conditioning plot](cm208-graph-conditioning-plot.md#conditioning-plot)                                                                                | three or four | none          |
+| [D7 learn a display](#d7-learn-a-display)                   |                                                                                                                                                        |               |               |
+| [D7 cycle plot](#d7-cycle-plot)                             | [cycle plot](cm211-graph-learn-a-display.md#cycle-plot)                                                                                                | one           | time          |
+| [D7 multivariate bar](#d7-multivariate-bar)                 | [multivariate bar](cm211-graph-learn-a-display.md#multivariate-bar)                                                                                    | two           | three or more |
+| [D7 financial (OHLC) plot](#d7-financial-ohlc-plot)         | [financial (OHLC) plot](cm211-graph-learn-a-display.md#financial-\(OHLC\)-plot)                                                                        | four          | time          |
+| [D7 diverging stacked bar](#d7-diverging-stacked-bar)       | [diverging stacked bar](cm211-graph-learn-a-display.md#diverging-stacked-bar)                                                                          | one           | two           |
+| [D7 micromap](#d7-micromap)                                 | [micromap](cm211-graph-learn-a-display.md#micromap)                                                                                                    | one           |               |
+| [D7 proportional symbol map](#d7-proportional-symbol-map)   | [proportional symbol map](cm211-graph-learn-a-display.md#proportional-symbol-map)                                                                      |               |               |
+| [D7 dot density map](#d7-dot-density-map)                   | [dot density map](cm211-graph-learn-a-display.md#dot-density-map)                                                                                      |               |               |
 
 ## D1 distributions
 
@@ -298,13 +298,13 @@ Tutorials
 This is a graph type you learn to construct on your own. Select one only
 from the list and include it in the portfolio.
 
-\[cycle plot\]  
-\[multivariate bar\]  
-\[financial (OHLC) plot\]  
-\[diverging stacked bar\]  
-\[micromap\]  
-\[proportional symbol map\]  
-\[dot density map\]
+[D7 cycle plot](#d7-cycle-plot)  
+[D7 multivariate bar](#d7-multivariate-bar)  
+[D7 financial (OHLC) plot](#d7-financial-ohlc-plot)  
+[D7 diverging stacked bar](#d7-diverging-stacked-bar)  
+[D7 micromap](#d7-micromap)  
+[D7 proportional symbol map](#d7-proportional-symbol-map)  
+[D7 dot density map](#d7-dot-density-map)
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -336,9 +336,8 @@ levels of the categories. Thus, the minimum of 2 quantitative variables,
 Data requirements
 
   - Minimum 20 observations  
-  - Two quantitative variables  
-  - Two categorical variables, one with 2 levels, one with 5 levels
-    (minimum)
+  - Two quantitative variables, for example, number and percentage  
+  - Three categorical variables, one with 5 levels or more
 
 ## D7 financial (OHLC) plot
 

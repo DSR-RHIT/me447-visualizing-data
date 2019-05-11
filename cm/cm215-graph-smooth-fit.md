@@ -85,9 +85,10 @@ ggplot(data = filter(diamonds, carat <= 3), mapping= aes(x = carat, y = price)) 
 
 ## loess fit
 
-A loess (local polynomial regression fitting) smooth fit is considered a
-“local” regression because the fitting at point x is weighted toward the
-data nearest to x.
+The name *loess* (pronounced like the proper name Lois) is short for
+*local regression.* Loess is a nonparametric curve-fitting method that
+is easy to compute and to use (Cleveland, [1993](#ref-Cleveland:1993),
+94).
 
 ``` r
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
@@ -168,6 +169,12 @@ geoms.
 ## references
 
 <div id="refs">
+
+<div id="ref-Cleveland:1993">
+
+Cleveland WS (1993) *Visualizing Data.* Hobart Press, Summit, NJ
+
+</div>
 
 <div id="ref-Wickham+Grolemund:2017">
 
