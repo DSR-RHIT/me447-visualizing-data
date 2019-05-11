@@ -140,7 +140,7 @@ Average (DJIA). The categorical variable is the date.
 Resources
 
   - [Data
-    requirements](cm301-report-display-reqts.md#financial-\(OHLC\)-plot-requirements)  
+    requirements](cm301-report-display-reqts.md#financial-OHLC-plot-requirements)  
   - [Open-high-low-close
     Chart](https://datavizcatalogue.com/methods/OHLC_chart.html) in the
     Data Visualization Catalog  
