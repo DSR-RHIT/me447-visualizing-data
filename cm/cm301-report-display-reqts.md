@@ -336,7 +336,7 @@ Graph requirements
 
 Examples
 
-  - [Cycle plot](cm211-graph-learn-a-display.md#cycle-plot)
+  - [Cycle plot](cm211-graph-learn-a-display.md#cycle-plot-examples)
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -350,7 +350,8 @@ Data requirements
 
 Examples
 
-  - [Multivariate bar](cm211-graph-learn-a-display.md#multivariate-bar)
+  - [Multivariate
+    bar](cm211-graph-learn-a-display.md#multivariate-bar-examples)
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -368,7 +369,7 @@ Data requirements
 Examples
 
   - [Financial (OHLC)
-    plot](cm211-graph-learn-a-display.md#financial-\(OHLC\)-plot)
+    plot](cm211-graph-learn-a-display.md#financial-\(OHLC\)-plot-examples)
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -390,7 +391,7 @@ Data requirements
 Examples
 
   - [Diverging stacked
-    bar](cm211-graph-learn-a-display.md#diverging-stacked-bar)
+    bar](cm211-graph-learn-a-display.md#diverging-stacked-bar-examples)
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -408,7 +409,7 @@ Data requirements
 
 Examples
 
-  - [Micromap](cm211-graph-learn-a-display.md#micromap)
+  - [Micromap](cm211-graph-learn-a-display.md#micromap-examples)
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -425,7 +426,7 @@ Data requirements
 Examples
 
   - [Proportional symbol
-    map](cm211-graph-learn-a-display.md#proportional-symbol-map)
+    map](cm211-graph-learn-a-display.md#proportional-symbol-map-examples)
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -442,7 +443,8 @@ Data requirements
 
 Examples
 
-  - [Dot density map](cm211-graph-learn-a-display.md#dot-density-map)
+  - [Dot density
+    map](cm211-graph-learn-a-display.md#dot-density-map-examples)
 
 <br> <a href="#top">▲ top of page</a>
 
