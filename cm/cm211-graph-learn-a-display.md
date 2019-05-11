@@ -83,7 +83,8 @@ the February values are graphed, and so forth.
 ## multivariate bar
 
 This type of bar graph is useful when we have multivariate categorical
-data.
+data. Multivariate bar data has one or more quantitative values at each
+intersection of levels of the categories.
 
 Such data is often illustrated using a [mosaic
 chart](https://ncss-wpengine.netdna-ssl.com/wp-content/themes/ncss/pdf/Procedures/NCSS/Mosaic_Plots.pdf)

@@ -29,14 +29,13 @@ to data that is otherwise unavailable.
 |                                                             | [line graph](cm207-graph-line-graph.md#line-graph) or [scatterplot](cm205-graph-scatterplot.md#scatterplot)                                            | two           | optional      |
 | [D6 multivariate](#d6-multivariate)                         | [scatterplot matrix](cm209-graph-scatterplot-matrix.md#scatterplot-matrix) or [parallel coordinate](cm210-graph-parallel-coord.md#parallel-coordinate) | four or more  | one optional  |
 |                                                             | [conditioning plot](cm208-graph-conditioning-plot.md#conditioning-plot)                                                                                | three or four | none          |
-| [D7 learn a display](#d7-learn-a-display)                   |                                                                                                                                                        |               |               |
-| [D7 cycle plot](#d7-cycle-plot)                             | [cycle plot](cm211-graph-learn-a-display.md#cycle-plot)                                                                                                | one           | time          |
-| [D7 multivariate bar](#d7-multivariate-bar)                 | [multivariate bar](cm211-graph-learn-a-display.md#multivariate-bar)                                                                                    | two           | three or more |
-| [D7 financial (OHLC) plot](#d7-financial-ohlc-plot)         | [financial (OHLC) plot](cm211-graph-learn-a-display.md#financial-\(OHLC\)-plot)                                                                        | four          | time          |
-| [D7 diverging stacked bar](#d7-diverging-stacked-bar)       | [diverging stacked bar](cm211-graph-learn-a-display.md#diverging-stacked-bar)                                                                          | one           | two           |
-| [D7 micromap](#d7-micromap)                                 | [micromap](cm211-graph-learn-a-display.md#micromap)                                                                                                    | one           |               |
-| [D7 proportional symbol map](#d7-proportional-symbol-map)   | [proportional symbol map](cm211-graph-learn-a-display.md#proportional-symbol-map)                                                                      |               |               |
-| [D7 dot density map](#d7-dot-density-map)                   | [dot density map](cm211-graph-learn-a-display.md#dot-density-map)                                                                                      |               |               |
+| [D7 learn a display](#d7-learn-a-display)                   | [cycle plot](cm211-graph-learn-a-display.md#cycle-plot)                                                                                                | one           | time          |
+|                                                             | [multivariate bar](cm211-graph-learn-a-display.md#multivariate-bar)                                                                                    | two           | three or more |
+|                                                             | [financial (OHLC) plot](cm211-graph-learn-a-display.md#financial-\(OHLC\)-plot)                                                                        | four          | time          |
+|                                                             | [diverging stacked bar](cm211-graph-learn-a-display.md#diverging-stacked-bar)                                                                          | one           | two           |
+|                                                             | [micromap](cm211-graph-learn-a-display.md#micromap)                                                                                                    | one or two    | two or one    |
+|                                                             | [proportional symbol map](cm211-graph-learn-a-display.md#proportional-symbol-map)                                                                      | one           | one           |
+|                                                             | [dot density map](cm211-graph-learn-a-display.md#dot-density-map)                                                                                      | one           | one           |
 
 ## D1 distributions
 
@@ -310,6 +309,8 @@ from the list and include it in the portfolio.
 
 ## D7 cycle plot
 
+[Cycle plot examples](cm211-graph-learn-a-display.md#cycle-plot)
+
 Data requirements
 
   - Minimum 100 observations  
@@ -326,12 +327,12 @@ Graph requirements
     cyclic nature of the data, then display the cycle plot, and discuss
     your rationale for the period you selected.
 
+<br> <a href="#top">▲ top of page</a>
+
 ## D7 multivariate bar
 
-Multivariate bar data has one quantitative value at each intersection of
-levels of the categories. Thus, the minimum of 2 quantitative variables,
-2 levels of one category, and 5 levels of a second category yields 2 × 2
-× 5 = 20 observations.
+[Multivariate bar
+examples](cm211-graph-learn-a-display.md#multivariate-bar)
 
 Data requirements
 
@@ -339,7 +340,12 @@ Data requirements
   - Two quantitative variables, for example, number and percentage  
   - Three categorical variables, one with 5 levels or more
 
+<br> <a href="#top">▲ top of page</a>
+
 ## D7 financial (OHLC) plot
+
+[Financial (OHLC) plot
+examples](cm211-graph-learn-a-display.md#financial-\(OHLC\)-plot)
 
 Data requirements
 
@@ -353,6 +359,9 @@ Data requirements
 <br> <a href="#top">▲ top of page</a>
 
 ## D7 diverging stacked bar
+
+[Diverging stacked bar
+examples](cm211-graph-learn-a-display.md#diverging-stacked-bar)
 
 Data requirements
 
@@ -371,19 +380,48 @@ Data requirements
 
 ## D7 micromap
 
+[Micromap examples](cm211-graph-learn-a-display.md#micromap)
+
 Data requirements
+
+  - 50 observations minimum
+  - Geographic regions can be at any level you choose, e.g., city,
+    county, state, province, region, country, etc.
+  - Two quantitative variables minimum if geographic region is the only
+    categorical variable
+  - One quantitative variable if you have at least one additional
+    categorical variable in addition to geographic region
 
 <br> <a href="#top">▲ top of page</a>
 
 ## D7 proportional symbol map
 
+[Proportional symbol map
+examples](cm211-graph-learn-a-display.md#proportional-symbol-map)
+
 Data requirements
+
+  - 200 observations  
+  - Geographic regions can be at any level you choose, e.g., city,
+    county, state, province, region, country, etc.
+  - One quantitative variable
+  - One categorical variable with 5 or more levels
 
 <br> <a href="#top">▲ top of page</a>
 
 ## D7 dot density map
 
+[Dot density map
+examples](cm211-graph-learn-a-display.md#dot-density-map)
+
 Data requirements
+
+  - 1000 observations  
+  - Geographic regions can be at any level you choose, e.g., city,
+    county, state, province, region, country, etc.
+  - One quantitative variable or count, e.g., one dot represents one
+    vote, one dot represents 100 people, etc.
+  - One categorical variable with 3 or more levels
 
 <br> <a href="#top">▲ top of page</a>
 
