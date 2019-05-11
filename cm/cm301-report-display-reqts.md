@@ -35,7 +35,7 @@ to data that is otherwise unavailable.
 |                                                             | [conditioning plot](cm208-graph-conditioning-plot.md#conditioning-plot)                    | three or four | none          |
 | [D7 learn a display](#d7-learn-a-display)                   | [cycle plot](cm211-graph-learn-a-display.md#cycle-plot-examples)                           | one           | time          |
 |                                                             | [multivariate bar](cm211-graph-learn-a-display.md#multivariate-bar-examples)               | two           | three or more |
-|                                                             | [financial (OHLC) plot](cm211-graph-learn-a-display.md#financial-\(OHLC\)-plot-examples)   | four          | time          |
+|                                                             | [financial (OHLC) plot](cm211-graph-learn-a-display.md#financial-OHLC-plot-examples)       | four          | time          |
 |                                                             | [diverging stacked bar](cm211-graph-learn-a-display.md#diverging-stacked-bar-examples)     | one           | two           |
 |                                                             | [micromap](cm211-graph-learn-a-display.md#micromap-examples)                               | one or two    | two or one    |
 |                                                             | [proportional symbol map](cm211-graph-learn-a-display.md#proportional-symbol-map-examples) | one           | one           |
@@ -369,7 +369,7 @@ Data requirements
 Examples
 
   - [Financial (OHLC)
-    plot](cm211-graph-learn-a-display.md#financial-\(OHLC\)-plot-examples)
+    plot](cm211-graph-learn-a-display.md#financial-OHLC-plot-examples)
 
 <br> <a href="#top">▲ top of page</a>
 
