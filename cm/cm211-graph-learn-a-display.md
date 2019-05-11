@@ -52,7 +52,9 @@ month of year, quarter of year, etc.
 
 Resources
 
-  - Introduction to cycle plots (Robbins, [2008](#ref-Robbins:2008))  
+  - ![](../resources/icon-document.png) [Introduction to cycle
+    plots](https://tinyurl.com/y3n8dh89) by Naomi Robbins
+    ([2008](#ref-Robbins:2008))  
   - [Data
     requirements](cm301-report-display-reqts.md#cycle-plot-requirements)  
   - [monthplot()](https://www.rdocumentation.org/packages/stats/versions/3.6.0/topics/monthplot)
@@ -101,7 +103,9 @@ as a multivariate bar chart.
 
 Resources
 
-  - Are mosaic plots worthwhile? (Few, [2014](#ref-Few:2014))  
+  - ![](../resources/icon-document.png) [Are mosaic plots
+    worthwhile?](https://tinyurl.com/y23majn2) by Stephen Few
+    ([2014](#ref-Few:2014))  
   - [Data
     requirements](cm301-report-display-reqts.md#multivariate-bar-requirements)  
   - [geom\_bar() and
@@ -139,14 +143,13 @@ Average (DJIA). The categorical variable is the date.
 
 Resources
 
+  - ![](../resources/icon-video.png) [Candlesticks charts vs. bar charts
+    (OHLC)](https://www.youtube.com/watch?v=vv5ImI1X9G8) an introduction
   - [Data
     requirements](cm301-report-display-reqts.md#financial-OHLC-plot-requirements)  
   - [Open-high-low-close
     Chart](https://datavizcatalogue.com/methods/OHLC_chart.html) in the
-    Data Visualization Catalog  
-  - [Candlesticks charts vs. bar charts
-    (OHLC)](https://www.youtube.com/watch?v=vv5ImI1X9G8) a video
-    introduction
+    Data Visualization Catalog
 
 <br> Example OHLC plot, bar-style
 
@@ -170,26 +173,27 @@ Disagree, No Opinion, Agree, Strongly Agree.
 
 Resources
 
+  - ![](../resources/icon-document.png) [Design of diverging stacked bar
+    charts](http://tinyurl.com/y5yg2pze) by Heiberger and Robbins
+    ([2014](#ref-Heiberger+Robbins:2014))  
   - [Data
     requirements](cm301-report-display-reqts.md#diverging-stacked-bar-requirements)  
   - [likert()](https://cran.r-project.org/web/packages/HH/index.html) in
     the **HH** package  
-  - Design of diverging stacked bar charts (Heiberger and Robbins,
-    [2014](#ref-Heiberger+Robbins:2014))  
   - ![](../resources/icon-blog.png) [Likert-plots and grouped
     Likert-plots](https://strengejacke.wordpress.com/2019/05/08/likert-plots-and-grouped-likert-plots-rstats/)
     an introduction to the [sjPlot
     package](https://strengejacke.github.io/sjPlot/)
 
-Example
+<br> Example
 
 <img src="../resources/cm211-diverging-stacked-bar-01.png" width="70%" />
 
-Example
+<br> Example
 
 <img src="../resources/cm211-diverging-stacked-bar-03.png" width="70%" />
 
-Example
+<br> Example
 
 <img src="../resources/cm211-diverging-stacked-bar-04.png" width="70%" />
 
@@ -200,9 +204,7 @@ Example
 A micromap is a graphic that links statistical information to an
 organized set of small maps, and its primary purpose is to highlight
 geographical patterns and associations among the variables in your data
-set. [Falling in love with
-micromaps](http://www.thefunctionalart.com/2013/07/falling-in-love-with-micromaps.html)
-by Alberto Cairo.
+set.
 
 Micromaps are based on small multiples: When presenting multivariate
 data for direct comparison, it is usually better to design several tiny
@@ -211,6 +213,9 @@ graphics rather than relying on recall of serially presented images
 
 Resources
 
+  - ![](../resources/icon-blog.png) [Falling in love with
+    micromaps](http://www.thefunctionalart.com/2013/07/falling-in-love-with-micromaps.html)
+    by Alberto Cairo  
   - [Data
     requirements](cm301-report-display-reqts.md#micromap-requirements)  
   - [mmplot()](https://CRAN.R-project.org/package=micromap) in the
@@ -223,18 +228,16 @@ Resources
   - [Background maps](https://www.r-graph-gallery.com/map/) in the R
     Graph Gallery
 
-Example
+<br> Example of a linked micromap.
 
 <img src="../resources/cm211-micromap-03.png" width="50%" />
 
-Example. These are chloropleth maps which generally are not as good as
-proportional symbol maps or dot density maps. I include these in the
-micromaps section because the maps are a small-multiple design.
+<br> Example of micromaps in a small-multiples design. Area and color
+have been used correctly to show the geographic extent of drought.
+Source: [New York
+Times](https://archive.nytimes.com/www.nytimes.com/interactive/2012/07/20/us/drought-footprint.html?_r=0)
 
-However, the data should be presented as proportional symbols or dot
-densities.
-
-<img src="../resources/cm211-micromap-02.png" width="70%" />
+<img src="../resources/cm211-micromap-04.png" width="100%" />
 
 <br> <a href="#top">▲ top of page</a>
 
@@ -258,6 +261,10 @@ guide](https://www.axismaps.com/guide/univariate/proportional-symbols/).
 
 Resources
 
+  - ![](../resources/icon-blog.png) [Visualize 2015 urban populations
+    with proportional
+    symbols](https://carto.com/blog/proportional-symbol-maps/) by Mamata
+    Akella
   - [Data
     requirements](cm301-report-display-reqts.md#proportional-symbol-map-requirements)  
   - [ggmap package](https://github.com/dkahle/ggmap)  
@@ -267,15 +274,15 @@ Resources
     ggplot2](https://www.r-graph-gallery.com/330-bubble-map-with-ggplot2/)
     in the R Graph Gallery
 
-Example
+<br> Example
 
 <img src="../resources/cm211-proportional-symbol-map-01.png" width="70%" />
 
-Example
+<br> Example
 
 <img src="../resources/cm211-proportional-symbol-map-02.png" width="70%" />
 
-Example
+<br> Example
 
 <img src="../resources/cm211-proportional-symbol-map-03.png" width="70%" />
 
@@ -300,11 +307,11 @@ Resources
     package](https://www.cultureofinsight.com/blog/2018/05/02/2018-04-08-multivariate-dot-density-maps-in-r-with-sf-ggplot2/)
     Multivariate dot-density maps with sf and ggplot2
 
-Example
+<br> Example
 
 <img src="../resources/cm211-dot-density-map-01.png" width="70%" />
 
-Example
+<br> Example
 
 <img src="../resources/cm211-dot-density-map-02.png" width="70%" />
 
