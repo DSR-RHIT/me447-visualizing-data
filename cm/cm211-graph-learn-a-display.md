@@ -8,13 +8,13 @@ learn a display
 ## contents
 
 [introduction](#introduction)  
-[cycle plot examples](#cycle-plot-examples)  
-[multivariate bar examples](#multivariate-bar-examples)  
-[financial (OHLC) plot examples](#financial-ohlc-plot-examples)  
-[diverging stacked bar examples](#diverging-stacked-bar-examples)  
-[micromap examples](#micromap-examples)  
-[proportional symbol map examples](#proportional-symbol-map-examples)  
-[dot density map examples](#dot-density-map-examples)  
+[cycle plot](#cycle-plot)  
+[multivariate bar](#multivariate-bar)  
+[financial (OHLC) plot](#financial-ohlc-plot)  
+[diverging stacked bar](#diverging-stacked-bar)  
+[micromap](#micromap)  
+[proportional symbol map](#proportional-symbol-map)  
+[dot density map](#dot-density-map)  
 [references](#references)
 
 ## introduction
@@ -41,7 +41,7 @@ and some references to get you started.
 
 <br> <a href="#top">▲ top of page</a>
 
-## cycle plot examples
+## cycle plot
 
 As [Stephen Few](https://www.perceptualedge.com/blog/?p=1780) explains,
 “A cycle plot is a type of line graph that is useful for displaying
@@ -81,7 +81,7 @@ the February values are graphed, and so forth.
 
 <br> <a href="#top">▲ top of page</a>
 
-## multivariate bar examples
+## multivariate bar
 
 This type of bar graph is useful when we have multivariate categorical
 data. Multivariate bar data has one or more quantitative values at each
@@ -127,7 +127,7 @@ Resources
 
 <br> <a href="#top">▲ top of page</a>
 
-## financial (OHLC) plot examples
+## financial (OHLC) plot
 
 A financial plot, or OHLC (open-high-low-close) plot, represents a time
 series of market behavior. You may use either a candlestick style or bar
@@ -161,7 +161,7 @@ closing price was lower.
 
 <br> <a href="#top">▲ top of page</a>
 
-## diverging stacked bar examples
+## diverging stacked bar
 
 Diverging stacked bar charts are the primary graphical display technique
 for reporting survey data. Respondents are typically asked to choose one
@@ -195,7 +195,19 @@ Example
 
 <br> <a href="#top">▲ top of page</a>
 
-## micromap examples
+## micromap
+
+A micromap is a graphic that links statistical information to an
+organized set of small maps, and its primary purpose is to highlight
+geographical patterns and associations among the variables in your data
+set. [Falling in love with
+micromaps](http://www.thefunctionalart.com/2013/07/falling-in-love-with-micromaps.html)
+by Alberto Cairo.
+
+Micromaps are based on small multiples: When presenting multivariate
+data for direct comparison, it is usually better to design several tiny
+graphics rather than relying on recall of serially presented images
+(animation) or on a single, large, ultra-complex, cluttered display.
 
 Resources
 
@@ -226,7 +238,23 @@ densities.
 
 <br> <a href="#top">▲ top of page</a>
 
-## proportional symbol map examples
+## proportional symbol map
+
+Proportional symbol maps scale the size of a symbol (usually a circle or
+square) proportionally to the data value found at that location. The
+larger the symbol, the more of something exists at a location. Color can
+be used to show levels of a category such as race, political party, etc.
+
+The most basic method is to scale the circles directly proportionate to
+the data so that if, for example, Toronto has twice the population of
+Vancouver, the population symbol for Toronto will have twice the area.
+
+However, you can also group (bin) your observations into categories or
+numerical ranges and create graduated symbol maps that may, for example,
+only have three symbol sizes corresponding to three categories of city
+size (e.g., cities of \<1 million, 1-4 million, and over 4 million
+people) [Cartography
+guide](https://www.axismaps.com/guide/univariate/proportional-symbols/).
 
 Resources
 
@@ -253,7 +281,13 @@ Example
 
 <br> <a href="#top">▲ top of page</a>
 
-## dot density map examples
+## dot density map
+
+A dot-density map uses dots or other symbols on a map to represent a
+quantitative variable. Dots are all the same size. Each dot on the map
+represents the same amount of data, e.g., one dot = 100 votes, or one
+dot = 1000 people, etc. Color can be used to show levels of a category
+such as race, political party, etc.
 
 Resources
 
