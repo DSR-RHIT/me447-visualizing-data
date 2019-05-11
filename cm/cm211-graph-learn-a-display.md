@@ -8,13 +8,13 @@ learn a display
 ## contents
 
 [introduction](#introduction)  
-[cycle plot](#cycle-plot)  
-[multivariate bar](#multivariate-bar)  
-[financial (OHLC) plot](#financial-ohlc-plot)  
-[diverging stacked bar](#diverging-stacked-bar)  
-[micromaps](#micromaps)  
-[proportional symbol map](#proportional-symbol-map)  
-[dot density map](#dot-density-map)  
+[cycle plot examples](#cycle-plot-examples)  
+[multivariate bar examples](#multivariate-bar-examples)  
+[financial (OHLC) plot examples](#financial-ohlc-plot-examples)  
+[diverging stacked bar examples](#diverging-stacked-bar-examples)  
+[micromap examples](#micromap-examples)  
+[proportional symbol map examples](#proportional-symbol-map-examples)  
+[dot density map examples](#dot-density-map-examples)  
 [references](#references)
 
 ## introduction
@@ -41,7 +41,7 @@ and some references to get you started.
 
 <br> <a href="#top">▲ top of page</a>
 
-## cycle plot
+## cycle plot examples
 
 As [Stephen Few](https://www.perceptualedge.com/blog/?p=1780) explains,
 “A cycle plot is a type of line graph that is useful for displaying
@@ -53,7 +53,8 @@ month of year, quarter of year, etc.
 Resources
 
   - Introduction to cycle plots (Robbins, [2008](#ref-Robbins:2008))  
-  - [Data requirements](cm301-report-display-reqts.md#cycle-plot)  
+  - [Data
+    requirements](cm301-report-display-reqts.md#cycle-plot-requirements)  
   - [monthplot()](https://www.rdocumentation.org/packages/stats/versions/3.6.0/topics/monthplot)
     in base R  
   - [plotMonth()](ttps://CRAN.R-project.org/package=season) in the
@@ -80,7 +81,7 @@ the February values are graphed, and so forth.
 
 <br> <a href="#top">▲ top of page</a>
 
-## multivariate bar
+## multivariate bar examples
 
 This type of bar graph is useful when we have multivariate categorical
 data. Multivariate bar data has one or more quantitative values at each
@@ -102,7 +103,7 @@ Resources
 
   - Are mosaic plots worthwhile? (Few, [2014](#ref-Few:2014))  
   - [Data
-    requirements](cm301-report-display-reqts.md#multivariate-bar)  
+    requirements](cm301-report-display-reqts.md#multivariate-bar-requirements)  
   - [geom\_bar() and
     geom\_col()](https://ggplot2.tidyverse.org/reference/geom_bar.html)
     in **ggplot2**
@@ -126,7 +127,7 @@ Resources
 
 <br> <a href="#top">▲ top of page</a>
 
-## financial (OHLC) plot
+## financial (OHLC) plot examples
 
 A financial plot, or OHLC (open-high-low-close) plot, represents a time
 series of market behavior. You may use either a candlestick style or bar
@@ -139,7 +140,7 @@ Average (DJIA). The categorical variable is the date.
 Resources
 
   - [Data
-    requirements](cm301-report-display-reqts.md#financial-\(OHLC\)-plot)  
+    requirements](cm301-report-display-reqts.md#financial-\(OHLC\)-plot-requirements)  
   - [Open-high-low-close
     Chart](https://datavizcatalogue.com/methods/OHLC_chart.html) in the
     Data Visualization Catalog  
@@ -160,7 +161,7 @@ closing price was lower.
 
 <br> <a href="#top">▲ top of page</a>
 
-## diverging stacked bar
+## diverging stacked bar examples
 
 Diverging stacked bar charts are the primary graphical display technique
 for reporting survey data. Respondents are typically asked to choose one
@@ -170,7 +171,7 @@ Disagree, No Opinion, Agree, Strongly Agree.
 Resources
 
   - [Data
-    requirements](cm301-report-display-reqts.md#diverging-stacked-bar)  
+    requirements](cm301-report-display-reqts.md#diverging-stacked-bar-requirements)  
   - [likert()](https://cran.r-project.org/web/packages/HH/index.html) in
     the **HH** package  
   - Design of diverging stacked bar charts (Heiberger and Robbins,
@@ -194,11 +195,12 @@ Example
 
 <br> <a href="#top">▲ top of page</a>
 
-## micromaps
+## micromap examples
 
 Resources
 
-  - [Data requirements](cm301-report-display-reqts.md#micromap)  
+  - [Data
+    requirements](cm301-report-display-reqts.md#micromap-requirements)  
   - [mmplot()](https://CRAN.R-project.org/package=micromap) in the
     **micromap** package  
   - [Linked
@@ -224,12 +226,12 @@ densities.
 
 <br> <a href="#top">▲ top of page</a>
 
-## proportional symbol map
+## proportional symbol map examples
 
 Resources
 
   - [Data
-    requirements](cm301-report-display-reqts.md#proportional-symbol-map)  
+    requirements](cm301-report-display-reqts.md#proportional-symbol-map-requirements)  
   - [ggmap package](https://github.com/dkahle/ggmap)  
   - [Background maps](https://www.r-graph-gallery.com/map/) in the R
     Graph Gallery  
@@ -251,11 +253,12 @@ Example
 
 <br> <a href="#top">▲ top of page</a>
 
-## dot density map
+## dot density map examples
 
 Resources
 
-  - [Data requirements](cm301-report-display-reqts.md#dot-density-map)  
+  - [Data
+    requirements](cm301-report-display-reqts.md#dot-density-map-requirements)  
   - [ggmap package](https://github.com/dkahle/ggmap)  
   - [Background maps](https://www.r-graph-gallery.com/map/) in the R
     Graph Gallery  
