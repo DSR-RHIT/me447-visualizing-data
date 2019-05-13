@@ -63,6 +63,8 @@ be visually de-emphasized.
 The story, about the models and percent population, should be
 emphasized.
 
+<br> <a href="#top">▲ top of page</a>
+
 ## data
 
 Construct first data frame for the quantitative variable (percent of
@@ -107,6 +109,8 @@ ggplot(data = df, mapping = aes(x = year, y = pct)) +
 ```
 
 <img src="images/cm216-unnamed-chunk-4-1.png" width="78.75%" />
+
+<br> <a href="#top">▲ top of page</a>
 
 ## rectangles: grade level
 
@@ -156,6 +160,8 @@ p
 ```
 
 <img src="images/cm216-unnamed-chunk-6-1.png" width="78.75%" />
+
+<br> <a href="#top">▲ top of page</a>
 
 ## rectangles: curriculum model
 
@@ -217,6 +223,8 @@ p2
 
 <img src="images/cm216-unnamed-chunk-10-1.png" width="78.75%" />
 
+<br> <a href="#top">▲ top of page</a>
+
 ## rectangles: developmental model
 
 Create data frame with coordinates of rectangles. Edit coordinates to
@@ -256,6 +264,8 @@ p3
 
 <img src="images/cm216-unnamed-chunk-12-1.png" width="78.75%" />
 
+<br> <a href="#top">▲ top of page</a>
+
 ## line segment: vocational path
 
 ``` r
@@ -285,6 +295,8 @@ p3
 ```
 
 <img src="images/cm216-unnamed-chunk-14-1.png" width="78.75%" />
+
+<br> <a href="#top">▲ top of page</a>
 
 ## theme work
 
@@ -432,6 +444,8 @@ p5
 <img src="images/cm216-unnamed-chunk-22-1.png" width="78.75%" />
 
 And so forth. You get the idea.
+
+<br> <a href="#top">▲ top of page</a>
 
 ## published display
 
