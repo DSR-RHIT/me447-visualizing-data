@@ -146,8 +146,7 @@ p # print the graph
 
 ![](images/cm201-unnamed-chunk-8-1.png)<!-- -->
 
-We could also have simply added the layer to the original
-object,
+We could also have simply added the layer to the original object,
 
 ``` r
 p <- ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) +
@@ -196,8 +195,7 @@ consist of,
 
 Suppose you wanted a smooth fit curve only. You can use the
 `geom_smooth()` layer to create a smooth curve and standard error
-(shaded
-region).
+(shaded region).
 
 ``` r
 p <- ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) +
@@ -209,8 +207,7 @@ p # print the graph
 
 ![](images/cm201-unnamed-chunk-12-1.png)<!-- -->
 
-You can show both the curve and the data by adding both
-layers,
+You can show both the curve and the data by adding both layers,
 
 ``` r
 p <- ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) +
@@ -224,8 +221,7 @@ p # print the graph
 ![](images/cm201-unnamed-chunk-13-1.png)<!-- -->
 
 Because the data points overprint the smooth curve, we can rearrange the
-layer order to print the data markers then the fitted
-curve,
+layer order to print the data markers then the fitted curve,
 
 ``` r
 p <- ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) +
@@ -246,9 +242,57 @@ We have orders of magnitude differences in the GDP per capita variable,
 To confirm, let’s summarize the variable
 
 ``` r
-summary(gapminder$gdpPercap)
-#>     Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
-#>    241.2   1202.1   3531.8   7215.3   9325.5 113523.1
+summarytools::dfSummary(gapminder)
+#> Data Frame Summary  
+#> gapminder  
+#> Dimensions: 1704 x 6  
+#> Duplicates: 0  
+#> 
+#> ------------------------------------------------------------------------------------------------------------------------------------------
+#> No   Variable     Stats / Values                          Freqs (% of Valid)     Graph                                  Valid    Missing  
+#> ---- ------------ --------------------------------------- ---------------------- -------------------------------------- -------- ---------
+#> 1    country      1. Afghanistan                            12 ( 0.7%)                                                  1704     0        
+#>      [factor]     2. Albania                                12 ( 0.7%)                                                  (100%)   (0%)     
+#>                   3. Algeria                                12 ( 0.7%)                                                                    
+#>                   4. Angola                                 12 ( 0.7%)                                                                    
+#>                   5. Argentina                              12 ( 0.7%)                                                                    
+#>                   6. Australia                              12 ( 0.7%)                                                                    
+#>                   7. Austria                                12 ( 0.7%)                                                                    
+#>                   8. Bahrain                                12 ( 0.7%)                                                                    
+#>                   9. Bangladesh                             12 ( 0.7%)                                                                    
+#>                   10. Belgium                               12 ( 0.7%)                                                                    
+#>                   [ 132 others ]                          1584 (93.0%)           IIIIIIIIIIIIIIIIII                                       
+#> 
+#> 2    continent    1. Africa                               624 (36.6%)            IIIIIII                                1704     0        
+#>      [factor]     2. Americas                             300 (17.6%)            III                                    (100%)   (0%)     
+#>                   3. Asia                                 396 (23.2%)            IIII                                                     
+#>                   4. Europe                               360 (21.1%)            IIII                                                     
+#>                   5. Oceania                               24 ( 1.4%)                                                                     
+#> 
+#> 3    year         Mean (sd) : 1979.5 (17.3)               12 distinct values     :                 :                    1704     0        
+#>      [integer]    min < med < max:                                               :                 :                    (100%)   (0%)     
+#>                   1952 < 1979.5 < 2007                                           : . . . . . . . . :                                      
+#>                   IQR (CV) : 27.5 (0)                                            : : : : : : : : : :                                      
+#>                                                                                  : : : : : : : : : :                                      
+#> 
+#> 4    lifeExp      Mean (sd) : 59.5 (12.9)                 1626 distinct values                 . :                      1704     0        
+#>      [numeric]    min < med < max:                                                     . .     : :                      (100%)   (0%)     
+#>                   23.6 < 60.7 < 82.6                                                   : : : : : :                                        
+#>                   IQR (CV) : 22.6 (0.2)                                              : : : : : : : .                                      
+#>                                                                                    . : : : : : : : :                                      
+#> 
+#> 5    pop          Mean (sd) : 29601212.3 (106157896.7)    1704 distinct values   :                                      1704     0        
+#>      [integer]    min < med < max:                                               :                                      (100%)   (0%)     
+#>                   60011 < 7023595.5 < 1318683096                                 :                                                        
+#>                   IQR (CV) : 16791557.8 (3.6)                                    :                                                        
+#>                                                                                  :                                                        
+#> 
+#> 6    gdpPercap    Mean (sd) : 7215.3 (9857.5)             1704 distinct values   :                                      1704     0        
+#>      [numeric]    min < med < max:                                               :                                      (100%)   (0%)     
+#>                   241.2 < 3531.8 < 113523.1                                      :                                                        
+#>                   IQR (CV) : 8123.4 (1.4)                                        :                                                        
+#>                                                                                  : : .                                                    
+#> ------------------------------------------------------------------------------------------------------------------------------------------
 ```
 
 In exploring a graph like this, it might be useful to add a layer that
@@ -264,8 +308,7 @@ p # print the graph
 ![](images/cm201-unnamed-chunk-16-1.png)<!-- -->
 
 In this case, a linear fit might be an improvement. We add the argument
-`method = "gam"` to the `geom_smooth()`
-layer.
+`method = "gam"` to the `geom_smooth()` layer.
 
 ``` r
 p <- ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) +
@@ -281,15 +324,14 @@ p # print the graph
 
 The scales package allows us to change the GDP scale to dollars. Using
 the syntax `thepackage::thefunction` we can use the `scales::dollar`
-function without loading the scales
-package.
+function without loading the scales package.
 
 ``` r
 p <- ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) +
     geom_point() +
     geom_smooth(method = "gam") +
     labs(x = "GDP per capita", y = "Life expectancy (years)") +
-    scale_x_log10(labels = scales::dollar)
+  scale_x_log10(labels = scales::dollar)
 
 p # print the graph
 ```
@@ -310,7 +352,7 @@ p <- ggplot(data = gapminder,
     geom_point() +
     geom_smooth(method = "gam") +
     labs(x = "GDP per capita", y = "Life expectancy (years)") +
-    scale_x_log10(labels = scales::dollar)
+  scale_x_log10(labels = scales::dollar)
 
 p # print the graph
 ```
@@ -339,7 +381,7 @@ p <- ggplot(data = gapminder,
     geom_point(color = "purple") +
     geom_smooth(method = "gam") +
     labs(x = "GDP per capita", y = "Life expectancy (years)") +
-    scale_x_log10(labels = scales::dollar)
+  scale_x_log10(labels = scales::dollar)
 
 p # print the graph
 ```
@@ -530,10 +572,9 @@ my_gapminder <- my_gapminder %>%
 #> $ gdpPercap <dbl> 974.5803, 5937.0295, 6223.3675, 4797.2313, 12779.379...
 ```
 
-Here, the `mutate()` function creates a new variable `continent_ord`
-that is a factor variable with the same levels and values as the
-original `continent` variable except that its levels are reordered by
-the median life expectancy of the continent.
+Here, the `mutate()` function overwrites `continent` with a new variable
+of the same name with its levels reordered by the median life expectancy
+of the continent.
 
 ``` r
 p <- ggplot(data = my_gapminder, 
