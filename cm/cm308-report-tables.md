@@ -2067,10 +2067,10 @@ library(knitr)
 kable(dat)
 ```
 
-| country       | abbr | var1 |        var2 | flag                                             |
-| :------------ | :--- | ---: | ----------: | :----------------------------------------------- |
-| Canada        | ca   |    1 |   0.9999167 | ![](http://flagpedia.net/data/flags/mini/ca.png) |
-| United Kindom | gb   |    2 | \-1.0205930 | ![](http://flagpedia.net/data/flags/mini/gb.png) |
+| country       | abbr | var1 |      var2 | flag                                             |
+| :------------ | :--- | ---: | --------: | :----------------------------------------------- |
+| Canada        | ca   |    1 | 0.3779214 | ![](http://flagpedia.net/data/flags/mini/ca.png) |
+| United Kindom | gb   |    2 | 0.1695938 | ![](http://flagpedia.net/data/flags/mini/gb.png) |
 
 <br> <a href="#top">▲ top of page</a>
 
