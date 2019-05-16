@@ -13,6 +13,7 @@ updating the R habitat
 [update R](#update-r)  
 [update RStudio](#update-rstudio)  
 [update R packages](#update-r-packages)  
+[conclusion](#conclusion)  
 [references](#references)
 
 ## prerequisites
@@ -115,6 +116,15 @@ When updating packages, if a window pops up asking about compilation,
     devtools::update_packages(packages = TRUE, 
         lib.loc = "C:/R/library",
         ask = FALSE)
+
+## conclusion
+
+To conclude the course, I offer two additional short pages of final
+thoughts
+
+  - [The portfolio after the
+    term](cm306-report-edit-after-term.md#the-portfolio-after-the-term%5D)
+  - [Final thoughts](cm004-course-final-thoughts.md#final-thoughts)
 
 ## references
 
