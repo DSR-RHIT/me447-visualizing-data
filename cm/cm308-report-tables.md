@@ -19,8 +19,8 @@ readability](#edit-the-data-frame-for-readability)
 [selected subset](#selected-subset)  
 [multiway data table](#multiway-data-table)  
 [align columns](#align-columns)  
+[stargazer tables](#stargazer-tables)  
 [cells with images](#cells-with-images)  
-[stargazer](#stargazer)  
 [references](#references)
 
 <!-- still on the to-do list -->
@@ -544,8 +544,8 @@ Reshape the data,
 ``` r
 options(scipen = 999)
 df3 <- metro_pop %>% 
-    spread(race, population) %>% 
-    glimpse()
+        spread(race, population) %>% 
+        glimpse()
 #> Observations: 12
 #> Variables: 6
 #> $ county <chr> "Bergen", "Bronx", "Hudson", "Kings", "Nassau", "New Yo...
@@ -585,8 +585,8 @@ Then print the table. Iteratively edit the `arrange()` variables until
 
 ``` r
 df3 <- metro_pop %>% 
-    mutate(population = round(population / 1000, 1)) %>% 
-    spread(race, population)
+        mutate(population = round(population / 1000, 1)) %>% 
+        spread(race, population)
 ```
 
 <br> **Table 3: New York counties population (in thousands)**
@@ -651,30 +651,7 @@ all the scores are 2-digit numbers, so centering is OK.
 
 <br> <a href="#top">▲ top of page</a>
 
-## cells with images
-
-``` r
-df4 <- data.frame(country = c('Canada', 'United Kingdom'),
-        abbr = c('ca', 'gb'),
-        var1 = c(1, 2),
-        var2 = round(rnorm(2), 2))
-df4$flag <- sprintf('![](http://flagpedia.net/data/flags/mini/%s.png)', df4$abbr)
-```
-
-    <br>
-    **Table 4: Images in cellsn**
-    ``` {r echo = FALSE} 
-    kable(df4, align = "lccrc")
-    ``` 
-
-<br> **Table 4: Images in cells**
-
-| country        | abbr | var1 |   var2 |                       flag                       |
-| :------------- | :--: | :--: | -----: | :----------------------------------------------: |
-| Canada         |  ca  |  1   |   0.11 | ![](http://flagpedia.net/data/flags/mini/ca.png) |
-| United Kingdom |  gb  |  2   | \-0.89 | ![](http://flagpedia.net/data/flags/mini/gb.png) |
-
-## stargazer
+## stargazer tables
 
 The stargazer package has a lot of features for producing tables of
 statistical summaries. Read more about it
@@ -684,601 +661,20 @@ statistical summaries. Read more about it
     output](https://cran.r-project.org/web/packages/stargazer/vignettes/stargazer.pdf)
 
 For our purposes, however, stargazer can also produce a data table.
-
-``` r
-stargazer(df1,
-        type = "html",
-        title = "Table 1 revisited with stargazer",
-        summary = FALSE,
-        rownames = FALSE)
-```
-
-<table style="text-align:center">
-
-<caption>
-
-<strong>Table 1 revisited with stargazer</strong>
-
-</caption>
-
-<tr>
-
-<td colspan="5" style="border-bottom: 1px solid black">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left">
-
-disadvantaged
-
-</td>
-
-<td>
-
-sex
-
-</td>
-
-<td>
-
-ethnicity
-
-</td>
-
-<td>
-
-grade
-
-</td>
-
-<td>
-
-score
-
-</td>
-
-</tr>
-
-<tr>
-
-<td colspan="5" style="border-bottom: 1px solid black">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left">
-
-1
-
-</td>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-White
-
-</td>
-
-<td>
-
-6
-
-</td>
-
-<td>
-
-92
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left">
-
-1
-
-</td>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-White
-
-</td>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-91
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left">
-
-1
-
-</td>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-White
-
-</td>
-
-<td>
-
-6
-
-</td>
-
-<td>
-
-91
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left">
-
-1
-
-</td>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-White
-
-</td>
-
-<td>
-
-3
-
-</td>
-
-<td>
-
-70
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left">
-
-1
-
-</td>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-White
-
-</td>
-
-<td>
-
-4
-
-</td>
-
-<td>
-
-69
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left">
-
-1
-
-</td>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-Hispanic
-
-</td>
-
-<td>
-
-8
-
-</td>
-
-<td>
-
-51
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left">
-
-1
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-White
-
-</td>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-93
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left">
-
-1
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-White
-
-</td>
-
-<td>
-
-7
-
-</td>
-
-<td>
-
-91
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left">
-
-1
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-White
-
-</td>
-
-<td>
-
-6
-
-</td>
-
-<td>
-
-84
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left">
-
-1
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-White
-
-</td>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-69
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left">
-
-1
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-White
-
-</td>
-
-<td>
-
-8
-
-</td>
-
-<td>
-
-57
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left">
-
-2
-
-</td>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-Hispanic
-
-</td>
-
-<td>
-
-7
-
-</td>
-
-<td>
-
-87
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left">
-
-2
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-Hispanic
-
-</td>
-
-<td>
-
-3
-
-</td>
-
-<td>
-
-76
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left">
-
-2
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-Black
-
-</td>
-
-<td>
-
-4
-
-</td>
-
-<td>
-
-58
-
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left">
-
-2
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-Hispanic
-
-</td>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-34
-
-</td>
-
-</tr>
-
-<tr>
-
-<td colspan="5" style="border-bottom: 1px solid black">
-
-</td>
-
-</tr>
-
-</table>
-
-``` r
-library("stargazer")
-stargazer(df3,
-        type = "html",
-        title = "Table 3 revisited with stargazer",
-        summary = FALSE,
-        rownames = FALSE)
-```
+Stargazer does not play nicely with tibbles, so we convert our tibbles
+to data frames first.
+
+The Rmd code chunk header must include the `results = "asis"` option, as
+in
+
+    ``` {r results = "asis"}
+    df3 <- as.data.frame(df3)
+    stargazer(df3,
+            type = "html",
+            title = "Table 3 revisited with stargazer",
+            summary = FALSE,
+            rownames = FALSE)
+    ``` 
 
 <table style="text-align:center">
 
@@ -1778,7 +1174,7 @@ Suffolk
 
 <td>
 
-1118
+1,118
 
 </td>
 
@@ -1844,31 +1240,26 @@ statistical summary tables. For example, a summary of the `metro_pop`
 data set,
 
 ``` r
-data(metro_pop, package = "graphclassmate")
+df4 <- airquality %>% 
+        select(Ozone, Solar.R, Wind, Temp)
 
-pop <- as.data.frame(metro_pop) %>%
-    select(population)
-
-stargazer(pop,
-        type     = "html",
-        title    = "Table 5: Stargazer summary table",
-        summary  = TRUE,
-        summary.stat = c("n", "max", "p75", "median", "p25", "min"),
-        rownames = TRUE,
-        digits   = 0)
+stargazer(df4,
+        type   = "html",
+        title  = "Table 4: Statistical summary table",
+        digits = 2)
 ```
 
 <table style="text-align:center">
 
 <caption>
 
-<strong>Table 5: Stargazer summary table</strong>
+<strong>Table 4: Statistical summary table</strong>
 
 </caption>
 
 <tr>
 
-<td colspan="7" style="border-bottom: 1px solid black">
+<td colspan="8" style="border-bottom: 1px solid black">
 
 </td>
 
@@ -1890,19 +1281,19 @@ N
 
 <td>
 
-Max
+Mean
 
 </td>
 
 <td>
 
-Pctl(75)
+St. Dev.
 
 </td>
 
 <td>
 
-Median
+Min
 
 </td>
 
@@ -1914,7 +1305,13 @@ Pctl(25)
 
 <td>
 
-Min
+Pctl(75)
+
+</td>
+
+<td>
+
+Max
 
 </td>
 
@@ -1922,7 +1319,7 @@ Min
 
 <tr>
 
-<td colspan="7" style="border-bottom: 1px solid black">
+<td colspan="8" style="border-bottom: 1px solid black">
 
 </td>
 
@@ -1932,43 +1329,49 @@ Min
 
 <td style="text-align:left">
 
-population
+Ozone
 
 </td>
 
 <td>
 
-60
+116
 
 </td>
 
 <td>
 
-1,118,000
+42.13
 
 </td>
 
 <td>
 
-335,750
+32.99
 
 </td>
 
 <td>
 
-125,500
+1.00
 
 </td>
 
 <td>
 
-38,750
+18.00
 
 </td>
 
 <td>
 
-6,000
+63.25
+
+</td>
+
+<td>
+
+168.00
 
 </td>
 
@@ -1976,7 +1379,163 @@ population
 
 <tr>
 
-<td colspan="7" style="border-bottom: 1px solid black">
+<td style="text-align:left">
+
+Solar.R
+
+</td>
+
+<td>
+
+146
+
+</td>
+
+<td>
+
+185.93
+
+</td>
+
+<td>
+
+90.06
+
+</td>
+
+<td>
+
+7.00
+
+</td>
+
+<td>
+
+115.75
+
+</td>
+
+<td>
+
+258.75
+
+</td>
+
+<td>
+
+334.00
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left">
+
+Wind
+
+</td>
+
+<td>
+
+153
+
+</td>
+
+<td>
+
+9.96
+
+</td>
+
+<td>
+
+3.52
+
+</td>
+
+<td>
+
+1.70
+
+</td>
+
+<td>
+
+7.40
+
+</td>
+
+<td>
+
+11.50
+
+</td>
+
+<td>
+
+20.70
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left">
+
+Temp
+
+</td>
+
+<td>
+
+153
+
+</td>
+
+<td>
+
+77.88
+
+</td>
+
+<td>
+
+9.47
+
+</td>
+
+<td>
+
+56
+
+</td>
+
+<td>
+
+72
+
+</td>
+
+<td>
+
+85
+
+</td>
+
+<td>
+
+97
+
+</td>
+
+</tr>
+
+<tr>
+
+<td colspan="8" style="border-bottom: 1px solid black">
 
 </td>
 
@@ -1985,6 +1544,90 @@ population
 </table>
 
 <br> <a href="#top">▲ top of page</a>
+
+## cells with images
+
+Create a data frame with a variable that has image links as its values.
+
+``` r
+# create a data frame 
+df5 <- data.frame(country = c('Canada', 'United Kingdom'),
+        abbr = c('ca', 'gb'),
+        var1 = c(1, 2),
+        var2 = round(rnorm(2), 2))
+
+# add a variable of links
+df5$flag <- sprintf('![](http://flagpedia.net/data/flags/mini/%s.png)', df5$abbr)
+
+df5
+#>          country abbr var1  var2
+#> 1         Canada   ca    1  0.11
+#> 2 United Kingdom   gb    2 -0.89
+#>                                               flag
+#> 1 ![](http://flagpedia.net/data/flags/mini/ca.png)
+#> 2 ![](http://flagpedia.net/data/flags/mini/gb.png)
+```
+
+Use `kable()` to print the table.
+
+    <br>
+    **Table 5: Images in cells**
+    ``` {r echo = FALSE} 
+    kable(df5, align = "lccrc")
+    ``` 
+
+<br> **Table 5: Images in cells**
+
+| country        | abbr | var1 |   var2 |                       flag                       |
+| :------------- | :--: | :--: | -----: | :----------------------------------------------: |
+| Canada         |  ca  |  1   |   0.11 | ![](http://flagpedia.net/data/flags/mini/ca.png) |
+| United Kingdom |  gb  |  2   | \-0.89 | ![](http://flagpedia.net/data/flags/mini/gb.png) |
+
+<br> Try the same thing with images stored locally. First make the
+images all the same height using magick.
+
+``` r
+library("magick")
+image_read("resources/logo-R.png") %>% 
+        image_scale("40") %>% 
+        image_write(., path = "resources/cm308-logo-R.png")
+image_read("resources/logo-RStudio.png") %>% 
+        image_scale("40") %>% 
+        image_write(., path = "resources/cm308-logo-RStudio.png")
+image_read("resources/logo-GitHub.png") %>% 
+        image_scale("40") %>% 
+        image_write(., path = "resources/cm308-logo-GitHub.png")
+image_read("resources/icon-Rmd.png") %>% 
+        image_scale("40") %>% 
+        image_write(., path = "resources/cm308-logo-Rmd.png")
+```
+
+``` r
+df6 <- wrapr::build_frame(
+        "software"  , "image" |
+        "R"         , "![](../resources/cm308-logo-R.png)" |
+        "RStudio"   , "![](../resources/cm308-logo-RStudio.png)" |
+        "GitHub"    , "![](../resources/cm308-logo-GitHub.png)" |
+        "Rmarkdown"      , "![](../resources/cm308-logo-Rmd.png)"
+            )
+
+
+df6
+#>    software                                    image
+#> 1         R       ![](../resources/cm308-logo-R.png)
+#> 2   RStudio ![](../resources/cm308-logo-RStudio.png)
+#> 3    GitHub  ![](../resources/cm308-logo-GitHub.png)
+#> 4 Rmarkdown     ![](../resources/cm308-logo-Rmd.png)
+```
+
+<br> **Table 6: Software logos and icons**
+
+| software  | image                                    |
+| :-------- | :--------------------------------------- |
+| R         | ![](../resources/cm308-logo-R.png)       |
+| RStudio   | ![](../resources/cm308-logo-RStudio.png) |
+| GitHub    | ![](../resources/cm308-logo-GitHub.png)  |
+| Rmarkdown | ![](../resources/cm308-logo-Rmd.png)     |
 
 ## references
 
