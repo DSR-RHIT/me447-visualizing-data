@@ -1,7 +1,7 @@
 final thoughts
 ================
 
-<img src="../resources/cm004-header.png" width="100%" /> <small> <br>
+<img src="../resources/cm004-00.png" width="100%" /> <small> <br>
 <i>Peace</i> by Steve Rotman is licensed under
 <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/legalcode">CC
 BY-NC-ND 2.0</a> <br> </small>
