@@ -19,6 +19,13 @@ Please wait to do any editing until after grades are turned in.
 
 <div id="refs">
 
+<div id="ref-Wickham+Grolemund:2017">
+
+Wickham H and Grolemund G (2017) *R for Data Science.* O’Reilly Media,
+Inc., Sebastopol, CA <https://r4ds.had.co.nz/>
+
+</div>
+
 </div>
 
 ***
