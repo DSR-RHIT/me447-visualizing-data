@@ -1548,23 +1548,26 @@ Temp
 ## cells with images
 
 Create a data frame with a variable that has image links as its values.
-The links are URLs.
+The links are URLs. The `mutate()` function creates the Rmd string that
+imports images.
 
 ``` r
-# create a data frame 
-df5 <- data.frame(country = c('Canada', 'United Kingdom'),
-                abbr = c('ca', 'gb'),
-                var1 = c(1, 2),
-                var2 = round(rnorm(2), 2)) %>% 
-        mutate(flag = str_c("![](http://flagpedia.net/data/flags/mini/", abbr, ".png)"))
+url_stem <- "http://flagpedia.net/data/flags/mini/"
 
+df5 <- wrapr::build_frame(
+                "country"         , "var1" , "var2"    , "abbr" |
+                "Canada"          , 1      ,  3.5      , "ca"   |
+                "United Kingdom"  , 2      ,  4.6      , "gb"   ) %>% 
+        mutate(flag = str_c("![](", url_stem, abbr, ".png)")) %>% 
+    select(-abbr) %>% 
+    select(country, flag, everything())
 df5
-#>          country abbr var1  var2
-#> 1         Canada   ca    1  0.11
-#> 2 United Kingdom   gb    2 -0.89
-#>                                               flag
-#> 1 ![](http://flagpedia.net/data/flags/mini/ca.png)
-#> 2 ![](http://flagpedia.net/data/flags/mini/gb.png)
+#>          country                                             flag var1
+#> 1         Canada ![](http://flagpedia.net/data/flags/mini/ca.png)    1
+#> 2 United Kingdom ![](http://flagpedia.net/data/flags/mini/gb.png)    2
+#>   var2
+#> 1  3.5
+#> 2  4.6
 ```
 
 Use `kable()` to print the table.
@@ -1577,10 +1580,10 @@ Use `kable()` to print the table.
 
 <br> **Table 5: Images in cells**
 
-| country        | abbr | var1 |   var2 |                       flag                       |
-| :------------- | :--: | :--: | -----: | :----------------------------------------------: |
-| Canada         |  ca  |  1   |   0.11 | ![](http://flagpedia.net/data/flags/mini/ca.png) |
-| United Kingdom |  gb  |  2   | \-0.89 | ![](http://flagpedia.net/data/flags/mini/gb.png) |
+| country        |                       flag                       | var1 | var2 |
+| :------------- | :----------------------------------------------: | :--: | ---: |
+| Canada         | ![](http://flagpedia.net/data/flags/mini/ca.png) |  1   |  3.5 |
+| United Kingdom | ![](http://flagpedia.net/data/flags/mini/gb.png) |  2   |  4.6 |
 
 <br> Try the same thing with images stored locally. First make the
 images all the same height using magick.
@@ -1605,13 +1608,14 @@ Then create the data frame with links to images stored locally
 
 ``` r
 df6 <- wrapr::build_frame(
-        "software"   , "image" |
-        "R"          , "![](../resources/cm308-logo-R.png)" |
-        "RStudio"    , "![](../resources/cm308-logo-RStudio.png)" |
-        "GitHub"     , "![](../resources/cm308-logo-GitHub.png)" |
-        "Rmarkdown"  , "![](../resources/cm308-logo-Rmd.png)"
-            )
-
+                "software"   , "filename"                , "url"|
+                "R"          , "cm308-logo-R.png"        , "https://www.r-project.org/" |
+                "RStudio"    , "cm308-logo-RStudio.png"  , "https://www.rstudio.com/" |
+                "GitHub"     , "cm308-logo-GitHub.png"   , "https://github.com/github" |
+                "Rmarkdown"  , "cm308-logo-Rmd.png"      , "https://rmarkdown.rstudio.com/" ) %>% 
+        mutate(image = str_c("![](../resources/", filename, ")")) %>% 
+        select(-filename) %>% 
+        select(software, image, url)
 
 df6
 #>    software                                    image
@@ -1619,16 +1623,21 @@ df6
 #> 2   RStudio ![](../resources/cm308-logo-RStudio.png)
 #> 3    GitHub  ![](../resources/cm308-logo-GitHub.png)
 #> 4 Rmarkdown     ![](../resources/cm308-logo-Rmd.png)
+#>                              url
+#> 1     https://www.r-project.org/
+#> 2       https://www.rstudio.com/
+#> 3      https://github.com/github
+#> 4 https://rmarkdown.rstudio.com/
 ```
 
-<br> **Table 6: Software logos and icons**
+<br> **Table 6: Useful links**
 
-| software  | image                                    |
-| :-------- | :--------------------------------------- |
-| R         | ![](../resources/cm308-logo-R.png)       |
-| RStudio   | ![](../resources/cm308-logo-RStudio.png) |
-| GitHub    | ![](../resources/cm308-logo-GitHub.png)  |
-| Rmarkdown | ![](../resources/cm308-logo-Rmd.png)     |
+| software  | image                                    | url                              |
+| :-------- | :--------------------------------------- | :------------------------------- |
+| R         | ![](../resources/cm308-logo-R.png)       | <https://www.r-project.org/>     |
+| RStudio   | ![](../resources/cm308-logo-RStudio.png) | <https://www.rstudio.com/>       |
+| GitHub    | ![](../resources/cm308-logo-GitHub.png)  | <https://github.com/github>      |
+| Rmarkdown | ![](../resources/cm308-logo-Rmd.png)     | <https://rmarkdown.rstudio.com/> |
 
 ## references
 
