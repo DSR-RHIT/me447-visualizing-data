@@ -1548,16 +1548,15 @@ Temp
 ## cells with images
 
 Create a data frame with a variable that has image links as its values.
+The links are URLs.
 
 ``` r
 # create a data frame 
 df5 <- data.frame(country = c('Canada', 'United Kingdom'),
-        abbr = c('ca', 'gb'),
-        var1 = c(1, 2),
-        var2 = round(rnorm(2), 2))
-
-# add a variable of links
-df5$flag <- sprintf('![](http://flagpedia.net/data/flags/mini/%s.png)', df5$abbr)
+                abbr = c('ca', 'gb'),
+                var1 = c(1, 2),
+                var2 = round(rnorm(2), 2)) %>% 
+        mutate(flag = str_c("![](http://flagpedia.net/data/flags/mini/", abbr, ".png)"))
 
 df5
 #>          country abbr var1  var2
@@ -1602,13 +1601,15 @@ image_read("resources/icon-Rmd.png") %>%
         image_write(., path = "resources/cm308-logo-Rmd.png")
 ```
 
+Then create the data frame with links to images stored locally
+
 ``` r
 df6 <- wrapr::build_frame(
-        "software"  , "image" |
-        "R"         , "![](../resources/cm308-logo-R.png)" |
-        "RStudio"   , "![](../resources/cm308-logo-RStudio.png)" |
-        "GitHub"    , "![](../resources/cm308-logo-GitHub.png)" |
-        "Rmarkdown"      , "![](../resources/cm308-logo-Rmd.png)"
+        "software"   , "image" |
+        "R"          , "![](../resources/cm308-logo-R.png)" |
+        "RStudio"    , "![](../resources/cm308-logo-RStudio.png)" |
+        "GitHub"     , "![](../resources/cm308-logo-GitHub.png)" |
+        "Rmarkdown"  , "![](../resources/cm308-logo-Rmd.png)"
             )
 
 
