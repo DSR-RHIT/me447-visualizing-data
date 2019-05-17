@@ -183,7 +183,7 @@ Confine your webscraping (for now) to data in ASCII format
 With online data in ASCII format, webscraping is easy
 
   - `utils` is the package  
-  - `read./table()` is the function
+  - `read.table()` is the function
 
 <!-- end list -->
 
@@ -272,8 +272,7 @@ In addition,
 **3. XLXS data from US Dept of Agriculture**
 
 Manually download the file `nsn-extract-5-9-18.xlsx` from the US General
-Services Administration (GSA) at the following
-URL
+Services Administration (GSA) at the following URL
 
 <https://inventory.data.gov/dataset/67567804-073d-40ad-a710-2b0bed8b84e2/resource/360b0748-d161-4857-a7dc-dfccfaeea096/download/nsn-extract-5-9-18.xlsx>
 
@@ -291,6 +290,13 @@ In addition,
 ## references
 
 <div id="refs">
+
+<div id="ref-Wickham+Grolemund:2017">
+
+Wickham H and Grolemund G (2017) *R for Data Science.* O’Reilly Media,
+Inc., Sebastopol, CA <https://r4ds.had.co.nz/>
+
+</div>
 
 </div>
 

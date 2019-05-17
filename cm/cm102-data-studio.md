@@ -10,6 +10,7 @@ licensed under
 ## contents
 
 [prerequisites](#prerequisites)  
+[advice from prior years’ students](#advice-from-prior-years-students)  
 [classify your data structure](#classify-your-data-structure)  
 [data basics](#data-basics)  
 [use Notepad for CSV files](#use-notepad-for-csv-files)  
@@ -45,6 +46,25 @@ needed.
     useful ‘metadata’ on airlines, airports, weather, and planes.
 
 <br> <a href="#top">▲ top of page</a>
+
+## advice from prior years’ students
+
+At the conclusion of the course last time, I asked my students what they
+wish they had done differently to make their work in this course less
+stressful.
+
+They replied,
+
+  - Get the data sooner. Seriously.
+  - Creating the graph is easy. The data carpentry takes most of the
+    time. Do the data carpentry early.
+  - Look for data that is interesting, but if you can’t find it, let it
+    go.
+  - After the graph presentations in lab, start the editing
+    immediately—otherwise you will forget much of the detail of the
+    feedback.
+
+<a href="#top">▲ top of page</a>
 
 ## classify your data structure
 

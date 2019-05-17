@@ -5,8 +5,7 @@ portfolio studio
 <i>San Francisco, from California and Powell Street</i> by Carleton E.
 Watkins (1829–1916) is licensed under
 <a href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">CC0
-1.0</a> <br>
-</small>
+1.0</a> <br> </small>
 
 <!-- - In the displays section, give each report a descriptive title and indicate the type of graph used, e.g., dot plot, scatterplot, parallel coordinate plot, etc. While the course is in session, please leave the tags D1, D2, etc., for my convenience. When the course concludes, of course, you may edit these labels as you wish.   -->
 
@@ -51,7 +50,9 @@ professional peers and prospective employers.
 [format the citations and
 references](#format-the-citations-and-references)  
 [reading responses](#reading-responses)  
-[presentation responses](#presentation-responses)
+[presentation responses](#presentation-responses)  
+[advice from prior years’ students](#advice-from-prior-years-students)  
+[references](#references)
 
 ## prerequisites
 
@@ -115,8 +116,7 @@ Add the next heading
 
     ## Discussion notes 
 
-And add a link to your reading response
-    file.
+And add a link to your reading response file.
 
     [Reading responses](reports/reading-responses.md) Notes from the data graphics literature on elements of design and visual rhetoric. 
 
@@ -386,8 +386,7 @@ The syntax for a citation is `[@key]`, where the citation key was
 assigned in the `.bib` file.
 
   - In the temporary file `reports/d1-temp.Rmd`, add a sentence with a
-    citation such
-as:
+    citation such as:
 
 <pre class="r"><code>Visualization is a great place to start with R programming, because the payoff is 
 so clear: you get to make elegant and informative plots that help you understand 
@@ -532,8 +531,7 @@ like this,
  reports/reading-response-2-Wainer-2014.Rmd
 ```
 
-Then the links in the README would look
-    like,
+Then the links in the README would look like,
 
     [Reading response 1](reports/reading-response-1-Tufte-1997.md) Edward Tufte (1997) The decision to launch the space shuttle Challenger.    
     [Reading response 2](reading-response-2-Wainer-2014.Rmd) Howard Wainer (2014) Fifteen displays about one thing.    
@@ -562,6 +560,22 @@ Push to GitHub to check the work
   - Commit, PULL, PUSH
   - Navigate to your repo
   - The repo should have the new content
+
+<br> <a href="#top">▲ top of page</a>
+
+## advice from prior years’ students
+
+At the conclusion of the course last time, I asked my students what they
+wish they had done differently to make their work in this course less
+stressful.
+
+Much of what they has to say concerned data and was summarized in the
+[data studio](cm102-data-studio.md#advice-from-prior-years-students).
+They also has advice regarding the weekly presentations:
+
+  - After the graph presentations in lab, start the editing
+    immediately—otherwise you will forget much of the detail of the
+    feedback.
 
 <br> <a href="#top">▲ top of page</a>
 
