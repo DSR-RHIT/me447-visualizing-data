@@ -10,24 +10,56 @@ Having substantially completed the portfolio at this point, it is time
 for final editing.
 
 The README introduces the reader to your portfolio. It should start with
-a compelling image and an introduction that engages the rteader, giving
-them a reason to keep reading. Recall that the intended audience are
-professional peers or prospective employers.
+an image of your best work and an introduction that engages the reader,
+giving them a reason to keep reading. Recall that the intended audience
+are professional peers or prospective employers.
 
-  - Have you reviewed all your reading and presentation responses for
-    suggestions for improving the displays and the critiques?
-  - Does every report begin with an introduction and a summary of the
-    requirements?
-  - Have you revised your README to engage the reader?
-  - Does every critique conclude with references?  
-  - Are your assertions supported with evidence?  
-  - Have you spell-checked every file?
+Final revising and editing checklist:
 
-## references
+  - Identify all reproductions (if any) in the display [introductory
+    prose](cm305-report-rmd-basics.md#introductory-prose) and check that
+    the [reproductions](cm300-report-portfolio-reqts.md#reproductions)
+    requirements are met
 
-<div id="refs">
+  - Identify all redesigns (if any) in the display [introductory
+    prose](cm305-report-rmd-basics.md#introductory-prose) and check that
+    the [redesigns](cm300-report-portfolio-reqts.md#redesigns)
+    requirements are met
 
-</div>
+  - If you are enrolled in the 500-level course, check that the
+    [500-level course](cm300-report-portfolio-reqts.md#500-level-course)
+    requirements are met
+
+  - Every critique includes relevant [citations in design and
+    rhetoric](cm300-report-portfolio-reqts.md#citations-in-design-and-rhetoric)
+    and concludes with references
+
+  - Review your [discussion
+    notes](cm300-report-portfolio-reqts.md#discussion-notes) for
+    suggestions for improving the displays and the critiques
+
+  - At least one display tells a [compelling
+    story](cm300-report-portfolio-reqts.md#compelling-story) and is
+    identified in the [introductory
+    prose](cm305-report-rmd-basics.md#introductory-prose)
+
+  - Every report begins with [introductory
+    prose](cm305-report-rmd-basics.md#introductory-prose) and a summary
+    of the requirements met
+
+  - Check that you have met the requirements for a [variety of data
+    sources](cm300-report-portfolio-reqts.md#variety-of-data-sources)
+
+  - Revise your [README](cm300-report-portfolio-reqts.md#readme) to
+    engage the reader
+
+  - Every assertion is supported with evidence
+
+  - Spell-check every file
+
+<!-- ## references -->
+
+<!-- <div id="refs"></div> -->
 
 ***
 <a href="#top">&#9650; top of page</a>    
